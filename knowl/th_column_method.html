@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="theorem theorem-like"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.1.24</span><span class="period">.</span><span class="space"> </span><span class="title">Column method of matrix multiplication.</span>
+</h4>
+<div class="para">Let <span class="process-math">\(A=[a_{i}]_{m\times n}\)</span> and <span class="process-math">\(B=[b_{ij}]_{n\times r}\text{.}\)</span> The column method of matrix multiplication computes <span class="process-math">\(AB\)</span> using the two steps below.</div> <dl class="description-list">
+<dt>Step 1</dt>
+<dd><div class="para logical">
+<div class="para">Let <span class="process-math">\(\boldb_j\)</span> be the <span class="process-math">\(j\)</span>-th column of <span class="process-math">\(B\text{,}\)</span> considered as a column vector. Then</div>
+<div class="displaymath process-math">
+\begin{align*}
+AB \amp =A\begin{bmatrix}\vert \amp \vert \amp  \amp \vert \\ \boldb_1\amp \boldb_2\amp \cdots\amp \boldb_r\\ \vert \amp \vert \amp  \amp \vert \end{bmatrix}\\
+\amp=\begin{bmatrix}\vert \amp \vert \amp  \amp \vert \\ A\boldb_1\amp A\boldb_2\amp \cdots\amp A\boldb_r\\ \vert \amp  \vert \amp  \amp  \vert \end{bmatrix}\text{.}
+\end{align*}
+</div>
+</div></dd>
+<dt>Step 2</dt>
+<dd><div class="para logical">
+<div class="para">Let <span class="process-math">\(\bolda_j\)</span> be the <span class="process-math">\(j\)</span>-th column of <span class="process-math">\(A\text{,}\)</span> considered as a column vector. Given <em class="emphasis">any</em> column vector <span class="process-math">\(\boldb=[b_{i}]_{n\times 1}\)</span> we have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A\,\boldb=A\,\begin{bmatrix}b_1\\b_2\\ \vdots \\b_n \end{bmatrix} = b_1\bolda_1+b_2\bolda_2+\cdots +b_n\bolda_n\text{.}
+\end{equation*}
+</div>
+</div></dd>
+</dl></article><article class="hiddenproof"><a href="" class="proof-knowl original" data-knowl="./knowl/proof-5-hidden.html" title="Proof 2.1.24.1"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><span class="incontext"><a href="s_matrix.html#th_column_method" class="internal">in-context</a></span>
+</body>
+</html>
