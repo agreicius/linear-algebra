@@ -683,9 +683,9 @@ ZeroDivisionError: matrix must be nonsingular
         We prove both implications of the if and only if statement separately. 
       </p>
       <p>
-        Suppose <m>A</m> is invertible with inverse <m>A^{-1}</m>. To see that <m>A^T</m> is invertible, with inverse as specified <xref ref="eq_inverse_trans"/>, we need only show that
+        Suppose <m>A</m> is invertible with inverse <m>A^{-1}</m>. To see that <m>A^T</m> is invertible, with inverse as specified in  <xref ref="eq_inverse_trans"/>, we need only show that
         <me>
-          A^T(A^{-1})^T)=(A^{-1})^T)A^T=I
+          A^T(A^{-1})^T=(A^{-1})^T\, A^T=I
         </me>.
         We verify the two equalities separately:
         <md>
