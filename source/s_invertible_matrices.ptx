@@ -673,7 +673,9 @@ ZeroDivisionError: matrix must be nonsingular
           A \text{ invertible} \iff A^T \text{ invertible}
         </me>,
         in which case 
-        <men xml:id="eq_inverse_trans">\left(A^T\right)^{-1}=\left(A^{-1}\right)^T</men>.
+        <men xml:id="eq_inverse_trans">
+        \left(A^T\right)^{-1}=\left(A^{-1}\right)^T
+        </men>.
       </p>
     </statement>
     <proof>
@@ -681,7 +683,7 @@ ZeroDivisionError: matrix must be nonsingular
         We prove both implications of the if and only if statement separately. 
       </p>
       <p>
-        Suppose <m>A</m> is invertible with inverse <m>A^{-1}</m>. To see that <m>A^T</m> is invertible, with inverse as specified <xref ref="eq_inv_trans"/>, we need only show that
+        Suppose <m>A</m> is invertible with inverse <m>A^{-1}</m>. To see that <m>A^T</m> is invertible, with inverse as specified <xref ref="eq_inverse_trans"/>, we need only show that
         <me>
           A^T(A^{-1})^T)=(A^{-1})^T)A^T=I
         </me>.
