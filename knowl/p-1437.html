@@ -13,13 +13,20 @@
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">For any <span class="process-math">\(1\leq i\leq n\)</span> the expression</div>
+<div class="para">Given</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\sum_{k=1}^n(-1)^{i+k}a_{ik}M_{ik}
+A=\begin{amatrix}[ccc]a\amp b\amp c\\ d\amp e\amp f\\ g\amp h\amp i  \end{amatrix}\text{,}
 \end{equation*}
 </div>
-<div class="para">is called the <dfn class="terminology">expansion along the <span class="process-math">\(i\)</span>-th row of <span class="process-math">\(A\)</span></dfn>.</div>
+<div class="para">we have</div>
+<div class="displaymath process-math">
+\begin{align*}
+\det A \amp =a\det A_{11}-b\det A _{12}+c\det A_{13} \amp \text{(recursive case)}\\
+\amp =a\det \abcdmatrix{e}{f}{h}{i}-b\det\abcdmatrix{d}{f}{g}{i}+c\det\abcdmatrix{d}{e}{g}{h}\\
+\amp = a(ei-fh)-b(di-fg)+c(dh-eg) \amp \text{(\(n=2\) case)}\text{.}
+\end{align*}
+</div>
 </div>
 <span class="incontext"><a href="s_det.html#p-1437" class="internal">in-context</a></span>
 </body>

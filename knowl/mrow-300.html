@@ -11,12 +11,15 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/d_transpose.html ./knowl/d_det.html ./knowl/th_det_transpose.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_expansion_row.html ./knowl/th_expansion_row.html">
 \begin{align*}
-\sum_{k=1}^n(-1)^{k+j}a_{kj}M_{kj}\amp =\sum_{k=1}^n(-1)^{k+j}(A^T)_{jk}\det A_{kj} \amp (\knowl{./knowl/d_transpose.html}{\text{Definition 2.1.29}})\\
-\amp = \sum_{k=1}^n(-1)^{k+j}(A^T)_{jk}\det (A^T)_{jk} \amp ( (A^T)_{ij}= A_{ji}) \\
-\amp= \det A^T  \amp (\knowl{./knowl/d_det.html}{\text{Definition 2.5.3}})\\
-\amp=\det A \amp (\knowl{./knowl/th_det_transpose.html}{\text{Theorem 2.5.9}}) 
+\det A^T \amp = \frac{1}{n}\sum_{i=1}^{n}\det A^T \\
+\amp =\frac{1}{n}\sum_{i=1}^n\sum_{j=1}^n(-1)^{i+j}[A^T]_{ij}\det \left((A^T)_{ij}\right) \amp (\knowl{./knowl/th_expansion_row.html}{\text{Theorem 2.5.8}}) \\
+\amp = \frac{1}{n}\sum_{i=1}^n\sum_{j=1}^n(-1)^{i+j}[A]_{ji}\det (A_{ji})^T \amp ([A^T]_{ij}=A_{ji}, (A^T)_{ij}=(A_{ji})^T)\\
+\amp = \frac{1}{n}\sum_{i=1}^n\sum_{j=1}^n(-1)^{i+j}[A]_{ji}\det A_{ji} \amp (\det (A_{ji})^T=\det A_{ji}, \text{ by induction})\\
+\amp= \frac{1}{n}\sum_{j=1}^n\sum_{i=1}^n(-1)^{i+j}[A]_{ji}\det A_{ji} \amp (\text{props. of addition})\\
+\amp =\frac{1}{n}\sum_{j=1}^n\det A \amp (\knowl{./knowl/th_expansion_row.html}{\text{Theorem 2.5.8}})\\
+\amp = \det A
 \end{align*}
 </div>
 <span class="incontext"><a href="s_det.html#md-95" class="internal">in-context</a></span>

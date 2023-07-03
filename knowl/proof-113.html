@@ -12,6 +12,13 @@
 </head>
 <body class="ignore-math">
 <article class="hiddenproof"><h4 class="heading"><span class="type">Proof</span></h4>
-<div class="para">According to <a href="" class="xref" data-knowl="./knowl/th_similarity_matrixreps.html" title="Theorem 5.3.28: Similarity and matrix representations">Theorem 5.3.28</a> the matrix <span class="process-math">\(A\)</span> is similar to a diagonal matrix <span class="process-math">\(D\)</span> if and only if there is a linear transformation <span class="process-math">\(T\colon \R^n\rightarrow \R^n\)</span> and ordered bases <span class="process-math">\(B, B'\)</span> of <span class="process-math">\(\R^n\)</span> such that <span class="process-math">\([T]_B=A\)</span> and <span class="process-math">\([T]_{B'}=D\text{.}\)</span> By definition such a <span class="process-math">\(T\)</span> would be diagonalizable, since <span class="process-math">\([T]_{B'}=D\)</span> is diagonal. Since <span class="process-math">\(T\)</span> is diagonalizable if and only if <span class="process-math">\(A=[T]_B\)</span> is diagonalizable, we conclude that <span class="process-math">\(A\)</span> is similar to a diagonal matrix <span class="process-math">\(D\)</span> if and only if <span class="process-math">\(A\)</span> is diagonalizable.</div></article><span class="incontext"><a href="s_diagonalization.html#proof-113" class="internal">in-context</a></span>
+<div class="para logical">
+<div class="para">For the most part the validity of this procedure is a direct consequence of <a href="" class="xref" data-knowl="./knowl/th_diagonalizability_eigenbasis.html" title="Theorem 5.5.2: Diagonalizabilty: basis of eigenvectors">Theorem 5.5.2</a> and <a href="" class="xref" data-knowl="./knowl/th_diagonalizability_eigenspaces.html" title="Theorem 5.5.13: Diagonalizability: dimension of eigenspaces">Theorem 5.5.13</a>. However, there are two details that need to be pointed out.</div>
+<ul class="disc">
+<li><div class="para">That <span class="process-math">\(T\)</span> is diagonalizable if and only if <span class="process-math">\(A=[T]_B\)</span> is diagonalizable follows from the fact that a basis of the <span class="process-math">\(\lambda\)</span>-eigenspace of <span class="process-math">\(A\)</span> to a basis of the <span class="process-math">\(\lambda\)</span>-eigenspace of <span class="process-math">\(T\)</span> using the coordinate vector transformation <span class="process-math">\([\phantom{v}]_B\text{.}\)</span>
+</div></li>
+<li><div class="para">That the ordered list <span class="process-math">\(B'\)</span> described in Step 3 is in fact a basis is shown in the proof of <a href="" class="xref" data-knowl="./knowl/th_diagonalizability_eigenspaces.html" title="Theorem 5.5.13: Diagonalizability: dimension of eigenspaces">Theorem 5.5.13</a>.</div></li>
+</ul>
+</div></article><span class="incontext"><a href="s_diagonalization.html#proof-113" class="internal">in-context</a></span>
 </body>
 </html>

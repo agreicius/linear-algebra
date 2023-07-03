@@ -12,20 +12,7 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<div class="para logical">
-<div class="para">We prove statement (1) as a chain of equivalences:</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_coordinates.html ./knowl/th_coordinates.html ./knowl/th_matrixrep.html ./knowl/th_coordinates.html">
-\begin{align*}
-\boldv \text{ is an eigenvector of } T \amp \iff \boldv\ne 0 \text{ and } T\boldv=\lambda \boldv \\
-\amp \iff \boldx=[\boldv]_B\ne \boldzero \text{ and } [T\boldv]_B=[\lambda\boldv] \amp (\knowl{./knowl/th_coordinates.html}{\text{5.1.12}}, (2)) \\
-\amp \iff \boldx=[\boldv]_B\ne \boldzero \text{ and } [T\boldv]_B=\lambda[\boldv]_B \amp (\knowl{./knowl/th_coordinates.html}{\text{5.1.12}}, (1))\\
-\amp \iff \boldx=[\boldv]\ne \boldzero \text{ and } [T]_B[\boldv]_B=\lambda[\boldv]_B \amp (\knowl{./knowl/th_matrixrep.html}{\text{5.2.6}})\\
-\amp \iff \boldx\ne 0 \text{ and } A\boldx=\lambda\boldx\\
-\amp \iff \boldx \text{ is an eigenvector of } A\text{.}
-\end{align*}
-</div>
-<div class="para">From (1) it follows directly that if <span class="process-math">\(\lambda\)</span> is an an eigenvalue of <span class="process-math">\(T\text{,}\)</span> then it is an eigenvalue of <span class="process-math">\(A=[T]_B\text{.}\)</span> Conversely, if <span class="process-math">\(\lambda\)</span> is an eigenvalue of <span class="process-math">\(A=[T]_B\text{,}\)</span> then there is a nonzero <span class="process-math">\(\boldx\in\R^n \)</span> such that <span class="process-math">\(A\boldx=\lambda \boldx\text{.}\)</span> Since <span class="process-math">\([\phantom{\boldv}]_B\)</span> is surjective (<a href="" class="xref" data-knowl="./knowl/th_coordinates.html" title="Theorem 5.1.12: Coordinate vector transformation">Theorem 5.1.12</a>, (3)), there is a vector <span class="process-math">\(\boldv\in V\)</span> such that <span class="process-math">\([\boldv]_B\text{.}\)</span> It follows from (1) that <span class="process-math">\(\boldv\)</span> is a <span class="process-math">\(\lambda\)</span>-eigenvector of <span class="process-math">\(T\text{,}\)</span> and thus that <span class="process-math">\(\lambda\)</span> is an eigenvalue of <span class="process-math">\(T\text{.}\)</span>
-</div>
+<div class="para">A similar argument to the one in <a href="" class="xref" data-knowl="./knowl/eg_eigenvector_adhoc_reflection.html" title="Example 5.4.9: Reflection">Example 5.4.9</a> shows that <span class="process-math">\(T\)</span> has no eigenvalues in this case. In more detail, a nonzero vector <span class="process-math">\(\boldx\)</span> lies in the line <span class="process-math">\(\ell=\Span\{\boldx\}\text{,}\)</span> and its rotation <span class="process-math">\(T(\boldx)\)</span> lies in the line <span class="process-math">\(\ell'=\Span\{T(\boldx)\}\text{,}\)</span> which is the result of rotating <span class="process-math">\(\ell\)</span> by the angle <span class="process-math">\(\theta\text{.}\)</span> Since <span class="process-math">\(\theta\ne \pi\text{,}\)</span> it is clear that <span class="process-math">\(\ell\ne \ell'\text{,}\)</span> and thus we cannot have <span class="process-math">\(T(\boldv)=\lambda\boldv\)</span> for some <span class="process-math">\(\lambda\in \R\text{.}\)</span>
 </div>
 <span class="incontext"><a href="s_eigenvectors.html#p-3476" class="internal">in-context</a></span>
 </body>

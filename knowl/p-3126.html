@@ -13,20 +13,27 @@
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">Let <span class="process-math">\(W=\CS A\text{,}\)</span> and let <span class="process-math">\(\hat{\boldy}=\proj{\boldy}{W}\text{.}\)</span> The key observation is that a vector <span class="process-math">\(\hat{\boldx}\)</span> satisfies <span class="process-math">\(A\hat{\boldx}=\hat{\boldy}\)</span> if and only if</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_row_null_comp.html">
-\begin{equation*}
-\boldy=A\hat{\boldx}+(\boldy-A\hat{\boldx})
-\end{equation*}
-</div>
-<div class="para">is an orthogonal decomposition of <span class="process-math">\(\boldy\)</span> with respect to <span class="process-math">\(W=\CS A\text{;}\)</span> and this is true if and only if <span class="process-math">\(\boldy-A\hat{\boldx}\in (\CS A)^\perp\text{.}\)</span> Thus we have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_row_null_comp.html">
+<div class="para">Now compute</div>
+<div class="displaymath process-math">
 \begin{align*}
-A\hat{\boldx}=\hat{\boldy} \amp\iff \boldy-A\hat{\boldx}\in (\CS A)^\perp \\
-\amp\iff \boldy-A\hat{\boldx}\in \NS A^T \amp ((\CS A)^\perp=\NS A^T, \knowl{./knowl/th_row_null_comp.html}{\text{Theorem 4.3.7}}) \\
-\amp\iff A^T(\boldy-A\hat{\boldx})=\boldzero \\
-\amp \iff A^T\boldy-A^TA\hat{\boldx}=\boldzero\\
-\amp \iff A^TA\hat{\boldx}=A^T\boldy\text{.}
+\proj{(2,1,1)}{\ell}\amp= \frac{1}{6}\begin{amatrix}[rrr]
+5\amp 2\amp -1\\ 2\amp 2\amp 2\\ -1\amp 2\amp 5
+\end{amatrix}
+\begin{amatrix}[r]
+2 \\ 1\\ 1
+\end{amatrix}=
+\frac{1}{6}\begin{amatrix}[r]
+11\\ 8\\ 5
+\end{amatrix}\\
+\proj{(1,1,1)}{\ell}\amp= \frac{1}{6}\begin{amatrix}[rrr]
+5\amp 2\amp -1\\ 2\amp 2\amp 2\\ -1\amp 2\amp 5
+\end{amatrix}
+\begin{amatrix}[r]
+1 \\ 1\\ 1
+\end{amatrix}=
+\frac{1}{6}\begin{amatrix}[r]
+0\\ 0\\ 0
+\end{amatrix}\text{.}
 \end{align*}
 </div>
 </div>

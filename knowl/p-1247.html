@@ -12,26 +12,7 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<div class="para logical">
-<div class="para">The set <span class="process-math">\(W_1\)</span> of all diagonal <span class="process-math">\(3\times 3\)</span> matrices can be described as</div>
-<div class="displaymath process-math">
-\begin{equation*}
-W_1=\left\{ \begin{amatrix}[ccc]r\amp 0\amp 0\\ 0\amp s\amp 0 \\ 0\amp 0\amp t  \end{amatrix}\colon r,s,t\in \R\right\}\text{.}
-\end{equation*}
-</div>
-<div class="para">The set <span class="process-math">\(W_2\)</span> of all upper triangular <span class="process-math">\(3\times 3\)</span> matrices can be described as</div>
-<div class="displaymath process-math">
-\begin{equation*}
-W_2=\left\{ \begin{amatrix}[ccc]r\amp s\amp t\\ 0\amp u\amp v \\ 0\amp 0\amp w  \end{amatrix}\colon r,s,t,u,v,w\in \R\right\}\text{.}
-\end{equation*}
-</div>
-<div class="para">The set <span class="process-math">\(W_3\)</span> of all lower triangular <span class="process-math">\(3\times 3\)</span> matrices can be described as</div>
-<div class="displaymath process-math">
-\begin{equation*}
-W_3=\left\{ \begin{amatrix}[ccc]r\amp 0\amp 0\\ s\amp t\amp 0 \\ u\amp v\amp w  \end{amatrix}\colon r,s,t,u,v,w\in \R\right\}\text{.}
-\end{equation*}
-</div>
-</div>
+<div class="para">Row reduce <span class="process-math">\(A\)</span> to a matrix <span class="process-math">\(U\)</span> in <em class="emphasis">reduced</em> row echelon form using Gauss-Jordan elimination. (See <a href="" class="xref" data-knowl="./knowl/th_matrixforms.html" title="Theorem 1.2.10: Row equivalent matrix forms">Theorem 1.2.10</a>.) Since the set of solutions to <span class="process-math">\(A\boldx=\boldzero\)</span> is identical to the set of solutions to <span class="process-math">\(U\boldx=\boldzero\)</span> (apply <a href="" class="xref" data-knowl="./knowl/s_systems_th_rowops.html" title="Theorem 1.1.13: Row equivalence theorem">Theorem 1.1.13</a> to their corresponding linear systems), we see that <span class="process-math">\(\boldzero\)</span> is the only solution to <span class="process-math">\(U\boldx=\boldzero\text{.}\)</span> <a href="" class="xref" data-knowl="./knowl/proc_solveSystem.html" title="Procedure 1.3.5: Solving linear systems">Procedure 1.3.5</a> now implies <span class="process-math">\(U\)</span> has a leading one in each column. Since <span class="process-math">\(U\)</span> is <span class="process-math">\(n\times n\)</span> and in <em class="emphasis">reduced</em> row echelon form, it follows that <span class="process-math">\(U\)</span> must be the identity matrix. (Convince yourself of this.) Thus <span class="process-math">\(A\)</span> is row equivalent to <span class="process-math">\(U=I\text{,}\)</span> the identity matrix.</div>
 <span class="incontext"><a href="s_invertibility_theorem.html#p-1247" class="internal">in-context</a></span>
 </body>
 </html>

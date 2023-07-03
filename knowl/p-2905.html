@@ -13,20 +13,14 @@
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">Our definition of the angle between two vectors may remind you of the dot product angle formula for vectors in <span class="process-math">\(\R^3\text{:}\)</span>
+<div class="para">Given <span class="process-math">\(c\in \R\)</span> and <span class="process-math">\(\boldv\in V\)</span> we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/d_innerproduct.html">
+\begin{align*}
+\norm{c\boldv} \amp =\sqrt{\langle c\boldv, c\boldv\rangle}\\
+\amp=\sqrt{c^2\langle \boldv, \boldv\rangle} \amp (\knowl{./knowl/d_innerproduct.html}{\text{Definition 4.1.1}})\\
+\amp =\val{c}\sqrt{\langle \boldv, \boldv\rangle} \amp (\sqrt{c^2}=\val{c})\text{.}
+\end{align*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_dotproductangle.html">
-\begin{equation}
-\cos\theta=\frac{\boldx\cdot\boldy}{\norm{\boldx}\norm{\boldy}}\text{.}\tag{4.1.2}
-\end{equation}
-</div>
-<div class="para">Interestingly, whereas <a href="" class="xref" data-knowl="./knowl/eq_dotproductangle.html" title="Equation 4.1.2">(4.1.2)</a> is typically treated as a <em class="emphasis">theorem</em>, derived from properties of the dot product and the law of cosines, in a general inner product space the equation</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_dotproductangle.html">
-\begin{equation*}
-\cos\theta =\frac{\langle \boldv, \boldw\rangle}{\norm{\boldv}\norm{\boldw}}
-\end{equation*}
-</div>
-<div class="para">is understood as the <em class="emphasis">definition</em> of the angle between two vectors.</div>
 </div>
 <span class="incontext"><a href="s_innerproducts.html#p-2905" class="internal">in-context</a></span>
 </body>

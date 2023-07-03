@@ -11,10 +11,13 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/d_innerproduct.html ./knowl/th_weighted_dotproduct.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_trans_props.html ./knowl/th_trans_props.html">
 \begin{align*}
-\langle (3,1), (3,1) \rangle \amp =-9+2=-7\lt 0\\
-\langle (1,1/\sqrt{2}), (1,1/\sqrt{2})\rangle \amp=-1+2/2=0 
+\langle \boldy, \boldx  \rangle   \amp = \boldy^TK\boldx \\
+\amp = \boldy^TK^T\boldx \amp (K^T=K) \\
+\amp = (\boldx^T K\boldy)^T \amp (\knowl{./knowl/th_trans_props.html}{\text{Theorem 2.2.11}})\\
+\amp =\boldx^T K \boldy \amp \\
+\amp = \langle \boldx, \boldy \rangle 
 \end{align*}
 </div>
 <span class="incontext"><a href="s_innerproducts.html#md-186" class="internal">in-context</a></span>

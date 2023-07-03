@@ -13,18 +13,13 @@
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">Given vectors <span class="process-math">\(\boldv, \boldv'\in V\text{,}\)</span> we have</div>
-<div class="displaymath process-math">
-\begin{equation}
-T(\boldv)=T(\boldv') \iff \boldv'=\boldv+\boldu \text{ for some } \boldu\in \NS T\text{.}\tag{3.4.2}
-\end{equation}
+<div class="para">In the special case where <span class="process-math">\(T=T_A\)</span> is the matrix transformation of an <span class="process-math">\(m\times n\)</span> matrix <span class="process-math">\(A\text{,}\)</span> <a href="" class="xref" data-knowl="./knowl/th_nullspace_image.html" title="Theorem 3.4.8: Null space and image">Theorem 3.4.8</a> tells us that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_nullspace_image.html ./knowl/th_subspace_matrix_solutions.html ./knowl/th_nullspace_image.html">
+\begin{equation*}
+\NS A=\{\boldx\in \R^n\colon A\boldx=\boldzero\}
+\end{equation*}
 </div>
-<div class="para">Equivalently, given <span class="process-math">\(\boldw\in W\)</span> and <span class="process-math">\(\boldv\in V\)</span> satisfying <span class="process-math">\(T(\boldv)=\boldw\text{,}\)</span> the set <span class="process-math">\(X\)</span> of all <span class="process-math">\(\boldv'\)</span> satisfying <span class="process-math">\(T(\boldv')=\boldw\)</span> can be described as</div>
-<div class="displaymath process-math">
-\begin{equation}
-X=\{\boldv+\boldu\colon \boldu\in \NS T\}\text{.}\tag{3.4.3}
-\end{equation}
-</div>
+<div class="para">is a subspace. We knew this already from <a href="" class="xref" data-knowl="./knowl/th_subspace_matrix_solutions.html" title="Theorem 3.3.10: Solutions to A\boldx=\boldzero form a subspace">Theorem 3.3.10</a>, which we now understand as a special instance of <a href="" class="xref" data-knowl="./knowl/th_nullspace_image.html" title="Theorem 3.4.8: Null space and image">Theorem 3.4.8</a>.</div>
 </div>
 <span class="incontext"><a href="s_nullspace_image.html#p-2024" class="internal">in-context</a></span>
 </body>

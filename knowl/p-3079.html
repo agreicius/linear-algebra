@@ -11,26 +11,21 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h6 class="heading"><span class="type">Paragraph</span></h6>
+<h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">The orthogonal projection <span class="process-math">\(\boldw=\proj{\boldv}{W}\)</span> is the element of <span class="process-math">\(W\)</span> that is closest to <span class="process-math">\(\boldv\)</span> in the following sense: for all <span class="process-math">\(\boldw'\in W\)</span> we have</div>
-<div class="displaymath process-math">
+<div class="para">Consider the inner product space <span class="process-math">\(\R^3\)</span> with the dot product. Let <span class="process-math">\(W=\Span\{(1,1,1)\}\subset \R^3\text{,}\)</span> the line passing through the origin with direction vector <span class="process-math">\((1,1,1)\text{.}\)</span> The orthogonal complement <span class="process-math">\(W^\perp\)</span> is the set of vectors orthogonal to <span class="process-math">\((1,1,1)\text{.}\)</span> Using the definition of dot product, this is the set of solutions <span class="process-math">\((x,y,z)\)</span> to the equation</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_orthogonal_complement.html">
 \begin{equation*}
-d(\boldv, \proj{\boldv}{W})\leq d(\boldv, \boldw')\text{,}
+x+y+z=0\text{,}
 \end{equation*}
 </div>
-<div class="para">or equivalently,</div>
-<div class="displaymath process-math">
-\begin{equation}
-\norm{\boldv-\proj{\boldv}{W}}\leq\norm{\boldv-\boldw'}\text{.}\tag{4.3.3}
-\end{equation}
-</div>
-<div class="para">Accordingly, we define the <dfn class="terminology">distance</dfn> <span class="process-math">\(d(\boldv, W)\)</span> between <span class="process-math">\(\boldv\)</span> and <span class="process-math">\(W\)</span> to be</div>
-<div class="displaymath process-math">
+<div class="para">which we recognize as the plane passing through the origin with normal vector <span class="process-math">\((1,1,1)\text{.}\)</span> Note that we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_orthogonal_complement.html">
 \begin{equation*}
-d(\boldv, W)=d(\boldv, \proj{\boldv}{W})=\norm{\boldv-\proj{\boldv}{W}}\text{.}
+\dim W+\dim W^\perp=1+2=3,
 \end{equation*}
 </div>
+<div class="para">as predicted in <a href="" class="xref" data-knowl="./knowl/th_orthogonal_complement.html" title="Theorem 4.3.5: Orthogonal complement">Theorem 4.3.5</a>.</div>
 </div>
 <span class="incontext"><a href="s_orthogonal_projection.html#p-3079" class="internal">in-context</a></span>
 </body>

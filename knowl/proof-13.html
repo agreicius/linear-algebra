@@ -12,23 +12,25 @@
 </head>
 <body class="ignore-math">
 <article class="hiddenproof"><h4 class="heading"><span class="type">Proof</span></h4>
-<div class="para logical">
-<div class="para">We give a proof only for the the first equation: <span class="process-math">\(AX=Y\text{.}\)</span> To show the equivalence we must show the two implications <span class="process-math">\(AX=Y\implies X=A^{-1}Y\)</span> and <span class="process-math">\(X=A^{-1}Y\implies AX=Y\text{.}\)</span> To this end, we have</div>
+<div class="para logical"><ol class="decimal">
+<li><div class="para logical">
+<div class="para">We prove both implications of <span class="process-math">\(QX=QY \iff X=Y\)</span> separately. The reverse implication (<span class="process-math">\(\Leftarrow\)</span>) is obvious:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+X=Y\implies QX=QY\text{.}
+\end{equation*}
+</div>
+<div class="para">For the forward implication (<span class="process-math">\(\Rightarrow\)</span>), we have</div>
 <div class="displaymath process-math">
 \begin{align*}
-AX=Y  \amp\implies A^{-1}AX=A^{-1}Y \\
-\amp\implies IX=A^{-1}Y \\
-\amp\implies X=A^{-1}Y \text{,}
+QX=QY \amp \implies Q^{-1}(QX)=Q^{-1}(QY) \amp (Q \text{ inv.})\\
+\amp \implies Q^{-1}QX=Q^{-1}QY \\
+\amp \implies IX=IY\\
+\amp \implies X=Y \text{.}
 \end{align*}
 </div>
-<div class="para">and</div>
-<div class="displaymath process-math">
-\begin{align*}
-X=A^{-1}Y \amp\implies AX=AA^{-1}Y \\
-\amp\implies AX=IY \\
-\amp\implies AX=Y \text{.}
-\end{align*}
-</div>
-</div></article><span class="incontext"><a href="s_invertible_matrices.html#proof-13" class="internal">in-context</a></span>
+</div></li>
+<li><div class="para">The argument for right cancellation is exactly similar.</div></li>
+</ol></div></article><span class="incontext"><a href="s_invertible_matrices.html#proof-13" class="internal">in-context</a></span>
 </body>
 </html>

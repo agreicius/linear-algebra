@@ -13,9 +13,9 @@
 <body class="ignore-math">
 <div class="displaymath process-math">
 \begin{align*}
-\det A \amp=a_{11}\det A_{11} \\
-\amp =a_{11}(a_{22}a_{33}\cdots a_{n+1,n+1})\amp \text{(induction)} \\
-\amp =a_{11}a_{22}\cdots a_{n+1,n+1} 
+\det A \amp =a\det A_{11}-b\det A _{12}+c\det A_{13} \amp \text{(recursive case)}\\
+\amp =a\det \abcdmatrix{e}{f}{h}{i}-b\det\abcdmatrix{d}{f}{g}{i}+c\det\abcdmatrix{d}{e}{g}{h}\\
+\amp = a(ei-fh)-b(di-fg)+c(dh-eg) \amp \text{(\(n=2\) case)}
 \end{align*}
 </div>
 <span class="incontext"><a href="s_det.html#md-92" class="internal">in-context</a></span>

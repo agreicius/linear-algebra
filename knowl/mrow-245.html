@@ -13,19 +13,11 @@
 <body class="ignore-math">
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/th_invertibility_algorithm.html">
 \begin{align*}
-E_1\amp =\begin{amatrix}[rrr] 1\amp 0\amp 0\\
--1\amp 1\amp 0\\
-0\amp 0\amp 1\end{amatrix}  \amp   E_2\amp =\begin{amatrix}[rrr]1\amp 0\amp 0\\
-0\amp 1\amp 0\\
-1\amp 0\amp 1\end{amatrix}\\
-E_3\amp =\begin{amatrix}[rrr]1\amp 0\amp 0\\
-0\amp 0\amp 1\\
-0\amp 1\amp 0 \end{amatrix} \amp   E_4\amp =\begin{amatrix}[rrr] 1\amp 0\amp 0\\
-0\amp 1\amp -3\\
-0\amp 0\amp 1\end{amatrix}\\
-E_5\amp =\begin{amatrix}[rrr]1\amp -2\amp 0\\
-0\amp 1\amp 0\\
-0\amp 0\amp 1\end{amatrix}
+\begin{amatrix}[rrr|rrr]1\amp 2\amp 0\amp 1\amp 0\amp 0\\ 1\amp 2\amp 1\amp 0\amp 1\amp 0\\ -1\amp -1\amp 3\amp 0\amp 0\amp 1 \end{amatrix}  \amp \xrightarrow{r_2-r_1} \begin{amatrix}[rrr|rrr]1\amp 2\amp 0\amp 1\amp 0\amp 0\\ 0\amp 0\amp 1\amp -1\amp 1\amp 0\\ -1\amp -1\amp 3\amp 0\amp 0\amp 1 \end{amatrix}\\
+\amp \xrightarrow{r_3+r_1} \begin{amatrix}[rrr|rrr]1\amp 2\amp 0\amp 1\amp 0\amp 0\\ 0\amp 0\amp 1\amp -1\amp 1\amp 0\\ 0\amp 1\amp 3\amp 1\amp 0\amp 1 \end{amatrix}\\
+\text{ (three leading ones, thus invertible) }\amp \xrightarrow{r_2\leftrightarrow r_3} \begin{amatrix}[rrr|rrr]\boxed{1}\amp 2\amp 0\amp 1\amp 0\amp 0\\ 0\amp \boxed{1}\amp 3\amp 1\amp 0\amp 1\\ 0\amp 0\amp \boxed{1}\amp -1\amp 1\amp 0 \end{amatrix}\\
+\amp \xrightarrow{r_2-3r_3} \begin{amatrix}[rrr|rrr]1\amp 2\amp 0\amp 1\amp 0\amp 0\\ 0\amp 1\amp 0\amp 4\amp -3\amp 1\\ 0\amp 0\amp 1\amp -1\amp 1\amp 0 \end{amatrix}\\
+\amp \xrightarrow{r_1-2r_2} \begin{amatrix}[rrr|rrr]1\amp 0\amp 0\amp -7\amp 6\amp -2\\ 0\amp 1\amp 0\amp 4\amp -3\amp 1\\ 0\amp 0\amp 1\amp -1\amp 1\amp 0 \end{amatrix}
 \end{align*}
 </div>
 <span class="incontext"><a href="s_invertibility_theorem.html#md-81" class="internal">in-context</a></span>

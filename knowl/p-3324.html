@@ -13,21 +13,16 @@
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">Since <span class="process-math">\(B\)</span> is the standard basis, we see easily that <span class="process-math">\([x^2+x+1]_{B}=(1,1,1)\text{.}\)</span> Using <a href="" class="xref" data-knowl="./knowl/eq_changebasis_matrix_prop.html" title="Equation 5.3.1">(5.3.1)</a> we have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_changebasis_matrix_prop.html">
-\begin{align*}
-[x^2+x+1]_{B'} \amp = \underset{B\rightarrow B'}{P}\begin{bmatrix}
-1\\ 1\\ 1
-\end{bmatrix}\\
-\amp =\begin{bmatrix}
-1\\ 5\\ 7
-\end{bmatrix} \text{.}
-\end{align*}
-</div>
-<div class="para">Verify for yourself that we do indeed have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_changebasis_matrix_prop.html">
+<div class="para">Let <span class="process-math">\(I_V\colon V\rightarrow V\)</span> be the identity transformation: i.e., <span class="process-math">\(I_V(\boldv)=\boldv\)</span> for all <span class="process-math">\(\boldv\in V\text{.}\)</span> By <a href="" class="xref" data-knowl="./knowl/th_matrixrep.html" title="Theorem 5.2.6">Theorem 5.2.6</a> the matrix <span class="process-math">\([I_V]_B^{B'}\)</span> is the unique matrix satisfying</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_matrixrep.html">
 \begin{equation*}
-x^2+x+1=1(x-2)^2+5(x-2)+7\text{.}
+[I_V]_B^{B'}[\boldv]_B=[I_V(\boldv)]_{B'}=[\boldv]_{B'}\text{.}
+\end{equation*}
+</div>
+<div class="para">Comparing the formulas for <span class="process-math">\([I_V]_{B}^{B'}\)</span> and <span class="process-math">\(\)</span> we see directly that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_matrixrep.html">
+\begin{equation*}
+[I_V]_B^{B'} = \underset{B\rightarrow B'}{P}\text{.}
 \end{equation*}
 </div>
 </div>

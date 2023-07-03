@@ -10,26 +10,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body class="ignore-math"><article class="hiddenproof"><div class="para">By  <a href="" class="xref" data-knowl="./knowl/rm_matrix_transform_example.html" title="Remark 3.2.11">Remark 3.2.11</a>, we need only show that <span class="process-math">\(\rho_\alpha=T_A\)</span> for the matrix indicated.</div> <div class="para logical">
-<div class="para">If the point <span class="process-math">\(P=(x,y)\)</span> has polar coordinates <span class="process-math">\((r,\theta)\)</span> (so that <span class="process-math">\(x=r\cos\theta\)</span> and <span class="process-math">\(y=r\sin\theta\)</span>), then its image <span class="process-math">\(P'=\rho_{\alpha}(P)\)</span> under our rotation has polar coordinates <span class="process-math">\((r,\theta+\alpha)\text{.}\)</span> Translating back to rectangular coordinates, we see that</div>
-<div class="displaymath process-math">
+<body class="ignore-math"><article class="hiddenproof"><div class="para logical">
+<div class="para">We use the one-step technique. For any <span class="process-math">\(c,d\in \R\)</span> and <span class="process-math">\(\boldx_1, \boldx_2\in \R^n\text{,}\)</span> we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_matrix_alg_props.html ./knowl/th_matrix_alg_props.html">
 \begin{align*}
-\rho_\alpha(P)\amp= P' \\
-\amp =\left(r\cos(\theta+\alpha),r\sin(\theta+\alpha)\right)\\
-\amp =(r\cos\theta\cos\alpha-r\sin\theta\sin\alpha, r\sin\theta\cos\alpha+r\cos\theta\sin\alpha)
-\amp (\text{trig. identities}) \\
-\amp=(\cos\alpha\, x-\sin\alpha\, y, \sin\alpha\, x+\cos\alpha\, y)
-\amp (\text{since } x=r\cos\theta, y=r\sin\theta) \text{.}
+T_A(c\boldx_1+d\boldx_2) \amp =A(c\boldx_1+d\boldx_2)\\
+\amp =A(c\boldx_1)+A(d\boldx_2) \amp (\knowl{./knowl/th_matrix_alg_props.html}{\text{Theorem 2.2.1}}) \\
+\amp =cA\boldx_1+dA\boldx_2 \amp (\knowl{./knowl/th_matrix_alg_props.html}{\text{Theorem 2.2.1}})\\
+\amp =cT_A(\boldx_1)+dT_A(\boldx_2)\text{.}
 \end{align*}
 </div>
-<div class="para">It follows that <span class="process-math">\(\rho_{\alpha}=T_A\text{,}\)</span> where</div>
-<div class="displaymath process-math">
-\begin{equation*}
-A=\begin{amatrix}[rr]
-\cos\alpha\amp -\sin\alpha\\ \sin\alpha \amp \cos\alpha
-\end{amatrix}\text{,}
-\end{equation*}
-</div>
-<div class="para">as claimed.</div>
+<div class="para">This proves <span class="process-math">\(T_A\)</span> is a linear transformation.</div>
 </div></article></body>
 </html>

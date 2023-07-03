@@ -12,7 +12,59 @@
 </head>
 <body class="ignore-math">
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<div class="para"><span class="process-math">\(0.125\)</span></div>
+<div class="para logical">
+<div class="para">
+<em class="alert">SOLUTION:</em> False. If</div>
+<div class="displaymath process-math">
+\begin{equation*}
+E_1 = \left[\begin{array}{ccc}
+0 \amp 1 \amp 0\cr
+1 \amp 0 \amp 0\cr
+0 \amp 0 \amp 1
+\end{array}\right] \quad \mbox{and} \quad E_2 = \left[\begin{array}{ccc}
+1 \amp 0 \amp 0\cr
+0 \amp 0 \amp 1\cr
+0 \amp 1 \amp 0
+\end{array}\right],
+\end{equation*}
+</div>
+<div class="para">then</div>
+<div class="displaymath process-math">
+\begin{equation*}
+E_1 E_2 = \left[\begin{array}{ccc}
+0 \amp 1 \amp 0\cr
+1 \amp 0 \amp 0\cr
+0 \amp 0 \amp 1
+\end{array}\right] \left[\begin{array}{ccc}
+1 \amp 0 \amp 0\cr
+0 \amp 0 \amp 1\cr
+0 \amp 1 \amp 0
+\end{array}\right] = \left[\begin{array}{ccc}
+0 \amp 0 \amp 1\cr
+1 \amp 0 \amp 0\cr
+0 \amp 1 \amp 0
+\end{array}\right],
+\end{equation*}
+</div>
+<div class="para">but</div>
+<div class="displaymath process-math">
+\begin{equation*}
+E_2 E_1 = \left[\begin{array}{ccc}
+1 \amp 0 \amp 0\cr
+0 \amp 0 \amp 1\cr
+0 \amp 1 \amp 0
+\end{array}\right] \left[\begin{array}{ccc}
+0 \amp 1 \amp 0\cr
+1 \amp 0 \amp 0\cr
+0 \amp 0 \amp 1
+\end{array}\right] = \left[\begin{array}{ccc}
+0 \amp 1 \amp 0\cr
+0 \amp 0 \amp 1\cr
+1 \amp 0 \amp 0
+\end{array}\right] \neq E_1 E_2.
+\end{equation*}
+</div>
+</div>
 <span class="incontext"><a href="s_invertibility_theorem.html#p-1315" class="internal">in-context</a></span>
 </body>
 </html>

@@ -12,23 +12,23 @@
 </head>
 <body class="ignore-math">
 <article class="hiddenproof"><h4 class="heading"><span class="type">Proof</span></h4>
-<div class="para logical">
-<div class="para">Let <span class="process-math">\(W=\CS A\text{,}\)</span> and let <span class="process-math">\(\hat{\boldy}=\proj{\boldy}{W}\text{.}\)</span> The key observation is that a vector <span class="process-math">\(\hat{\boldx}\)</span> satisfies <span class="process-math">\(A\hat{\boldx}=\hat{\boldy}\)</span> if and only if</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_row_null_comp.html">
-\begin{equation*}
-\boldy=A\hat{\boldx}+(\boldy-A\hat{\boldx})
-\end{equation*}
-</div>
-<div class="para">is an orthogonal decomposition of <span class="process-math">\(\boldy\)</span> with respect to <span class="process-math">\(W=\CS A\text{;}\)</span> and this is true if and only if <span class="process-math">\(\boldy-A\hat{\boldx}\in (\CS A)^\perp\text{.}\)</span> Thus we have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_row_null_comp.html">
+<ol class="decimal">
+<li><div class="para logical">
+<div class="para">We must show that <span class="process-math">\(\proj{c\boldv+d\boldw}{W}=c\,\proj{\boldv}{W}+d\,\proj{\boldw}{W}\)</span> for all <span class="process-math">\(c,d\in\R\)</span> and <span class="process-math">\(\boldv,\boldw\in V\text{.}\)</span> We pick an orthogonal basis <span class="process-math">\(B=\{\boldv_1,\boldv_2, \dots, \boldv_r\}\)</span> of <span class="process-math">\(W\)</span> and compute, using formula <a href="" class="xref" data-knowl="./knowl/eq_ortho_proj_formula.html" title="Equation 4.3.2">(4.3.2)</a>:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_ortho_proj_formula.html">
 \begin{align*}
-A\hat{\boldx}=\hat{\boldy} \amp\iff \boldy-A\hat{\boldx}\in (\CS A)^\perp \\
-\amp\iff \boldy-A\hat{\boldx}\in \NS A^T \amp ((\CS A)^\perp=\NS A^T, \knowl{./knowl/th_row_null_comp.html}{\text{Theorem 4.3.7}}) \\
-\amp\iff A^T(\boldy-A\hat{\boldx})=\boldzero \\
-\amp \iff A^T\boldy-A^TA\hat{\boldx}=\boldzero\\
-\amp \iff A^TA\hat{\boldx}=A^T\boldy\text{.}
+\proj{c\boldv+d\boldw}{W} \amp=\sum_{i=1}^{r}\frac{\langle c\boldv+d\boldw, \boldv_i\rangle}{\langle\boldv_i, \boldv_i\rangle }\boldv_i \\
+\amp=\sum_{i=1}^r\frac{c\langle \boldv,\boldv_i\rangle+d\langle \boldw, \boldv_i\rangle}{\langle \boldv_i, \boldv_i\rangle}\boldv_i \\
+\amp =c\sum_{i=1}^r\frac{\angvec{\boldv, \boldv_i}}{\angvec{\boldv_i, \boldv_i}}\boldv_i+d\sum_{i=1}^r\frac{\angvec{\boldw, \boldv_i}}{\angvec{\boldv_i, \boldv_i}}\boldv_i\\
+\amp = c\,\proj{\boldv}{W}+d\,\proj{\boldw}{W}\text{.}
 \end{align*}
 </div>
-</div></article><span class="incontext"><a href="s_orthogonal_projection.html#proof-84" class="internal">in-context</a></span>
+</div></li>
+<li>
+<div class="para">By definition we have <span class="process-math">\(\proj{\boldv}{W}\in W\)</span> for all <span class="process-math">\(\boldv\in W\text{,}\)</span> and thus <span class="process-math">\(\im \operatorname{proj}_W \subseteq W\text{.}\)</span> For the other direction, if <span class="process-math">\(\boldw\in W\text{,}\)</span> then <span class="process-math">\(\boldw=\proj{\boldw}{W}\)</span> (<a href="" class="xref" data-knowl="./knowl/ex_orthoproj_props.html" title="Exercise 4.3.6.12">Exercise 4.3.6.12</a>), and thus <span class="process-math">\(\boldw\in \im\operatorname{proj}\text{.}\)</span> This proves <span class="process-math">\(\im\operatorname{proj}=W\text{.}\)</span>
+</div>
+<div class="para">The fact that <span class="process-math">\(\NS\operatorname{proj}=W^\perp\)</span> follows from the equivalence stated in (b) of <a href="" class="xref" data-knowl="./knowl/ex_orthoproj_props.html" title="Exercise 4.3.6.12">Exercise 4.3.6.12</a>.</div>
+</li>
+</ol></article><span class="incontext"><a href="s_orthogonal_projection.html#proof-84" class="internal">in-context</a></span>
 </body>
 </html>

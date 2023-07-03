@@ -13,19 +13,17 @@
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">For the other direction, assume <span class="process-math">\(A\)</span> is invertible. Then <a href="" class="xref" data-knowl="./knowl/th_invertibility.html" title="Theorem 2.4.5: Invertibility theorem">Theorem 2.4.5</a> implies <span class="process-math">\(A\)</span> is a product of elementary matrices:</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_invertibility.html ./knowl/cor_det_prod_elem.html ./knowl/th_det_row_ops.html">
-\begin{equation*}
-A=E_1E_2\cdots E_r\text{.}
-\end{equation*}
+<div class="para">Let <span class="process-math">\(A\)</span> be an <span class="process-math">\(n\times n\)</span> matrix, and suppose we have</div>
+<div class="displaymath process-math">
+\begin{equation}
+B=E_rE_{r-1}\cdots E_1\, A\tag{2.5.9}
+\end{equation}
 </div>
-<div class="para">Then <a href="" class="xref" data-knowl="./knowl/cor_det_prod_elem.html" title="Corollary 2.5.23: Determinant and products of elementary matrices">Corollary 2.5.23</a> implies</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_invertibility.html ./knowl/cor_det_prod_elem.html ./knowl/th_det_row_ops.html">
-\begin{equation*}
-\det A=\det E_1\, \det E_2\cdots \det E_1\text{.}
-\end{equation*}
-</div>
-<div class="para">Since <span class="process-math">\(\det E_i\ne 0\)</span> for all <span class="process-math">\(i\)</span> (<a href="" class="xref" data-knowl="./knowl/th_det_row_ops.html" title="Theorem 2.5.20: Row operations and determinant">Theorem 2.5.20</a>), we conclude <span class="process-math">\(\det A\ne 0\text{.}\)</span>
+<div class="para">for some collection of elementary matrices <span class="process-math">\(E_i\text{.}\)</span>  Then</div>
+<div class="displaymath process-math">
+\begin{equation}
+\det B=\det E_r\, \det E_{r-1}\cdots \det E_1\, \det A\text{.}\tag{2.5.10}
+\end{equation}
 </div>
 </div>
 <span class="incontext"><a href="s_det.html#p-1504" class="internal">in-context</a></span>
