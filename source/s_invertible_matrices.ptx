@@ -72,42 +72,111 @@
   The next theorem tells us that we <em>can</em> multiplicatively cancel a matrix if it is <em>invertible</em>.
 </p>
 <theorem xml:id="th_inverse_cancel">
-  <title>Solving with invertible matrices</title>
+  <title>Cancellation with invertible matrices</title>
   <statement>
     <p>
-      Suppose <m>A</m> is an invertible <m>n\times n</m> matrix. Then
+      Suppose <m>Q</m> is an invertible <m>n\times n</m> matrix. <ol>
+        <li>
+          <title>Left-cancellation</title>
+          <p>
+            Given <m>n\times r</m> matrices <m>X</m> and <m>Y</m>, we have 
       <me>
-        AX=Y \iff X=A^{-1}Y
-      </me>
-      for any <m>n\times r</m> matrices <m>X</m> and <m>Y</m>, and
-      <me>
-        ZA=W \iff Z=WA^{-1}
-      </me>
-       for any <m>r\times n</m> matrices <m>Z</m> and <m>W</m>.
-    </p>
-    <p>
-      In other words, matrix equations of this sort have <em>unique</em> solutions obtained by multiplying on the left or right by <m>A^{-1}</m>.
+        QX=QY \iff X=Y
+      </me>.
+          </p>
+        </li>
+        <li>
+          <title>Right-cancellation</title>
+          <p>
+            Given <m>m\times n</m> matrices <m>X</m> and <m>Y</m>, we have 
+            <me>
+              XQ=YQ \iff X=Y
+            </me>.
+          </p>
+        </li>
+      </ol>
     </p>
   </statement>
   <proof>
     <p>
-      We give a proof only for the the first equation: <m>AX=Y</m>. To show the equivalence we must show the two implications <m>AX=Y\implies X=A^{-1}Y</m> and <m>X=A^{-1}Y\implies AX=Y</m>. To this end, we have
-      <md>
-        <mrow> AX=Y  \amp\implies A^{-1}AX=A^{-1}Y </mrow>
-        <mrow> \amp\implies IX=A^{-1}Y </mrow>
-        <mrow>  \amp\implies X=A^{-1}Y </mrow>
-      </md>,
-      and
-      <md>
-        <mrow>X=A^{-1}Y \amp\implies AX=AA^{-1}Y </mrow>
-        <mrow> \amp\implies AX=IY </mrow>
-        <mrow>  \amp\implies AX=Y </mrow>
-      </md>.
+      <ol>
+        <li>
+          <p>
+            We prove both implications of <m>QX=QY \iff X=Y</m> separately. The reverse implication (<m>\Leftarrow</m>) is obvious: 
+            <me>
+              X=Y\implies QX=QY
+            </me>.
+           For the forward implication (<m>\Rightarrow</m>), we have 
+           <md>
+            <mrow> QX=QY \amp \implies Q^{-1}(QX)=Q^{-1}(QY) \amp (Q \text{ inv.})</mrow>
+            <mrow> \amp \implies Q^{-1}QX=Q^{-1}QY </mrow>
+            <mrow> \amp \implies IX=IY</mrow>
+            <mrow> \amp \implies X=Y </mrow>
+           </md>.
+          </p>
+        </li>
+        <li>
+          <p>
+            The argument for right cancellation is exactly similar. 
+          </p>
+        </li>
+      </ol>
     </p>
   </proof>
-
 </theorem>
-
+<p>
+  The next corollary shows how we can solve some matrix equations uniquely using invertible matrices. 
+</p>
+<corollary xml:id="cor_solving_invertible">
+  <title>Solving with invertible matrices</title>
+  <statement>
+    <p>
+      Suppose <m>Q</m> is an invertible <m>n\times n</m> matrix.
+    <ol>
+      <li>
+        <p>
+          If <m>X</m> and <m>Y</m> are <m>n\times r</m> matrices, then 
+          <me>
+            QX=Y \iff X=Q^{-1}Y
+          </me>.
+        </p>
+      </li>
+      <li>
+        <p>
+          If <m>X</m> and <m>Y</m> are <m>m\times n</m> matrices, then 
+          <me>
+            XQ=Y \iff X=YQ^{-1}
+          </me>.          
+        </p>
+      </li>
+    </ol>
+    </p>
+  </statement>
+  <proof>
+    <p>
+      <ol>
+        <li>
+          <p>
+            We have 
+            <md>
+              <mrow>QX=Y \amp \iff Q^{-1}QX=Q^{-1}Y \amp (<xref ref="th_inverse_cancel" text="global"/>, Q^{-1} \text{ inv.})</mrow>
+              <mrow> \amp \iff X=Q^{-1}Y</mrow>
+            </md>.
+          </p>
+        </li>
+        <li>
+            <p>
+            We have 
+            <md>
+              <mrow>XQ=Y \amp \iff XQQ^{-1}=YQ^{-1} \amp (<xref ref="th_inverse_cancel" text="global"/>, Q^{-1} \text{ inv.})</mrow>
+              <mrow> \amp \iff X=YQ^{-1}</mrow>
+            </md>.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </proof>
+</corollary>
 <p>
   Without any additional theory at our disposal, to show a matrix <m>A</m> is invertible we must exhibit an inverse. The onus is on us to find a matrix <m>B</m> satisfying both <m>AB=I</m> and <m>BA=I</m>. (Remember: since we cannot assume <m>BA=AB</m>, we really need to show both equations hold.)</p>
   <p>
@@ -269,7 +338,7 @@ A^-1=
       <p>
         Let <m>A,B</m> be <m>n\times n</m> matrices. If <m>A</m> and <m>B</m> are both invertible, then so is their product <m>AB</m>. Using logical notation:
         <men xml:id="eq_inv_implies_prod">
-          A, B  \text{ invertible } \implies AB \text{ invertible }
+          A\text{ and } B  \text{ invertible } \implies AB \text{ invertible }
         </men>.
         In fact when this is the case we have
         <men xml:id="eq_inv_prod_form">(AB)^{-1}=B^{-1}A^{-1}</men>.
@@ -599,14 +668,20 @@ ZeroDivisionError: matrix must be nonsingular
 
     <statement>
       <p>
-        Let <m>A</m> be invertible.
-        Then <m>A^T</m> is invertible
-        and <m>\left(A^T\right)^{-1}=\left(A^{-1}\right)^T</m>.
+        Let <m>A</m> be invertible. We have 
+        <me>
+          A \text{ invertible} \iff A^T \text{ invertible}
+        </me>,
+        in which case 
+        <men xml:id="eq_inverse_trans">\left(A^T\right)^{-1}=\left(A^{-1}\right)^T</men>.
       </p>
     </statement>
     <proof>
       <p>
-        Suppose <m>A</m> is invertible with inverse <m>A^{-1}</m>. The theorem claims <m>A^T</m> is invertible, and that in fact <m>(A^T)^{-1}=(A^{-1})^T</m>. To prove this, we need only show that
+        We prove both implications of the if and only if statement separately. 
+      </p>
+      <p>
+        Suppose <m>A</m> is invertible with inverse <m>A^{-1}</m>. To see that <m>A^T</m> is invertible, with inverse as specified <xref ref="eq_inv_trans"/>, we need only show that
         <me>
           A^T(A^{-1})^T)=(A^{-1})^T)A^T=I
         </me>.
@@ -621,6 +696,9 @@ ZeroDivisionError: matrix must be nonsingular
           <mrow>\amp =I_n^T=I_n \ \checkmark</mrow>
         </md>.
         In both chains of equality we make use of the obvious claim <m>I^T=I</m>.
+      </p>
+      <p>
+        For the other direction, assume <m>A^T</m> is invertible. Setting <m>B=A^T</m>, we see that <m>A=(A^T)^T=B^T</m>. By the first implication, we know that if <m>B</m> is invertible, then so is <m>B^T=A</m>. 
       </p>
     </proof>
   </theorem>

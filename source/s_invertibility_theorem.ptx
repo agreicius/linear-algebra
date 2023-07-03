@@ -451,7 +451,7 @@
     Suppose <m>A^{-1}</m> exists. Given any column vector <m>\boldb</m>, we have
     <md>
     <mrow>
-      A\boldx=\boldb \iff \boldx=A^{-1}\boldb \amp (<xref ref="th_inverse_cancel"/>)
+      A\boldx=\boldb \amp \iff \boldx=A^{-1}\boldb \amp (<xref ref="cor_solving_invertible"/>)
       </mrow>
     </md>,
     which shows that <m>\boldx=A^{-1}\boldb</m> is the unique solution to <m>A\boldx=\boldb</m>.
@@ -588,7 +588,7 @@
   </statement>
   <proof>
     <p>
-      In this proof we will make use of the following easy consequence of <xref ref="th_inverse_trans"/>: namely, <m>A</m> is invertible if and only if <m>A^T</m> is invertible. (The forward implication follows directly from the theorem; the reverse direction follows from the theorem applied to <m>B=A^T</m>.)
+      In this proof we will make use of the fact that a square matrix <m>A</m> is invertible if and only if <m>A^T</m> is invertible. (<xref ref="th_inverse_trans"/>)
     </p>
     <case>
      <title>Case: <m>A</m> is upper triangular</title>
@@ -833,7 +833,7 @@ The two inveribility algorithms above are nice examples of how a <em>theoretical
 <p>
   As a further consequence of <xref ref="th_invertibility"/>, we can at last strengthen the implication
   <me>
-    A, B \text{ invertible }\implies AB \text{ invertibe}
+    A \text{ and }  B \text{ invertible }\implies AB \text{ invertibe}
   </me>
   to an equivalence.
 </p>
@@ -844,7 +844,7 @@ The two inveribility algorithms above are nice examples of how a <em>theoretical
         Let <m>A</m> and <m>B</m> be <m>n\times n</m>.
         Then <m>AB</m> is invertible if and only if <m>A</m> and <m>B</m> are both invertible: <ie />,
         <me>
-          A, B \text{ invertible }\iff AB \text{ invertible}
+          A \text{ and }  B \text{ invertible }\iff AB \text{ invertible}
         </me>
       </p>
     </statement>
