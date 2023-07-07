@@ -322,9 +322,9 @@
 </remark>
 </subsection>
 <subsection xml:id="ss_rotations_reflections">
-  <title>Rotations and reflections in the plane</title>
+  <title>Rotations, reflections, and orthogonal projections</title>
 <p>
-  We now introduce two very important geometric examples of linear transformations: rotations and reflections in the plane. These operations are described in detail below; we use <xref ref="th_matrix_transform_i"/> to prove these operations are in fact linear transformations.
+  We now introduce a number of geometric examples of linear transformations of <m>\R^2</m> and <m>\R^3</m>: namely, rotations, reflections, and orthogonal projections. These operations are described in detail below; we will use <xref ref="th_matrix_transform_i"/> to prove these operations are in fact linear transformations.Our definitions of these operations will be very geometric in nature. As such we will go back and forth between point and arrow interpretations of elements of <m>\R^n</m>. (See <xref ref="rm_points_arrows"/>.)  In particular, we will interpret an <m>n</m>-tuple <m>(a_1,a_2,\dots, a_n)</m> both as the point <m>P=(a_1,a_2,\dots, a_n)</m> and as the position vector <m>\overrightarrow{OP}</m>.   
  </p>
 <definition xml:id="d_rotation">
   <title>Rotation in the plane</title>
@@ -338,11 +338,11 @@
         Fix an angle <m>\alpha</m> and define
         <me>\rho_\alpha\colon \R^2\rightarrow \R^2
         </me>
-        to be the function that takes an input <m>P=(x,y)</m>, considered as a point in the <m>xy</m>-plane, and returns the output <m>P'=(x',y')</m> obtained rotating <m>P</m> by an angle of <m>\alpha</m> about the origin.
+        to be the function that takes an input vector <m>\boldx=(x_1,x_2)</m>, considered as the position vector <m>\overrightarrow{OP}</m> of the point <m>P=(x_1,x_2)</m>, and returns the output <m>\boldy=(y_1,y_2)</m> obtained by rotating the vector <m>\boldx</m> by an angle of <m>\alpha</m> about the origin.
         The function <m>\rho_\alpha</m> is called <term>rotation about the origin </term> by the angle <m>\alpha</m>.
       </p>
       <p>
-      We can extract a formula from the rule defining <m>\rho_\alpha</m> by using polar coordinates: if <m>P</m> has polar coordinates <m>(r,\theta)</m>, then <m>P'=\rho_\alpha(P)</m> has polar coordinates <m>(r,\theta+\alpha)</m>.
+      We can extract a formula from the rule defining <m>\rho_\alpha</m> by using polar coordinates: if <m>\boldx</m> has polar coordinates <m>(r,\theta)</m>, then <m>\boldy=\rho_\alpha(\boldx)</m> has polar coordinates <m>(r,\theta+\alpha)</m>.
       </p>
   </statement>
 </definition>
@@ -363,14 +363,14 @@
       By  <xref ref="rm_matrix_transform_example"/>, we need only show that <m>\rho_\alpha=T_A</m> for the matrix indicated.
     </p>
     <p>
-    If the point <m>P=(x,y)</m> has polar coordinates <m>(r,\theta)</m> (so that <m>x=r\cos\theta</m> and <m>y=r\sin\theta</m>), then its image <m>P'=\rho_{\alpha}(P)</m> under our rotation has polar coordinates <m>(r,\theta+\alpha)</m>. Translating back to rectangular coordinates, we see that
+    If the vector <m>\boldx=(x,y)</m> has polar coordinates <m>(r,\theta)</m> (so that <m>x_1=r\cos\theta</m> and <m>x_2=r\sin\theta</m>), then its image <m>\boldy=\rho_{\alpha}(P)</m> under our rotation has polar coordinates <m>(r,\theta+\alpha)</m>. Translating back to rectangular coordinates, we see that
     <md>
-      <mrow> \rho_\alpha(P)\amp= P' </mrow>
+      <mrow> \rho_\alpha(\boldx)\amp= \boldy </mrow>
       <mrow>  \amp =\left(r\cos(\theta+\alpha),r\sin(\theta+\alpha)\right)</mrow>
       <mrow> \amp =(r\cos\theta\cos\alpha-r\sin\theta\sin\alpha, r\sin\theta\cos\alpha+r\cos\theta\sin\alpha)
       \amp (\text{trig. identities}) </mrow>
-      <mrow>  \amp=(\cos\alpha\, x-\sin\alpha\, y, \sin\alpha\, x+\cos\alpha\, y)
-      \amp (\text{since } x=r\cos\theta, y=r\sin\theta) </mrow>
+      <mrow>  \amp=(\cos\alpha\, x_1-\sin\alpha\, x_2, \sin\alpha\, x_1+\cos\alpha\, x_2)
+      \amp (\text{since } x_1=r\cos\theta, x_2=r\sin\theta) </mrow>
     </md>.
     It follows that <m>\rho_{\alpha}=T_A</m>, where
     <me>
@@ -384,7 +384,7 @@
 </theorem>
     <remark xml:id="rm_rotation_matrix">
   <p>
-      Observe that it is not at all obvious geometrically that the rotation operation is <em>linear</em>: <ie />, that it preserves addition and scalar multiplication of vectors in <m>\R^2</m>. Indeed, our proof does not even show this directly, but instead first gives a matrix formula for rotation and then uses <xref ref="th_transform_rotation"/>.
+      Observe that it is not at all obvious geometrically that the rotation operation is <em>linear</em>: <ie />, that it preserves addition and scalar multiplication of vectors in <m>\R^2</m>. Indeed, our proof does not even show this directly, but instead first gives a matrix formula for rotation and then uses <xref ref="th_matrix_transform_i"/>.
     </p>
     <p>
     Since matrices of the form
@@ -393,7 +393,7 @@
       \cos\alpha\amp -\sin\alpha\\ \sin\alpha \amp \cos\alpha
   \end{amatrix}
     </me>
-    can be understood as defining rotations of the plane, we call them <em>rotation matrices</em>.
+    can be understood as defining rotations of the plane, we call them <term>rotation matrices</term>.
     </p>
 </remark>
 <example>
@@ -431,7 +431,7 @@
       <mrow>\rho_{2\pi/3}(1,0) \amp =(-1/2, \sqrt{3}/2) </mrow>
       <mrow>\rho_{2\pi/3}(0,1) \amp =(-\sqrt{3}/2, -1/2) </mrow>
     </md>.
-    Confirm for yourself geometrically that these are the points you get by rotating <m>(1,0)</m> and <m>(0,1)</m> by an angle of <m>2\pi/3</m> about the origin.
+    Confirm for yourself geometrically that these are the vectors you get by rotating the vectors <m>(1,0)</m> and <m>(0,1)</m> by an angle of <m>2\pi/3</m> about the origin.
     </p>
 
   </solution>
@@ -447,10 +447,10 @@
       Fix an angle <m>\alpha</m> with <m>0\leq \alpha \leq \pi </m>, and let <m>\ell_\alpha</m> be the line through the origin that makes an angle of <m>\alpha</m> with the positive <m>x</m>-axis.
       </p>
       <p>
-        Define <m>r_\alpha\colon \R^2\rightarrow \R^2</m> to be the function that takes an input <m>P=(x,y)</m> and returns the output <m>P'=(x',y')</m> obtained by reflecting <m>P</m> through the line <m>\ell_\alpha</m>. In more detail: if <m>P</m> lies on <m>\ell_\alpha</m>, then <m>P'=P</m>; otherwise, <m>P'</m> is obtained by drawing the perpendicular through <m>\ell_\alpha</m> that passes through <m>P</m> and taking the point on the other side of this line whose distance to <m>\ell_\alpha</m> is equal to the distance from <m>P</m> to <m>\ell_\alpha</m>.
+        Define <m>r_\alpha\colon \R^2\rightarrow \R^2</m> to be the function that takes an input <m>\boldx=(x_1,x_2)</m>, considered as a point <m>P</m>, and returns the coordinates <m>\boldy=(y_1,y_2)</m> of the point <m>P'</m> obtained by reflecting <m>P</m> through the line <m>\ell_\alpha</m>. In more detail: if <m>P</m> lies on <m>\ell_\alpha</m>, then <m>P'=P</m>; otherwise, <m>P'</m> is obtained by drawing the perpendicular through <m>\ell_\alpha</m> that passes through <m>P</m> and taking the point on the other side of this line whose distance to <m>\ell_\alpha</m> is equal to the distance from <m>P</m> to <m>\ell_\alpha</m>.
       </p>
     <p>
-      The function <m>r_{\alpha}</m> is called <term>rotation through the line</term> <m>\ell_\alpha</m>.
+      The function <m>r_{\alpha}</m> is called <term>reflection through the line</term> <m>\ell_\alpha</m>.
     </p>
   </statement>
 </definition>
@@ -472,13 +472,13 @@
       See <xref ref="ex_transformation_reflection"/>.
     </p>
   </proof>
-
 </theorem>
+
 <example xml:id="eg_rot_refl">
   <title>Visualizing reflection and rotation</title>
   <statement>
     <p>
-      The <url href="https://www.geogebra.org" visual="geogebra.org">GeoGebra</url> interactive below helps visualize the operation of rotations and reflections on the plane by showing how they act on the triangle <m>\triangle ABC</m>.
+      The <url href="https://www.geogebra.org" visual="geogebra.org">GeoGebra</url> interactive below helps visualize rotations and reflections in <m>\R^2</m> (thought of as operations on points) by showing how they act on the triangle <m>\triangle ABC</m>.
       <ul>
         <li>
           <p>
@@ -503,7 +503,7 @@
       </ul>
     </p>
     <figure xml:id="fig_rot_refl">
-      <title>Eigenspaces of a symmetric matrix are orthogonal</title>
+      <title>Visualizing reflection and rotation</title>
       <interactive xml:id="geogebra_rot_refl" platform="geogebra" width="100%" aspect="4:3">
         <slate surface="geogebra" material="bwnxf7b9" aspect="4:3" marker="train-distance">
         enableLabelDrags(false);
@@ -512,8 +512,57 @@
       <caption>Visualizing reflection and rotation. Made with <url href="https://www.geogebra.org" visual="geogebra.org">GeoGebra</url>.</caption>
     </figure>
   </statement>
-
 </example>
+
+<p>
+  Next we consider the operation of orthogonally projecting a vector onto a line (in <m>\R^2</m> or <m>\R^3</m>) or a plane in <m>\R^3</m>. See <xref ref="eg_lines_planes_review"/> for a refresher on lines and planes in <m>\R^2</m> and <m>\R^3</m>. 
+</p>
+<definition xml:id="d_projection_onto_line">
+  <title>Projection onto a line</title>
+  <statement>
+    <p>
+      Let <m>\boldv=(a_1,a_2,\dots, a_n)</m> be a fixed nonzero vector in <m>\R^n</m>, where <m>n=2</m> or <m>n=3</m>. The set of all scalar multiples of <m>\boldv</m> defines a line <m>\ell</m> in <m>\R^n</m> passing through the origin: we call <m>\boldv</m> the <term>direction vector</term> of this line. Given a point <m>P=(x_1,x_2,\dots, x_n)\in \R^n</m> there is a unique point <m>Q\in \ell</m> such that the vector 
+      <me>\overrightarrow{QP}=(x_1-y_1,x_2-y_2,\dots, x_n-y_n)
+      </me> is orthogonal to <m>\boldv</m>: <ie/>, there is a unique <m>Q\in \ell</m> such that 
+      <me>\overrightarrow{QP}\cdot \boldv=0
+      </me>. 
+      The point <m>Q</m> is called the <term>orthogonal projection</term> of <m>P</m> onto the line <m>\ell</m>. We define <term>orthogonal projection onto <m>\ell</m></term> to be the function <m>\operatorname{proj}_{\ell}\colon \R^n\rightarrow \R^n</m> that maps a point <m>P</m> to its orthogonal projection <m>Q=\proj{P}{\ell}</m> onto <m>\ell</m>.    
+    </p>
+  </statement>
+</definition>
+<theorem xml:id="th_proj_line_linear">
+  <title>Orthogonal projection onto a line</title>
+  <statement>
+    <p>
+      Fix a nonzero vector <m>\boldv\in \R^n</m>, where <m>n=2</m> or <m>n=3</m>, and let <m>\ell</m> be the line obtained by taking all scalar multiples of <m>\boldv</m>. The orthogonal projection function <m>\operatorname{proj}_\ell\colon \R^n\rightarrow \R^n</m>. In fact, we have <m>\operatorname{proj}_\ell=T_A</m> where <m>A</m> is the <m>n\times n</m> matrix described below for each case (<m>n=2</m> and <m>n=3</m>). 
+      <ul>
+        <li>
+          <title>Case: <m>n=2</m></title>
+          <p>
+            Assume <m>\boldv=(a,b)\ne (0,0)</m>. We have <m>\operatorname{proj}_\ell=T_A</m>, where 
+            <me>
+              A=\frac{1}{a^2+b^2}begin{bmatrix}a^2\amp ab \\ ab \amp b^2 \end{bmatrix}
+            </me>.            
+          </p>
+        </li>
+         <li>
+          <title>Case: <m>n=3</m></title>
+          <p>
+            Assume <m>\boldv=(a,b,c)\ne (0,0,0)</m>. We have <m>\operatorname{proj}_\ell=T_A</m>, where 
+            <me>
+              A=\frac{1}{a^2+b^2+c^2}begin{bmatrix}a^2\amp ab \\ ac \amp ab\amp b^2 \amp bc \\ ac\amp bc\amp c^2 \end{bmatrix}
+            </me>.            
+          </p>
+        </li>
+      </ul>  
+    </p>
+  </statement>
+  <proof>
+    <p>
+      In multivariable we learn a dot product formula for finding the orthogonal projection of 
+    </p>
+  </proof>
+</theorem>
 
 </subsection>
 <subsection xml:id="ss_transform_exotic_examples">

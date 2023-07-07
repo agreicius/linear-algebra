@@ -272,6 +272,77 @@ In each of the examples below we carefully lay out the details of items (1)-(3) 
     </case>
   </statement>
 </example>
+<remark xml:id="rm_points_arrows">
+  <title>Visualizing <m>\R^n</m>: points and arrows</title>
+  <p>
+     Fix <m>n\in\{2,3\}</m>. Once we choose a coordinate system for <m>\R^n</m> (complete with origin and coordinate axes), we can visually represent an element <m>(a_1,a_2,\dots, a_n)</m> of <m>\R^n</m> either as a <em>point</em> <m>P=(a_1,a_2,\dots, a_n)</m> or as an <em>arrow</em> (or <em>directed line segment</em>) <m>\overrightarrow{QR}</m> that begins at a point <m>Q=(b_1,b_2,\dots, b_n)</m> of our choosing and ends at the point <m>R=(a_1+b_1,a_2+b_2,\dots, a_n+b_n)</m>. When we choose the initial point to be the origin <m>O=(0,0,\dots, 0)</m>, the corresponding arrow is just <m>\overrightarrow{OP}</m>, called the <term>position vector</term> of <m>P=(a_1,a_2,\dots, a_n)</m>. <xref ref="fig_points_arrows"/> illustrates a variety of visual representations of the element <m>(1,2)</m> of <m>\R^2</m>. 
+     </p> 
+     <figure  xml:id="fig_points_arrows">
+     <title>Visualizing <m>\R^n</m>: points and arrows</title>
+     <caption>Point and arrow representations of <m>(1,2)</m></caption>
+     <image width="80%" xml:id="im_points_arrows">
+      <description>Point and arrow representations of <m>(1,2)</m></description>
+      <sageplot>
+a=(1,2)
+b=(-1/2,0)
+v=vector(a)
+w=vector(b)
+O=vector((0,0))
+P=point(a, size="100")
+Q=point(b, size="100")
+R=point(v+w, size="100")
+Or=point((0,0), size="100")
+v=vector(a)
+w=vector(b)
+T1=text("$P=(1,2)$",v+vector((.2,0)), color="black", fontsize="15", ticks=[[],[]])
+T2=text("$\\overrightarrow{OP}=(1,2)$", .5*v+vector((.2,0)), color="black", fontsize="15")
+T3=text("$Q=(-\\frac{1}{2},0)$", w+vector((0,-.2)), color="black", fontsize="15")
+T4=text("$\\overrightarrow{QR}=(1,2)$", w+.5*v+vector((.2,0)), color="black", fontsize="15")
+T5=text("$R=\\left(\\frac{1}{2},2\\right)$",v+w+vector((.2,0)), color="black", fontsize="15", ticks=[[],[]])
+T6=text("$O=(0,0)$",vector((0,-.2)), color="black", fontsize="15", ticks=[[],[]])
+A1=arrow(O,v,ticks=[None,None], color="red")
+A2=arrow(w,w+v, ticks=[None,None], color="red")
+A1+A2+P+Q+R+Or+T1+T2+T3+T4+T5+T6
+      </sageplot>
+     </image>
+     </figure>
+     <p>
+      As a general rule of thumb, when trying to visualize <em>subsets</em> of <m>\R^n</m> (<eg/>, lines and planes), it helps to think of <m>n</m>-tuples as <em>points</em>; and when trying to visualize <em>vector arithmetic</em> in <m>\R^n</m>, it helps to think of <m>n</m>-tuples as <em>arrows</em>. 
+      Indeed, when using the arrow representation of <m>n</m>-tuples, vector addition can be visualized using the familiar <q>tip to tail</q> method; and vector scalar multiplication can be understood as scaling arrows. <xref ref="fig_visual_vector_arith"/> summarizes these visualization techniques in the case <m>n=3</m>. 
+    </p>
+  <figure  xml:id="fig_visual_vector_arith">
+  <title>Visualizing vector arithmetic</title>
+  <caption>Visualizing vector arithmetic between <m>\boldv=\overrightarrow{OP}</m> and <m>\boldw=\overrightarrow{OQ}</m></caption>
+  <image width="100%" xml:id="im_visual_vector_arith">
+    <description>Visualizing vector arithmetic</description>
+    <sageplot variant="3d" aspect="1.0">
+from sage.plot.plot3d.plot3d import axes
+a=[1,2,1.5]
+b=[-2,1,1]
+v=vector(a)
+w=vector(b)
+O=vector([0,0,0])
+P=point(a, color="blue", size="10")
+Q=point(b, color="blue", size="10")
+A1=arrow(O,v, color="red", frame=False)
+A2=arrow(O,w, color="blue")
+A3=arrow(O,(-1/2)*v, color="yellow")
+A4=arrow(v,v+w,color="blue")
+A5=arrow(w,v+w,color="red")
+A6=arrow(O,v+w,color="green")
+T1=text3d("P",v+vector([.25,.25,0]),color="black",fontsize=20)
+T2=text3d("Q",w+vector([0,0,.25]),color="black",fontsize=20)
+T3=text3d("v",1/2*v+vector([.2,0,0]),color="black",fontsize=20, fontweight="bold")
+T4=text3d("w",1/2*w+vector([0,-.2,0]),color="black",fontsize=20, fontweight="bold")
+T5=text3d("v+w",1/2*(v+w)+vector([-.1,0,.2]),color="black",fontsize=20, fontweight="bold")
+T6=text3d("-0.5v",(-1/4)*v+vector([0,0,.2]),color="black", fontsize=20, fontweight="bold")
+T7=text3d("v",w+1/2*v+vector([-.2,0,0]),color="black",fontsize=20, fontweight="bold")
+T8=text3d("w",v+1/2*w+vector([0,.2,0]),color="black",fontsize=20, fontweight="bold")
+A1+A2+A3+A4+A5+A6+axes(1,1,color="black")+P+Q+T1+T2+T3+T4+T5+T6+T7+T8
+  </sageplot>
+  </image>
+  </figure>
+</remark>
 <p>
   Why introduce a new vector space, <m>\R^n</m>, if it is essentially the same thing as <m>M_{1n}</m>, or even <m>M_{n1}</m> for that matter? Recall that a matrix is not simply an ordered sequence: it is an ordered sequence arranged in a very particular way. This subtlety is baked into the very definition of matrix equality, and allows us to say that <me>
     \begin{amatrix}[rr]1\amp 2  \end{amatrix}\ne \begin{amatrix}[r]1\\ 2  \end{amatrix}
