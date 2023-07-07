@@ -197,6 +197,7 @@
   Before moving to more examples, we describe in what precise sense the matrix <m>A=[T]_B^{B'}</m> models the original linear transformation <m>T\colon V\rightarrow W</m>, and how we can use <m>A</m> to answer questions about <m>T</m>. The next theorem is key to understanding this.
 </p>
 <theorem xml:id="th_matrixrep">
+  <title>Defining property of matrix representation</title>
   <statement>
     <p>
       Let <m>T\colon V\rightarrow W</m> be a linear transformation, where <m>\dim V=n</m> and <m>\dim W=m</m>, and let <m>B, B'</m> be ordered bases for <m>V</m> and <m>W</m>, respectively.

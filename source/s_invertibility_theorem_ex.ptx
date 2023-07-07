@@ -112,7 +112,7 @@
       Use the inverse algorithm to determine whether each matrix is invertible, and to compute its inverse if possible.
       </p>
       <p>
-        You are not required to follow Gaussian elimination to the letter, and you may perform multiple operations at the same time, as long as they are independent of one another. For example, do not do <m>r_2\rightarrow r_2-r+1</m> and <m>r_3\rightarrow r_3+2r_2</m> in the same step.
+        You are not required to follow Gaussian elimination to the letter, and you may perform multiple operations at the same time, as long as they are independent of one another. For example, do not do <m>r_2\rightarrow r_2-r_{1}</m> and <m>r_3\rightarrow r_3+2r_2</m> in the same step.
       </p>
     </introduction>
     <exercise>

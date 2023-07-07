@@ -25,7 +25,7 @@
   <subsection xml:id="ss_linear_transform">
     <title>Linear transformations</title>
     <p>
-       First and foremost, a linear transformation is a function. Before continuing on in this section, you may want to reaquiant yourself with the basic function concepts and notation outlined in <xref ref="s_functions" text="title"/>.
+       First and foremost, a linear transformation is a function. Before continuing on in this section, you may want to reacquaint yourself with the basic function concepts and notation outlined in <xref ref="s_functions">Section</xref>.
     </p>
      
   <definition xml:id="d_linear_transform">
@@ -90,7 +90,7 @@
       </p>
     </statement>
   </definition>
-  <remark xml:id="rm_transform_zero_identity">
+  <example xml:id="rm_transform_zero_identity">
   <title>Model of linear transformation proof</title>
     <p>
     Let's show that the zero and identity functions are indeed linear transformations.
@@ -113,7 +113,7 @@
           Given <m>c\in \R</m> and <m>\boldv\in V</m>, we have
           <md>
             <mrow>T_0(c\boldv) \amp = \boldzero_W \amp (\text{by def.})</mrow>
-            <mrow> \amp = c\boldzero_W \amp (<xref ref="th_vectorspace_props"/>) </mrow>
+            <mrow> \amp = c\boldzero_W \amp (<xref ref="th_vectorspace_props" text="global"/>) </mrow>
             <mrow>  \amp = cT_0(\boldv) \amp (\text{by def.})</mrow>
           </md>.
         </p>
@@ -145,7 +145,7 @@
     </ol>
     This proves that <m>\id_V\colon V\rightarrow V</m> is a linear transformation.
     </p>
-</remark>
+</example>
 <theorem xml:id="th_transform_basic_props">
   <title>Basic properties of linear transformations</title>
   <statement>

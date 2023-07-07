@@ -20,7 +20,6 @@
           Let <m>V</m> be a vector space.
           A subset <m>W\subseteq V</m> is a
           <term>subspace</term> of <m>V</m> if the following conditions hold:
-        </p>
         <ol marker="i">
           <li>
             <title><m>W</m> contains the zero vector</title>
@@ -43,6 +42,7 @@
         </p>
       </li>
     </ol>
+    </p>
   </statement>
 </definition>
 <example>
@@ -57,7 +57,6 @@
   <solution>
     <p>
       We must show properties (i)-(iii) hold for <m>W</m>.
-    </p>
     <ol marker="i">
       <li>
         <p>
@@ -87,6 +86,7 @@
         </p>
       </li>
     </ol>
+    </p>
   </solution>
 </example>
 <example>
@@ -100,7 +100,8 @@
     </p>
   </statement>
   <solution>
-    <ol marker="i">
+    <p>
+      <ol marker="i">
       <li>
         <p>
           Clearly <m>\boldzero=(0,0)\in W</m>.
@@ -117,6 +118,8 @@
         </p>
       </li>
     </ol>
+    </p>
+    
   </solution>
 </example>
 
@@ -125,7 +128,6 @@
   <statement>
     <p>
       As with proofs regarding linearity of functions, we can merge conditions (ii)-(iii) of <xref ref="d_subspace"/> into a single statement about linear combinations, deriving the following two-step method for proving a set <m>W</m> is a subspace of a vector space <m>V</m>.
-    </p>
     <ol marker="i">
       <li>
         <p>
@@ -142,6 +144,7 @@
         </p>
       </li>
     </ol>
+    </p>
   </statement>
 </algorithm>
 <paragraphs xml:id="ss_vid_eg_subspace1">
@@ -161,24 +164,22 @@
 
 <remark xml:id="rm_subspace_is_vectorspace">
   <title>Subspaces are vector spaces</title>
-  <statement>
-    <p>
-      If <m>W</m> is a subspace of a vector space <m>V</m>, then it <em>inherits</em> a vector space structure from <m>V</m> by simply  <em>restricting</em> the vector operations defined on <m>V</m> to the subset <m>W</m>.
-    </p>
-    <p>
-      It is important to understand how conditions (ii)-(iii) of <xref ref="d_subspace"/> come into play here. Without them we would not be able to say that restricting the vector operations of <m>V</m> to elements of <m>W</m> actually gives rise to well-defined operations on <m>W</m>. To be well-defined the operations must output elements that lie not just in <m>V</m>, but in <m>W</m> itself. This is precisely what being closed under addition and scalar multiplication guarantees.
-    </p>
-    <p>
-      Once we know restriction gives rise to well-defined operations on <m>W</m>, verifying the axioms of  <xref ref="d_vector_space"/> mostly amounts to observing that if a condition is true for all <m>\boldv</m> in <m>V</m>, it is certainly true for all <m>\boldv</m> in the subset <m>W</m>.
-    </p>
-    <p>
-      The <q>existential axioms</q> (iii) and (iv) of <xref ref="d_vector_space"/>, however, require special consideration. By definition, a subspace <m>W</m> contains the zero vector of <m>V</m>, and clearly this still acts as the zero vector when we restrict the vector operations to <m>W</m>. What about vector inverses? We know that for any <m>\boldv\in W</m> there is a vector inverse <m>-\boldv</m> lying somewhere in <m>V</m>. We must show that in fact <m>-\boldv</m> lies in <m>W</m>: <ie /> we need to show that the operation of taking the vector inverse is well-defined on <m>W</m>. We prove this as follows:
-      <md>
-      <mrow>\boldv\in W \amp\implies (-1)\boldv\in W \amp (<xref ref="d_subspace"/>, \text{(iii) } )</mrow>
-      <mrow> \amp\implies -\boldv\in W \amp (<xref ref="th_vectorspace_props"/>, (iii)) </mrow>
-      </md>.
-    </p>
-  </statement>
+  <p>
+    If <m>W</m> is a subspace of a vector space <m>V</m>, then it <em>inherits</em> a vector space structure from <m>V</m> by simply  <em>restricting</em> the vector operations defined on <m>V</m> to the subset <m>W</m>.
+  </p>
+  <p>
+    It is important to understand how conditions (ii)-(iii) of <xref ref="d_subspace"/> come into play here. Without them we would not be able to say that restricting the vector operations of <m>V</m> to elements of <m>W</m> actually gives rise to well-defined operations on <m>W</m>. To be well-defined the operations must output elements that lie not just in <m>V</m>, but in <m>W</m> itself. This is precisely what being closed under addition and scalar multiplication guarantees.
+  </p>
+  <p>
+    Once we know restriction gives rise to well-defined operations on <m>W</m>, verifying the axioms of  <xref ref="d_vector_space"/> mostly amounts to observing that if a condition is true for all <m>\boldv</m> in <m>V</m>, it is certainly true for all <m>\boldv</m> in the subset <m>W</m>.
+  </p>
+  <p>
+    The <q>existential axioms</q> (iii) and (iv) of <xref ref="d_vector_space"/>, however, require special consideration. By definition, a subspace <m>W</m> contains the zero vector of <m>V</m>, and clearly this still acts as the zero vector when we restrict the vector operations to <m>W</m>. What about vector inverses? We know that for any <m>\boldv\in W</m> there is a vector inverse <m>-\boldv</m> lying somewhere in <m>V</m>. We must show that in fact <m>-\boldv</m> lies in <m>W</m>: <ie /> we need to show that the operation of taking the vector inverse is well-defined on <m>W</m>. We prove this as follows:
+    <md>
+    <mrow>\boldv\in W \amp\implies (-1)\boldv\in W \amp (<xref ref="d_subspace"/>, \text{(iii) } )</mrow>
+    <mrow> \amp\implies -\boldv\in W \amp (<xref ref="th_vectorspace_props"/>, (iii)) </mrow>
+    </md>.
+  </p>
 </remark>
 <p>
   We now know how to determine whether a given subset of a vector space is in fact a subspace. We are also interested in means of constructing subspaces from some given ingredients. The result below tells us that taking the intersection of a given collection of subspaces results in a subspace. In <xref ref="ss_nullspace_image"/> we see how a linear transformation automatically gives rise to two subspaces.
@@ -201,21 +202,19 @@
 </theorem>
 <remark xml:id="rm_subspace_union">
   <title>Unions of subspaces</title>
-  <statement>
-    <p>
-      While the intersection of subspaces is again a subspace, the same is not true for unions of subspaces.
-    </p>
-    <p>
-      For example, take <m>V=\R^2</m>,
-      <m>W_1=\{(t,t)\colon t\in\R\}</m> and <m>W_2=\{(t,-t)\colon t\in\R\}</m>.
-      Then each <m>W_i</m> is a subspace,
-      but their union <m>W_1\cup W_2</m> is not.
-    </p>
-    <p>
-      Indeed, observe that <m>\boldw_1=(1,1)\in W_1\subset W_1\cup W_2</m> and <m>\boldw_2=(1,-1)\in W_2\subset W_1\cup W_2</m>,
-      but <m>\boldw_1+\boldw_2=(2,0)\notin W_1\cup W_2</m>. Thus <m>W_1\cup W_2</m> is not closed under addition. (Interestingly, it is closed under scalar multiplication.)
-    </p>
-  </statement>
+  <p>
+    While the intersection of subspaces is again a subspace, the same is not true for unions of subspaces.
+  </p>
+  <p>
+    For example, take <m>V=\R^2</m>,
+    <m>W_1=\{(t,t)\colon t\in\R\}</m> and <m>W_2=\{(t,-t)\colon t\in\R\}</m>.
+    Then each <m>W_i</m> is a subspace,
+    but their union <m>W_1\cup W_2</m> is not.
+  </p>
+  <p>
+    Indeed, observe that <m>\boldw_1=(1,1)\in W_1\subset W_1\cup W_2</m> and <m>\boldw_2=(1,-1)\in W_2\subset W_1\cup W_2</m>,
+    but <m>\boldw_1+\boldw_2=(2,0)\notin W_1\cup W_2</m>. Thus <m>W_1\cup W_2</m> is not closed under addition. (Interestingly, it is closed under scalar multiplication.)
+  </p>
 </remark>
 </subsection>
 <subsection xml:id="ss_subspaces_tuples">
@@ -260,19 +259,15 @@
   </theorem>
       <remark xml:id="rm_subspace_matrix_solution">
       <title>Solutions to homogeneous linear systems form a subspace</title>
-    <statement>
-      <p>
-        Recall from <xref ref="ss_systems_to_matrix_eqns" text="title"/> that the set of solutions to a matrix equation <m>A\boldx=\boldb</m> is the same thing as the set of solutions to the system of linear equations with augmented matrix <m>\begin{amatrix}[c|c] A\amp \boldb  \end{amatrix}</m>. Thus, <xref ref="th_subspace_matrix_solutions"/> implies that the set of solutions to a homogeneous system of linear equations forms a subspace.
-      </p>
-    </statement>
+    <p>
+      Recall from <xref ref="ss_systems_to_matrix_eqns" text="title"/> that the set of solutions to a matrix equation <m>A\boldx=\boldb</m> is the same thing as the set of solutions to the system of linear equations with augmented matrix <m>\begin{amatrix}[c|c] A\amp \boldb  \end{amatrix}</m>. Thus, <xref ref="th_subspace_matrix_solutions"/> implies that the set of solutions to a homogeneous system of linear equations forms a subspace.
+    </p>
   </remark>
     <remark xml:id="rm_subspace_alt">
   <title>Alternative subspace method</title>
-    <statement>
     <p>
         <xref ref="th_subspace_matrix_solutions"/> provides an alternative way of showing that a subset <m>W\subseteq \R^n</m>: namely, find an <m>m\times n</m> matrix <m>A</m> for which we have <m>W=\{\boldx\in \R^n\colon A\boldx=\boldzero\}</m>. This is often much faster than using the two-step technique.
     </p>
-  </statement>
 </remark>
   <example>
     <statement>
@@ -297,7 +292,8 @@
       </p>
     </statement>
     <solution>
-      <ol>
+      <p>
+        <ol>
         <li>
           <p>
             It is easy to see that
@@ -325,6 +321,7 @@ Geometrically this is the line in <m>\R^3</m> passing through <m>(0,0,0)</m> wit
           </p>
         </li>
       </ol>
+      </p>
 
     </solution>
   </example>
@@ -365,12 +362,13 @@ Geometrically this is the line in <m>\R^3</m> passing through <m>(0,0,0)</m> wit
     In <xref ref="s_invertibility_theorem" text="title"/> we met three families of square matrices: namely, the diagonal, upper triangular, and lower triangular matrices. (See <xref ref="d_diagonal_triangular"/>). We now introduce three more naturally occuring families. Before doing so, we give an official definition of the trace function. (See <xref ref="ex_transformation_trace"/>.)
   </p>
   <definition xml:id="d_trace">
+  <title>Trace of a matrix</title>
     <idx><h>trace of a matrix</h></idx>
     <notation>
       <usage><m>\tr A</m></usage>
       <description>the trace of <m>A</m></description>
     </notation>
-    <title>Trace of a matrix</title>
+    
     <statement>
       <p>
         Let <m>A=[a_{ij}]</m> be an <m>n\times n</m> matrix. The <term>trace</term> of <m>A</m>, denoted <m>\tr A</m> is defined as the sum of the diagonal entries of <m>A</m>: <ie />,
@@ -381,14 +379,14 @@ Geometrically this is the line in <m>\R^3</m> passing through <m>(0,0,0)</m> wit
     </statement>
   </definition>
   <definition xml:id="d_tracezero_symmetric_skewsymmetric">
+  <title>Trace-zero, symmetric, and skew-symmetric</title>
     <idx><h>trace-zero matrix</h></idx>
     <idx><h>symmetric matrix</h></idx>
     <idx><h>skew-symmetric matrix</h></idx>
-    <title>Trace-zero, symmetric, and skew-symmetric</title>
     <statement>
       <p>
         Fix an integer <m>n\geq 1</m>.
-      </p>
+      
       <ol>
         <li>
           <p>
@@ -406,6 +404,7 @@ Geometrically this is the line in <m>\R^3</m> passing through <m>(0,0,0)</m> wit
           </p>
         </li>
       </ol>
+      </p>
     </statement>
   </definition>
   <example>
@@ -428,11 +427,9 @@ Geometrically this is the line in <m>\R^3</m> passing through <m>(0,0,0)</m> wit
     </statement>
   </example>
       <remark xml:id="rm_skew-symmetric">
-    <statement>
-      <p>
-        Assume <m>A</m> is a skew-symmetric <m>n\times n</m> matrix. By definition, for all <m>1\leq i\leq n</m> we must have <m>[A]_{ii}=-[A]_{ii}</m>. It follows that <m>[A]_{ii}=0</m> for all <m>1\leq i\leq n</m>. Thus the diagonal entries of a skew-symmetric matrix are always equal to 0.
-      </p>
-    </statement>
+    <p>
+      Assume <m>A</m> is a skew-symmetric <m>n\times n</m> matrix. By definition, for all <m>1\leq i\leq n</m> we must have <m>[A]_{ii}=-[A]_{ii}</m>. It follows that <m>[A]_{ii}=0</m> for all <m>1\leq i\leq n</m>. Thus the diagonal entries of a skew-symmetric matrix are always equal to 0.
+    </p>
   </remark>
   <p>
     It will come as no surprise that all of the afore mentioned matrix families are in fact subspaces of <m>M_{nn}</m>.
@@ -444,7 +441,7 @@ Geometrically this is the line in <m>\R^3</m> passing through <m>(0,0,0)</m> wit
     <statement>
       <p>
       Fix an integer <m>n\geq 1</m>.  Each of the following subsets of <m>M_{nn}</m> is a subspace.
-      </p>
+  
       <ol>
         <li>
           <title>Diagonal matrices</title>
@@ -483,6 +480,7 @@ Geometrically this is the line in <m>\R^3</m> passing through <m>(0,0,0)</m> wit
           </p>
         </li>
       </ol>
+      </p>
     </statement>
     <proof>
       <p>
@@ -500,6 +498,7 @@ Geometrically this is the line in <m>\R^3</m> passing through <m>(0,0,0)</m> wit
     Let <m>X</m> be an <em>nondegenerate</em> interval of <m>\R</m>: <ie />, an interval containing at least two elements. Recall that <m>F(X,\R)</m> is the set of <em>all</em> functions from <m>X</m> to <m>\R</m>. This is a pretty unwieldy vector space, containing some pathological characters, and when studying functions on an interval we will often restrict our attention to certain more well-behaved subsets: <eg />, continuous, differentiable, or infinitely differentiable functions. Not surprisingly, these subsets turn out to be subspaces of <m>F(X,\R)</m>.
   </p>
   <definition xml:id="d_subspace_functions">
+  <title>Function subspaces</title>
     <idx><h>function space</h><h>continuous</h></idx>
     <idx><h>function space</h><h><m>C^n</m></h></idx>
     <idx><h>function space</h><h>infinitely differentiable</h></idx>
@@ -508,7 +507,6 @@ Geometrically this is the line in <m>\R^3</m> passing through <m>(0,0,0)</m> wit
     <statement>
       <p>
         Let <m>X\subseteq \R</m> be a nondegenerate interval.
-      </p>
       <ol>
         <li>
           <p>
@@ -537,6 +535,7 @@ Geometrically this is the line in <m>\R^3</m> passing through <m>(0,0,0)</m> wit
           </p>
         </li>
       </ol>
+      </p>
     </statement>
   </definition>
   <theorem xml:id="th_subspace_functions">
@@ -601,37 +600,34 @@ Geometrically this is the line in <m>\R^3</m> passing through <m>(0,0,0)</m> wit
       
   <remark xml:id="rm_subspaces_derivatives">
     <title>Differential operators</title>
-    <statement>
-      <p>
-        Let <m>X\subseteq \R</m> be an interval. Define <m>T_1\colon C^1(X)\rightarrow C(X)</m> as <m>T_1(f)=f'</m>: <ie />, <m>T_1</m> takes as input a <m>C^1</m> function on the interval <m>X</m>, and returns its (first) derivative. Note that the definition of <m>C^1</m> ensures that <m>f'</m> exists and is continuous on <m>X</m>: hence <m>f'
-        \in C(X)</m>, as claimed.
-      </p>
-      <p>
-        The operator <m>T_1</m> is a linear transformation. Indeed, given <m>c,d\in \R</m> and <m>f,g\in C^1(X)</m>, we have
-        <md>
-        <mrow>T_1(cf+dg)   \amp = (cf+dg)' \amp \text{(by def.)} </mrow>
-        <mrow> \amp =(cf)'+(dg)' \amp \text{(derivative prop.)} </mrow>
-        <mrow>  \amp =cf'+dg' \amp \text{(derivative prop.)}</mrow>
-        <mrow>  \amp = cT_1(f)+dT_1(g)</mrow>
-        </md>.
-      </p>
-      <p>
-        Since taking <m>n</m>-th derivatives amounts to <em>composing</em> the derivative operator <m>T_1</m> with itself <m>n</m> times, it follows from <xref ref="th_transform_composition"/> that for any <m>n\geq 1</m> the  map
-        <md>
-        <mrow>T_n\colon C^n(X) \amp \rightarrow C(X) </mrow>
-        <mrow> f \amp\mapsto f^{(n)} </mrow>
-        </md>,
-        which takes a function <m>f</m> to its <m>n</m>-th derivative, is also linear. (Note that we are careful to pick the domain <m>C^n(X)</m> to guarantee this operation is well-defined!)
-      </p>
-      <p>
-        Lastly, by <xref ref="ex_transformation_add_scale"/>, we can add and scale these various operators to obtain more general linear transformations of the form
-        <me>
-        T(f)=c_nf^{(n)}+c_{n-1}f^{(n-1)}+\cdots c_1f'+c_0f
-        </me>.
-        We call such a function a <em>linear differential operator</em>. Understanding the linear algebraic properties of these operators is crucial to the theory of linear differential equations, as <xref ref="eg_diff_eq_ex"/> illustrates.
-      </p>
-
-    </statement>
+    <p>
+      Let <m>X\subseteq \R</m> be an interval. Define <m>T_1\colon C^1(X)\rightarrow C(X)</m> as <m>T_1(f)=f'</m>: <ie />, <m>T_1</m> takes as input a <m>C^1</m> function on the interval <m>X</m>, and returns its (first) derivative. Note that the definition of <m>C^1</m> ensures that <m>f'</m> exists and is continuous on <m>X</m>: hence <m>f'
+      \in C(X)</m>, as claimed.
+    </p>
+    <p>
+      The operator <m>T_1</m> is a linear transformation. Indeed, given <m>c,d\in \R</m> and <m>f,g\in C^1(X)</m>, we have
+      <md>
+      <mrow>T_1(cf+dg)   \amp = (cf+dg)' \amp \text{(by def.)} </mrow>
+      <mrow> \amp =(cf)'+(dg)' \amp \text{(derivative prop.)} </mrow>
+      <mrow>  \amp =cf'+dg' \amp \text{(derivative prop.)}</mrow>
+      <mrow>  \amp = cT_1(f)+dT_1(g)</mrow>
+      </md>.
+    </p>
+    <p>
+      Since taking <m>n</m>-th derivatives amounts to <em>composing</em> the derivative operator <m>T_1</m> with itself <m>n</m> times, it follows from <xref ref="th_transform_composition"/> that for any <m>n\geq 1</m> the  map
+      <md>
+      <mrow>T_n\colon C^n(X) \amp \rightarrow C(X) </mrow>
+      <mrow> f \amp\mapsto f^{(n)} </mrow>
+      </md>,
+      which takes a function <m>f</m> to its <m>n</m>-th derivative, is also linear. (Note that we are careful to pick the domain <m>C^n(X)</m> to guarantee this operation is well-defined!)
+    </p>
+    <p>
+      Lastly, by <xref ref="ex_transformation_add_scale"/>, we can add and scale these various operators to obtain more general linear transformations of the form
+      <me>
+      T(f)=c_nf^{(n)}+c_{n-1}f^{(n-1)}+\cdots c_1f'+c_0f
+      </me>.
+      We call such a function a <em>linear differential operator</em>. Understanding the linear algebraic properties of these operators is crucial to the theory of linear differential equations, as <xref ref="eg_diff_eq_ex"/> illustrates.
+    </p>
   </remark>
 
 </subsection>

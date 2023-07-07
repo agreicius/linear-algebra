@@ -366,6 +366,7 @@
     <xref ref="th_nullspace_image"/> gives rise to the following indirect method of proving that a subset <m>W</m> is a subspace.
   </p>
   <algorithm xml:id="proc_subspace_nullspace">
+  <title>Subspace as null space</title>
     <statement>
       <p>
         Let <m>W</m> be a subset of a vector space <m>V</m>. We can prove <em>indirectly</em> that <m>W</m> is a subspace by identifying it as the null space of a linear transformation <m>T\colon V\rightarrow W</m>.

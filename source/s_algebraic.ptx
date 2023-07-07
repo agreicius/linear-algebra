@@ -8,7 +8,7 @@
   </p>
   </introduction>
   <theorem xml:id="th_matrix_alg_props">
-      <title>Properties of matrix addition, multiplication and scalar multiplication</title>
+      <title>Properties of matrix arithmetic</title>
       <statement>
         <p>
           The following properties hold for all matrices <m>A, B, C</m> and scalars

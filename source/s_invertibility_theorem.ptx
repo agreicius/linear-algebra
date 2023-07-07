@@ -2,7 +2,7 @@
   <title>The invertibility theorem</title>
   <introduction>
     <p>
-    We saw in <xref ref="ex_invertible_matrices"/> that verifying directly whether a matrix is invertible, using only <xref ref="d_invertible_matrix"/>, can be quite an involved task. The goal of this section is to make this less onerous by developing some equivalent methods of testing invertibility. Our work culminates in <xref ref="th_invertibility"/> and <xref ref="th_invertibility_algorithm"/>, which draw connections between invertibility, solutions to linear systems, and row echelon forms of a square matrix. Not surprisingly, our old friend Gaussian elimination emerges as the fundamental computational tool.
+    We saw in <xref ref="eg_invertible_matrices"/> that verifying directly whether a matrix is invertible, using only <xref ref="d_invertible_matrix"/>, can be quite an involved task. The goal of this section is to make this less onerous by developing some equivalent methods of testing invertibility. Our work culminates in <xref ref="th_invertibility"/> and <xref ref="th_invertibility_algorithm"/>, which draw connections between invertibility, solutions to linear systems, and row echelon forms of a square matrix. Not surprisingly, our old friend Gaussian elimination emerges as the fundamental computational tool.
     </p>
   </introduction>
 <subsection xml:id="ss_elementary_matrix">
@@ -263,7 +263,8 @@
       </p>
     </proof>
   </theorem>
-<example>
+<example xml:id="eg_elem_inverse">
+<title>Inverses of elementary matrices</title>
   <statement>
       <p>
         Fix <m>n=3</m>.
@@ -703,9 +704,9 @@
       </p>
     </proof>
   </theorem>
-</subsection>
-<subsection xml:id="ss_inv_alg_example">
-  <title>In-depth example</title>
+
+<example xml:id="eg_inv_alg_example">
+  <title>Inverse algorithms</title>
       <p>
       Let <me>A=\begin{amatrix}[rrr]1\amp 2\amp 0\\ 1\amp 2\amp 1\\ -1\amp -1\amp 3 \end{amatrix} </me>.
       Combining both algorithms we can decide whether <m>A</m> is invertible, and if so, compute <m>A^{-1}</m> and write <m>A</m> as a product of elementary matrices.
@@ -766,6 +767,7 @@
             </mrow>
         </md>.
     </p>
+    </example>
     <paragraphs xml:id="ss_vid_eg_inver_alg">
       <title>Video example: inverse algorithm</title>
       <figure xml:id="fig_vid_inver_alg">
@@ -774,7 +776,8 @@
       <video xml:id="vid_inver_alg" youtube="yB80PXgNl7E" />
       </figure>
     </paragraphs>
-</subsection>
+  </subsection>
+
 <subsection xml:id="ss_invertible_loose_ends">
   <title>Some theoretical loose ends</title>
 <p>

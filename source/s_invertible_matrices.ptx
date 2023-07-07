@@ -182,7 +182,8 @@
   <p>
   By the same token, to show <m>A</m> is <em>not</em> invertible we must show that an inverse does not exist: that is, we must prove that there is no <m>B</m> satisfying <m>AB=BA=I</m>. The next example illustrates this technique for a variety of matrices.
 </p>
-<example xml:id="ex_invertible_matrices">
+<example xml:id="eg_invertible_matrices">
+<title>Invertible matrices</title>
   <statement>
     <p>
       <ol>
@@ -333,7 +334,7 @@ A^-1=
   The next theorem tells us that invertibility is preserved by matrix multiplication: that is, if <m>A</m> and <m>B</m> are invertible <m>n\times n</m> matrices, then so is <m>C=AB</m>.
 </p>
   <theorem xml:id="th_invertible_prod">
-    <title>Invertibility of products</title>
+    <title>Products of invertible matrices</title>
     <statement>
       <p>
         Let <m>A,B</m> be <m>n\times n</m> matrices. If <m>A</m> and <m>B</m> are both invertible, then so is their product <m>AB</m>. Using logical notation:
@@ -356,6 +357,9 @@ A^-1=
     </p>
   </proof>
   <corollary xml:id="c_invertible_prod">
+  <title>Products of invertible matrices</title>
+  
+  
     <statement>
       <p>
         More generally, if <m>A_1,A_2,\dots A_r</m> are invertible <m>n\times n</m> matrices, then their product <m>A_1A_2\cdots A_r</m> is invertible. Furthermore, we have in this case
@@ -450,6 +454,7 @@ A^-1=
     Equipped with a notion of matrix powers, we can further define matrix polynomials for square matrices.
   </p>
   <definition xml:id="d_matrix_polynomials">
+  <title>Matrix polynomials</title>
     <idx><h>matrix polynomials</h></idx>
     <notation>
       <usage><m>f(A)</m></usage>
@@ -464,11 +469,13 @@ A^-1=
       </p>
     </statement>
   </definition>
-  <remark xml:id="rem_matrix_polynomials"> It is both easy and perilous to forget the identity matrix in the term <m>a_0I_n</m> appearing in <xref ref="eq_matrix_polynomial"/>. Take caution not to make this mistake; without an identity matrix of appropriate size, the expression <m>f(A)</m> simply does not make sense.
+  <remark xml:id="rem_matrix_polynomials"> 
+  <p>
+    It is both easy and perilous to forget the identity matrix in the term <m>a_0I_n</m> appearing in <xref ref="eq_matrix_polynomial"/>. Take caution not to make this mistake; without an identity matrix of appropriate size, the expression <m>f(A)</m> simply does not make sense.
+  </p>
   </remark>
-  <example>
+  <example xml:id="eg_matrix_polynomials">
     <title>Matrix polynomials</title>
-
     <statement>
       <p>
         Let <m>f(x)=x^2-2x+1</m>. Evaluate <m>f</m> at  the matrices

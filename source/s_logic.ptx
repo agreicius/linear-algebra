@@ -120,6 +120,7 @@
     them with a series of <em>quantifiers</em> (<eg />, <q>for all <m>x</m></q>, <q>there exists an <m>s</m></q>). The definition below allows us to assign truth values to such propositions.
   </p>
   <definition xml:id="d_quantifiers">
+  <title>Logical quantifiers</title>
     <statement>
       <p>
         Let <m>D</m> be a set, and let <m>P</m> be a propositional function that assigns to all elements <m>d\in D</m> the proposition <m>P(d)</m>. The set <m>D</m> is called the <term>domain of discourse</term> of <m>P</m>.

@@ -587,6 +587,7 @@ We will show below that <m>p(t)=\det(tI-A)</m> is indeed a polynomial (<xref ref
 <xref first="eg_eigenspaces_A" last="eg_eigenspaces_B"/> bring to light a connection between eigenvalues and invertibility that is worth highlighting.
 </p>
 <corollary xml:id="cor_eigenvalue_invertible">
+<title>Null space as eigenspace</title>
   <statement>
     <p>
       Let <m>A</m> be an <m>n\times n</m> matrix.
@@ -855,6 +856,7 @@ We will show below that <m>p(t)=\det(tI-A)</m> is indeed a polynomial (<xref ref
   </me>. This proves the following corollary.
 </p>
 <corollary xml:id="cor_eigenvalues_atmost_n">
+  <title>Number of eigenvalues</title>
   <statement>
     <p>
       An <m>n\times n</m> matrix <m>A</m> has at most <m>n</m> distinct eigenvalues.

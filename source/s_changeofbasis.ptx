@@ -874,6 +874,9 @@
 </p>
 
   <definition xml:id="d_similar">
+  <title>Similar matrices</title>
+  
+  
     <idx><h>similar matrices</h></idx><statement>
       <p>
         Matrices <m>A, A'\in M_{nn}</m> are <term>similar</term>

@@ -326,7 +326,22 @@ As defined more thoroughly in <xref ref="d_matrix"/>, a matrix is just a rectang
     <p>
     Use the following example as a model of how to both perform and annotate the steps in Gaussian elimination. When first learning this procedure, make sure to follow it <em>to the letter</em>. In particular, in the spirit of the mandate issued in <xref ref="s_systems_rm_oneoperation"/>, you should only perform one row operation at a time, and only in the sequence prescribed in Steps 1-4 of <xref ref="d_GE"/>.
     </p>
-    <md>
+    <example xml:id="eg_model_example">
+      <title>Row echelon form</title>
+      <p>
+        We use Gaussian elimination to reduce the linear system 
+        <me>
+          \begin{array}{rcc}
+      -2x_3+7x_5\amp =\amp 12 \\
+      2x_1+4x_2-10x_3+6x_4+12x_5\amp = \amp 28 \\
+      2x_1+4x_2-5x_3+6x_4-5x_5\amp =\amp -1
+    \end{array}
+        </me>
+        to a system in row echelon form. 
+      </p>
+      <p>
+        First we apply Gaussian elimination to the augmented matrix associated to our system. 
+        <md>
       <mrow>
       \begin{bmatrix}0\amp 0\amp -2\amp 0\amp 7\amp 12\\
       2\amp 4\amp -10\amp 6\amp 12\amp 28\\
@@ -338,33 +353,43 @@ As defined more thoroughly in <xref ref="d_matrix"/>, a matrix is just a rectang
       2\amp 4\amp -5\amp 6\amp -5\amp -1
       \end{bmatrix}</mrow>
       <mrow>\amp \xrightarrow[\hspace{35pt}]{\frac{1}{2}r_1}
-      \begin{bmatrix}1\amp 2\amp -5\amp 3\amp 6\amp 14\\
+      \begin{bmatrix}\boxed{1}\amp 2\amp -5\amp 3\amp 6\amp 14\\
       0\amp 0\amp -2\amp 0\amp 7\amp 12\\
       2\amp 4\amp -5\amp 6\amp -5\amp -1
       \end{bmatrix}</mrow>
       <mrow>\amp \xrightarrow[\hspace{35pt}]{r_3-2r_1}
-      \begin{bmatrix}1\amp 2\amp -5\amp 3\amp 6\amp 14\\
+      \begin{bmatrix}\boxed{1}\amp 2\amp -5\amp 3\amp 6\amp 14\\
       0\amp 0\amp -2\amp 0\amp 7\amp 12\\
       0\amp 0\amp 5\amp 0\amp -17\amp -29
       \end{bmatrix}\amp
       \text{ (now done with first row) }</mrow>
       <mrow>\amp \xrightarrow[\hspace{35pt}]{-\frac{1}{2}r_2}
-      \begin{bmatrix}1\amp 2\amp -5\amp 3\amp 6\amp 14\\
-      0\amp 0\amp 1\amp 0\amp -7/2\amp -6\\
+      \begin{bmatrix}\boxed{1}\amp 2\amp -5\amp 3\amp 6\amp 14\\
+      0\amp 0\amp \boxed{1}\amp 0\amp -7/2\amp -6\\
       0\amp 0\amp 5\amp 0\amp -17\amp -29
       \end{bmatrix}</mrow>
       <mrow>\amp \xrightarrow[\hspace{35pt}]{r_3+(-5)r_2}
-      \begin{bmatrix}1\amp 2\amp -5\amp 3\amp 6\amp 14\\
-      0\amp 0\amp 1\amp 0\amp -7/2\amp -6\\
+      \begin{bmatrix}\boxed{1}\amp 2\amp -5\amp 3\amp 6\amp 14\\
+      0\amp 0\amp \boxed{1}\amp 0\amp -7/2\amp -6\\
       0\amp 0\amp 0\amp 0\amp 1/2\amp 1
       \end{bmatrix}\amp
       \text{ (now done with 2nd row)}</mrow>
       <mrow>\amp \xrightarrow[\hspace{35pt}]{2r_3}
-      \begin{bmatrix}1\amp 2\amp -5\amp 3\amp 6\amp 14\\
-      0\amp 0\amp 1\amp 0\amp -7/2\amp -6\\
-      0\amp 0\amp 0\amp 0\amp 1\amp 2
+      \begin{bmatrix}\boxed{1}\amp 2\amp -5\amp 3\amp 6\amp 14\\
+      0\amp 0\amp \boxed{1}\amp 0\amp -7/2\amp -6\\
+      0\amp 0\amp 0\amp 0\amp \boxed{1}\amp 2
       \end{bmatrix}</mrow>
-    </md>
+    </md>.
+    We conclude that our original system is equivalent to the system 
+  <me>
+    \begin{array}{rcc} x_1+2x_2-5x_3+3x_4+6x_5\amp =\amp 14\\
+    x_3-\frac{7}{2}x_5\amp =\amp -6\\
+    x_5\amp =\amp 2 \end{array}
+  </me>,
+  which is in row echelon form.   
+  </p>
+    </example>
+    
   <p>
   The matrix outputted by Gaussian elimination is guaranteed to be in row echelon form, but it may not be in <em>reduced</em> row echelon form. <em>Gauss-Jordan elimination</em> describes a systematic way to continue reducing to this even simpler state.
 </p>
@@ -397,14 +422,24 @@ As defined more thoroughly in <xref ref="d_matrix"/>, a matrix is just a rectang
         </dl>
       </statement>
     </definition>
+    <example xml:id="eg_model_rref">
+      <title>Reduced row echelon form</title>
+      
     <p>
-      Continuing our previous example:
+      We continue our work in <xref ref="eg_model_example"/> to reach a matrix in reduced row echelon form. 
       <md>
-        <mrow>\begin{bmatrix}1\amp 2\amp -5\amp 3\amp 6\amp 14\\ 0\amp 0\amp 1\amp 0\amp -7/2\amp -6\\ 0\amp 0\amp 0\amp 0\amp 1\amp 2 \end{bmatrix} .  \amp \xrightarrow[\hspace{35pt}]{r_2+7/2r_3}\amp \begin{bmatrix}1\amp 2\amp -5\amp 3\amp 6\amp 14\\ 0\amp 0\amp 1\amp 0\amp 0\amp 1\\ 0\amp 0\amp 0\amp 0\amp 1\amp 2 \end{bmatrix} .</mrow>
-        <mrow>\amp \xrightarrow[\hspace{35pt}]{r_1-6r_3}\amp \begin{bmatrix}1\amp 2\amp -5\amp 3\amp 0\amp 2\\ 0\amp 0\amp 1\amp 0\amp 0\amp 1\\ 0\amp 0\amp 0\amp 0\amp 1\amp 2 \end{bmatrix} .</mrow>
-        <mrow>\amp \xrightarrow[\hspace{35pt}]{r_1+5r_2}\amp \begin{bmatrix}1\amp 2\amp 0\amp 3\amp 0\amp 7\\ 0\amp 0\amp 1\amp 0\amp 0\amp 1\\ 0\amp 0\amp 0\amp 0\amp 1\amp 2 \end{bmatrix} </mrow>
+        <mrow>\begin{bmatrix}\boxed{1}\amp 2\amp -5\amp 3\amp 6\amp 14\\ 0\amp 0\amp \boxed{1}\amp 0\amp -7/2\amp -6\\ 0\amp 0\amp 0\amp 0\amp \boxed{1}\amp 2 \end{bmatrix}  \amp \xrightarrow[\hspace{35pt}]{r_2+7/2r_3}\amp \begin{bmatrix}\boxed{1}\amp 2\amp -5\amp 3\amp 6\amp 14\\ 0\amp 0\amp \boxed{1}\amp 0\amp 0\amp 1\\ 0\amp 0\amp 0\amp 0\amp \boxed{1}\amp 2 \end{bmatrix}</mrow>
+        <mrow>\amp \xrightarrow[\hspace{35pt}]{r_1-6r_3}\amp \begin{bmatrix}\boxed{1}\amp 2\amp -5\amp 3\amp 0\amp 2\\ 0\amp 0\amp \boxed{1}\amp 0\amp 0\amp 1\\ 0\amp 0\amp 0\amp 0\amp \boxed{1}\amp 2 \end{bmatrix}</mrow>
+        <mrow>\amp \xrightarrow[\hspace{35pt}]{r_1+5r_2}\amp \begin{bmatrix}\boxed{1}\amp 2\amp 0\amp 3\amp 0\amp 7\\ 0\amp 0\amp \boxed{1}\amp 0\amp 0\amp 1\\ 0\amp 0\amp 0\amp 0\amp \boxed{1}\amp 2 \end{bmatrix} </mrow>
       </md>.
+      Notice that the resulting system is slightly simpler than the system in row echelon form of <xref ref="eg_model_example"/>: 
+      <me>
+         \begin{linsys}{5} x_1\amp+\amp 2x_2\amp \amp \amp+\amp 3x_4\amp +\amp 6x_5\amp =\amp 7\\
+    \amp \amp \amp \amp x_3\amp \amp \amp \amp \amp =\amp 1\\
+    \amp \amp \amp \amp \amp \amp \amp \amp x_5\amp =\amp 2 \end{linsys}
+      </me>.      
     </p>
+    </example>
   <p>
    <xref ref="d_GE"/> and <xref ref="d_GaussJordan"/> are really theorems in disguise, and we make this official in <xref ref="th_matrixforms"/>.
  </p>

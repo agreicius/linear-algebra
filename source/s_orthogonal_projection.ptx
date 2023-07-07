@@ -370,6 +370,7 @@
   </figure>
 </paragraphs>
   <corollary xml:id="cor_orthocomp_selfdual">
+  <title>Complement of a complement</title>
     <statement>
       <p>
         Let <m>(V,\angvec{\ , \ })</m> be an inner product space,
