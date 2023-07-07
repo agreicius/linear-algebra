@@ -13,16 +13,15 @@
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">We use the one-step technique. For any <span class="process-math">\(c,d\in \R\)</span> and <span class="process-math">\(\boldx_1, \boldx_2\in \R^n\text{,}\)</span> we have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_matrix_alg_props.html ./knowl/th_matrix_alg_props.html">
+<div class="para">Let <span class="process-math">\(A\)</span> be an <span class="process-math">\(m\times n\)</span> matrix. The <dfn class="terminology">matrix transformation associated to <span class="process-math">\(A\)</span></dfn> is the function <span class="process-math">\(T_A\)</span> defined as follows:</div>
+<div class="displaymath process-math">
 \begin{align*}
-T_A(c\boldx_1+d\boldx_2) \amp =A(c\boldx_1+d\boldx_2)\\
-\amp =A(c\boldx_1)+A(d\boldx_2) \amp (\knowl{./knowl/th_matrix_alg_props.html}{\text{Theorem 2.2.1}}) \\
-\amp =cA\boldx_1+dA\boldx_2 \amp (\knowl{./knowl/th_matrix_alg_props.html}{\text{Theorem 2.2.1}})\\
-\amp =cT_A(\boldx_1)+dT_A(\boldx_2)\text{.}
+T_A\colon \R^n \amp\rightarrow \R^m \\
+\boldx\amp\mapsto T_A(\boldx)=A\boldx \text{.}
 \end{align*}
 </div>
-<div class="para">This proves <span class="process-math">\(T_A\)</span> is a linear transformation.</div>
+<div class="para">In other words, given input <span class="process-math">\(\boldx\in \R^n\text{,}\)</span> the output <span class="process-math">\(T(\boldx)\)</span> is defined as <span class="process-math">\(A\boldx\text{.}\)</span>
+</div>
 </div>
 <span class="incontext"><a href="s_transformation.html#p-1781" class="internal">in-context</a></span>
 </body>

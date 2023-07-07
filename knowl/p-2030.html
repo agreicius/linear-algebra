@@ -13,13 +13,14 @@
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">In the special case where <span class="process-math">\(T=T_A\)</span> is the matrix transformation of an <span class="process-math">\(m\times n\)</span> matrix <span class="process-math">\(A\text{,}\)</span> <a href="" class="xref" data-knowl="./knowl/th_nullspace_image.html" title="Theorem 3.4.8: Null space and image">Theorem 3.4.8</a> tells us that</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_nullspace_image.html ./knowl/th_subspace_matrix_solutions.html ./knowl/th_nullspace_image.html">
+<div class="para">The inclusion <span class="process-math">\(W\subseteq \im S\)</span> is trickier: we must show that if <span class="process-math">\(B\)</span> is skew-symmetric, then there is an <span class="process-math">\(A\)</span> such that <span class="process-math">\(B=S(A)=A^T-A\text{.}\)</span> Assume we have a <span class="process-math">\(B\)</span> with <span class="process-math">\(B^T=-B\text{.}\)</span> Letting <span class="process-math">\(A=-\frac{1}{2}B\)</span> we have</div>
+<div class="displaymath process-math">
 \begin{equation*}
-\NS A=\{\boldx\in \R^n\colon A\boldx=\boldzero\}
+A^T-A=(-\frac{1}{2}B)^T+\frac{1}{2}B=\frac{1}{2}(-B^T+B)=\frac{1}{2}(B+B)=B\text{.}
 \end{equation*}
 </div>
-<div class="para">is a subspace. We knew this already from <a href="" class="xref" data-knowl="./knowl/th_subspace_matrix_solutions.html" title="Theorem 3.3.10: Solutions to A\boldx=\boldzero form a subspace">Theorem 3.3.10</a>, which we now understand as a special instance of <a href="" class="xref" data-knowl="./knowl/th_nullspace_image.html" title="Theorem 3.4.8: Null space and image">Theorem 3.4.8</a>.</div>
+<div class="para">Thus we have found a matrix <span class="process-math">\(A\)</span> satisfying <span class="process-math">\(S(A)=B\text{.}\)</span> It follows that <span class="process-math">\(B\in\im T\text{.}\)</span>
+</div>
 </div>
 <span class="incontext"><a href="s_nullspace_image.html#p-2030" class="internal">in-context</a></span>
 </body>

@@ -13,13 +13,20 @@
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">If <span class="process-math">\(\det Q=-1\text{,}\)</span> then <span class="process-math">\(Q\)</span> is a reflection matrix: i.e., there is a <span class="process-math">\(\theta\in [0,\pi]\)</span> such that</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_transform_reflection.html">
+<div class="para">Show that</div>
+<div class="displaymath process-math">
+\begin{equation}
+\underset{B\rightarrow B''}{P}=\underset{B'\rightarrow B''}{P}\underset{B\rightarrow B'}{P}\text{.}\tag{5.3.7}
+\end{equation}
+</div>
+<div class="para">To do so, set <span class="process-math">\(A=\underset{B'\rightarrow B''}{P}\)</span> and <span class="process-math">\(B=\underset{B\rightarrow B'}{P}\)</span> and show that the matrix <span class="process-math">\(AB\)</span> satisfies the defining property of <span class="process-math">\(\underset{B\rightarrow B''}{P}\text{:}\)</span> i.e.,</div>
+<div class="displaymath process-math">
 \begin{equation*}
-Q=\begin{amatrix}[rr] \cos 2\theta\amp \sin 2\theta\\ \sin 2\theta \amp -\cos 2\theta \end{amatrix}\text{.}
+AB[\boldv]_{B}=[\boldv]_{B''}
 \end{equation*}
 </div>
-<div class="para">See <a href="" class="xref" data-knowl="./knowl/th_transform_reflection.html" title="Theorem 3.2.17: Reflection is a linear transformation">Theorem 3.2.17</a>.</div>
+<div class="para">for all <span class="process-math">\(\boldv\in V\text{.}\)</span>
+</div>
 </div>
 <span class="incontext"><a href="s_changeofbasis.html#p-3449" class="internal">in-context</a></span>
 </body>

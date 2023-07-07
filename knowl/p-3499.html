@@ -13,19 +13,14 @@
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">First observe that</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_invertibility_supersized.html">
-\begin{equation*}
-A\boldx=\lambda\boldx \iff \lambda\boldx-A\boldx=\boldzero \iff (\lambda I-A)\boldx=\boldzero\text{.}
-\end{equation*}
+<div class="para">An eigenvector of <span class="process-math">\(T\)</span> is a nonzero function <span class="process-math">\(f\)</span> satisfying <span class="process-math">\(T(f)=\lambda f\)</span> for some <span class="process-math">\(\lambda\text{.}\)</span> By definition, this means</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_eigenvectors_adhoc_derivative.html ./knowl/eq_eigenvectors_adhoc_derivative.html">
+\begin{equation}
+f'=\lambda f\tag{5.4.5}
+\end{equation}
 </div>
-<div class="para">From this equivalence it follows that</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_invertibility_supersized.html">
-\begin{equation*}
-\NS(\lambda I-A)=\{\boldx\in \R^n\colon A\boldx=\lambda \boldx\}\text{.}
-\end{equation*}
+<div class="para">for some <span class="process-math">\(\lambda\in\R\text{.}\)</span> Thus <span class="process-math">\(\lambda\)</span> is an eigenvalue of <span class="process-math">\(T\)</span> if and only if the differential equation <a href="" class="xref" data-knowl="./knowl/eq_eigenvectors_adhoc_derivative.html" title="Equation 5.4.5">(5.4.5)</a> has a nonzero solution. This is true for all <span class="process-math">\(\lambda\in \R\text{!}\)</span> Indeed for any <span class="process-math">\(\lambda\)</span> the exponential function <span class="process-math">\(f(x)=e^{\lambda x}\)</span> satisfies <span class="process-math">\(f'(x)=\lambda e^{\lambda x}=\lambda f(x)\)</span> for all <span class="process-math">\(x\in \R\text{.}\)</span> Furthermore, any solution to <a href="" class="xref" data-knowl="./knowl/eq_eigenvectors_adhoc_derivative.html" title="Equation 5.4.5">(5.4.5)</a> is of the form <span class="process-math">\(f(x)=Ce^{\lambda x}\)</span> for some <span class="process-math">\(C\in \R\text{.}\)</span> We conclude that (a) every <span class="process-math">\(\lambda\in \R\)</span> is an eigenvalue of <span class="process-math">\(T\text{,}\)</span> and (b) for a given <span class="process-math">\(\lambda\text{,}\)</span> the <span class="process-math">\(\lambda\)</span>-eigenvectors of <span class="process-math">\(T\)</span> are precisely the functions of the form <span class="process-math">\(f(x)=Ce^{\lambda x}\)</span> for some <span class="process-math">\(C\ne 0\text{.}\)</span>
 </div>
-<div class="para">Since an eigenvector must be nonzero, we conclude that the <span class="process-math">\(\lambda\)</span>-eigenvectors of <span class="process-math">\(A\)</span> are precisely the nonzero elements of <span class="process-math">\(\NS(\lambda I-A)\text{.}\)</span> This proves statement (1). As a consequence, we see that <span class="process-math">\(A\)</span> has <span class="process-math">\(\lambda\)</span> as an eigenvalue if and only if <span class="process-math">\(\NS (\lambda I-A)\)</span> contains nonzero element elements: i.e., if and only if <span class="process-math">\(\NS (\lambda I-A)\ne \{\boldzero\}\text{.}\)</span> By the <a href="" class="xref" data-knowl="./knowl/th_invertibility_supersized.html" title="Theorem 3.8.12: Invertibility theorem (supersized)">invertibility theorem</a> this is true if and only if <span class="process-math">\(\lambda I-A\)</span> is not invertible.</div>
 </div>
 <span class="incontext"><a href="s_eigenvectors.html#p-3499" class="internal">in-context</a></span>
 </body>

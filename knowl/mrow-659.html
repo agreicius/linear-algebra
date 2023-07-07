@@ -11,35 +11,12 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/ex_orthoproj_props.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_ortho_proj_formula.html">
 \begin{align*}
-\proj{(-2,3,1)}{\ell}\amp=  \frac{1}{6}\begin{bmatrix}
-1\amp 2\amp 1\\ 2\amp 4\amp 2\\ 1\amp 2\amp 1
-\end{bmatrix}
-\begin{amatrix}[r]
--2 \\ 3\\ 1
-\end{amatrix}=
-\frac{1}{6}\begin{amatrix}[r]
-5\\ 10\\ 5
-\end{amatrix}\\
-\proj{(-2,-4,-2)}{\ell}\amp=  \frac{1}{6}\begin{bmatrix}
-1\amp 2\amp 1\\ 2\amp 4\amp 2\\ 1\amp 2\amp 1
-\end{bmatrix}
-\begin{amatrix}[r]
--2 \\ -4\\ -2
-\end{amatrix}=
-\frac{1}{6}\begin{amatrix}[r]
--2\\ -4\\ -2
-\end{amatrix}\\
-\proj{(1,-1,1)}{\ell}\amp=  \frac{1}{6}\begin{bmatrix}
-1\amp 2\amp 1\\ 2\amp 4\amp 2\\ 1\amp 2\amp 1
-\end{bmatrix}
-\begin{amatrix}[r]
-1\\ -1\\ 1
-\end{amatrix}=
-\frac{1}{6}\begin{amatrix}[r]
-0\\ 0\\ 0
-\end{amatrix}
+\proj{c\boldv+d\boldw}{W} \amp=\sum_{i=1}^{r}\frac{\langle c\boldv+d\boldw, \boldv_i\rangle}{\langle\boldv_i, \boldv_i\rangle }\boldv_i \\
+\amp=\sum_{i=1}^r\frac{c\langle \boldv,\boldv_i\rangle+d\langle \boldw, \boldv_i\rangle}{\langle \boldv_i, \boldv_i\rangle}\boldv_i \\
+\amp =c\sum_{i=1}^r\frac{\angvec{\boldv, \boldv_i}}{\angvec{\boldv_i, \boldv_i}}\boldv_i+d\sum_{i=1}^r\frac{\angvec{\boldw, \boldv_i}}{\angvec{\boldv_i, \boldv_i}}\boldv_i\\
+\amp = c\,\proj{\boldv}{W}+d\,\proj{\boldw}{W}
 \end{align*}
 </div>
 <span class="incontext"><a href="s_orthogonal_projection.html#md-211" class="internal">in-context</a></span>

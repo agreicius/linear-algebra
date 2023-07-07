@@ -11,21 +11,24 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h6 class="heading"><span class="type">Paragraph</span></h6>
+<h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">Find the angle <span class="process-math">\(\alpha\)</span> between the vectors</div>
+<div class="para">First compute</div>
+<div class="displaymath process-math">
+\begin{align*}
+\langle f, g\rangle \amp=\int_{-\pi}^\pi \sin x\sin 2x\, dx \\
+\amp=\frac{1}{2}\int_{-\pi}^\pi\cos(x-2x)-\cos(x+2x)\, dx \amp (\text{trig. identity})\\
+\amp =\frac{1}{2}\int_{-\pi}^\pi \cos(-x)-\cos 3x\, dx\\
+\amp = 0
+\end{align*}
+</div>
+<div class="para">It follows that</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\left[\begin{array}{c}
--3\cr
-4\cr
-1
-\end{array}\right] \ \mbox{ and } \ \left[\begin{array}{c}
-5\cr
--3\cr
--4
-\end{array}\right].
+\cos \theta=\frac{\langle f, g\rangle}{\norm{f}\norm{g}}=0\text{,}
 \end{equation*}
+</div>
+<div class="para">and hence that <span class="process-math">\(\theta=\pi/2\text{.}\)</span>
 </div>
 </div>
 <span class="incontext"><a href="s_innerproducts.html#p-2939" class="internal">in-context</a></span>

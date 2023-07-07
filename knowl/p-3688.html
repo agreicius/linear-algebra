@@ -13,13 +13,33 @@
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">Let <span class="process-math">\(T\colon V\rightarrow V\)</span> be a linear transformation, where <span class="process-math">\(dim V=n\text{,}\)</span> let <span class="process-math">\(p(t)\)</span> be the characteristic polynomial of <span class="process-math">\(T\text{,}\)</span> and suppose <span class="process-math">\(\lambda\in\R\)</span> is an eigenvalue of <span class="process-math">\(T\)</span> of algebraic multiplicity <span class="process-math">\(m\geq 1\text{:}\)</span> i.e., <span class="process-math">\(p(t)=(t-\lambda)^mq(t)\)</span> and <span class="process-math">\(q(\lambda)\ne 0\text{.}\)</span> We have</div>
-<div class="displaymath process-math">
+<div class="para">Assume <span class="process-math">\(D=P^{-1}AP\text{,}\)</span> where <span class="process-math">\(D\)</span> is diagonal. The normally difficult computation <span class="process-math">\(A^{k}\)</span> can be accomplished by first computing <span class="process-math">\(D^{k}\)</span> (easy) and then observing that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_conjugation.html">
+\begin{align*}
+A^k\amp = (PDP^{-1})^k \amp \\
+\amp =PD^kP^{-1} \amp (\knowl{./knowl/th_conjugation.html}{\text{Theorem 5.5.23}}, (2)) \text{.}
+\end{align*}
+</div>
+<div class="para">For example, the matrix</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_conjugation.html">
 \begin{equation*}
-1\leq \dim W_\lambda\leq m\text{.}
+A=\begin{amatrix}[rr]1\amp 3\\ 1\amp -1 \end{amatrix}
 \end{equation*}
 </div>
-<div class="para">In other words, the geometric multiplicity of an eigenvalue is bounded above by its algebraic multiplicity.</div>
+<div class="para">is diagonalizable and satisfies <span class="process-math">\(D=P^{-1}AP\text{,}\)</span> where</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_conjugation.html">
+\begin{equation*}
+P=\begin{amatrix}[rr]3\amp 1\\ 1\amp -1 \end{amatrix}, D=\begin{amatrix}[rr]2\amp 0\\ 0\amp -2 \end{amatrix}\text{.}
+\end{equation*}
+</div>
+<div class="para">It follows that for any <span class="process-math">\(k\in \Z\)</span> we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_conjugation.html">
+\begin{align*}
+A^k \amp=PD^kP^{-1} \\
+\amp = P\begin{amatrix}[rr]2^{k}\amp 0\\ 0\amp (-2)^{k} \end{amatrix} P^{-1}\\
+\amp = \frac{1}{4}\begin{amatrix}[rr]3\cdot2^k+(-2)^k\amp 3\cdot 2^k-3(-2)^{k}\\ 2^{k}-(-2)^k\amp 2^k+3(-2)^{k} \end{amatrix}\text{.}
+\end{align*}
+</div>
 </div>
 <span class="incontext"><a href="s_diagonalization.html#p-3688" class="internal">in-context</a></span>
 </body>

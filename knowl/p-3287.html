@@ -13,15 +13,13 @@
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">We have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_coordinates.html ./knowl/eq_matrixrep_prop.html">
-\begin{align*}
-\boldv\in \NS T \amp\iff T(\boldv)=\boldzero \\
-\amp\iff [T(\boldv)]_{B'}=[\boldzero]_{B'} \amp (\knowl{./knowl/th_coordinates.html}{\text{Theorem 5.1.12}}, (2))\\
-\amp \iff [T]_{B}^{B'}[\boldv]_B=\boldzero \amp (\knowl{./knowl/eq_matrixrep_prop.html}{\text{(5.2.2)}})\\
-\amp [\boldv]_B\in\NS A \amp (A=[T]_B^{B'}) \text{.}
-\end{align*}
+<div class="para">The uniqueness property described in (2) of  <a href="" class="xref" data-knowl="./knowl/th_matrixrep.html" title="Theorem 5.2.6: Defining property of matrix representation">Theorem 5.2.6</a> provides an alternative way of computing <span class="process-math">\([T]_{B}^{B'}\)</span> that can be useful in certain situations: namely, simply provide an <span class="process-math">\(m\times n\)</span> matrix <span class="process-math">\(A\)</span> that satisfies the defining property</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_matrixrep.html">
+\begin{equation*}
+A[\boldv]_B=[T(\boldv)]_{B'}
+\end{equation*}
 </div>
+<div class="para">for all <span class="process-math">\(\boldv\in V\text{.}\)</span> Since there is only one such matrix, we must have <span class="process-math">\(A=[T]_B^{B'}\)</span> in this case.</div>
 </div>
 <span class="incontext"><a href="s_matrixreps.html#p-3287" class="internal">in-context</a></span>
 </body>

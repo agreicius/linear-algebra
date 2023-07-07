@@ -11,8 +11,32 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<article class="li"><h3 class="heading"><span class="title">Orthogonality</span></h3>
-<div class="para">Two vectors <span class="process-math">\(\boldv, \boldw\in V\)</span> are <em class="emphasis">orthogonal</em>, relative to a given inner product, if <span class="process-math">\(\langle \boldv, \boldw\rangle=0\text{.}\)</span> Orthogonality leads further to a general notion of <em class="emphasis">orthogonal projection</em> onto a subspace <span class="process-math">\(W\subseteq V\text{.}\)</span>
-</div></article><span class="incontext"><a href="s_innerproducts.html#li-846" class="internal">in-context</a></span>
+<article class="li"><h5 class="heading">
+<span class="type">Item</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span>
+</h5>
+<div class="para logical">
+<div class="para">Assume <span class="process-math">\(T\)</span> is injective. Then</div>
+<div class="displaymath process-math">
+\begin{align*}
+T(\boldv)=\boldzero_W\amp \implies T(\boldv)=T(\boldzero_V) \\
+\amp\implies \boldv=\boldzero_V \text{.}
+\end{align*}
+</div>
+<div class="para">It follows that <span class="process-math">\(\NS T=\{\boldzero_V\}\text{.}\)</span>
+</div>
+</div>
+<div class="para logical">
+<div class="para">Now assume <span class="process-math">\(\NS T=\{\boldzero_V\}\text{.}\)</span> Then</div>
+<div class="displaymath process-math">
+\begin{align*}
+T(\boldv)=T(\boldv') \amp\implies T(\boldv)-T(\boldv')=\boldzero_W \\
+\amp\implies T(\boldv-\boldv')=\boldzero_W \\
+\amp \implies \boldv-\boldv'\in \NS T=\{\boldzero_V\}\\
+\amp\implies \boldv-\boldv'=\boldzero_V \\
+\amp \implies \boldv=\boldv'\text{.}
+\end{align*}
+</div>
+<div class="para">Thus <span class="process-math">\(T\)</span> is injective.</div>
+</div></article><span class="incontext"><a href="s_isom.html#li-846" class="internal">in-context</a></span>
 </body>
 </html>

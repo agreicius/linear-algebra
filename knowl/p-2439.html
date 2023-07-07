@@ -11,8 +11,15 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para">Besides rounding out our theoretical discussion of linear transformations from <span class="process-math">\(\R^n\)</span> to <span class="process-math">\(\R^m\text{,}\)</span> computationally <a href="" class="xref" data-knowl="./knowl/cor_matrix_transformations.html" title="Corollary 3.6.16: Matrix transformations">Corollary 3.6.16</a> provides a recipe for computing a “matrix formula” for a linear transformation <span class="process-math">\(T\colon \R^n\colon \rightarrow \R^m\text{.}\)</span> In other words, it tells us how to build the <span class="process-math">\(A\text{,}\)</span> column by column, such that <span class="process-math">\(T\boldx=A\boldx\)</span> for all <span class="process-math">\(\boldx\in R^n\text{.}\)</span> For reasons that will be made more clear in <a href="s_matrixreps.html" class="internal" title="Section 5.2: Matrix representations of linear transformations">Section 5.2</a>, we will call <span class="process-math">\(A\)</span> the <em class="emphasis">standard matrix</em> of <span class="process-math">\(T\text{.}\)</span>
+<h5 class="heading"><span class="type">Paragraph</span></h5>
+<div class="para logical">
+<div class="para">Since any <span class="process-math">\(\boldv\in V\)</span> has a <em class="emphasis">unique</em> expression of the form</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_bases_transformations.html ./knowl/eq_bases_transformations.html">
+\begin{equation*}
+\boldv=c_1\boldu_1+c_2\boldu_2+\cdots +c_r\boldu_r\text{,}
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(c_i\ne 0\)</span> for all <span class="process-math">\(1\leq i\leq r\text{,}\)</span> the formula in <a href="" class="xref" data-knowl="./knowl/eq_bases_transformations.html" title="Equation 3.6.2">(3.6.2)</a> defines a function <span class="process-math">\(T\colon V\rightarrow W\)</span> in a well-defined manner. Note also that the formula still applies even if some of the coefficients are equal to 0: if <span class="process-math">\(c_i=0\text{,}\)</span> then <span class="process-math">\(c_iT(\boldv_i)=\boldzero\text{,}\)</span> and the right-hand side of <a href="" class="xref" data-knowl="./knowl/eq_bases_transformations.html" title="Equation 3.6.2">(3.6.2)</a> is unchanged. We will use this fact below.</div>
 </div>
 <span class="incontext"><a href="s_basis.html#p-2439" class="internal">in-context</a></span>
 </body>

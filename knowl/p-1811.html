@@ -13,14 +13,19 @@
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">We must show <span class="process-math">\(f(cA+dB)=cf(A)+df(B)\)</span> for all scalars <span class="process-math">\(c,d\in\R\)</span> and all matrices <span class="process-math">\(A, B\in M_{mn}\text{.}\)</span> This follows easily from properties of transpose:</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_trans_props.html ./knowl/th_trans_props.html">
-\begin{align*}
-f(cA+dB)\amp =(cA+dB)^T \amp \text{ (by def.) }\\
-\amp =(cA)^T+(dB)^T \amp (\knowl{./knowl/th_trans_props.html}{\text{Theorem 2.2.11}})\\
-\amp =cA^T+dB^T \amp (\knowl{./knowl/th_trans_props.html}{\text{Theorem 2.2.11}})\\
-\amp =cf(A)+df(B)
-\end{align*}
+<div class="para">Let <span class="process-math">\(\boldv=(a_1,a_2,\dots, a_n)\)</span> be a fixed nonzero vector in <span class="process-math">\(\R^n\text{,}\)</span> where <span class="process-math">\(n=2\)</span> or <span class="process-math">\(n=3\text{.}\)</span> The set of all scalar multiples of <span class="process-math">\(\boldv\)</span> defines a line <span class="process-math">\(\ell\)</span> in <span class="process-math">\(\R^n\)</span> passing through the origin: we call <span class="process-math">\(\boldv\)</span> the <dfn class="terminology">direction vector</dfn> of this line. Given a point <span class="process-math">\(P=(x_1,x_2,\dots, x_n)\in \R^n\)</span> there is a unique point <span class="process-math">\(Q\in \ell\)</span> such that the vector</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\overrightarrow{QP}=(x_1-y_1,x_2-y_2,\dots, x_n-y_n)
+\end{equation*}
+</div>
+<div class="para">is orthogonal to <span class="process-math">\(\boldv\text{:}\)</span> i.e., there is a unique <span class="process-math">\(Q\in \ell\)</span> such that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\overrightarrow{QP}\cdot \boldv=0\text{.}
+\end{equation*}
+</div>
+<div class="para">The point <span class="process-math">\(Q\)</span> is called the <dfn class="terminology">orthogonal projection</dfn> of <span class="process-math">\(P\)</span> onto the line <span class="process-math">\(\ell\text{.}\)</span> We define <dfn class="terminology">orthogonal projection onto <span class="process-math">\(\ell\)</span></dfn> to be the function <span class="process-math">\(\operatorname{proj}_{\ell}\colon \R^n\rightarrow \R^n\)</span> that maps a point <span class="process-math">\(P\)</span> to its orthogonal projection <span class="process-math">\(Q=\proj{P}{\ell}\)</span> onto <span class="process-math">\(\ell\text{.}\)</span>
 </div>
 </div>
 <span class="incontext"><a href="s_transformation.html#p-1811" class="internal">in-context</a></span>

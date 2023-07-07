@@ -13,15 +13,26 @@
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">Since matrices of the form</div>
+<div class="para">If the vector <span class="process-math">\(\boldx=(x,y)\)</span> has polar coordinates <span class="process-math">\((r,\theta)\)</span> (so that <span class="process-math">\(x_1=r\cos\theta\)</span> and <span class="process-math">\(x_2=r\sin\theta\)</span>), then its image <span class="process-math">\(\boldy=\rho_{\alpha}(P)\)</span> under our rotation has polar coordinates <span class="process-math">\((r,\theta+\alpha)\text{.}\)</span> Translating back to rectangular coordinates, we see that</div>
+<div class="displaymath process-math">
+\begin{align*}
+\rho_\alpha(\boldx)\amp= \boldy \\
+\amp =\left(r\cos(\theta+\alpha),r\sin(\theta+\alpha)\right)\\
+\amp =(r\cos\theta\cos\alpha-r\sin\theta\sin\alpha, r\sin\theta\cos\alpha+r\cos\theta\sin\alpha)
+\amp (\text{trig. identities}) \\
+\amp=(\cos\alpha\, x_1-\sin\alpha\, x_2, \sin\alpha\, x_1+\cos\alpha\, x_2)
+\amp (\text{since } x_1=r\cos\theta, x_2=r\sin\theta) \text{.}
+\end{align*}
+</div>
+<div class="para">It follows that <span class="process-math">\(\rho_{\alpha}=T_A\text{,}\)</span> where</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\begin{amatrix}[rr]
+A=\begin{amatrix}[rr]
 \cos\alpha\amp -\sin\alpha\\ \sin\alpha \amp \cos\alpha
-\end{amatrix}
+\end{amatrix}\text{,}
 \end{equation*}
 </div>
-<div class="para">can be understood as defining rotations of the plane, we call them <em class="emphasis">rotation matrices</em>.</div>
+<div class="para">as claimed.</div>
 </div>
 <span class="incontext"><a href="s_transformation.html#p-1793" class="internal">in-context</a></span>
 </body>

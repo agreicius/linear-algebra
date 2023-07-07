@@ -11,10 +11,12 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_nullspace_inverseimage.html ./knowl/eq_nullspace_injective.html">
 \begin{align*}
-T\colon \R^4 \amp \rightarrow \R^3 \\
-(x,y,z,w)\amp\mapsto (x+z+w, x-y-z,-2x+y-w) 
+T(\boldv)=T(\boldv') \amp \iff T(\boldv')-T(\boldv)=\boldzero\\
+\amp \iff T(\boldv'-\boldv)=\boldzero \amp (T \text{ is linear})\\
+\amp \iff \boldu=\boldv'-\boldv\in\NS T \amp (\text{def. } \NS T)\\
+\amp \iff \boldv'=\boldv+\boldu \text{ for some } \boldu\in\NS T 
 \end{align*}
 </div>
 <span class="incontext"><a href="s_nullspace_image.html#md-146" class="internal">in-context</a></span>

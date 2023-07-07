@@ -13,29 +13,13 @@
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">We have</div>
-<div class="displaymath process-math">
-\begin{align*}
-A \amp = \begin{amatrix}[ccc]\vert\amp \vert\amp \vert\\
-T((1,0,0))\amp T((0,1,0))\amp T((0,0,1)) \\
-\vert\amp \vert\amp vert  \end{amatrix} \\
-\amp =
-\begin{amatrix}[rrr]
-1 \amp 1 \amp 1 \\ 2\amp 3 \amp -4 \end{amatrix} \text{.}
-\end{align*}
+<div class="para">Let <span class="process-math">\(r_0\colon \R^2\rightarrow\R^2\)</span> be reflection across the <span class="process-math">\(x\)</span>-axis, and let <span class="process-math">\(r_{\pi/2}\colon \R^2\rightarrow \R^2\)</span> be reflection across the <span class="process-math">\(y\)</span>-axis. (See <a href="" class="xref" data-knowl="./knowl/ex_transformation_reflection.html" title="Exercise 3.2.6.20: Reflection through a line">Exercise 3.2.6.20</a>.) Use an argument in the spirit of statement (i) from <a href="" class="xref" data-knowl="./knowl/rm_bases_transformations.html" title="Remark 3.6.14: Transformations determined by behavior on basis">Remark 3.6.14</a> to show that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/ex_transformation_reflection.html ./knowl/rm_bases_transformations.html ./knowl/ex_transformation_composition_rotations_reflections.html">
+\begin{equation*}
+r_{\pi/2}\circ r_{0}=\rho_{\pi}\text{.}
+\end{equation*}
 </div>
-<div class="para">Let <span class="process-math">\(\boldx=(-2,3,4)\text{.}\)</span> Since <span class="process-math">\(A\)</span> provides a “matrix formula” for <span class="process-math">\(T\)</span> we have</div>
-<div class="displaymath process-math">
-\begin{align*}
-T(\boldx) \amp = A\boldx \\
-\amp =
-\begin{amatrix}[rrr]
-1 \amp 1 \amp 1 \\ 2\amp 3 \amp -4 \end{amatrix}
-\colvec{-2\\ 3\\ 4}\\
-\amp = \colvec{5\\ -9} \text{.}
-\end{align*}
-</div>
-<div class="para">Thus <span class="process-math">\(T((-2,3,4))=(5,-9)\text{,}\)</span> as you can confirm.</div>
+<div class="para">(Note: this equality can also be shown using our matrix formulas for rotations and reflections. See <a href="" class="xref" data-knowl="./knowl/ex_transformation_composition_rotations_reflections.html" title="Exercise 3.2.6.21: Compositions of rotations and reflections">Exercise 3.2.6.21</a>. )</div>
 </div>
 <span class="incontext"><a href="s_basis.html#p-2444" class="internal">in-context</a></span>
 </body>

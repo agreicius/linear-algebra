@@ -11,12 +11,14 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eg_eigenvector_adhoc_rotation.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_coordinates.html ./knowl/th_coordinates.html ./knowl/th_matrixrep.html ./knowl/th_coordinates.html">
 \begin{align*}
-p(t)=\det(tI-A) \amp= \det \begin{bmatrix}
-t-\cos\theta\amp \sin\theta\\ -\sin\theta\amp t-\cos\theta
-\end{bmatrix} \\
-\amp=t^2-2(\cos\theta)t+1
+\boldv \text{ is an eigenvector of } T \amp \iff \boldv\ne 0 \text{ and } T\boldv=\lambda \boldv \\
+\amp \iff \boldx=[\boldv]_B\ne \boldzero \text{ and } [T\boldv]_B=[\lambda\boldv] \amp (\knowl{./knowl/th_coordinates.html}{\text{5.1.12}}, (2)) \\
+\amp \iff \boldx=[\boldv]_B\ne \boldzero \text{ and } [T\boldv]_B=\lambda[\boldv]_B \amp (\knowl{./knowl/th_coordinates.html}{\text{5.1.12}}, (1))\\
+\amp \iff \boldx=[\boldv]\ne \boldzero \text{ and } [T]_B[\boldv]_B=\lambda[\boldv]_B \amp (\knowl{./knowl/th_matrixrep.html}{\text{5.2.6}})\\
+\amp \iff \boldx\ne 0 \text{ and } A\boldx=\lambda\boldx\\
+\amp \iff \boldx \text{ is an eigenvector of } A
 \end{align*}
 </div>
 <span class="incontext"><a href="s_eigenvectors.html#md-256" class="internal">in-context</a></span>

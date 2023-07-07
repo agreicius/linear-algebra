@@ -13,14 +13,21 @@
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">Let <span class="process-math">\(A\in M_{nn}\text{.}\)</span> Show that there is a nonzero polynomial <span class="process-math">\(p(x)=a_{n^2}x^{n^2}+a_{n^2-1}x^{n^2-1}+\cdots
-+a_1x+a_0\)</span> such that</div>
-<div class="displaymath process-math">
+<div class="para">Let <span class="process-math">\(V=M_{33}\text{,}\)</span> <span class="process-math">\(W=\{A\in M_{33}\colon A^T=-A\}\text{,}\)</span> and <span class="process-math">\(W'=\Span\{ A_1, A_2,
+A_3\}\text{,}\)</span> where</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/cor_dimension_subspace.html">
 \begin{equation*}
-p(A)=a_{n^2}A^{n^2}+a_{n^2-1}A^{n^2-1}+\cdots +a_1A+a_0I_n=\underset{n\times n}{\boldzero}
+A_1=\begin{bmatrix}0\amp 1\amp 2\\ -1\amp 0\amp 1\\ -2\amp -1\amp 0 \end{bmatrix} , \
+A_2=\begin{bmatrix}0\amp 1\amp -1\\ -1\amp 0\amp 1\\ 1\amp -1\amp 0 \end{bmatrix} ,\
+A_3=\begin{bmatrix}0\amp 1\amp 0\\ -1\amp 0\amp -1\\ 0\amp 1\amp 0 \end{bmatrix}
 \end{equation*}
 </div>
-<div class="para">.</div>
+<div class="para">Show that <span class="process-math">\(W'=W\)</span> as follows:</div>
+<ol class="lower-alpha">
+<li><div class="para">Show that <span class="process-math">\(W'\subseteq W\text{.}\)</span>
+</div></li>
+<li><div class="para">Compute the dimensions of <span class="process-math">\(W'\)</span> and <span class="process-math">\(W\)</span> and use <a href="" class="xref" data-knowl="./knowl/cor_dimension_subspace.html" title="Corollary 3.7.10: Dimension of subspaces">Corollary 3.7.10</a>.</div></li>
+</ol>
 </div>
 <span class="incontext"><a href="s_dimension.html#p-2638" class="internal">in-context</a></span>
 </body>

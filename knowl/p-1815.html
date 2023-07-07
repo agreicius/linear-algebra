@@ -11,8 +11,31 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para">We end by making good on a promise we made long ago to <em class="emphasis">retroactively</em> make sense of the definition of matrix multiplication. The key connecting concept, as it turns out, is composition of functions. We first need a result showing that composition preserves linearity.</div>
+<h5 class="heading"><span class="type">Paragraph</span></h5>
+<div class="para logical">
+<div class="para">We prove the matrix formula in the case <span class="process-math">\(n=3\text{.}\)</span> (The case <span class="process-math">\(n=2\)</span> is exactly similar.) Let <span class="process-math">\(\boldv=(a,b,c)\text{.}\)</span> In multivariable calculus we learn that given a point with position vector <span class="process-math">\(\boldx=(x,y,z)\text{,}\)</span> its orthogonal projection onto <span class="process-math">\(\ell\)</span> is the point <span class="process-math">\(Q\)</span> whose position vector is</div>
+<div class="displaymath process-math">
+\begin{align*}
+\overrightarrow{OQ}\amp=\left(\frac{\boldx\cdot \boldv}{\boldv\cdot \boldv}\right)\boldv \\
+\amp = \frac{ax+by+cz}{a^2+b^2+c^2}(a,b,c)\\
+\amp = \frac{1}{a^2+b^2+c^2}(a^2x+aby+acz, abx+b^2y+bcz, acx+bcy+c^2z)\\
+\amp = \frac{1}{a^2+b^2+c^2}\begin{bmatrix}a^2\amp ab\amp ac\\ ab \amp b^2 \amp bc \\ ac\amp bc\amp c^2 \end{bmatrix}\colvec{x\\ y\\ z}\text{.}
+\end{align*}
+</div>
+<div class="para">This proves that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\proj{\boldx}{\ell}=A\boldx\text{,}
+\end{equation*}
+</div>
+<div class="para">where</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A=\frac{1}{a^2+b^2+c^2}\begin{bmatrix}a^2\amp ab\amp ac\\ ab \amp b^2 \amp bc \\ ac\amp bc\amp c^2 \end{bmatrix}\text{,}
+\end{equation*}
+</div>
+<div class="para">as desired.</div>
+</div>
 <span class="incontext"><a href="s_transformation.html#p-1815" class="internal">in-context</a></span>
 </body>
 </html>

@@ -13,17 +13,19 @@
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">Suppose <span class="process-math">\(T\colon P^3\rightarrow P^2\)</span> is a linear transformation with matrix representation</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_matrixrep_prop.html">
-\begin{equation*}
-[T]_B^{B'}=\begin{bmatrix}
-2\amp 0\amp 0\amp -1\\
-0\amp 1\amp -1\amp 0\\
-1\amp 1\amp 1\amp 1
-\end{bmatrix}\text{,}
-\end{equation*}
+<div class="para">Let <span class="process-math">\(A=[T]_B^{B'}\text{.}\)</span> By inspection, we see easily that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_matrixreps_model.html">
+\begin{align*}
+\NS \amp= \Span\{(0,0,0,1)\}\amp \CS A\amp =\Span \{(3,0,0), (0,2,0),(0,0,1)\}=\R^3 \text{.}
+\end{align*}
 </div>
-<div class="para">where <span class="process-math">\(B=(x^3, x^2, x, 1)\)</span> and <span class="process-math">\(B'=(x^2, x, 1)\text{.}\)</span> Use the defining property <a href="" class="xref" data-knowl="./knowl/eq_matrixrep_prop.html" title="Equation 5.2.2">(5.2.2)</a> of <span class="process-math">\([T]_B^{B'}\)</span> to determine the formula for <span class="process-math">\(T(ax^3+bx^2+cx+d)\)</span> for an arbitrary polynomial <span class="process-math">\(ax^3+bx^2+cx+d\in P_3\text{.}\)</span>
+<div class="para">Using <a href="" class="xref" data-knowl="./knowl/th_matrixreps_model.html" title="Theorem 5.2.9: Computing with matrix representations">Theorem 5.2.9</a> we can lift these spanning sets back to <span class="process-math">\(P_3\)</span> and <span class="process-math">\(P_2\)</span> to conclude that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_matrixreps_model.html">
+\begin{align*}
+\NS T \amp =\Span\{1\}\subseteq P_3 \amp \im T\amp =\Span\{3x^2, x, 1\}=P_2 \text{.}
+\end{align*}
+</div>
+<div class="para">What do these results tell us about the differential operation <span class="process-math">\(T(p)=p'\text{?}\)</span>
 </div>
 </div>
 <span class="incontext"><a href="s_matrixreps.html#p-3301" class="internal">in-context</a></span>

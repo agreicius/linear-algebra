@@ -10,30 +10,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body class="ignore-math"><article class="hiddenproof"><ol class="decimal"><li>
-<div class="para logical">
-<div class="para">Assume <span class="process-math">\(T\)</span> is injective. Then</div>
-<div class="displaymath process-math">
-\begin{align*}
-T(\boldv)=\boldzero_W\amp \implies T(\boldv)=T(\boldzero_V) \\
-\amp\implies \boldv=\boldzero_V \text{.}
-\end{align*}
-</div>
-<div class="para">It follows that <span class="process-math">\(\NS T=\{\boldzero_V\}\text{.}\)</span>
-</div>
-</div>
-<div class="para logical">
-<div class="para">Now assume <span class="process-math">\(\NS T=\{\boldzero_V\}\text{.}\)</span> Then</div>
-<div class="displaymath process-math">
-\begin{align*}
-T(\boldv)=T(\boldv') \amp\implies T(\boldv)-T(\boldv')=\boldzero_W \\
-\amp\implies T(\boldv-\boldv')=\boldzero_W \\
-\amp \implies \boldv-\boldv'\in \NS T=\{\boldzero_V\}\\
-\amp\implies \boldv-\boldv'=\boldzero_V \\
-\amp \implies \boldv=\boldv'\text{.}
-\end{align*}
-</div>
-<div class="para">Thus <span class="process-math">\(T\)</span> is injective.</div>
-</div>
-</li></ol></article></body>
+<body class="ignore-math"><article class="hiddenproof"><div class="para">Let’s see why in both cases the procedure produces a basis of <span class="process-math">\(\R^n\)</span> that is either a sub- or superset of <span class="process-math">\(S\text{.}\)</span>
+</div> <article class="case"><h5 class="heading">Contracting to a basis.</h5> <div class="para">In this case we have <span class="process-math">\(\CS A=\Span S=\R^n\text{.}\)</span> Thus <span class="process-math">\(B\)</span> is a basis for <span class="process-math">\(\R^n\text{.}\)</span> Since the column space procedure selects columns <em class="emphasis">from among</em> the original columns of <span class="process-math">\(A\text{,}\)</span> we have <span class="process-math">\(B\subseteq S\text{,}\)</span> as desired.</div></article> <article class="case"><h5 class="heading">Extending to a basis.</h5> <div class="para">Since <span class="process-math">\(\CS A\)</span> contains <span class="process-math">\(\bolde_j\)</span> for all <span class="process-math">\(1\leq j\leq n\text{,}\)</span> we have <span class="process-math">\(\CS A=\R^n\text{.}\)</span> Thus <span class="process-math">\(B\)</span> is a basis for <span class="process-math">\(\R^n\text{.}\)</span> Since the first <span class="process-math">\(r\)</span> columns of <span class="process-math">\(A\)</span> are linearly independent (they are the elements of <span class="process-math">\(S\)</span>), when we row reduce <span class="process-math">\(A\)</span> to a matrix <span class="process-math">\(U\)</span> in row echelon form, the first <span class="process-math">\(r\)</span> columns of <span class="process-math">\(U\)</span> will contain leading ones. (To see this, imagine row reducing the <span class="process-math">\(n\times r\)</span> submatrix <span class="process-math">\(A'\)</span> consisting of the first <span class="process-math">\(r\)</span> columns of <span class="process-math">\(A\)</span> to a row echelon matrix <span class="process-math">\(U'\text{.}\)</span> Since these columns are linearly independent, they already form a basis for <span class="process-math">\(\CS A'\text{.}\)</span> Thus the corresponding colmns of <span class="process-math">\(U'\)</span> must all have leading ones. ) It follows that the first <span class="process-math">\(r\)</span> columns of <span class="process-math">\(A\)</span> are selected to be in the basis <span class="process-math">\(B\text{,}\)</span> and hence that <span class="process-math">\(S\subseteq B\text{,}\)</span> as desired.</div></article></article></body>
 </html>

@@ -12,9 +12,17 @@
 </head>
 <body class="ignore-math">
 <article class="hiddenproof"><h4 class="heading"><span class="type">Proof</span></h4>
-<ol class="decimal">
-<li><div class="para">See <a href="" class="xref" data-knowl="./knowl/proc_gram-schmidt.html" title="Procedure 4.2.9: Gram-Schmidt procedure">Procedure 4.2.9</a> and its proof.</div></li>
-<li><div class="para">The orthogonal set <span class="process-math">\(S\)</span> is linearly independent by <a href="" class="xref" data-knowl="./knowl/th_orthogonal.html" title="Theorem 4.2.2: Orthogonal implies linearly independent">Theorem 4.2.2</a>. Let <span class="process-math">\(S=\{\boldv_1,\boldv_2,\dots, \boldv_r\}\)</span> be the distinct elements of <span class="process-math">\(S\text{.}\)</span> (We must have <span class="process-math">\(r\leq n\)</span> since <span class="process-math">\(S\)</span> is linearly independent.) By <a href="" class="xref" data-knowl="./knowl/th_basis_contract_expand.html" title="Theorem 3.7.8: Contracting and expanding to bases">Theorem 3.7.8</a> we can extend <span class="process-math">\(S\)</span> to a basis <span class="process-math">\(B=\{\boldv_1,\dots, \boldv_r, \boldv_{r+1}, \dots, \boldv_n\}\text{.}\)</span> It is easy to see that when we apply the Gram-Schmidt procedure to <span class="process-math">\(B\text{,}\)</span> the first <span class="process-math">\(r\)</span> vectors are left unchanged, as they are already pairwise orthogonal. Thus Gram-Schmidt returns an orthogonal basis of the form <span class="process-math">\(B'=\{\boldv_1,\dots, \boldv_r, \boldw_{r+1}, \dots, \boldw_n\}\text{,}\)</span> as desired.</div></li>
-</ol></article><span class="incontext"><a href="s_orthogonality.html#proof-79" class="internal">in-context</a></span>
+<div class="para logical">
+<div class="para">Given any distinct elements <span class="process-math">\(\boldv_1, \boldv_2, \dots, \boldv_r\in S\text{,}\)</span> we have</div>
+<div class="displaymath process-math">
+\begin{align*}
+c_1\boldv_1 +c_2\boldv_2+\cdots +c_r\boldv_r=\boldzero\amp \Rightarrow\amp  \langle c_1\boldv_1 +c_2\boldv_2 +\cdots +c_r\boldv_r,\boldv_i\rangle=\langle\boldzero,\boldv_i\rangle\\
+\amp \Rightarrow\amp  c_1\langle\boldv_1,\boldv_i\rangle +c_2\langle \boldv_2,\boldv_i\rangle +\cdots +c_r\langle\boldv_r,\boldv_i\rangle=0\\
+\amp \Rightarrow\amp  c_i\langle \boldv_i,\boldv_i\rangle=0 \ \text{ (since \(\langle\boldv_j,\boldv_i\rangle= 0\) for \(j\ne i\)) }\\
+\amp \Rightarrow\amp  c_i=0  \text{ (since \(\langle\boldv_i,\boldv_i\rangle\ne 0\)) }\text{.}
+\end{align*}
+</div>
+<div class="para">This proves that <span class="process-math">\(S\)</span> is linearly independent.</div>
+</div></article><span class="incontext"><a href="s_orthogonality.html#proof-79" class="internal">in-context</a></span>
 </body>
 </html>

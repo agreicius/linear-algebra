@@ -3526,7 +3526,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.1",
   "title": "Real vector spaces",
-  "body": " Real vector spaces   When discussing matrix algebra we saw that operations from real number arithmetic have natural analogues in the world of matrices. Furthermore, the act of comparing these two different algebraic systems brought to light many interesting features of matrix algebra.  Why stop at matrices? Are there other interesting algebraic systems that admit analogous operations? If so, to what degree do these systems agree with or differ from real number or matrix algebra?  A common technique in mathematics for such investigations is to distill the important properties of the motivating operations into a list of axioms , and then to prove statements that apply to any system that satisfies these axioms.  We now embark on just such an axiomatic approach. The notion of a vector space arises from focusing on just two operations from matrix algebra: matrix addition and matrix scalar multiplication. As we saw in , these two operations satisfy many useful properties: , commutativity, associativity, distributivity, . Whereas earlier we showed directly that matrix algebra satisfies these properties, now we will come at things the other way: we record these various properties as a list of axioms, and declare any system that satisfies these axioms to be a vector space.  Once we've established the definition of a vector space, when we go on to investigate the properties enjoyed by vector spaces we make no assumptions beyond the fact that the basic axioms are satisfied. This approach comes off as somewhat abstract, but has the advantage that our conclusions now apply to any vector space you can think of. You don't have to reinvent the wheel each time you stumble across a new vector space.    Definition of a vector space   Vector space  vector space definition  vector space zero vector  vector space vector inverse  vector space vector   A (real) vector space is a set together with two operations, scalar multiplication and vector addition , described in detail below.    Scalar multiplication  This operation takes as input any real number and any element , and outputs another element of , denoted . We describe this operation using function notation as follows: .    Vector addition  This operation takes as input any pair of elements and returns another element of , denoted . In function notation: .    Furthermore, these two operations must satisfy the following list of axioms.    Vector addition is commutative  For all , we have .    Vector addition is associative  For all , we have .    Existence of additive identity  There is an element such that for all , we have . The element is called the zero vector of .    Existence of additive inverses  For all , there is another element satisfying . Given , the element is called the vector inverse of .    Distribution over vector addition  For all and , we have .    Distribution over scalar addition  For all and , we have     Scalar multiplication is associative  For all and all , we have .    Scalar multiplicative identity  For all , we have .    We call the elements of a vector space vectors .      What's the deal with the real modifier? The reals are one example of a type of number system called a field . Other examples of fields are given by the complex numbers ( ) and the rational numbers ( ). If is a field, and if we replace each mention of in with a mention of , then we are left with the definition of a vector space over . Setting , for example, we get the definition of a complex vector space.  In our treatment of linear algebra we will largely focus on real vector spaces, and as such will often drop this modifier: hence the parentheses in the definition.      Examples  When introducing a new vector space there are many details in that must be verified. To help organize this task, follow this checklist:   Make explicit the underlying set of the vector space.    Make explicit what the scalar multiplication and vector addition operations are.    Identify an element of that serves as the zero vector and indicate the rule that assigns vector inverses to elements of .    Show that the two vector operations and our choice of zero vector and vector inverses satisfy the axioms of .   Think of items (1)-(3) of our checklist as official declarations about the makeup of our vector space: The underlying set shall be as stated ; We declare the vector operations thusly ; The zero vector shall be this element here, and vector inverses shall be assigned in this manner . Item (4) is where we get down to the nitty gritty of showing that the our proposed vector space structure articulated in (1)-(3) does indeed satisfy all the necessary properties.  In each of the examples below we carefully lay out the details of items (1)-(3) while often leaving much of the work of item (4) to you. You will meet these vector spaces frequently throughout the rest of your life. Each time you do, it will be helpful for orientation purposes to mentally run through items (1)-(3). Ask yourself: What is the underlying set? What are vector operations? What acts as the zero vector, and how do I assign vector inverses?   Vector space of matrices  vector space of matrices    vector space of matrices     Underlying set  The vector space of matrices , denoted , is the set of all matrices: i.e., .    Vector operations  Scalar multiplication and vector addition in are defined as matrix scalar multiplication and matrix addition, respectively.    Zero vector and vector inverses  The zero vector of is the zero matrix: i.e., .  Given an element , its vector inverse is the matrix additive inverse .    Verification of axioms  We showed in that matrix scalar multiplication and vector addition, satisfy axioms (i), (ii), (v)-(viii). implies that our choice of zero vector ( ) and vector inverses ( ) satisfies axioms (iii)-(iv).      Vector space of real -tuples  vector space of -tuples    vector space of -tuples     Underlying set  The vector space of real -tuples , denoted , is the set of all real -tuples with real coefficients: , .    Vector operations  The vector operations on -tuples are defined entry-wise.   Scalar multiplication . Given and , we define .   Vector addition . Given and , we define .    Zero vector and vector inverses  The zero vector is the -tuple of all zeros: i.e., .  Given a vector , we have .    Verification of axioms  It is clear that structurally speaking behaves exactly like , the vector space of row vectors: we have essentially just replaced brackets with parentheses. As such it follows from the previous example that , along with the given operations, constitutes a vector space.     Why introduce a new vector space, , if it is essentially the same thing as , or even for that matter? Recall that a matrix is not simply an ordered sequence: it is an ordered sequence arranged in a very particular way. This subtlety is baked into the very definition of matrix equality, and allows us to say that . There are situations, however, where we don't need this extra layer of structure, where we want to treat an ordered sequence simply as an ordered sequence. In such situations tuples are preferred to row or column vectors.  That said, the close connection between linear systems and matrix equations makes it very convenient to treat an -tuple as if it were the column vector . This conflation is so convenient, in fact, that we will simply declare it to be true by fiat!   Tuples shall be column vectors, and vice versa   We hereby declare that for all we have . In other words, tuples are henceforth the same as column vectors.    We now continue our catalog of vector spaces by moving on to more exotic examples, starting with the zero (or trivial) vector space .   Zero vector space  vector space zero vector space    the zero vector space     Underlying set  A zero (or trivial) vector space is a set containing exactly one element: i.e., .    Vector operations  Since contains only one element we have no real choice in defining our vector operations.   Scalar multiplication . Define for any and the unique element .   Vector addition . Define for the unique element .    Zero vector and vector inverses  We declare . Accordingly we will write from now on.  We declare .    Verification of axioms  It is clear that satisfies the axioms of : for axioms (i)-(ii) and (v)-(viii) both sides of the desired equality are equal to ; axioms (iii)-(iv) boil down to the fact that by definition.      The vector space of infinite real sequences  vector space of infinite real sequences    the vector space of infinite real sequences     Underlying set  The vector space of real infinite sequences , denoted , is the set of all infinite sequences , where for all : i.e., .    Vector operations  As in we define our vector operations on infinite sequences entry-wise.   Scalar multiplication . Given and , we define .   Vector addition . Given and , we define .    Zero vector and vector inverses  The zero vector is the sequence of all zeros: i.e., .  Given a vector , we let .    Verification of axioms  Exercise. Observe that since the vector operations are defined entry-wise, the vector arithmetic in not so very different from that of .      Real-valued functions  vector space of real-valued functions on a set    vector space of functions from to     Underlying set  Let be a set. The vector space of functions from to , denoted , is the set of all real-valued functions : , the set of all functions with domain and codomain .    Vector operations  The vector operations on defined below are generalizations of operations you may have seen before when learning about function transformations.   Scalar multiplication . Given and a real-valued function , we let be the function defined as .   Vector addition . Given real-valued functions and with domain , we let be the function defined as .    Zero vector and vector inverses  The zero vector is the constant function that assigns a value of 0 to all elements of : i.e., for all .  Given a function , its vector inverse is the function defined as .    Verification of axioms Exercise.      Take a moment to let the exotic quality of this example sink in. The things we are calling vectors in this case are entire functions !  Consider . A vector of is a function : a rule that assigns to any input a unique output . Thus the functions and defined as and are both vectors of , as is any function given by a formula involving familiar mathematical functions and operations (as long as the formula is defined for all ). That's a lot of vectors! And yet we are only beginning to scratch the surface, since a function of need not be given by a nice formula; it simply has to be a well-defined rule. For example, the function defined as is also an element of .  Hopefully this discussion gives some indication of how a vector space like is in some sense much larger than spaces like or , whose general elements can be described in a finite manner. This vague intuition can be made precise with the notion of the dimension of a vector space, which we develop in .    We end with an example that illustrates how we can define the vector operations to be anything we like, as long as they satisfy the axioms of . In this case scalar multiplication will be defined as real number exponentiation , and vector addition will be defined as real number multiplication .   Vector space of positive real numbers  vector space of positive real numbers    vector space of positive real numbers     Underlying set  The vector space of positive real numbers , denoted , is defined as .    Vector operations  Scalar multiplication is defined via exponentiation and vector addition is defined as multiplication.   Scalar multiplication . Given and we define .   Vector addition . Given , we define .    Zero vector and vector inverses  The zero vector of is the number 1: i.e., we have in the vector space .  Given the vector inverse is defined as .    Verification of axioms  Exercise. We point out, however, that in this case the fact that the operations are actually well-defined should be justified. This is where the positivity of elements of comes into play: since is a positive number, the power is defined for any and is again positive. Thus is indeed an element of . Similarly, if and are both positive numbers, then so is .     The notion of a linear combination of matrices ( ) generalizes easily to any vector space, and will be an important concept in the further development of our theory.   Linear combination of vectors  linear combination of vectors   Let be a vector space. An expression of the form , where and for all , is called a linear combination . The scalars are called the coefficients of the linear combination.     Vector linear combination   Let . Given the vectors and , compute the linear combination .    By definition of scalar multiplication in ( ) we have . Next, since vector addition in is defined as real number multiplication ( ), we conclude .      General properties  When proving a general fact about vector spaces we can only invoke the defining axioms; we cannot assume the vectors of the space assume any particular form. For example, we cannot assume vectors of are -tuples, or matrices, etc. We end with an example of such an axiomatic proof.   Basic vector space properties   Let be a vector space.   For all , we have .    For all , we have .    For all , we have .    For all , if , then or .        We prove (1), leaving (2)-(4) as an exercise.  First observe that , since .  By Axiom (vi) we have . Thus .  Now add , the vector inverse of , to both sides of the last equation: .  Now simplify this equation step by step using the axioms: .      WeBWork Exercises    Let . For and define vector addition by and scalar multiplication by . It can be shown that is a vector space over the scalar field . Find the following:  the sum:   the scalar multiple:   the zero vector:   the additive inverse of :                              Let . For and define vector addition by and scalar multiplication by . It can be shown that is a vector space over the scalar field . Find the following:  the sum:  ( , )  the scalar multiple:  ( , )  the zero vector:  ( , )  the additive inverse of :  ( , )                                                 Let . For and define vector addition by and scalar multiplication by . It can be shown that is a vector space over the scalar field . Find the following:  the sum:   the scalar multiple:   the additive inverse of :   the zero vector:   the additive inverse of :                                   Verify that , along with the proposed vector operations , satisfies the defining axioms of a vector space.    Verify that , along with the proposed vector operations , satisfies the defining axioms of a vector space.  Note: we use the funny symbols and for scalar multiplication and vector addition to prevent confusion between the vector operations of and real number arithmetic operations.    Failed vector spaces   In each exercise below, the provided set, along with proposed vector operations, does not constitute a vector space. Identify all details of the vector space definition that fail to be satisfied. In addition to checking the axioms, you should also ask whether the proposed vector operations are well-defined. Provide explicit counterexamples for each failed property.    Let . Define vector addition on to be the usual -tuple vector addition, but define scalar multiplication as .    Let . Define vector addition on to be the usual -tuple vector addition, but define scalar multiplication as .    Let . Define scalar multiplication and vector addition to be the usual matrix scalar multiplication and matrix addition.     Verifying vector space axioms   In each exercise below the provided set, along with proposed vector operations, does constitute a vector space. Verify the indicated axioms.    Let be a variable. Define , the set of all linear polynomials with constant coefficient equal to one. Define the vector operations as follows: . Verify axioms (iii)-(vi).    Let : i.e., is the set of pairs whose first entry is positive and whose second entry is negative. . Verify axioms (iii)-(v), and axiom (viii).     Prove statements (2)-(4) of . When treating a specific part you may assume the results of any part that has already been proven, including statement (1).    Let be a vector space.   Show that the zero vector of is unique: , show that if satisfies for all , then .    Fix . Show that the vector inverse of is unique: , show that if , then .   Thus we may speak of the zero vector of a vector space, and the vector inverse of a vector .    Let be a vector space. Prove: .    Let be a vector space. Prove that either ( , is the zero space) or is infinite. In other words, a vector space contains either exactly one element or infinitely many elements.   Assume contains a nonzero vector . Show that if , then . You assume the results of .    "
+  "body": " Real vector spaces   When discussing matrix algebra we saw that operations from real number arithmetic have natural analogues in the world of matrices. Furthermore, the act of comparing these two different algebraic systems brought to light many interesting features of matrix algebra.  Why stop at matrices? Are there other interesting algebraic systems that admit analogous operations? If so, to what degree do these systems agree with or differ from real number or matrix algebra?  A common technique in mathematics for such investigations is to distill the important properties of the motivating operations into a list of axioms , and then to prove statements that apply to any system that satisfies these axioms.  We now embark on just such an axiomatic approach. The notion of a vector space arises from focusing on just two operations from matrix algebra: matrix addition and matrix scalar multiplication. As we saw in , these two operations satisfy many useful properties: , commutativity, associativity, distributivity, . Whereas earlier we showed directly that matrix algebra satisfies these properties, now we will come at things the other way: we record these various properties as a list of axioms, and declare any system that satisfies these axioms to be a vector space.  Once we've established the definition of a vector space, when we go on to investigate the properties enjoyed by vector spaces we make no assumptions beyond the fact that the basic axioms are satisfied. This approach comes off as somewhat abstract, but has the advantage that our conclusions now apply to any vector space you can think of. You don't have to reinvent the wheel each time you stumble across a new vector space.    Definition of a vector space   Vector space  vector space definition  vector space zero vector  vector space vector inverse  vector space vector   A (real) vector space is a set together with two operations, scalar multiplication and vector addition , described in detail below.    Scalar multiplication  This operation takes as input any real number and any element , and outputs another element of , denoted . We describe this operation using function notation as follows: .    Vector addition  This operation takes as input any pair of elements and returns another element of , denoted . In function notation: .    Furthermore, these two operations must satisfy the following list of axioms.    Vector addition is commutative  For all , we have .    Vector addition is associative  For all , we have .    Existence of additive identity  There is an element such that for all , we have . The element is called the zero vector of .    Existence of additive inverses  For all , there is another element satisfying . Given , the element is called the vector inverse of .    Distribution over vector addition  For all and , we have .    Distribution over scalar addition  For all and , we have     Scalar multiplication is associative  For all and all , we have .    Scalar multiplicative identity  For all , we have .    We call the elements of a vector space vectors .      What's the deal with the real modifier? The reals are one example of a type of number system called a field . Other examples of fields are given by the complex numbers ( ) and the rational numbers ( ). If is a field, and if we replace each mention of in with a mention of , then we are left with the definition of a vector space over . Setting , for example, we get the definition of a complex vector space.  In our treatment of linear algebra we will largely focus on real vector spaces, and as such will often drop this modifier: hence the parentheses in the definition.      Examples  When introducing a new vector space there are many details in that must be verified. To help organize this task, follow this checklist:   Make explicit the underlying set of the vector space.    Make explicit what the scalar multiplication and vector addition operations are.    Identify an element of that serves as the zero vector and indicate the rule that assigns vector inverses to elements of .    Show that the two vector operations and our choice of zero vector and vector inverses satisfy the axioms of .   Think of items (1)-(3) of our checklist as official declarations about the makeup of our vector space: The underlying set shall be as stated ; We declare the vector operations thusly ; The zero vector shall be this element here, and vector inverses shall be assigned in this manner . Item (4) is where we get down to the nitty gritty of showing that the our proposed vector space structure articulated in (1)-(3) does indeed satisfy all the necessary properties.  In each of the examples below we carefully lay out the details of items (1)-(3) while often leaving much of the work of item (4) to you. You will meet these vector spaces frequently throughout the rest of your life. Each time you do, it will be helpful for orientation purposes to mentally run through items (1)-(3). Ask yourself: What is the underlying set? What are vector operations? What acts as the zero vector, and how do I assign vector inverses?   Vector space of matrices  vector space of matrices    vector space of matrices     Underlying set  The vector space of matrices , denoted , is the set of all matrices: i.e., .    Vector operations  Scalar multiplication and vector addition in are defined as matrix scalar multiplication and matrix addition, respectively.    Zero vector and vector inverses  The zero vector of is the zero matrix: i.e., .  Given an element , its vector inverse is the matrix additive inverse .    Verification of axioms  We showed in that matrix scalar multiplication and vector addition, satisfy axioms (i), (ii), (v)-(viii). implies that our choice of zero vector ( ) and vector inverses ( ) satisfies axioms (iii)-(iv).      Vector space of real -tuples  vector space of -tuples    vector space of -tuples     Underlying set  The vector space of real -tuples , denoted , is the set of all real -tuples with real coefficients: , .    Vector operations  The vector operations on -tuples are defined entry-wise.   Scalar multiplication . Given and , we define .   Vector addition . Given and , we define .    Zero vector and vector inverses  The zero vector is the -tuple of all zeros: i.e., .  Given a vector , we have .    Verification of axioms  It is clear that structurally speaking behaves exactly like , the vector space of row vectors: we have essentially just replaced brackets with parentheses. As such it follows from the previous example that , along with the given operations, constitutes a vector space.      Visualizing : points and arrows  Fix . Once we choose a coordinate system for (complete with origin and coordinate axes), we can visually represent an element of either as a point  or as an arrow (or directed line segment ) that begins at a point of our choosing and ends at the point . When we choose the initial point to be the origin , the corresponding arrow is just , called the position vector of . illustrates a variety of visual representations of the element of .   Visualizing : points and arrows  Point and arrow representations of   Point and arrow representations of     As a general rule of thumb, when trying to visualize subsets of ( , lines and planes), it helps to think of -tuples as points ; and when trying to visualize vector arithmetic in , it helps to think of -tuples as arrows . Indeed, when using the arrow representation of -tuples, vector addition can be visualized using the familiar tip to tail method; and vector scalar multiplication can be understood as scaling arrows. summarizes these visualization techniques in the case .   Visualizing vector arithmetic  Visualizing vector arithmetic between and   Visualizing vector arithmetic      Why introduce a new vector space, , if it is essentially the same thing as , or even for that matter? Recall that a matrix is not simply an ordered sequence: it is an ordered sequence arranged in a very particular way. This subtlety is baked into the very definition of matrix equality, and allows us to say that . There are situations, however, where we don't need this extra layer of structure, where we want to treat an ordered sequence simply as an ordered sequence. In such situations tuples are preferred to row or column vectors.  That said, the close connection between linear systems and matrix equations makes it very convenient to treat an -tuple as if it were the column vector . This conflation is so convenient, in fact, that we will simply declare it to be true by fiat!   Tuples shall be column vectors, and vice versa   We hereby declare that for all we have . In other words, tuples are henceforth the same as column vectors.    We now continue our catalog of vector spaces by moving on to more exotic examples, starting with the zero (or trivial) vector space .   Zero vector space  vector space zero vector space    the zero vector space     Underlying set  A zero (or trivial) vector space is a set containing exactly one element: i.e., .    Vector operations  Since contains only one element we have no real choice in defining our vector operations.   Scalar multiplication . Define for any and the unique element .   Vector addition . Define for the unique element .    Zero vector and vector inverses  We declare . Accordingly we will write from now on.  We declare .    Verification of axioms  It is clear that satisfies the axioms of : for axioms (i)-(ii) and (v)-(viii) both sides of the desired equality are equal to ; axioms (iii)-(iv) boil down to the fact that by definition.      The vector space of infinite real sequences  vector space of infinite real sequences    the vector space of infinite real sequences     Underlying set  The vector space of real infinite sequences , denoted , is the set of all infinite sequences , where for all : i.e., .    Vector operations  As in we define our vector operations on infinite sequences entry-wise.   Scalar multiplication . Given and , we define .   Vector addition . Given and , we define .    Zero vector and vector inverses  The zero vector is the sequence of all zeros: i.e., .  Given a vector , we let .    Verification of axioms  Exercise. Observe that since the vector operations are defined entry-wise, the vector arithmetic in not so very different from that of .      Real-valued functions  vector space of real-valued functions on a set    vector space of functions from to     Underlying set  Let be a set. The vector space of functions from to , denoted , is the set of all real-valued functions : , the set of all functions with domain and codomain .    Vector operations  The vector operations on defined below are generalizations of operations you may have seen before when learning about function transformations.   Scalar multiplication . Given and a real-valued function , we let be the function defined as .   Vector addition . Given real-valued functions and with domain , we let be the function defined as .    Zero vector and vector inverses  The zero vector is the constant function that assigns a value of 0 to all elements of : i.e., for all .  Given a function , its vector inverse is the function defined as .    Verification of axioms Exercise.      Take a moment to let the exotic quality of this example sink in. The things we are calling vectors in this case are entire functions !  Consider . A vector of is a function : a rule that assigns to any input a unique output . Thus the functions and defined as and are both vectors of , as is any function given by a formula involving familiar mathematical functions and operations (as long as the formula is defined for all ). That's a lot of vectors! And yet we are only beginning to scratch the surface, since a function of need not be given by a nice formula; it simply has to be a well-defined rule. For example, the function defined as is also an element of .  Hopefully this discussion gives some indication of how a vector space like is in some sense much larger than spaces like or , whose general elements can be described in a finite manner. This vague intuition can be made precise with the notion of the dimension of a vector space, which we develop in .    We end with an example that illustrates how we can define the vector operations to be anything we like, as long as they satisfy the axioms of . In this case scalar multiplication will be defined as real number exponentiation , and vector addition will be defined as real number multiplication .   Vector space of positive real numbers  vector space of positive real numbers    vector space of positive real numbers     Underlying set  The vector space of positive real numbers , denoted , is defined as .    Vector operations  Scalar multiplication is defined via exponentiation and vector addition is defined as multiplication.   Scalar multiplication . Given and we define .   Vector addition . Given , we define .    Zero vector and vector inverses  The zero vector of is the number 1: i.e., we have in the vector space .  Given the vector inverse is defined as .    Verification of axioms  Exercise. We point out, however, that in this case the fact that the operations are actually well-defined should be justified. This is where the positivity of elements of comes into play: since is a positive number, the power is defined for any and is again positive. Thus is indeed an element of . Similarly, if and are both positive numbers, then so is .     The notion of a linear combination of matrices ( ) generalizes easily to any vector space, and will be an important concept in the further development of our theory.   Linear combination of vectors  linear combination of vectors   Let be a vector space. An expression of the form , where and for all , is called a linear combination . The scalars are called the coefficients of the linear combination.     Vector linear combination   Let . Given the vectors and , compute the linear combination .    By definition of scalar multiplication in ( ) we have . Next, since vector addition in is defined as real number multiplication ( ), we conclude .      General properties  When proving a general fact about vector spaces we can only invoke the defining axioms; we cannot assume the vectors of the space assume any particular form. For example, we cannot assume vectors of are -tuples, or matrices, etc. We end with an example of such an axiomatic proof.   Basic vector space properties   Let be a vector space.   For all , we have .    For all , we have .    For all , we have .    For all , if , then or .        We prove (1), leaving (2)-(4) as an exercise.  First observe that , since .  By Axiom (vi) we have . Thus .  Now add , the vector inverse of , to both sides of the last equation: .  Now simplify this equation step by step using the axioms: .      WeBWork Exercises    Let . For and define vector addition by and scalar multiplication by . It can be shown that is a vector space over the scalar field . Find the following:  the sum:   the scalar multiple:   the zero vector:   the additive inverse of :                              Let . For and define vector addition by and scalar multiplication by . It can be shown that is a vector space over the scalar field . Find the following:  the sum:  ( , )  the scalar multiple:  ( , )  the zero vector:  ( , )  the additive inverse of :  ( , )                                                 Let . For and define vector addition by and scalar multiplication by . It can be shown that is a vector space over the scalar field . Find the following:  the sum:   the scalar multiple:   the additive inverse of :   the zero vector:   the additive inverse of :                                   Verify that , along with the proposed vector operations , satisfies the defining axioms of a vector space.    Verify that , along with the proposed vector operations , satisfies the defining axioms of a vector space.  Note: we use the funny symbols and for scalar multiplication and vector addition to prevent confusion between the vector operations of and real number arithmetic operations.    Failed vector spaces   In each exercise below, the provided set, along with proposed vector operations, does not constitute a vector space. Identify all details of the vector space definition that fail to be satisfied. In addition to checking the axioms, you should also ask whether the proposed vector operations are well-defined. Provide explicit counterexamples for each failed property.    Let . Define vector addition on to be the usual -tuple vector addition, but define scalar multiplication as .    Let . Define vector addition on to be the usual -tuple vector addition, but define scalar multiplication as .    Let . Define scalar multiplication and vector addition to be the usual matrix scalar multiplication and matrix addition.     Verifying vector space axioms   In each exercise below the provided set, along with proposed vector operations, does constitute a vector space. Verify the indicated axioms.    Let be a variable. Define , the set of all linear polynomials with constant coefficient equal to one. Define the vector operations as follows: . Verify axioms (iii)-(vi).    Let : i.e., is the set of pairs whose first entry is positive and whose second entry is negative. . Verify axioms (iii)-(v), and axiom (viii).     Prove statements (2)-(4) of . When treating a specific part you may assume the results of any part that has already been proven, including statement (1).    Let be a vector space.   Show that the zero vector of is unique: , show that if satisfies for all , then .    Fix . Show that the vector inverse of is unique: , show that if , then .   Thus we may speak of the zero vector of a vector space, and the vector inverse of a vector .    Let be a vector space. Prove: .    Let be a vector space. Prove that either ( , is the zero space) or is infinite. In other words, a vector space contains either exactly one element or infinitely many elements.   Assume contains a nonzero vector . Show that if , then . You assume the results of .    "
 },
 {
   "id": "d_vector_space",
@@ -3565,11 +3565,20 @@ var ptx_lunr_docs = [
   "body": " Vector space of real -tuples  vector space of -tuples    vector space of -tuples     Underlying set  The vector space of real -tuples , denoted , is the set of all real -tuples with real coefficients: , .    Vector operations  The vector operations on -tuples are defined entry-wise.   Scalar multiplication . Given and , we define .   Vector addition . Given and , we define .    Zero vector and vector inverses  The zero vector is the -tuple of all zeros: i.e., .  Given a vector , we have .    Verification of axioms  It is clear that structurally speaking behaves exactly like , the vector space of row vectors: we have essentially just replaced brackets with parentheses. As such it follows from the previous example that , along with the given operations, constitutes a vector space.    "
 },
 {
+  "id": "rm_points_arrows",
+  "level": "2",
+  "url": "s_vectorspace.html#rm_points_arrows",
+  "type": "Remark",
+  "number": "3.1.5",
+  "title": "Visualizing <span class=\"process-math\">\\(\\R^n\\text{:}\\)<\/span> points and arrows.",
+  "body": " Visualizing : points and arrows  Fix . Once we choose a coordinate system for (complete with origin and coordinate axes), we can visually represent an element of either as a point  or as an arrow (or directed line segment ) that begins at a point of our choosing and ends at the point . When we choose the initial point to be the origin , the corresponding arrow is just , called the position vector of . illustrates a variety of visual representations of the element of .   Visualizing : points and arrows  Point and arrow representations of   Point and arrow representations of     As a general rule of thumb, when trying to visualize subsets of ( , lines and planes), it helps to think of -tuples as points ; and when trying to visualize vector arithmetic in , it helps to think of -tuples as arrows . Indeed, when using the arrow representation of -tuples, vector addition can be visualized using the familiar tip to tail method; and vector scalar multiplication can be understood as scaling arrows. summarizes these visualization techniques in the case .   Visualizing vector arithmetic  Visualizing vector arithmetic between and   Visualizing vector arithmetic     "
+},
+{
   "id": "declaration_tuples_columns",
   "level": "2",
   "url": "s_vectorspace.html#declaration_tuples_columns",
   "type": "Fiat",
-  "number": "3.1.5",
+  "number": "3.1.8",
   "title": "Tuples shall be column vectors, and vice versa.",
   "body": " Tuples shall be column vectors, and vice versa   We hereby declare that for all we have . In other words, tuples are henceforth the same as column vectors.   "
 },
@@ -3578,7 +3587,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_vectorspace.html#ex_vs_zerospace",
   "type": "Example",
-  "number": "3.1.6",
+  "number": "3.1.9",
   "title": "Zero vector space.",
   "body": " Zero vector space  vector space zero vector space    the zero vector space     Underlying set  A zero (or trivial) vector space is a set containing exactly one element: i.e., .    Vector operations  Since contains only one element we have no real choice in defining our vector operations.   Scalar multiplication . Define for any and the unique element .   Vector addition . Define for the unique element .    Zero vector and vector inverses  We declare . Accordingly we will write from now on.  We declare .    Verification of axioms  It is clear that satisfies the axioms of : for axioms (i)-(ii) and (v)-(viii) both sides of the desired equality are equal to ; axioms (iii)-(iv) boil down to the fact that by definition.    "
 },
@@ -3587,7 +3596,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_vectorspace.html#ex_vs_infinitesequences",
   "type": "Example",
-  "number": "3.1.7",
+  "number": "3.1.10",
   "title": "The vector space of infinite real sequences.",
   "body": " The vector space of infinite real sequences  vector space of infinite real sequences    the vector space of infinite real sequences     Underlying set  The vector space of real infinite sequences , denoted , is the set of all infinite sequences , where for all : i.e., .    Vector operations  As in we define our vector operations on infinite sequences entry-wise.   Scalar multiplication . Given and , we define .   Vector addition . Given and , we define .    Zero vector and vector inverses  The zero vector is the sequence of all zeros: i.e., .  Given a vector , we let .    Verification of axioms  Exercise. Observe that since the vector operations are defined entry-wise, the vector arithmetic in not so very different from that of .    "
 },
@@ -3596,7 +3605,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_vectorspace.html#ex_vs_functions",
   "type": "Example",
-  "number": "3.1.8",
+  "number": "3.1.11",
   "title": "Real-valued functions.",
   "body": " Real-valued functions  vector space of real-valued functions on a set    vector space of functions from to     Underlying set  Let be a set. The vector space of functions from to , denoted , is the set of all real-valued functions : , the set of all functions with domain and codomain .    Vector operations  The vector operations on defined below are generalizations of operations you may have seen before when learning about function transformations.   Scalar multiplication . Given and a real-valued function , we let be the function defined as .   Vector addition . Given real-valued functions and with domain , we let be the function defined as .    Zero vector and vector inverses  The zero vector is the constant function that assigns a value of 0 to all elements of : i.e., for all .  Given a function , its vector inverse is the function defined as .    Verification of axioms Exercise.   "
 },
@@ -3605,7 +3614,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_vectorspace.html#rm_vs_functions",
   "type": "Remark",
-  "number": "3.1.9",
+  "number": "3.1.12",
   "title": "",
   "body": "  Take a moment to let the exotic quality of this example sink in. The things we are calling vectors in this case are entire functions !  Consider . A vector of is a function : a rule that assigns to any input a unique output . Thus the functions and defined as and are both vectors of , as is any function given by a formula involving familiar mathematical functions and operations (as long as the formula is defined for all ). That's a lot of vectors! And yet we are only beginning to scratch the surface, since a function of need not be given by a nice formula; it simply has to be a well-defined rule. For example, the function defined as is also an element of .  Hopefully this discussion gives some indication of how a vector space like is in some sense much larger than spaces like or , whose general elements can be described in a finite manner. This vague intuition can be made precise with the notion of the dimension of a vector space, which we develop in .   "
 },
@@ -3614,7 +3623,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_vectorspace.html#ex_vs_positivereals",
   "type": "Example",
-  "number": "3.1.10",
+  "number": "3.1.13",
   "title": "Vector space of positive real numbers.",
   "body": " Vector space of positive real numbers  vector space of positive real numbers    vector space of positive real numbers     Underlying set  The vector space of positive real numbers , denoted , is defined as .    Vector operations  Scalar multiplication is defined via exponentiation and vector addition is defined as multiplication.   Scalar multiplication . Given and we define .   Vector addition . Given , we define .    Zero vector and vector inverses  The zero vector of is the number 1: i.e., we have in the vector space .  Given the vector inverse is defined as .    Verification of axioms  Exercise. We point out, however, that in this case the fact that the operations are actually well-defined should be justified. This is where the positivity of elements of comes into play: since is a positive number, the power is defined for any and is again positive. Thus is indeed an element of . Similarly, if and are both positive numbers, then so is .    "
 },
@@ -3623,7 +3632,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_vectorspace.html#d_vector_lin_comb",
   "type": "Definition",
-  "number": "3.1.11",
+  "number": "3.1.14",
   "title": "Linear combination of vectors.",
   "body": " Linear combination of vectors  linear combination of vectors   Let be a vector space. An expression of the form , where and for all , is called a linear combination . The scalars are called the coefficients of the linear combination.   "
 },
@@ -3632,7 +3641,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_vectorspace.html#eg_vector_linear_combination",
   "type": "Example",
-  "number": "3.1.12",
+  "number": "3.1.15",
   "title": "Vector linear combination.",
   "body": " Vector linear combination   Let . Given the vectors and , compute the linear combination .    By definition of scalar multiplication in ( ) we have . Next, since vector addition in is defined as real number multiplication ( ), we conclude .   "
 },
@@ -3641,7 +3650,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_vectorspace.html#th_vectorspace_props",
   "type": "Theorem",
-  "number": "3.1.13",
+  "number": "3.1.16",
   "title": "Basic vector space properties.",
   "body": " Basic vector space properties   Let be a vector space.   For all , we have .    For all , we have .    For all , we have .    For all , if , then or .      "
 },
@@ -3787,7 +3796,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.2",
   "title": "Linear transformations",
-  "body": " Linear transformations   As detailed in a linear transformation is a special type of function between two vector spaces: one that respects in some sense the vector operations of both spaces.  This manner of theorizing is typical in mathematics: first we introduce a special class of objects defined axiomatically, then we introduce special functions or maps between these objects. Since the original objects of study (e.g. vector spaces) come equipped with special structural properties (e.g. vector operations), the functions we wish to study are the ones that somehow acknowledge this structure.  You have already seen this principle at work in your study of calculus. First we give some structure by defining a notion of proximity (i.e., is close to if is small), then we introduce a special family of functions that somehow respects this structure: these are precisely the continuous functions!  As you will see, linear transformations are not just interesting objects of study in their own right, they also serve as invaluable tools in our continued exploration of the intrinsic properties of vector spaces.  In the meantime rejoice in the fact that we can now give a succinct definition of linear algebra: it is the theory of vector spaces and the linear transformations between them. Go shout it from the rooftops!    Linear transformations  First and foremost, a linear transformation is a function. Before continuing on in this section, you may want to reacquaint yourself with the basic function concepts and notation outlined in Section .   Linear transformations   Let and be vector spaces. A function is a linear transformation (or linear ) if it satisfies the following properties:   For all , we have .    For all and we have .     If a function between vector spaces is nonlinear if it is not a linear transformation.     How precisely does a linear transformation respect vector space structure? In plain English: the image of a sum is the sum of the images, and the image of a scalar multiple is the scalar multiple of the image.   As our first examples of linear transformations, we define the zero transformation and identity transformation on a vector space.   Zero and identity transformation  linear transformation zero transformation  linear transformation identity transformation   Let and be vector spaces.  The zero transformation from to , denoted , is defined as follows: , where is the zero vector of . In other words, is the function that maps all elements of to the zero vector of .  The identity transformation of , denoted , is defined as follows: . In other words, for all .     Model of linear transformation proof  Let's show that the zero and identity functions are indeed linear transformations.  Let and be vector spaces, and let be the zero function. We verify each defining property separately.   Given , we have .    Given and , we have .   This proves that is a linear transformation.  Now let be a vector spaces, and let be the identity function.   Given , we have .    Given and , we have .   This proves that is a linear transformation.    Basic properties of linear transformations   Let be a linear transformation. Let and be the zero vectors of and , respectively.   We have .    For all , we have .    For any linear combination we have .          We employ some similar trickery to what was done in the proof of . Assuming is linear: . Thus, whatever may be, it satisfies . Canceling on both sides using , we conclude .    The argument is similar: . Since , adding to both sides of the equation yields .    This is an easy proof by induction using the two defining properties of a linear transformation in tandem.        Statement (3) of provides a more algebraic interpretation of how linear transformations preserve vector space structure: namely, they distribute over linear combinations of vectors.    The one-step linear transformation proof   As a sort of converse to (3) in , observe that if satisfies for all and , and , then is linear. Indeed, taking the special case yields (1) of ; and choosing yields (2) of .  This observation gives rise to an alternate one-step technique for proving linearity: given , show that for all and .      Matrix transformations  We now describe what turns out to be an entire family of examples of linear transformations: so-called matrix transformations of the form , where is a given matrix. This is a good place to recall the matrix mantra . Not only can a matrix represent a system of linear equations, it can represent a linear transformation. These are two very different concepts, and the matrix mantra helps us to not confuse the two. In the end a matrix is just a matrix: a mathematical tool that can be employed to diverse ends. Observe that the definition of matrix multiplication marks the first point where comes into play.   Matrix transformations  matrix transformation    the matrix transformation associated to    Let be an matrix. The matrix transformation associated to is the function defined as follows: . In other words, given input , the output is defined as .     Matrix transformations I   Let be an matrix. The function is a linear transformation.    We use the one-step technique. For any and , we have . This proves is a linear transformation.     As the title of suggests, there is a follow-up result ( ), and this states that in fact any linear transformation is of the form for some matrix . In other words, all linear transformations from to are matrix transformations.  As general as these two results are, mark well the restriction that remains: they apply only to functions with domain and codomain equal to a vector spaces of tuples. They say nothing for example about functions from to .     gives rise to an alternative technique for showing a function is a linear transformation: show that for some matrix .  As an example, consider the function . Conflating tuples with column vectors as described in we see that where . In other words, the original formula is just a description in terms of tuples of the function . It follows from that is linear.     Rotations and reflections in the plane  We now introduce two very important geometric examples of linear transformations: rotations and reflections in the plane. These operations are described in detail below; we use to prove these operations are in fact linear transformations.   Rotation in the plane  rotation as linear transformation    rotation by in the plane    Fix an angle and define to be the function that takes an input , considered as a point in the -plane, and returns the output obtained rotating by an angle of about the origin. The function is called rotation about the origin by the angle .  We can extract a formula from the rule defining by using polar coordinates: if has polar coordinates , then has polar coordinates .     Rotation is a linear transformation   Fix an angle . The rotation function is a linear transformation. In fact, we have , where .    By , we need only show that for the matrix indicated.  If the point has polar coordinates (so that and ), then its image under our rotation has polar coordinates . Translating back to rectangular coordinates, we see that . It follows that , where , as claimed.     Observe that it is not at all obvious geometrically that the rotation operation is linear : , that it preserves addition and scalar multiplication of vectors in . Indeed, our proof does not even show this directly, but instead first gives a matrix formula for rotation and then uses .  Since matrices of the form can be understood as defining rotations of the plane, we call them rotation matrices .    Rotation matrices   Find formulas for and , expressing your answer in terms of pairs (as opposed to column vectors).    The rotation matrix corresponding to is . Thus has formula . Note: this is as expected! Rotating by 180 degrees produces the inverse vector.  The rotation matrix corresponding to is . Thus has formula . Let's check our formula for for the vectors and : . Confirm for yourself geometrically that these are the points you get by rotating and by an angle of about the origin.    A second example of a geometric linear transformation is furnished by reflection through a line in .   Reflection through a line  reflection through a line   Fix an angle with , and let be the line through the origin that makes an angle of with the positive -axis.  Define to be the function that takes an input and returns the output obtained by reflecting through the line . In more detail: if lies on , then ; otherwise, is obtained by drawing the perpendicular through that passes through and taking the point on the other side of this line whose distance to is equal to the distance from to .  The function is called rotation through the line  .     Reflection is a linear transformation   Fix an angle . The reflection is a linear transformation. In fact we have , where .    See .     Visualizing reflection and rotation   The GeoGebra interactive below helps visualize the operation of rotations and reflections on the plane by showing how they act on the triangle .   Move or alter the triangle as you see fit.    Check the box of the desired operation, rotation or reflection.    If rotation is selected, the slider adjusts the angle of rotation.    If reflection is selected, the slider adjusts the angle determining the line of reflection. Click the Draw perps box to see the the perpendicular lines used to define the reflections of vertices .      Eigenspaces of a symmetric matrix are orthogonal   Visualizing reflection and rotation. Made with GeoGebra .       Additional examples  We now proceed to some examples involving our more exotic vector spaces.   Transposition is linear   Fix . Define the function as follows: . In other words, maps a matrix to its transpose.  Show that is a linear transformation.    We must show for all scalars and all matrices . This follows easily from properties of transpose:      Left-shift transformation   Define the left-shift operation , as follows: . In other words, we have . Show that is a linear transformation.    Let and be two infinite sequences in . For any we have . This proves is a linear transformation.      Video examples: deciding if is linear    Video: deciding if is linear  Video: deciding if is linear     Video: deciding if is linear  Video: deciding if is linear       Composition of linear transformations and matrix multiplication  We end by making good on a promise we made long ago to retroactively make sense of the definition of matrix multiplication. The key connecting concept, as it turns out, is composition of functions. We first need a result showing that composition preserves linearity.   Composition of linear transformations   Let be vector spaces, and suppose and are linear transformations. Then the composition is a linear transformation.    Exercise.    Turning now to matrix multiplication, suppose is and is . Let be their product. These matrices give rise to linear transformations . According to the composition is a linear transformation from (the domain of ) to (the codomain of ). We claim that . Indeed, identifying elements of with column vectors, for all we have . Thus, we can now understand the definition of matrix multiplication as being chosen precisely to encode how to compute the composition of two matrix transformations. The restriction on the dimension of the ingredient matrices is now understood as guaranteeing that the corresponding matrix transformations can be composed!     WeBWork Exercises    Let be a linear transformation that sends the vector into and maps into . Use properties of a linear transformation to calculate the following. (Enter your answers as ordered pairs, such as (1,2), including the parentheses.)   ,   ,   .                        Let be a vector space, and a linear transformation such that and . Then      ,      ,      .                                       Let be the linear transformation such that Find , , , and , where , , and are arbitrary real numbers.   ,   ,   ,   .                             If is a linear transformation such that and then  .              Let Let be the linear transformation satisfying Find the image of an arbitrary vector           Let Define the linear transformation by . Find the images of and under .             Let be a vector space, , and let and be linear transformations such that  Find the images of and under the composite of and .   ,   .                   For each of the following functions , show that is nonlinear by providing an explicit counterexample to one of the defining axioms or a consequence thereof.     ,      ,      ,      ,      ,      Transposition  Define as : , the function takes as input an matrix and returns as output an matrix. Show that is a linear transformation.   Scalar multiplication  Let be a vector space. Fix and define as : , is scalar multiplication by . Show that is a linear transformation.   Trace  Fix an integer . The trace function is the function defined as . Show that the trace function is a linear transformation.   Left\/right matrix multiplication  Let be an matrix, and let be an matrix. Define the functions and as follows: . In other words, is the multiply on the left by operation, and is the multiply on the right by C operation Show that and are linear transformations.   Conjugation  Fix an invertible matrix . Define as . Show that is a linear transformation. This operation is called conjugation by .   Sequence shift operators  Let , the space of all infinite sequences. Define the shift left function , , and shift right function , , as follows: Prove that and are linear transformations.   Function shift operators  Fix . Define as , where . Show that is a linear transformation.   Function scaling operators  Fix and define the functions as follows: . Show that and are linear transformations.   Adding and scaling linear transformations  Suppose that and are linear transformations.    Define the function as . Show that is a linear transformation.    Define the function as . Show that is a linear transformation.      Let be defined as , where . Show that is linear. You may use the results of and .    Prove .   Reflection through a line  Fix an angle with , let be the line through the origin that makes an angle of with the positive -axis, and let be the reflection operation as described in . Prove that is a linear transformation following the steps below.   In a manner similar to , describe in terms of the polar coordinates of . Additionally, it helps to write , where is the angle the line segment from the origin to makes with the line . Include a drawing to support your explanation.    Use your description in (a), along with some trigonometric identities, to show where .      Compositions of rotations and reflections  In this exercise we will show that if we compose a rotation or reflection with another rotation or reflection, as defined in and , the result is yet another rotation or reflection. For each part, express the given composition either as a rotation or reflection , where is expressed in terms of and .                         Use and , along with some trigonometric identities.    "
+  "body": " Linear transformations   As detailed in a linear transformation is a special type of function between two vector spaces: one that respects in some sense the vector operations of both spaces.  This manner of theorizing is typical in mathematics: first we introduce a special class of objects defined axiomatically, then we introduce special functions or maps between these objects. Since the original objects of study (e.g. vector spaces) come equipped with special structural properties (e.g. vector operations), the functions we wish to study are the ones that somehow acknowledge this structure.  You have already seen this principle at work in your study of calculus. First we give some structure by defining a notion of proximity (i.e., is close to if is small), then we introduce a special family of functions that somehow respects this structure: these are precisely the continuous functions!  As you will see, linear transformations are not just interesting objects of study in their own right, they also serve as invaluable tools in our continued exploration of the intrinsic properties of vector spaces.  In the meantime rejoice in the fact that we can now give a succinct definition of linear algebra: it is the theory of vector spaces and the linear transformations between them. Go shout it from the rooftops!    Linear transformations  First and foremost, a linear transformation is a function. Before continuing on in this section, you may want to reacquaint yourself with the basic function concepts and notation outlined in Section .   Linear transformations   Let and be vector spaces. A function is a linear transformation (or linear ) if it satisfies the following properties:   For all , we have .    For all and we have .     If a function between vector spaces is nonlinear if it is not a linear transformation.     How precisely does a linear transformation respect vector space structure? In plain English: the image of a sum is the sum of the images, and the image of a scalar multiple is the scalar multiple of the image.   As our first examples of linear transformations, we define the zero transformation and identity transformation on a vector space.   Zero and identity transformation  linear transformation zero transformation  linear transformation identity transformation   Let and be vector spaces.  The zero transformation from to , denoted , is defined as follows: , where is the zero vector of . In other words, is the function that maps all elements of to the zero vector of .  The identity transformation of , denoted , is defined as follows: . In other words, for all .     Model of linear transformation proof  Let's show that the zero and identity functions are indeed linear transformations.  Let and be vector spaces, and let be the zero function. We verify each defining property separately.   Given , we have .    Given and , we have .   This proves that is a linear transformation.  Now let be a vector spaces, and let be the identity function.   Given , we have .    Given and , we have .   This proves that is a linear transformation.    Basic properties of linear transformations   Let be a linear transformation. Let and be the zero vectors of and , respectively.   We have .    For all , we have .    For any linear combination we have .          We employ some similar trickery to what was done in the proof of . Assuming is linear: . Thus, whatever may be, it satisfies . Canceling on both sides using , we conclude .    The argument is similar: . Since , adding to both sides of the equation yields .    This is an easy proof by induction using the two defining properties of a linear transformation in tandem.        Statement (3) of provides a more algebraic interpretation of how linear transformations preserve vector space structure: namely, they distribute over linear combinations of vectors.    The one-step linear transformation proof   As a sort of converse to (3) in , observe that if satisfies for all and , and , then is linear. Indeed, taking the special case yields (1) of ; and choosing yields (2) of .  This observation gives rise to an alternate one-step technique for proving linearity: given , show that for all and .      Matrix transformations  We now describe what turns out to be an entire family of examples of linear transformations: so-called matrix transformations of the form , where is a given matrix. This is a good place to recall the matrix mantra . Not only can a matrix represent a system of linear equations, it can represent a linear transformation. These are two very different concepts, and the matrix mantra helps us to not confuse the two. In the end a matrix is just a matrix: a mathematical tool that can be employed to diverse ends. Observe that the definition of matrix multiplication marks the first point where comes into play.   Matrix transformations  matrix transformation    the matrix transformation associated to    Let be an matrix. The matrix transformation associated to is the function defined as follows: . In other words, given input , the output is defined as .     Matrix transformations I   Let be an matrix. The function is a linear transformation.    We use the one-step technique. For any and , we have . This proves is a linear transformation.     As the title of suggests, there is a follow-up result ( ), and this states that in fact any linear transformation is of the form for some matrix . In other words, all linear transformations from to are matrix transformations.  As general as these two results are, mark well the restriction that remains: they apply only to functions with domain and codomain equal to a vector spaces of tuples. They say nothing for example about functions from to .     gives rise to an alternative technique for showing a function is a linear transformation: show that for some matrix .  As an example, consider the function . Conflating tuples with column vectors as described in we see that where . In other words, the original formula is just a description in terms of tuples of the function . It follows from that is linear.     Rotations, reflections, and orthogonal projections  We now introduce a number of geometric examples of linear transformations of and : namely, rotations, reflections, and orthogonal projections. These operations are described in detail below; we will use to prove these operations are in fact linear transformations.Our definitions of these operations will be very geometric in nature. As such we will go back and forth between point and arrow interpretations of elements of . (See .) In particular, we will interpret an -tuple both as the point and as the position vector .   Rotation in the plane  rotation as linear transformation    rotation by in the plane    Fix an angle and define to be the function that takes an input vector , considered as the position vector of the point , and returns the output obtained by rotating the vector by an angle of about the origin. The function is called rotation about the origin by the angle .  We can extract a formula from the rule defining by using polar coordinates: if has polar coordinates , then has polar coordinates .     Rotation is a linear transformation   Fix an angle . The rotation function is a linear transformation. In fact, we have , where .    By , we need only show that for the matrix indicated.  If the vector has polar coordinates (so that and ), then its image under our rotation has polar coordinates . Translating back to rectangular coordinates, we see that . It follows that , where , as claimed.     Observe that it is not at all obvious geometrically that the rotation operation is linear : , that it preserves addition and scalar multiplication of vectors in . Indeed, our proof does not even show this directly, but instead first gives a matrix formula for rotation and then uses .  Since matrices of the form can be understood as defining rotations of the plane, we call them rotation matrices .    Rotation matrices   Find formulas for and , expressing your answer in terms of pairs (as opposed to column vectors).    The rotation matrix corresponding to is . Thus has formula . Note: this is as expected! Rotating by 180 degrees produces the inverse vector.  The rotation matrix corresponding to is . Thus has formula . Let's check our formula for for the vectors and : . Confirm for yourself geometrically that these are the vectors you get by rotating the vectors and by an angle of about the origin.    A second example of a geometric linear transformation is furnished by reflection through a line in .   Reflection through a line  reflection through a line   Fix an angle with , and let be the line through the origin that makes an angle of with the positive -axis.  Define to be the function that takes an input , considered as a point , and returns the coordinates of the point obtained by reflecting through the line . In more detail: if lies on , then ; otherwise, is obtained by drawing the perpendicular through that passes through and taking the point on the other side of this line whose distance to is equal to the distance from to .  The function is called reflection through the line  .     Reflection is a linear transformation   Fix an angle . The reflection is a linear transformation. In fact we have , where .    See .     Visualizing reflection and rotation   The GeoGebra interactive below helps visualize rotations and reflections in (thought of as operations on points) by showing how they act on the triangle .   Move or alter the triangle as you see fit.    Check the box of the desired operation, rotation or reflection.    If rotation is selected, the slider adjusts the angle of rotation.    If reflection is selected, the slider adjusts the angle determining the line of reflection. Click the Draw perps box to see the the perpendicular lines used to define the reflections of vertices .      Visualizing reflection and rotation   Visualizing reflection and rotation. Made with GeoGebra .     Next we consider the operation of orthogonally projecting a vector onto a line (in or ) or a plane in . See for a refresher on lines and planes in and .   Projection onto a line   Let be a fixed nonzero vector in , where or . The set of all scalar multiples of defines a line in passing through the origin: we call the direction vector of this line. Given a point there is a unique point such that the vector is orthogonal to : , there is a unique such that . The point is called the orthogonal projection of onto the line . We define orthogonal projection onto to be the function that maps a point to its orthogonal projection onto .     Orthogonal projection onto a line   Fix a nonzero vector , where or , and let be the line obtained by taking all scalar multiples of . The orthogonal projection function is a linear transformation. In fact, we have where is the matrix described below for each case ( and ).   Case:  Assume . We have , where .    Case:  Assume . We have , where .       We prove the matrix formula in the case . (The case is exactly similar.) Let . In multivariable calculus we learn that given a point with position vector , its orthogonal projection onto is the point whose position vector is . This proves that , where , as desired.     Orthogonal projection onto line   Find the standard matrix of orthogonal projection onto the line passing through the origin with direction vector . Compute the orthogonal projection of onto .    Using the formula for in , where , we see that and hence for any we have . In particular, we have . Let's check that this truly is the orthogonal projection of onto . Letting , we have , which is indeed orthogonal to : . The formula really works! If the algebra doesn't convince you, perhaps a picture will.   Orthogonal projection onto a line  Orthogonal projection onto the line passing through the origin with direction vector   Orthogonal projection onto a line         Additional examples  We now proceed to some examples involving our more exotic vector spaces.   Transposition is linear   Fix . Define the function as follows: . In other words, maps a matrix to its transpose.  Show that is a linear transformation.    We must show for all scalars and all matrices . This follows easily from properties of transpose:      Left-shift transformation   Define the left-shift operation , as follows: . In other words, we have . Show that is a linear transformation.    Let and be two infinite sequences in . For any we have . This proves is a linear transformation.      Video examples: deciding if is linear    Video: deciding if is linear  Video: deciding if is linear     Video: deciding if is linear  Video: deciding if is linear       Composition of linear transformations and matrix multiplication  We end by making good on a promise we made long ago to retroactively make sense of the definition of matrix multiplication. The key connecting concept, as it turns out, is composition of functions. We first need a result showing that composition preserves linearity.   Composition of linear transformations   Let be vector spaces, and suppose and are linear transformations. Then the composition is a linear transformation.    Exercise.    Turning now to matrix multiplication, suppose is and is . Let be their product. These matrices give rise to linear transformations . According to the composition is a linear transformation from (the domain of ) to (the codomain of ). We claim that . Indeed, identifying elements of with column vectors, for all we have . Thus, we can now understand the definition of matrix multiplication as being chosen precisely to encode how to compute the composition of two matrix transformations. The restriction on the dimension of the ingredient matrices is now understood as guaranteeing that the corresponding matrix transformations can be composed!     WeBWork Exercises    Let be a linear transformation that sends the vector into and maps into . Use properties of a linear transformation to calculate the following. (Enter your answers as ordered pairs, such as (1,2), including the parentheses.)   ,   ,   .                        Let be a vector space, and a linear transformation such that and . Then      ,      ,      .                                       Let be the linear transformation such that Find , , , and , where , , and are arbitrary real numbers.   ,   ,   ,   .                             If is a linear transformation such that and then  .              Let Let be the linear transformation satisfying Find the image of an arbitrary vector           Let Define the linear transformation by . Find the images of and under .             Let be a vector space, , and let and be linear transformations such that  Find the images of and under the composite of and .   ,   .                   For each of the following functions , show that is nonlinear by providing an explicit counterexample to one of the defining axioms or a consequence thereof.     ,      ,      ,      ,      ,      Transposition  Define as : , the function takes as input an matrix and returns as output an matrix. Show that is a linear transformation.   Scalar multiplication  Let be a vector space. Fix and define as : , is scalar multiplication by . Show that is a linear transformation.   Trace  Fix an integer . The trace function is the function defined as . Show that the trace function is a linear transformation.   Left\/right matrix multiplication  Let be an matrix, and let be an matrix. Define the functions and as follows: . In other words, is the multiply on the left by operation, and is the multiply on the right by C operation Show that and are linear transformations.   Conjugation  Fix an invertible matrix . Define as . Show that is a linear transformation. This operation is called conjugation by .   Sequence shift operators  Let , the space of all infinite sequences. Define the shift left function , , and shift right function , , as follows: Prove that and are linear transformations.   Function shift operators  Fix . Define as , where . Show that is a linear transformation.   Function scaling operators  Fix and define the functions as follows: . Show that and are linear transformations.   Adding and scaling linear transformations  Suppose that and are linear transformations.    Define the function as . Show that is a linear transformation.    Define the function as . Show that is a linear transformation.      Let be defined as , where . Show that is linear. You may use the results of and .    Prove .   Reflection through a line  Fix an angle with , let be the line through the origin that makes an angle of with the positive -axis, and let be the reflection operation as described in . Prove that is a linear transformation following the steps below.   In a manner similar to , describe in terms of the polar coordinates of . Additionally, it helps to write , where is the angle the line segment from the origin to makes with the line . Include a drawing to support your explanation.    Use your description in (a), along with some trigonometric identities, to show where .      Compositions of rotations and reflections  In this exercise we will show that if we compose a rotation or reflection with another rotation or reflection, as defined in and , the result is yet another rotation or reflection. For each part, express the given composition either as a rotation or reflection , where is expressed in terms of and .                         Use and , along with some trigonometric identities.    "
 },
 {
   "id": "d_linear_transform",
@@ -3799,9 +3808,9 @@ var ptx_lunr_docs = [
   "body": " Linear transformations   Let and be vector spaces. A function is a linear transformation (or linear ) if it satisfies the following properties:   For all , we have .    For all and we have .     If a function between vector spaces is nonlinear if it is not a linear transformation.   "
 },
 {
-  "id": "remark-44",
+  "id": "remark-45",
   "level": "2",
-  "url": "s_transformation.html#remark-44",
+  "url": "s_transformation.html#remark-45",
   "type": "Remark",
   "number": "3.2.2",
   "title": "",
@@ -3895,7 +3904,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "3.2.12",
   "title": "Rotation in the plane.",
-  "body": " Rotation in the plane  rotation as linear transformation    rotation by in the plane    Fix an angle and define to be the function that takes an input , considered as a point in the -plane, and returns the output obtained rotating by an angle of about the origin. The function is called rotation about the origin by the angle .  We can extract a formula from the rule defining by using polar coordinates: if has polar coordinates , then has polar coordinates .   "
+  "body": " Rotation in the plane  rotation as linear transformation    rotation by in the plane    Fix an angle and define to be the function that takes an input vector , considered as the position vector of the point , and returns the output obtained by rotating the vector by an angle of about the origin. The function is called rotation about the origin by the angle .  We can extract a formula from the rule defining by using polar coordinates: if has polar coordinates , then has polar coordinates .   "
 },
 {
   "id": "th_transform_rotation",
@@ -3904,7 +3913,7 @@ var ptx_lunr_docs = [
   "type": "Theorem",
   "number": "3.2.13",
   "title": "Rotation is a linear transformation.",
-  "body": " Rotation is a linear transformation   Fix an angle . The rotation function is a linear transformation. In fact, we have , where .    By , we need only show that for the matrix indicated.  If the point has polar coordinates (so that and ), then its image under our rotation has polar coordinates . Translating back to rectangular coordinates, we see that . It follows that , where , as claimed.   "
+  "body": " Rotation is a linear transformation   Fix an angle . The rotation function is a linear transformation. In fact, we have , where .    By , we need only show that for the matrix indicated.  If the vector has polar coordinates (so that and ), then its image under our rotation has polar coordinates . Translating back to rectangular coordinates, we see that . It follows that , where , as claimed.   "
 },
 {
   "id": "rm_rotation_matrix",
@@ -3922,7 +3931,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "3.2.15",
   "title": "Rotation matrices.",
-  "body": " Rotation matrices   Find formulas for and , expressing your answer in terms of pairs (as opposed to column vectors).    The rotation matrix corresponding to is . Thus has formula . Note: this is as expected! Rotating by 180 degrees produces the inverse vector.  The rotation matrix corresponding to is . Thus has formula . Let's check our formula for for the vectors and : . Confirm for yourself geometrically that these are the points you get by rotating and by an angle of about the origin.   "
+  "body": " Rotation matrices   Find formulas for and , expressing your answer in terms of pairs (as opposed to column vectors).    The rotation matrix corresponding to is . Thus has formula . Note: this is as expected! Rotating by 180 degrees produces the inverse vector.  The rotation matrix corresponding to is . Thus has formula . Let's check our formula for for the vectors and : . Confirm for yourself geometrically that these are the vectors you get by rotating the vectors and by an angle of about the origin.   "
 },
 {
   "id": "d_reflection",
@@ -3931,7 +3940,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "3.2.16",
   "title": "Reflection through a line.",
-  "body": " Reflection through a line  reflection through a line   Fix an angle with , and let be the line through the origin that makes an angle of with the positive -axis.  Define to be the function that takes an input and returns the output obtained by reflecting through the line . In more detail: if lies on , then ; otherwise, is obtained by drawing the perpendicular through that passes through and taking the point on the other side of this line whose distance to is equal to the distance from to .  The function is called rotation through the line  .   "
+  "body": " Reflection through a line  reflection through a line   Fix an angle with , and let be the line through the origin that makes an angle of with the positive -axis.  Define to be the function that takes an input , considered as a point , and returns the coordinates of the point obtained by reflecting through the line . In more detail: if lies on , then ; otherwise, is obtained by drawing the perpendicular through that passes through and taking the point on the other side of this line whose distance to is equal to the distance from to .  The function is called reflection through the line  .   "
 },
 {
   "id": "th_transform_reflection",
@@ -3949,41 +3958,68 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "3.2.18",
   "title": "Visualizing reflection and rotation.",
-  "body": " Visualizing reflection and rotation   The GeoGebra interactive below helps visualize the operation of rotations and reflections on the plane by showing how they act on the triangle .   Move or alter the triangle as you see fit.    Check the box of the desired operation, rotation or reflection.    If rotation is selected, the slider adjusts the angle of rotation.    If reflection is selected, the slider adjusts the angle determining the line of reflection. Click the Draw perps box to see the the perpendicular lines used to define the reflections of vertices .      Eigenspaces of a symmetric matrix are orthogonal   Visualizing reflection and rotation. Made with GeoGebra .    "
+  "body": " Visualizing reflection and rotation   The GeoGebra interactive below helps visualize rotations and reflections in (thought of as operations on points) by showing how they act on the triangle .   Move or alter the triangle as you see fit.    Check the box of the desired operation, rotation or reflection.    If rotation is selected, the slider adjusts the angle of rotation.    If reflection is selected, the slider adjusts the angle determining the line of reflection. Click the Draw perps box to see the the perpendicular lines used to define the reflections of vertices .      Visualizing reflection and rotation   Visualizing reflection and rotation. Made with GeoGebra .    "
+},
+{
+  "id": "d_projection_onto_line",
+  "level": "2",
+  "url": "s_transformation.html#d_projection_onto_line",
+  "type": "Definition",
+  "number": "3.2.20",
+  "title": "Projection onto a line.",
+  "body": " Projection onto a line   Let be a fixed nonzero vector in , where or . The set of all scalar multiples of defines a line in passing through the origin: we call the direction vector of this line. Given a point there is a unique point such that the vector is orthogonal to : , there is a unique such that . The point is called the orthogonal projection of onto the line . We define orthogonal projection onto to be the function that maps a point to its orthogonal projection onto .   "
+},
+{
+  "id": "th_proj_line_linear",
+  "level": "2",
+  "url": "s_transformation.html#th_proj_line_linear",
+  "type": "Theorem",
+  "number": "3.2.21",
+  "title": "Orthogonal projection onto a line.",
+  "body": " Orthogonal projection onto a line   Fix a nonzero vector , where or , and let be the line obtained by taking all scalar multiples of . The orthogonal projection function is a linear transformation. In fact, we have where is the matrix described below for each case ( and ).   Case:  Assume . We have , where .    Case:  Assume . We have , where .       We prove the matrix formula in the case . (The case is exactly similar.) Let . In multivariable calculus we learn that given a point with position vector , its orthogonal projection onto is the point whose position vector is . This proves that , where , as desired.   "
+},
+{
+  "id": "eg_projection_line_specific",
+  "level": "2",
+  "url": "s_transformation.html#eg_projection_line_specific",
+  "type": "Example",
+  "number": "3.2.22",
+  "title": "Orthogonal projection onto line.",
+  "body": " Orthogonal projection onto line   Find the standard matrix of orthogonal projection onto the line passing through the origin with direction vector . Compute the orthogonal projection of onto .    Using the formula for in , where , we see that and hence for any we have . In particular, we have . Let's check that this truly is the orthogonal projection of onto . Letting , we have , which is indeed orthogonal to : . The formula really works! If the algebra doesn't convince you, perhaps a picture will.   Orthogonal projection onto a line  Orthogonal projection onto the line passing through the origin with direction vector   Orthogonal projection onto a line      "
 },
 {
   "id": "eg_transform_transpose",
   "level": "2",
   "url": "s_transformation.html#eg_transform_transpose",
   "type": "Example",
-  "number": "3.2.20",
+  "number": "3.2.24",
   "title": "Transposition is linear.",
   "body": " Transposition is linear   Fix . Define the function as follows: . In other words, maps a matrix to its transpose.  Show that is a linear transformation.    We must show for all scalars and all matrices . This follows easily from properties of transpose:    "
 },
 {
-  "id": "example-52",
+  "id": "example-53",
   "level": "2",
-  "url": "s_transformation.html#example-52",
+  "url": "s_transformation.html#example-53",
   "type": "Example",
-  "number": "3.2.21",
+  "number": "3.2.25",
   "title": "Left-shift transformation.",
   "body": " Left-shift transformation   Define the left-shift operation , as follows: . In other words, we have . Show that is a linear transformation.    Let and be two infinite sequences in . For any we have . This proves is a linear transformation.   "
 },
 {
-  "id": "figure-13",
+  "id": "figure-16",
   "level": "2",
-  "url": "s_transformation.html#figure-13",
+  "url": "s_transformation.html#figure-16",
   "type": "Figure",
-  "number": "3.2.22",
+  "number": "3.2.26",
   "title": "Video: deciding if <span class=\"process-math\">\\(T\\)<\/span> is linear",
   "body": " Video: deciding if is linear  Video: deciding if is linear   "
 },
 {
-  "id": "figure-14",
+  "id": "figure-17",
   "level": "2",
-  "url": "s_transformation.html#figure-14",
+  "url": "s_transformation.html#figure-17",
   "type": "Figure",
-  "number": "3.2.23",
+  "number": "3.2.27",
   "title": "Video: deciding if <span class=\"process-math\">\\(T\\)<\/span> is linear",
   "body": " Video: deciding if is linear  Video: deciding if is linear   "
 },
@@ -3992,7 +4028,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_transformation.html#th_transform_composition",
   "type": "Theorem",
-  "number": "3.2.24",
+  "number": "3.2.28",
   "title": "Composition of linear transformations.",
   "body": " Composition of linear transformations   Let be vector spaces, and suppose and are linear transformations. Then the composition is a linear transformation.    Exercise.   "
 },
@@ -4204,18 +4240,18 @@ var ptx_lunr_docs = [
   "body": " Subspace  subspace  vector space subspace   Let be a vector space. A subset is a subspace of if the following conditions hold:   contains the zero vector  We have .    is closed under addition  For all , if , then . Using logical notation: .    is closed under scalar multiplication  For all and , if , then . In logical notation: .      "
 },
 {
-  "id": "example-53",
+  "id": "example-54",
   "level": "2",
-  "url": "s_subspace.html#example-53",
+  "url": "s_subspace.html#example-54",
   "type": "Example",
   "number": "3.3.2",
   "title": "",
   "body": "  Let and let . Prove that is a subspace.    We must show properties (i)-(iii) hold for .   The zero element of is , which is certainly of the form . Thus .    We must prove the implication . .    We must prove the implication , for any . We have       "
 },
 {
-  "id": "example-54",
+  "id": "example-55",
   "level": "2",
-  "url": "s_subspace.html#example-54",
+  "url": "s_subspace.html#example-55",
   "type": "Example",
   "number": "3.3.3",
   "title": "",
@@ -4303,9 +4339,9 @@ var ptx_lunr_docs = [
   "body": " Alternative subspace method   provides an alternative way of showing that a subset : namely, find an matrix for which we have . This is often much faster than using the two-step technique.  "
 },
 {
-  "id": "example-55",
+  "id": "example-56",
   "level": "2",
-  "url": "s_subspace.html#example-55",
+  "url": "s_subspace.html#example-56",
   "type": "Example",
   "number": "3.3.13",
   "title": "",
@@ -4339,9 +4375,9 @@ var ptx_lunr_docs = [
   "body": " Trace-zero, symmetric, and skew-symmetric  trace-zero matrix  symmetric matrix  skew-symmetric matrix   Fix an integer .   A matrix is said to be a trace-zero matrix if .    A matrix is symmetric if : equivalently, if for all .    A matrix is skew-symmetric if : equivalently, if for all .      "
 },
 {
-  "id": "example-57",
+  "id": "example-58",
   "level": "2",
-  "url": "s_subspace.html#example-57",
+  "url": "s_subspace.html#example-58",
   "type": "Example",
   "number": "3.3.17",
   "title": "Trace-zero symmetric, and skew-symmetric <span class=\"process-math\">\\(2\\times 2\\)<\/span> matrices.",
@@ -4681,9 +4717,9 @@ var ptx_lunr_docs = [
   "body": " Subspace as null space   Let be a subset of a vector space . We can prove indirectly that is a subspace by identifying it as the null space of a linear transformation .   "
 },
 {
-  "id": "example-61",
+  "id": "example-62",
   "level": "2",
-  "url": "s_nullspace_image.html#example-61",
+  "url": "s_nullspace_image.html#example-62",
   "type": "Example",
   "number": "3.4.11",
   "title": "",
@@ -4717,9 +4753,9 @@ var ptx_lunr_docs = [
   "body": " Null space and injectivity   Let be a linear transformation.    Given vectors , we have . Equivalently, given and satisfying , the set of all satisfying can be described as .    We have .        We have . Equation follows directly from by observing that if , then if and only if .    According to we have if and only if for some .  If , then implies . Thus is injective in this case.  Conversely, if we can find a nonzero . It follows that for any  we have . Furthermore, since , we have . Thus is not injective in this case.     "
 },
 {
-  "id": "remark-57",
+  "id": "remark-58",
   "level": "2",
-  "url": "s_nullspace_image.html#remark-57",
+  "url": "s_nullspace_image.html#remark-58",
   "type": "Remark",
   "number": "3.4.15",
   "title": "",
@@ -5050,9 +5086,9 @@ var ptx_lunr_docs = [
   "body": " Some standard spanning sets  spanning set standard examples   For most of the vector spaces we've met a natural spanning set springs to mind. We will refer to these loosely as standard spanning sets. Some examples:   Zero space  Let . By definition the empty set is a spanning set of .    Tuples  Let . For , define to be the -tuple with a one in the -th entry, and zeros elsewhere. Then is a spanning set for .    Matrices  Let . For each with and , define to be the matrix with a one in the -th entry, and zeros elsewhere. Then is a spanning set for .    Polynomials of bounded degree  Let . The set clearly spans . This is just another way of saying that the monomials of degree at most generate the polynomials of degree at most .    Polynomials  Let , the space of all polynomials. In a similar vein, the set of all monomials is a spanning set for .   Note the glaring difference between the first three examples, and the last: our standard spanning set for is infinite , whereas the previous examples are all finite spanning sets. You suspect, no doubt, that there is no finite spanning set for . We will be able to prove this shortly.   "
 },
 {
-  "id": "example-66",
+  "id": "example-67",
   "level": "2",
-  "url": "s_span_independence.html#example-66",
+  "url": "s_span_independence.html#example-67",
   "type": "Example",
   "number": "3.5.8",
   "title": "Spanning sets are not unique.",
@@ -5149,9 +5185,9 @@ var ptx_lunr_docs = [
   "body": "  When using to show is linearly independent, you want to produce enough linear equations to force the unknowns to all be equal to 0. Note that since you you have unknowns, you need at at least  equations, and so must pick at least elements . Do so judiciously in order to (a) force the to all be equal to 0, and (b) make the necessary computations palatable.   "
 },
 {
-  "id": "example-70",
+  "id": "example-71",
   "level": "2",
-  "url": "s_span_independence.html#example-70",
+  "url": "s_span_independence.html#example-71",
   "type": "Example",
   "number": "3.5.19",
   "title": "Linear independence of functions.",
@@ -5383,18 +5419,18 @@ var ptx_lunr_docs = [
   "body": " Some standard bases   The examples of standard spanning sets in are easily seen to be linearly independent, and hence are in fact bases. We list them again here, using the same notation, and refer to these as standard bases for the given spaces.    Zero space  Let . The empty is a basis for . Note that spans by definition ( ), and it satisfies the defining implication of linear independence ( ) trivially.    Tuples  Let . The set is the standard basis of .    Matrices  Let . The set is the standard basis of .    Polynomials of bounded degree  Let . The set is the standard basis of .    Polynomials  Let , the space of all polynomials. The set is the standard basis of .     "
 },
 {
-  "id": "example-71",
+  "id": "example-72",
   "level": "2",
-  "url": "s_basis.html#example-71",
+  "url": "s_basis.html#example-72",
   "type": "Example",
   "number": "3.6.3",
   "title": "Some nonstandard bases.",
   "body": " Some nonstandard bases   For each and below, verify that is a basis of .    , .     , .     , .       Each verification amounts to showing, using the techniques from , that the given spans the given and is linearly independent. We illustrate with (1) and (2), leaving (3) to the reader.    Since neither element of is a scalar multiple of the other, the set is linearly independent. To see that spans we show that for any we have for some . Indeed we may take and . (These formulas were obtained by solving the corresponding system of two equations in the unknowns and .)    To show spans we must show that for any we can find such that , or . Equating coefficients yields the system of equations , which corresponds to the matrix equation . An easy computation shows , and thus that is invertible. We conclude that the system can be solved for (set ), and thus that spans .  Our work above now can be used to also show that is linearly independent. Replacing the arbitrary polynomial with the zero polynomial , we see that a linear combination corresponds to a solution to the matrix equation . Since is invertible, we conclude that ( ), and thus that . This shows is linearly independent.     "
 },
 {
-  "id": "example-72",
+  "id": "example-73",
   "level": "2",
-  "url": "s_basis.html#example-72",
+  "url": "s_basis.html#example-73",
   "type": "Example",
   "number": "3.6.4",
   "title": "<span class=\"process-math\">\\(P\\)<\/span> has no finite basis.",
@@ -5410,9 +5446,9 @@ var ptx_lunr_docs = [
   "body": "  By and its corollaries, we know that if has a finite basis, then and subspace of also has a finite basis. Let be an interval. Since is a chain of subspaces, and since does not have a finite basis, we conclude that none of these other function spaces has a finite basis.   "
 },
 {
-  "id": "example-73",
+  "id": "example-74",
   "level": "2",
-  "url": "s_basis.html#example-73",
+  "url": "s_basis.html#example-74",
   "type": "Example",
   "number": "3.6.6",
   "title": "Basis for <span class=\"process-math\">\\(\\R_{>0}\\)<\/span>.",
@@ -5491,9 +5527,9 @@ var ptx_lunr_docs = [
   "body": " Transformations determined by behavior on basis   Let's paraphrase the two results of .   A linear transformation is completely determined by its behavior on a basis . Once we know the images for all , the image for any other is then completely determined. Put another way, if two linear transformations out of  agree on the elements of a basis , then they agree for all elements of .    Once we have a basis on hand, it is easy to construct linear transformations : simply choose images for all in any manner you like, and then define for any element using .      "
 },
 {
-  "id": "example-76",
+  "id": "example-77",
   "level": "2",
-  "url": "s_basis.html#example-76",
+  "url": "s_basis.html#example-77",
   "type": "Example",
   "number": "3.6.15",
   "title": "Composition of reflections.",
@@ -6337,9 +6373,9 @@ var ptx_lunr_docs = [
   "body": " Isomorphism  isomorphism  invertible linear transformation  Let and be vector spaces. An isomorphism from to is a bijective linear transformation . Vector spaces and are isomorphic if there is an isomorphism from to .   "
 },
 {
-  "id": "remark-68",
+  "id": "remark-69",
   "level": "2",
-  "url": "s_isom.html#remark-68",
+  "url": "s_isom.html#remark-69",
   "type": "Remark",
   "number": "3.9.2",
   "title": "Proving <span class=\"process-math\">\\(T\\)<\/span> is an isomorphism.",
@@ -6427,27 +6463,27 @@ var ptx_lunr_docs = [
   "body": " Euclidean -space  Weighted Euclidean space  (Weighted) Euclidean space   Fix a positive integer . Euclidean -space is the inner product space with underlying vector space and inner product given by the dot product. More generally, a weighted Eulidean space is an inner product space of the form , where is a weighted dot product.   "
 },
 {
-  "id": "example-81",
+  "id": "example-82",
   "level": "2",
-  "url": "s_innerproducts.html#example-81",
+  "url": "s_innerproducts.html#example-82",
   "type": "Example",
   "number": "4.1.5",
   "title": "Dot product on <span class=\"process-math\">\\(\\R^4\\)<\/span>.",
   "body": " Dot product on   Let . Then , and .   "
 },
 {
-  "id": "example-82",
+  "id": "example-83",
   "level": "2",
-  "url": "s_innerproducts.html#example-82",
+  "url": "s_innerproducts.html#example-83",
   "type": "Example",
   "number": "4.1.6",
   "title": "Weighted dot product.",
   "body": " Weighted dot product   The dot product with weights on is defined as . Let and . We have , and .   "
 },
 {
-  "id": "example-83",
+  "id": "example-84",
   "level": "2",
-  "url": "s_innerproducts.html#example-83",
+  "url": "s_innerproducts.html#example-84",
   "type": "Example",
   "number": "4.1.7",
   "title": "Why the weights must be positive.",
@@ -6481,9 +6517,9 @@ var ptx_lunr_docs = [
   "body": " Evaluation inner products on   Let , and let be any list of distinct real numbers. For any define . This defines an inner product on called an evaluation inner product , or more precisely, evaluation at the inputs .    That axioms (i)-(ii) are satisfied is left as an exercise. For axiom (iii), note that , and we have equality if and only if . Since a nonzero polynomial of degree or less has at most  distinct roots, we conclude that , the zero polynomial.   "
 },
 {
-  "id": "example-84",
+  "id": "example-85",
   "level": "2",
-  "url": "s_innerproducts.html#example-84",
+  "url": "s_innerproducts.html#example-85",
   "type": "Example",
   "number": "4.1.11",
   "title": "Evaluation at <span class=\"process-math\">\\(-1, 0, 1\\)<\/span>.",
@@ -6499,9 +6535,9 @@ var ptx_lunr_docs = [
   "body": " Integral inner product   Fix an interval , and let , the space of all continuous functions on . For any define . This defines an inner product on called the integral inner product .    First observe that the integral defining the inner product always exists since the product is a continuous function on the closed interval .  Axioms (i)-(ii) follow directly from the definition and various properties of the integral. This is left as an exercise. As for (iii), we have , since for all . (This is a property of integration.) Furthermore, since is continuous and , we have if and only if for all (a property of integrals of continuous functions) if and only if for all if and only if , the zero function.   "
 },
 {
-  "id": "example-85",
+  "id": "example-86",
   "level": "2",
-  "url": "s_innerproducts.html#example-85",
+  "url": "s_innerproducts.html#example-86",
   "type": "Example",
   "number": "4.1.13",
   "title": "Integral inner product.",
@@ -6598,9 +6634,9 @@ var ptx_lunr_docs = [
   "body": " Cauchy-Schwarz inequality   Let be an inner product space. For all we have , and equality holds if and only if for some .   "
 },
 {
-  "id": "proof-76",
+  "id": "proof-77",
   "level": "2",
-  "url": "s_innerproducts.html#proof-76",
+  "url": "s_innerproducts.html#proof-77",
   "type": "Proof",
   "number": "4.1.3.1",
   "title": "",
@@ -6859,9 +6895,9 @@ var ptx_lunr_docs = [
   "body": " Orthogonal bases   Orthogonal vectors and sets   Orthogonality  orthogonal vectors  orthogonal sets  orthonormal basis   Let be an inner product space. Vectors are orthogonal if .  Let be a set of nonzero vectors.   The set is orthogonal if for all . We say that the elements of are pairwise orthogonal in this case.    The set is orthonormal if it is both orthogonal and satisfies for all : , consists of pairwise orthogonal unit vectors.        Orthogonal implies linearly independent   Let be an inner product space. If is orthogonal, then is linearly independent.    Given any distinct elements , we have . This proves that is linearly independent.      Show that the set is orthogonal with respect to the dot product. Explain why it follows that is a basis of .    A simple computation shows for all , showing that is orthogonal. implies is linearly independent. Since , it follows from that is a basis.      Let with integral inner product , and let , where the element is understood as the constant function for all . Show that is orthogonal and hence linearly independent.    First observe that for all . (Note: since , the set is not orthonormal. ) Next, using the trigonometric identities it follows that .      Orthogonal bases  Given an inner product space we will see that working with orthogonal sets of vectors is extremely convenient computationally speaking. In particular, when picking basis of , we will look for one consisting of orthogonal vectors. Not surprisingly, this is called an orthogonal basis .   Orthogonal and orthonormal bases  orthogonal basis  orthonormal basis   Let be an inner product space. An orthogonal basis (resp., orthonormal basis ) of is a basis that is orthogonal (resp., orthonormal) as a set.     serves as a first example illustrating the virtue of orthogonal and orthonormal base. We preface it with a mantra conveying the general principle.   Orthogonal basis mantra   Working with an orthogonal basis is nice; working with an orthonormal basis is even nicer.     Calculating with orthogonal bases   Let be an inner product space. and let    Let be an orthogonal basis of . For any we have , where for all . If is orthonormal , so that for all , then .    Generalized Pythagorean theorem  Let be an orthonormal basis of . Given , we have .        Consider the inner product space with the dot product.   Verify that is an orthonormal basis of .    Let . Find the scalars such that .    Verify that .         Easily verified.    Using we compute .    Computing directly yields . Using the generalized Pythagorean theorem we have , as desired.       gives a first glimpse how working with orthogonal and orthonormal bases can make life easier. The question remains, however: Can we always find an orthonormal basis? The Gram-Schmidt procedure gives an affirmative answer to this question, at least in the finite-dimensional case, as it provides a method of converting an arbitrary basis into an orthogonal one.   Gram-Schmidt procedure  Gram-Schmidt procedure   Let be an inner product space, and let be a basis for . We can convert into an orthogonal basis , and further to an orthonormal basis , as follows:   Set .    Orthogonalize  Proceeding in succession for each , replace with the vector defined as . The resulting set is an orthogonal basis of .    Normalize  For each let . The set is an orthonormal basis of .        Existence of orthonormal bases   Let be an inner product space of dimension .    There is an orthonormal basis for . In fact, any basis of can be converted to an orthonormal basis using the Gram-Schmidt procedure .    If is an orthogonal set, then there is an orthogonal basis containing : , any orthogonal set can be extended to an orthogonal basis.        See and its proof.    The orthogonal set is linearly independent by . Let be the distinct elements of . (We must have since is linearly independent.) By we can extend to a basis . It is easy to see that when we apply the Gram-Schmidt procedure to , the first vectors are left unchanged, as they are already pairwise orthogonal. Thus Gram-Schmidt returns an orthogonal basis of the form , as desired.         Webwork Exercises    Let be an orthonormal basis for an inner product space . If   is so that , is orthogonal to , and , find the possible values for , , and .   ,  ,                   Solution: One checks by direct computation that  , ,  must hold.         Let Use the Gram-Schmidt process to determine an orthonormal basis for the subspace of spanned by and .   ,          Let Use the Gram-Schmidt process to determine an orthonormal basis for the subspace of spanned by , , and .   , ,          Let Find an orthonormal basis of the image of .   ,          Let Find an orthonormal basis of the kernel of .   ,          The vectors are pairwise orthogonal with respect to the dot product, as is easily verified. For each below, find the scalars such that .               (Your answer will be expressed in terms of , and . )      Consider the inner product space given by together with the dot product. Construct an orthogonal basis of containing following the steps below.    Produce a vector orthogonal to by inspection.    Produce a vector orthogonal to and by setting up an appropriate matrix equation of the form and finding a nontrivial solution. (Use .)    Produce a vector orthogonal to by setting up an appropriate matrix equation of the form and finding a nontrivial solution. (Use .)      Consider the inner product space given by together with the dot product. Let be the plane with defining equation . Compute an orthogonal basis of , and then extend this to an orthogonal basis of .  You do not have to use Gram-Schmidt here, but can proceed using a combination of inspection, your geometric understanding of , and\/or along similar lines of .   Consider the inner product space given by together with the weighted dot product Use the Gram-Schmidt procedure to convert the basis into a basis that is orthogonal with respect to this weighted dot product.    Consider the vector space with the integral inner product. Let , and define . Apply Gram-Schmidt to to obtain an orthogonal basis of .    Consider the vector space with the evaluation at inner product: . Apply Gram-Schmidt to the standard basis of to obtain an orthogonal basis of .    Consider the inner product space together with the dot product. .    Show that is a subspace of by finding a matrix for which .    Use (a) and an appropriate fundamental space algorithm to find a basis for .    Use Gram-Schmidt to convert your basis in (b) to an orthgonal basis of .      Let be an inner produce space. Prove: if , then . This result can be thought of as the Pythagorean theorem for general inner product spaces .    Let be an inner product space, and suppose is an orthonormal basis of . Suppose satisfy .    Prove: .    Prove: .      "
 },
 {
-  "id": "definition-86",
+  "id": "definition-87",
   "level": "2",
-  "url": "s_orthogonality.html#definition-86",
+  "url": "s_orthogonality.html#definition-87",
   "type": "Definition",
   "number": "4.2.1",
   "title": "Orthogonality.",
@@ -6877,9 +6913,9 @@ var ptx_lunr_docs = [
   "body": " Orthogonal implies linearly independent   Let be an inner product space. If is orthogonal, then is linearly independent.    Given any distinct elements , we have . This proves that is linearly independent.   "
 },
 {
-  "id": "example-97",
+  "id": "example-98",
   "level": "2",
-  "url": "s_orthogonality.html#example-97",
+  "url": "s_orthogonality.html#example-98",
   "type": "Example",
   "number": "4.2.3",
   "title": "",
@@ -6922,9 +6958,9 @@ var ptx_lunr_docs = [
   "body": " Calculating with orthogonal bases   Let be an inner product space. and let    Let be an orthogonal basis of . For any we have , where for all . If is orthonormal , so that for all , then .    Generalized Pythagorean theorem  Let be an orthonormal basis of . Given , we have .     "
 },
 {
-  "id": "example-99",
+  "id": "example-100",
   "level": "2",
-  "url": "s_orthogonality.html#example-99",
+  "url": "s_orthogonality.html#example-100",
   "type": "Example",
   "number": "4.2.8",
   "title": "",
@@ -7129,9 +7165,9 @@ var ptx_lunr_docs = [
   "body": " Orthogonal complement   Let be an inner product vector space, and let be a subspace.   The orthogonal complement is a subspace of .    We have .    If then .       The proof is left as an exercise. (See .)   "
 },
 {
-  "id": "example-102",
+  "id": "example-103",
   "level": "2",
-  "url": "s_orthogonal_projection.html#example-102",
+  "url": "s_orthogonal_projection.html#example-103",
   "type": "Example",
   "number": "4.3.6",
   "title": "",
@@ -7147,9 +7183,9 @@ var ptx_lunr_docs = [
   "body": " Fundamental spaces and orthogonal complements   Let be , and consider and as inner product spaces with respect to the dot product. Then:    , and thus .     , and thus .         Using the dot product method of matrix multiplication, we see that a vector if and only if for each row of , if and only if for all (see ), if and only if . This shows .  We can use to conclude . Alternatively, and more directly, the argument above shows that , proving . Next, by the rank-nullity theorem we have ; and by we have . It follows that . Since and , we conclude by that .    This follows from (1) and the fact that .     "
 },
 {
-  "id": "example-103",
+  "id": "example-104",
   "level": "2",
-  "url": "s_orthogonal_projection.html#example-103",
+  "url": "s_orthogonal_projection.html#example-104",
   "type": "Example",
   "number": "4.3.8",
   "title": "",
@@ -7174,9 +7210,9 @@ var ptx_lunr_docs = [
   "body": " Orthogonal projection formula   The formula is very convenient for computing an orthogonal projection , but mark well this important detail: to apply the formula we must first provide an orthogonal basis of . Thus unless one is provided, our first step in an orthogonal projection computation is to produce an orthogonal basis of . In some simple cases ( , when is 1- or 2-dimensional) this can be done by inspection. Otherwise, we use the Gram-Schmidt procedure.   "
 },
 {
-  "id": "example-104",
+  "id": "example-105",
   "level": "2",
-  "url": "s_orthogonal_projection.html#example-104",
+  "url": "s_orthogonal_projection.html#example-105",
   "type": "Example",
   "number": "4.3.11",
   "title": "",
@@ -7201,9 +7237,9 @@ var ptx_lunr_docs = [
   "body": " Complement of a complement   Let be an inner product space, and let be a finite-dimensional subspace. Then .   "
 },
 {
-  "id": "proof-83",
+  "id": "proof-84",
   "level": "2",
-  "url": "s_orthogonal_projection.html#proof-83",
+  "url": "s_orthogonal_projection.html#proof-84",
   "type": "Proof",
   "number": "4.3.2.1",
   "title": "",
@@ -7219,9 +7255,9 @@ var ptx_lunr_docs = [
   "body": " Orthgonal projection is linear   Let be an inner product space, and let be a finite-dimensional subspace.    The function is a linear transformation.    We have and .     "
 },
 {
-  "id": "proof-84",
+  "id": "proof-85",
   "level": "2",
-  "url": "s_orthogonal_projection.html#proof-84",
+  "url": "s_orthogonal_projection.html#proof-85",
   "type": "Proof",
   "number": "4.3.2.2",
   "title": "",
@@ -7237,9 +7273,9 @@ var ptx_lunr_docs = [
   "body": " Projection onto a line   Any line in passing through the origin can be described as , for some . The set is trivially an orthogonal basis of . Using , we have . It follows that , where .   "
 },
 {
-  "id": "example-106",
+  "id": "example-107",
   "level": "2",
-  "url": "s_orthogonal_projection.html#example-106",
+  "url": "s_orthogonal_projection.html#example-107",
   "type": "Example",
   "number": "4.3.16",
   "title": "",
@@ -7255,27 +7291,27 @@ var ptx_lunr_docs = [
   "body": " Projection onto planes in   Any plane passing through the origin can be described as . Equivalently, is the set of all satisfying : , , where . Consider the orthogonal decomposition with respect to : . Since and , we see that this is also an orthogonal decomposition with respect to ! Using the matrix formula for from , we have . We conclude that , where .   "
 },
 {
-  "id": "example-108",
+  "id": "example-109",
   "level": "2",
-  "url": "s_orthogonal_projection.html#example-108",
+  "url": "s_orthogonal_projection.html#example-109",
   "type": "Example",
   "number": "4.3.18",
   "title": "",
   "body": "  Consider the plane .    Find the matrix such that .    Use your matrix formula from (a) to compute and .    Compute and .        Using the general formula described in , we have .    Now compute .    We have .     "
 },
 {
-  "id": "p-3134",
+  "id": "p-3144",
   "level": "2",
-  "url": "s_orthogonal_projection.html#p-3134",
+  "url": "s_orthogonal_projection.html#p-3144",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "trigonometric polynomials of degree at most "
 },
 {
-  "id": "p-3139",
+  "id": "p-3149",
   "level": "2",
-  "url": "s_orthogonal_projection.html#p-3139",
+  "url": "s_orthogonal_projection.html#p-3149",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -7309,9 +7345,9 @@ var ptx_lunr_docs = [
   "body": " Least-squares matrix formula   Given an matrix and column vector , a vector is a least-squares solution to if and only if . In other words, we can find a least-squares solution by solving the matrix equation directly.    Let , and let . The key observation is that a vector satisfies if and only if is an orthogonal decomposition of with respect to ; and this is true if and only if . Thus we have .   "
 },
 {
-  "id": "example-110",
+  "id": "example-111",
   "level": "2",
-  "url": "s_orthogonal_projection.html#example-110",
+  "url": "s_orthogonal_projection.html#example-111",
   "type": "Example",
   "number": "4.3.23",
   "title": "",
@@ -7462,9 +7498,9 @@ var ptx_lunr_docs = [
   "body": "  If is further given the structure of a (finite-dimensional) inner product space, then we say an ordered basis is orthogonal (resp., orthonormal) if its underlying set is orthogonal (resp. orthonormal).   "
 },
 {
-  "id": "remark-78",
+  "id": "remark-79",
   "level": "2",
-  "url": "s_coordinatevectors.html#remark-78",
+  "url": "s_coordinatevectors.html#remark-79",
   "type": "Remark",
   "number": "5.1.3",
   "title": "",
@@ -7489,18 +7525,18 @@ var ptx_lunr_docs = [
   "body": " Standard bases   Computing coordinate vectors relative to one of our standard bases for , , or amounts to just listing the coefficients or entries used to specify the given vector. The examples below serve to illustrate the general method in this setting.    Let and . For any we have , since .    Let and . For any we have since .     "
 },
 {
-  "id": "example-112",
+  "id": "example-113",
   "level": "2",
-  "url": "s_coordinatevectors.html#example-112",
+  "url": "s_coordinatevectors.html#example-113",
   "type": "Example",
   "number": "5.1.6",
   "title": "Reorderings of standard bases.",
   "body": " Reorderings of standard bases   If we choose an alternate ordering of one of the standard bases, the entries of the coordinate vector are reordered accordingly, as illustrated by the examples below.    Let and . Given we have , since .    Let and . Given we have , since .     "
 },
 {
-  "id": "example-113",
+  "id": "example-114",
   "level": "2",
-  "url": "s_coordinatevectors.html#example-113",
+  "url": "s_coordinatevectors.html#example-114",
   "type": "Example",
   "number": "5.1.7",
   "title": "Nonstandard bases.",
@@ -7525,9 +7561,9 @@ var ptx_lunr_docs = [
   "body": " Coordinate vectors for orthogonal bases   Let be an inner product space, and suppose the ordered basis is orthogonal with respect to . For all we have .   "
 },
 {
-  "id": "example-114",
+  "id": "example-115",
   "level": "2",
-  "url": "s_coordinatevectors.html#example-114",
+  "url": "s_coordinatevectors.html#example-115",
   "type": "Example",
   "number": "5.1.10",
   "title": "Orthogonal bases.",
@@ -7552,9 +7588,9 @@ var ptx_lunr_docs = [
   "body": " Coordinate vector transformation   Let be an ordered basis for the vector space .   The function defined as is a linear transformation. We call the coordinate vector transformation with respect to .    We have if and only if : , is injective .    For all , there is with : , is surjective .    Given a subset , let . We have the following equivalences:    if and only if ;     is linearly independent if and only if is linearly independent.         "
 },
 {
-  "id": "proof-86",
+  "id": "proof-87",
   "level": "2",
-  "url": "s_coordinatevectors.html#proof-86",
+  "url": "s_coordinatevectors.html#proof-87",
   "type": "Proof",
   "number": "5.1.2.1",
   "title": "",
@@ -7579,9 +7615,9 @@ var ptx_lunr_docs = [
   "body": " Contracting and extending to bases in general spaces   Let be a vector space of dimension , and let .    Contracting to a basis  Let . To contract to a basis , proceed as follows.    Pick any ordered basis of and let .    Use the relevant procedure of to contract to a basis of .    The set is a basis for .      Extending to a basis  Assume is linearly independent. To extend to a basis of proceed as follows.    Pick any ordered basis of and let .    Use the relevant procedure of to extend to a basis of .    By (3) of , for all there are vectors satisfying . The set is a basis of containing .       "
 },
 {
-  "id": "example-115",
+  "id": "example-116",
   "level": "2",
-  "url": "s_coordinatevectors.html#example-115",
+  "url": "s_coordinatevectors.html#example-116",
   "type": "Example",
   "number": "5.1.15",
   "title": "",
@@ -7750,9 +7786,9 @@ var ptx_lunr_docs = [
   "body": "  Let be a linear transformation, and let be its standard matrix: , is the matrix satisfying for all . According to , the standard matrix is just one way of representing : namely, the representation with respect to the standard bases of and . This begs the question of whether a different choice of bases might give rise to a more convenient matrix representation of . The answer is yes, as we will see over the course of this chapter.   "
 },
 {
-  "id": "example-117",
+  "id": "example-118",
   "level": "2",
-  "url": "s_matrixreps.html#example-117",
+  "url": "s_matrixreps.html#example-118",
   "type": "Example",
   "number": "5.2.5",
   "title": "",
@@ -7939,18 +7975,18 @@ var ptx_lunr_docs = [
   "body": " Change of basis for coordinate vectors   Let and be two ordered bases of the -dimensional vector space .   Recall that is the identity transformation ( ), defined as for all . We have .    For all we have . In other words, to convert the -coordinates of a vector to -coordinates, simply multiply on the left by the matrix .    Property defines uniquely: , if satisfies for all , then .         Let be the identity transformation: , for all . By the matrix is the unique matrix satisfying . Comparing the formulas for and we see directly that .    This follows from (1) and : .    By (2) of (the uniqueness claim), if satisfies for all , then . Since , we conclude .     "
 },
 {
-  "id": "example-120",
+  "id": "example-121",
   "level": "2",
-  "url": "s_changeofbasis.html#example-120",
+  "url": "s_changeofbasis.html#example-121",
   "type": "Example",
   "number": "5.3.3",
   "title": "",
   "body": "  Let , , . Observe that and are both orthogonal with resepct to the dot product. This will simplify your computations below.   Compute .    Let . Compute using .         Using , we have . Here the two coordinate vector computations and were done using .    First we easily compute , again using . Now use : . This should come as now surprise since .     "
 },
 {
-  "id": "example-121",
+  "id": "example-122",
   "level": "2",
-  "url": "s_changeofbasis.html#example-121",
+  "url": "s_changeofbasis.html#example-122",
   "type": "Example",
   "number": "5.3.4",
   "title": "",
@@ -7984,9 +8020,9 @@ var ptx_lunr_docs = [
   "body": " , standard basis   Consider the special situation where , is the standard basis, and is some nonstandard basis. In this case we have . In other words, is the matrix whose -th column is just the -th element of . Thus, in this situation we can compute by placing the elements of as columns of a matrix, and then use (2) of to compute .   "
 },
 {
-  "id": "example-123",
+  "id": "example-124",
   "level": "2",
-  "url": "s_changeofbasis.html#example-123",
+  "url": "s_changeofbasis.html#example-124",
   "type": "Example",
   "number": "5.3.8",
   "title": "",
@@ -8038,9 +8074,9 @@ var ptx_lunr_docs = [
   "body": "  Since for an invertible matrix we have it follows immediately from that .   "
 },
 {
-  "id": "example-125",
+  "id": "example-126",
   "level": "2",
-  "url": "s_changeofbasis.html#example-125",
+  "url": "s_changeofbasis.html#example-126",
   "type": "Example",
   "number": "5.3.14",
   "title": "",
@@ -8074,9 +8110,9 @@ var ptx_lunr_docs = [
   "body": " Orthonormal change of basis   Let be a finite dimensional inner product space, and suppose and are orthonormal bases of .    The matrices and are orthogonal.    We have .        Let . By definition, the columns of are the coordinate vectors , . By , these coordinate vectors form an orthonormal subset of ; since there are of them, they form an orthonormal basis. From it follows that is orthogonal. Lastly, from it follows that is also orthogonal.    Since is orthogonal, we have .     "
 },
 {
-  "id": "example-126",
+  "id": "example-127",
   "level": "2",
-  "url": "s_changeofbasis.html#example-126",
+  "url": "s_changeofbasis.html#example-127",
   "type": "Example",
   "number": "5.3.18",
   "title": "",
@@ -8110,9 +8146,9 @@ var ptx_lunr_docs = [
   "body": " Getting change of basis formulas correct   It is easy to get the various details of the change of basis formula wrong. Here is a potential way to keep things organized in your mind.   We wish to relate and with an equation of the form , where the asterisks are to be replaced with change of basis matrices or their inverses. Think of the three matrices on the right-hand side of this equation as a sequence of three things done to coordinate vectors, reading from right to left.     takes as inputs -coordinates of vectors, and outputs -coordinates. Thus the same should be true for .    Since takes as inputs -coordinates, we must first convert from -coordinates to -coordinates. So we should have .    Since outputs -coordinates, we need to then convert back to -coordinates. Thus .    If desired you may replace with .      "
 },
 {
-  "id": "example-127",
+  "id": "example-128",
   "level": "2",
-  "url": "s_changeofbasis.html#example-127",
+  "url": "s_changeofbasis.html#example-128",
   "type": "Example",
   "number": "5.3.22",
   "title": "",
@@ -8128,9 +8164,9 @@ var ptx_lunr_docs = [
   "body": " Computing the standard matrix using change of basis   Let be a linear transformation, and let be its standard matrix. To compute using the change of basis formula , proceed as follows.    Find a convenient basis for which the action of is easily understood.    Compute .    Let be the standard basis of . Recall that . Now compute using the change of basis formula as .     "
 },
 {
-  "id": "example-128",
+  "id": "example-129",
   "level": "2",
-  "url": "s_changeofbasis.html#example-128",
+  "url": "s_changeofbasis.html#example-129",
   "type": "Example",
   "number": "5.3.24",
   "title": "Orthogonal projection (again).",
@@ -8524,9 +8560,9 @@ var ptx_lunr_docs = [
   "body": " Rotation (again)   Fix and let be rotation by . Recall that we have where . Now compute . We can use the quadratic formula to find the roots of : . When , this reduces to , confirming our conclusion in that is the only eigenvalue of the rotation by operator.  When and , then and we see that has no real roots. This confirms our conclusion in that such rotations have no eigenvalues.   "
 },
 {
-  "id": "definition-97",
+  "id": "definition-98",
   "level": "2",
-  "url": "s_eigenvectors.html#definition-97",
+  "url": "s_eigenvectors.html#definition-98",
   "type": "Definition",
   "number": "5.4.18",
   "title": "Characteristic polynomial of a matrix.",
@@ -8794,18 +8830,18 @@ var ptx_lunr_docs = [
   "body": "  Let , where . We saw in that and are eigenvectors of with eigenvalues , respectively. It is clear that the two eigenvectors are linearly independent, and hence that is an eigenbasis of . It follows from that is diagonalizable, and that in fact , as one easily verifies.   "
 },
 {
-  "id": "example-140",
+  "id": "example-141",
   "level": "2",
-  "url": "s_diagonalization.html#example-140",
+  "url": "s_diagonalization.html#example-141",
   "type": "Example",
   "number": "5.5.5",
   "title": "",
   "body": "  Let be rotation by : , , where . As discussed in , has no eigenvectors whatsoever. It follows that there is no eigenbasis of , and hence that is not diagonalizable.   "
 },
 {
-  "id": "example-141",
+  "id": "example-142",
   "level": "2",
-  "url": "s_diagonalization.html#example-141",
+  "url": "s_diagonalization.html#example-142",
   "type": "Example",
   "number": "5.5.6",
   "title": "",
@@ -8830,9 +8866,9 @@ var ptx_lunr_docs = [
   "body": " Diagonalizable if distinct eigenvalues   Let be a linear transformation, and suppose . If has distinct eigenvalues, then is diagonalizable.    Let be a set eigenvectors of with distinct eigenvalues. According to the set is linearly independent. Since it follows that is an eigenbasis for and hence is diagonalizable.   "
 },
 {
-  "id": "example-142",
+  "id": "example-143",
   "level": "2",
-  "url": "s_diagonalization.html#example-142",
+  "url": "s_diagonalization.html#example-143",
   "type": "Example",
   "number": "5.5.9",
   "title": "",
@@ -8848,9 +8884,9 @@ var ptx_lunr_docs = [
   "body": "  Let be a linear transformation, . It cannot be stressed enough that having distinct eigenvalues is a sufficient , but not necessary condition for to be diagonalizable. In other words we have but . A good counterexample to keep in mind is , where is the identity matrix. The transformation is clearly diagonalizable since , where is the standard basis; and yet is the only eigenvalue of .   "
 },
 {
-  "id": "example-143",
+  "id": "example-144",
   "level": "2",
-  "url": "s_diagonalization.html#example-143",
+  "url": "s_diagonalization.html#example-144",
   "type": "Example",
   "number": "5.5.11",
   "title": "",
@@ -8983,9 +9019,9 @@ var ptx_lunr_docs = [
   "body": " Diagonalizable: matrix polynomials   Assume , where is a diagonal matrix. Let . Given any polynomial , we have . Furthermore, since is diagonal, it follows that is also diagonal, and in fact its diagonal entries are given by . This gives us an easy method of computing arbitrary polynomials of the matrix .  Consider again the matrix (and and ) from . Let . Since , it follows that . We conclude that , as you can check directly.   "
 },
 {
-  "id": "example-149",
+  "id": "example-150",
   "level": "2",
-  "url": "s_diagonalization.html#example-149",
+  "url": "s_diagonalization.html#example-150",
   "type": "Example",
   "number": "5.5.26",
   "title": "",
@@ -9280,9 +9316,9 @@ var ptx_lunr_docs = [
   "body": " Symmetric matrices   Verify that the characteristic polynomial of any symmetric matrix factors into linear terms over .    Given a symmetric matrix , we have . Using the quadratic formula and some algebra, we see that the roots of are given by where (using the quadratic formula) . Since , we see that both these roots are real. Thus , where .   "
 },
 {
-  "id": "example-153",
+  "id": "example-154",
   "level": "2",
-  "url": "s_spectral_theorem.html#example-153",
+  "url": "s_spectral_theorem.html#example-154",
   "type": "Example",
   "number": "5.6.7",
   "title": "Symmetric <span class=\"process-math\">\\(4\\times 4\\)<\/span> matrix.",

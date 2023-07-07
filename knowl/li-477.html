@@ -15,16 +15,17 @@
 <span class="type">Item</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span>
 </h5>
 <div class="para logical">
-<div class="para">We have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_nullspace_inverseimage.html ./knowl/eq_nullspace_injective.html">
-\begin{align*}
-T(\boldv)=T(\boldv') \amp \iff T(\boldv')-T(\boldv)=\boldzero\\
-\amp \iff T(\boldv'-\boldv)=\boldzero \amp (T \text{ is linear})\\
-\amp \iff \boldu=\boldv'-\boldv\in\NS T \amp (\text{def. } \NS T)\\
-\amp \iff \boldv'=\boldv+\boldu \text{ for some } \boldu\in\NS T \text{.}
-\end{align*}
+<div class="para">Given vectors <span class="process-math">\(\boldv, \boldv'\in V\text{,}\)</span> we have</div>
+<div class="displaymath process-math">
+\begin{equation}
+T(\boldv)=T(\boldv') \iff \boldv'=\boldv+\boldu \text{ for some } \boldu\in \NS T\text{.}\tag{3.4.2}
+\end{equation}
 </div>
-<div class="para">Equation <a href="" class="xref" data-knowl="./knowl/eq_nullspace_inverseimage.html" title="Equation 3.4.3">(3.4.3)</a> follows directly from <a href="" class="xref" data-knowl="./knowl/eq_nullspace_injective.html" title="Equation 3.4.2">(3.4.2)</a> by observing that if <span class="process-math">\(T(\boldv)=\boldw\text{,}\)</span> then <span class="process-math">\(T(\boldv')=\boldw\)</span> if and only if <span class="process-math">\(T(\boldv)=T(\boldv')\text{.}\)</span>
+<div class="para">Equivalently, given <span class="process-math">\(\boldw\in W\)</span> and <span class="process-math">\(\boldv\in V\)</span> satisfying <span class="process-math">\(T(\boldv)=\boldw\text{,}\)</span> the set <span class="process-math">\(X\)</span> of all <span class="process-math">\(\boldv'\)</span> satisfying <span class="process-math">\(T(\boldv')=\boldw\)</span> can be described as</div>
+<div class="displaymath process-math">
+\begin{equation}
+X=\{\boldv+\boldu\colon \boldu\in \NS T\}\text{.}\tag{3.4.3}
+\end{equation}
 </div>
 </div></article><span class="incontext"><a href="s_nullspace_image.html#li-477" class="internal">in-context</a></span>
 </body>

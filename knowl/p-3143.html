@@ -13,13 +13,15 @@
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">Given an <span class="process-math">\(m\times n\)</span> matrix <span class="process-math">\(A\)</span> and <span class="process-math">\(m\times 1\)</span> column vector <span class="process-math">\(\boldy\text{,}\)</span> a vector <span class="process-math">\(\hat{\boldx}\)</span> is a least-squares solution to <span class="process-math">\(A\boldx=\boldy\)</span> if and only if</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_leastsquares_matrix_equation.html">
-\begin{equation}
-A^TA\boldx=A^T\boldy\text{.}\tag{4.3.7}
-\end{equation}
+<div class="para">We have</div>
+<div class="displaymath process-math">
+\begin{align*}
+d((2,1,1), W) \amp = \norm{(2,1,1)-\proj{(2,1,1)}{W}}\\
+\amp =\norm{\frac{1}{6}(1,-2,-1)}=\frac{6}{6} \\
+d((1,1,1), W) \amp = \norm{(1,1,1)-\proj{(1,1,1)}{W}}\\
+\amp =\norm{(0,0,0)}=0 \text{.}
+\end{align*}
 </div>
-<div class="para">In other words, we can find a least-squares solution by solving the matrix equation <a href="" class="xref" data-knowl="./knowl/eq_leastsquares_matrix_equation.html" title="Equation 4.3.7">(4.3.7)</a> directly.</div>
 </div>
 <span class="incontext"><a href="s_orthogonal_projection.html#p-3143" class="internal">in-context</a></span>
 </body>
