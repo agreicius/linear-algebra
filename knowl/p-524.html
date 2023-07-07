@@ -11,9 +11,59 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h5 class="heading"><span class="type">Paragraph</span></h5>
-<div class="para">
-<dfn class="terminology">Gauss-Jordan elimination</dfn> is the algorithm described below. It takes as an input a matrix <span class="process-math">\(A\)</span> and returns a row equivalent matrix <span class="process-math">\(B\)</span> in reduced row echelon form.</div>
+<h6 class="heading"><span class="type">Paragraph</span></h6>
+<div class="para logical">
+<div class="para">First we apply Gaussian elimination to the augmented matrix associated to our system.</div>
+<div class="displaymath process-math">
+\begin{align*}
+\begin{bmatrix}0\amp 0\amp -2\amp 0\amp 7\amp 12\\
+2\amp 4\amp -10\amp 6\amp 12\amp 28\\
+2\amp 4\amp -5\amp 6\amp -5\amp -1
+\end{bmatrix}
+\amp \xrightarrow[\hspace{35pt}]{r_1\leftrightarrow r_2}
+\begin{bmatrix}2\amp 4\amp -10\amp 6\amp 12\amp 28\\
+0\amp 0\amp -2\amp 0\amp 7\amp 12\\
+2\amp 4\amp -5\amp 6\amp -5\amp -1
+\end{bmatrix}\\
+\amp \xrightarrow[\hspace{35pt}]{\frac{1}{2}r_1}
+\begin{bmatrix}\boxed{1}\amp 2\amp -5\amp 3\amp 6\amp 14\\
+0\amp 0\amp -2\amp 0\amp 7\amp 12\\
+2\amp 4\amp -5\amp 6\amp -5\amp -1
+\end{bmatrix}\\
+\amp \xrightarrow[\hspace{35pt}]{r_3-2r_1}
+\begin{bmatrix}\boxed{1}\amp 2\amp -5\amp 3\amp 6\amp 14\\
+0\amp 0\amp -2\amp 0\amp 7\amp 12\\
+0\amp 0\amp 5\amp 0\amp -17\amp -29
+\end{bmatrix}\amp
+\text{ (now done with first row) }\\
+\amp \xrightarrow[\hspace{35pt}]{-\frac{1}{2}r_2}
+\begin{bmatrix}\boxed{1}\amp 2\amp -5\amp 3\amp 6\amp 14\\
+0\amp 0\amp \boxed{1}\amp 0\amp -7/2\amp -6\\
+0\amp 0\amp 5\amp 0\amp -17\amp -29
+\end{bmatrix}\\
+\amp \xrightarrow[\hspace{35pt}]{r_3+(-5)r_2}
+\begin{bmatrix}\boxed{1}\amp 2\amp -5\amp 3\amp 6\amp 14\\
+0\amp 0\amp \boxed{1}\amp 0\amp -7/2\amp -6\\
+0\amp 0\amp 0\amp 0\amp 1/2\amp 1
+\end{bmatrix}\amp
+\text{ (now done with 2nd row)}\\
+\amp \xrightarrow[\hspace{35pt}]{2r_3}
+\begin{bmatrix}\boxed{1}\amp 2\amp -5\amp 3\amp 6\amp 14\\
+0\amp 0\amp \boxed{1}\amp 0\amp -7/2\amp -6\\
+0\amp 0\amp 0\amp 0\amp \boxed{1}\amp 2
+\end{bmatrix}\text{.}
+\end{align*}
+</div>
+<div class="para">We conclude that our original system is equivalent to the system</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{array}{rcc} x_1+2x_2-5x_3+3x_4+6x_5\amp =\amp 14\\
+x_3-\frac{7}{2}x_5\amp =\amp -6\\
+x_5\amp =\amp 2 \end{array}\text{,}
+\end{equation*}
+</div>
+<div class="para">which is in row echelon form.</div>
+</div>
 <span class="incontext"><a href="s_ge.html#p-524" class="internal">in-context</a></span>
 </body>
 </html>

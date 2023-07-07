@@ -13,17 +13,14 @@
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">In more detail, for the product of <span class="process-math">\(A_{mn}\)</span> and <span class="process-math">\(B_{pr}\)</span> to be defined, we need <span class="process-math">\(n=p\text{.}\)</span> In other words we need the “inner” dimensions of <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> to be equal:</div>
+<div class="para">
+<dfn class="terminology">Matrix multiplication</dfn> is the operation defined as follows: given an <span class="process-math">\(m\times n\)</span> matrix <span class="process-math">\(A=[a_{ij}]_{m\times n}\)</span> and an <span class="process-math">\(n\times r\)</span> matrix <span class="process-math">\(B=[b_{ij}]_{n\times r}\text{,}\)</span> we define their <dfn class="terminology">product</dfn> to be the <span class="process-math">\(m\times r\)</span> matrix <span class="process-math">\(AB\)</span> whose <span class="process-math">\(ij\)</span>-th entry is given by the formula</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\underset{m\times \boxed{n}}{A}\hspace{5pt} \underset{\boxed{n}\times r}{B}\text{.}
+[AB]_{ij}=a_{i1}b_{1j}+a_{i2}b_{2j}+\cdots a_{ir}b_{rj} =\sum_{\ell=1}^ra_{i\ell}b_{\ell j}
 \end{equation*}
 </div>
-<div class="para">If this condition is met, the dimension of the resulting matrix <span class="process-math">\(AB\)</span> is determined by the “outer” dimensions of <span class="process-math">\(A\)</span> and <span class="process-math">\(B\text{.}\)</span> Schematically, you can think of the inner dimensions as being “canceled out”:</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\underset{\boxed{m}\times\cancel{n}}{A}\hspace{5pt}\underset{\cancel{n}\times\boxed{r}}{B}=\underset{m\times r}{AB}.
-\end{equation*}
+<div class="para">for all <span class="process-math">\(1\leq i\leq m\)</span> and <span class="process-math">\(1\leq j\leq r\text{.}\)</span>
 </div>
 </div>
 <span class="incontext"><a href="s_matrix.html#p-852" class="internal">in-context</a></span>

@@ -12,7 +12,15 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<div class="para">For the other direction, assume <span class="process-math">\(A^T\)</span> is invertible. Setting <span class="process-math">\(B=A^T\text{,}\)</span> we see that <span class="process-math">\(A=(A^T)^T=B^T\text{.}\)</span> By the first implication, we know that if <span class="process-math">\(B\)</span> is invertible, then so is <span class="process-math">\(B^T=A\text{.}\)</span>
+<div class="para logical">
+<div class="para">Suppose <span class="process-math">\(r=-s &lt; 0\text{.}\)</span> Then</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/d_matrix_powers.html">
+\begin{align*}
+(A^{-1})^{r} \amp = ((A^{-1})^{-1})^s \amp (\knowl{./knowl/d_matrix_powers.html}{\text{Definition 2.3.10}}) \\
+\amp =A^s \amp ((A^{-1})^{-1}=A)\\
+\amp=A^{-r} \amp (r=-s) \text{.}
+\end{align*}
+</div>
 </div>
 <span class="incontext"><a href="s_invertible_matrices.html#p-1133" class="internal">in-context</a></span>
 </body>

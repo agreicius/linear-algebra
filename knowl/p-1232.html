@@ -11,24 +11,24 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
+<h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">We have thus recast the problem of solving linear systems to the problem of solving a certain matrix equation of the form</div>
+<div class="para">We have</div>
 <div class="displaymath process-math">
 \begin{equation*}
-A\underset{n\times 1}{\boldx}=\underset{m\times 1}{\boldb}
+\underset{r_1+3r_3}{E}=\begin{bmatrix}1\amp 0\amp 3\\0\amp 1\amp 0\\ 0\amp 0\amp 1 \end{bmatrix}
 \end{equation*}
 </div>
-<div class="para">for the unknown column vector <span class="process-math">\(\boldx\text{.}\)</span> In particular, a <em class="emphasis">homogeneous</em> linear system</div>
+<div class="para">and</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\homsys
+\underset{r_1-3r_3}{E}=\begin{amatrix}[rrr]1\amp 0\amp -3\\0\amp 1\amp 0\\ 0\amp 0\amp 1 \end{amatrix}\text{.}
 \end{equation*}
 </div>
-<div class="para">can be represented as a matrix equation of the form</div>
+<div class="para">You can verify for yourself that</div>
 <div class="displaymath process-math">
 \begin{equation*}
-A\underset{n\times 1}{\boldx}=\underset{m\times 1}{\boldzero}\text{.}
+\underset{r_1+3r_3}{E}\,\underset{r_1-3r_3}{E}=\underset{r_1-3r_3}{E}\,\underset{r_1+3r_3}{E}=I_3\text{.}
 \end{equation*}
 </div>
 </div>

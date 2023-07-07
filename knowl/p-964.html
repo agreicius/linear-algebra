@@ -12,19 +12,7 @@
 </head>
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
-<div class="para logical">
-<div class="para">(2) Given any  <span class="process-math">\((i,j)\)</span> with <span class="process-math">\(1\leq i\leq m\)</span> and <span class="process-math">\(1\leq j\leq n\text{,}\)</span> we have:</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/d_matrix_mult.html ./knowl/d_matrix_mult.html">
-\begin{align*}
-[A(BC)]_{ij}\amp=\sum_{\ell=1}^ra_{i\ell}[BC]_{\ell j}  \amp (\knowl{./knowl/d_matrix_mult.html}{\text{Definition 2.1.17}})\\
-\amp=\sum_{\ell=1}^ra_{i\ell}\left(\sum_{k=1}^sb_{\ell k}c_{kj}\right) \amp (\knowl{./knowl/d_matrix_mult.html}{\text{Definition 2.1.17}})\\
-=\amp \sum_{\ell=1}^r\sum_{k=1}^sa_{i\ell}(b_{\ell k}c_{kj}) \amp \text{ (real dist.) }\\
-=\amp \sum_{k=1}^s\sum_{\ell=1}^r(a_{i\ell}b_{\ell k})c_{kj} \amp \text{ (real comm., real assoc.) }\\
-=\amp \sum_{k=1}^s\left(\sum_{\ell=1}^ra_{i\ell}b_{\ell k}\right)c_{kj} \amp \text{ (real dist.) }\\
-=\amp \sum_{k=1}^s[AB]_{ik}c_{kj}  =\Bigl[(AB)C]_{ij}
-\end{align*}
-</div>
-</div>
+<div class="para">How does one actually prove one of these properties? These are all <em class="emphasis">matrix equalities</em> of the form <span class="process-math">\(X=Y\text{,}\)</span> so according to the <a href="" class="xref" data-knowl="./knowl/d_matrix_equality.html" title="Definition 2.1.5: Matrix equality">matrix equality definition</a> we must show (1) that the matrices <span class="process-math">\(X\)</span> and <span class="process-math">\(Y\)</span> have the same dimension, and (2) that <span class="process-math">\((X)_{ij}=(Y)_{ij}\)</span> for all <span class="process-math">\((i,j)\text{.}\)</span> The proof below illustrates this technique for the <a href="" class="xref" data-knowl="./knowl/th_matrixmult_assoc.html" title="Item iii: Multiplication associative law">multiplication associative law</a> of <a href="" class="xref" data-knowl="./knowl/th_matrix_alg_props.html" title="Theorem 2.2.1: Properties of matrix arithmetic">Theorem 2.2.1</a>.</div>
 <span class="incontext"><a href="s_algebraic.html#p-964" class="internal">in-context</a></span>
 </body>
 </html>

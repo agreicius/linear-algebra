@@ -13,32 +13,13 @@
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">Consider the matrices</div>
+<div class="para">Let <span class="process-math">\(A\)</span> be an <span class="process-math">\(m\times n\)</span> matrix, and let <span class="process-math">\(B\)</span> be an <span class="process-math">\(n\times r\)</span> matrix. For all <span class="process-math">\(1\leq i\leq m\text{,}\)</span> let <span class="process-math">\(\boldr_i\)</span> be the <span class="process-math">\(i\)</span>-th row of <span class="process-math">\(A\text{;}\)</span> and for all <span class="process-math">\(1\leq k\leq r\)</span> let <span class="process-math">\(\boldc_j\)</span> be the <span class="process-math">\(j\)</span>-th column of <span class="process-math">\(B\text{.}\)</span> For all <span class="process-math">\(1\leq i\leq m, 1\leq j\leq n\text{,}\)</span> we have</div>
 <div class="displaymath process-math">
-\begin{align*}
-A \amp =\begin{amatrix}[rrrr]1\amp 1\amp 1\amp 1\\ 1\amp 2\amp 1\amp 2\end{amatrix} 
-\amp B\amp =\begin{amatrix}[rr] 1\amp -1 \\ 0\amp 1\\ 1\amp 0 \\ 0\amp 0 \end{amatrix}\text{.}
-\end{align*}
+\begin{equation*}
+[AB]_{ij}=\boldr_i\cdot \boldc_j\text{,}
+\end{equation*}
 </div>
-<div class="para">The two rows of <span class="process-math">\(A\)</span> (in tuple form) are</div>
-<div class="displaymath process-math">
-\begin{align*}
-\boldr_1 \amp =(1,1,1,1) \amp \boldr_2=(1,2,1,2)\text{.}
-\end{align*}
-</div>
-<div class="para">The two columns of <span class="process-math">\(B\)</span> (in tuple form) are</div>
-<div class="displaymath process-math">
-\begin{align*}
-\boldc_1 \amp =(1,0,1,0) \amp \boldc_2=(-1,1,0,0)\text{.}
-\end{align*}
-</div>
-<div class="para">Using the dot product description of matrix multiplication, we compute</div>
-<div class="displaymath process-math">
-\begin{align*}
-AB \amp =\begin{bmatrix}\boldr_1\cdot \boldc_1 \amp \boldr_1\cdot \boldc_2 \\ 
-\boldr_2\cdot \boldc_1 \amp \boldr_2\cdot \boldc_2 \end{bmatrix}\\
-\amp = \begin{amatrix}[rr] 2 \amp 0 \\ 2\amp 1\end{amatrix}\text{.}
-\end{align*}
+<div class="para">where <span class="process-math">\(\boldr_i\)</span> and <span class="process-math">\(\boldc_j\)</span> are treated as <span class="process-math">\(n\)</span>-tuples. In other words, the <span class="process-math">\(ij\)</span>-th entry of <span class="process-math">\(AB\)</span> is the dot product of the <span class="process-math">\(i\)</span>-th row of <span class="process-math">\(A\)</span> and the <span class="process-math">\(j\)</span>-th column of <span class="process-math">\(B\text{.}\)</span>
 </div>
 </div>
 <span class="incontext"><a href="s_matrix.html#p-858" class="internal">in-context</a></span>

@@ -13,25 +13,21 @@
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">Suppose <span class="process-math">\(Q\)</span> is an invertible <span class="process-math">\(n\times n\)</span> matrix.</div>
-<ol class="decimal">
-<li><div class="para logical">
-<div class="para">If <span class="process-math">\(X\)</span> and <span class="process-math">\(Y\)</span> are <span class="process-math">\(n\times r\)</span> matrices, then</div>
+<div class="para">We prove both implications of <span class="process-math">\(QX=QY \iff X=Y\)</span> separately. The reverse implication (<span class="process-math">\(\Leftarrow\)</span>) is obvious:</div>
 <div class="displaymath process-math">
 \begin{equation*}
-QX=Y \iff X=Q^{-1}Y\text{.}
+X=Y\implies QX=QY\text{.}
 \end{equation*}
 </div>
-</div></li>
-<li><div class="para logical">
-<div class="para">If <span class="process-math">\(X\)</span> and <span class="process-math">\(Y\)</span> are <span class="process-math">\(m\times n\)</span> matrices, then</div>
+<div class="para">For the forward implication (<span class="process-math">\(\Rightarrow\)</span>), we have</div>
 <div class="displaymath process-math">
-\begin{equation*}
-XQ=Y \iff X=YQ^{-1}\text{.}
-\end{equation*}
+\begin{align*}
+QX=QY \amp \implies Q^{-1}(QX)=Q^{-1}(QY) \amp (Q \text{ inv.})\\
+\amp \implies Q^{-1}QX=Q^{-1}QY \\
+\amp \implies IX=IY\\
+\amp \implies X=Y \text{.}
+\end{align*}
 </div>
-</div></li>
-</ol>
 </div>
 <span class="incontext"><a href="s_invertible_matrices.html#p-1072" class="internal">in-context</a></span>
 </body>

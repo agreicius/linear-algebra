@@ -11,18 +11,16 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h5 class="heading"><span class="type">Paragraph</span></h5>
+<h6 class="heading"><span class="type">Paragraph</span></h6>
 <div class="para logical">
-<div class="para">We have different types of elementary matrices depending on the type of row operation they perform, and we denote these with an elaboration of our earlier row operation notation:</div>
-<ul class="disc">
-<li><div class="para">A <dfn class="terminology">scaling elementary matrix</dfn><span class="process-math">\(\underset{c\,r_i}{E}\)</span> is a matrix such that multiplying a matrix <span class="process-math">\(A\)</span> on the left by <span class="process-math">\(\underset{cr_i}{E}\)</span> scales the <span class="process-math">\(i\)</span>-th row of <span class="process-math">\(A\)</span> by <span class="process-math">\(c\text{.}\)</span>
-</div></li>
-<li><div class="para">A <dfn class="terminology">row swap elementary matrix</dfn><span class="process-math">\(\underset{r_i\leftrightarrow r_j}{E}\)</span> is a matrix such that multiplying a matrix <span class="process-math">\(A\)</span> on the left by <span class="process-math">\(\underset{r_i\leftrightarrow r_j}{E}\)</span> swaps the <span class="process-math">\(i\)</span>-th and <span class="process-math">\(j\)</span>-th rows of <span class="process-math">\(A\text{.}\)</span>
-</div></li>
-<li><div class="para">A <dfn class="terminology">row addition elementary matrix</dfn><span class="process-math">\(\underset{r_i+c\,r_j}{E}\)</span> is a matrix such that multiplying a matrix <span class="process-math">\(A\)</span> on the left by <span class="process-math">\(\underset{r_i+c\,r_j}{E}\)</span> replaces the <span class="process-math">\(i\)</span>-th row of <span class="process-math">\(A\)</span> with <span class="process-math">\(r_i+c\,r_j\text{.}\)</span>
-</div></li>
-</ul>
+<div class="para">Show that <span class="process-math">\((A-I)\)</span> is invertible, and that in fact</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/ex_expand_matrix_prod.html ./knowl/ex_poly_inA_commute.html">
+\begin{equation*}
+(A-I)^{-1}=-(A^{r-1}+A^{r-2}+\cdots +A+I)\text{.}
+\end{equation*}
 </div>
-<span class="incontext"><a href="s_invertibility_theorem.html#p-1207" class="internal">in-context</a></span>
+<div class="para">You may use the results of <a href="" class="xref" data-knowl="./knowl/ex_expand_matrix_prod.html" title="Exercise 2.3.3.14: Expanding matrix products">Exercise 2.3.3.14</a> and/or <a href="" class="xref" data-knowl="./knowl/ex_poly_inA_commute.html" title="Exercise 2.3.3.15: Polynomial expressions of A commute">Exercise 2.3.3.15</a>. .</div>
+</div>
+<span class="incontext"><a href="s_invertible_matrices.html#p-1207" class="internal">in-context</a></span>
 </body>
 </html>

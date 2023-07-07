@@ -13,22 +13,13 @@
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">We must show that <span class="process-math">\(A\boldb=\boldc\text{,}\)</span> where</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/rm_entry_lin_comb.html ./knowl/d_matrix_mult.html">
+<div class="para">We must show <span class="process-math">\(AB=C\text{,}\)</span> where</div>
+<div class="displaymath process-math">
 \begin{equation*}
-\boldc=b_1\bolda_1+b_2\bolda_2+\cdots +b_n\bolda_n\text{.}
+C=\begin{bmatrix}\vert \amp \vert \amp  \amp \vert \\ A\boldb_1\amp A\boldb_2\amp \cdots\amp A\boldb_r\\ \vert \amp  \vert \amp  \amp  \vert \end{bmatrix}\text{.}
 \end{equation*}
 </div>
-<div class="para">The usual argument shows that both <span class="process-math">\(A\boldb\)</span> and <span class="process-math">\(\boldc\)</span> are <span class="process-math">\(m\times 1\)</span> column vectors. It remains only to show that the <span class="process-math">\(i\)</span>-th entry <span class="process-math">\([A\boldb]_i\)</span> of the column <span class="process-math">\(A\boldb\)</span> is equal to the <span class="process-math">\(i\)</span>-th entry <span class="process-math">\([\boldc]_i\)</span> of <span class="process-math">\(\boldc\)</span> for all <span class="process-math">\(1\leq i\leq m\text{.}\)</span> For any such <span class="process-math">\(i\)</span> we have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/rm_entry_lin_comb.html ./knowl/d_matrix_mult.html">
-\begin{align*}
-[\boldc]_i \amp = [b_1\bolda_1+b_2\bolda_2+\cdots +b_n\bolda_n]_i\\
-\amp= b_1[\bolda_1]_i+b_2[\bolda_2]_i+\cdots +b_n[\bolda_n]_i \amp (\knowl{./knowl/rm_entry_lin_comb.html}{\text{Remark 2.1.16}})\\
-\amp= b_1a_{i1}+b_2a_{i2}+\cdots +b_n\bolda_{in}\amp (\text{def. of } \bolda_j) \\
-\amp= a_{i1}b_1+a_{i2}b_2+\cdots+a_{in}b_n \\
-\amp =[A\boldb]_i \amp (\knowl{./knowl/d_matrix_mult.html}{\text{Definition 2.1.17}})\text{.}
-\end{align*}
-</div>
+<div class="para">First we show <span class="process-math">\(AB\)</span> and <span class="process-math">\(C\)</span> have the same size. By definition of matrix multiplication, <span class="process-math">\(AB\)</span> is <span class="process-math">\(m\times r\text{.}\)</span> By construction <span class="process-math">\(C\)</span> has <span class="process-math">\(r\)</span> columns and its <span class="process-math">\(j\)</span>-th column is <span class="process-math">\(A\boldb_j\text{.}\)</span> Since <span class="process-math">\(A\)</span> and <span class="process-math">\(\boldb_j\)</span> have size <span class="process-math">\(m\times n\)</span> and <span class="process-math">\(n\times 1\text{,}\)</span> respectively, <span class="process-math">\(A\boldb_j\)</span> has size <span class="process-math">\(m\times 1\text{.}\)</span> Thus each of the <span class="process-math">\(r\)</span> columns of <span class="process-math">\(C\)</span> is an <span class="process-math">\(m\times 1\)</span> column vector. It follows that <span class="process-math">\(C\)</span> is <span class="process-math">\(m\times r\text{,}\)</span> as desired.</div>
 </div>
 <span class="incontext"><a href="s_matrix.html#p-870" class="internal">in-context</a></span>
 </body>

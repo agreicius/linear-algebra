@@ -12,14 +12,22 @@
 </head>
 <body class="ignore-math">
 <article class="example example-like"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.1.7</span><span class="period">.</span><span class="space"> </span><span class="title">Nonstandard bases.</span>
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.6</span><span class="period">.</span>
 </h4>
-<div class="para">For a nonstandard ordered basis, we compute coordinate vectors by solving a relevant system of linear equations, as the examples below illustrate.</div> <ol class="decimal">
-<li><div class="para">Let <span class="process-math">\(V=\R^2\text{,}\)</span> <span class="process-math">\(B=((1,2),(1,1))\text{,}\)</span> and <span class="process-math">\(\boldv=(3,3)\text{.}\)</span> Compute <span class="process-math">\([\boldv]_B\text{.}\)</span> More generally, compute <span class="process-math">\([(a,b)]_B\)</span> for an arbitrary <span class="process-math">\((a,b)\in \R^2\text{.}\)</span>
-</div></li>
-<li><div class="para">Let <span class="process-math">\(V=P_2\text{,}\)</span> <span class="process-math">\(B=(x^2+x+1, x^2-x, x^2-1)\text{,}\)</span> and <span class="process-math">\(p(x)=x^2\text{.}\)</span> Compute <span class="process-math">\([p(x)]_B\text{.}\)</span> More generally, compute <span class="process-math">\([ax^2+bx+c]\)</span> for an arbitrary element <span class="process-math">\(ax^2+bx+c\in P_2\text{.}\)</span>
-</div></li>
-</ol>
-<div class="solutions"><a href="" class="solution-knowl original" data-knowl="./knowl/solution-98-hidden.html" title="Solution 5.1.7.1"><span class="type">Solution</span><span class="period">.</span></a></div></article><span class="incontext"><a href="s_coordinatevectors.html#example-102" class="internal">in-context</a></span>
+<div class="para logical">
+<div class="para">Consider the inner product space <span class="process-math">\(\R^3\)</span> with the dot product. Let <span class="process-math">\(W=\Span\{(1,1,1)\}\subset \R^3\text{,}\)</span> the line passing through the origin with direction vector <span class="process-math">\((1,1,1)\text{.}\)</span> The orthogonal complement <span class="process-math">\(W^\perp\)</span> is the set of vectors orthogonal to <span class="process-math">\((1,1,1)\text{.}\)</span> Using the definition of dot product, this is the set of solutions <span class="process-math">\((x,y,z)\)</span> to the equation</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_orthogonal_complement.html">
+\begin{equation*}
+x+y+z=0\text{,}
+\end{equation*}
+</div>
+<div class="para">which we recognize as the plane passing through the origin with normal vector <span class="process-math">\((1,1,1)\text{.}\)</span> Note that we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_orthogonal_complement.html">
+\begin{equation*}
+\dim W+\dim W^\perp=1+2=3,
+\end{equation*}
+</div>
+<div class="para">as predicted in <a href="" class="xref" data-knowl="./knowl/th_orthogonal_complement.html" title="Theorem 4.3.5: Orthogonal complement">Theorem 4.3.5</a>.</div>
+</div></article><span class="incontext"><a href="s_orthogonal_projection.html#example-102" class="internal">in-context</a></span>
 </body>
 </html>

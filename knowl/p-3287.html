@@ -12,7 +12,17 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<div class="para">From <span class="process-math">\(\im T=P_2\text{,}\)</span> we conclude that for all <span class="process-math">\(q(x)\in P_2\)</span> there is a <span class="process-math">\(p(x)\in P_3\)</span> such that <span class="process-math">\(p'(x)=q(x)\text{.}\)</span> Using the language of calculus, this means that every polynomial of degree at most two has an antiderivative that itself is a polynomial of degree at most three.</div>
+<div class="para logical">
+<div class="para">We have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_coordinates.html ./knowl/eq_matrixrep_prop.html">
+\begin{align*}
+\boldv\in \NS T \amp\iff T(\boldv)=\boldzero \\
+\amp\iff [T(\boldv)]_{B'}=[\boldzero]_{B'} \amp (\knowl{./knowl/th_coordinates.html}{\text{Theorem 5.1.12}}, (2))\\
+\amp \iff [T]_{B}^{B'}[\boldv]_B=\boldzero \amp (\knowl{./knowl/eq_matrixrep_prop.html}{\text{(5.2.2)}})\\
+\amp [\boldv]_B\in\NS A \amp (A=[T]_B^{B'}) \text{.}
+\end{align*}
+</div>
+</div>
 <span class="incontext"><a href="s_matrixreps.html#p-3287" class="internal">in-context</a></span>
 </body>
 </html>

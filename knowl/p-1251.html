@@ -12,15 +12,7 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<div class="para logical">
-<div class="para">What if <span class="process-math">\(A\)</span> is not invertible? Then the theorem only tells us that there is some column vector <span class="process-math">\(\boldc\text{,}\)</span> not necessarily the given <span class="process-math">\(\boldb\text{,}\)</span> such that the equation</div>
-<div class="displaymath process-math">
-\begin{equation*}
-A\boldx=\boldc
-\end{equation*}
-</div>
-<div class="para">does not have a unique solution. In other words, the theorem alone doesn’t allow us to conclude whether the given <span class="process-math">\(A\boldx=\boldb\)</span> has a solution, and we must resort to our usual Gaussian elimination procedure to answer this question.</div>
-</div>
+<div class="para">Row reduce <span class="process-math">\(A\)</span> to a matrix <span class="process-math">\(U\)</span> in <em class="emphasis">reduced</em> row echelon form using Gauss-Jordan elimination. (See <a href="" class="xref" data-knowl="./knowl/th_matrixforms.html" title="Theorem 1.2.12: Row equivalent matrix forms">Theorem 1.2.12</a>.) Since the set of solutions to <span class="process-math">\(A\boldx=\boldzero\)</span> is identical to the set of solutions to <span class="process-math">\(U\boldx=\boldzero\)</span> (apply <a href="" class="xref" data-knowl="./knowl/s_systems_th_rowops.html" title="Theorem 1.1.13: Row equivalence theorem">Theorem 1.1.13</a> to their corresponding linear systems), we see that <span class="process-math">\(\boldzero\)</span> is the only solution to <span class="process-math">\(U\boldx=\boldzero\text{.}\)</span> <a href="" class="xref" data-knowl="./knowl/proc_solveSystem.html" title="Procedure 1.3.6: Solving linear systems">Procedure 1.3.6</a> now implies <span class="process-math">\(U\)</span> has a leading one in each column. Since <span class="process-math">\(U\)</span> is <span class="process-math">\(n\times n\)</span> and in <em class="emphasis">reduced</em> row echelon form, it follows that <span class="process-math">\(U\)</span> must be the identity matrix. (Convince yourself of this.) Thus <span class="process-math">\(A\)</span> is row equivalent to <span class="process-math">\(U=I\text{,}\)</span> the identity matrix.</div>
 <span class="incontext"><a href="s_invertibility_theorem.html#p-1251" class="internal">in-context</a></span>
 </body>
 </html>

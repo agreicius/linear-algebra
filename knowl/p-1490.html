@@ -13,22 +13,13 @@
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">First compute <span class="process-math">\(\det A=\)</span> by expanding along the third row:</div>
-<div class="displaymath process-math">
+<div class="para">Thus it suffices to prove <a href="" class="xref" data-knowl="./knowl/eq_adj_form.html" title="Equation 2.5.7">(2.5.7)</a>. To do so, we must show that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_adj_form.html">
 \begin{equation*}
-\det A=-2(-1+1)+2(2+1)=6\text{.}
-\end{equation*}
-</div>
-<div class="para">Next, compute</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\adj A=\begin{amatrix}[rrr] 4\amp -2 \amp -3\\ 2\amp 2\amp 0\\ -2\amp -2\amp 3  \end{amatrix}\text{.}
-\end{equation*}
-</div>
-<div class="para">Then we have</div>
-<div class="displaymath process-math">
-\begin{equation*}
-A^{-1}=\frac{1}{6}\,\adj A=\frac{1}{6}\, \begin{amatrix}[rrr] 4\amp -2 \amp -3\\ 2\amp 2\amp 0\\ -2\amp -2\amp 3  \end{amatrix}\text{.}
+[A\, \adj A]_{ij}=[\adj A\, A]_{ij}=
+\begin{cases} \det A\amp \text{if } i=j\\
+0 \amp \text{if } i\ne j
+\end{cases}\text{.}
 \end{equation*}
 </div>
 </div>

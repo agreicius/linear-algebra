@@ -11,15 +11,14 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h5 class="heading"><span class="type">Paragraph</span></h5>
+<h6 class="heading"><span class="type">Paragraph</span></h6>
 <div class="para logical">
-<div class="para">We must show <span class="process-math">\(AB=C\text{,}\)</span> where</div>
+<div class="para">Let <span class="process-math">\(\bolda_j\)</span> be the <span class="process-math">\(j\)</span>-th column of <span class="process-math">\(A\text{,}\)</span> considered as a column vector. Given <em class="emphasis">any</em> column vector <span class="process-math">\(\boldb=[b_{i}]_{n\times 1}\)</span> we have</div>
 <div class="displaymath process-math">
 \begin{equation*}
-C=\begin{bmatrix}\vert \amp \vert \amp  \amp \vert \\ A\boldb_1\amp A\boldb_2\amp \cdots\amp A\boldb_r\\ \vert \amp  \vert \amp  \amp  \vert \end{bmatrix}\text{.}
+A\,\boldb=A\,\begin{bmatrix}b_1\\b_2\\ \vdots \\b_n \end{bmatrix} = b_1\bolda_1+b_2\bolda_2+\cdots +b_n\bolda_n\text{.}
 \end{equation*}
 </div>
-<div class="para">First we show <span class="process-math">\(AB\)</span> and <span class="process-math">\(C\)</span> have the same size. By definition of matrix multiplication, <span class="process-math">\(AB\)</span> is <span class="process-math">\(m\times r\text{.}\)</span> By construction <span class="process-math">\(C\)</span> has <span class="process-math">\(r\)</span> columns and its <span class="process-math">\(j\)</span>-th column is <span class="process-math">\(A\boldb_j\text{.}\)</span> Since <span class="process-math">\(A\)</span> and <span class="process-math">\(\boldb_j\)</span> have size <span class="process-math">\(m\times n\)</span> and <span class="process-math">\(n\times 1\text{,}\)</span> respectively, <span class="process-math">\(A\boldb_j\)</span> has size <span class="process-math">\(m\times 1\text{.}\)</span> Thus each of the <span class="process-math">\(r\)</span> columns of <span class="process-math">\(C\)</span> is an <span class="process-math">\(m\times 1\)</span> column vector. It follows that <span class="process-math">\(C\)</span> is <span class="process-math">\(m\times r\text{,}\)</span> as desired.</div>
 </div>
 <span class="incontext"><a href="s_matrix.html#p-868" class="internal">in-context</a></span>
 </body>

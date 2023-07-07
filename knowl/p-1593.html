@@ -11,8 +11,28 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h3 class="heading"><span class="type">Paragraph</span></h3>
-<div class="para">We now embark on just such an axiomatic approach. The notion of a <em class="emphasis">vector space</em> arises from focusing on just two operations from matrix algebra: matrix addition and matrix scalar multiplication. As we saw in <a href="s_algebraic.html" class="internal" title="Section 2.2: Matrix algebra">Section 2.2</a>, these two operations satisfy many useful properties: e.g., commutativity, associativity, distributivity, etc.. Whereas earlier we showed directly that matrix algebra satisfies these properties, now we will come at things the other way: we record these various properties as a list of axioms, and declare <em class="emphasis">any</em> system that satisfies these axioms to be a vector space.</div>
-<span class="incontext"><a href="s_vectorspace.html#p-1593" class="internal">in-context</a></span>
+<h6 class="heading"><span class="type">Paragraph</span></h6>
+<div class="para logical">
+<div class="para">Given scalars <span class="process-math">\(r_1, r_2, \dots, r_n\in \R\)</span> the <em class="emphasis">Vandermonde</em> matrix is defined as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A_{r_1,r_2,\dots, r_n}=\begin{amatrix}[llcl]1\amp 1\amp \cdots \amp 1\\ r_1\amp r_2\amp \cdots \amp  r_n\\ r_1^2\amp r_2^2\amp \cdots \amp r_n^2\\ \vdots \amp  \vdots \amp  \amp \vdots\\ r_1^{n-1}\amp r_2^{n-1}\amp \cdots \amp r_n^{n-1} \end{amatrix}\text{.}
+\end{equation*}
+</div>
+<div class="para">In other words, we have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(A_{r_1,r_2,\dots, r_n})_{ij}=r_j^{i-1}
+\end{equation*}
+</div>
+<div class="para">Prove:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\ds\det (A_{r_1,r_2,\dots,
+r_n})=\prod_{1\leq i\lt j\leq n}(r_j-r_i)\text{.}
+\end{equation*}
+</div>
+</div>
+<span class="incontext"><a href="s_det.html#p-1593" class="internal">in-context</a></span>
 </body>
 </html>

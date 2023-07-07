@@ -11,13 +11,20 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
+<h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">Suppose matrices <span class="process-math">\(A, B, C\)</span> satisfy <span class="process-math">\(AB=AC\)</span> and <span class="process-math">\(A\ne \boldzero\text{.}\)</span> We <em class="emphasis">cannot</em> conclude that <span class="process-math">\(B=C\text{.}\)</span> In logical notation:</div>
+<div class="para">We have</div>
 <div class="displaymath process-math">
-\begin{equation}
-AB=AC \;\not\!\!\!\!\implies B=C\tag{2.2.2}
-\end{equation}
+\begin{align*}
+\begin{bmatrix}1\amp 0\\ 0\amp 0 \end{bmatrix} \begin{bmatrix}0\amp 1\\ 0\amp 0 \end{bmatrix}\amp = \begin{bmatrix} 0\amp 1 \\ 0 \amp 0\end{bmatrix}\\
+\begin{bmatrix}0\amp 1\\ 0\amp 0 \end{bmatrix} \begin{bmatrix}1\amp 0\\ 0\amp 0 \end{bmatrix} \amp = \begin{bmatrix} 0\amp 0\\ 0\amp 0 \end{bmatrix} 
+\end{align*}
+</div>
+<div class="para">and thus</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{bmatrix}1\amp 0\\ 0\amp 0 \end{bmatrix} \begin{bmatrix}0\amp 1\\ 0\amp 0 \end{bmatrix} \ne \begin{bmatrix}0\amp 1\\ 0\amp 0 \end{bmatrix} \begin{bmatrix}1\amp 0\\ 0\amp 0 \end{bmatrix}\text{.}
+\end{equation*}
 </div>
 </div>
 <span class="incontext"><a href="s_algebraic.html#p-987" class="internal">in-context</a></span>

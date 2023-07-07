@@ -13,12 +13,15 @@
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">Given an <span class="process-math">\(n\times n\)</span> matrix <span class="process-math">\(A\text{,}\)</span> for any pair <span class="process-math">\(1\leq i,j\leq n\)</span> the <dfn class="terminology"><span class="process-math">\(ij\)</span>-th minor of <span class="process-math">\(A\)</span></dfn> is defined as</div>
+<div class="para">Lastly, assuming <span class="process-math">\(P(n)\)</span> is true (the induction hypothesis) we have</div>
 <div class="displaymath process-math">
-\begin{equation*}
-M_{ij}=\det A_{i  k}\text{.}
-\end{equation*}
+\begin{align*}
+\det A \amp=a_{11}\det A_{11} \\
+\amp =a_{11}(a_{22}a_{33}\cdots a_{n+1,n+1})\amp \text{(induction)} \\
+\amp =a_{11}a_{22}\cdots a_{n+1,n+1} \text{,}
+\end{align*}
 </div>
+<div class="para">as desired.</div>
 </div>
 <span class="incontext"><a href="s_det.html#p-1448" class="internal">in-context</a></span>
 </body>

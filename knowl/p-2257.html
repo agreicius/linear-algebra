@@ -11,8 +11,21 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para">In each computation of <a href="" class="xref" data-knowl="./knowl/ex_linear_independence.html" title="Example 3.5.13: Linear independence">Example 3.5.13</a> it was easy to derive a relevant linear system since the notion of equality in each of these spaces amounts to checking a <em class="emphasis">finite</em> number of numeric equalities: e.g., between the entries of two triples, the coefficients of two polynomials, or the entries of two <span class="process-math">\(2\times 2\)</span> matrices.</div>
+<h5 class="heading"><span class="type">Paragraph</span></h5>
+<div class="para logical">
+<div class="para">Recall that the zero vector of <span class="process-math">\(P_2\)</span> is the zero polynomial <span class="process-math">\(\boldzero=0x^2+0x+0\text{.}\)</span> We have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_poly_equality.html">
+\begin{align*}
+a(x^2+x-2)+b(2x^2+1)+c(x^2-x)=\boldzero \amp \iff
+(a+2b+c)x^2+(a-c)x+(-2a+b)=0x^2+0x+0 \\
+\amp \\
+\amp \iff
+\begin{linsys}{3} a\amp +\amp 2b\amp +\amp c\amp =\amp 0\\ a\amp \amp \amp -\amp c\amp =\amp 0\\ -2a\amp +\amp b \amp \amp  \amp =\amp 0 \end{linsys}
+\amp (\knowl{./knowl/th_poly_equality.html}{\text{Theorem 3.3.22}})\text{.}
+\end{align*}
+</div>
+<div class="para">Gaussian elimination shows that <span class="process-math">\((a,b,c)=(0,0,0)\)</span> is the unique solution to this last system. We conclude that <span class="process-math">\(S\)</span> is linearly independent.</div>
+</div>
 <span class="incontext"><a href="s_span_independence.html#p-2257" class="internal">in-context</a></span>
 </body>
 </html>

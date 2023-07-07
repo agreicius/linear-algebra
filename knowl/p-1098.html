@@ -11,19 +11,20 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para">We prove by induction on the number <span class="process-math">\(r\)</span> of matrices, <span class="process-math">\(r\geq 1\text{,}\)</span> that if the <span class="process-math">\(A_i\)</span> are invertible, then the proposed inverse formula is valid. <article class="case"><h4 class="heading">Base step: <span class="process-math">\(r=1\)</span>.</h4> <div class="para">For <span class="process-math">\(r=1\text{,}\)</span> the inverse formula reads <span class="process-math">\(A_1^{-1}=A_1^{-1}\text{,}\)</span> which is clearly true.</div></article> <article class="case"><h4 class="heading">Induction step.</h4> <div class="para logical">
-<div class="para">For the induction step we assume that the inverse formula is valid for any collection of <span class="process-math">\(r-1\)</span> invertible matrices, and then show it is valid for any collection of <span class="process-math">\(r\)</span> invertible matrices. Let <span class="process-math">\(A_1,A_2,\dots, A_r\)</span> be invertible <span class="process-math">\(n\times n\)</span> matrices. Define <span class="process-math">\(A=A_1A_2\cdots A_{r-1}\text{.}\)</span> Then</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_invertible_prod.html">
-\begin{align*}
-(A_1A_2\cdots A_{r-1})^{-1} \amp=\left((A_1A_2\cdots A_{r-1})A_r\right)^{-1} \\
-\amp=(AA_r)^{-1} \\
-\amp= A_r^{-1}A^{-1} \amp (\knowl{./knowl/th_invertible_prod.html}{\text{Theorem 2.3.7}})\\
-\amp =A_r^{-1}(A_{r-1}^{-1}A_{r-2}^{-1}\cdots A_1^{-1}) \amp (\text{induction})\\
-\amp=A_r^{-1}A_{r-1}^{-1}\cdots A_1^{-1} \amp (\text{assoc.}) \text{.}
-\end{align*}
+<h5 class="heading"><span class="type">Paragraph</span></h5>
+<div class="para logical">
+<div class="para">Let <span class="process-math">\(A,B\)</span> be <span class="process-math">\(n\times n\)</span> matrices. If <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are both invertible, then so is their product <span class="process-math">\(AB\text{.}\)</span> Using logical notation:</div>
+<div class="displaymath process-math">
+\begin{equation}
+A\text{ and } B  \text{ invertible } \implies AB \text{ invertible }\text{.}\tag{2.3.2}
+\end{equation}
 </div>
-</div></article>
+<div class="para">In fact when this is the case we have</div>
+<div class="displaymath process-math">
+\begin{equation}
+(AB)^{-1}=B^{-1}A^{-1}\text{.}\tag{2.3.3}
+\end{equation}
+</div>
 </div>
 <span class="incontext"><a href="s_invertible_matrices.html#p-1098" class="internal">in-context</a></span>
 </body>

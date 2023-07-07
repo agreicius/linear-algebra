@@ -13,19 +13,16 @@
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">Fix an <span class="process-math">\(m\times n\)</span> matrix <span class="process-math">\(A\)</span> and column vector <span class="process-math">\(\boldb\in \R^m\text{.}\)</span> If <span class="process-math">\(\boldx_p\)</span> is a solution to</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_nonhomo_eq.html">
-\begin{equation}
-A\boldx=\boldb\text{,}\tag{3.4.4}
-\end{equation}
+<div class="para">We have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_nullspace_inverseimage.html ./knowl/eq_nullspace_injective.html">
+\begin{align*}
+T(\boldv)=T(\boldv') \amp \iff T(\boldv')-T(\boldv)=\boldzero\\
+\amp \iff T(\boldv'-\boldv)=\boldzero \amp (T \text{ is linear})\\
+\amp \iff \boldu=\boldv'-\boldv\in\NS T \amp (\text{def. } \NS T)\\
+\amp \iff \boldv'=\boldv+\boldu \text{ for some } \boldu\in\NS T \text{.}
+\end{align*}
 </div>
-<div class="para">then the set <span class="process-math">\(X_\boldb\)</span> of all solutions to <a href="" class="xref" data-knowl="./knowl/eq_nonhomo_eq.html" title="Equation 3.4.4">(3.4.4)</a> is described as</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_nonhomo_eq.html">
-\begin{equation*}
-X=\{\boldx_p+\boldu\colon \boldu\in \NS A\}\text{.}
-\end{equation*}
-</div>
-<div class="para">In other words, <span class="process-math">\(X_\boldb\)</span> is the translate of <span class="process-math">\(\NS A\)</span> by the vector <span class="process-math">\(\boldx_p\text{.}\)</span>
+<div class="para">Equation <a href="" class="xref" data-knowl="./knowl/eq_nullspace_inverseimage.html" title="Equation 3.4.3">(3.4.3)</a> follows directly from <a href="" class="xref" data-knowl="./knowl/eq_nullspace_injective.html" title="Equation 3.4.2">(3.4.2)</a> by observing that if <span class="process-math">\(T(\boldv)=\boldw\text{,}\)</span> then <span class="process-math">\(T(\boldv')=\boldw\)</span> if and only if <span class="process-math">\(T(\boldv)=T(\boldv')\text{.}\)</span>
 </div>
 </div>
 <span class="incontext"><a href="s_nullspace_image.html#p-2044" class="internal">in-context</a></span>

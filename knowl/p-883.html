@@ -12,7 +12,31 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<div class="para logical">
+<div class="para logical"><ol class="lower-alpha">
+<li><div class="para logical">
+<div class="para">Using the definition, we see easily that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+AB=\begin{amatrix}[rr]5\amp 0\\ -3\amp 6 \end{amatrix}
+\end{equation*}
+</div>
+</div></li>
+<li><div class="para logical">
+<div class="para">Let <span class="process-math">\(\bolda_1, \bolda_2, \bolda_3\)</span> be the columns of <span class="process-math">\(A\text{,}\)</span> and let <span class="process-math">\(\boldb_1, \boldb_2\)</span> be the columns of <span class="process-math">\(B\text{.}\)</span> We have</div>
+<div class="displaymath process-math">
+\begin{align*}
+AB \amp=
+\begin{amatrix}[cc]\vert \amp \vert \\
+A\boldb_1\amp A\boldb_2 \\
+\vert\amp \vert\end{amatrix} \amp \text{(Step 1)} \\
+\amp= \begin{amatrix}[cc]\vert \amp \vert \\
+(1\bolda_1+0\bolda_2-2\bolda_3)\amp (\bolda_1+\bolda_2+\bolda_3) \\
+\vert\amp \vert\end{amatrix} \amp \text{(Step 2)}\\
+\amp= \begin{amatrix}[rr]5\amp 0\\ -3\amp 6 \end{amatrix} \amp \text{(arithmetic)}
+\end{align*}
+</div>
+</div></li>
+<li><div class="para logical">
 <div class="para">Now let <span class="process-math">\(\bolda_1, \bolda_2\)</span> be the <em class="emphasis">rows</em> of <span class="process-math">\(A\text{,}\)</span> and let <span class="process-math">\(\boldb_1, \boldb_2, \boldb_3\)</span> be the <em class="emphasis">rows</em> of <span class="process-math">\(B\text{.}\)</span> We have</div>
 <div class="displaymath process-math">
 \begin{align*}
@@ -22,7 +46,8 @@ AB \amp= \begin{amatrix}[c]--\bolda_1\, B--\\ --\bolda_2\, B-- \end{amatrix}\amp
 \amp=\begin{amatrix}[rr]5\amp 0\\ -3\amp 6 \end{amatrix} \amp \text{(arithmetic)} 
 \end{align*}
 </div>
-</div>
+</div></li>
+</ol></div>
 <span class="incontext"><a href="s_matrix.html#p-883" class="internal">in-context</a></span>
 </body>
 </html>

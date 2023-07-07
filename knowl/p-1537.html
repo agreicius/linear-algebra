@@ -12,18 +12,31 @@
 </head>
 <body class="ignore-math">
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<div class="para logical">
-<div class="para">Find <span class="process-math">\(k\)</span> such that the following matrix <span class="process-math">\(M\)</span> is singular.</div>
-<div class="displaymath process-math">
+<div class="para logical"><div class="displaymath process-math">
 \begin{equation*}
-M = \left[\begin{array}{ccc}
-1 \amp -1 \amp -4\cr
--3 \amp 1 \amp 10\cr
-13+k \amp -5 \amp -32\cr
+A \to \underbrace{\left[\begin{array}{ccc}
+1 \amp 0 \amp 0\cr
+0 \amp 1 \amp 0\cr
+0 \amp 0 \amp 5
+\end{array}\right]}_{E_1} A \to \underbrace{\left[\begin{array}{ccc}
+1 \amp 0 \amp 0\cr
+0 \amp -3 \amp 0\cr
+0 \amp 0 \amp 1
+\end{array}\right]}_{E_2} E_1 A \to \underbrace{\left[\begin{array}{ccc}
+1 \amp 0 \amp -5\cr
+0 \amp 1 \amp 0\cr
+0 \amp 0 \amp 1
+\end{array}\right]}_{E_3} E_2E_1 A \to \underbrace{\left[\begin{array}{ccc}
+1 \amp 0 \amp 0\cr
+0 \amp 0 \amp 1\cr
+0 \amp 1 \amp 0
+\end{array}\right]}_{E_4} E_3E_2E_1 A=\left[\begin{array}{ccc}
+-7 \amp 4 \amp -5\cr
+0 \amp -2 \amp 7\cr
+0 \amp 0 \amp -5
 \end{array}\right]
 \end{equation*}
-</div>
-</div>
+</div></div>
 <span class="incontext"><a href="s_det.html#p-1537" class="internal">in-context</a></span>
 </body>
 </html>
