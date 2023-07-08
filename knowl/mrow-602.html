@@ -11,14 +11,15 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/d_innerproduct.html">
 \begin{align*}
-d(p_1,p_2) \amp = \norm{p_1-p_2} \\
-\amp = \sqrt{\langle p_1-p_2, p_1-p_2\rangle}\\
-\amp = \sqrt{(p_1(1)-p_2(1))^2+(p_1(-1)-p_2(-1))^2+(p_1(0)-p_2(0))^2}\\
-\amp = \sqrt{(-1)^2+(1)^2+(-1)^2}=\sqrt{3} 
+\norm{\boldu} \amp =\sqrt{\left\langle \frac{1}{c}\boldv,\frac{1}{c}\boldv   \right\rangle }\\
+\amp =\sqrt{\frac{1}{c^2}\langle \boldv,\boldv  \rangle} \amp (\knowl{./knowl/d_innerproduct.html}{\text{Definition 4.1.1}}, \text{(ii)})  \\
+\amp =\frac{1}{\val{c}}\sqrt{\langle \boldv,\boldv  \rangle } \\
+\amp =\frac{1}{c}\sqrt{\langle \boldv,\boldv  \rangle } \amp (c=\norm{\boldv}\geq 0)\\
+\amp =\frac{\norm{\boldv}}{\norm{\boldv}}=1
 \end{align*}
 </div>
-<span class="incontext"><a href="s_innerproducts.html#md-195" class="internal">in-context</a></span>
+<span class="incontext"><a href="s_innerproducts.html#md-196" class="internal">in-context</a></span>
 </body>
 </html>

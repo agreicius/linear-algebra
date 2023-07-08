@@ -11,18 +11,15 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_ortho_decomp.html ./knowl/eq_ortho_proj_formula_proof.html">
+<div class="displaymath process-math">
 \begin{align*}
-\langle \boldw^\perp, \boldw_j \rangle\amp = \langle \boldv-\proj{\boldv}{W}, \boldw_i \rangle\\
-\amp =
-\left\langle \boldv-\sum_{i=1}^r\frac{\angvec{\boldv,\boldw_i}}{\angvec{\boldw_i, \boldw_i}}\boldw_i, \boldw_j\right\rangle \\
-\amp =
-\langle \boldv, \boldw_j\rangle -\sum_{i=1}^r\frac{\angvec{\boldv,\boldw_i}}{\angvec{\boldw_i, \boldw_i}}\langle \boldw_i, \boldw_j\rangle \\
-\amp =
-\langle \boldv, \boldw_j\rangle -\frac{\langle \boldv, \boldw_j\rangle}{\cancel{\langle \boldw_j, \boldw_j\rangle}}\cancel{\langle \boldw_j, \boldw_j\rangle}\\
-\amp = 0 
+\langle \cos(nx),\cos(mx)\rangle=\int_0^{2\pi}\cos(nx)\cos(mx)\, dx\amp =\begin{cases} 0\amp  \text{ if \(n\ne m\) }\\
+\pi\amp  \text{ if \(n=m\) }  \end{cases}\\
+\langle \sin(nx),\sin(mx)\rangle=\int_0^{2\pi}\sin(nx)\sin(mx)\, dx\amp =\begin{cases} 0\amp  \text{ if \(n\ne m\) }\\
+\pi\amp  \text{ if \(n=m\) }  \end{cases}\\
+\langle \cos(nx),\sin(mx)\rangle=\int_0^{2\pi}\cos(nx)\sin(mx)\, dx\amp =0 \text{ for any \(n,m\) }
 \end{align*}
 </div>
-<span class="incontext"><a href="s_orthogonal_projection.html#md-206" class="internal">in-context</a></span>
+<span class="incontext"><a href="s_orthogonality.html#md-206" class="internal">in-context</a></span>
 </body>
 </html>

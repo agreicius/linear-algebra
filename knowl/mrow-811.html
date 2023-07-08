@@ -11,15 +11,16 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_coordinates.html ./knowl/th_coordinates.html ./knowl/th_matrixrep.html ./knowl/th_coordinates.html">
 \begin{align*}
-p(t) \amp = \det (tI-A)\\
-\amp = \det \begin{amatrix}[rrr]t-2\amp 1\amp 1\\ 1\amp t-2\amp 1\\ 1\amp 1\amp t-2 \end{amatrix} \\
-\amp = t^3-6t^2+9t\\
-\amp = t(t^2-6t+9)\\
-\amp = t(t-3)^2
+\boldv \text{ is an eigenvector of } T \amp \iff \boldv\ne 0 \text{ and } T\boldv=\lambda \boldv \\
+\amp \iff \boldx=[\boldv]_B\ne \boldzero \text{ and } [T\boldv]_B=[\lambda\boldv] \amp (\knowl{./knowl/th_coordinates.html}{\text{5.1.12}}, (2)) \\
+\amp \iff \boldx=[\boldv]_B\ne \boldzero \text{ and } [T\boldv]_B=\lambda[\boldv]_B \amp (\knowl{./knowl/th_coordinates.html}{\text{5.1.12}}, (1))\\
+\amp \iff \boldx=[\boldv]\ne \boldzero \text{ and } [T]_B[\boldv]_B=\lambda[\boldv]_B \amp (\knowl{./knowl/th_matrixrep.html}{\text{5.2.6}})\\
+\amp \iff \boldx\ne 0 \text{ and } A\boldx=\lambda\boldx\\
+\amp \iff \boldx \text{ is an eigenvector of } A
 \end{align*}
 </div>
-<span class="incontext"><a href="s_eigenvectors.html#md-260" class="internal">in-context</a></span>
+<span class="incontext"><a href="s_eigenvectors.html#md-259" class="internal">in-context</a></span>
 </body>
 </html>

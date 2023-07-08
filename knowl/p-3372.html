@@ -13,13 +13,18 @@
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">The matrix</div>
-<div class="displaymath process-math">
+<div class="para">According to <a href="" class="xref" data-knowl="./knowl/eg_changebasis_standard.html" title="Example 5.3.7: V=\R^n B standard basis">Example 5.3.7</a> we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eg_changebasis_standard.html">
 \begin{equation*}
-A=\begin{amatrix}[rr]\frac{\sqrt{2}}{2}\amp -\frac{\sqrt{2}}{2}\\ \frac{\sqrt{2}}{2} \amp \frac{\sqrt{2}}{2} \end{amatrix}
+\underset{B'\rightarrow B}{P}=\begin{bmatrix}1\amp -\sqrt{3}\\ \sqrt{3}\amp 1 \end{bmatrix}\text{.}
 \end{equation*}
 </div>
-<div class="para">is orthogonal, as one easily checks by computing <span class="process-math">\(A^TA\text{.}\)</span> Observe that the columns of <span class="process-math">\(A\)</span> form an orthonormal set with respect to the dot product, as do the rows. This is not a coincidence!</div>
+<div class="para">We then compute</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eg_changebasis_standard.html">
+\begin{equation*}
+\underset{B\rightarrow B'}{P}=(\underset{B'\rightarrow B}{P})^{-1}=\left(\begin{bmatrix}1\amp -\sqrt{3}\\ \sqrt{3}\amp 1 \end{bmatrix} \right)^{-1}=\frac{1}{4}\begin{bmatrix}1\amp \sqrt{3}\\ -\sqrt{3}\amp 1 \end{bmatrix}\text{.}
+\end{equation*}
+</div>
 </div>
 <span class="incontext"><a href="s_changeofbasis.html#p-3372" class="internal">in-context</a></span>
 </body>

@@ -11,15 +11,19 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_transform_composition.html ./knowl/d_function_composition.html ./knowl/d_matrix_transform.html ./knowl/d_matrix_transform.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_vec_formula.html ./knowl/eg_lines_planes_review.html ./knowl/eq_vec_diff.html ./knowl/eq_vec_formula.html ./knowl/th_proj_line_linear.html">
 \begin{align*}
-T_A\circ T_B(\boldx) \amp = T_A(T_B(\boldx)) \amp (\knowl{./knowl/d_function_composition.html}{\text{Definition 0.2.9}}) \\
-\amp =T_A(B\boldx) \amp (\knowl{./knowl/d_matrix_transform.html}{\text{Definition 3.2.8}})\\
-\amp= A(B\boldx) \amp (\knowl{./knowl/d_matrix_transform.html}{\text{Definition 3.2.8}})\\
-\amp = (AB)\boldx \amp (\text{assoc.})\\
-\amp = T_C(\boldx) \amp (\text{since } C=AB)
+\proj{\boldx}{W} \amp = \boldx-B\boldx\\
+\amp = I\boldx-B\boldx\\
+\amp = (I-B)\boldx\\
+\amp = 
+\frac{1}{a^2+b^2+c^2}\begin{amatrix}[rrr]
+b^2+c^2\amp -ab \amp -ac \\ 
+-ab \amp a^2+c^2 \amp -bc \\
+-ac \amp -bc \amp a^2+b^2
+\end{amatrix}\boldx
 \end{align*}
 </div>
-<span class="incontext"><a href="s_transformation.html#md-128" class="internal">in-context</a></span>
+<span class="incontext"><a href="s_transformation.html#md-127" class="internal">in-context</a></span>
 </body>
 </html>

@@ -13,14 +13,19 @@
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">We must show <span class="process-math">\(f(cA+dB)=cf(A)+df(B)\)</span> for all scalars <span class="process-math">\(c,d\in\R\)</span> and all matrices <span class="process-math">\(A, B\in M_{mn}\text{.}\)</span> This follows easily from properties of transpose:</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_trans_props.html ./knowl/th_trans_props.html">
-\begin{align*}
-f(cA+dB)\amp =(cA+dB)^T \amp \text{ (by def.) }\\
-\amp =(cA)^T+(dB)^T \amp (\knowl{./knowl/th_trans_props.html}{\text{Theorem 2.2.11}})\\
-\amp =cA^T+dB^T \amp (\knowl{./knowl/th_trans_props.html}{\text{Theorem 2.2.11}})\\
-\amp =cf(A)+df(B)
-\end{align*}
+<div class="para">In the course of the proof of <a href="" class="xref" data-knowl="./knowl/th_ortho_proj_plane_linear.html" title="Theorem 3.2.25: Orthogonal projection onto a plane">Theorem 3.2.25</a> we discovered an illuminating relationship between orthogonal projection onto a line and orthogonal projection onto the plane orthogonal to this line. In more detail, let <span class="process-math">\(\boldn=(a,b,c)\)</span> be a nonzero vector, <span class="process-math">\(\ell\)</span> the line passing through the origin with <span class="process-math">\(\boldn\)</span> as a direction vector, and <span class="process-math">\(W\)</span> the plane passing through the origin with normal vector <span class="process-math">\(\boldn\text{.}\)</span> From our argument in the proof of <a href="" class="xref" data-knowl="./knowl/th_ortho_proj_plane_linear.html" title="Theorem 3.2.25: Orthogonal projection onto a plane">Theorem 3.2.25</a> we see that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_ortho_proj_plane_linear.html ./knowl/th_ortho_proj_plane_linear.html ./knowl/eq_proj_plane_line.html ./knowl/eq_ortho_decomp_x.html">
+\begin{equation}
+\proj{\boldx}{W}=\boldx-\proj{\boldx}{\ell}\text{,}\tag{3.2.10}
+\end{equation}
+</div>
+<div class="para">or</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_ortho_proj_plane_linear.html ./knowl/th_ortho_proj_plane_linear.html ./knowl/eq_proj_plane_line.html ./knowl/eq_ortho_decomp_x.html">
+\begin{equation}
+\boldx=\proj{\boldx}{\ell}+\proj{\boldx}{W}\text{.}\tag{3.2.11}
+\end{equation}
+</div>
+<div class="para">Equation <a href="" class="xref" data-knowl="./knowl/eq_proj_plane_line.html" title="Equation 3.2.10">(3.2.10)</a> indicates how we can derive the orthogonal projection onto <span class="process-math">\(W\)</span> from the orthogonal projection onto <span class="process-math">\(\ell\)</span> (and conversely). Equation <a href="" class="xref" data-knowl="./knowl/eq_ortho_decomp_x.html" title="Equation 3.2.11">(3.2.11)</a> shows how every vector <span class="process-math">\(\boldx\)</span> can be “decomposed” as a sum of two orthogonal vectors: one pointing parallel to <span class="process-math">\(\ell\)</span> and the other pointing parallel to <span class="process-math">\(W\text{.}\)</span>
 </div>
 </div>
 <span class="incontext"><a href="s_transformation.html#p-1821" class="internal">in-context</a></span>

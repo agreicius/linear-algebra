@@ -11,13 +11,12 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_transform_composition.html ./knowl/d_function_composition.html ./knowl/d_matrix_transform.html ./knowl/d_matrix_transform.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_trans_props.html ./knowl/th_trans_props.html">
 \begin{align*}
-T_A\circ T_B(\boldx) \amp = T_A(T_B(\boldx)) \amp (\knowl{./knowl/d_function_composition.html}{\text{Definition 0.2.9}}) \\
-\amp =T_A(B\boldx) \amp (\knowl{./knowl/d_matrix_transform.html}{\text{Definition 3.2.8}})\\
-\amp= A(B\boldx) \amp (\knowl{./knowl/d_matrix_transform.html}{\text{Definition 3.2.8}})\\
-\amp = (AB)\boldx \amp (\text{assoc.})\\
-\amp = T_C(\boldx) \amp (\text{since } C=AB)
+f(cA+dB)\amp =(cA+dB)^T \amp \text{ (by def.) }\\
+\amp =(cA)^T+(dB)^T \amp (\knowl{./knowl/th_trans_props.html}{\text{Theorem 2.2.11}})\\
+\amp =cA^T+dB^T \amp (\knowl{./knowl/th_trans_props.html}{\text{Theorem 2.2.11}})\\
+\amp =cf(A)+df(B)
 \end{align*}
 </div>
 <span class="incontext"><a href="s_transformation.html#md-128" class="internal">in-context</a></span>

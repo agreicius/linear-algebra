@@ -11,11 +11,14 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/proc_solveSystem.html ./knowl/proc_solveSystem.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eg_transform_transpose.html">
 \begin{align*}
-\begin{amatrix}[rr|r] 1\amp 1\amp a\\ 2\amp 1\amp b\\ 3\amp 5\amp c \end{amatrix} \amp \xrightarrow[r_3-3r_1]{r_2-2r_1} \begin{amatrix}[rr|r] 1\amp 1\amp a\\ 0\amp 1\amp 2a-b\\ 0\amp 0\amp -7a+2b+c \end{amatrix}
+S(c_1A_1+c_2A_2)  \amp= (c_1A_1+c_2A_2)^T-(c_1A_1+c_2A_2)  \\
+\amp = c_1A_1^T+c_2A_2^T-c_1A_1-c_2A_2\amp (\knowl{./knowl/eg_transform_transpose.html}{\text{3.2.28}}) \\
+\amp =c_1(A_1^T-A_1)+c_2(A_2^T-A_2)\\
+\amp =c_1S(A_1)+c_2S(A_2)
 \end{align*}
 </div>
-<span class="incontext"><a href="s_nullspace_image.html#md-144" class="internal">in-context</a></span>
+<span class="incontext"><a href="s_nullspace_image.html#md-143" class="internal">in-context</a></span>
 </body>
 </html>

@@ -11,11 +11,15 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_row_null_comp.html">
 \begin{align*}
-\boldv \amp =\sum_{i=1}^na_i\boldv_i,  \amp \boldw\amp =\sum_{i=1}^nb_i\boldv_i
+A\hat{\boldx}=\hat{\boldy} \amp\iff \boldy-A\hat{\boldx}\in (\CS A)^\perp \\
+\amp\iff \boldy-A\hat{\boldx}\in \NS A^T \amp ((\CS A)^\perp=\NS A^T, \knowl{./knowl/th_row_null_comp.html}{\text{Theorem 4.3.7}}) \\
+\amp\iff A^T(\boldy-A\hat{\boldx})=\boldzero \\
+\amp \iff A^T\boldy-A^TA\hat{\boldx}=\boldzero\\
+\amp \iff A^TA\hat{\boldx}=A^T\boldy
 \end{align*}
 </div>
-<span class="incontext"><a href="s_coordinatevectors.html#md-223" class="internal">in-context</a></span>
+<span class="incontext"><a href="s_orthogonal_projection.html#md-221" class="internal">in-context</a></span>
 </body>
 </html>

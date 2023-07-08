@@ -12,7 +12,15 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<div class="para">The formula <a href="" class="xref" data-knowl="./knowl/eq_ortho_proj_formula.html" title="Equation 4.3.2">(4.3.2)</a> is very convenient for computing an orthogonal projection <span class="process-math">\(\proj{\boldv}{W}\text{,}\)</span> but mark well this important detail: to apply the formula we must first provide an <em class="emphasis">orthogonal</em> basis of <span class="process-math">\(W\text{.}\)</span> Thus unless one is provided, our first step in an orthogonal projection computation is to produce an orthogonal basis of <span class="process-math">\(W\text{.}\)</span> In some simple cases (e.g., when <span class="process-math">\(W\)</span> is 1- or 2-dimensional) this can be done by inspection. Otherwise, we use the Gram-Schmidt procedure.</div>
+<div class="para logical">
+<div class="para">Understanding the orthogonal relationship between <span class="process-math">\(\NS A \)</span> and <span class="process-math">\(\RS A\)</span> allows us in many cases to quickly determine/visualize the one from the other. As an example, consider <span class="process-math">\(A=\begin{bmatrix}1\amp -1\amp 1\\ 1\amp -1\amp -1 \end{bmatrix}\text{.}\)</span> Looking at the columns, we see easily that <span class="process-math">\(\rank A =2\text{,}\)</span> which implies that <span class="process-math">\(\nullity A=3-2=1\text{.}\)</span> Since <span class="process-math">\((1,-1,0)\)</span> is an element of <span class="process-math">\(\NS(A)\)</span> and <span class="process-math">\(\dim\NS A=1\text{,}\)</span> we must have <span class="process-math">\(\NS A=\Span\{(1,-1,0)\}\text{,}\)</span> a line. By orthogonality, we conclude that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\RS A=(\NS A)^\perp\text{,}
+\end{equation*}
+</div>
+<div class="para">which is the plane with normal vector <span class="process-math">\((1,-1,0)\)</span> passing through the origin.</div>
+</div>
 <span class="incontext"><a href="s_orthogonal_projection.html#p-3111" class="internal">in-context</a></span>
 </body>
 </html>

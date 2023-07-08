@@ -12,14 +12,73 @@
 </head>
 <body class="ignore-math">
 <article class="hiddenproof"><h4 class="heading"><span class="type">Proof</span></h4>
-<div class="para logical">
-<div class="para">According to the recipe in <a href="" class="xref" data-knowl="./knowl/cor_matrix_transformations.html" title="Corollary 3.6.16: Matrix transformations">Corollary 3.6.16</a> we have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/cor_matrix_transformations.html ./knowl/eg_coordinatevector_standard.html">
+<ol class="decimal">
+<li><div class="para logical">
+<div class="para">Suppose <span class="process-math">\(T(\boldv)=[\boldv]_B=(a_1,a_2,\dots, a_n), T(\boldw)=[\boldw]_B=(b_1, b_2, \dots, b_n)\text{.}\)</span> By definition this means</div>
+<div class="displaymath process-math">
+\begin{align*}
+\boldv \amp =\sum_{i=1}^na_i\boldv_i,  \amp \boldw\amp =\sum_{i=1}^nb_i\boldv_i\text{.}
+\end{align*}
+</div>
+<div class="para">It follows that</div>
+<div class="displaymath process-math">
 \begin{equation*}
-A= \begin{bmatrix}\vert\amp \vert\amp  \amp \vert \\ T(\bolde_1)\amp  T(\bolde_2)\amp \cdots \amp T(\bolde_n)\\ \vert\amp \vert\amp  \amp \vert \end{bmatrix}\text{.}
+c\boldv+d\boldw=\sum_{i=1}^n(ca_i+db_i)\boldv_i\text{,}
 \end{equation*}
 </div>
-<div class="para">Let <span class="process-math">\(B\)</span> and <span class="process-math">\(B'\)</span> be the standard ordered bases of <span class="process-math">\(\R^n\)</span> and <span class="process-math">\(\R^m\text{,}\)</span> respectively. To see why <span class="process-math">\(A=[T]_{B}^{B'}\text{,}\)</span> observe that for all <span class="process-math">\(1\leq j\leq n\)</span> the <span class="process-math">\(j\)</span>-th column of <span class="process-math">\(A\)</span> is <span class="process-math">\(T(\bolde_j)\)</span> and the <span class="process-math">\(j\)</span>-th column of <span class="process-math">\([T]_B^{B'}\)</span> is <span class="process-math">\([T(\bolde_j)]_{B''}\text{.}\)</span> That these are equal is a result of the fact that for all vectors <span class="process-math">\(\boldw\in \R^m\)</span> we have <span class="process-math">\([\boldw]_{B'}=\boldw\text{:}\)</span> that is, the coordinate vector of a vector <span class="process-math">\(\boldw\in \R^m\)</span> with respect to the <em class="emphasis">standard basis</em> is just <span class="process-math">\(\boldw\)</span> itself. (See <a href="" class="xref" data-knowl="./knowl/eg_coordinatevector_standard.html" title="Example 5.1.5: Standard bases">Example 5.1.5</a>).</div>
-</div></article><span class="incontext"><a href="s_matrixreps.html#proof-88" class="internal">in-context</a></span>
+<div class="para">and hence</div>
+<div class="displaymath process-math">
+\begin{align*}
+T(c\boldv+d\boldw)\amp =[c\boldv+d\boldw]_B \amp (\text{def. of } [\phantom{\boldv}]_B) \\
+\amp =(ca_1+db_1,ca_2+db_2,\dots, ca_n+db_n) \\
+\amp =c(a_1,a_2,\dots, a_n)+d(b_1,b_2,\dots, b_n)\\
+\amp =c[\boldv]_B+d[\boldw]_B\\
+\amp =cT(\boldv)+dT(\boldw) \text{.}
+\end{align*}
+</div>
+<div class="para">This proves <span class="process-math">\(T\)</span> is linear.</div>
+</div></li>
+<li><div class="para logical">
+<div class="para">Clearly, if <span class="process-math">\(\boldv=\boldw\text{,}\)</span> then <span class="process-math">\([\boldv]_B=[\boldw]_B\text{.}\)</span> If <span class="process-math">\(T(\boldv)=T(\boldw)=(c_1,c_2,\dots, c_n)\text{,}\)</span> then by definition of <span class="process-math">\([\phantom{\boldv}]_B\)</span> we must have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\boldv=c_1\boldv_1+c_2\boldv_2+\cdots +c_n\boldv_n==\boldw\text{.}
+\end{equation*}
+</div>
+</div></li>
+<li><div class="para logical">
+<div class="para">Given any <span class="process-math">\(\boldb=(b_1,b_2,\dots, b_n)\in \R^n\text{,}\)</span> we have <span class="process-math">\(\boldb=T(\boldv)\text{,}\)</span> where</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\boldv=b_1\boldv_1+b_2\boldv_2+\cdots +b_n\boldv_n\text{.}
+\end{equation*}
+</div>
+<div class="para">This proves <span class="process-math">\(\im T=\R^n\text{.}\)</span>
+</div>
+</div></li>
+<li>
+<div class="para logical">
+<div class="para">We have</div>
+<div class="displaymath process-math">
+\begin{align*}
+\boldv\in \Span S \amp \iff \boldv=\sum_{i=1}^rc_i\boldv_i\\
+\amp\iff [\boldv]_{B}=\left[ \sum_{i=1}^rc_i\boldv_i\right] \\
+\amp \iff [\boldv]_B=\sum_{i=1}^rc_i[\boldv_i]_B\amp ([\phantom{\boldv}]_B \text{ is linear})\\
+\amp \iff [\boldv]_B\in \Span S'\text{.}
+\end{align*}
+</div>
+</div>
+<div class="para logical">
+<div class="para">Similarly, we have</div>
+<div class="displaymath process-math">
+\begin{align*}
+\sum_{i=1}^rc_i\boldv_i=\boldzero \amp \iff \left[\sum_{i=1}^rc_i\boldv_i\right]_B=[\boldzero]_B \amp (\boldv=\boldw\iff [\boldv]_B=[\boldw]_B) \\
+\amp\iff \sum_{i=1}^rc_i[\boldv_i]_B=(0,0,\dots, 0) \amp ([\phantom{\boldv}]_B \text{ is linear}) \text{.}
+\end{align*}
+</div>
+<div class="para">From this equivalence we see that there is a nontrivial linear combination of <span class="process-math">\(S\)</span> yielding <span class="process-math">\(\boldzero\in V\)</span> if and only if there is a nontrivial linear combination of <span class="process-math">\(S'\)</span> yielding <span class="process-math">\(\boldzero\in \R^n\text{.}\)</span> In other words, <span class="process-math">\(S\)</span> is linearly independent if and only if <span class="process-math">\(S'\)</span> is linearly independent.</div>
+</div>
+</li>
+</ol></article><span class="incontext"><a href="s_coordinatevectors.html#proof-88" class="internal">in-context</a></span>
 </body>
 </html>

@@ -13,18 +13,17 @@
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">Let <span class="process-math">\(p(x)=x^2-1\text{,}\)</span> <span class="process-math">\(q(x)=x^2+2x+1\text{.}\)</span> We have</div>
+<div class="para">Given <span class="process-math">\(n\)</span>-tuples <span class="process-math">\(\boldx=(x_1,x_2,\dots, x_n)\)</span> and <span class="process-math">\(\boldy=(y_1,y_2,\dots, y_n)\text{,}\)</span> we have</div>
 <div class="displaymath process-math">
-\begin{equation*}
-\langle p(x), q(x)  \rangle=p(-1)q(-1)+p(0)q(0)+p(1)q(1)=0+(-1)1+0=-1
-\end{equation*}
+\begin{align*}
+\boldx\cdot \boldy \amp = \begin{bmatrix} x_1 \amp x_2\amp \dots \amp x_n\end{bmatrix}
+\begin{bmatrix}
+y_1\\ y_2\\ \vdots \\ y_n
+\end{bmatrix}  \\
+\amp=\boldx^T\boldy \text{,}
+\end{align*}
 </div>
-<div class="para">and</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\langle p(x), p(x) \rangle =p(-1)^2+p(0)^2+p(1)^2=0+(-1)^2+0=1\text{.}
-\end{equation*}
-</div>
+<div class="para">where in the last equality <span class="process-math">\(\boldx\)</span> and <span class="process-math">\(\boldy\)</span> are treated as column vectors.</div>
 </div>
 <span class="incontext"><a href="s_innerproducts.html#p-2883" class="internal">in-context</a></span>
 </body>

@@ -11,15 +11,16 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h5 class="heading"><span class="type">Paragraph</span></h5>
+<h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">Consider again the matrix <span class="process-math">\(A\)</span> (and <span class="process-math">\(P\)</span> and <span class="process-math">\(D\)</span>) from  <a href="" class="xref" data-knowl="./knowl/eg_diagonalizable_matrix_powers.html" title="Example 5.5.24: Diagonalizable: matrix powers">Example 5.5.24</a>.  Let <span class="process-math">\(f(x)=x^2 -4\text{.}\)</span> Since <span class="process-math">\(f(2)=f(-2)=0\text{,}\)</span> it follows that <span class="process-math">\(f(D)=D^2-4I=\boldzero\text{.}\)</span> We conclude that</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eg_diagonalizable_matrix_powers.html">
-\begin{equation*}
-f(A)=A^2-4I=Pf(D)P^{-1}=P\boldzero P^{-1}=\boldzero\text{,}
-\end{equation*}
+<div class="para">In practical terms, if <span class="process-math">\(A\)</span> is diagonalizable, then we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_diagonalize_matrix_2.html">
+\begin{align}
+D\amp=P^{-1}AP \amp A\amp=PDP^{-1} \tag{5.5.8}
+\end{align}
 </div>
-<div class="para">as you can check directly.</div>
+<div class="para">where <span class="process-math">\(D\)</span> is diagonal. This allows us to answer questions about <span class="process-math">\(A\)</span> by first answering the question for <span class="process-math">\(D\)</span> and then use the equations in <a href="" class="xref" data-knowl="./knowl/eq_diagonalize_matrix_2.html" title="Equation 5.5.8">(5.5.8)</a> to translate the results back to <span class="process-math">\(A\text{.}\)</span> What makes this method effective is that algebraic questions involving diagonal matrices are easy to answer! Before getting to some illustrative examples, we need a few results about the operation <span class="process-math">\(A\mapsto P^{-1}AP\text{,}\)</span> which is called <em class="emphasis">conjugation</em> by <span class="process-math">\(P\text{.}\)</span>
+</div>
 </div>
 <span class="incontext"><a href="s_diagonalization.html#p-3690" class="internal">in-context</a></span>
 </body>

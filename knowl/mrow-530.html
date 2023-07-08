@@ -11,15 +11,15 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_fundspaces_matrixtransform.html ./knowl/th_rank-nullity.html ./knowl/th_rank-nullity.html ./knowl/th_row_method.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/s_nullspace_image.html ./knowl/th_column_method.html">
 \begin{align*}
-\dim \CS A \amp=\dim\im T_A \\
-\amp=n-\dim\NS A \amp (\knowl{./knowl/th_rank-nullity.html}{\text{Theorem 3.8.2}}) \\
-\amp=n-\dim \NS B \amp (\NS A=\NS B)\\
-\amp =\dim\im T_B \amp ( \knowl{./knowl/th_rank-nullity.html}{\text{Theorem 3.8.2}}\\
-\amp =\dim \CS B
+\boldy\in \im T_A \amp\iff \boldy=T_A(\boldx) \text{ for some } \boldx\in \mathbb{R}^n \\
+\amp\iff  \boldy=A \boldx \text{ for some } \boldx=(x_1,x_2,\dots, x_n)\in \mathbb{R}^n
+\amp (\text{definition of } T_A) \\
+\amp \iff \boldy=x_1\boldc_1+x_2\boldc_2+\cdots +x_n\boldc_n \text{ for some } x_i\in \mathbb{\R} \amp (\knowl{./knowl/th_column_method.html}{\text{Theorem 2.1.24}})\\
+\amp \iff \boldy\in\CS A
 \end{align*}
 </div>
-<span class="incontext"><a href="s_rank_nullity.html#md-176" class="internal">in-context</a></span>
+<span class="incontext"><a href="s_rank_nullity.html#md-177" class="internal">in-context</a></span>
 </body>
 </html>

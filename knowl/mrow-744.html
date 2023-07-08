@@ -11,13 +11,15 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_matrixrep.html ./knowl/th_matrixrep.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_coordinates.html ./knowl/eq_matrixrep_prop.html ./knowl/th_coordinates.html">
 \begin{align*}
-\underset{B\rightarrow B'}{P}[\boldv]_B \amp = [\id_V]_{B}^{B'}[\boldv]_B \\
-\amp = [\id_V(\boldv)]_{B'} \amp (\knowl{./knowl/th_matrixrep.html}{\text{Theorem 5.2.6}})\\
-\amp =[\boldv]_{B'} 
+\boldw\in \im T \amp\iff \boldw=T(\boldv) \text{ for some } \boldv\in V \\
+\amp\iff [\boldw]_{B'}=[T(\boldv)]_{B'} \text{ for some } \boldv \in V\amp (\knowl{./knowl/th_coordinates.html}{\text{Theorem 5.1.12}}-(2)) \\
+\amp\iff [\boldw]_{B'}=[T]_{B}^{B'}[\boldv]_B \text{ for some } \boldv\in V \amp (\knowl{./knowl/eq_matrixrep_prop.html}{\text{(5.2.2)}}) \\
+\amp\iff [\boldw]_{B'}=A\boldx \text{ for some } \boldx\in \R^n  \amp (A=[T]_B^{B'}, \knowl{./knowl/th_coordinates.html}{\text{Theorem 5.1.12}}-(3))\\
+\amp \iff [\boldw]_{B'}\in \CS A
 \end{align*}
 </div>
-<span class="incontext"><a href="s_changeofbasis.html#md-237" class="internal">in-context</a></span>
+<span class="incontext"><a href="s_matrixreps.html#md-235" class="internal">in-context</a></span>
 </body>
 </html>

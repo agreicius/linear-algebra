@@ -13,17 +13,17 @@
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">Lastly, we have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_rank-nullity.html ./knowl/th_fundspaces_matrixtransform.html">
+<div class="para">We now turn to the equalities <a href="" class="xref" data-knowl="./knowl/eq_nullA_nullB.html" title="Equation 3.8.4">(3.8.4)–(3.8.6)</a>. Assume that <span class="process-math">\(A\)</span> is row equivalent to <span class="process-math">\(B\text{.}\)</span> Using the formulation of row reduction in terms of multiplication by elementary matrices, we see that there is an invertible matrix <span class="process-math">\(Q\)</span> such that <span class="process-math">\(B=QA\text{,}\)</span> and hence also <span class="process-math">\(A=Q^{-1}B\text{.}\)</span> But then we have</div>
+<div class="displaymath process-math" data-contains-math-knowls=" ./knowl/th_inverse_cancel.html">
 \begin{align*}
-\dim \NS U \amp =\dim \NS T_U \\
-\amp =n-\dim\im T_U \amp (\knowl{./knowl/th_rank-nullity.html}{\text{3.8.2}}) \\
-\amp =n-\dim\CS U \amp (\knowl{./knowl/th_fundspaces_matrixtransform.html}{\text{3.8.6}})\\
-\amp =n-r \\
-\amp =s \text{,}
+\boldx\in\NS A\amp\iff A\boldx=\boldzero \\
+\amp\iff QA\boldx=Q\boldzero \amp (\knowl{./knowl/th_inverse_cancel.html}{\text{Theorem 2.3.3}}) \\
+\amp \iff B\boldx=\boldzero \\
+\amp \iff \boldx\in\NS B\text{.}
 \end{align*}
 </div>
-<div class="para">where the last equality uses the fact that the sum of the number of columns with leading ones (<span class="process-math">\(r\)</span>) and the number of columns without leading ones (<span class="process-math">\(s\)</span>) is <span class="process-math">\(n\text{,}\)</span> the total number of columns.</div>
+<div class="para">This proves <span class="process-math">\(\NS A=\NS B\text{.}\)</span>
+</div>
 </div>
 <span class="incontext"><a href="s_rank_nullity.html#p-2686" class="internal">in-context</a></span>
 </body>

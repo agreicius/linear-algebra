@@ -12,24 +12,21 @@
 </head>
 <body class="ignore-math">
 <article class="li"><h5 class="heading">
-<span class="type">Item</span><span class="period">.</span>
+<span class="type">Item</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span>
 </h5>
 <div class="para logical">
-<div class="para">Write out the <em class="emphasis">function equation</em>
+<div class="para">Recall that the zero vector of <span class="process-math">\(P_2\)</span> is the zero polynomial <span class="process-math">\(\boldzero=0x^2+0x+0\text{.}\)</span> We have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_poly_equality.html">
+\begin{align*}
+a(x^2+x-2)+b(2x^2+1)+c(x^2-x)=\boldzero \amp \iff
+(a+2b+c)x^2+(a-c)x+(-2a+b)=0x^2+0x+0 \\
+\amp \\
+\amp \iff
+\begin{linsys}{3} a\amp +\amp 2b\amp +\amp c\amp =\amp 0\\ a\amp \amp \amp -\amp c\amp =\amp 0\\ -2a\amp +\amp b \amp \amp  \amp =\amp 0 \end{linsys}
+\amp (\knowl{./knowl/th_poly_equality.html}{\text{Theorem 3.3.22}})\text{.}
+\end{align*}
 </div>
-<div class="displaymath process-math">
-\begin{equation*}
-c_1f+c_2f_2+\cdots +c_nf_n=\boldzero\text{.}
-\end{equation*}
-</div>
-<div class="para">Since the zero vector of <span class="process-math">\(F(X,\R)\)</span> is the zero function, the definition of function equality implies</div>
-<div class="displaymath process-math">
-\begin{equation}
-c_1f(x)+c_2f_2(x)+\cdots +c_nf(x)_n=0\tag{3.5.1}
-\end{equation}
-</div>
-<div class="para">for <em class="emphasis">all</em>  <span class="process-math">\(x\in X\text{.}\)</span>
-</div>
+<div class="para">Gaussian elimination shows that <span class="process-math">\((a,b,c)=(0,0,0)\)</span> is the unique solution to this last system. We conclude that <span class="process-math">\(S\)</span> is linearly independent.</div>
 </div></article><span class="incontext"><a href="s_span_independence.html#li-596" class="internal">in-context</a></span>
 </body>
 </html>

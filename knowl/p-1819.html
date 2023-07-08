@@ -13,13 +13,16 @@
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">Fix <span class="process-math">\(m,n\geq 1\text{.}\)</span> Define the function <span class="process-math">\(f\colon M_{mn}\rightarrow M_{nm}\)</span> as follows:</div>
+<div class="para">Let <span class="process-math">\(\boldn=(a,b,c)\)</span> be a nonzero vector of <span class="process-math">\(\R^3\text{,}\)</span> and let <span class="process-math">\(W\)</span> be the plane passing through the origin with normal vector <span class="process-math">\(\boldn\text{.}\)</span> The orthogonal projection map <span class="process-math">\(\operatorname{proj}_W\colon \R^3\rightarrow \R^3\)</span> is a linear transformation. In fact, we have <span class="process-math">\(\operatorname{proj}_W=T_A\)</span> where</div>
 <div class="displaymath process-math">
-\begin{equation*}
-f(A)=A^T\text{.}
-\end{equation*}
+\begin{equation}
+A=\frac{1}{a^2+b^2+c^2}\begin{amatrix}[rrr]
+b^2+c^2\amp -ab \amp -ac \\ 
+-ab \amp a^2+c^2 \amp -bc \\
+-ac \amp -bc \amp a^2+b^2
+\end{amatrix}\text{.}\tag{3.2.5}
+\end{equation}
 </div>
-<div class="para">In other words, <span class="process-math">\(f\)</span> maps a matrix to its transpose.</div>
 </div>
 <span class="incontext"><a href="s_transformation.html#p-1819" class="internal">in-context</a></span>
 </body>

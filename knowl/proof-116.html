@@ -12,21 +12,6 @@
 </head>
 <body class="ignore-math">
 <article class="hiddenproof"><h4 class="heading"><span class="type">Proof</span></h4>
-<div class="para">Statement (1) follows by taking <span class="process-math">\(Q=P^{-1}\text{.}\)</span>
-</div> <div class="para logical">
-<div class="para">Let <span class="process-math">\(p_A(t)\)</span> and <span class="process-math">\(p_{A'}(t)\)</span> be the characteristic polynomials of <span class="process-math">\(A\)</span> and <span class="process-math">\(A'\text{,}\)</span> repsectively. We have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_det_mult.html">
-\begin{align*}
-p_{A'}(t)\amp =\det(tI-A')\\
-\amp =\det(tI-P^{-1}AP) \amp (A'=P^{-1}AP)\\
-\amp = \det(P^{-1}tIP-P^{-1}AP) \amp (\text{algebra}) \\
-\amp = \det(P^{-1}(tI-A)P) \amp (\text{left/right dist.}) \\
-\amp = \det(P^{-1})\det(tI-A)\det(P) \amp (\knowl{./knowl/th_det_mult.html}{\text{2.5.26}}) \\
-\amp = (\det(P))^{-1}\det(P)\det(tI-A)  \\
-\amp = \det(tI-A)=p_A(t)\text{.}
-\end{align*}
-</div>
-<div class="para">This proves statement (2).</div>
-</div> <div class="para">Statement (3) follows from (2) since the eigenvalues of a matrix are the real roots of its characteristic polynomial. Furthermore, by <a href="" class="xref" data-knowl="./knowl/th_characteristic_polynomial.html" title="Theorem 5.4.25: Characteristic polynomial">Theorem 5.4.25</a> the trace and determinant of a matrix are equal to the sum and product of the roots of its characteristic polynomial. Thus (4) also follows from (2).</div> <div class="para">The proofs of statements (5)-(6) are left as exercises.</div></article><span class="incontext"><a href="s_diagonalization.html#proof-116" class="internal">in-context</a></span>
+<div class="para">According to <a href="" class="xref" data-knowl="./knowl/th_similarity_matrixreps.html" title="Theorem 5.3.28: Similarity and matrix representations">Theorem 5.3.28</a> the matrix <span class="process-math">\(A\)</span> is similar to a diagonal matrix <span class="process-math">\(D\)</span> if and only if there is a linear transformation <span class="process-math">\(T\colon \R^n\rightarrow \R^n\)</span> and ordered bases <span class="process-math">\(B, B'\)</span> of <span class="process-math">\(\R^n\)</span> such that <span class="process-math">\([T]_B=A\)</span> and <span class="process-math">\([T]_{B'}=D\text{.}\)</span> By definition such a <span class="process-math">\(T\)</span> would be diagonalizable, since <span class="process-math">\([T]_{B'}=D\)</span> is diagonal. Since <span class="process-math">\(T\)</span> is diagonalizable if and only if <span class="process-math">\(A=[T]_B\)</span> is diagonalizable, we conclude that <span class="process-math">\(A\)</span> is similar to a diagonal matrix <span class="process-math">\(D\)</span> if and only if <span class="process-math">\(A\)</span> is diagonalizable.</div></article><span class="incontext"><a href="s_diagonalization.html#proof-116" class="internal">in-context</a></span>
 </body>
 </html>

@@ -13,15 +13,13 @@
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">Suppose <span class="process-math">\(\boldv_1, \boldv_2\in \NS T\text{.}\)</span> Given any <span class="process-math">\(c,d\in \R\text{,}\)</span> we have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_trans_props.html">
-\begin{align*}
-T(c\boldv_1+d\boldv_2) \amp=cT(\boldv_1)+dT(\boldv_2) \amp (T \text{ is linear, } \knowl{./knowl/th_trans_props.html}{\text{Theorem 2.2.11}})\\
-\amp=c\boldzero_W+d\boldzero_W \amp (\boldv_1, \boldv_2\in \NS T) \\
-\amp = \boldzero_W\text{.}
-\end{align*}
+<div class="para">The inclusion <span class="process-math">\(\im S\subseteq W\)</span> is the easier of the two. If <span class="process-math">\(B\in \im S\text{,}\)</span> then <span class="process-math">\(B=S(A)=A^T-A\)</span> for some <span class="process-math">\(A\in M_{nn}\text{.}\)</span> Using various properties of transposition, we have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+B^T=(A^T-A)^T=(A^T)^T-A^T=-(A^T-A)=-B\text{,}
+\end{equation*}
 </div>
-<div class="para">This shows that <span class="process-math">\(c\boldv_1+d\boldv_2\in \NS T\text{,}\)</span> completing our proof.</div>
+<div class="para">showing that <span class="process-math">\(B\)</span> is skew-symmetric, and thus <span class="process-math">\(B\in W\text{,}\)</span> as desired.</div>
 </div>
 <span class="incontext"><a href="s_nullspace_image.html#p-2037" class="internal">in-context</a></span>
 </body>
