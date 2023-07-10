@@ -266,7 +266,7 @@
         <mrow>T_A\colon \R^n \amp\rightarrow \R^m </mrow>
         <mrow> \boldx\amp\mapsto T_A(\boldx)=A\boldx </mrow>
       </md>.
-      In other words, given input <m>\boldx\in \R^n</m>, the output <m>T(\boldx)</m> is defined as <m>A\boldx</m>.
+      In other words, given input <m>\boldx\in \R^n</m>, the output <m>T(\boldx)</m> is defined as <m>A\boldx</m>. The matrix <m>A</m> is called the <term>standard matrix</term> of the transformation <m>T_A</m>. 
       </p>
     </statement>
   </definition>
