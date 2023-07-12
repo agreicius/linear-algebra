@@ -11,7 +11,20 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<article class="case"><h5 class="heading">Image of <span class="process-math">\(T\)</span>.</h5> <div class="para">The proof proceeds in a similar manner.</div> <ol class="decimal"><li><div class="para">Since <span class="process-math">\(T(\boldzero_V)=\boldzero_W\)</span> (<a href="" class="xref" data-knowl="./knowl/th_trans_props.html" title="Theorem 2.2.11: Properties of matrix transposition">Theorem 2.2.11</a>), we see that <span class="process-math">\(\boldzero_W\)</span> is “hit” by <span class="process-math">\(T\text{,}\)</span> and hence is a member of <span class="process-math">\(\im T\text{.}\)</span>
-</div></li></ol></article><span class="incontext"><a href="s_nullspace_image.html#case-79" class="internal">in-context</a></span>
+<article class="case"><h5 class="heading">Image of <span class="process-math">\(T\)</span>.</h5> <div class="para">The proof proceeds in a similar manner, using the two-step technique.</div> <ol class="decimal">
+<li><div class="para">Since <span class="process-math">\(T(\boldzero_V)=\boldzero_W\)</span> (<a href="" class="xref" data-knowl="./knowl/th_trans_props.html" title="Theorem 2.2.11: Properties of matrix transposition">Theorem 2.2.11</a>), we see that <span class="process-math">\(\boldzero_W\)</span> is “hit” by <span class="process-math">\(T\text{,}\)</span> and hence is a member of <span class="process-math">\(\im T\text{.}\)</span>
+</div></li>
+<li><div class="para logical">
+<div class="para">Assume vectors <span class="process-math">\(\boldw_1, \boldw_2\in W\)</span> are elements of <span class="process-math">\(\im T\text{.}\)</span> By definition, this means there are vectors <span class="process-math">\(\boldv_1, \boldv_2\in V\)</span> such that <span class="process-math">\(T(\boldv_i)=\boldw_i\)</span> for <span class="process-math">\(1\leq i\leq 2\text{.}\)</span> Now given any linear combination <span class="process-math">\(\boldw=c\boldw_1+d\boldw_2\text{,}\)</span> we have</div>
+<div class="displaymath process-math">
+\begin{align*}
+T(c\boldv_1+d\boldv_2) \amp = cT(\boldv_1)+dT(\boldv_2)\\
+\amp =c\boldw_1+d\boldw_2\\
+\amp =\boldw\text{.}
+\end{align*}
+</div>
+<div class="para">This shows that for any linear combination <span class="process-math">\(\boldw=c\boldw_1+d\boldw_2\text{,}\)</span> there is an element <span class="process-math">\(\boldv=c\boldv_1+d\boldv_2\)</span> such that <span class="process-math">\(T(\boldv)=\boldw\text{.}\)</span> We conclude that if  <span class="process-math">\(\boldw_1, \boldw_2\in \im T\text{,}\)</span> then <span class="process-math">\(\boldw=c\boldw_1+d\boldw_2\in \im T\)</span> for any <span class="process-math">\(c,d\in \R\text{,}\)</span> as desired.</div>
+</div></li>
+</ol></article><span class="incontext"><a href="s_nullspace_image.html#case-79" class="internal">in-context</a></span>
 </body>
 </html>

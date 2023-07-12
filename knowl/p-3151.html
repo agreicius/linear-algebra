@@ -13,13 +13,27 @@
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">We have</div>
+<div class="para">Now compute</div>
 <div class="displaymath process-math">
 \begin{align*}
-d((2,1,1), W) \amp = \norm{(2,1,1)-\proj{(2,1,1)}{W}}\\
-\amp =\norm{\frac{1}{6}(1,-2,-1)}=\frac{6}{6} \\
-d((1,1,1), W) \amp = \norm{(1,1,1)-\proj{(1,1,1)}{W}}\\
-\amp =\norm{(0,0,0)}=0 \text{.}
+\proj{(2,1,1)}{\ell}\amp= \frac{1}{6}\begin{amatrix}[rrr]
+5\amp 2\amp -1\\ 2\amp 2\amp 2\\ -1\amp 2\amp 5
+\end{amatrix}
+\begin{amatrix}[r]
+2 \\ 1\\ 1
+\end{amatrix}=
+\frac{1}{6}\begin{amatrix}[r]
+11\\ 8\\ 5
+\end{amatrix}\\
+\proj{(1,1,1)}{\ell}\amp= \frac{1}{6}\begin{amatrix}[rrr]
+5\amp 2\amp -1\\ 2\amp 2\amp 2\\ -1\amp 2\amp 5
+\end{amatrix}
+\begin{amatrix}[r]
+1 \\ 1\\ 1
+\end{amatrix}=
+\frac{1}{6}\begin{amatrix}[r]
+0\\ 0\\ 0
+\end{amatrix}\text{.}
 \end{align*}
 </div>
 </div>

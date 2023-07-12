@@ -11,15 +11,49 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
+<h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">In this subsection we will focus on matrix transformations <span class="process-math">\(T_A\colon \R^n\rightarrow \R^n\text{.}\)</span> Recall (<a href="" class="xref" data-knowl="./knowl/th_matrixreps_matrixtransforms.html" title="Theorem 5.2.3: Standard matrix as a matrix representation">5.2.3</a>) that in this situation we have <span class="process-math">\(A=[T]_B\)</span> where <span class="process-math">\(B\)</span> is the <em class="emphasis">standard basis</em> of <span class="process-math">\(\R^n\text{.}\)</span> As such <a href="" class="xref" data-knowl="./knowl/proc_diagonalize.html" title="Procedure 5.5.14: Deciding whether a linear transformation is diagonalizable">Procedure 5.5.14</a> boils down to steps (2)-(3), and the eigenbasis <span class="process-math">\(B'\)</span> of <span class="process-math">\(A\)</span> found in (3) is itself an eigenbasis for <span class="process-math">\(T=T_A\text{.}\)</span> Letting <span class="process-math">\(D=[T]_{B'}\)</span> the change of basis formula (<a href="" class="xref" data-knowl="./knowl/th_change_of_basis_transformations.html" title="Theorem 5.3.20: Change of basis for transformations">5.3.20</a>) yields</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_matrixreps_matrixtransforms.html ./knowl/proc_diagonalize.html ./knowl/th_change_of_basis_transformations.html">
+<div class="para">We saw in <a href="" class="xref" data-knowl="./knowl/eg_eigenvector_systematic_transposition.html" title="Example 5.4.24: Transposition (again)">Example 5.4.24</a> that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eg_eigenvector_systematic_transposition.html">
 \begin{equation*}
-D=P^{-1}AP\text{,}
+[S]_B=\begin{bmatrix}
+1\amp 0\amp 0\amp 0\\
+0\amp 0\amp 1\amp 0\\
+0\amp 1\amp 0\amp 0\\
+0\amp 0\amp 0\amp 1
+\end{bmatrix}\text{,}
 \end{equation*}
 </div>
-<div class="para">where <span class="process-math">\(P=\underset{B'\rightarrow B}{P}\text{.}\)</span> Lastly, since <span class="process-math">\(B\)</span> is the standard basis of <span class="process-math">\(\R^n\text{,}\)</span> the change of basis matrix <span class="process-math">\(\underset{B'\rightarrow B}{P}\)</span> is obtained by placing the <span class="process-math">\(j\)</span>-th element of <span class="process-math">\(B'\)</span> as the <span class="process-math">\(j\)</span>-th column for all <span class="process-math">\(1\leq j\leq n\text{.}\)</span> We record these observations as a separate procedure specifically for matrix transformations.</div>
+<div class="para">where <span class="process-math">\(B=(E_{11}, E_{12}, E_{21}, E_{22})\)</span> is the standard ordered basis of <span class="process-math">\(M_{22}\text{.}\)</span> Furthermore, we saw that <span class="process-math">\(1\)</span> and <span class="process-math">\(-1\)</span> are the distinct eigenvalues of <span class="process-math">\(A=[S]_B\text{,}\)</span> and that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eg_eigenvector_systematic_transposition.html">
+\begin{equation*}
+S_1=\{(1,0,0,0), (0,1,1,0), (0,0,0,1)\}, S_{-1}=\Span\{(0,1,-1,0)\}
+\end{equation*}
+</div>
+<div class="para">are bases of <span class="process-math">\(W_1\)</span> and <span class="process-math">\(W_{-1}\text{,}\)</span> respectively. It follows that <span class="process-math">\(\dim W_1+\dim W_{-1}=3+1=4\text{,}\)</span> that <span class="process-math">\(A\)</span> is diagonalizable, and that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eg_eigenvector_systematic_transposition.html">
+\begin{equation*}
+B'=((1,0,0,0), (0,1,1,0), (0,0,0,1), (0,1,-1,0))
+\end{equation*}
+</div>
+<div class="para">is an eigenbasis of <span class="process-math">\(A\text{.}\)</span> We conclude that <span class="process-math">\(S\)</span> is diagonalizable, and we lift <span class="process-math">\(B'\)</span> via <span class="process-math">\([\phantom{v}]_B\)</span> to the eigenbasis</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eg_eigenvector_systematic_transposition.html">
+\begin{equation*}
+B''=\left\{
+\begin{amatrix}[rr]1\amp 0\\ 0\amp 0  \end{amatrix},
+\begin{amatrix}[rr]0\amp 1\\ 1\amp 0  \end{amatrix},
+\begin{amatrix}[rr]0\amp 0\\ 0\amp 1  \end{amatrix},
+\begin{amatrix}[rr]0\amp 1\\ -1\amp 0  \end{amatrix}
+\right\}
+\end{equation*}
+</div>
+<div class="para">of <span class="process-math">\(S\text{.}\)</span> Lastly, we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eg_eigenvector_systematic_transposition.html">
+\begin{equation*}
+[S]_{B''}=
+\begin{amatrix}[rrrr]1\amp 0\amp 0\amp 0\\ 0\amp 1\amp 0\amp 0\\ 0\amp 0\amp 1\amp 0\\ 0\amp 0\amp 0\amp -1  \end{amatrix}\text{.}
+\end{equation*}
+</div>
 </div>
 <span class="incontext"><a href="s_diagonalization.html#p-3666" class="internal">in-context</a></span>
 </body>

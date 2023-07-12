@@ -13,11 +13,12 @@
 <body class="ignore-math">
 <div class="displaymath process-math">
 \begin{align*}
-\angvec{1,1} \amp = \int_0^{2\pi} 1\, dx=2\pi \\
-\angvec{1, \cos n x} \amp= \int_0^{2\pi}\cos n x\, dx=0 \\
-\angvec{1, \sin n x} \amp= \int_0^{2\pi}\sin n x\, dx=0 
+\langle f, g\rangle \amp=\int_{-\pi}^\pi \sin x\sin 2x\, dx \\
+\amp=\frac{1}{2}\int_{-\pi}^\pi\cos(x-2x)-\cos(x+2x)\, dx \amp (\text{trig. identity})\\
+\amp =\frac{1}{2}\int_{-\pi}^\pi \cos(-x)-\cos 3x\, dx\\
+\amp = 0
 \end{align*}
 </div>
-<span class="incontext"><a href="s_orthogonality.html#md-204" class="internal">in-context</a></span>
+<span class="incontext"><a href="s_innerproducts.html#md-204" class="internal">in-context</a></span>
 </body>
 </html>

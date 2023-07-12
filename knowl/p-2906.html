@@ -13,14 +13,13 @@
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">Given any <span class="process-math">\(\boldv\ne \boldzero\in V\text{,}\)</span> the vector <span class="process-math">\(\boldu=\frac{1}{\norm{\boldv}}\boldv\)</span> is a unit vector. To verify this, let <span class="process-math">\(c=\norm{\boldv}\)</span> and compute</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/d_innerproduct.html">
+<div class="para">We have</div>
+<div class="displaymath process-math">
 \begin{align*}
-\norm{\boldu} \amp =\sqrt{\left\langle \frac{1}{c}\boldv,\frac{1}{c}\boldv   \right\rangle }\\
-\amp =\sqrt{\frac{1}{c^2}\langle \boldv,\boldv  \rangle} \amp (\knowl{./knowl/d_innerproduct.html}{\text{Definition 4.1.1}}, \text{(ii)})  \\
-\amp =\frac{1}{\val{c}}\sqrt{\langle \boldv,\boldv  \rangle } \\
-\amp =\frac{1}{c}\sqrt{\langle \boldv,\boldv  \rangle } \amp (c=\norm{\boldv}\geq 0)\\
-\amp =\frac{\norm{\boldv}}{\norm{\boldv}}=1\text{.}
+\norm{f}\amp =\sqrt{\langle f,f\rangle} \\
+\amp=\sqrt{\int_0^1(e^x)^2\, dx} \\
+\amp = \sqrt{\int_0^1e^{2x}\, dx}\\
+\amp =\sqrt{(e^2-1)/2} \text{.}
 \end{align*}
 </div>
 </div>

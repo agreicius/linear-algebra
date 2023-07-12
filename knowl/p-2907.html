@@ -13,19 +13,16 @@
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">For each inner product space <span class="process-math">\((V, \langle\,, \rangle)\)</span> and <span class="process-math">\(\boldv\in V\)</span> compute the associated unit vector <span class="process-math">\(\boldu=\frac{1}{\norm{v}}\boldv\)</span>
+<div class="para">Given any <span class="process-math">\(\boldv\ne \boldzero\in V\text{,}\)</span> the vector <span class="process-math">\(\boldu=\frac{1}{\norm{\boldv}}\boldv\)</span> is a unit vector. To verify this, let <span class="process-math">\(c=\norm{\boldv}\)</span> and compute</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/d_innerproduct.html">
+\begin{align*}
+\norm{\boldu} \amp =\sqrt{\left\langle \frac{1}{c}\boldv,\frac{1}{c}\boldv   \right\rangle }\\
+\amp =\sqrt{\frac{1}{c^2}\langle \boldv,\boldv  \rangle} \amp (\knowl{./knowl/d_innerproduct.html}{\text{Definition 4.1.1}}, \text{(ii)})  \\
+\amp =\frac{1}{\val{c}}\sqrt{\langle \boldv,\boldv  \rangle } \\
+\amp =\frac{1}{c}\sqrt{\langle \boldv,\boldv  \rangle } \amp (c=\norm{\boldv}\geq 0)\\
+\amp =\frac{\norm{\boldv}}{\norm{\boldv}}=1\text{.}
+\end{align*}
 </div>
-<ol class="decimal">
-<li><div class="para">
-<span class="process-math">\(V=\R^4\)</span> with dot product, <span class="process-math">\(\boldv=(1,-1,2,1)\)</span>
-</div></li>
-<li><div class="para">
-<span class="process-math">\(V=\R^3\)</span> with dot product with weights <span class="process-math">\(1,2,3\text{,}\)</span> <span class="process-math">\(\boldv=(3,1,-2)\)</span>
-</div></li>
-<li><div class="para">
-<span class="process-math">\(V=C([0,1])\)</span> with integral inner product, <span class="process-math">\(\boldv=e^x\)</span>
-</div></li>
-</ol>
 </div>
 <span class="incontext"><a href="s_innerproducts.html#p-2907" class="internal">in-context</a></span>
 </body>

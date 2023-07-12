@@ -12,15 +12,32 @@
 </head>
 <body class="ignore-math">
 <article class="li"><h4 class="heading">
-<span class="type">Item</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span>
+<span class="type">Item</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span>
 </h4>
 <div class="para logical">
-<div class="para">Clearly, if <span class="process-math">\(\boldv=\boldw\text{,}\)</span> then <span class="process-math">\([\boldv]_B=[\boldw]_B\text{.}\)</span> If <span class="process-math">\(T(\boldv)=T(\boldw)=(c_1,c_2,\dots, c_n)\text{,}\)</span> then by definition of <span class="process-math">\([\phantom{\boldv}]_B\)</span> we must have</div>
+<div class="para">Suppose <span class="process-math">\(T(\boldv)=[\boldv]_B=(a_1,a_2,\dots, a_n), T(\boldw)=[\boldw]_B=(b_1, b_2, \dots, b_n)\text{.}\)</span> By definition this means</div>
+<div class="displaymath process-math">
+\begin{align*}
+\boldv \amp =\sum_{i=1}^na_i\boldv_i,  \amp \boldw\amp =\sum_{i=1}^nb_i\boldv_i\text{.}
+\end{align*}
+</div>
+<div class="para">It follows that</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\boldv=c_1\boldv_1+c_2\boldv_2+\cdots +c_n\boldv_n==\boldw\text{.}
+c\boldv+d\boldw=\sum_{i=1}^n(ca_i+db_i)\boldv_i\text{,}
 \end{equation*}
 </div>
+<div class="para">and hence</div>
+<div class="displaymath process-math">
+\begin{align*}
+T(c\boldv+d\boldw)\amp =[c\boldv+d\boldw]_B \amp (\text{def. of } [\phantom{\boldv}]_B) \\
+\amp =(ca_1+db_1,ca_2+db_2,\dots, ca_n+db_n) \\
+\amp =c(a_1,a_2,\dots, a_n)+d(b_1,b_2,\dots, b_n)\\
+\amp =c[\boldv]_B+d[\boldw]_B\\
+\amp =cT(\boldv)+dT(\boldw) \text{.}
+\end{align*}
+</div>
+<div class="para">This proves <span class="process-math">\(T\)</span> is linear.</div>
 </div></article><span class="incontext"><a href="s_coordinatevectors.html#li-969" class="internal">in-context</a></span>
 </body>
 </html>
