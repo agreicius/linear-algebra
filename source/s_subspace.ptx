@@ -339,9 +339,12 @@ Geometrically this is the line in <m>\R^3</m> passing through <m>(0,0,0)</m> wit
         <me>
         \mathcal{P}\colon ax_1+bx_2+cx_3=0
         </me>.
-        We see immediately that both objects can be described as null spaces of a certain matrix: <me>
-        \ell=\NS \begin{bmatrix} a \amp b\end{bmatrix}, \mathcal{P}=\NS \begin{bmatrix}a\amp b\amp c\end{bmatrix}
-        </me>.
+        (See <xref ref="eg_lines_planes_review"/>.)
+        We see immediately that both objects can be described as the set of solutions to a certain homogenous matrix equation <m>A\boldx=\boldzero</m>: 
+        <md>
+          <mrow> \ell \amp =\{\boldx=(x,y)\in \R^2\colon \rowvec{a \amp b]\boldx=\boldzero\}</mrow>
+          <mrow>\mathcal{P} \amp = {\boldx=(x,y,z)\in \R^3\colon \rowvec{a\amp b\amp c}\boldx=\boldzero\} </mrow>
+        </md>.
         We conclude from <xref ref="th_subspace_matrix_solutions"/>
         that lines in <m>\R^2</m>, and planes in <m>\R^3</m>, are subspaces, <em>as long as they pass through the origin</em>.
       </p>
@@ -359,7 +362,7 @@ Geometrically this is the line in <m>\R^3</m> passing through <m>(0,0,0)</m> wit
 <subsection xml:id="ss_subspace_matrices">
   <title>Important subspaces of <m>M_{nn}</m></title>
   <p>
-    In <xref ref="s_invertibility_theorem" text="title"/> we met three families of square matrices: namely, the diagonal, upper triangular, and lower triangular matrices. (See <xref ref="d_diagonal_triangular"/>). We now introduce three more naturally occuring families. Before doing so, we give an official definition of the trace function. (See <xref ref="ex_transformation_trace"/>.)
+    In <xref ref="s_invertibility_theorem" text="title"/> we met three families of square matrices: namely, the diagonal, upper triangular, and lower triangular matrices. (See <xref ref="d_diagonal_triangular"/>). We now introduce three more naturally occurring families. Before doing so, we give an official definition of the trace function. (See <xref ref="ex_transformation_trace"/>.)
   </p>
   <definition xml:id="d_trace">
   <title>Trace of a matrix</title>

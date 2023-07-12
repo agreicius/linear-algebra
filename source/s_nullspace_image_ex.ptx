@@ -1,6 +1,6 @@
 <exercises xml:id="s_nullspace_image_ex">
   <subexercises>
-    <title>True/False Questions</title>
+    <title>WeBWork Exercises</title>
     <exercise>
       <!-- true/false -->
       <webwork source="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/4.1.34.pg" />
@@ -25,9 +25,7 @@
       <!-- true/false -->
       <webwork source="Library/WHFreeman/Holt_linear_algebra/Chaps_1-4/4.1.49.pg" />
     </exercise>
-  </subexercises>
-  <subexercises>
-    <title>WeBWork Exercises</title>
+
     <exercise>
       <!-- injective dimensions -->
       <webwork source="Library/TCNJ/TCNJ_MatrixLinearTransformation/problem16.pg" />
@@ -75,8 +73,10 @@
               <webwork source="Library/NAU/setLinearAlgebra/LinTransImage.pg" />
             </exercise> -->
   </subexercises>
-
+  <subexercises>
+  <title>Written Exercises</title>
   <exercisegroup>
+  <title>Computing <m>\NS T</m> and <m>\im T</m> parametrically</title>
     <introduction>
       <p>
         For each linear transformation <m>T</m> give parametric descriptions of <m>\NS T</m> and <m>\im T</m>. To do so you will want to relate each computation to a system of linear equations. (See <xref ref="eg_subspace_image"/> for an example of computing an image.)
@@ -115,6 +115,7 @@
   </exercisegroup>
 
   <exercisegroup>
+  <title>Identifying <m>\im T</m></title>
   <introduction>
   <p>
   For the given linear transformation <m>T</m> prove the claim about <m>\im T</m>.
@@ -171,6 +172,7 @@
   </hint>
 </exercise>
 <exercisegroup>
+<title>Identifying <m>W</m> as a null space</title>
 <introduction>
 <p>
 For each subset <m>W\subseteq V</m> show <m>W</m> is a subspace by identifying it with the null space of a linear transformation <m>T</m>. You may use any of the examples from <xref ref="s_transformation"/>, and any of the results from the exercises in <xref ref="s_transformation_ex"/>.
@@ -205,6 +207,7 @@ For each subset <m>W\subseteq V</m> show <m>W</m> is a subspace by identifying i
 </exercise>
 </exercisegroup>
 <exercisegroup>
+<title>Nonhomogeneous solutions related to homogeneous solutions</title>
 <introduction>
 <p>
 For each <m>m\times n</m> matrix <m>A</m> and vector <m>\boldb\in \R^m</m>:
@@ -259,6 +262,6 @@ For each <m>m\times n</m> matrix <m>A</m> and vector <m>\boldb\in \R^m</m>:
   </statement>
 </exercise>
 </exercisegroup>
-
+</subexercises>
 
 </exercises>
