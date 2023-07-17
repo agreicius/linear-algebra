@@ -58,7 +58,7 @@ Determine whether the subset <m>W</m> of <m>M_{nn}</m> described is a subspace o
 <exercise>
   <statement>
     <p>
-      Fix a matrix <m>B\in A</m> and define <m>W=\{A\in M_{nn}\colon AB=BA\}</m>, the set of matrices that <em>commute</em> with <m>B</m>.
+      Fix a matrix <m>B\in M_{nn}</m> and define <m>W=\{A\in M_{nn}\colon AB=BA\}</m>, the set of matrices that <em>commute</em> with <m>B</m>.
     </p>
   </statement>
 </exercise>
