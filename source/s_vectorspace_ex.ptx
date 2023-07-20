@@ -16,19 +16,24 @@
     </exercise>
   </subexercises>
 
-<exercise>
+<exercise xml:id="ex_verify_Rinfty">
   <statement>
     <p>
-      Verify that <m>\R^\infty=\{(a_i)_{i=1}^\infty\colon a_i\in \R\}</m>, along with the proposed vector operations
-      <md>
-        <mrow> c(a_i)_{i=1}^\infty\amp=(ca_i)_{i=1}^\infty </mrow>
-        <mrow> (a_i)_{i=1}^\infty+(b_i)_{i=1}^\infty \amp =(a_i+b_i)_{i=1}^\infty </mrow>
-      </md>,
+      Verify that <m>\R^\infty</m> along with the vector operations defined as in <xref ref="ex_vs_infinitesequences"/>
     satisfies the defining axioms of a vector space.
     </p>
   </statement>
 </exercise>
-  <exercise>
+<exercise xml:id="ex_verify_functions">
+  <statement>
+    <p>
+      Let <m>I</m> be an interval in the real line. Verify that <m>F(I,\R)</m> along with the vector operations defined as in <xref ref="ex_vs_functions"/>
+    satisfies the defining axioms of a vector space.
+    </p>
+  </statement>
+</exercise>
+
+<exercise>
     <statement>
       <p>
         Verify that <m>\R_{>0}=\{a\in \R\colon a>0\}=(0,\infty)</m>, along with the proposed vector operations

@@ -266,7 +266,7 @@
         <mrow>T_A\colon \R^n \amp\rightarrow \R^m </mrow>
         <mrow> \boldx\amp\mapsto T_A(\boldx)=A\boldx </mrow>
       </md>.
-      In other words, given input <m>\boldx\in \R^n</m>, the output <m>T(\boldx)</m> is defined as <m>A\boldx</m>. The matrix <m>A</m> is called the <term>standard matrix</term> of the transformation <m>T_A</m>. 
+      In other words, given input <m>\boldx\in \R^n</m>, the output <m>T(\boldx)</m> is defined as <m>A\boldx</m>. 
       </p>
     </statement>
   </definition>
@@ -582,7 +582,7 @@
   <title>Orthogonal projection onto line</title>
   <statement>
     <p>
-    Find the standard matrix <m>A</m> of orthogonal projection onto the line <m>\ell</m> passing through the origin with direction vector <m>\boldv=(1,1,1)</m>.  Compute the orthogonal projection of  <m>(-1,3,2)</m> onto <m>\ell</m>. 
+    Let <m>T\colon \R^2\rightarrow \R^2</m> be orthogonal projection onto the line <m>\ell</m> passing through the origin with direction vector <m>\boldv=(1,1,1)</m>.  Find the matrix <m>A</m> such that <m>T=T_A</m>. Use <m>A</m> to compute the orthogonal projection of  <m>(-1,3,2)</m> onto <m>\ell</m>. 
   </p>
   </statement>
   <solution>

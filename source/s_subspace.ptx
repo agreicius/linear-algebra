@@ -496,9 +496,9 @@ Geometrically this is the line in <m>\R^3</m> passing through <m>(0,0,0)</m> wit
 
 </subsection>
 <subsection xml:id="ss_subspace_functions">
-  <title>Important subspaces of <m>F(X,\R)</m></title>
+  <title>Important subspaces of <m>F(I,\R)</m></title>
   <p>
-    Let <m>X</m> be an <em>nondegenerate</em> interval of <m>\R</m>: <ie />, an interval containing at least two elements. Recall that <m>F(X,\R)</m> is the set of <em>all</em> functions from <m>X</m> to <m>\R</m>. This is a pretty unwieldy vector space, containing some pathological characters, and when studying functions on an interval we will often restrict our attention to certain more well-behaved subsets: <eg />, continuous, differentiable, or infinitely differentiable functions. Not surprisingly, these subsets turn out to be subspaces of <m>F(X,\R)</m>.
+    Let <m>I</m> be an <em>nondegenerate</em> interval of <m>\R</m>: <ie />, an interval containing at least two elements. Recall that <m>F(I,\R)</m> is the set of <em>all</em> functions from <m>I</m> to <m>\R</m>. This is a pretty unwieldy vector space, containing some pathological characters, and when studying functions on an interval we will often restrict our attention to certain more well-behaved subsets: <eg />, continuous, differentiable, or infinitely differentiable functions. Not surprisingly, these subsets turn out to be subspaces of <m>F(I,\R)</m>.
   </p>
   <definition xml:id="d_subspace_functions">
   <title>Function subspaces</title>
@@ -509,32 +509,32 @@ Geometrically this is the line in <m>\R^3</m> passing through <m>(0,0,0)</m> wit
     <idx><h>polynomial</h></idx>
     <statement>
       <p>
-        Let <m>X\subseteq \R</m> be a nondegenerate interval.
+        Let <m>I\subseteq \R</m> be a nondegenerate interval.
       <ol>
         <li>
           <p>
-            We denote by <m>C(X)</m> the set of all continuous functions on <m>X</m>: <ie />,
+            We denote by <m>C(I)</m> the set of all continuous functions on <m>I</m>: <ie />,
             <me>
-            C(X)=\{f\in F(X,\R)\colon f \text{ is continuous on } X\}
+            C(I)=\{f\in F(I,\R)\colon f \text{ is continuous on } I\}
             </me>.
           </p>
         </li>
         <li>
           <p>
-            Fix <m>n\geq 1</m>. A function <m>f\in F(X,\R)</m> is <term><m>C^n</m> on X</term> if <m>f</m> is <m>n</m>-times differentiable on <m>X</m> and its <m>n</m>-th derivative <m>f^{(n)}(x)</m> is continuous. The set of all <m>C^n</m> functions on <m>X</m> is denoted <m>C^n(X)</m>.
+            Fix <m>n\geq 1</m>. A function <m>f\in F(I,\R)</m> is <term><m>C^n</m> on I</term> if <m>f</m> is <m>n</m>-times differentiable on <m>I</m> and its <m>n</m>-th derivative <m>f^{(n)}(x)</m> is continuous. The set of all <m>C^n</m> functions on <m>I</m> is denoted <m>C^n(I)</m>.
           </p>
         </li>
         <li>
           <p>
-            A function <m>f\in F(X,\R)</m> is <term><m>C^\infty</m> on X</term> if <m>f</m> is infinitely differentiable on <m>X</m>. The set of all <m>C^\infty</m> functions on <m>X</m> is denoted <m>C^\infty(X)</m>.
+            A function <m>f\in F(I,\R)</m> is <term><m>C^\infty</m> on I</term> if <m>f</m> is infinitely differentiable on <m>I</m>. The set of all <m>C^\infty</m> functions on <m>I</m> is denoted <m>C^\infty(I)</m>.
           </p>
         </li>
         <li>
           <p>
-            A <term>polynomial on <m>X</m> of degree at most <m>n</m></term> is a polynomial of the form <m>f(x)=\anpoly</m>, where <m>a_i\in \R</m>. (See <xref ref="s_polynomials"/>, and in particular <xref ref="d_polynomials"/> for more details about polynomials.) Recall that if <m>a_n\ne 0</m>, we call <m>n</m> the the degree of <m>f</m>, denoted <m>\deg f</m>.
+            A <term>polynomial on <m>I</m> of degree at most <m>n</m></term> is a polynomial of the form <m>f(x)=\anpoly</m>, where <m>a_i\in \R</m>. (See <xref ref="s_polynomials"/>, and in particular <xref ref="d_polynomials"/> for more details about polynomials.) Recall that if <m>a_n\ne 0</m>, we call <m>n</m> the the degree of <m>f</m>, denoted <m>\deg f</m>.
           </p>
           <p>
-            The set of polynomials of degree at most <m>n</m> on <m>X</m> is denoted <m>P_n(X)</m>; the set of all polynomials on <m>X</m> is denoted <m>P(X)</m>. When <m>X=\R</m>, we shorten the notation to <m>P_n</m> and <m>P</m>.
+            The set of polynomials of degree at most <m>n</m> on <m>I</m> is denoted <m>P_n(I)</m>; the set of all polynomials on <m>I</m> is denoted <m>P(I)</m>. When <m>I=\R</m>, we shorten the notation to <m>P_n</m> and <m>P</m>.
           </p>
         </li>
       </ol>
@@ -545,9 +545,9 @@ Geometrically this is the line in <m>\R^3</m> passing through <m>(0,0,0)</m> wit
     <title>Function subspaces</title>
     <statement>
       <p>
-        Let <m>X\subseteq \R</m> be an interval. The sets <m>C(X), C^n(X), C^\infty(X), P_n(X), P(X)</m> are all subspaces of <m>F(X,\R)</m>. Thus we have the following chain of subspaces:
+        Let <m>I\subseteq \R</m> be an interval. The sets <m>C(I), C^n(I), C^\infty(I), P_n(I), P(I)</m> are all subspaces of <m>F(I,\R)</m>. Thus we have the following chain of subspaces:
         <me>
-        P_n(X)\subseteq P(X)\subseteq C^\infty(X)\subseteq C^n(X)\subseteq C(X)\subseteq F(X,\R)
+        P_n(I)\subseteq P(I)\subseteq C^\infty(I)\subseteq C^n(I)\subseteq C(I)\subseteq F(I,\R)
         </me>.
       </p>
     </statement>
@@ -557,7 +557,7 @@ Geometrically this is the line in <m>\R^3</m> passing through <m>(0,0,0)</m> wit
         <ul>
           <li>
             <p>
-              The zero function <m>0_X\colon X\rightarrow \R</m> is an element of all of these sets: <ie /> the zero function is continuous, <m>C^n</m>, <m>C^\infty</m>, a polynomial, <etc />.
+              The zero function <m>0_I\colon I\rightarrow \R</m> is an element of all of these sets: <ie /> the zero function is continuous, <m>C^n</m>, <m>C^\infty</m>, a polynomial, <etc />.
             </p>
           </li>
           <li>
@@ -566,7 +566,7 @@ Geometrically this is the line in <m>\R^3</m> passing through <m>(0,0,0)</m> wit
             </p>
           </li>
         </ul>
-        The second, <q>closed under linear combinations</q> observation is easily seen for <m>P(X)</m> and <m>P_n(X)</m> (<ie />, the sum of two polynomials of degree at most <m>n</m> is clearly a polynomial of degree at most <m>n</m>); for the other spaces, this is a result of calculus properties to the effect that adding and scaling functions preserves continuity and differentiability.
+        The second, <q>closed under linear combinations</q> observation is easily seen for <m>P(I)</m> and <m>P_n(I)</m> (<ie />, the sum of two polynomials of degree at most <m>n</m> is clearly a polynomial of degree at most <m>n</m>); for the other spaces, this is a result of calculus properties to the effect that adding and scaling functions preserves continuity and differentiability.
       </p>
       <p>
         Lastly, that each subset relation holds in the given chain follows from similar observations: polynomials are infinitely differentiable, differentiable functions are continuous, <etc />.
@@ -574,17 +574,17 @@ Geometrically this is the line in <m>\R^3</m> passing through <m>(0,0,0)</m> wit
     </proof>
   </theorem>
       <p>
-         When working within the polynomial spaces <m>P_n(X)</m> or <m>P(X)</m>, we will constantly make use of the fact that a polynomial <m>f(x)=\anpoly</m> is completely determined by its coefficients <m>a_i</m>, and that equality between polynomials can be decided by comparing their coefficients. This is the content of <xref ref="cor_poly_equality"/>. We restate the result here in a more convenient form. 
+         When working within the polynomial spaces <m>P_n(I)</m> or <m>P(I)</m>, we will constantly make use of the fact that a polynomial <m>f(x)=\anpoly</m> is completely determined by its coefficients <m>a_i</m>, and that equality between polynomials can be decided by comparing their coefficients. This is the content of <xref ref="cor_poly_equality"/>. We restate the result here in a more convenient form. 
       </p>
       <theorem xml:id="th_poly_equality">
         <title>Polynomial equality</title>
         <statement>
           <p>
-            Let <m>X\subseteq \R</m> be a nondegenerate interval, and let
+            Let <m>I\subseteq \R</m> be a nondegenerate interval, and let
             <md>
               <mrow>f(x) \amp =\anpoly \amp g(x)\amp=\bnpoly</mrow>
             </md>
-            be polynomials on <m>X</m>. 
+            be polynomials on <m>I</m>. 
             <ol>
         <li xml:id="th_f_is_g">
           <p>
@@ -604,11 +604,11 @@ Geometrically this is the line in <m>\R^3</m> passing through <m>(0,0,0)</m> wit
   <remark xml:id="rm_subspaces_derivatives">
     <title>Differential operators</title>
     <p>
-      Let <m>X\subseteq \R</m> be an interval. Define <m>T_1\colon C^1(X)\rightarrow C(X)</m> as <m>T_1(f)=f'</m>: <ie />, <m>T_1</m> takes as input a <m>C^1</m> function on the interval <m>X</m>, and returns its (first) derivative. Note that the definition of <m>C^1</m> ensures that <m>f'</m> exists and is continuous on <m>X</m>: hence <m>f'
-      \in C(X)</m>, as claimed.
+      Let <m>I\subseteq \R</m> be an interval. Define <m>T_1\colon C^1(I)\rightarrow C(I)</m> as <m>T_1(f)=f'</m>: <ie />, <m>T_1</m> takes as input a <m>C^1</m> function on the interval <m>I</m>, and returns its (first) derivative. Note that the definition of <m>C^1</m> ensures that <m>f'</m> exists and is continuous on <m>I</m>: hence <m>f'
+      \in C(I)</m>, as claimed.
     </p>
     <p>
-      The operator <m>T_1</m> is a linear transformation. Indeed, given <m>c,d\in \R</m> and <m>f,g\in C^1(X)</m>, we have
+      The operator <m>T_1</m> is a linear transformation. Indeed, given <m>c,d\in \R</m> and <m>f,g\in C^1(I)</m>, we have
       <md>
       <mrow>T_1(cf+dg)   \amp = (cf+dg)' \amp \text{(by def.)} </mrow>
       <mrow> \amp =(cf)'+(dg)' \amp \text{(derivative prop.)} </mrow>
@@ -619,10 +619,10 @@ Geometrically this is the line in <m>\R^3</m> passing through <m>(0,0,0)</m> wit
     <p>
       Since taking <m>n</m>-th derivatives amounts to <em>composing</em> the derivative operator <m>T_1</m> with itself <m>n</m> times, it follows from <xref ref="th_transform_composition"/> that for any <m>n\geq 1</m> the  map
       <md>
-      <mrow>T_n\colon C^n(X) \amp \rightarrow C(X) </mrow>
+      <mrow>T_n\colon C^n(I) \amp \rightarrow C(I) </mrow>
       <mrow> f \amp\mapsto f^{(n)} </mrow>
       </md>,
-      which takes a function <m>f</m> to its <m>n</m>-th derivative, is also linear. (Note that we are careful to pick the domain <m>C^n(X)</m> to guarantee this operation is well-defined!)
+      which takes a function <m>f</m> to its <m>n</m>-th derivative, is also linear. (Note that we are careful to pick the domain <m>C^n(I)</m> to guarantee this operation is well-defined!)
     </p>
     <p>
       Lastly, by <xref ref="ex_transformation_add_scale"/>, we can add and scale these various operators to obtain more general linear transformations of the form

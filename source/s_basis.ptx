@@ -245,7 +245,7 @@
       </li>
       <li>
         <p>
-          Every element <m>\boldv\in V</m> can be written as a linear combination of elements of <m>B</m>, and furthermore this linear combination is unique: <ie /> if we have
+          Every element <m>\boldv\in V</m> can be written as a linear combination of elements of <m>B</m>, and furthermore this linear combination is unique: <ie />, if we have
           <me>
             \boldv=c_1\boldv_1+c_2\boldv_2+\cdots +c_r\boldv_r=d_1\boldv_1+d_2\boldv_2+\cdots +d_s\boldv_r
           </me>,

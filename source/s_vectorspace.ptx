@@ -460,7 +460,7 @@ A1+A2+A3+A4+A5+A6+axes(1,1,color="black")+P+Q+T1+T2+T3+T4+T5+T6+T7+T8
    <case>
     <title>Verification of axioms</title>
     <p>
-    Exercise. Observe that since the vector operations are defined entry-wise, the vector arithmetic in <m>\R^\infty</m> not so very different from that of <m>\R^n</m>.
+    See <xref ref="ex_verify_Rinfty"/>. Observe that since the vector operations are defined entry-wise, the vector arithmetic in <m>\R^\infty</m> is not so very different from that of <m>\R^n</m>.
     </p>
    </case>
  </statement>
@@ -468,51 +468,51 @@ A1+A2+A3+A4+A5+A6+axes(1,1,color="black")+P+Q+T1+T2+T3+T4+T5+T6+T7+T8
 
 <example xml:id="ex_vs_functions">
   <title>Real-valued functions</title>
-  <idx><h>vector space</h><h>of real-valued functions on a set</h></idx>
+  <idx><h>vector space</h><h>of real-valued functions on an interval</h></idx>
   <notation>
-    <usage><m>F(X,\R)</m></usage>
-    <description>vector space of functions from <m>X</m> to <m>\R</m></description>
+    <usage><m>F(I,\R)</m></usage>
+    <description>vector space of functions from <m>I</m> to <m>\R</m></description>
   </notation>
   <statement>
     <case>
     <title>Underlying set</title>
     <p>
-    Let <m>X</m> be a set. The <term>vector space of functions from <m>X</m> to <m>\R</m></term>, denoted <m>F(X,\R)</m>, is the set of all real-valued functions <m>f\colon X\rightarrow \R</m>: <ie />, the set of all functions with domain <m>X</m> and codomain <m>\R</m>.
+    Let <m>I</m> be an interval in the real line. The <term>vector space of functions from <m>I</m> to <m>\R</m></term>, denoted <m>F(I,\R)</m>, is the set of all real-valued functions <m>f\colon I\rightarrow \R</m>: <ie />, the set of all functions with domain <m>I</m> and codomain <m>\R</m>.
     </p>
    </case>
    <case>
     <title>Vector operations</title>
     <p>
-      The vector operations on <m>F(X,\R)</m> defined below are generalizations of operations you may have seen before when learning about function transformations.
+      The vector operations on <m>F(I,\R)</m> defined below are generalizations of operations you may have seen before when learning about function transformations.
     </p>
    <p>
-     <em>Scalar multiplication</em>. Given <m>c\in \R</m> and a real-valued function <m>f\colon X\rightarrow \R</m>, we let <m>cf</m> be the function defined as
+     <em>Scalar multiplication</em>. Given <m>c\in \R</m> and a real-valued function <m>f\colon I\rightarrow \R</m>, we let <m>cf</m> be the function defined as
      <me>
-       (cf)(x)=c(f(x)) \text{ for all } x\in X
+       (cf)(x)=c(f(x)) \text{ for all } x\in I
      </me>.
    </p>
    <p>
-     <em>Vector addition</em>. Given real-valued functions <m>f</m> and <m>g</m> with domain <m>X</m>, we let <m>f+g</m> be the function defined as
+     <em>Vector addition</em>. Given real-valued functions <m>f</m> and <m>g</m> with domain <m>I</m>, we let <m>f+g</m> be the function defined as
      <me>
-       (f+g)(x)=f(x)+g(x) \text{ for all } x\in X
+       (f+g)(x)=f(x)+g(x) \text{ for all } x\in I
      </me>.
    </p>
    </case>
    <case>
     <title>Zero vector and vector inverses</title>
    <p>
-   The zero vector <m>F(X,\R)</m> is the constant function <m>O_X</m> that assigns a value of 0 to all elements of <m>X</m>: i.e., <m>0_X(x)=0</m> for all <m>x\in X</m>.
+   The zero vector <m>F(I,\R)</m> is the constant function <m>O_I</m> that assigns a value of 0 to all elements of <m>I</m>: i.e., <m>0_I(x)=0</m> for all <m>x\in I</m>.
  </p>
    <p>
-   Given a function <m>f\in F(X,\R)</m>, its vector inverse is the function <m>-f</m> defined as
+   Given a function <m>f\in F(I,\R)</m>, its vector inverse is the function <m>-f</m> defined as
    <me>
-     (-f)(x)=-f(x) \text{ for all } x\in X
+     (-f)(x)=-f(x) \text{ for all } x\in I
    </me>.
    </p>
    </case>
    <case>
     <title>Verification of axioms</title>
-    Exercise.
+    See <xref ref="ex_verify_functions"/>
    </case>
   </statement>
 </example>
