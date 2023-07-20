@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -13,14 +13,15 @@
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">Now assume that <span class="process-math">\(A\)</span> and <span class="process-math">\(A'\)</span> are similar. By definition this means there is an invertible matrix <span class="process-math">\(P\)</span> such that <span class="process-math">\(A'=P^{-1}AP\text{.}\)</span> Define <span class="process-math">\(T\colon \R^n\rightarrow \R^n\)</span> as the matrix transformation <span class="process-math">\(T=T_A\text{.}\)</span> According to <a href="" class="xref" data-knowl="./knowl/th_matrixreps_matrixtransforms.html" title="Theorem 5.2.3: Standard matrix as a matrix representation">Theorem 5.2.3</a> we have <span class="process-math">\(A=[T]_B\)</span> where <span class="process-math">\(B\)</span> is the standard basis of <span class="process-math">\(\R^n\text{.}\)</span>  Next, letting <span class="process-math">\(B'\)</span> be the ordered basis whose <span class="process-math">\(j\)</span>-th element is the <span class="process-math">\(j\)</span>-th column of <span class="process-math">\(P\text{,}\)</span> we have <span class="process-math">\(P=\underset{B'\rightarrow B}{P}\)</span> (<a href="" class="xref" data-knowl="./knowl/eg_changebasis_standard.html" title="Example 5.3.7: V=\R^n B standard basis">Example 5.3.7</a>), and hence</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_matrixreps_matrixtransforms.html ./knowl/eg_changebasis_standard.html">
+<div class="para">Note first that <span class="process-math">\(A=[T]_B\)</span> where <span class="process-math">\(B\)</span> is the standard basis of <span class="process-math">\(\R^3\text{.}\)</span> (See <a href="" class="xref" data-knowl="./knowl/th_matrixreps_matrixtransforms.html" title="Theorem 4.2.3: Standard matrix as a matrix representation">Theorem 4.2.3</a>.) Since <span class="process-math">\(A\)</span> is upper triangular, we easily see that its characteristic polynomial is <span class="process-math">\(p(t)=(t-1)(t-3)^2\text{.}\)</span> Next we investigate the eigenspaces:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_matrixreps_matrixtransforms.html">
 \begin{equation*}
-A'=P^{-1}AP=\underset{B\rightarrow B'}{P}\, [T]_B\, \underset{B'\rightarrow B}{P}=[T]_{B'}\text{,}
+W_2=\NS(2I-A)=\NS \begin{amatrix}[rrr]0\amp -1\amp -1\\ 0\amp 1\amp -2\\ 0\amp 0\amp 1  \end{amatrix},coordinatecoordinate
+W_3=\NS(3I-A)=\NS \begin{amatrix}[rrr]-1\amp -1\amp -1\\ 0\amp 0\amp -2\\ 0\amp 0\amp 0  \end{amatrix}\text{.}
 \end{equation*}
 </div>
-<div class="para">as desired.</div>
+<div class="para">By inspection we see that both <span class="process-math">\(2I-A\)</span> and <span class="process-math">\(3I-A\)</span> have rank 2, and hence nullity <span class="process-math">\(3-2=1\)</span> by the rank-nullity theorem. Thus both eigenspaces have dimension one, and we have <span class="process-math">\(\dim W_2+\dim W_3=1+1=2\lt 3\text{.}\)</span> We conclude that <span class="process-math">\(A\text{,}\)</span> and hence <span class="process-math">\(T_A\text{,}\)</span> is not diagonalizable.</div>
 </div>
-<span class="incontext"><a href="s_changeofbasis.html#p-3430" class="internal">in-context</a></span>
+<span class="incontext"><a href="s_diagonalization.html#p-3430" class="internal">in-context</a></span>
 </body>
 </html>

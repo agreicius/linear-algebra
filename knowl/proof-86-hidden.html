@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -10,22 +10,19 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body class="ignore-math"><article class="hiddenproof"><ol class="decimal">
-<li><div class="para logical">
-<div class="para">We must show that <span class="process-math">\(\proj{c\boldv+d\boldw}{W}=c\,\proj{\boldv}{W}+d\,\proj{\boldw}{W}\)</span> for all <span class="process-math">\(c,d\in\R\)</span> and <span class="process-math">\(\boldv,\boldw\in V\text{.}\)</span> We pick an orthogonal basis <span class="process-math">\(B=\{\boldv_1,\boldv_2, \dots, \boldv_r\}\)</span> of <span class="process-math">\(W\)</span> and compute, using formula <a href="" class="xref" data-knowl="./knowl/eq_ortho_proj_formula.html" title="Equation 4.3.2">(4.3.2)</a>:</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_ortho_proj_formula.html">
+<body class="ignore-math"><article class="hiddenproof"><div class="para logical">
+<div class="para">We prove statement (1) as a chain of equivalences:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_coordinates.html ./knowl/th_coordinates.html ./knowl/th_matrixrep.html ./knowl/th_coordinates.html">
 \begin{align*}
-\proj{c\boldv+d\boldw}{W} \amp=\sum_{i=1}^{r}\frac{\langle c\boldv+d\boldw, \boldv_i\rangle}{\langle\boldv_i, \boldv_i\rangle }\boldv_i \\
-\amp=\sum_{i=1}^r\frac{c\langle \boldv,\boldv_i\rangle+d\langle \boldw, \boldv_i\rangle}{\langle \boldv_i, \boldv_i\rangle}\boldv_i \\
-\amp =c\sum_{i=1}^r\frac{\angvec{\boldv, \boldv_i}}{\angvec{\boldv_i, \boldv_i}}\boldv_i+d\sum_{i=1}^r\frac{\angvec{\boldw, \boldv_i}}{\angvec{\boldv_i, \boldv_i}}\boldv_i\\
-\amp = c\,\proj{\boldv}{W}+d\,\proj{\boldw}{W}\text{.}
+\boldv \text{ is an eigenvector of } T \amp \iff \boldv\ne 0 \text{ and } T\boldv=\lambda \boldv \\
+\amp \iff \boldx=[\boldv]_B\ne \boldzero \text{ and } [T\boldv]_B=[\lambda\boldv] \amp (\knowl{./knowl/th_coordinates.html}{\text{4.1.9}}, (2)) \\
+\amp \iff \boldx=[\boldv]_B\ne \boldzero \text{ and } [T\boldv]_B=\lambda[\boldv]_B \amp (\knowl{./knowl/th_coordinates.html}{\text{4.1.9}}, (1))\\
+\amp \iff \boldx=[\boldv]\ne \boldzero \text{ and } [T]_B[\boldv]_B=\lambda[\boldv]_B \amp (\knowl{./knowl/th_matrixrep.html}{\text{4.2.6}})\\
+\amp \iff \boldx\ne 0 \text{ and } A\boldx=\lambda\boldx\\
+\amp \iff \boldx \text{ is an eigenvector of } A\text{.}
 \end{align*}
 </div>
-</div></li>
-<li>
-<div class="para">By definition we have <span class="process-math">\(\proj{\boldv}{W}\in W\)</span> for all <span class="process-math">\(\boldv\in W\text{,}\)</span> and thus <span class="process-math">\(\im \operatorname{proj}_W \subseteq W\text{.}\)</span> For the other direction, if <span class="process-math">\(\boldw\in W\text{,}\)</span> then <span class="process-math">\(\boldw=\proj{\boldw}{W}\)</span> (<a href="" class="xref" data-knowl="./knowl/ex_orthoproj_props.html" title="Exercise 4.3.6.12">Exercise 4.3.6.12</a>), and thus <span class="process-math">\(\boldw\in \im\operatorname{proj}\text{.}\)</span> This proves <span class="process-math">\(\im\operatorname{proj}=W\text{.}\)</span>
+<div class="para">From (1) it follows directly that if <span class="process-math">\(\lambda\)</span> is an an eigenvalue of <span class="process-math">\(T\text{,}\)</span> then it is an eigenvalue of <span class="process-math">\(A=[T]_B\text{.}\)</span> Conversely, if <span class="process-math">\(\lambda\)</span> is an eigenvalue of <span class="process-math">\(A=[T]_B\text{,}\)</span> then there is a nonzero <span class="process-math">\(\boldx\in\R^n \)</span> such that <span class="process-math">\(A\boldx=\lambda \boldx\text{.}\)</span> Since <span class="process-math">\([\phantom{\boldv}]_B\)</span> is surjective (<a href="" class="xref" data-knowl="./knowl/th_coordinates.html" title="Theorem 4.1.9: Coordinate vector transformation">Theorem 4.1.9</a>, (3)), there is a vector <span class="process-math">\(\boldv\in V\)</span> such that <span class="process-math">\([\boldv]_B\text{.}\)</span> It follows from (1) that <span class="process-math">\(\boldv\)</span> is a <span class="process-math">\(\lambda\)</span>-eigenvector of <span class="process-math">\(T\text{,}\)</span> and thus that <span class="process-math">\(\lambda\)</span> is an eigenvalue of <span class="process-math">\(T\text{.}\)</span>
 </div>
-<div class="para">The fact that <span class="process-math">\(\NS\operatorname{proj}=W^\perp\)</span> follows from the equivalence stated in (b) of <a href="" class="xref" data-knowl="./knowl/ex_orthoproj_props.html" title="Exercise 4.3.6.12">Exercise 4.3.6.12</a>.</div>
-</li>
-</ol></article></body>
+</div></article></body>
 </html>

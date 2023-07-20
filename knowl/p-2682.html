@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -11,25 +11,16 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
+<h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">How do the fundamental spaces of a matrix <span class="process-math">\(A\)</span> relate to its associated matrix transformation <span class="process-math">\(T_A\text{?}\)</span> It is easy to see that <span class="process-math">\(\NS T_A=\NS A\text{,}\)</span> and indeed we made this connection in <a href="s_nullspace_image.html" class="internal" title="Section 3.4: Null space and image">Section 3.4</a>. What about <span class="process-math">\(\im T_A\text{?}\)</span> We claim that <span class="process-math">\(\im T_A=\CS A\text{.}\)</span> To see why, let <span class="process-math">\(\boldc_1, \boldc_2,\dots, \boldc_n\)</span> be the columns of <span class="process-math">\(A\)</span> and consider the following chain of equivalences:</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/s_nullspace_image.html ./knowl/th_column_method.html">
-\begin{align*}
-\boldy\in \im T_A \amp\iff \boldy=T_A(\boldx) \text{ for some } \boldx\in \mathbb{R}^n \\
-\amp\iff  \boldy=A \boldx \text{ for some } \boldx=(x_1,x_2,\dots, x_n)\in \mathbb{R}^n
-\amp (\text{definition of } T_A) \\
-\amp \iff \boldy=x_1\boldc_1+x_2\boldc_2+\cdots +x_n\boldc_n \text{ for some } x_i\in \mathbb{\R} \amp (\knowl{./knowl/th_column_method.html}{\text{Theorem 2.1.24}})\\
-\amp \iff \boldy\in\CS A\text{.}
-\end{align*}
+<div class="para">Let <span class="process-math">\(A\)</span> be an <span class="process-math">\(m\times n\)</span> matrix, and let <span class="process-math">\(T_A\colon \R^n\rightarrow \R^m\)</span> be its corresponding matrix transformation. The following equalities hold:</div>
+<div class="displaymath process-math">
+\begin{align}
+\NS A\amp=\NS T_A \tag{3.8.1}\\
+\CS A\amp=\im T_A \tag{3.8.2}\\
+\CS A \amp= \{\boldy\in \R^m\colon A\boldx=\boldy \text{ is consistent}\} \text{.}\tag{3.8.3}
+\end{align}
 </div>
-<div class="para">We now highlight three equivalent statments in this chain</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/s_nullspace_image.html ./knowl/th_column_method.html">
-\begin{equation*}
-\boldy\in\CS A \iff \boldy=A \boldx \text{ for some } \boldx\in \R^n \iff \boldy\in \im\CS A\text{.}
-\end{equation*}
-</div>
-<div class="para">The first equivalence tells us that <span class="process-math">\(\CS A\)</span> is the set of <span class="process-math">\(\boldy\in \R^m\)</span> for which the matrix equation <span class="process-math">\(A\boldx=\boldy\)</span> is consistent. The second equivalence tells us that <span class="process-math">\(\CS A=\im T_A\text{.}\)</span> In sum, we have proven the following result.</div>
 </div>
 <span class="incontext"><a href="s_rank_nullity.html#p-2682" class="internal">in-context</a></span>
 </body>

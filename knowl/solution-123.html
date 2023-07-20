@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -13,34 +13,39 @@
 <body class="ignore-math">
 <div class="solution solution-like">
 <h4 class="heading">
-<span class="type">Solution</span><span class="space"> </span><span class="codenumber">5.6.6.1</span><span class="period">.</span>
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">5.3.4.1</span><span class="period">.</span>
 </h4>
 <div class="para logical">
-<div class="para">Given a symmetric <span class="process-math">\(2\times 2\)</span> matrix</div>
-<div class="displaymath process-math">
+<div class="para">First, solving <span class="process-math">\(x-2y-z=0\)</span> for <span class="process-math">\((x,y,z)\text{,}\)</span> we see that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/rm_computing_ortho_comp.html">
 \begin{equation*}
-A=\begin{bmatrix}
-a\amp b\\
-b\amp c
-\end{bmatrix}\text{,}
+W=\{(2s+t,s,t)\colon s,t\in \R\}=\Span\{(2,1,0),(1,0,1)\}\text{.}
 \end{equation*}
 </div>
-<div class="para">we have</div>
-<div class="displaymath process-math">
+<div class="para">Next, according to <a href="" class="xref" data-knowl="./knowl/rm_computing_ortho_comp.html" title="Remark 5.3.2: Computing W^\perp">Remark 5.3.2</a> we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/rm_computing_ortho_comp.html">
 \begin{equation*}
-p(x)=\det(xI-A)=x^2-(a+c)x+(ac-b^2).\text{.}
+\boldx\in W^\perp\iff \boldx\cdot (2,1,0)=0 \text{ and } \boldx\cdot (1,0,1)=0\text{.}
 \end{equation*}
 </div>
-<div class="para">Using the quadratic formula and some algebra, we see that the roots of <span class="process-math">\(p(x)\)</span> are given by where (using the quadratic formula)</div>
-<div class="displaymath process-math">
+<div class="para">It follows that <span class="process-math">\(W^\perp\)</span> is the set of vectors <span class="process-math">\(\boldx=(x,y,z)\)</span> satisfying the linear system</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/rm_computing_ortho_comp.html">
 \begin{equation*}
-\frac{(a+c)\pm \sqrt{(a+c)^2-4ac+4b^2}}{2}=\frac{(a+c)\pm \sqrt{(a-c)^2+4b^2}}{2}\text{.}
+\begin{linsys}{3}
+2x\amp +\amp y \amp \amp  \amp = \amp 0\\
+x\amp \amp  \amp +\amp z \amp = \amp 0
+\end{linsys}.
 \end{equation*}
 </div>
-<div class="para">Since <span class="process-math">\((a-c)^2+4b^2\geq 0\text{,}\)</span> we see that both these roots are real. Thus <span class="process-math">\(p(x)=(x-\lambda_1)(x-\lambda_2)\text{,}\)</span> where <span class="process-math">\(\lambda_1, \lambda_2\in \R\text{.}\)</span>
+<div class="para">Solving this system using Gaussian elimination we conclude that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/rm_computing_ortho_comp.html">
+\begin{equation*}
+W^\perp=\{(t,-2t,-t)\colon t\in \R\}=\Span\{(1,-2,-1)\}\text{,}
+\end{equation*}
+</div>
+<div class="para">which we recognize as the line <span class="process-math">\(\ell\subseteq \R^3\)</span> passing through the origin with direction vector <span class="process-math">\((1,-2,-1)\text{.}\)</span> This is none other than the normal line to the plane <span class="process-math">\(W\)</span> passing through the origin.</div>
 </div>
 </div>
-</div>
-<span class="incontext"><a href="s_spectral_theorem.html#solution-123" class="internal">in-context</a></span>
+<span class="incontext"><a href="s_orthogonal_projection.html#solution-123" class="internal">in-context</a></span>
 </body>
 </html>

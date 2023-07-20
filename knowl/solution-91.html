@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -13,37 +13,13 @@
 <body class="ignore-math">
 <div class="solution solution-like">
 <h4 class="heading">
-<span class="type">Solution</span><span class="space"> </span><span class="codenumber">4.2.4.1</span><span class="period">.</span>
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">4.4.9.1</span><span class="period">.</span>
 </h4>
-<div class="para logical">
-<div class="para">First observe that</div>
-<div class="displaymath process-math">
-\begin{align*}
-\angvec{1,1} \amp = \int_0^{2\pi} 1\, dx=2\pi \\
-\angvec{1, \cos n x} \amp= \int_0^{2\pi}\cos n x\, dx=0 \\
-\angvec{1, \sin n x} \amp= \int_0^{2\pi}\sin n x\, dx=0 
-\end{align*}
-</div>
-<div class="para">for all <span class="process-math">\(n\text{.}\)</span> (Note: since <span class="process-math">\(\angvec{1,1}=2\pi\ne 1\text{,}\)</span> the set <span class="process-math">\(S\)</span> is not orthonormal. ) Next, using the trigonometric identities</div>
-<div class="displaymath process-math">
-\begin{align*}
-\cos\alpha\cos\beta \amp =\frac{1}{2}(\cos(\alpha-\beta)+\cos(\alpha+\beta))\\
-\sin\alpha\sin\beta  \amp=\frac{1}{2}(\cos(\alpha-\beta)-\cos(\alpha+\beta)) \\
-\sin\alpha\cos\beta \amp =\frac{1}{2}(\sin(\alpha-\beta)+\sin(\alpha+\beta)) 
-\end{align*}
-</div>
-<div class="para">it follows that</div>
-<div class="displaymath process-math">
-\begin{align*}
-\langle \cos(nx),\cos(mx)\rangle=\int_0^{2\pi}\cos(nx)\cos(mx)\, dx\amp =\begin{cases} 0\amp  \text{ if \(n\ne m\) }\\
-\pi\amp  \text{ if \(n=m\) }  \end{cases}\\
-\langle \sin(nx),\sin(mx)\rangle=\int_0^{2\pi}\sin(nx)\sin(mx)\, dx\amp =\begin{cases} 0\amp  \text{ if \(n\ne m\) }\\
-\pi\amp  \text{ if \(n=m\) }  \end{cases}\\
-\langle \cos(nx),\sin(mx)\rangle=\int_0^{2\pi}\cos(nx)\sin(mx)\, dx\amp =0 \text{ for any \(n,m\) }\text{.}
-\end{align*}
+<div class="para">Since the reflection operator fixes all elements of the line <span class="process-math">\(\ell\text{,}\)</span> we have <span class="process-math">\(T(\boldx)=\boldx\)</span> for any <span class="process-math">\(\boldx\in \ell\text{.}\)</span> This shows that any nonzero element of <span class="process-math">\(\ell\)</span> is an eigenvectors of <span class="process-math">\(T\)</span> with eigenvalue <span class="process-math">\(1\text{.}\)</span>
+</div> <div class="para">Similarly, since <span class="process-math">\(\ell^\perp\)</span> is orthogonal to <span class="process-math">\(\ell\text{,}\)</span> reflection through <span class="process-math">\(\ell\)</span> takes any element <span class="process-math">\(\boldx=(x,y)\in \ell^\perp\)</span> and maps it to <span class="process-math">\(-\boldx=(-x,-y)\text{.}\)</span> Thus any nonzero element <span class="process-math">\(\boldx\in \ell^\perp\)</span> is  an eigenvector of <span class="process-math">\(T\)</span> with eigenvalue <span class="process-math">\(-1\text{.}\)</span>
+</div> <div class="para">We claim that these two cases exhaust all eigenvectors of <span class="process-math">\(T\text{.}\)</span> Indeed, in general a nonzero vector <span class="process-math">\(\boldv\)</span> lies in the line <span class="process-math">\(\ell'=\Span\{\boldx\}\text{,}\)</span> and its reflection <span class="process-math">\(T(\boldx)\)</span> lies in the line <span class="process-math">\(\ell''=\Span\{T(\boldx)\}\text{,}\)</span> which itself is the result of reflecting the line <span class="process-math">\(\ell'\)</span> through <span class="process-math">\(\ell\text{.}\)</span> Now assume <span class="process-math">\(T(\boldx)=\lambda\boldx\text{.}\)</span> We must have <span class="process-math">\(\lambda\ne 0\text{,}\)</span> since <span class="process-math">\(T(\boldv)\ne \boldzero\)</span> if <span class="process-math">\(\boldx\ne \boldzero\text{;}\)</span> but if <span class="process-math">\(\lambda\ne 0\)</span> it follows that the line <span class="process-math">\(\ell=\Span\{\boldx\}\)</span> and its reflection <span class="process-math">\(\ell''=\Span\{T(\boldv)\}\)</span> are equal. Clearly the only lines that are mapped to themselves by reflection through <span class="process-math">\(\ell\)</span> are <span class="process-math">\(\ell\)</span> and <span class="process-math">\(\ell^\perp\text{.}\)</span> Thus if <span class="process-math">\(\boldx\)</span> is an eigenvector of <span class="process-math">\(T\)</span> it must lie in <span class="process-math">\(\ell\)</span> or <span class="process-math">\(\ell^\perp\text{.}\)</span>
 </div>
 </div>
-</div>
-<span class="incontext"><a href="s_orthogonality.html#solution-91" class="internal">in-context</a></span>
+<span class="incontext"><a href="s_eigenvectors.html#solution-91" class="internal">in-context</a></span>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -13,21 +13,24 @@
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">Consider <span class="process-math">\(\R^n\)</span> with a choice of weighted dot product</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\langle (x_1,x_2,\dots, x_n), (y_1,y_2,\dots, y_n)\rangle=k_1x_1y_1+k_2x_2y_2+\cdots +k_nx_ny_n,
-\end{equation*}
+<div class="para">We have <span class="process-math">\(B=(x^3, x^2, x, 1)\)</span> and <span class="process-math">\(B'=(x^2, x, 1)\text{.}\)</span> Denote by <span class="process-math">\(\boldc_j\)</span> the <span class="process-math">\(j\)</span>-th column of <span class="process-math">\(A\text{.}\)</span> We use <a href="" class="xref" data-knowl="./knowl/eq_matrixrep_formula.html" title="Equation 4.2.1">(4.2.1)</a> to compute:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_matrixrep_formula.html">
+\begin{align*}
+\boldc_1\amp =[T(x^3)]_{B'}=[3x^2]_{B'}=\begin{bmatrix} 3\\
+0\\
+0 \end{bmatrix} \amp \boldc_2\amp =[T(x^2)]_{B'}=[2x]_{B'}=\begin{bmatrix} 0\\
+2\\
+0 \end{bmatrix}\\
+\boldc_3\amp =[T(x)]_{B'}=[1]_{B'}=\begin{bmatrix} 0\\
+0\\
+1 \end{bmatrix} \amp \boldc_4\amp =[T(1)]_{B'}=[0]_{B'}=\begin{bmatrix} 0\\
+0\\
+0 \end{bmatrix}\text{.}
+\end{align*}
 </div>
-<div class="para">where <span class="process-math">\(k_1,k_2,\dots, k_n\)</span> are fixed positive constants. With respect to this inner product the distance between two vectors <span class="process-math">\(\boldx=(x_1,x_2,\dots, x_n)\)</span> and <span class="process-math">\(\boldy=(y_1,y_2,\dots, y_n)\)</span> is</div>
-<div class="displaymath process-math">
-\begin{equation*}
-d(\boldx,\boldy)=\norm{\boldx-\boldy}=\sqrt{k_1(x_1-y_1)^2+k_2(x_2-y_2)^2+\cdots +k_n(x_n-y_n)^2}\text{.}
-\end{equation*}
-</div>
-<div class="para">Thus <span class="process-math">\(d(\boldx, \boldy)\)</span> is an aggregate measure of the difference between the corresponding entries of <span class="process-math">\(\boldx\)</span> and <span class="process-math">\(\boldy\text{,}\)</span> as weighted by our choice of the constants <span class="process-math">\(k_i\text{.}\)</span>
+<div class="para">Thus <span class="process-math">\(A=\begin{bmatrix}3\amp 0\amp 0\amp 0\\ 0\amp 2\amp 0\amp 0\\ 0\amp 0\amp 1\amp 0 \end{bmatrix}\text{.}\)</span>
 </div>
 </div>
-<span class="incontext"><a href="s_innerproducts.html#p-2950" class="internal">in-context</a></span>
+<span class="incontext"><a href="s_matrixreps.html#p-2950" class="internal">in-context</a></span>
 </body>
 </html>

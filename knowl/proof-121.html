@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -13,30 +13,31 @@
 <body class="ignore-math">
 <article class="hiddenproof"><h4 class="heading"><span class="type">Proof</span></h4>
 <div class="para logical">
-<div class="para">Let <span class="process-math">\(B=(\boldv_1, \boldv_2, \dots, \boldv_n)\text{.}\)</span> We have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_orthogonal_basis_formula.html ./knowl/d_innerproduct.html ./knowl/eq_self-adjoint.html ./knowl/ex_self-adjoint_symmetric.html">
+<div class="para">Fix vectors <span class="process-math">\(\boldv\)</span> and <span class="process-math">\(\boldw\text{.}\)</span> For any <span class="process-math">\(t\in\R\)</span> we have by positivity</div>
+<div class="displaymath process-math">
 \begin{equation*}
-A=\begin{amatrix}[cccc]\vert \amp \vert \amp \amp\vert \\
-\left[T(\boldv_1)\right]_B\amp [T(\boldv_2)]_B\amp \cdots \amp [T(\boldv_n)]_B\\
-\vert \amp \vert \amp \amp\vert
-\end{amatrix}\text{.}
+0\leq \langle t\boldv-\boldw,t\boldv-\boldw\rangle=\langle\boldv,\boldv\rangle t^2-2\langle\boldv,\boldw\rangle t+\langle\boldw,\boldw\rangle=at^2-2bt+c\text{,}
 \end{equation*}
 </div>
-<div class="para">Furthermore, since <span class="process-math">\(B\)</span> is orthonormal, the <span class="process-math">\(i\)</span>-th entry of <span class="process-math">\([T(\boldv_j)]_B\)</span> is computed as <span class="process-math">\(\langle T(\boldv_j), \boldv_i\rangle\)</span> (<a href="" class="xref" data-knowl="./knowl/th_orthogonal_basis_formula.html" title="Theorem 4.2.7: Calculating with orthogonal bases">4.2.7</a>). Thus <span class="process-math">\(A=[a_{ij}]\text{,}\)</span> where</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_orthogonal_basis_formula.html ./knowl/d_innerproduct.html ./knowl/eq_self-adjoint.html ./knowl/ex_self-adjoint_symmetric.html">
+<div class="para">where</div>
+<div class="displaymath process-math">
+\begin{equation}
+a=\langle\boldv,\boldv\rangle, \ b=\langle\boldv,\boldw\rangle, \   c=\langle\boldw,\boldw\rangle=\norm{w}^2\text{.}\tag{5.1.1}
+\end{equation}
+</div>
+<div class="para">Since <span class="process-math">\(at^2-2b\,t+c\geq 0\)</span> for all <span class="process-math">\(t\in \R\)</span> the quadratic polynomial <span class="process-math">\(p(t)=at^2-2b\,t+c\)</span> has <em class="emphasis">at most</em> one root. Using the quadratic formula we conclude that we must have <span class="process-math">\(4b^2-4ac\leq 0\text{,}\)</span> since otherwise <span class="process-math">\(p(t)\)</span> would have two distinct roots. It follows that</div>
+<div class="displaymath process-math">
 \begin{equation*}
-a_{ij}=\langle T(\boldv_j), \boldv_i\rangle.
+4\langle \boldv, \boldw\rangle^2-4\norm{\boldv}^2\norm{\boldw}^2\leq 0\text{,}
 \end{equation*}
 </div>
-<div class="para">It follows that</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_orthogonal_basis_formula.html ./knowl/d_innerproduct.html ./knowl/eq_self-adjoint.html ./knowl/ex_self-adjoint_symmetric.html">
-\begin{align*}
-A \text{ symmetric} \amp\iff a_{ij}=a_{ji} \text{ for all } 1\leq i,j\leq n  \\
-\amp\iff \langle T(\boldv_j), \boldv_i\rangle=\langle T(\boldv_i), \boldv_j\rangle \text{ for all } 1\leq i,j\leq n \\
-\amp \iff \langle T(\boldv_j), \boldv_i\rangle=\langle \boldv_j, T(\boldv_i)\rangle \text{ for all } 1\leq i,j\leq n \amp (\knowl{./knowl/d_innerproduct.html}{\text{4.1.1}}, ii)\text{.}
-\end{align*}
+<div class="para">or equivalently</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\langle\boldv,\boldw\rangle^2\leq \norm{\boldv}^2\norm{\boldw}^2\text{.}
+\end{equation*}
 </div>
-<div class="para">The last equality in this chain of equivalences states that <span class="process-math">\(T\)</span> satisfies property <a href="" class="xref" data-knowl="./knowl/eq_self-adjoint.html" title="Equation 5.6.1">(5.6.1)</a> for all elements of <span class="process-math">\(B\text{.}\)</span> Not surprisingly, this is equivalent to <span class="process-math">\(T\)</span> satisfying the property for <em class="emphasis">all</em> elements in <span class="process-math">\(V\text{.}\)</span> (See <a href="" class="xref" data-knowl="./knowl/ex_self-adjoint_symmetric.html" title="Exercise 5.6.3.9">Exercise 5.6.3.9</a>.) We conclude that <span class="process-math">\(A\)</span> is symmetric if and only if <span class="process-math">\(T\)</span> is self-adjoint.</div>
-</div></article><span class="incontext"><a href="s_spectral_theorem.html#proof-121" class="internal">in-context</a></span>
+<div class="para">Taking square-roots yields the desired inequality.</div>
+</div> <div class="para">The same reasoning shows that the Cauchy-Schwarz inequality is an actual equality if and only if  <span class="process-math">\(p(t)=0\)</span> for some <span class="process-math">\(t\)</span> if and only if <span class="process-math">\(0=\langle t\boldv-\boldw,t\boldv-\boldw\rangle\)</span> if and only if  <span class="process-math">\(\boldv=t\boldw\)</span> for some <span class="process-math">\(t\)</span> (by positivity).</div></article><span class="incontext"><a href="s_innerproducts.html#proof-121" class="internal">in-context</a></span>
 </body>
 </html>

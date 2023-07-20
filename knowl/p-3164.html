@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -11,23 +11,19 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h5 class="heading"><span class="type">Paragraph</span></h5>
+<h6 class="heading"><span class="type">Paragraph</span></h6>
 <div class="para logical">
-<div class="para">Consider again the matrix equation <span class="process-math">\(A\boldx=\boldy\)</span> from <a href="" class="xref" data-knowl="./knowl/eg_least-squares.html" title="Example 4.3.19: Best fitting line">Example 4.3.19</a>. According to <a href="" class="xref" data-knowl="./knowl/th_leastsquares.html" title="Theorem 4.3.22: Least-squares matrix formula">Theorem 4.3.22</a> the least-squares solution can be found by solving the equation <span class="process-math">\(A^TA\boldx=A^T\boldy\)</span> for <span class="process-math">\(\boldx\text{.}\)</span> We compute</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eg_least-squares.html ./knowl/th_leastsquares.html">
-\begin{align*}
-A^TA\amp=\begin{amatrix}[rr]14\amp 0\\ 0\amp 3  \end{amatrix} \amp A^T\boldy\amp =\begin{amatrix}[r] 5\\ 6 \end{amatrix}
-\end{align*}
-</div>
-<div class="para">and solve</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eg_least-squares.html ./knowl/th_leastsquares.html">
+<div class="para">Let <span class="process-math">\(\mathcal{P}_{n}\)</span> be the vector space of all polynomials of degree <span class="process-math">\(n\)</span> or less in the variable <span class="process-math">\(x\text{.}\)</span> Let <span class="process-math">\(D : \mathcal{P}_{3} \to \mathcal{P}_{2}\)</span> be the linear transformation defined by <span class="process-math">\(D(p(x)) = p'(x)\text{.}\)</span> That is, <span class="process-math">\(D\)</span> is the derivative operator. Let</div>
+<div class="displaymath process-math">
 \begin{equation*}
-\begin{amatrix}[rr]14\amp 0\\ 0\amp 3  \end{amatrix}\boldx=\begin{amatrix}[r] 5\\ 6 \end{amatrix}\iff
-\boldx=(5/14, 2),
+\begin{array}{lcl}
+\mathcal{B} \amp  = \amp  \lbrace 1, x, x^{2}, x^{3} \rbrace, \\
+\mathcal{C} \amp  = \amp  \lbrace 2+x-x^{2}, -2-2x+x^{2}, -1-2x+x^{2} \rbrace,
+\end{array}
 \end{equation*}
 </div>
-<div class="para">just as before.</div>
+<div class="para">be ordered bases for <span class="process-math">\(\mathcal{P}_{3}\)</span> and <span class="process-math">\(\mathcal{P}_{2}\text{,}\)</span> respectively. Find the matrix <span class="process-math">\(\lbrack D \rbrack_{\mathcal{B}}^{\mathcal{C}}\)</span> for <span class="process-math">\(D\)</span> relative to the basis <span class="process-math">\(\mathcal{B}\)</span> in the domain and <span class="process-math">\(\mathcal{C}\)</span> in the codomain.</div>
 </div>
-<span class="incontext"><a href="s_orthogonal_projection.html#p-3164" class="internal">in-context</a></span>
+<span class="incontext"><a href="s_changeofbasis.html#p-3164" class="internal">in-context</a></span>
 </body>
 </html>

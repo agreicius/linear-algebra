@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -13,23 +13,19 @@
 <body class="ignore-math">
 <div class="solution solution-like">
 <h4 class="heading">
-<span class="type">Solution</span><span class="space"> </span><span class="codenumber">5.3.8.1</span><span class="period">.</span>
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">4.6.15.1</span><span class="period">.</span>
 </h4>
 <div class="para logical">
-<div class="para">According to <a href="" class="xref" data-knowl="./knowl/eg_changebasis_standard.html" title="Example 5.3.7: V=\R^n B standard basis">Example 5.3.7</a> we have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eg_changebasis_standard.html">
-\begin{equation*}
-\underset{B'\rightarrow B}{P}=\begin{bmatrix}1\amp -\sqrt{3}\\ \sqrt{3}\amp 1 \end{bmatrix}\text{.}
-\end{equation*}
+<div class="para">By <a href="" class="xref" data-knowl="./knowl/th_spectral.html" title="Theorem 4.6.8: Spectral theorem for self-adjoint operators">Theorem 4.6.8</a> it suffices to show that <span class="process-math">\(T\)</span> is orthogonally diagonalizable. According to <a href="" class="xref" data-knowl="./knowl/ex_orthoproj_props.html" title="Exercise 5.3.6.20">Exercise 5.3.6.20</a> we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_spectral.html ./knowl/ex_orthoproj_props.html">
+\begin{align*}
+\boldv\in W \amp \iff T(\boldv)=\boldv\\
+\boldv\in W^\perp \amp \iff T(\boldv)=\boldzero\text{.}
+\end{align*}
 </div>
-<div class="para">We then compute</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eg_changebasis_standard.html">
-\begin{equation*}
-\underset{B\rightarrow B'}{P}=(\underset{B'\rightarrow B}{P})^{-1}=\left(\begin{bmatrix}1\amp -\sqrt{3}\\ \sqrt{3}\amp 1 \end{bmatrix} \right)^{-1}=\frac{1}{4}\begin{bmatrix}1\amp \sqrt{3}\\ -\sqrt{3}\amp 1 \end{bmatrix}\text{.}
-\end{equation*}
+<div class="para">Equivalently, <span class="process-math">\(W=W_1\)</span> and <span class="process-math">\(W^\perp=W_0\)</span> are the 1- and 0-eigenspaces of <span class="process-math">\(T\text{,}\)</span> respectively. Since <span class="process-math">\(\dim W+\dim W^\perp=\dim V\)</span> we conclude that <span class="process-math">\(T\)</span> is diagonalizable. Since clearly <span class="process-math">\(W\)</span> and <span class="process-math">\(W^\perp\)</span> are orthogonal, we conclude that <span class="process-math">\(T\)</span> is in fact othogonally diagonalizable, hence self-adjoint.</div>
 </div>
 </div>
-</div>
-<span class="incontext"><a href="s_changeofbasis.html#solution-106" class="internal">in-context</a></span>
+<span class="incontext"><a href="s_spectral_theorem.html#solution-106" class="internal">in-context</a></span>
 </body>
 </html>

@@ -4265,106 +4265,451 @@ Find bases for the kernel and image of <m>f</m>. <url href="/webwork2_files/help
     <pg source="Library/Mizzou/Matrix_Theory/HW_4/prob_3.pg"/>
   </webwork-reps>
   <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-100" ww-id="webwork-100">
-    <static seed="100" source="Library/Rochester/setLinearAlgebra17DotProductRn/ur_la_17_2.pg">
-      <statement><p>Find the norm of <m>\vec{x}</m> and the unit vector <m>\vec{u}</m> in the direction of <m>\vec{x}</m> if 
-<me>\vec{x} = \left[\begin{array}{c}
--5\cr
--2\cr
+    <static seed="100" source="Library/Rochester/setLinearAlgebra10Bases/ur_la_10_2.pg">
+      <statement><p>Consider the basis <m>B</m> of <m>{\mathbb R}^2</m> consisting of vectors 
+<me>\left[\begin{array}{c}
+-7\cr
+-1
+\end{array}\right] \ \ \ \mbox{and} \ \ \ \left[\begin{array}{c}
+-3\cr
+0
+\end{array}\right].</me>
+Find <m>\vec{x}</m> in <m>{\mathbb R}^2</m> whose coordinate vector relative to the basis <m>B</m> is</p>
+<p><m>[\vec{x}]_B = \left[\begin{array}{c}
 -1\cr
 1
-\end{array}\right].</me></p>
-<p><m>\| \vec{x} \| =</m> <fillin name="AnSwEr0001" characters="20"/>,</p>
-<p><m>\vec{u} =</m> <fillin rows="4"/></p>
+\end{array}\right]</m>.</p>
+<p><m>\vec{x} =</m> <fillin rows="2"/></p>
 </statement>
-      <answer>
-        <p>
-          <m>\sqrt{31}</m>
-        </p>
-      </answer>
     </static>
-    <server-data sourceFilePath="Library/Rochester/setLinearAlgebra17DotProductRn/ur_la_17_2.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
-    <pg source="Library/Rochester/setLinearAlgebra17DotProductRn/ur_la_17_2.pg"/>
+    <server-data sourceFilePath="Library/Rochester/setLinearAlgebra10Bases/ur_la_10_2.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/Rochester/setLinearAlgebra10Bases/ur_la_10_2.pg"/>
   </webwork-reps>
   <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-101" ww-id="webwork-101">
-    <static seed="101" source="Library/Rochester/setLinearAlgebra17DotProductRn/ur_la_17_3.pg">
-      <statement><p>Find the angle <m>\alpha</m> between the vectors 
-<me>\left[\begin{array}{c}
--3\cr
-4\cr
-1
-\end{array}\right] \ \mbox{ and } \ \left[\begin{array}{c}
-5\cr
--3\cr
--4
-\end{array}\right].</me></p>
-<p><m>\alpha =</m> <fillin name="AnSwEr0001" characters="30"/>.</p>
+    <static seed="101" source="Library/Rochester/setLinearAlgebra10Bases/ur_la_10_34.pg">
+      <statement><p>The set <me>B = \left\lbrace \left[\begin{array}{cc}
+-1 \amp 3\cr
+0 \amp 0
+\end{array}\right], \left[\begin{array}{cc}
+0 \amp 1\cr
+0 \amp -2
+\end{array}\right], \left[\begin{array}{cc}
+0 \amp 0\cr
+0 \amp -2
+\end{array}\right] \right\rbrace</me>
+is a basis of the space of upper-triangular <m>2\times 2</m> matrices.</p>
+<p>Find the coordinates of <m>M = \left[\begin{array}{cc}
+-2 \amp 1\cr
+0 \amp 8
+\end{array}\right]</m> with respect to this basis.</p>
+<p><m>[M]_B=</m> <fillin rows="3"/></p>
 </statement>
-      <answer>
-        <p>
-          <m>\cos^{-1}\!\left(-0.859785\right)</m>
-        </p>
-      </answer>
     </static>
-    <server-data sourceFilePath="Library/Rochester/setLinearAlgebra17DotProductRn/ur_la_17_3.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
-    <pg source="Library/Rochester/setLinearAlgebra17DotProductRn/ur_la_17_3.pg"/>
+    <server-data sourceFilePath="Library/Rochester/setLinearAlgebra10Bases/ur_la_10_34.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/Rochester/setLinearAlgebra10Bases/ur_la_10_34.pg"/>
   </webwork-reps>
   <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-102" ww-id="webwork-102">
-    <static seed="102" source="Library/Rochester/setLinearAlgebra21InnerProductSpaces/ur_la_21_4.pg">
-      <statement><p>If <m>f(x)</m> and <m>g(x)</m> are arbitrary polynomials of degree at most 2, then the mapping 
-<me>\langle f,g\rangle = f(-3)g(-3) + f(0)g(0) + f(2)g(2)</me> 
-defines an inner product in <m>P_2</m>. 
-Use this inner product to find <m>\langle f,g\rangle</m>, <m>\| f \|</m>, <m>\| g \|</m>, and the angle 
-<m>\alpha_{f,g}</m> between <m>f(x)</m> and <m>g(x)</m> for 
-<me>f(x) = 2 x^2 + 6 x + 1 \ \mbox{ and } \ g(x) = 3 x^2  - 4 x + 8.</me></p>
-<p><m>\langle f,g\rangle =</m> <fillin name="AnSwEr0001" characters="20"/>,</p>
-<p><m>\| f \| =</m> <fillin name="AnSwEr0002" characters="20"/>,</p>
-<p><m>\| g \| =</m> <fillin name="AnSwEr0003" characters="20"/>,</p>
-<p><m>\alpha_{f,g} =</m> <fillin name="AnSwEr0004" characters="20"/>.</p>
+    <static seed="102" source="Library/NAU/setLinearAlgebra/coordinatesHalfMagix.pg">
+      <statement><p>A square matrix <m>A</m> is called <em> half-magic </em> 
+if the sum of the numbers in each row and column is the same. 
+The common sum in each row and column is denoted by <m>s(A)</m> 
+and is called the <em> magic sum </em> of the matrix <m>A</m>.
+Let <m>V</m> be the vector space of <m>2\times 2</m> half-magic squares.</p>
+<p>(a) Find an ordered basis <m>B</m> for <m>V</m>.</p>
+<p><m>B = (</m>
+<fillin rows="2" cols="2"/>,
+<fillin rows="2" cols="2"/> 
+<m>)</m>.</p>
+<p>(b) Find the coordinate vector <m>[M]_B</m> of <m>M=\left[\begin{array}{cc}
+-4 \amp 3\cr
+3 \amp -4
+\end{array}\right]</m> in your chosen ordered basis <m>B</m>.</p>
+<p><m>[M]_B =</m>
+<fillin rows="2"/>.</p>
+</statement>
+    </static>
+    <server-data sourceFilePath="Library/NAU/setLinearAlgebra/coordinatesHalfMagix.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/NAU/setLinearAlgebra/coordinatesHalfMagix.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-103" ww-id="webwork-103">
+    <static seed="103" source="Library/Rochester/setLinearAlgebra10Bases/ur_la_10_6.pg">
+      <statement><p>The set <m>B={ -\left(1+2x^{2}\right), \ x-4-8x^{2}, \ 14-3x+26x^{2} }</m> is a basis for <m>P_2</m>. Find the coordinates of <m>p(x)=49-11x+90x^{2}</m> relative
+to this basis:</p>
+<p><m>[p(x)]_B=</m> <fillin rows="3"/></p>
+</statement>
+    </static>
+    <server-data sourceFilePath="Library/Rochester/setLinearAlgebra10Bases/ur_la_10_6.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/Rochester/setLinearAlgebra10Bases/ur_la_10_6.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-104" ww-id="webwork-104">
+    <static seed="104" source="Library/TCNJ/TCNJ_MatrixLinearTransformation/problem10.pg">
+      <statement><p>To every linear transformation <m>T</m> from <m>{\mathbb R}^2</m> to 
+<m>{\mathbb R}^2</m>, there is an associated <m>2 \times 2</m> matrix.  Match the following linear transformations with their associated matrix.</p>
+<p><ol>
+<li>
+<p>Reflection about the <m>x</m>-axis</p>
+</li>
+<li>
+<p>Clockwise rotation by <m>\pi/2</m> radians</p>
+</li>
+<li>
+<p>The projection onto the x-axis given by T(x,y)=(x,0)</p>
+</li>
+<li>
+<p>Counter-clockwise rotation by <m>\pi/2</m> radians</p>
+</li>
+<li>
+<p>Reflection about the y-axis</p>
+</li>
+<li>
+<p>Reflection about the line y=x</p>
+</li>
+</ol></p>
+<p><ol label="A.">
+<li>
+<p><m>\begin{pmatrix}0\amp 1\\ -1\amp 0 \end{pmatrix}</m></p>
+</li>
+<li>
+<p><m>\begin{pmatrix}0\amp -1\\ 1\amp 0 \end{pmatrix}</m></p>
+</li>
+<li>
+<p><m>\begin{pmatrix}1\amp 0\\ 0\amp 0 \end{pmatrix}</m></p>
+</li>
+<li>
+<p><m>\begin{pmatrix}0\amp 1\\ 1\amp 0 \end{pmatrix}</m></p>
+</li>
+<li>
+<p><m>\begin{pmatrix}1\amp 0\\ 0\amp -1 \end{pmatrix}</m></p>
+</li>
+<li>
+<p><m>\begin{pmatrix}-1\amp 0\\ 0\amp 1 \end{pmatrix}</m></p>
+</li>
+<li>
+<p>None of the above</p>
+</li>
+</ol></p>
+</statement>
+    </static>
+    <server-data sourceFilePath="Library/TCNJ/TCNJ_MatrixLinearTransformation/problem10.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/TCNJ/TCNJ_MatrixLinearTransformation/problem10.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-105" ww-id="webwork-105">
+    <static seed="105" source="Library/Rochester/setLinearAlgebra15TransfOfLinSpaces/ur_la_15_9.pg">
+      <statement><p>Find the matrix <m>A</m> of the linear transformation <m>T(f(t)) = f(7 t + 6)</m> from <m>P_2</m> to <m>P_2</m>
+with respect to the standard basis for <m>P_2</m>, <m>\left\lbrace 1, t, t^2 \right\rbrace</m>.</p>
+<p><m>A=</m> <fillin rows="3" cols="3"/></p>
+</statement>
+    </static>
+    <server-data sourceFilePath="Library/Rochester/setLinearAlgebra15TransfOfLinSpaces/ur_la_15_9.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/Rochester/setLinearAlgebra15TransfOfLinSpaces/ur_la_15_9.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-106" ww-id="webwork-106">
+    <static seed="106" source="Library/Rochester/setLinearAlgebra15TransfOfLinSpaces/ur_la_15_4.pg">
+      <statement><p>The matrices 
+<me>A_1 = \left[\begin{array}{cc}
+1 \amp 0\cr
+0 \amp 0
+\end{array}\right], \ A_2 = \left[\begin{array}{cc}
+0 \amp 1\cr
+0 \amp 0
+\end{array}\right],</me>
+<me>A_3 = \left[\begin{array}{cc}
+0 \amp 0\cr
+1 \amp 0
+\end{array}\right], \ A_4 = \left[\begin{array}{cc}
+0 \amp 0\cr
+0 \amp 1
+\end{array}\right],</me>
+form a basis for the linear space <m>V={\mathbb R}^{2\times 2}.</m>
+Write the matrix of the linear transformation <m>T:{\mathbb R}^{2\times 2} \rightarrow {\mathbb R}^{2\times 2}</m>
+such that <m>T(A)=12 A + 5 A^T</m> relative to this
+basis.</p>
+<p><fillin rows="4" cols="4"/></p>
+</statement>
+    </static>
+    <server-data sourceFilePath="Library/Rochester/setLinearAlgebra15TransfOfLinSpaces/ur_la_15_4.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/Rochester/setLinearAlgebra15TransfOfLinSpaces/ur_la_15_4.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-107" ww-id="webwork-107">
+    <static seed="107" source="Library/Rochester/setLinearAlgebra15TransfOfLinSpaces/ur_la_15_6.pg">
+      <statement><p>Find the matrix <m>A</m> of the linear transformation
+<me>T(M)=  \left[\begin{array}{cc}
+8 \amp 9\cr
+0 \amp 3
+\end{array}\right] M {\left[\begin{array}{cc}
+8 \amp 9\cr
+0 \amp 3
+\end{array}\right]}^{-1}</me>
+from <m>U^{2\times 2}</m> to <m>U^{2\times 2}</m> (upper triangular matrices) with respect to the standard basis for <m>U^{2\times 2}</m> given by
+<me>\left\lbrace \left[\begin{array}{cc}
+1 \amp 0\cr
+0 \amp 0
+\end{array}\right], \left[\begin{array}{cc}
+0 \amp 1\cr
+0 \amp 0
+\end{array}\right], \left[\begin{array}{cc}
+0 \amp 0\cr
+0 \amp 1
+\end{array}\right] \right\rbrace.</me></p>
+<p><m>A=</m> <fillin rows="3" cols="3"/></p>
+</statement>
+    </static>
+    <server-data sourceFilePath="Library/Rochester/setLinearAlgebra15TransfOfLinSpaces/ur_la_15_6.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/Rochester/setLinearAlgebra15TransfOfLinSpaces/ur_la_15_6.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-108" ww-id="webwork-108">
+    <static seed="108" source="Library/Rochester/setLinearAlgebra15TransfOfLinSpaces/ur_la_15_5.pg">
+      <statement><p>Find the matrix <m>A</m> of the linear transformation 
+<me>T(M)= \left[\begin{array}{cc}
+9 \amp 5\cr
+0 \amp 7
+\end{array}\right] M</me> 
+from <m>U^{2\times 2}</m> to <m>U^{2\times 2}</m> (upper triangular matrices) with respect to the basis 
+<me>\left\lbrace \left[\begin{array}{cc}
+1 \amp 0\cr
+0 \amp 0
+\end{array}\right], \left[\begin{array}{cc}
+1 \amp 1\cr
+0 \amp 0
+\end{array}\right], \left[\begin{array}{cc}
+0 \amp 0\cr
+0 \amp 1
+\end{array}\right] \right\rbrace</me></p>
+<p><m>A=</m> <fillin rows="3" cols="3"/></p>
+</statement>
+    </static>
+    <server-data sourceFilePath="Library/Rochester/setLinearAlgebra15TransfOfLinSpaces/ur_la_15_5.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/Rochester/setLinearAlgebra15TransfOfLinSpaces/ur_la_15_5.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-109" ww-id="webwork-109">
+    <static seed="109" source="Library/Rochester/setLinearAlgebra15TransfOfLinSpaces/ur_la_15_13.pg">
+      <statement><p>Let <m>V</m> be the space spanned by the two functions <m>\cos(t)</m> and <m>\sin(t)</m>. 
+Find the matrix <m>A</m> of the linear transformation <m>T(f(t)) = f''(t) + 2 f'(t) + 3 f(t)</m> from <m>V</m> into
+itself with respect to the basis <m>\left\lbrace \cos(t), \sin(t) \right\rbrace</m>.</p>
+<p><m>A=</m> <fillin rows="2" cols="2"/></p>
+</statement>
+    </static>
+    <server-data sourceFilePath="Library/Rochester/setLinearAlgebra15TransfOfLinSpaces/ur_la_15_13.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/Rochester/setLinearAlgebra15TransfOfLinSpaces/ur_la_15_13.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-110" ww-id="webwork-110">
+    <static seed="110" source="Library/Rochester/setLinearAlgebra15TransfOfLinSpaces/ur_la_15_15.pg">
+      <statement><p>Let <m>V</m> be the plane with equation <m>x_1 + 2 x_2 + 4 x_3 =0</m> in <m>{\mathbb R}^3</m>.  The linear transformation 
+<me>T\left(\begin{bmatrix}x_1\\x_2\\x_3\end{bmatrix}\right)= \left[\begin{array}{ccc}
+12 \amp -4 \amp -2\cr
+-2 \amp -2 \amp -1\cr
+-2 \amp 2 \amp 1
+\end{array}\right] \begin{bmatrix}x_1\\x_2\\x_3\end{bmatrix}</me> maps <m>V</m> into <m>V</m> so, by restricting it to <m>V</m>, we may regard it as a linear transformation <m>\tilde T \colon V \to V</m>.</p>
+<p>Find the matrix <m>A</m> of the restricted map  <m>\tilde T \colon V \to V</m> with respect to the basis
+<m>\left\lbrace \left[\begin{array}{c}
+-2\cr
+1\cr
+0
+\end{array}\right], \left[\begin{array}{c}
+-4\cr
+0\cr
+1
+\end{array}\right] \right\rbrace.</m></p>
+<p><m>A=</m> <fillin rows="2" cols="2"/></p>
+</statement>
+    </static>
+    <server-data sourceFilePath="Library/Rochester/setLinearAlgebra15TransfOfLinSpaces/ur_la_15_15.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/Rochester/setLinearAlgebra15TransfOfLinSpaces/ur_la_15_15.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-111" ww-id="webwork-111">
+    <static seed="111" source="Library/NAU/setLinearAlgebra/similar2.pg">
+      <statement><p>Consider the multiplication operator <m>L_A:{\mathbb R}^2\to {\mathbb R}^2</m> 
+defined by <m>L_A(x)=Ax</m> where <m>A=\left[\begin{array}{cc}
+-1 \amp 0\cr
+-3 \amp -1
+\end{array}\right]</m>.
+Find an ordered basis <m>B=(b_1,b_2)</m> for <m>{\mathbb R}^2</m> such that <m>[L_A]_B^B=\left[\begin{array}{cc}
+-61 \amp -48\cr
+75 \amp 59
+\end{array}\right]</m>.
+Hint: <m>[L_A]_E^E=A</m> where <m>E</m> is the standard basis.</p>
+<p><m>b_1 =</m>
+<fillin rows="2"/>, 
+<m>b_2 =</m>
+<fillin rows="2"/></p>
+</statement>
+    </static>
+    <server-data sourceFilePath="Library/NAU/setLinearAlgebra/similar2.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/NAU/setLinearAlgebra/similar2.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-112" ww-id="webwork-112">
+    <static seed="112" source="Library/NAU/setLinearAlgebra/R2BasisTrans.pg">
+      <statement><p>Consider the ordered bases <m>B=((-4,1),(7,-2))</m> and <m>C=((4,-1),(-1,2))</m> 
+for the vector space <m>{\mathbb R}^2</m>.</p>
+<p>a. Find the transition matrix from <m>C</m> to the standard ordered basis <m>E=((1,0),(0,1))</m>.</p>
+<p><m>T_C^E =</m> <fillin rows="2" cols="2"/></p>
+<p>b. Find the transition matrix from <m>B</m> to <m>E</m>.</p>
+<p><m>T_B^E =</m> <fillin rows="2" cols="2"/></p>
+<p>c. Find the transition matrix from <m>E</m> to <m>B</m>.</p>
+<p><m>T_E^B =</m> <fillin rows="2" cols="2"/></p>
+<p>d. Find the transition matrix from <m>C</m> to <m>B</m>.</p>
+<p><m>T_C^B =</m> <fillin rows="2" cols="2"/></p>
+<p>e. Find the coordinates of <m>u= (-1,3)</m> in the ordered basis <m>B</m>. Note that <m>[u]_B = T_E^B [u]_E</m>.</p>
+<p><m>[u]_B =</m> <fillin rows="2"/></p>
+<p>f. Find the coordinates of <m>v</m> in the ordered basis <m>B</m>
+if the coordinate vector of <m>v</m> in <m>C</m> is <m>[v]_C = (-1,-1)</m>.</p>
+<p><m>[v]_B =</m> <fillin rows="2"/></p>
+</statement>
+    </static>
+    <server-data sourceFilePath="Library/NAU/setLinearAlgebra/R2BasisTrans.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/NAU/setLinearAlgebra/R2BasisTrans.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-113" ww-id="webwork-113">
+    <static seed="113" source="Library/NAU/setLinearAlgebra/Trace0BasisTrans.pg">
+      <statement><p>Consider the ordered bases <m>B=(\left[\begin{array}{cc}
+3 \amp 0\cr
+0 \amp -3
+\end{array}\right],\left[\begin{array}{cc}
+0 \amp 0\cr
+-1 \amp 0
+\end{array}\right])</m> and <m>C=(\left[\begin{array}{cc}
+-5 \amp 0\cr
+-1 \amp 5
+\end{array}\right],\left[\begin{array}{cc}
+-1 \amp 0\cr
+-3 \amp 1
+\end{array}\right])</m> 
+for the vector space <m>V</m> of lower triangular <m>2\times 2</m> matrices
+with zero trace.</p>
+<p>a. Find the transition matrix from <m>C</m> to <m>B</m>.</p>
+<p><m>T_C^B =</m> <fillin rows="2" cols="2"/></p>
+<p>b. Find the coordinates of <m>M</m> in the ordered basis <m>B</m>
+if the coordinate vector of <m>M</m> in <m>C</m> is <m>[M]_C = \left[\begin{array}{c}
+-1\cr
+3
+\end{array}\right]</m>.</p>
+<p><m>[M]_B =</m> <fillin rows="2"/></p>
+<p>c. Find <m>M</m>.</p>
+<p><m>M =</m> <fillin rows="2" cols="2"/></p>
+</statement>
+    </static>
+    <server-data sourceFilePath="Library/NAU/setLinearAlgebra/Trace0BasisTrans.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/NAU/setLinearAlgebra/Trace0BasisTrans.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-114" ww-id="webwork-114">
+    <static seed="114" source="Library/Hope/Multi1/04-04-Basis-and-functions/Matrix_rep_04.pg">
+      <statement><p>Let <m>f : \mathbb{R}^{2} \to \mathbb{R}^{3}</m> be the linear transformation defined by
+<me>f(\vec{x}) = \left[\begin{array}{cc}
+1 \amp 0\cr
+-2 \amp 1\cr
+-1 \amp 1
+\end{array}\right] \vec{x}.</me>
+Let
+<me>\begin{array}{lcl}
+\mathcal{B} \amp  = \amp  \lbrace \left\lt 1,2\right&gt;, \left\lt 2,5\right&gt; \rbrace, \\
+\mathcal{C} \amp  = \amp  \lbrace \left\lt 1,1,-1\right&gt;, \left\lt 1,0,-1\right&gt;, \left\lt 1,1,-2\right&gt; \rbrace,
+\end{array}</me>
+be bases for <m>\mathbb{R}^{2}</m> and <m>\mathbb{R}^{3}</m>, respectively.
+Find the matrix <m>\lbrack f \rbrack_{\mathcal{B}}^{\mathcal{C}}</m> for <m>f</m> relative to the basis <m>\mathcal{B}</m> in the domain and <m>\mathcal{C}</m> in the codomain.</p>
+<p><m>\lbrack f \rbrack_{\mathcal{B}}^{\mathcal{C}} =</m> <fillin rows="3" cols="2"/></p>
+</statement>
+    </static>
+    <server-data sourceFilePath="Library/Hope/Multi1/04-04-Basis-and-functions/Matrix_rep_04.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/Hope/Multi1/04-04-Basis-and-functions/Matrix_rep_04.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-115" ww-id="webwork-115">
+    <static seed="115" source="Library/Hope/Multi1/04-04-Basis-and-functions/Matrix_rep_06.pg">
+      <statement><p>Let <m>\mathcal{P}_{n}</m> be the vector space of all polynomials of degree <m>n</m> or less in the variable <m>x</m>.
+Let <m>D : \mathcal{P}_{3} \to \mathcal{P}_{2}</m> be the linear transformation defined by <m>D(p(x)) = p'(x)</m>.
+That is, <m>D</m> is the derivative operator.
+Let
+<me>\begin{array}{lcl}
+\mathcal{B} \amp  = \amp  \lbrace 1,x,x^2,x^3 \rbrace, \\
+\mathcal{C} \amp  = \amp  \lbrace 1,x,x^2 \rbrace,
+\end{array}</me>
+be ordered bases for <m>\mathcal{P}_{3}</m> and <m>\mathcal{P}_{2}</m>, respectively.
+Find the matrix <m>\lbrack D \rbrack_{\mathcal{B}}^{\mathcal{C}}</m> for <m>D</m> relative to the basis <m>\mathcal{B}</m> in the domain and <m>\mathcal{C}</m> in the codomain.</p>
+<p><m>\lbrack D \rbrack_{\mathcal{B}}^{\mathcal{C}} =</m> <fillin rows="3" cols="4"/></p>
+</statement>
+    </static>
+    <server-data sourceFilePath="Library/Hope/Multi1/04-04-Basis-and-functions/Matrix_rep_06.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/Hope/Multi1/04-04-Basis-and-functions/Matrix_rep_06.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-116" ww-id="webwork-116">
+    <static seed="116" source="Library/Hope/Multi1/04-04-Basis-and-functions/Matrix_rep_07.pg">
+      <statement><p>Let <m>\mathcal{P}_{n}</m> be the vector space of all polynomials of degree <m>n</m> or less in the variable <m>x</m>.
+Let <m>D : \mathcal{P}_{3} \to \mathcal{P}_{2}</m> be the linear transformation defined by <m>D(p(x)) = p'(x)</m>.
+That is, <m>D</m> is the derivative operator.
+Let
+<me>\begin{array}{lcl}
+\mathcal{B} \amp  = \amp  \lbrace 1, x, x^{2}, x^{3} \rbrace, \\
+\mathcal{C} \amp  = \amp  \lbrace 2+x-x^{2}, -2-2x+x^{2}, -1-2x+x^{2} \rbrace,
+\end{array}</me>
+be ordered bases for <m>\mathcal{P}_{3}</m> and <m>\mathcal{P}_{2}</m>, respectively.
+Find the matrix <m>\lbrack D \rbrack_{\mathcal{B}}^{\mathcal{C}}</m> for <m>D</m> relative to the basis <m>\mathcal{B}</m> in the domain and <m>\mathcal{C}</m> in the codomain.</p>
+<p><m>\lbrack D \rbrack_{\mathcal{B}}^{\mathcal{C}} =</m> <fillin rows="3" cols="4"/></p>
+</statement>
+    </static>
+    <server-data sourceFilePath="Library/Hope/Multi1/04-04-Basis-and-functions/Matrix_rep_07.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/Hope/Multi1/04-04-Basis-and-functions/Matrix_rep_07.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-117" ww-id="webwork-117">
+    <static seed="117" source="Library/TCNJ/TCNJ_Eigenvalues/problem3.pg">
+      <statement><p>Find the eigenvalues of <m>A</m>, given that <m>A = \left[\begin{array}{ccc}
+6 \amp -3 \amp -13\cr
+1 \amp 2 \amp 5\cr
+3 \amp -3 \amp -10
+\end{array}\right]</m></p>
+<p>and its eigenvectors are <m>v_1 = \left[\begin{array}{c}
+1\cr
+-1\cr
+1
+\end{array}\right], v_2 = \left[\begin{array}{c}
+1\cr
+-2\cr
+1
+\end{array}\right]</m> and <m>v_3 = \left[\begin{array}{c}
+-1\cr
+-1\cr
+0
+\end{array}\right]</m>.</p>
+<p>The corresponding eigenvalues are <m>\lambda_1 =</m><fillin name="AnSwEr0001" characters="10"/>, 
+<m>\lambda_2 =</m><fillin name="AnSwEr0002" characters="10"/>, and <m>\lambda_2 =</m><fillin name="AnSwEr0003" characters="10"/>.</p>
 </statement>
       <answer>
         <p>
-          <m>307</m>
+          <m>-4</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>21.0476</m>
+          <m>-1</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>49.163</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>1.26957</m>
+          <m>3</m>
         </p>
       </answer>
     </static>
-    <server-data sourceFilePath="Library/Rochester/setLinearAlgebra21InnerProductSpaces/ur_la_21_4.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
-    <pg source="Library/Rochester/setLinearAlgebra21InnerProductSpaces/ur_la_21_4.pg"/>
+    <server-data sourceFilePath="Library/TCNJ/TCNJ_Eigenvalues/problem3.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/TCNJ/TCNJ_Eigenvalues/problem3.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-103" ww-id="webwork-103">
-    <static seed="103" source="Library/Rochester/setLinearAlgebra21InnerProductSpaces/ur_la_21_3.pg">
-      <statement><p>If <m>A</m> and <m>B</m> are arbitrary real <m>m\times n</m> matrices, then the mapping <me>\langle A,B \rangle = {\rm trace}(A^T B)</me> 
-defines an inner product in <m>{\mathbb R}^{m\times n}</m>. 
-Use this inner product to find <m>\langle A,B \rangle</m>, the norms 
-<m>\|A\|</m> and <m>\|B\|</m>, and the angle <m>\alpha_{A,B}</m> between <m>A</m> and <m>B</m> for
-<me>A = \left[\begin{array}{cc}
--1 \amp -1\cr
-1 \amp 1\cr
--3 \amp -1
-\end{array}\right] \ \mbox{ and } \ B = \left[\begin{array}{cc}
--2 \amp 2\cr
-3 \amp 3\cr
-3 \amp -3
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-118" ww-id="webwork-118">
+    <static seed="118" source="Library/TCNJ/TCNJ_Eigenvalues/problem13.pg">
+      <statement><p>Find the eigenvalues <m>\lambda_1 \lt  \lambda_2 \lt  \lambda_3</m> and corresponding eigenvectors of the matrix
+<me>A = \left[\begin{array}{ccc}
+-2 \amp -10 \amp -10\cr
+0 \amp 0 \amp -4\cr
+0 \amp 0 \amp 4
 \end{array}\right].</me></p>
-<p><m>\langle A,B \rangle =</m> <fillin name="AnSwEr0001" characters="20"/>,</p>
-<p><m>\|A\|=</m> <fillin name="AnSwEr0002" characters="20"/>,</p>
-<p><m>\|B\|=</m> <fillin name="AnSwEr0003" characters="20"/>,</p>
-<p><m>\alpha_{A,B}=</m> <fillin name="AnSwEr0004" characters="20"/>.</p>
+<p>The eigenvalue
+<m>\lambda_1 =</m><fillin name="AnSwEr0001" characters="5"/> corresponds to the eigenvector <fillin rows="3"/>.</p>
+<p>The eigenvalue
+<m>\lambda_2 =</m><fillin name="AnSwEr0003" characters="5"/> corresponds to the eigenvector <fillin rows="3"/>.</p>
+<p>The eigenvalue
+<m>\lambda_3 =</m><fillin name="AnSwEr0005" characters="5"/> corresponds to the eigenvector <fillin rows="3"/>.</p>
 </statement>
+      <answer>
+        <p>
+          <m>-2</m>
+        </p>
+      </answer>
       <answer>
         <p>
           <m>0</m>
@@ -4372,36 +4717,42 @@ Use this inner product to find <m>\langle A,B \rangle</m>, the norms
       </answer>
       <answer>
         <p>
-          <m>3.74166</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>6.63325</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>1.5708</m>
+          <m>4</m>
         </p>
       </answer>
     </static>
-    <server-data sourceFilePath="Library/Rochester/setLinearAlgebra21InnerProductSpaces/ur_la_21_3.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
-    <pg source="Library/Rochester/setLinearAlgebra21InnerProductSpaces/ur_la_21_3.pg"/>
+    <server-data sourceFilePath="Library/TCNJ/TCNJ_Eigenvalues/problem13.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/TCNJ/TCNJ_Eigenvalues/problem13.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-104" ww-id="webwork-104">
-    <static seed="104" source="Library/Rochester/setLinearAlgebra21InnerProductSpaces/ur_la_21_5.pg">
-      <statement><p>Use the inner product <me>\langle f,g \rangle = \int_0^1 f(x)g(x) \, dx</me> in the vector space <m>C^0 \lbrack 0,1\rbrack</m> of continuous functions on the domain <m>\lbrack 0, 1 \rbrack</m> to find
-<m>\langle f,g\rangle</m>, <m>\| f \|</m>, <m>\| g\|</m>, and the angle <m>\alpha_{f,g}</m> between <m>f(x)</m> and <m>g(x)</m> for 
-<me>f(x) = 10 x^2 - 3 \ \mbox{ and } \ g(x) = -3 x + 1.</me></p>
-<p><m>\langle f,g\rangle =</m> <fillin name="AnSwEr0001" characters="20"/>,</p>
-<p><m>\|f\| =</m> <fillin name="AnSwEr0002" characters="20"/>,</p>
-<p><m>\|g\| =</m> <fillin name="AnSwEr0003" characters="20"/>,</p>
-<p><m>\alpha_{f,g}</m> <fillin name="AnSwEr0004" characters="20"/>.</p>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-119" ww-id="webwork-119">
+    <static seed="119" source="Library/TCNJ/TCNJ_CharacteristicPolynomial/problem4.pg">
+      <statement><p>Find the eigenvalues of the matrix <m>A</m>.
+<me>A = \left[\begin{array}{cccc}
+-16 \amp -8 \amp 0 \amp 0\cr
+12 \amp 4 \amp 0 \amp 0\cr
+0 \amp 0 \amp 27 \amp -12\cr
+0 \amp 0 \amp 40 \amp -17
+\end{array}\right].</me></p>
+<p>The eigenvalues are <m>\lambda_1 \lt  \lambda_2 \lt  \lambda_3 \lt  \lambda_4</m>, where</p>
+<p><m>\lambda_1 =</m> <fillin name="AnSwEr0001" characters="5"/>
+has an eigenvector <fillin rows="4"/>,
+<m>\lambda_2 =</m> <fillin name="AnSwEr0003" characters="5"/>
+has an eigenvector <fillin rows="4"/>,</p>
+<p><m>\lambda_3 =</m> <fillin name="AnSwEr0005" characters="5"/>
+has an eigenvector <fillin rows="4"/>,
+<m>\lambda_4 =</m> <fillin name="AnSwEr0007" characters="5"/>
+has an eigenvector <fillin rows="4"/>.</p>
+<p><alert>Note:</alert> you may want to use a graphing calculator to estimate the roots of the polynomial which defines
+the eigenvalues.</p>
 </statement>
       <answer>
         <p>
-          <m>-2.66667</m>
+          <m>-8</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-4</m>
         </p>
       </answer>
       <answer>
@@ -4411,23 +4762,348 @@ Use this inner product to find <m>\langle A,B \rangle</m>, the norms
       </answer>
       <answer>
         <p>
+          <m>7</m>
+        </p>
+      </answer>
+    </static>
+    <server-data sourceFilePath="Library/TCNJ/TCNJ_CharacteristicPolynomial/problem4.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/TCNJ/TCNJ_CharacteristicPolynomial/problem4.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-120" ww-id="webwork-120">
+    <static seed="120" source="Library/Rochester/setLinearAlgebra11Eigenvalues/ur_la_11_13.pg">
+      <statement><p>Suppose a <m>3\times 3</m> matrix <m>A</m> has only two distinct eigenvalues. Suppose that <m>{\rm tr}(A)=1</m> and 
+<m>{\rm det}(A)=63</m>. Find the eigenvalues of <m>A</m> with their algebraic multiplicities.</p>
+<p>The smaller eigenvalue = <fillin name="AnSwEr0001" characters="5"/> has multiplicity <fillin name="AnSwEr0002" characters="5"/>, and</p>
+<p>the larger eigenvalue = <fillin name="AnSwEr0003" characters="5"/> has multiplicity <fillin name="AnSwEr0004" characters="5"/>.</p>
+</statement>
+      <answer>
+        <p>
+          <m>-3</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>2</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>7</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>1</m>
+        </p>
+      </answer>
+    </static>
+    <server-data sourceFilePath="Library/Rochester/setLinearAlgebra11Eigenvalues/ur_la_11_13.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/Rochester/setLinearAlgebra11Eigenvalues/ur_la_11_13.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-121" ww-id="webwork-121">
+    <static seed="121" source="Library/Rochester/setLinearAlgebra11Eigenvalues/ur_la_11_26.pg">
+      <statement><p>If <m>\vec{v}_1 = \left[\begin{array}{c}
+-1\cr
+-5
+\end{array}\right]</m> and <m>\vec{v}_2=\left[\begin{array}{c}
+-3\cr
+2
+\end{array}\right]</m> 
+are eigenvectors of a matrix <m>A</m> corresponding 
+to the eigenvalues <m>\lambda_1=-2</m> and <m>\lambda_2=-5</m>, respectively,</p>
+<p>then <m>A(\vec{v}_1 + \vec{v}_2) =</m> <fillin rows="2"/></p>
+<p>and <m>A(2 \vec{v}_1)=</m> <fillin rows="2"/></p>
+</statement>
+    </static>
+    <server-data sourceFilePath="Library/Rochester/setLinearAlgebra11Eigenvalues/ur_la_11_26.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/Rochester/setLinearAlgebra11Eigenvalues/ur_la_11_26.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-122" ww-id="webwork-122">
+    <static seed="122" source="Library/Rochester/setLinearAlgebra11Eigenvalues/ur_la_11_27.pg">
+      <statement><p>Let <me>\vec{v}_1=\left[\begin{array}{c}
+0\cr
+2\cr
+1
+\end{array}\right], \vec{v}_2 = \left[\begin{array}{c}
+2\cr
+-3\cr
+0
+\end{array}\right], \vec{v}_3 = \left[\begin{array}{c}
+1\cr
+0\cr
+-1
+\end{array}\right]</me>
+be eigenvectors of the matrix <m>A</m> which correspond to the eigenvalues <m>\lambda_1 = -2</m>, 
+<m>\lambda_2 = 0</m>, and <m>\lambda_3 = 2</m>, respectively, and let 
+<me>\vec{x}=\left[\begin{array}{c}
+3\cr
+-4\cr
+2
+\end{array}\right].</me></p>
+<p>Express <m>\vec{x}</m> as a linear combination of <m>\vec{v}_1</m>, <m>\vec{v}_2</m>, and <m>\vec{v}_3</m>, and find <m>A\vec{x}</m>.</p>
+<p><m>\vec{x}=</m> <fillin name="AnSwEr0001" characters="15"/> <m>\vec{v}_1+</m> <fillin name="AnSwEr0002" characters="15"/> <m>\vec{v}_2+</m> <fillin name="AnSwEr0003" characters="15"/> <m>\vec{v}_3</m>.</p>
+<p><m>A\vec{x}=</m> <fillin rows="3"/></p>
+</statement>
+      <answer>
+        <p>
           <m>1</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>2.66571</m>
+          <m>2</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-1</m>
+        </p>
+      </answer>
+    </static>
+    <server-data sourceFilePath="Library/Rochester/setLinearAlgebra11Eigenvalues/ur_la_11_27.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/Rochester/setLinearAlgebra11Eigenvalues/ur_la_11_27.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-123" ww-id="webwork-123">
+    <static seed="123" source="Library/TCNJ/TCNJ_Diagonalization/problem4.pg">
+      <statement><p>Let <m>A</m> = <m>\left[\begin{array}{cc}
+-13 \amp -5\cr
+10 \amp 2
+\end{array}\right]</m></p>
+<p>Find a matrix <m>S</m>, a diagonal matrix <m>D</m> and <m>S^{-1}</m> such that <m>A=SDS^{-1}</m>.</p>
+<p><m>S =</m> <fillin rows="2" cols="2"/>,  <m>D =</m> <fillin rows="2" cols="2"/>,  <m>S^{-1} =</m> <fillin rows="2" cols="2"/></p>
+</statement>
+    </static>
+    <server-data sourceFilePath="Library/TCNJ/TCNJ_Diagonalization/problem4.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/TCNJ/TCNJ_Diagonalization/problem4.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-124" ww-id="webwork-124">
+    <static seed="124" source="Library/NAU/setLinearAlgebra/diag3x3.pg">
+      <statement><p>Let <m>A = \left[\begin{array}{ccc}
+45 \amp 192 \amp -176\cr
+0 \amp -3 \amp 0\cr
+12 \amp 48 \amp -47
+\end{array}\right]</m>. Find an invertible matrix <m>P</m> and a diagonal matrix <m>D</m> such that <m>D = P^{-1}AP</m>.</p>
+<p><m>P=</m> <fillin rows="3" cols="3"/>, <m>D=</m> <fillin rows="3" cols="3"/></p>
+</statement>
+    </static>
+    <server-data sourceFilePath="Library/NAU/setLinearAlgebra/diag3x3.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/NAU/setLinearAlgebra/diag3x3.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-125" ww-id="webwork-125">
+    <static seed="125" source="Library/NAU/setLinearAlgebra/similarB.pg">
+      <statement><p>Show that <m>A=\left[\begin{array}{ccc}
+9 \amp 14 \amp 0\cr
+-4 \amp -6 \amp 0\cr
+5 \amp 10 \amp 2
+\end{array}\right]</m> and <m>B=\left[\begin{array}{ccc}
+8 \amp -6 \amp 12\cr
+-3 \amp 5 \amp -6\cr
+-5 \amp 5 \amp -8
+\end{array}\right]</m> are similar matrices by finding an invertible matrix <m>P</m>
+satisfying <m>A=P^{-1} B P</m>.</p>
+<p><m>P^{-1} =</m>
+<fillin rows="3" cols="3"/>, 
+<m>P =</m>
+<fillin rows="3" cols="3"/></p>
+</statement>
+    </static>
+    <server-data sourceFilePath="Library/NAU/setLinearAlgebra/similarB.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/NAU/setLinearAlgebra/similarB.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-126" ww-id="webwork-126">
+    <static seed="126" source="Library/Hope/Multi1/05-04-Diagonalization/DiagR_05.pg">
+      <statement><p>Suppose <me>A = \left[\begin{array}{cc}
+-1 \amp -3\cr
+0 \amp 2
+\end{array}\right].</me>
+Find an invertible matrix <m>P</m> and a diagonal matrix <m>D</m> so that <m>A = P D P^{-1}</m>.
+Use your answer to find an expression for <m>A^{7}</m> in terms of <m>P</m>, a power of <m>D</m>, and <m>P^{-1}</m> in that order.</p>
+<p><m>A^{7} =</m> 
+<fillin rows="2" cols="2"/>
+<fillin rows="2" cols="2"/>
+<fillin rows="2" cols="2"/>.</p>
+</statement>
+    </static>
+    <server-data sourceFilePath="Library/Hope/Multi1/05-04-Diagonalization/DiagR_05.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/Hope/Multi1/05-04-Diagonalization/DiagR_05.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-127" ww-id="webwork-127">
+    <static seed="127" source="Library/NAU/setLinearAlgebra/diag3x3ortho.pg">
+      <statement><p>Let <m>A = \left[\begin{array}{ccc}
+7 \amp -10 \amp -20\cr
+-10 \amp 22 \amp -10\cr
+-20 \amp -10 \amp 7
+\end{array}\right]</m>. Find an orthogonal matrix <m>P</m> with rational entries and a diagonal matrix <m>D</m> such that <m>D = P^TAP</m>.</p>
+<p><m>P=</m> <fillin rows="3" cols="3"/>, <m>D=</m> <fillin rows="3" cols="3"/></p>
+</statement>
+    </static>
+    <server-data sourceFilePath="Library/NAU/setLinearAlgebra/diag3x3ortho.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/NAU/setLinearAlgebra/diag3x3ortho.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-128" ww-id="webwork-128">
+    <static seed="128" source="Library/Rochester/setLinearAlgebra17DotProductRn/ur_la_17_2.pg">
+      <statement><p>Find the norm of <m>\vec{x}</m> and the unit vector <m>\vec{u}</m> in the direction of <m>\vec{x}</m> if 
+<me>\vec{x} = \left[\begin{array}{c}
+-4\cr
+1\cr
+-4\cr
+2
+\end{array}\right].</me></p>
+<p><m>\| \vec{x} \| =</m> <fillin name="AnSwEr0001" characters="20"/>,</p>
+<p><m>\vec{u} =</m> <fillin rows="4"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>\sqrt{37}</m>
+        </p>
+      </answer>
+    </static>
+    <server-data sourceFilePath="Library/Rochester/setLinearAlgebra17DotProductRn/ur_la_17_2.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/Rochester/setLinearAlgebra17DotProductRn/ur_la_17_2.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-129" ww-id="webwork-129">
+    <static seed="129" source="Library/Rochester/setLinearAlgebra17DotProductRn/ur_la_17_3.pg">
+      <statement><p>Find the angle <m>\alpha</m> between the vectors 
+<me>\left[\begin{array}{c}
+-2\cr
+-1\cr
+-5
+\end{array}\right] \ \mbox{ and } \ \left[\begin{array}{c}
+-3\cr
+-3\cr
+4
+\end{array}\right].</me></p>
+<p><m>\alpha =</m> <fillin name="AnSwEr0001" characters="30"/>.</p>
+</statement>
+      <answer>
+        <p>
+          <m>\cos^{-1}\!\left(-0.344423\right)</m>
+        </p>
+      </answer>
+    </static>
+    <server-data sourceFilePath="Library/Rochester/setLinearAlgebra17DotProductRn/ur_la_17_3.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/Rochester/setLinearAlgebra17DotProductRn/ur_la_17_3.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-130" ww-id="webwork-130">
+    <static seed="130" source="Library/Rochester/setLinearAlgebra21InnerProductSpaces/ur_la_21_4.pg">
+      <statement><p>If <m>f(x)</m> and <m>g(x)</m> are arbitrary polynomials of degree at most 2, then the mapping 
+<me>\langle f,g\rangle = f(-2)g(-2) + f(0)g(0) + f(3)g(3)</me> 
+defines an inner product in <m>P_2</m>. 
+Use this inner product to find <m>\langle f,g\rangle</m>, <m>\| f \|</m>, <m>\| g \|</m>, and the angle 
+<m>\alpha_{f,g}</m> between <m>f(x)</m> and <m>g(x)</m> for 
+<me>f(x) = 4 x^2 + 2 x  - 6 \ \mbox{ and } \ g(x) = 3 x^2  - 2 x  - 4.</me></p>
+<p><m>\langle f,g\rangle =</m> <fillin name="AnSwEr0001" characters="20"/>,</p>
+<p><m>\| f \| =</m> <fillin name="AnSwEr0002" characters="20"/>,</p>
+<p><m>\| g \| =</m> <fillin name="AnSwEr0003" characters="20"/>,</p>
+<p><m>\alpha_{f,g} =</m> <fillin name="AnSwEr0004" characters="20"/>.</p>
+</statement>
+      <answer>
+        <p>
+          <m>708</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>36.9865</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>21.1896</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0.443226</m>
+        </p>
+      </answer>
+    </static>
+    <server-data sourceFilePath="Library/Rochester/setLinearAlgebra21InnerProductSpaces/ur_la_21_4.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/Rochester/setLinearAlgebra21InnerProductSpaces/ur_la_21_4.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-131" ww-id="webwork-131">
+    <static seed="131" source="Library/Rochester/setLinearAlgebra21InnerProductSpaces/ur_la_21_3.pg">
+      <statement><p>If <m>A</m> and <m>B</m> are arbitrary real <m>m\times n</m> matrices, then the mapping <me>\langle A,B \rangle = {\rm trace}(A^T B)</me> 
+defines an inner product in <m>{\mathbb R}^{m\times n}</m>. 
+Use this inner product to find <m>\langle A,B \rangle</m>, the norms 
+<m>\|A\|</m> and <m>\|B\|</m>, and the angle <m>\alpha_{A,B}</m> between <m>A</m> and <m>B</m> for
+<me>A = \left[\begin{array}{cc}
+-1 \amp 3\cr
+-2 \amp -3\cr
+-3 \amp 1
+\end{array}\right] \ \mbox{ and } \ B = \left[\begin{array}{cc}
+1 \amp -2\cr
+-1 \amp 2\cr
+-2 \amp 3
+\end{array}\right].</me></p>
+<p><m>\langle A,B \rangle =</m> <fillin name="AnSwEr0001" characters="20"/>,</p>
+<p><m>\|A\|=</m> <fillin name="AnSwEr0002" characters="20"/>,</p>
+<p><m>\|B\|=</m> <fillin name="AnSwEr0003" characters="20"/>,</p>
+<p><m>\alpha_{A,B}=</m> <fillin name="AnSwEr0004" characters="20"/>.</p>
+</statement>
+      <answer>
+        <p>
+          <m>-2</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>5.74456</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>4.79583</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>1.64346</m>
+        </p>
+      </answer>
+    </static>
+    <server-data sourceFilePath="Library/Rochester/setLinearAlgebra21InnerProductSpaces/ur_la_21_3.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/Rochester/setLinearAlgebra21InnerProductSpaces/ur_la_21_3.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-132" ww-id="webwork-132">
+    <static seed="132" source="Library/Rochester/setLinearAlgebra21InnerProductSpaces/ur_la_21_5.pg">
+      <statement><p>Use the inner product <me>\langle f,g \rangle = \int_0^1 f(x)g(x) \, dx</me> in the vector space <m>C^0 \lbrack 0,1\rbrack</m> of continuous functions on the domain <m>\lbrack 0, 1 \rbrack</m> to find
+<m>\langle f,g\rangle</m>, <m>\| f \|</m>, <m>\| g\|</m>, and the angle <m>\alpha_{f,g}</m> between <m>f(x)</m> and <m>g(x)</m> for 
+<me>f(x) = 5 x^2 - 3 \ \mbox{ and } \ g(x) = 6 x + 2.</me></p>
+<p><m>\langle f,g\rangle =</m> <fillin name="AnSwEr0001" characters="20"/>,</p>
+<p><m>\|f\| =</m> <fillin name="AnSwEr0002" characters="20"/>,</p>
+<p><m>\|g\| =</m> <fillin name="AnSwEr0003" characters="20"/>,</p>
+<p><m>\alpha_{f,g}</m> <fillin name="AnSwEr0004" characters="20"/>.</p>
+</statement>
+      <answer>
+        <p>
+          <m>-4.16667</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>2</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>5.2915</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>1.97546</m>
         </p>
       </answer>
     </static>
     <server-data sourceFilePath="Library/Rochester/setLinearAlgebra21InnerProductSpaces/ur_la_21_5.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
     <pg source="Library/Rochester/setLinearAlgebra21InnerProductSpaces/ur_la_21_5.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-105" ww-id="webwork-105">
-    <static seed="105" source="Library/Mizzou/Matrix_Theory/HW_6/prob_1.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-133" ww-id="webwork-133">
+    <static seed="133" source="Library/Mizzou/Matrix_Theory/HW_6/prob_1.pg">
       <statement><p>Let <m>{ \mathbf{u}_1, \mathbf{u}_2, \mathbf{u}_3 }</m> be an orthonormal basis for an inner product space <m>V</m>. If</p>
 <p><me>\mathbf{v} = a \mathbf{u}_1 + b \mathbf{u}_2 + c \mathbf{u}_3</me></p>
-<p>is so that <m>\|\mathbf{v}\| = 78</m>, <m>\mathbf{v}</m> is orthogonal to <m>\mathbf{u}_3</m>, and <m>\langle \mathbf{v},\mathbf{u}_2 \rangle = -78</m>, find the possible values for <m>a</m>, <m>b</m>, and <m>c</m>.</p>
+<p>is so that <m>\|\mathbf{v}\| = 90</m>, <m>\mathbf{v}</m> is orthogonal to <m>\mathbf{u}_3</m>, and <m>\langle \mathbf{v},\mathbf{u}_2 \rangle = -90</m>, find the possible values for <m>a</m>, <m>b</m>, and <m>c</m>.</p>
 <p><m>a =</m> <fillin name="AnSwEr0001" characters="10"/>, <m>b =</m> <fillin name="AnSwEr0002" characters="10"/>, <m>c =</m> <fillin name="AnSwEr0003" characters="10"/></p>
 </statement>
       <answer>
@@ -4437,7 +5113,7 @@ Use this inner product to find <m>\langle A,B \rangle</m>, the norms
       </answer>
       <answer>
         <p>
-          <m>-78</m>
+          <m>-90</m>
         </p>
       </answer>
       <answer>
@@ -4446,23 +5122,23 @@ Use this inner product to find <m>\langle A,B \rangle</m>, the norms
         </p>
       </answer>
       <solution><p><alert>Solution:</alert> One checks by direct computation that</p>
-<p><m>a = 0</m>, <m>b = -78</m>, <m>c = 0</m></p>
+<p><m>a = 0</m>, <m>b = -90</m>, <m>c = 0</m></p>
 <p>must hold.</p>
 </solution>
     </static>
     <server-data sourceFilePath="Library/Mizzou/Matrix_Theory/HW_6/prob_1.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
     <pg source="Library/Mizzou/Matrix_Theory/HW_6/prob_1.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-106" ww-id="webwork-106">
-    <static seed="106" source="Library/Rochester/setLinearAlgebra18OrthogonalBases/ur_la_18_2.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-134" ww-id="webwork-134">
+    <static seed="134" source="Library/Rochester/setLinearAlgebra18OrthogonalBases/ur_la_18_2.pg">
       <statement><p>Let
 <me>\vec{x} = \left[\begin{array}{c}
-2\cr
--2\cr
-4
-\end{array}\right] \ \mbox{ and } \ \vec{y} = \left[\begin{array}{c}
+3\cr
 1\cr
--5\cr
+-4
+\end{array}\right] \ \mbox{ and } \ \vec{y} = \left[\begin{array}{c}
+-3.5\cr
+-4.5\cr
 6
 \end{array}\right].</me>
 Use the Gram-Schmidt process to determine an orthonormal basis for the subspace of <m>{\mathbb R}^3</m> 
@@ -4476,23 +5152,23 @@ spanned by <m>\vec{x}</m> and <m>\vec{y}</m>.</p>
     <server-data sourceFilePath="Library/Rochester/setLinearAlgebra18OrthogonalBases/ur_la_18_2.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
     <pg source="Library/Rochester/setLinearAlgebra18OrthogonalBases/ur_la_18_2.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-107" ww-id="webwork-107">
-    <static seed="107" source="Library/Rochester/setLinearAlgebra18OrthogonalBases/ur_la_18_5.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-135" ww-id="webwork-135">
+    <static seed="135" source="Library/Rochester/setLinearAlgebra18OrthogonalBases/ur_la_18_5.pg">
       <statement><p>Let <me>\vec{x} = \left[\begin{array}{c}
-3\cr
--1\cr
 4\cr
+-3\cr
+-3\cr
 0
 \end{array}\right], \ \vec{y} = \left[\begin{array}{c}
-5.5\cr
--0.5\cr
+-7\cr
+3\cr
 -1\cr
 1
 \end{array}\right], \ \vec{z} = \left[\begin{array}{c}
-5\cr
--5\cr
-1.5\cr
--28.5
+-8.5\cr
+-14\cr
+14\cr
+17.5
 \end{array}\right].</me>
 Use the Gram-Schmidt process to determine an orthonormal basis for the subspace of <m>{\mathbb R}^4</m> 
 spanned by <m>\vec{x}</m>, <m>\vec{y}</m>, and <m>\vec{z}</m>.</p>
@@ -4506,12 +5182,12 @@ spanned by <m>\vec{x}</m>, <m>\vec{y}</m>, and <m>\vec{z}</m>.</p>
     <server-data sourceFilePath="Library/Rochester/setLinearAlgebra18OrthogonalBases/ur_la_18_5.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
     <pg source="Library/Rochester/setLinearAlgebra18OrthogonalBases/ur_la_18_5.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-108" ww-id="webwork-108">
-    <static seed="108" source="Library/Rochester/setLinearAlgebra18OrthogonalBases/ur_la_18_8.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-136" ww-id="webwork-136">
+    <static seed="136" source="Library/Rochester/setLinearAlgebra18OrthogonalBases/ur_la_18_8.pg">
       <statement><p>Let <me>A = \left[\begin{array}{cc}
-3 \amp -6\cr
-2 \amp -5\cr
-1 \amp 0
+-3 \amp 9\cr
+2 \amp -8\cr
+1 \amp 1
 \end{array}\right].</me>
 Find an orthonormal basis of the image of <m>A</m>.</p>
 <p><m>\Bigg\lbrace</m> 
@@ -4523,11 +5199,11 @@ Find an orthonormal basis of the image of <m>A</m>.</p>
     <server-data sourceFilePath="Library/Rochester/setLinearAlgebra18OrthogonalBases/ur_la_18_8.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
     <pg source="Library/Rochester/setLinearAlgebra18OrthogonalBases/ur_la_18_8.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-109" ww-id="webwork-109">
-    <static seed="109" source="Library/Rochester/setLinearAlgebra18OrthogonalBases/ur_la_18_7.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-137" ww-id="webwork-137">
+    <static seed="137" source="Library/Rochester/setLinearAlgebra18OrthogonalBases/ur_la_18_7.pg">
       <statement><p>Let <me>A = \left[\begin{array}{cccc}
--12 \amp -6 \amp 8 \amp -9\cr
-9 \amp 6 \amp -6 \amp 9
+-8 \amp 2 \amp -12 \amp -3\cr
+-6 \amp -4 \amp -9 \amp 6
 \end{array}\right].</me>
 Find an orthonormal basis of the kernel of <m>A</m>.</p>
 <p><m>\Bigg\lbrace</m> 
@@ -4538,5 +5214,218 @@ Find an orthonormal basis of the kernel of <m>A</m>.</p>
     </static>
     <server-data sourceFilePath="Library/Rochester/setLinearAlgebra18OrthogonalBases/ur_la_18_7.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
     <pg source="Library/Rochester/setLinearAlgebra18OrthogonalBases/ur_la_18_7.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-138" ww-id="webwork-138">
+    <static seed="138" source="Library/TCNJ/TCNJ_OrthogonalSets/problem2.pg">
+      <statement><p>Compute the orthogonal projection of 
+<m>\vec{v}= \left[\begin{array}{c}
+9\cr
+-7\cr
+0
+\end{array}\right]</m> 
+onto the line <m>L</m> through <m>\left[\begin{array}{c}
+-3\cr
+-6\cr
+-3
+\end{array}\right]</m> and the origin.</p>
+<p><m>{\rm proj}_L(\vec{v})=</m> <fillin rows="3"/>.</p>
+</statement>
+    </static>
+    <server-data sourceFilePath="Library/TCNJ/TCNJ_OrthogonalSets/problem2.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/TCNJ/TCNJ_OrthogonalSets/problem2.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-139" ww-id="webwork-139">
+    <static seed="139" source="Library/TCNJ/TCNJ_OrthogonalSets/problem4.pg">
+      <statement><p>Let <m>\vec{y}= \left[\begin{array}{c}
+3\cr
+-9\cr
+10
+\end{array}\right]</m> and <m>\vec{u}= \left[\begin{array}{c}
+-2\cr
+4\cr
+3
+\end{array}\right]</m>.
+Write <m>\vec{y}</m> as the sum of two orthogonal vectors, <m>\vec{x}_{1}</m> in <m>Span\left\lbrace u\right\rbrace</m> and <m>\vec{x}_{2}</m> orthogonal to <m>\vec{u}</m>.</p>
+<p><m>\vec{x}_{1}=</m> <fillin rows="3"/>,
+<m>\vec{x}_{2}=</m> <fillin rows="3"/>.</p>
+</statement>
+    </static>
+    <server-data sourceFilePath="Library/TCNJ/TCNJ_OrthogonalSets/problem4.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/TCNJ/TCNJ_OrthogonalSets/problem4.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-140" ww-id="webwork-140">
+    <static seed="140" source="Library/Mizzou/Matrix_Theory/HW_5/prob_3.pg">
+      <statement><p>(a) Find the distance from the point <m>P_0 = (-1,1,4)</m> to the plane <m>-2 x  - 5 y + 1 z = -1</m>. Use <alert>sqrt()</alert> to enter square roots.</p>
+<p>Distance:<fillin name="AnSwEr0001" characters="15"/></p>
+<p>(b) Find the equation of the plane that passes through the points <m>P = (1,4,-4)</m>, <m>Q = (3,2,-1)</m>, and <m>R = (0,2,-3)</m>. Write your answer in terms of the variables <m>x</m>, <m>y</m>, <m>z</m>.</p>
+<p>Answer: <fillin name="AnSwEr0002" characters="25"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>0.365148</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>5y-4x+6z = -8</m>
+        </p>
+      </answer>
+      <solution><p><alert>Solution:</alert> (a) The idea is to find a convenient point lying in the given plane. For example, let us pick <m>P_1 = (1,0,1)</m>, and let <m>\mathbf{v}</m> be the vector from <m>P_1</m> to <m>P_0</m>. Then the distance from <m>P_0</m> to the plane is the absolute value of the scalar projection of <m>\mathbf{v}</m> onto the normal vector</p>
+<p><me>\mathbf{N} = \left[ \begin{array}{c} -2 \amp  -5 \amp  1 \end{array}\right]</me></p>
+<p>So, we get that the distance is <m>\frac{2}{\sqrt{30}}</m>.</p>
+<p>(b) To find an equation of the plane in question, we can work with the point <m>P</m> and the normal vector <m>\mathbf{N}</m> given by the cross product of the vector from <m>P</m> to <m>Q</m>, and the vector from <m>P</m> to <m>R</m>. It turns out that</p>
+<p><me>\mathbf{N} = \left[ \begin{array}{c} -4 \amp  5 \amp  6 \end{array}\right]</me></p>
+<p>So, an equation of the plane is <m>-4 x+5 y+6 z= -8</m>.</p>
+</solution>
+    </static>
+    <server-data sourceFilePath="Library/Mizzou/Matrix_Theory/HW_5/prob_3.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/Mizzou/Matrix_Theory/HW_5/prob_3.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-141" ww-id="webwork-141">
+    <static seed="141" source="Library/Rochester/setLinearAlgebra10Bases/ur_la_10_18.pg">
+      <statement><p>Find bases of the kernel and image of the orthogonal projection onto the plane <m>-6 x  - 6 y + z = 0</m> in
+<m>{\mathbb R}^3</m>.</p>
+<p>A basis for the kernel is 
+<m>\Bigg\lbrace</m> 
+<fillin rows="3"/> 
+<m>\Bigg\rbrace.</m></p>
+<p>A basis for the image is 
+<m>\Bigg\lbrace</m> 
+<fillin rows="3"/>, 
+<fillin rows="3"/> 
+<m>\Bigg\rbrace.</m></p>
+</statement>
+    </static>
+    <server-data sourceFilePath="Library/Rochester/setLinearAlgebra10Bases/ur_la_10_18.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/Rochester/setLinearAlgebra10Bases/ur_la_10_18.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-142" ww-id="webwork-142">
+    <static seed="142" source="Library/Rochester/setLinearAlgebra18OrthogonalBases/ur_la_18_5.pg">
+      <statement><p>Let <me>\vec{x} = \left[\begin{array}{c}
+2\cr
+3\cr
+2\cr
+0
+\end{array}\right], \ \vec{y} = \left[\begin{array}{c}
+6\cr
+6\cr
+2\cr
+1
+\end{array}\right], \ \vec{z} = \left[\begin{array}{c}
+5\cr
+-1\cr
+-12\cr
+-43
+\end{array}\right].</me>
+Use the Gram-Schmidt process to determine an orthonormal basis for the subspace of <m>{\mathbb R}^4</m> 
+spanned by <m>\vec{x}</m>, <m>\vec{y}</m>, and <m>\vec{z}</m>.</p>
+<p><m>\Bigg\lbrace</m> 
+<fillin rows="4"/>, 
+<fillin rows="4"/>, 
+<fillin rows="4"/> 
+<m>\Bigg\rbrace.</m></p>
+</statement>
+    </static>
+    <server-data sourceFilePath="Library/Rochester/setLinearAlgebra18OrthogonalBases/ur_la_18_5.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/Rochester/setLinearAlgebra18OrthogonalBases/ur_la_18_5.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-143" ww-id="webwork-143">
+    <static seed="143" source="Library/Rochester/setLinearAlgebra20LeastSquares/ur_la_20_1.pg">
+      <statement><p>Find the least-squares solution <m>\vec{x}^*</m> of the system 
+<me>\left[\begin{array}{cc}
+1 \amp 0\cr
+0 \amp 1\cr
+0 \amp 0
+\end{array}\right] \vec{x} = \left[\begin{array}{c}
+6\cr
+-2\cr
+-2
+\end{array}\right].</me></p>
+<p><m>\vec{x}^* =</m> <fillin rows="2"/></p>
+</statement>
+    </static>
+    <server-data sourceFilePath="Library/Rochester/setLinearAlgebra20LeastSquares/ur_la_20_1.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/Rochester/setLinearAlgebra20LeastSquares/ur_la_20_1.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-144" ww-id="webwork-144">
+    <static seed="144" source="Library/METU-NCC/Applied_Math/least-squares/line.pg">
+      <statement><p>By using the method of least squares, find the best line through the 
+points:</p>
+<p><m>(2, 0)</m>,   
+<m>(-2, -2)</m>,   
+<m>(1, 3)</m>.</p>
+<p><alert> Step 1.</alert>  The general equation of a line is 
+ <m>c_0 + c_1x = y</m>.  Plugging the data points into this formula 
+gives a matrix equation <m>\mathrm{A}\mathbf{c} = \mathbf{y}</m>.</p>
+<p><fillin rows="3" cols="2"/> <m>\left[\begin{matrix}c_0\\c_1\end{matrix}\right]</m>
+   <m>=</m>  <fillin rows="3"/></p>
+<p><alert> Step 2.</alert> The matrix equation 
+<m>\mathrm{A}\mathbf{c} = \mathbf{y}</m> has 
+no solution, so instead we use the <alert>normal equation</alert>
+<m>\mathrm{A^T} \mathrm{A}\, \hat{\mathbf{c}} = \mathrm{A^T} \mathbf{y}</m></p>
+<p><m>\mathrm{A^T} \mathrm{A} =</m> <fillin rows="2" cols="2"/></p>
+<p><m>\mathrm{A^T} \mathbf{y} =</m> <fillin rows="2"/></p>
+<p><alert> Step 3.</alert> Solving the normal equation gives the answer</p>
+<p><m>\hat{\mathbf{c}} =</m> <fillin rows="2"/></p>
+<p>which corresponds to the formula</p>
+<p><m>y =</m> <fillin name="AnSwEr0006" characters="50"/></p>
+<p><alert> Analysis.</alert>  Compute the predicted <m>y</m> values: 
+<m>\hat{\mathbf{y}} = \mathrm{A}\hat{\mathbf{c}}</m>.</p>
+<p><m>\hat{\mathbf{y}} =</m> 
+<fillin rows="3"/></p>
+<p>Compute the error vector: 
+<m>\mathbf{e} = \mathbf{y} - \hat{\mathbf{y}}</m>.</p>
+<p><m>\mathbf{e} =</m> <fillin rows="3"/></p>
+<p>Compute the total error:
+<m>\mathrm{SSE} = e_1^2+e_2^2+e_3^2</m>.</p>
+<p><m>\mathrm{SSE} =</m>
+<fillin name="AnSwEr0009" characters="10"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>0.0769231+0.769231x</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>7.53846</m>
+        </p>
+      </answer>
+    </static>
+    <server-data sourceFilePath="Library/METU-NCC/Applied_Math/least-squares/line.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/METU-NCC/Applied_Math/least-squares/line.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="17" xml:id="extracted-webwork-145" ww-id="webwork-145">
+    <static seed="145" source="Library/METU-NCC/Applied_Math/least-squares/parabola.pg">
+      <statement><p>By using the method of least squares, find the best parabola through the 
+points:</p>
+<p><m>(1, 3)</m>,   
+<m>(-1, -2)</m>,   
+<m>(0, -1)</m>,   
+<m>(2, 3)</m></p>
+<p><alert> Step 1.</alert>  The general equation of a parabola is 
+ <m>c_0 + c_1x + c_2x^2 = y</m>.  Plugging the data points into this formula 
+gives a matrix equation <m>\mathrm{A}\mathbf{c} = \mathbf{y}</m>.</p>
+<p><fillin rows="4" cols="3"/> <m>\left[\begin{matrix}c_0\\c_1\\c_2\end{matrix}\right]</m>
+   <m>=</m>  <fillin rows="4"/></p>
+<p><alert> Step 2.</alert> The matrix equation 
+<m>\mathrm{A}\mathbf{c} = \mathbf{y}</m> has 
+no solution, so instead we use the <alert>normal equation</alert>
+<m>\mathrm{A^T} \mathrm{A}\, \hat{\mathbf{c}} = \mathrm{A^T} \mathbf{y}</m></p>
+<p><m>\mathrm{A^T} \mathrm{A} =</m> <fillin rows="3" cols="3"/></p>
+<p><m>\mathrm{A^T} \mathbf{y} =</m> <fillin rows="3"/></p>
+<p><alert> Step 3.</alert> Solving the normal equation gives the answer</p>
+<p><m>\hat{\mathbf{c}} =</m> <fillin rows="3"/></p>
+<p>which corresponds to the formula</p>
+<p><m>y =</m> <fillin name="AnSwEr0006" characters="50"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>0.05+2.15x+\left(-0.25\right)x^{2}</m>
+        </p>
+      </answer>
+    </static>
+    <server-data sourceFilePath="Library/METU-NCC/Applied_Math/least-squares/parabola.pg" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/METU-NCC/Applied_Math/least-squares/parabola.pg"/>
   </webwork-reps>
 </webwork-representations>

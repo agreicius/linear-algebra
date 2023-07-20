@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -13,18 +13,23 @@
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">The argument is similar:</div>
-<div class="displaymath process-math">
+<div class="para">We employ some similar trickery to what was done in the proof of <a href="" class="xref" data-knowl="./knowl/th_vectorspace_props.html" title="Theorem 3.1.16: Basic vector space properties">Theorem 3.1.16</a>. Assuming <span class="process-math">\(T\)</span> is linear:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_vectorspace_props.html ./knowl/d_linear_transform.html">
 \begin{align*}
-\boldzero_W \amp= T(\boldzero_V) \amp (\text{by (1)})\\
-\amp =T(-\boldv+\boldv)\\
-\amp = T(-\boldv)+T(\boldv)\text{.}
+T(\boldzero_V)  \amp= T(\boldzero_V+\boldzero_V)\\
+\amp =T(\boldzero_V)+T(\boldzero_V) \amp (\knowl{./knowl/d_linear_transform.html}{\text{Definition 3.2.1}}) \text{.}
 \end{align*}
 </div>
-<div class="para">Since <span class="process-math">\(\boldzero_W=T(-\boldv)+T(\boldv)\text{,}\)</span> adding <span class="process-math">\(-T(\boldv)\)</span> to both sides of the equation yields</div>
-<div class="displaymath process-math">
+<div class="para">Thus, whatever <span class="process-math">\(T(\boldzero_V)\in W\)</span> may be, it satisfies</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_vectorspace_props.html ./knowl/d_linear_transform.html">
 \begin{equation*}
--T(\boldv)=T(-\boldv)\text{.}
+T(\boldzero_V)=T(\boldzero_V)+T(\boldzero_V)\text{.}
+\end{equation*}
+</div>
+<div class="para">Canceling <span class="process-math">\(T(\boldzero_V)\)</span> on both sides using <span class="process-math">\(-T(\boldzero_V)\text{,}\)</span> we conclude</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_vectorspace_props.html ./knowl/d_linear_transform.html">
+\begin{equation*}
+\boldzero_W=T(\boldzero_V)\text{.}
 \end{equation*}
 </div>
 </div>

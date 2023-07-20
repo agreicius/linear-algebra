@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -11,13 +11,14 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/cor_independent_eigenspaces.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_ortho_proj_distance.html ./knowl/ex_ortho_pythag.html">
 \begin{align*}
-\boldzero \amp=
-\underset{\boldw_{\lambda_1}}{\underbrace{\sum_{j=1}^{n_1}c_{1,j}\boldv_{\lambda_1, j}}} +\underset{\boldw_{\lambda_2}}{\underbrace{\sum_{j=1}^{n_2}c_{2,j}\boldv_{\lambda_2, j}}}+\dots \underset{\boldw_{\lambda_r}}{\underbrace{\sum_{j=1}^{n_r}c_{r,j}\boldv_{\lambda_r, j}}} \\
-\amp=\boldw_1+\boldw_2+\cdots +\boldw_r 
+\norm{\boldv-\boldw'}^2\amp = \norm{\boldw^\perp+(\boldw-\boldw')}^2\\
+\amp =\norm{\boldw^\perp}^2+\norm{\boldw-\boldw'}^2 \amp (\knowl{./knowl/ex_ortho_pythag.html}{\text{Exercise 5.2.4.16}})\\
+\amp \geq \norm{\boldw^\perp}^2\\
+\amp =\norm{\boldv-\boldw}^2
 \end{align*}
 </div>
-<span class="incontext"><a href="s_diagonalization.html#md-276" class="internal">in-context</a></span>
+<span class="incontext"><a href="s_orthogonal_projection.html#md-276" class="internal">in-context</a></span>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -12,7 +12,23 @@
 </head>
 <body class="ignore-math">
 <article class="hiddenproof"><h4 class="heading"><span class="type">Proof</span></h4>
-<div class="para">By <a href="" class="xref" data-knowl="./knowl/cor_self-adjoint_symmetric.html" title="Corollary 5.6.3: Self-adjoint operators and symmetry">Corollary 5.6.3</a> we have <span class="process-math">\(A\)</span> symmetric if and only if <span class="process-math">\(T_A\)</span> is self-adjoint with respect to the dot product. Statements (1)-(3) are seen to be equivalent by applying <a href="" class="xref" data-knowl="./knowl/th_spectral.html" title="Theorem 5.6.8: Spectral theorem for self-adjoint operators">Theorem 5.6.8</a> to <span class="process-math">\(T_A\)</span> (with respect to the dot product). Let <span class="process-math">\(B\)</span> be the standard basis of <span class="process-math">\(\R^n\text{.}\)</span> We see that (4) is equivalent to (3) by observing that <span class="process-math">\(B'\)</span> is an orthonormal eigenbasis of <span class="process-math">\(T_A\)</span> if and only if the matrix <span class="process-math">\(Q=\underset{B'\rightarrow B}{P}\)</span> obtained by placing the elements of <span class="process-math">\(B'\)</span> as columns is orthogonal and diagonalizes <span class="process-math">\(A\text{.}\)</span>
-</div></article><span class="incontext"><a href="s_spectral_theorem.html#proof-130" class="internal">in-context</a></span>
+<div class="para logical">
+<div class="para">Let <span class="process-math">\(W=\CS A\text{,}\)</span> and let <span class="process-math">\(\hat{\boldy}=\proj{\boldy}{W}\text{.}\)</span> The key observation is that a vector <span class="process-math">\(\hat{\boldx}\)</span> satisfies <span class="process-math">\(A\hat{\boldx}=\hat{\boldy}\)</span> if and only if</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_row_null_comp.html">
+\begin{equation*}
+\boldy=A\hat{\boldx}+(\boldy-A\hat{\boldx})
+\end{equation*}
+</div>
+<div class="para">is an orthogonal decomposition of <span class="process-math">\(\boldy\)</span> with respect to <span class="process-math">\(W=\CS A\text{;}\)</span> and this is true if and only if <span class="process-math">\(\boldy-A\hat{\boldx}\in (\CS A)^\perp\text{.}\)</span> Thus we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_row_null_comp.html">
+\begin{align*}
+A\hat{\boldx}=\hat{\boldy} \amp\iff \boldy-A\hat{\boldx}\in (\CS A)^\perp \\
+\amp\iff \boldy-A\hat{\boldx}\in \NS A^T \amp ((\CS A)^\perp=\NS A^T, \knowl{./knowl/th_row_null_comp.html}{\text{Theorem 5.3.7}}) \\
+\amp\iff A^T(\boldy-A\hat{\boldx})=\boldzero \\
+\amp \iff A^T\boldy-A^TA\hat{\boldx}=\boldzero\\
+\amp \iff A^TA\hat{\boldx}=A^T\boldy\text{.}
+\end{align*}
+</div>
+</div></article><span class="incontext"><a href="s_orthogonal_projection.html#proof-130" class="internal">in-context</a></span>
 </body>
 </html>

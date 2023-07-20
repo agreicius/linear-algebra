@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -11,29 +11,21 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h5 class="heading"><span class="type">Paragraph</span></h5>
+<h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">Any line in <span class="process-math">\(\R^3\)</span> passing through the origin can be described as <span class="process-math">\(\ell=\Span\{\boldv\}\text{,}\)</span> for some <span class="process-math">\(\boldv=(a,b,c)\ne 0\text{.}\)</span> The set <span class="process-math">\(\{(a,b,c)\}\)</span> is trivially an orthogonal basis of <span class="process-math">\(\ell\text{.}\)</span> Using <a href="" class="xref" data-knowl="./knowl/eq_ortho_proj_formula.html" title="Equation 4.3.2">(4.3.2)</a>, we have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_ortho_proj_formula.html">
+<div class="para">Lastly the commutativity of the base of the tent is a consequence of <a href="" class="xref" data-knowl="./knowl/th_change_of_basis_transformations.html" title="Theorem 4.3.20: Change of basis for transformations">Theorem 4.3.20</a>:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_change_of_basis_transformations.html">
 \begin{equation*}
-\proj{\boldx}{\ell}=\frac{\boldx\cdot \boldv}{\boldv\cdot\boldv}\boldv=\frac{ax+by+cz}{a^2+b^2+c^2}(a,b,c)\text{.}
+[T]_{B'}=\underset{B\rightarrow B'}{P}[T]_B\underset{B'\rightarrow B}{P},
 \end{equation*}
 </div>
-<div class="para">It follows that <span class="process-math">\(\operatorname{proj}_\ell=T_A\text{,}\)</span> where</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_ortho_proj_formula.html">
+<div class="para">or equivalently,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_change_of_basis_transformations.html">
 \begin{equation*}
-A=\begin{bmatrix}
-\vert \amp \vert \amp \vert \\
-\proj{(1,0,0)}{\ell}\amp \proj{(0,1,0)}{\ell}\amp \proj{(0,0,1)}{\ell} \\
-\vert \amp \vert \amp \vert
-\end{bmatrix}=\frac{1}{a^2+b^2+c}\begin{bmatrix}
-a^2\amp ab\amp ac\\
-ab\amp b^2\amp bc\\
-ac\amp bc\amp c^2
-\end{bmatrix}\text{.}
+A'=P^{-1}AP\text{.}
 \end{equation*}
 </div>
 </div>
-<span class="incontext"><a href="s_orthogonal_projection.html#p-3137" class="internal">in-context</a></span>
+<span class="incontext"><a href="s_changeofbasis.html#p-3137" class="internal">in-context</a></span>
 </body>
 </html>

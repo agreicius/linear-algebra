@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -10,19 +10,20 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body class="ignore-math"><article class="hiddenproof"><div class="para logical">
-<div class="para">First observe that</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_invertibility_supersized.html">
-\begin{equation*}
-A\boldx=\lambda\boldx \iff \lambda\boldx-A\boldx=\boldzero \iff (\lambda I-A)\boldx=\boldzero\text{.}
-\end{equation*}
+<body class="ignore-math"><article class="hiddenproof"><div class="para">Statement (1) follows by taking <span class="process-math">\(Q=P^{-1}\text{.}\)</span>
+</div> <div class="para logical">
+<div class="para">Let <span class="process-math">\(p_A(t)\)</span> and <span class="process-math">\(p_{A'}(t)\)</span> be the characteristic polynomials of <span class="process-math">\(A\)</span> and <span class="process-math">\(A'\text{,}\)</span> repsectively. We have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_det_mult.html">
+\begin{align*}
+p_{A'}(t)\amp =\det(tI-A')\\
+\amp =\det(tI-P^{-1}AP) \amp (A'=P^{-1}AP)\\
+\amp = \det(P^{-1}tIP-P^{-1}AP) \amp (\text{algebra}) \\
+\amp = \det(P^{-1}(tI-A)P) \amp (\text{left/right dist.}) \\
+\amp = \det(P^{-1})\det(tI-A)\det(P) \amp (\knowl{./knowl/th_det_mult.html}{\text{2.5.26}}) \\
+\amp = (\det(P))^{-1}\det(P)\det(tI-A)  \\
+\amp = \det(tI-A)=p_A(t)\text{.}
+\end{align*}
 </div>
-<div class="para">From this equivalence it follows that</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_invertibility_supersized.html">
-\begin{equation*}
-\NS(\lambda I-A)=\{\boldx\in \R^n\colon A\boldx=\lambda \boldx\}\text{.}
-\end{equation*}
-</div>
-<div class="para">Since an eigenvector must be nonzero, we conclude that the <span class="process-math">\(\lambda\)</span>-eigenvectors of <span class="process-math">\(A\)</span> are precisely the nonzero elements of <span class="process-math">\(\NS(\lambda I-A)\text{.}\)</span> This proves statement (1). As a consequence, we see that <span class="process-math">\(A\)</span> has <span class="process-math">\(\lambda\)</span> as an eigenvalue if and only if <span class="process-math">\(\NS (\lambda I-A)\)</span> contains nonzero element elements: i.e., if and only if <span class="process-math">\(\NS (\lambda I-A)\ne \{\boldzero\}\text{.}\)</span> By the <a href="" class="xref" data-knowl="./knowl/th_invertibility_supersized.html" title="Theorem 3.8.12: Invertibility theorem (supersized)">invertibility theorem</a> this is true if and only if <span class="process-math">\(\lambda I-A\)</span> is not invertible.</div>
-</div></article></body>
+<div class="para">This proves statement (2).</div>
+</div> <div class="para">Statement (3) follows from (2) since the eigenvalues of a matrix are the real roots of its characteristic polynomial. Furthermore, by <a href="" class="xref" data-knowl="./knowl/th_characteristic_polynomial.html" title="Theorem 4.4.25: Characteristic polynomial">Theorem 4.4.25</a> the trace and determinant of a matrix are equal to the sum and product of the roots of its characteristic polynomial. Thus (4) also follows from (2).</div> <div class="para">The proofs of statements (5)-(6) are left as exercises.</div></article></body>
 </html>

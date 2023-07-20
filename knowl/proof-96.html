@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -12,20 +12,27 @@
 </head>
 <body class="ignore-math">
 <article class="hiddenproof"><h4 class="heading"><span class="type">Proof</span></h4>
-<ol class="decimal">
-<li><div class="para">Let <span class="process-math">\(B=(\boldv_1, \boldv_2, \dots, \boldv_n)\text{.}\)</span> By definition, the <span class="process-math">\(j\)</span>-th column of <span class="process-math">\(\underset{B\rightarrow B'}{P}\)</span> is <span class="process-math">\([\boldv_j]_B\text{.}\)</span> Since <span class="process-math">\(\boldv_j=0\boldv_1+0\boldv_2+\cdots +1\boldv_j+\cdots\text{,}\)</span> we see that <span class="process-math">\([\boldv_j]_B=\bolde_j\text{,}\)</span> and hence that <span class="process-math">\(\underset{B\rightarrow B'}{P}=I\text{,}\)</span> as claimed.</div></li>
-<li><div class="para logical">
-<div class="para">Let <span class="process-math">\(A=\underset{B\rightarrow B'}{P}\)</span> and <span class="process-math">\(B=\underset{B'\rightarrow B"}{P}\text{.}\)</span> For any <span class="process-math">\(\boldv\in V\)</span> we have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_change_of_basis_coordinates.html">
+<div class="para">Before proving the result, we point out one subtlety here: although the <span class="process-math">\(\boldw_i\in W_{\lambda_i}\)</span> for all <span class="process-math">\(i\text{,}\)</span> we cannot assume that each <span class="process-math">\(\boldw_i\)</span> is an eigenvector. Indeed, <span class="process-math">\(\boldw_i\)</span> is an eigenvector in this case if and only if <span class="process-math">\(\boldw_i\ne 0\text{.}\)</span> This observation guides the proof that follows.</div> <div class="para logical">
+<div class="para">To pick out the terms of <a href="" class="xref" data-knowl="./knowl/eq_independent_eigenspaces.html" title="Equation 4.5.6">(4.5.6)</a> that are nonzero (if any), we define</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_independent_eigenspaces.html ./knowl/th_independent_eigenvectors.html">
+\begin{equation*}
+J=\{j \colon \boldw_j\ne 0\}=\{j_1, j_2,\dots, j_k\}\text{.}
+\end{equation*}
+</div>
+<div class="para">Assume by contradiction that <span class="process-math">\(J\)</span> is nonempty: i.e., <span class="process-math">\(\val{J}=k\geq 1\text{.}\)</span> In this case we would have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_independent_eigenspaces.html ./knowl/th_independent_eigenvectors.html">
 \begin{align*}
-BA[\boldv]_B \amp = \underset{B'\rightarrow B}{P}\, \underset{B\rightarrow B'}{P}[\boldv]\\
-\amp =\underset{B'\rightarrow B}{P}[\boldv]_{B'} \\
-\amp = [\boldv]_{B}\text{.}
+\boldzero \amp= \boldw_1+\boldw_2+\cdots \boldw_r \\
+\amp = \boldw_{j_1}+\boldw_{j_2}+\cdots +\boldw_{j_k} \text{,}
 \end{align*}
 </div>
-<div class="para">It follows from (3) of <a href="" class="xref" data-knowl="./knowl/th_change_of_basis_coordinates.html" title="Theorem 5.3.2: Change of basis for coordinate vectors">Theorem 5.3.2</a> that <span class="process-math">\(BA=\underset{B\rightarrow B}{P}\text{.}\)</span> Since <span class="process-math">\(\underset{B\rightarrow B}{P}=I\)</span> by (1), we conclude that <span class="process-math">\(BA=I\text{,}\)</span> and hence <span class="process-math">\(B=A^{-1}\text{,}\)</span> as desired.</div>
-</div></li>
-<li><div class="para">See <a href="" class="xref" data-knowl="./knowl/ex_changebasis_three_bases.html" title="Exercise 5.3.5.12">Exercise 5.3.5.12</a>.</div></li>
-</ol></article><span class="incontext"><a href="s_changeofbasis.html#proof-96" class="internal">in-context</a></span>
+<div class="para">since <span class="process-math">\(\boldw_i=\boldzero\)</span> for all <span class="process-math">\(i\notin J\text{.}\)</span> But then</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_independent_eigenspaces.html ./knowl/th_independent_eigenvectors.html">
+\begin{equation*}
+\boldw_{j_1}+\boldw_{j_2}+\cdots +\boldw_{j_k}=\boldzero
+\end{equation*}
+</div>
+<div class="para">would be a nontrivial linear combination of the eigenvectors <span class="process-math">\(\boldw_{j_i}\)</span> equal to <span class="process-math">\(\boldzero\text{.}\)</span> Since the eigenvectors <span class="process-math">\(\boldw_{j_i}\)</span> have distinct eigenvalues, this contradicts <a href="" class="xref" data-knowl="./knowl/th_independent_eigenvectors.html" title="Theorem 4.5.7: Linear independence of eigenvectors">Theorem 4.5.7</a>. Thus <span class="process-math">\(J=\{\, \}\text{.}\)</span> Equivalently, <span class="process-math">\(\boldw_i=\boldzero\)</span> for all <span class="process-math">\(1\leq i\leq r\text{,}\)</span> as desired.</div>
+</div></article><span class="incontext"><a href="s_diagonalization.html#proof-96" class="internal">in-context</a></span>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -13,19 +13,15 @@
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">Define the <dfn class="terminology">left-shift operation</dfn>, <span class="process-math">\(T_\ell\colon \R^\infty \rightarrow R^{\infty}\)</span> as follows:</div>
-<div class="displaymath process-math">
-\begin{equation*}
-T_\ell\left( (a_{i})_{i=1}^\infty\right)= (a_{i+1})_{i=1}^\infty\text{.}
-\end{equation*}
+<div class="para">We must show <span class="process-math">\(f(cA+dB)=cf(A)+df(B)\)</span> for all scalars <span class="process-math">\(c,d\in\R\)</span> and all matrices <span class="process-math">\(A, B\in M_{mn}\text{.}\)</span> This follows easily from properties of transpose:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_trans_props.html ./knowl/th_trans_props.html">
+\begin{align*}
+f(cA+dB)\amp =(cA+dB)^T \amp \text{ (by def.) }\\
+\amp =(cA)^T+(dB)^T \amp (\knowl{./knowl/th_trans_props.html}{\text{Theorem 2.2.11}})\\
+\amp =cA^T+dB^T \amp (\knowl{./knowl/th_trans_props.html}{\text{Theorem 2.2.11}})\\
+\amp =cf(A)+df(B)
+\end{align*}
 </div>
-<div class="para">In other words, we have</div>
-<div class="displaymath process-math">
-\begin{equation*}
-T_\ell \left( (a_1,a_2,a_3,\dots)\right)=(a_2,a_3,\dots)\text{.}
-\end{equation*}
-</div>
-<div class="para">Show that <span class="process-math">\(T_\ell\)</span> is a linear transformation.</div>
 </div>
 <span class="incontext"><a href="s_transformation.html#p-1830" class="internal">in-context</a></span>
 </body>

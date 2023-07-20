@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -10,13 +10,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body class="ignore-math"><article class="hiddenproof"><div class="para">We prove (2) and leave the rest as an exercise (<a href="" class="xref" data-knowl="./knowl/ex_norm_props.html" title="Exercise 4.1.5.16">Exercise 4.1.5.16</a>).</div> <div class="para logical">
-<div class="para">Given <span class="process-math">\(c\in \R\)</span> and <span class="process-math">\(\boldv\in V\)</span> we have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/d_innerproduct.html">
+<body class="ignore-math"><article class="hiddenproof"> <div class="para logical">
+<div class="para">We have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_coordinates.html ./knowl/eq_matrixrep_prop.html">
 \begin{align*}
-\norm{c\boldv} \amp =\sqrt{\langle c\boldv, c\boldv\rangle}\\
-\amp=\sqrt{c^2\langle \boldv, \boldv\rangle} \amp (\knowl{./knowl/d_innerproduct.html}{\text{Definition 4.1.1}})\\
-\amp =\val{c}\sqrt{\langle \boldv, \boldv\rangle} \amp (\sqrt{c^2}=\val{c})\text{.}
+\boldv\in \NS T \amp\iff T(\boldv)=\boldzero \\
+\amp\iff [T(\boldv)]_{B'}=[\boldzero]_{B'} \amp (\knowl{./knowl/th_coordinates.html}{\text{Theorem 4.1.9}}, (2))\\
+\amp \iff [T]_{B}^{B'}[\boldv]_B=\boldzero \amp (\knowl{./knowl/eq_matrixrep_prop.html}{\text{(4.2.2)}})\\
+\amp [\boldv]_B\in\NS A \amp (A=[T]_B^{B'}) \text{.}
 \end{align*}
 </div>
 </div></article></body>

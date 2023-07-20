@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -13,45 +13,23 @@
 <body class="ignore-math">
 <div class="solution solution-like">
 <h4 class="heading">
-<span class="type">Solution</span><span class="space"> </span><span class="codenumber">4.1.21.1</span><span class="period">.</span>
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">4.3.8.1</span><span class="period">.</span>
 </h4>
-<ol class="decimal">
-<li><div class="para logical">
-<div class="para">We have</div>
-<div class="displaymath process-math">
-\begin{align*}
-d(\boldx,\boldy) \amp = \norm{\boldx-\boldy} \\
-\amp = \sqrt{\langle \boldx-\boldy,\boldx-\boldy\rangle} \\
-\amp =\sqrt{(x_1-y_1,x_2-y_2,x_3-y_3)\cdot(x_1-y_1,x_2-y_2,x_3-y_3)} \\
-\amp = \sqrt{(x_1-y_1)^2+(x_2-y_2)^2+(x_3-y_3)^2}\text{.}
-\end{align*}
+<div class="para logical">
+<div class="para">According to <a href="" class="xref" data-knowl="./knowl/eg_changebasis_standard.html" title="Example 4.3.7: V=\R^n B standard basis">Example 4.3.7</a> we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eg_changebasis_standard.html">
+\begin{equation*}
+\underset{B'\rightarrow B}{P}=\begin{bmatrix}1\amp -\sqrt{3}\\ \sqrt{3}\amp 1 \end{bmatrix}\text{.}
+\end{equation*}
 </div>
-</div></li>
-<li><div class="para logical">
-<div class="para">We have</div>
-<div class="displaymath process-math">
-\begin{align*}
-d(p_1,p_2) \amp = \norm{p_1-p_2} \\
-\amp = \sqrt{\langle p_1-p_2, p_1-p_2\rangle}\\
-\amp = \sqrt{(p_1(1)-p_2(1))^2+(p_1(-1)-p_2(-1))^2+(p_1(0)-p_2(0))^2}\\
-\amp = \sqrt{(-1)^2+(1)^2+(-1)^2}=\sqrt{3} 
-\end{align*}
+<div class="para">We then compute</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eg_changebasis_standard.html">
+\begin{equation*}
+\underset{B\rightarrow B'}{P}=(\underset{B'\rightarrow B}{P})^{-1}=\left(\begin{bmatrix}1\amp -\sqrt{3}\\ \sqrt{3}\amp 1 \end{bmatrix} \right)^{-1}=\frac{1}{4}\begin{bmatrix}1\amp \sqrt{3}\\ -\sqrt{3}\amp 1 \end{bmatrix}\text{.}
+\end{equation*}
 </div>
-</div></li>
-<li><div class="para logical">
-<div class="para">We have</div>
-<div class="displaymath process-math">
-\begin{align*}
-d(f,g) \amp = \norm{f-g} \\
-\amp =\sqrt{\langle f-g, f-g \rangle} \\
-\amp = \sqrt{\langle \sin x, \sin x\rangle }\\
-\amp = \sqrt{\int_{-pi}^{pi}\sin^2 x\, dx}\\
-\amp = \sqrt{\pi} 
-\end{align*}
 </div>
-</div></li>
-</ol>
 </div>
-<span class="incontext"><a href="s_innerproducts.html#solution-86" class="internal">in-context</a></span>
+<span class="incontext"><a href="s_changeofbasis.html#solution-86" class="internal">in-context</a></span>
 </body>
 </html>

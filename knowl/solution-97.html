@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -13,68 +13,61 @@
 <body class="ignore-math">
 <div class="solution solution-like">
 <h4 class="heading">
-<span class="type">Solution</span><span class="space"> </span><span class="codenumber">4.3.16.1</span><span class="period">.</span>
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">4.4.24.1</span><span class="period">.</span>
 </h4>
-<ol class="decimal">
-<li><div class="para logical">
-<div class="para">Using the general formula described in <a href="" class="xref" data-knowl="./knowl/eg_projection_line.html" title="Example 4.3.15: Projection onto a line \ell\subseteq \R^3">Example 4.3.15</a>, we have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eg_projection_line.html">
-\begin{equation*}
-A=\frac{1}{6}\begin{bmatrix}
-1\amp 2\amp 1\\ 2\amp 4\amp 2\\ 1\amp 2\amp 1
-\end{bmatrix}\text{.}
-\end{equation*}
+<div class="para logical">
+<div class="para">Let <span class="process-math">\(B=(E_{11}, E_{12}, E_{21}, E_{22})\text{,}\)</span> the standard ordered basis of <span class="process-math">\(M_{22}\text{.}\)</span> Compute <span class="process-math">\(A=[S]_B\text{:}\)</span>
 </div>
-</div></li>
-<li><div class="para logical">
-<div class="para">Now compute</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/ex_orthoproj_props.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/proc_eigenspaces_matrix.html ./knowl/eg_eigenvector_adhoc_transposition.html">
 \begin{align*}
-\proj{(-2,3,1)}{\ell}\amp=  \frac{1}{6}\begin{bmatrix}
-1\amp 2\amp 1\\ 2\amp 4\amp 2\\ 1\amp 2\amp 1
+A=[S]_B \amp =\begin{bmatrix}
+\vert \amp \vert\amp \vert\amp \vert \\
+[S(E_{11})]_B\amp [S(E_{12})]_B \amp [S(E_{21})]_B \amp [S(E_{22})]_B\\
+\vert \amp \vert \amp \vert\amp \vert
+\end{bmatrix} \\
+\amp = =\begin{bmatrix}
+\vert \amp \vert\amp \vert\amp \vert \\
+[E_{11}]_B\amp [E_{21}]_B \amp [E_{12}]_B \amp [E_{22}]_B \\
+\vert \amp \vert \amp \vert\amp \vert
 \end{bmatrix}
-\begin{amatrix}[r]
--2 \\ 3\\ 1
-\end{amatrix}=
-\frac{1}{6}\begin{amatrix}[r]
-5\\ 10\\ 5
-\end{amatrix}\\
-\proj{(-2,-4,-2)}{\ell}\amp=  \frac{1}{6}\begin{bmatrix}
-1\amp 2\amp 1\\ 2\amp 4\amp 2\\ 1\amp 2\amp 1
-\end{bmatrix}
-\begin{amatrix}[r]
--2 \\ -4\\ -2
-\end{amatrix}=
-\frac{1}{6}\begin{amatrix}[r]
--2\\ -4\\ -2
-\end{amatrix}\\
-\proj{(1,-1,1)}{\ell}\amp=  \frac{1}{6}\begin{bmatrix}
-1\amp 2\amp 1\\ 2\amp 4\amp 2\\ 1\amp 2\amp 1
-\end{bmatrix}
-\begin{amatrix}[r]
-1\\ -1\\ 1
-\end{amatrix}=
-\frac{1}{6}\begin{amatrix}[r]
-0\\ 0\\ 0
-\end{amatrix}\text{.}
+\amp (E_{11}^T=E_{11}, E_{12}^T=E_{21}, \text{etc.})\\
+\amp =\begin{bmatrix}
+1\amp 0\amp 0\amp 0\\
+0\amp 0\amp 1\amp 0\\
+0\amp 1\amp 0\amp 0\\
+0\amp 0\amp 0\amp 1
+\end{bmatrix} \text{.}
 \end{align*}
 </div>
-<div class="para">The last two computations, <span class="process-math">\(\proj{(-2,-4,-2)}{\ell}=(-2,-4,-2)\)</span> and <span class="process-math">\(\proj{(1,-1,1)}{\ell}=(0,0,0)\text{,}\)</span> should come as no surprise, since <span class="process-math">\((-2,-4,-2)\in \ell\)</span> and <span class="process-math">\((1,-1,1)\in \ell^\perp\text{.}\)</span> (See <a href="" class="xref" data-knowl="./knowl/ex_orthoproj_props.html" title="Exercise 4.3.6.12">Exercise 4.3.6.12</a>.)</div>
-</div></li>
-<li><div class="para logical">
-<div class="para">We have</div>
-<div class="displaymath process-math">
+<div class="para">Now apply <a href="" class="xref" data-knowl="./knowl/proc_eigenspaces_matrix.html" title="Procedure 4.4.19: Computing eigenspaces of a matrix">Procedure 4.4.19</a> to <span class="process-math">\(A\text{.}\)</span> From <span class="process-math">\(p(t)=\det(tI-A)=(t-1)^2(t^2-1)=(t-1)^3(t+1)\)</span> we conclude that <span class="process-math">\(\lambda=1\)</span> and <span class="process-math">\(\lambda=-1\)</span> are the only eigenvalues of <span class="process-math">\(A\)</span> (and hence also <span class="process-math">\(S\)</span>). Bases for the corresponding eigenspaces of <span class="process-math">\(A\)</span> are easily computed as</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/proc_eigenspaces_matrix.html ./knowl/eg_eigenvector_adhoc_transposition.html">
 \begin{align*}
-d((-2,3,1), \ell) \amp=\norm{(-2,3,1)-\proj{(-2,3,1)}{\ell}} \\
-\amp = \norm{\frac{1}{6}(-17,8,1)}=\frac{\sqrt{354}}{6} \\
-d((-2,-4,-2), \ell) \amp=\norm{(-2,-4,-2)-\proj{(-2,-4,-2)}{\ell}} \\
-\amp = \norm{(0,0,0)}=0 \text{.}
+\NS(I-A) \amp= \Span\{(1,0,0,0), (0,1,1,0), (0,0,0,1)\} \\
+\NS(-I-A) \amp =\Span\{(0,1,-1,0)\} \text{.}
 \end{align*}
 </div>
-<div class="para">Again, the second computation should come as no surprise.  Since <span class="process-math">\((-2,-4,-2)\)</span> is itself an element of <span class="process-math">\(\ell\text{,}\)</span> it stands to reason that its distance to <span class="process-math">\(\ell\)</span> is equal to zero.</div>
-</div></li>
-</ol>
+<div class="para">Now lift these up to bases of the eigenspaces <span class="process-math">\(W_1\)</span> and <span class="process-math">\(W_{-1}\)</span> of <span class="process-math">\(S\text{:}\)</span>
 </div>
-<span class="incontext"><a href="s_orthogonal_projection.html#solution-97" class="internal">in-context</a></span>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/proc_eigenspaces_matrix.html ./knowl/eg_eigenvector_adhoc_transposition.html">
+\begin{align*}
+W_1 \amp=\Span\left\{ A_1=\begin{bmatrix}
+1\amp 0\\ 0 \amp 0
+\end{bmatrix},
+A_2=\begin{bmatrix}
+0\amp 1\\ 1 \amp 0
+\end{bmatrix},
+A_3=\begin{bmatrix}
+0\amp 0\\ 0 \amp 1
+\end{bmatrix} \right\} \\
+W_{-1} \amp= \Span\left\{A_4=
+\begin{amatrix}[rr]
+0\amp 1\\ -1 \amp 0
+\end{amatrix} \right\} \text{.}
+\end{align*}
+</div>
+<div class="para">It is easy to see that <span class="process-math">\(W_1\)</span> and <span class="process-math">\(W_2\)</span> are the subspaces of symmetric and skew-symmetric matrices, respectively. This is consistent with our analysis in <a href="" class="xref" data-knowl="./knowl/eg_eigenvector_adhoc_transposition.html" title="Example 4.4.11: Transposition">Example 4.4.11</a>.</div>
+</div>
+</div>
+<span class="incontext"><a href="s_eigenvectors.html#solution-97" class="internal">in-context</a></span>
 </body>
 </html>

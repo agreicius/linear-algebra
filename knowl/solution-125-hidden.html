@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -10,29 +10,63 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body class="ignore-math"><div class="solution solution-like">
-<div class="para">First we factor <span class="process-math">\(p(x)\text{.}\)</span> Looking at the constant term we see that the only possible integer roots of <span class="process-math">\(p(x)\)</span> are <span class="process-math">\(\pm 1\text{.}\)</span> It is easily verified that <span class="process-math">\(p(1)=0\text{,}\)</span> and  polynomial division yields the factorization <span class="process-math">\(p(x)=(x-1)(x^2+2x+1)\text{.}\)</span>  Further factorization of <span class="process-math">\(x^2+2x+1\)</span> gives us  <span class="process-math">\(p(x)=(x-1)(x+1)^2\text{.}\)</span>
-</div> <div class="para logical">
-<div class="para">Next we compute <em class="emphasis">orthonormal</em> bases of the eigenspaces <span class="process-math">\(W_1\)</span> and <span class="process-math">\(W_{-1}\text{,}\)</span> yielding</div>
-<div class="displaymath process-math">
+<body class="ignore-math"><div class="solution solution-like"><ol class="decimal">
+<li><div class="para logical">
+<div class="para">Using the general formula described in <a href="" class="xref" data-knowl="./knowl/eg_projection_line.html" title="Example 5.3.15: Projection onto a line \ell\subseteq \R^3">Example 5.3.15</a>, we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eg_projection_line.html">
+\begin{equation*}
+A=\frac{1}{6}\begin{bmatrix}
+1\amp 2\amp 1\\ 2\amp 4\amp 2\\ 1\amp 2\amp 1
+\end{bmatrix}\text{.}
+\end{equation*}
+</div>
+</div></li>
+<li><div class="para logical">
+<div class="para">Now compute</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/ex_orthoproj_props.html">
 \begin{align*}
-B_1\amp=\left(\frac{1}{\sqrt{3}}(1,1,1)\right) \amp B_{2}\amp =\left(\frac{1}{\sqrt{2}}(1,-1,0), \frac{1}{\sqrt{6}}(1,1,-2)\right)\text{.}
+\proj{(-2,3,1)}{\ell}\amp=  \frac{1}{6}\begin{bmatrix}
+1\amp 2\amp 1\\ 2\amp 4\amp 2\\ 1\amp 2\amp 1
+\end{bmatrix}
+\begin{amatrix}[r]
+-2 \\ 3\\ 1
+\end{amatrix}=
+\frac{1}{6}\begin{amatrix}[r]
+5\\ 10\\ 5
+\end{amatrix}\\
+\proj{(-2,-4,-2)}{\ell}\amp=  \frac{1}{6}\begin{bmatrix}
+1\amp 2\amp 1\\ 2\amp 4\amp 2\\ 1\amp 2\amp 1
+\end{bmatrix}
+\begin{amatrix}[r]
+-2 \\ -4\\ -2
+\end{amatrix}=
+\frac{1}{6}\begin{amatrix}[r]
+-2\\ -4\\ -2
+\end{amatrix}\\
+\proj{(1,-1,1)}{\ell}\amp=  \frac{1}{6}\begin{bmatrix}
+1\amp 2\amp 1\\ 2\amp 4\amp 2\\ 1\amp 2\amp 1
+\end{bmatrix}
+\begin{amatrix}[r]
+1\\ -1\\ 1
+\end{amatrix}=
+\frac{1}{6}\begin{amatrix}[r]
+0\\ 0\\ 0
+\end{amatrix}\text{.}
 \end{align*}
 </div>
-<div class="para">Assembling these bases elements into the orthogonal matrix</div>
+<div class="para">The last two computations, <span class="process-math">\(\proj{(-2,-4,-2)}{\ell}=(-2,-4,-2)\)</span> and <span class="process-math">\(\proj{(1,-1,1)}{\ell}=(0,0,0)\text{,}\)</span> should come as no surprise, since <span class="process-math">\((-2,-4,-2)\in \ell\)</span> and <span class="process-math">\((1,-1,1)\in \ell^\perp\text{.}\)</span> (See <a href="" class="xref" data-knowl="./knowl/ex_orthoproj_props.html" title="Exercise 5.3.6.20">Exercise 5.3.6.20</a>.)</div>
+</div></li>
+<li><div class="para logical">
+<div class="para">We have</div>
 <div class="displaymath process-math">
-\begin{equation*}
-Q=\begin{amatrix}[rrr]1/\sqrt{3}\amp 1/\sqrt{2}\amp 1/\sqrt{6}\\
-1/\sqrt{3}\amp -1/\sqrt{2}\amp 1/\sqrt{6}\\
-1/\sqrt{3}\amp 0\amp -2/\sqrt{6}\end{amatrix}\text{,}
-\end{equation*}
+\begin{align*}
+d((-2,3,1), \ell) \amp=\norm{(-2,3,1)-\proj{(-2,3,1)}{\ell}} \\
+\amp = \norm{\frac{1}{6}(-17,8,1)}=\frac{\sqrt{354}}{6} \\
+d((-2,-4,-2), \ell) \amp=\norm{(-2,-4,-2)-\proj{(-2,-4,-2)}{\ell}} \\
+\amp = \norm{(0,0,0)}=0 \text{.}
+\end{align*}
 </div>
-<div class="para">we conclude that <span class="process-math">\(D=Q^{-1}AQ=Q^TAQ\text{,}\)</span> where</div>
-<div class="displaymath process-math">
-\begin{equation*}
-D=\begin{amatrix}[rrr]1\amp 0\amp 0\\ 0\amp -1\amp 0\\ 0\amp 0\amp -1  \end{amatrix}\text{.}
-\end{equation*}
-</div>
-</div>
-</div></body>
+<div class="para">Again, the second computation should come as no surprise.  Since <span class="process-math">\((-2,-4,-2)\)</span> is itself an element of <span class="process-math">\(\ell\text{,}\)</span> it stands to reason that its distance to <span class="process-math">\(\ell\)</span> is equal to zero.</div>
+</div></li>
+</ol></div></body>
 </html>

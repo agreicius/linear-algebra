@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -11,28 +11,45 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<article class="hiddenproof"><h4 class="heading"><span class="type">Proof</span></h4>
-<div class="para">Before proving the result, we point out one subtlety here: although the <span class="process-math">\(\boldw_i\in W_{\lambda_i}\)</span> for all <span class="process-math">\(i\text{,}\)</span> we cannot assume that each <span class="process-math">\(\boldw_i\)</span> is an eigenvector. Indeed, <span class="process-math">\(\boldw_i\)</span> is an eigenvector in this case if and only if <span class="process-math">\(\boldw_i\ne 0\text{.}\)</span> This observation guides the proof that follows.</div> <div class="para logical">
-<div class="para">To pick out the terms of <a href="" class="xref" data-knowl="./knowl/eq_independent_eigenspaces.html" title="Equation 5.5.6">(5.5.6)</a> that are nonzero (if any), we define</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_independent_eigenspaces.html ./knowl/th_independent_eigenvectors.html">
-\begin{equation*}
-J=\{j \colon \boldw_j\ne 0\}=\{j_1, j_2,\dots, j_k\}\text{.}
-\end{equation*}
-</div>
-<div class="para">Assume by contradiction that <span class="process-math">\(J\)</span> is nonempty: i.e., <span class="process-math">\(\val{J}=k\geq 1\text{.}\)</span> In this case we would have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_independent_eigenspaces.html ./knowl/th_independent_eigenvectors.html">
+<article class="hiddenproof"><h5 class="heading"><span class="title">Implication: <span class="process-math">\((1)\implies (2)\)</span>.</span></h5> <div class="para logical">
+<div class="para">Assume <span class="process-math">\(T\)</span> is self adjoint. First we show that eigenvectors with distinct eigenvalues are orthogonal. To this end, suppose we have <span class="process-math">\(T(\boldv)=\lambda\boldv\)</span> and <span class="process-math">\(T(\boldv')=\lambda'\boldv'\text{,}\)</span> where <span class="process-math">\(\lambda\ne \lambda'\text{.}\)</span> Using the definition of self-adjoint, we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/cor_self-adjoint_eigenvalue.html ./knowl/ex_selfadjoint_complement.html">
 \begin{align*}
-\boldzero \amp= \boldw_1+\boldw_2+\cdots \boldw_r \\
-\amp = \boldw_{j_1}+\boldw_{j_2}+\cdots +\boldw_{j_k} \text{,}
+\angvec{T(\boldv), \boldv'}=\angvec{\boldv, T(\boldv')} \amp\implies \angvec{\lambda\boldv, \boldv'}=\angvec{\boldv, \lambda'\boldv'} \\
+\amp\implies \lambda\angvec{\boldv, \boldv'}=\lambda'\angvec{\boldv, \boldv'} \\
+\amp \implies \angvec{\boldv, \boldv'}=0 \amp (\lambda\ne \lambda')\text{.}
 \end{align*}
 </div>
-<div class="para">since <span class="process-math">\(\boldw_i=\boldzero\)</span> for all <span class="process-math">\(i\notin J\text{.}\)</span> But then</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_independent_eigenspaces.html ./knowl/th_independent_eigenvectors.html">
+<div class="para">We now prove by induction on <span class="process-math">\(\dim V\)</span> that if <span class="process-math">\(T\)</span> is self-adjoint, then <span class="process-math">\(T\)</span> is diagonalizable. The base case <span class="process-math">\(\dim V=1\)</span> is trivial. Assume the result is true of any <span class="process-math">\(n\)</span>-dimensional inner product space, and suppose <span class="process-math">\(\dim V=n+1\text{.}\)</span> By <a href="" class="xref" data-knowl="./knowl/cor_self-adjoint_eigenvalue.html" title="Corollary 4.6.5: Eigenvalues of self-adjoint operators">Corollary 4.6.5</a> there is a nonzero <span class="process-math">\(\boldv\in V\)</span> with <span class="process-math">\(T(\boldv)=\lambda\boldv\text{.}\)</span> Let <span class="process-math">\(W=\Span\{\boldv\}\text{.}\)</span> Since <span class="process-math">\(\dim W=1\text{,}\)</span> we have <span class="process-math">\(\dim W^\perp=\dim V-1=n\text{.}\)</span> The following two facts are crucial for the rest of the argument and are left as an exercise (<a href="" class="xref" data-knowl="./knowl/ex_selfadjoint_complement.html" title="Exercise 4.6.3.11">4.6.3.11</a>).</div>
+<ol class="decimal">
+<li><div class="para">For all <span class="process-math">\(\boldv\in W^\perp\)</span> we have <span class="process-math">\(T(\boldv)\in W^\perp\text{,}\)</span> and thus by restricting <span class="process-math">\(T\)</span> to <span class="process-math">\(W^\perp\)</span> we get a linear transformation <span class="process-math">\(T\vert_{W^{\perp}}\colon W^\perp\rightarrow W^\perp\text{.}\)</span>
+</div></li>
+<li><div class="para">The restriction <span class="process-math">\(T\vert_{W^\perp}\)</span> is self-adjoint, considered as a linear transformation of the inner product space <span class="process-math">\(W^\perp\text{.}\)</span>  Here the inner product on the subspace <span class="process-math">\(W^\perp\)</span> is inherited from <span class="process-math">\((V, \angvec{\, , \,})\)</span> by restriction.</div></li>
+</ol>
+<div class="para">Now since <span class="process-math">\(\dim W^\perp=n-1\)</span> and <span class="process-math">\(T\vert_{W^\perp}\)</span> is self-adjoint, we may assume by induction that <span class="process-math">\(T\vert_{W^\perp}\)</span> has an eigenbasis <span class="process-math">\(B'=(\boldv_1, \boldv_2,\dots, \boldv_n)\text{.}\)</span> We claim that <span class="process-math">\(B=(\boldv, \boldv_2, \dots, \boldv_n)\)</span> is an eigenbasis of <span class="process-math">\(V\text{.}\)</span> Since by definition <span class="process-math">\(T\vert_{W^\perp}(\boldw')=T(\boldw')\)</span> for all <span class="process-math">\(\boldw'\in W^\perp\text{,}\)</span> we see that the vectors <span class="process-math">\(\boldv_i\)</span> are also eigenvectors of <span class="process-math">\(T\text{,}\)</span> and thus that <span class="process-math">\(B\)</span> consists of eigenvectors. To show <span class="process-math">\(B\)</span> is a basis it is enought to prove linear independence, since  <span class="process-math">\(\dim V=n+1\text{.}\)</span> Suppose we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/cor_self-adjoint_eigenvalue.html ./knowl/ex_selfadjoint_complement.html">
 \begin{equation*}
-\boldw_{j_1}+\boldw_{j_2}+\cdots +\boldw_{j_k}=\boldzero
+c\boldv+c_1\boldv_1+\cdots +c_n\boldv_n=\boldzero
 \end{equation*}
 </div>
-<div class="para">would be a nontrivial linear combination of the eigenvectors <span class="process-math">\(\boldw_{j_i}\)</span> equal to <span class="process-math">\(\boldzero\text{.}\)</span> Since the eigenvectors <span class="process-math">\(\boldw_{j_i}\)</span> have distinct eigenvalues, this contradicts <a href="" class="xref" data-knowl="./knowl/th_independent_eigenvectors.html" title="Theorem 5.5.7: Linear independence of eigenvectors">Theorem 5.5.7</a>. Thus <span class="process-math">\(J=\{\, \}\text{.}\)</span> Equivalently, <span class="process-math">\(\boldw_i=\boldzero\)</span> for all <span class="process-math">\(1\leq i\leq r\text{,}\)</span> as desired.</div>
-</div></article><span class="incontext"><a href="s_diagonalization.html#proof-111" class="internal">in-context</a></span>
+<div class="para">for scalars <span class="process-math">\(c, c_i\in \R\text{.}\)</span> Taking the inner product with <span class="process-math">\(\boldv\text{,}\)</span> we have :</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/cor_self-adjoint_eigenvalue.html ./knowl/ex_selfadjoint_complement.html">
+\begin{align*}
+c\boldv+c_1\boldv_1+\cdots +c_n\boldv_n=\boldzero\amp\implies\\
+\langle\boldv, c\boldv+c_1\boldv_1+\cdots +c_n\boldv_n\rangle=\langle\boldv, \boldzero\rangle
+\amp\implies c\angvec{\boldv, \boldv}+\sum_{i=1}^nc_i\angvec{\boldv, \boldv_i}=0 \\
+\amp \implies
+c\angvec{\boldv, \boldv}=0 \amp (\angvec{\boldv, \boldv_i}=0)\\
+\amp \implies c=0 \amp (\angvec{\boldv, \boldv}\ne 0)\text{.}
+\end{align*}
+</div>
+<div class="para">It follows that we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/cor_self-adjoint_eigenvalue.html ./knowl/ex_selfadjoint_complement.html">
+\begin{equation*}
+c_1\boldv_1+\cdots +c_n\boldv_n=\boldzero\text{,}
+\end{equation*}
+</div>
+<div class="para">and thus <span class="process-math">\(c_i=0\)</span> for all <span class="process-math">\(1\leq i\leq n\text{,}\)</span> since <span class="process-math">\(B'\)</span> is linearly independent. Having proved that <span class="process-math">\(B\)</span> is an eigenbasis, we conclude that <span class="process-math">\(T\)</span> is diagonalizable.</div>
+</div></article><span class="incontext"><a href="s_spectral_theorem.html#proof-111" class="internal">in-context</a></span>
 </body>
 </html>

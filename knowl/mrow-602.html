@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -11,14 +11,17 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_coordinates.html">
 \begin{align*}
-\norm{f}\amp =\sqrt{\langle f,f\rangle} \\
-\amp=\sqrt{\int_0^1(e^x)^2\, dx} \\
-\amp = \sqrt{\int_0^1e^{2x}\, dx}\\
-\amp =\sqrt{(e^2-1)/2} 
+[T]_{B}^{B'}[\boldv] \amp= [T]_{B}^{B'} \begin{bmatrix}
+c_1\\ c_2\\ \vdots \\ v_n
+\end{bmatrix} \\
+\amp=c_1[T(\boldv_1)]_{B'}+c_n[T(\boldv_n)]_{B'}+\cdots +c_n[T(\boldv_n)]_{B'} \amp (\text{column method})\\
+\amp = [c_1T(\boldv_1)+c_2T(\boldv_2)+\cdots +c_nT(\boldv_n)]_{B'} \amp (\knowl{./knowl/th_coordinates.html}{\text{4.1.9}})\\
+\amp=[T(c_1\boldv_1+c_2\boldv_2+\cdots +c_n\boldv_n)]_{B'} \amp (T \text{ is linear})\\
+\amp =[T(\boldv)]_{B'}
 \end{align*}
 </div>
-<span class="incontext"><a href="s_innerproducts.html#md-197" class="internal">in-context</a></span>
+<span class="incontext"><a href="s_matrixreps.html#md-194" class="internal">in-context</a></span>
 </body>
 </html>

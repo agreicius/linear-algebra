@@ -5,7 +5,7 @@
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Orthogonal bases</title>
@@ -14,20 +14,38 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Linear algebra: the theory of vector spaces and linear transformations">
 <meta property="book:author" content="Aaron Greicius">
-<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
-  tex: {
-    inlineMath: [['\\(','\\)']],
-    tags: "none",
-    tagSide: "right",
-    tagIndent: ".8em",
-    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
   },
-  options: {
-    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
-    processHtmlClass: "process-math",
-    renderActions: {
-        findScript: [10, function (doc) {
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math",
+    "renderActions": {
+      "findScript": [
+        10,
+        function (doc) {
             document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
                 var display = !!node.type.match(/; *mode=display/);
                 var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
@@ -37,25 +55,36 @@ window.MathJax = {
                 math.end = {node: text, delim: '', n: 0};
                 doc.math.push(math);
             });
-        }, '']
-    },
+        },
+        ""
+      ]
+    }
   },
-  chtml: {
-    scale: 0.98,
-    mtextInheritFont: true
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
   },
-  loader: {
-    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
-    paths: {pretext: "https://pretextbook.org/js/lib"},
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
   },
-  startup: {
+  "startup": {
     pageReady() {
       return MathJax.startup.defaultPageReady().then(function () {
       console.log("in ready function");
       rsMathReady();
       }
     )}
-  },
+  }
 };
 </script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="https://webwork-ptx.aimath.org/webwork2_files/js/apps/MathView/mathview.css" rel="stylesheet">
 <script src="https://pretextbook.org/js/0.3/pretext-webwork/2.17/pretext-webwork.js"></script><script src="https://webwork-ptx.aimath.org/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.7/pretext_search.css" rel="stylesheet" type="text/css">
@@ -599,7 +628,7 @@ a_{m1} \amp  a_{m2} \amp  \cdots \amp  a_{mn}\amp b_{m}
 <li><div class="toc-item"><a href="s_subspace.html#ss_subspace" class="internal"><span class="codenumber">3.3.1</span> <span class="title">Definition of subspace</span></a></div></li>
 <li><div class="toc-item"><a href="s_subspace.html#ss_subspaces_tuples" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Subspaces of <span class="process-math">\(\R^n\)</span></span></a></div></li>
 <li><div class="toc-item"><a href="s_subspace.html#ss_subspace_matrices" class="internal"><span class="codenumber">3.3.3</span> <span class="title">Important subspaces of <span class="process-math">\(M_{nn}\)</span></span></a></div></li>
-<li><div class="toc-item"><a href="s_subspace.html#ss_subspace_functions" class="internal"><span class="codenumber">3.3.4</span> <span class="title">Important subspaces of <span class="process-math">\(F(X,\R)\)</span></span></a></div></li>
+<li><div class="toc-item"><a href="s_subspace.html#ss_subspace_functions" class="internal"><span class="codenumber">3.3.4</span> <span class="title">Important subspaces of <span class="process-math">\(F(I,\R)\)</span></span></a></div></li>
 <li><div class="toc-item"><a href="s_subspace.html#s_subspace_ex" class="internal"><span class="codenumber">3.3.5</span> <span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
@@ -651,94 +680,95 @@ a_{m1} \amp  a_{m2} \amp  \cdots \amp  a_{mn}\amp b_{m}
 </ul>
 </li>
 <li>
-<div class="toc-item"><a href="c_innerproductspaces.html" class="internal"><span class="codenumber">4</span> <span class="title">Inner product spaces</span></a></div>
+<div class="toc-item"><a href="c_transbasis.html" class="internal"><span class="codenumber">4</span> <span class="title">Eigenvectors and diagonalization</span></a></div>
 <ul class="structural">
 <li>
-<div class="toc-item"><a href="s_innerproducts.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Inner product spaces</span></a></div>
+<div class="toc-item"><a href="s_coordinatevectors.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Coordinate vectors</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="s_innerproducts.html#ss_inner_products" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Inner products</span></a></div></li>
-<li><div class="toc-item"><a href="s_innerproducts.html#ss_norm_distance" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Norm and distance</span></a></div></li>
-<li><div class="toc-item"><a href="s_innerproducts.html#subsection-61" class="internal"><span class="codenumber">4.1.3</span> <span class="title">Cauchy-Schwarz inequality, triangle inequalities, and angles between vectors</span></a></div></li>
-<li><div class="toc-item"><a href="s_innerproducts.html#subsection-62" class="internal"><span class="codenumber">4.1.4</span> <span class="title">Choosing your inner product</span></a></div></li>
-<li><div class="toc-item"><a href="s_innerproducts.html#s_innerproducts_ex" class="internal"><span class="codenumber">4.1.5</span> <span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="s_coordinatevectors.html#ss_coordinate_vectors" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Coordinate vectors</span></a></div></li>
+<li><div class="toc-item"><a href="s_coordinatevectors.html#ss_coordinate_transformation" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Coordinate vector transformation</span></a></div></li>
+<li><div class="toc-item"><a href="s_coordinatevectors.html#s_coordinatevectors_ex" class="internal"><span class="codenumber">4.1.3</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="s_matrixreps.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Matrix representations of linear transformations</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="s_matrixreps.html#ss_matrix_reps" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Matrix representations of linear transformations</span></a></div></li>
+<li><div class="toc-item"><a href="s_matrixreps.html#ss_matrixreps_models" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Matrix representations as models</span></a></div></li>
+<li><div class="toc-item"><a href="s_matrixreps.html#subsection-63" class="internal"><span class="codenumber">4.2.3</span> <span class="title">Choice of basis</span></a></div></li>
+<li><div class="toc-item"><a href="s_matrixreps.html#s_matrixreps_ex" class="internal"><span class="codenumber">4.2.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="s_changeofbasis.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Change of basis</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="s_changeofbasis.html#ss_change_of_basis" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Change of basis matrix</span></a></div></li>
+<li><div class="toc-item"><a href="s_changeofbasis.html#ss_changebasis_orthonormal" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Working with orthonormal bases</span></a></div></li>
+<li><div class="toc-item"><a href="s_changeofbasis.html#subsection-66" class="internal"><span class="codenumber">4.3.3</span> <span class="title">Change of basis for transformations</span></a></div></li>
+<li><div class="toc-item"><a href="s_changeofbasis.html#ss_changebasis_similarity" class="internal"><span class="codenumber">4.3.4</span> <span class="title">Similarity and the holy commutative tent of linear algebra</span></a></div></li>
+<li><div class="toc-item"><a href="s_changeofbasis.html#s_changeofbasis_ex" class="internal"><span class="codenumber">4.3.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="s_eigenvectors.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Eigenvectors and eigenvalues</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="s_eigenvectors.html#subsection-68" class="internal"><span class="codenumber">4.4.1</span> <span class="title">Eigenvectors</span></a></div></li>
+<li><div class="toc-item"><a href="s_eigenvectors.html#subsection-69" class="internal"><span class="codenumber">4.4.2</span> <span class="title">Finding eigenvalues and eigenvectors systematically</span></a></div></li>
+<li><div class="toc-item"><a href="s_eigenvectors.html#ss_eigenvectors_characteristic_polynomial" class="internal"><span class="codenumber">4.4.3</span> <span class="title">Properties of the characteristic polynomial</span></a></div></li>
+<li><div class="toc-item"><a href="s_eigenvectors.html#s_eigenvectors_ex" class="internal"><span class="codenumber">4.4.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="s_diagonalization.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Diagonalization</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="s_diagonalization.html#ss_diagonalizable" class="internal"><span class="codenumber">4.5.1</span> <span class="title">Diagonalizable transformations</span></a></div></li>
+<li><div class="toc-item"><a href="s_diagonalization.html#ss_diagonalizable_independent_eigenvectors" class="internal"><span class="codenumber">4.5.2</span> <span class="title">Linear independence of eigenvectors</span></a></div></li>
+<li><div class="toc-item"><a href="s_diagonalization.html#ss_diagonalizable_matrices" class="internal"><span class="codenumber">4.5.3</span> <span class="title">Diagonalizable matrices</span></a></div></li>
+<li><div class="toc-item"><a href="s_diagonalization.html#subsection-74" class="internal"><span class="codenumber">4.5.4</span> <span class="title">Algebraic and geometric multiplicity</span></a></div></li>
+<li><div class="toc-item"><a href="s_diagonalization.html#s_diagonalization_ex" class="internal"><span class="codenumber">4.5.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="s_spectral_theorem.html" class="internal"><span class="codenumber">4.6</span> <span class="title">The spectral theorem</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="s_spectral_theorem.html#ss_self-adjoint" class="internal"><span class="codenumber">4.6.1</span> <span class="title">Self-adjoint operators</span></a></div></li>
+<li><div class="toc-item"><a href="s_spectral_theorem.html#ss_spectal_theorem_operators" class="internal"><span class="codenumber">4.6.2</span> <span class="title">The spectral theorem for self-adjoint operators</span></a></div></li>
+<li><div class="toc-item"><a href="s_spectral_theorem.html#s_spectral_theorem_ex" class="internal"><span class="codenumber">4.6.3</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="c_innerproductspaces.html" class="internal"><span class="codenumber">5</span> <span class="title">Inner product spaces</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="s_innerproducts.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Inner product spaces</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="s_innerproducts.html#ss_inner_products" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Inner products</span></a></div></li>
+<li><div class="toc-item"><a href="s_innerproducts.html#ss_norm_distance" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Norm and distance</span></a></div></li>
+<li><div class="toc-item"><a href="s_innerproducts.html#subsection-79" class="internal"><span class="codenumber">5.1.3</span> <span class="title">Cauchy-Schwarz inequality, triangle inequalities, and angles between vectors</span></a></div></li>
+<li><div class="toc-item"><a href="s_innerproducts.html#subsection-80" class="internal"><span class="codenumber">5.1.4</span> <span class="title">Choosing your inner product</span></a></div></li>
+<li><div class="toc-item"><a href="s_innerproducts.html#s_innerproducts_ex" class="internal"><span class="codenumber">5.1.5</span> <span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
 <li class="active">
-<div class="toc-item"><a href="s_orthogonality.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Orthogonal bases</span></a></div>
+<div class="toc-item"><a href="s_orthogonality.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Orthogonal bases</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="s_orthogonality.html#ss_orthogonal" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Orthogonal vectors and sets</span></a></div></li>
-<li><div class="toc-item"><a href="s_orthogonality.html#subsection-64" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Orthogonal bases</span></a></div></li>
-<li><div class="toc-item"><a href="s_orthogonality.html#s_orthogonal_bases_ex" class="internal"><span class="codenumber">4.2.3</span> <span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="s_orthogonality.html#ss_orthogonal" class="internal"><span class="codenumber">5.2.1</span> <span class="title">Orthogonal vectors and sets</span></a></div></li>
+<li><div class="toc-item"><a href="s_orthogonality.html#subsection-82" class="internal"><span class="codenumber">5.2.2</span> <span class="title">Orthogonal bases</span></a></div></li>
+<li><div class="toc-item"><a href="s_orthogonality.html#ss_orthogonal_change_of_basis" class="internal"><span class="codenumber">5.2.3</span> <span class="title">Coordinate vectors and matrix representations with respect to orthogonal bases</span></a></div></li>
+<li><div class="toc-item"><a href="s_orthogonality.html#s_orthogonal_bases_ex" class="internal"><span class="codenumber">5.2.4</span> <span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
 <li>
-<div class="toc-item"><a href="s_orthogonal_projection.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Orthogonal projection</span></a></div>
+<div class="toc-item"><a href="s_orthogonal_projection.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Orthogonal projection</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="s_orthogonal_projection.html#ss_ortho_complement" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Orthogonal complement</span></a></div></li>
-<li><div class="toc-item"><a href="s_orthogonal_projection.html#subsection-66" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Orthogonal Projection</span></a></div></li>
-<li><div class="toc-item"><a href="s_orthogonal_projection.html#subsection-67" class="internal"><span class="codenumber">4.3.3</span> <span class="title">Orthogonal projection in <span class="process-math">\(\R^2\)</span> and <span class="process-math">\(\R^3\)</span></span></a></div></li>
-<li><div class="toc-item"><a href="s_orthogonal_projection.html#subsection-68" class="internal"><span class="codenumber">4.3.4</span> <span class="title">Trigonometric polynomial approximation</span></a></div></li>
-<li><div class="toc-item"><a href="s_orthogonal_projection.html#subsection-69" class="internal"><span class="codenumber">4.3.5</span> <span class="title">Least-squares solution to linear systems</span></a></div></li>
-<li><div class="toc-item"><a href="s_orthogonal_projection.html#s_orthogonal_projection_ex" class="internal"><span class="codenumber">4.3.6</span> <span class="title">Exercises</span></a></div></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="c_transbasis.html" class="internal"><span class="codenumber">5</span> <span class="title">Eigenvectors and diagonalization</span></a></div>
-<ul class="structural">
-<li>
-<div class="toc-item"><a href="s_coordinatevectors.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Coordinate vectors</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="s_coordinatevectors.html#ss_coordinate_vectors" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Coordinate vectors</span></a></div></li>
-<li><div class="toc-item"><a href="s_coordinatevectors.html#ss_coordinate_transformation" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Coordinate vector transformation</span></a></div></li>
-<li><div class="toc-item"><a href="s_coordinatevectors.html#s_coordinatevectors_ex" class="internal"><span class="codenumber">5.1.3</span> <span class="title">Exercises</span></a></div></li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="s_matrixreps.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Matrix representations of linear transformations</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="s_matrixreps.html#ss_matrix_reps" class="internal"><span class="codenumber">5.2.1</span> <span class="title">Matrix representations of linear transformations</span></a></div></li>
-<li><div class="toc-item"><a href="s_matrixreps.html#ss_matrixreps_models" class="internal"><span class="codenumber">5.2.2</span> <span class="title">Matrix representations as models</span></a></div></li>
-<li><div class="toc-item"><a href="s_matrixreps.html#subsection-74" class="internal"><span class="codenumber">5.2.3</span> <span class="title">Choice of basis</span></a></div></li>
-<li><div class="toc-item"><a href="s_matrixreps.html#s_matrixreps_ex" class="internal"><span class="codenumber">5.2.4</span> <span class="title">Exercises</span></a></div></li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="s_changeofbasis.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Change of basis</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="s_changeofbasis.html#ss_change_of_basis" class="internal"><span class="codenumber">5.3.1</span> <span class="title">Change of basis matrix</span></a></div></li>
-<li><div class="toc-item"><a href="s_changeofbasis.html#ss_changebasis_orthonormal" class="internal"><span class="codenumber">5.3.2</span> <span class="title">Working with orthonormal bases</span></a></div></li>
-<li><div class="toc-item"><a href="s_changeofbasis.html#subsection-77" class="internal"><span class="codenumber">5.3.3</span> <span class="title">Change of basis for transformations</span></a></div></li>
-<li><div class="toc-item"><a href="s_changeofbasis.html#ss_changebasis_similarity" class="internal"><span class="codenumber">5.3.4</span> <span class="title">Similarity and the holy commutative tent of linear algebra</span></a></div></li>
-<li><div class="toc-item"><a href="s_changeofbasis.html#s_changeofbasis_ex" class="internal"><span class="codenumber">5.3.5</span> <span class="title">Exercises</span></a></div></li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="s_eigenvectors.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Eigenvectors and eigenvalues</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="s_eigenvectors.html#subsection-79" class="internal"><span class="codenumber">5.4.1</span> <span class="title">Eigenvectors</span></a></div></li>
-<li><div class="toc-item"><a href="s_eigenvectors.html#subsection-80" class="internal"><span class="codenumber">5.4.2</span> <span class="title">Finding eigenvalues and eigenvectors systematically</span></a></div></li>
-<li><div class="toc-item"><a href="s_eigenvectors.html#ss_eigenvectors_characteristic_polynomial" class="internal"><span class="codenumber">5.4.3</span> <span class="title">Properties of the characteristic polynomial</span></a></div></li>
-<li><div class="toc-item"><a href="s_eigenvectors.html#s_eigenvectors_ex" class="internal"><span class="codenumber">5.4.4</span> <span class="title">Exercises</span></a></div></li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="s_diagonalization.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Diagonalization</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="s_diagonalization.html#ss_diagonalizable" class="internal"><span class="codenumber">5.5.1</span> <span class="title">Diagonalizable transformations</span></a></div></li>
-<li><div class="toc-item"><a href="s_diagonalization.html#ss_diagonalizable_independent_eigenvectors" class="internal"><span class="codenumber">5.5.2</span> <span class="title">Linear independence of eigenvectors</span></a></div></li>
-<li><div class="toc-item"><a href="s_diagonalization.html#ss_diagonalizable_matrices" class="internal"><span class="codenumber">5.5.3</span> <span class="title">Diagonalizable matrices</span></a></div></li>
-<li><div class="toc-item"><a href="s_diagonalization.html#subsection-85" class="internal"><span class="codenumber">5.5.4</span> <span class="title">Algebraic and geometric multiplicity</span></a></div></li>
-<li><div class="toc-item"><a href="s_diagonalization.html#s_diagonalization_ex" class="internal"><span class="codenumber">5.5.5</span> <span class="title">Exercises</span></a></div></li>
-</ul>
-</li>
-<li>
-<div class="toc-item"><a href="s_spectral_theorem.html" class="internal"><span class="codenumber">5.6</span> <span class="title">The spectral theorem</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="s_spectral_theorem.html#ss_self-adjoint" class="internal"><span class="codenumber">5.6.1</span> <span class="title">Self-adjoint operators</span></a></div></li>
-<li><div class="toc-item"><a href="s_spectral_theorem.html#ss_spectal_theorem_operators" class="internal"><span class="codenumber">5.6.2</span> <span class="title">The spectral theorem for self-adjoint operators</span></a></div></li>
-<li><div class="toc-item"><a href="s_spectral_theorem.html#s_spectral_theorem_ex" class="internal"><span class="codenumber">5.6.3</span> <span class="title">Exercises</span></a></div></li>
+<li><div class="toc-item"><a href="s_orthogonal_projection.html#ss_ortho_complement" class="internal"><span class="codenumber">5.3.1</span> <span class="title">Orthogonal complement</span></a></div></li>
+<li><div class="toc-item"><a href="s_orthogonal_projection.html#subsection-85" class="internal"><span class="codenumber">5.3.2</span> <span class="title">Orthogonal Projection</span></a></div></li>
+<li><div class="toc-item"><a href="s_orthogonal_projection.html#subsection-86" class="internal"><span class="codenumber">5.3.3</span> <span class="title">Orthogonal projection in <span class="process-math">\(\R^2\)</span> and <span class="process-math">\(\R^3\)</span></span></a></div></li>
+<li><div class="toc-item"><a href="s_orthogonal_projection.html#subsection-87" class="internal"><span class="codenumber">5.3.4</span> <span class="title">Trigonometric polynomial approximation</span></a></div></li>
+<li><div class="toc-item"><a href="s_orthogonal_projection.html#subsection-88" class="internal"><span class="codenumber">5.3.5</span> <span class="title">Least-squares solution to linear systems</span></a></div></li>
+<li><div class="toc-item"><a href="s_orthogonal_projection.html#s_orthogonal_projection_ex" class="internal"><span class="codenumber">5.3.6</span> <span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
 </ul>
@@ -759,26 +789,26 @@ a_{m1} \amp  a_{m2} \amp  \cdots \amp  a_{mn}\amp b_{m}
 </li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="s_orthogonality"><h2 class="heading hide-type">
-<span class="type">Section</span> <span class="codenumber">4.2</span> <span class="title">Orthogonal bases</span>
+<span class="type">Section</span> <span class="codenumber">5.2</span> <span class="title">Orthogonal bases</span>
 </h2>
 <section class="subsection" id="ss_orthogonal"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">4.2.1</span> <span class="title">Orthogonal vectors and sets</span>
+<span class="type">Subsection</span> <span class="codenumber">5.2.1</span> <span class="title">Orthogonal vectors and sets</span>
 </h3>
-<article class="definition definition-like" id="definition-88"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.2.1</span><span class="period">.</span><span class="space"> </span><span class="title">Orthogonality.</span>
-</h4>  <div class="para" id="p-3016">Let <span class="process-math">\((V,\langle \ , \rangle)\)</span> be an inner product space. Vectors <span class="process-math">\(\boldv, \boldw\in V\)</span> are <dfn class="terminology">orthogonal</dfn> if <span class="process-math">\(\langle \boldv, \boldw\rangle =0\text{.}\)</span>
-</div> <div class="para logical" id="p-3017">
+<article class="definition definition-like" id="definition-103"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.2.1</span><span class="period">.</span><span class="space"> </span><span class="title">Orthogonality.</span>
+</h4>  <div class="para" id="p-3765">Let <span class="process-math">\((V,\langle \ , \rangle)\)</span> be an inner product space. Vectors <span class="process-math">\(\boldv, \boldw\in V\)</span> are <dfn class="terminology">orthogonal</dfn> if <span class="process-math">\(\langle \boldv, \boldw\rangle =0\text{.}\)</span>
+</div> <div class="para logical" id="p-3766">
 <div class="para">Let <span class="process-math">\(S\subseteq V\)</span> be a set of <em class="emphasis">nonzero</em> vectors.</div>
 <ul class="disc">
-<li id="li-888"><div class="para" id="p-3018">The set <span class="process-math">\(S\)</span> is <dfn class="terminology">orthogonal</dfn> if <span class="process-math">\(\langle\boldv,\boldw \rangle=0\)</span> for all <span class="process-math">\(\boldv\ne\boldw\in S\text{.}\)</span> We say that the elements of <span class="process-math">\(S\)</span> are <dfn class="terminology">pairwise orthogonal</dfn> in this case.</div></li>
-<li id="li-889"><div class="para" id="p-3019">The set <span class="process-math">\(S\)</span> is <dfn class="terminology">orthonormal</dfn> if it is both orthogonal and satisfies <span class="process-math">\(\norm{\boldv}=1\)</span> for all <span class="process-math">\(\boldv\in S\text{:}\)</span> i.e., <span class="process-math">\(S\)</span> consists of pairwise orthogonal unit vectors.</div></li>
+<li id="li-1126"><div class="para" id="p-3767">The set <span class="process-math">\(S\)</span> is <dfn class="terminology">orthogonal</dfn> if <span class="process-math">\(\langle\boldv,\boldw \rangle=0\)</span> for all <span class="process-math">\(\boldv\ne\boldw\in S\text{.}\)</span> We say that the elements of <span class="process-math">\(S\)</span> are <dfn class="terminology">pairwise orthogonal</dfn> in this case.</div></li>
+<li id="li-1127"><div class="para" id="p-3768">The set <span class="process-math">\(S\)</span> is <dfn class="terminology">orthonormal</dfn> if it is both orthogonal and satisfies <span class="process-math">\(\norm{\boldv}=1\)</span> for all <span class="process-math">\(\boldv\in S\text{:}\)</span> i.e., <span class="process-math">\(S\)</span> consists of pairwise orthogonal unit vectors.</div></li>
 </ul>
 </div></article><article class="theorem theorem-like" id="th_orthogonal"><h4 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">4.2.2</span><span class="period">.</span><span class="space"> </span><span class="title">Orthogonal implies linearly independent.</span>
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.2.2</span><span class="period">.</span><span class="space"> </span><span class="title">Orthogonal implies linearly independent.</span>
 </h4>
-<div class="para" id="p-3020">Let <span class="process-math">\((V,\langle\ , \rangle)\)</span> be an inner product space. If <span class="process-math">\(S\)</span> is orthogonal, then <span class="process-math">\(S\)</span> is linearly independent.</div></article><article class="hiddenproof" id="proof-80"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-80"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-80"><article class="hiddenproof"><div class="para logical" id="p-3021">
+<div class="para" id="p-3769">Let <span class="process-math">\((V,\langle\ , \rangle)\)</span> be an inner product space. If <span class="process-math">\(S\)</span> is orthogonal, then <span class="process-math">\(S\)</span> is linearly independent.</div></article><article class="hiddenproof" id="proof-123"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-123"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-123"><article class="hiddenproof"><div class="para logical" id="p-3770">
 <div class="para">Given any distinct elements <span class="process-math">\(\boldv_1, \boldv_2, \dots, \boldv_r\in S\text{,}\)</span> we have</div>
-<div class="displaymath process-math" id="md-205">
+<div class="displaymath process-math" id="md-268">
 \begin{align*}
 c_1\boldv_1 +c_2\boldv_2+\cdots +c_r\boldv_r=\boldzero\amp \Rightarrow\amp  \langle c_1\boldv_1 +c_2\boldv_2 +\cdots +c_r\boldv_r,\boldv_i\rangle=\langle\boldzero,\boldv_i\rangle\\
 \amp \Rightarrow\amp  c_1\langle\boldv_1,\boldv_i\rangle +c_2\langle \boldv_2,\boldv_i\rangle +\cdots +c_r\langle\boldv_r,\boldv_i\rangle=0\\
@@ -788,17 +818,17 @@ c_1\boldv_1 +c_2\boldv_2+\cdots +c_r\boldv_r=\boldzero\amp \Rightarrow\amp  \lan
 </div>
 <div class="para">This proves that <span class="process-math">\(S\)</span> is linearly independent.</div>
 </div></article></div>
-<article class="example example-like" id="example-99"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.2.3</span><span class="period">.</span>
+<article class="example example-like" id="example-143"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.2.3</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-3022">Show that the set <span class="process-math">\(S=\{\boldx_1=(1,1,1),\boldx_2=(1,2,-3), \boldx_3=(-5,4,1)\}\)</span> is orthogonal with respect to the dot product. Explain why it follows that <span class="process-math">\(S\)</span> is a basis of <span class="process-math">\(\R^3\text{.}\)</span>
+<div class="para" id="p-3771">Show that the set <span class="process-math">\(S=\{\boldx_1=(1,1,1),\boldx_2=(1,2,-3), \boldx_3=(-5,4,1)\}\)</span> is orthogonal with respect to the dot product. Explain why it follows that <span class="process-math">\(S\)</span> is a basis of <span class="process-math">\(\R^3\text{.}\)</span>
 </div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-90" id="solution-90"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-90"><div class="solution solution-like"><div class="para" id="p-3023">A simple computation shows <span class="process-math">\(\boldx_i\cdot \boldx_j=0\)</span> for all <span class="process-math">\(1\leq i\ne j\leq 3\text{,}\)</span> showing that <span class="process-math">\(S\)</span> is orthogonal. <a href="" class="xref" data-knowl="./knowl/th_orthogonal.html" title="Theorem 4.2.2: Orthogonal implies linearly independent">Theorem 4.2.2</a> implies <span class="process-math">\(S\)</span> is linearly independent. Since <span class="process-math">\(\val{S}=\dim \R^3=3\text{,}\)</span> it follows from <a href="" class="xref" data-knowl="./knowl/cor_street_smarts.html" title="Corollary 3.7.9: Street smarts">Corollary 3.7.9</a> that <span class="process-math">\(S\)</span> is a basis.</div></div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-117" id="solution-117"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-117"><div class="solution solution-like"><div class="para" id="p-3772">A simple computation shows <span class="process-math">\(\boldx_i\cdot \boldx_j=0\)</span> for all <span class="process-math">\(1\leq i\ne j\leq 3\text{,}\)</span> showing that <span class="process-math">\(S\)</span> is orthogonal. <a href="" class="xref" data-knowl="./knowl/th_orthogonal.html" title="Theorem 5.2.2: Orthogonal implies linearly independent">Theorem 5.2.2</a> implies <span class="process-math">\(S\)</span> is linearly independent. Since <span class="process-math">\(\val{S}=\dim \R^3=3\text{,}\)</span> it follows from <a href="" class="xref" data-knowl="./knowl/cor_street_smarts.html" title="Corollary 3.7.9: Street smarts">Corollary 3.7.9</a> that <span class="process-math">\(S\)</span> is a basis.</div></div></div>
 </div></article><article class="example example-like" id="eg_orthogonal_functions"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.2.4</span><span class="period">.</span>
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.2.4</span><span class="period">.</span>
 </h4>
-<div class="para logical" id="p-3024">
+<div class="para logical" id="p-3773">
 <div class="para">Let <span class="process-math">\(V=C([0,2\pi])\)</span> with integral inner product <span class="process-math">\(\langle f, g\rangle=\int_0^{2\pi} f(x)g(x) \, dx\text{,}\)</span> and let</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -808,9 +838,9 @@ S=\{1, \cos(x),\sin(x),\cos(2x),\sin(2x), \dots\}=\{\cos(nx)\colon n\in\Z_{&gt;0
 <div class="para">where the element <span class="process-math">\(1\in S\)</span> is understood as the constant function <span class="process-math">\(f(x)=1\)</span> for all <span class="process-math">\(x\in [0,2\pi]\text{.}\)</span> Show that <span class="process-math">\(S\)</span> is orthogonal and hence linearly independent.</div>
 </div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-91" id="solution-91"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-91"><div class="solution solution-like"><div class="para logical" id="p-3025">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-118" id="solution-118"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-118"><div class="solution solution-like"><div class="para logical" id="p-3774">
 <div class="para">First observe that</div>
-<div class="displaymath process-math" id="md-206">
+<div class="displaymath process-math" id="md-269">
 \begin{align*}
 \angvec{1,1} \amp = \int_0^{2\pi} 1\, dx=2\pi \\
 \angvec{1, \cos n x} \amp= \int_0^{2\pi}\cos n x\, dx=0 \\
@@ -818,7 +848,7 @@ S=\{1, \cos(x),\sin(x),\cos(2x),\sin(2x), \dots\}=\{\cos(nx)\colon n\in\Z_{&gt;0
 \end{align*}
 </div>
 <div class="para">for all <span class="process-math">\(n\text{.}\)</span> (Note: since <span class="process-math">\(\angvec{1,1}=2\pi\ne 1\text{,}\)</span> the set <span class="process-math">\(S\)</span> is not orthonormal. ) Next, using the trigonometric identities</div>
-<div class="displaymath process-math" id="md-207">
+<div class="displaymath process-math" id="md-270">
 \begin{align*}
 \cos\alpha\cos\beta \amp =\frac{1}{2}(\cos(\alpha-\beta)+\cos(\alpha+\beta))\\
 \sin\alpha\sin\beta  \amp=\frac{1}{2}(\cos(\alpha-\beta)-\cos(\alpha+\beta)) \\
@@ -826,7 +856,7 @@ S=\{1, \cos(x),\sin(x),\cos(2x),\sin(2x), \dots\}=\{\cos(nx)\colon n\in\Z_{&gt;0
 \end{align*}
 </div>
 <div class="para">it follows that</div>
-<div class="displaymath process-math" id="md-208">
+<div class="displaymath process-math" id="md-271">
 \begin{align*}
 \langle \cos(nx),\cos(mx)\rangle=\int_0^{2\pi}\cos(nx)\cos(mx)\, dx\amp =\begin{cases} 0\amp  \text{ if \(n\ne m\) }\\
 \pi\amp  \text{ if \(n=m\) }  \end{cases}\\
@@ -836,22 +866,63 @@ S=\{1, \cos(x),\sin(x),\cos(2x),\sin(2x), \dots\}=\{\cos(nx)\colon n\in\Z_{&gt;0
 \end{align*}
 </div>
 </div></div></div>
-</div></article></section><section class="subsection" id="subsection-64"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">4.2.2</span> <span class="title">Orthogonal bases</span>
+</div></article></section><section class="subsection" id="subsection-82"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">5.2.2</span> <span class="title">Orthogonal bases</span>
 </h3>
-<div class="para" id="p-3026">Given an inner product space <span class="process-math">\(V\)</span> we will see that working with orthogonal sets of vectors is extremely convenient computationally speaking. In particular, when picking basis of <span class="process-math">\(V\text{,}\)</span> we will look for one consisting of orthogonal vectors. Not surprisingly, this is called an <em class="emphasis">orthogonal basis</em>.</div>
+<div class="para" id="p-3775">Given an inner product space <span class="process-math">\(V\)</span> we will see that working with orthogonal sets of vectors is extremely convenient computationally speaking. In particular, when picking basis of <span class="process-math">\(V\text{,}\)</span> we will look for one consisting of orthogonal vectors. Not surprisingly, this is called an <em class="emphasis">orthogonal basis</em>.</div>
 <article class="definition definition-like" id="d_orthogonal_basis"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.2.5</span><span class="period">.</span><span class="space"> </span><span class="title">Orthogonal and orthonormal bases.</span>
-</h4>  <div class="para" id="p-3027">Let <span class="process-math">\((V,\langle \ , \rangle)\)</span> be an inner product space. An <dfn class="terminology">orthogonal basis</dfn> (resp., <dfn class="terminology">orthonormal basis</dfn>) of <span class="process-math">\(V\)</span> is a basis <span class="process-math">\(B\)</span> that is orthogonal (resp., orthonormal) as a set.</div></article><div class="para" id="p-3028">
-<a href="" class="xref" data-knowl="./knowl/th_orthogonal_basis_formula.html" title="Theorem 4.2.7: Calculating with orthogonal bases">Theorem 4.2.7</a> serves as a first example illustrating the virtue of orthogonal and orthonormal base.  We preface it with a mantra conveying the general principle.</div>
-<article class="principle theorem-like" id="princ_orthogonalbasis_mantra"><h4 class="heading">
-<span class="type">Mantra</span><span class="space"> </span><span class="codenumber">4.2.6</span><span class="period">.</span><span class="space"> </span><span class="title">Orthogonal basis mantra.</span>
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.2.5</span><span class="period">.</span><span class="space"> </span><span class="title">Orthogonal and orthonormal bases.</span>
+</h4>  <div class="para" id="p-3776">Let <span class="process-math">\((V,\langle \ , \rangle)\)</span> be an inner product space. An <dfn class="terminology">orthogonal basis</dfn> (resp., <dfn class="terminology">orthonormal basis</dfn>) of <span class="process-math">\(V\)</span> is a basis <span class="process-math">\(B\)</span> that is orthogonal (resp., orthonormal) as a set.</div></article><div class="para" id="p-3777">We will see in <a href="" class="xref" data-knowl="./knowl/th_orthogonal_basis_formula.html" title="Theorem 5.2.8: Calculating with orthogonal bases">Theorem 5.2.8</a> precisely why working with orthogonal or orthonormal bases is so convenient. Before we do so, however, we would like some guarantee that we can actually find an orthogonal basis. The <em class="emphasis">Gram-Schmidt procedure</em> comes to our rescue in this regard, at least in the finite-dimensional case, as it provides a method of converting an arbitrary basis into an orthogonal one.</div>
+<article class="algorithm theorem-like" id="proc_gram-schmidt"><h4 class="heading">
+<span class="type">Procedure</span><span class="space"> </span><span class="codenumber">5.2.6</span><span class="period">.</span><span class="space"> </span><span class="title">Gram-Schmidt procedure.</span>
 </h4>
-<div class="para" id="p-3029">Working with an orthogonal basis is nice; working with an orthonormal basis is even nicer.</div></article><article class="theorem theorem-like" id="th_orthogonal_basis_formula"><h4 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">4.2.7</span><span class="period">.</span><span class="space"> </span><span class="title">Calculating with orthogonal bases.</span>
+<div class="para logical" id="p-3778">
+<div class="para">Let <span class="process-math">\((V, \langle \ , \ \rangle)\)</span> be an inner product space of dimension <span class="process-math">\(n\text{,}\)</span> and let <span class="process-math">\(B=\{\boldv_1, \boldv_2, \dots, \boldv_n\}\)</span> be a basis for <span class="process-math">\(V\text{.}\)</span> We can convert <span class="process-math">\(B\)</span> into an orthogonal basis <span class="process-math">\(B'=\{\boldw_1, \boldw_2, \dots, \boldw_n\}\text{,}\)</span> and further to an orthonormal basis <span class="process-math">\(B''=\{\boldu_1, \boldu_2, \dots, \boldu_n\}\text{,}\)</span> as follows:</div>
+<ol class="decimal">
+<li id="li-1128"><div class="para" id="p-3779">Set <span class="process-math">\(\boldw_1=\boldv_1\text{.}\)</span>
+</div></li>
+<li id="li-1129">
+<span class="heading"><span class="title">Orthogonalize.</span></span><div class="para logical" id="p-3780">
+<div class="para">Proceeding in succession for each <span class="process-math">\(2\leq r\leq n\text{,}\)</span> replace <span class="process-math">\(\boldv_r\)</span> with the vector <span class="process-math">\(\boldw_r\)</span> defined as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\boldw_r=\boldv_r-\frac{\angvec{\boldv_r, \boldw_{r-1}}}{\angvec{\boldw_{r-1},\boldw_{r-1}}}\boldw_{r-1}-\frac{\angvec{\boldv_r, \boldw_{r-2}}}{\angvec{\boldw_{r-2},\boldw_{r-2}}}\boldw_{r-2}-\cdots -\frac{\angvec{\boldv_r, \boldw_{1}}}{\angvec{\boldw_{1},\boldw_{1}}}\boldw_1\text{.}
+\end{equation*}
+</div>
+<div class="para">The resulting set <span class="process-math">\(B'=\{\boldw_1, \boldw_2, \dots, \boldw_n\}\)</span> is an orthogonal basis of <span class="process-math">\(V\text{.}\)</span>
+</div>
+</div>
+</li>
+<li id="li-1130">
+<span class="heading"><span class="title">Normalize.</span></span><div class="para logical" id="p-3781">
+<div class="para">For each <span class="process-math">\(1\leq i\leq n\)</span> let</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\boldu_i=\frac{1}{\norm{\boldw_i}}\,\boldw_i\text{.}
+\end{equation*}
+</div>
+<div class="para">The set <span class="process-math">\(B''=\{\boldu_1, \boldu_2, \dots, \boldu_n\}\)</span> is an orthonormal basis of <span class="process-math">\(V\text{.}\)</span>
+</div>
+</div>
+</li>
+</ol>
+</div></article><article class="corollary theorem-like" id="cor_orthonormal_existence"><h4 class="heading">
+<span class="type">Corollary</span><span class="space"> </span><span class="codenumber">5.2.7</span><span class="period">.</span><span class="space"> </span><span class="title">Existence of orthonormal bases.</span>
 </h4>
-<div class="para" id="p-3030">Let <span class="process-math">\((V, \langle , \rangle )\)</span> be an inner product space.  and let</div> <ol class="decimal">
-<li id="li-890"><div class="para logical" id="p-3031">
+<div class="para" id="p-3782">Let <span class="process-math">\((V,\langle \ , \rangle)\)</span> be an inner product space of dimension <span class="process-math">\(n\text{.}\)</span>
+</div> <ol class="decimal">
+<li id="li-1131"><div class="para" id="p-3783">There is an orthonormal basis for <span class="process-math">\(V\text{.}\)</span> In fact, any basis of <span class="process-math">\(V\)</span> can be converted to an orthonormal basis using the <a href="" class="xref" data-knowl="./knowl/proc_gram-schmidt.html" title="Procedure 5.2.6: Gram-Schmidt procedure">Gram-Schmidt procedure</a>.</div></li>
+<li id="li-1132"><div class="para" id="p-3784">If <span class="process-math">\(S\subseteq V\)</span> is an orthogonal set, then there is an orthogonal basis <span class="process-math">\(B\)</span> containing <span class="process-math">\(S\text{:}\)</span> i.e., any orthogonal set can be extended to an orthogonal basis.</div></li>
+</ol></article><article class="hiddenproof" id="proof-124"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-124"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-124"><article class="hiddenproof"><ol class="decimal">
+<li id="li-1133"><div class="para" id="p-3785">See <a href="" class="xref" data-knowl="./knowl/proc_gram-schmidt.html" title="Procedure 5.2.6: Gram-Schmidt procedure">Procedure 5.2.6</a> and its proof.</div></li>
+<li id="li-1134"><div class="para" id="p-3786">The orthogonal set <span class="process-math">\(S\)</span> is linearly independent by <a href="" class="xref" data-knowl="./knowl/th_orthogonal.html" title="Theorem 5.2.2: Orthogonal implies linearly independent">Theorem 5.2.2</a>. Let <span class="process-math">\(S=\{\boldv_1,\boldv_2,\dots, \boldv_r\}\)</span> be the distinct elements of <span class="process-math">\(S\text{.}\)</span> (We must have <span class="process-math">\(r\leq n\)</span> since <span class="process-math">\(S\)</span> is linearly independent.) By <a href="" class="xref" data-knowl="./knowl/th_basis_contract_expand.html" title="Theorem 3.7.8: Contracting and expanding to bases">Theorem 3.7.8</a> we can extend <span class="process-math">\(S\)</span> to a basis <span class="process-math">\(B=\{\boldv_1,\dots, \boldv_r, \boldv_{r+1}, \dots, \boldv_n\}\text{.}\)</span> It is easy to see that when we apply the Gram-Schmidt procedure to <span class="process-math">\(B\text{,}\)</span> the first <span class="process-math">\(r\)</span> vectors are left unchanged, as they are already pairwise orthogonal. Thus Gram-Schmidt returns an orthogonal basis of the form <span class="process-math">\(B'=\{\boldv_1,\dots, \boldv_r, \boldw_{r+1}, \dots, \boldw_n\}\text{,}\)</span> as desired.</div></li>
+</ol></article></div>
+<div class="para" id="p-3787">Now let’s see the computational virtue of working with orthogonal bases.</div>
+<article class="theorem theorem-like" id="th_orthogonal_basis_formula"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.2.8</span><span class="period">.</span><span class="space"> </span><span class="title">Calculating with orthogonal bases.</span>
+</h4>
+<div class="para" id="p-3788">Let <span class="process-math">\((V, \langle , \rangle )\)</span> be an inner product space of dimension <span class="process-math">\(n\)</span> and let</div> <ol class="decimal">
+<li id="li-1135"><div class="para logical" id="p-3789">
 <div class="para">Let <span class="process-math">\(B=\{\boldv_1,\dots,\boldv_n\}\subseteq V\)</span> be an orthogonal basis of <span class="process-math">\(V\text{.}\)</span> For any <span class="process-math">\(\boldv\in V\)</span> we have</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -867,8 +938,8 @@ c_i=\frac{\langle \boldv,\boldv_i\rangle}{\langle\boldv_i,\boldv_i\rangle}
 <div class="para">for all <span class="process-math">\(1\leq i\leq n\text{.}\)</span> If <span class="process-math">\(B\)</span> is <em class="emphasis">orthonormal</em>, so that <span class="process-math">\(\langle \boldv_i, \boldv_i\rangle =1\)</span> for all <span class="process-math">\(1\leq i\leq n\text{,}\)</span> then <span class="process-math">\(c_i=\langle \boldv, \boldv_i\rangle\text{.}\)</span>
 </div>
 </div></li>
-<li id="li-891">
-<span class="heading"><span class="title">Generalized Pythagorean theorem.</span></span><div class="para logical" id="p-3032">
+<li id="li-1136">
+<span class="heading"><span class="title">Generalized Pythagorean theorem.</span></span><div class="para logical" id="p-3790">
 <div class="para">Let <span class="process-math">\(B=\{\boldv_1,\dots,\boldv_n\}\subseteq V\)</span> be an orthonormal basis of <span class="process-math">\(V\text{.}\)</span> Given <span class="process-math">\(\boldv=c_1\boldv_1+c_2\boldb_2+\cdots +c_n\boldv_n
 \text{,}\)</span> we have</div>
 <div class="displaymath process-math">
@@ -878,35 +949,36 @@ c_i=\frac{\langle \boldv,\boldv_i\rangle}{\langle\boldv_i,\boldv_i\rangle}
 </div>
 </div>
 </li>
-</ol></article><article class="example example-like" id="example-101"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.2.8</span><span class="period">.</span>
+</ol></article><div class="para" id="p-3791"></div>
+<article class="example example-like" id="example-145"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.2.9</span><span class="period">.</span>
 </h4>
-<div class="para logical" id="p-3033">
+<div class="para logical" id="p-3792">
 <div class="para">Consider the inner product space <span class="process-math">\(V=\R^2\)</span> with the dot product.</div>
 <ol class="decimal">
-<li id="li-892"><div class="para" id="p-3034">Verify that <span class="process-math">\(B'=\{\boldv_1=(\sqrt{3}/2,1/2), \boldv_2=(-1/2,\sqrt{3}/2)\}\)</span> is an orthonormal basis of <span class="process-math">\(\R^2\text{.}\)</span>
+<li id="li-1137"><div class="para" id="p-3793">Verify that <span class="process-math">\(B'=\{\boldv_1=(\sqrt{3}/2,1/2), \boldv_2=(-1/2,\sqrt{3}/2)\}\)</span> is an orthonormal basis of <span class="process-math">\(\R^2\text{.}\)</span>
 </div></li>
-<li id="li-893"><div class="para" id="p-3035">Let <span class="process-math">\(\boldv=(4,2)\text{.}\)</span> Find the scalars <span class="process-math">\(c_1, c_2\in \R\)</span> such that <span class="process-math">\(\boldv=c_1\boldv_1+c_2\boldv_2\text{.}\)</span>
+<li id="li-1138"><div class="para" id="p-3794">Let <span class="process-math">\(\boldv=(4,2)\text{.}\)</span> Find the scalars <span class="process-math">\(c_1, c_2\in \R\)</span> such that <span class="process-math">\(\boldv=c_1\boldv_1+c_2\boldv_2\text{.}\)</span>
 </div></li>
-<li id="li-894"><div class="para" id="p-3036">Verify that <span class="process-math">\(\norm{\boldv}=\sqrt{c_1^2+c_2^2}\text{.}\)</span>
+<li id="li-1139"><div class="para" id="p-3795">Verify that <span class="process-math">\(\norm{\boldv}=\sqrt{c_1^2+c_2^2}\text{.}\)</span>
 </div></li>
 </ol>
 </div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-92" id="solution-92"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-92"><div class="solution solution-like"><ol class="decimal">
-<li id="li-895"><div class="para" id="p-3037">Easily verified.</div></li>
-<li id="li-896"><div class="para logical" id="p-3038">
-<div class="para">Using <a href="" class="xref" data-knowl="./knowl/th_orthogonal_basis_formula.html" title="Theorem 4.2.7: Calculating with orthogonal bases">Theorem 4.2.7</a> we compute</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_orthogonal_basis_formula.html" id="md-209">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-119" id="solution-119"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-119"><div class="solution solution-like"><ol class="decimal">
+<li id="li-1140"><div class="para" id="p-3796">Easily verified.</div></li>
+<li id="li-1141"><div class="para logical" id="p-3797">
+<div class="para">Using <a href="" class="xref" data-knowl="./knowl/th_orthogonal_basis_formula.html" title="Theorem 5.2.8: Calculating with orthogonal bases">Theorem 5.2.8</a> we compute</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_orthogonal_basis_formula.html" id="md-272">
 \begin{align*}
 c_1 \amp =\boldv\cdot \boldv_1=2\sqrt{3}+1  \\
 c_2\amp= \boldv\cdot \boldv_2=\sqrt{3}-2 \text{.}
 \end{align*}
 </div>
 </div></li>
-<li id="li-897"><div class="para logical" id="p-3039">
+<li id="li-1142"><div class="para logical" id="p-3798">
 <div class="para">Computing  directly yields <span class="process-math">\(\norm{\boldv}=\sqrt{20}=2\sqrt{5}\text{.}\)</span> Using the generalized Pythagorean theorem we have</div>
-<div class="displaymath process-math" id="md-210">
+<div class="displaymath process-math" id="md-273">
 \begin{align*}
 \norm{\boldv} \amp= \sqrt{(2\sqrt{3}+1)^2+(\sqrt{3}-2)^2} \\
 \amp=\sqrt{(12+4\sqrt{3}+1)+(3-4\sqrt{3}+4)} \\
@@ -916,179 +988,207 @@ c_2\amp= \boldv\cdot \boldv_2=\sqrt{3}-2 \text{.}
 <div class="para">as desired.</div>
 </div></li>
 </ol></div></div>
-</div></article><div class="para" id="p-3040">
-<a href="" class="xref" data-knowl="./knowl/th_orthogonal_basis_formula.html" title="Theorem 4.2.7: Calculating with orthogonal bases">Theorem 4.2.7</a> gives a first glimpse how working with orthogonal and orthonormal bases can make life easier. The question remains, however: Can we always find an orthonormal basis? The <em class="emphasis">Gram-Schmidt procedure</em> gives an affirmative answer to this question, at least in the finite-dimensional case, as it provides a method of converting an arbitrary basis into an orthogonal one.</div>
-<article class="algorithm theorem-like" id="proc_gram-schmidt"><h4 class="heading">
-<span class="type">Procedure</span><span class="space"> </span><span class="codenumber">4.2.9</span><span class="period">.</span><span class="space"> </span><span class="title">Gram-Schmidt procedure.</span>
-</h4>
-<div class="para logical" id="p-3041">
-<div class="para">Let <span class="process-math">\((V, \langle \ , \ \rangle)\)</span> be an inner product space, and let <span class="process-math">\(B=\{\boldv_1, \boldv_2, \dots, \boldv_n\}\)</span> be a basis for <span class="process-math">\(V\text{.}\)</span> We can convert <span class="process-math">\(B\)</span> into an orthogonal basis <span class="process-math">\(B'=\{\boldw_1, \boldw_2, \dots, \boldw_n\}\text{,}\)</span> and further to an orthonormal basis <span class="process-math">\(B''=\{\boldu_1, \boldu_2, \dots, \boldu_n\}\text{,}\)</span> as follows:</div>
-<ol class="decimal">
-<li id="li-898"><div class="para" id="p-3042">Set <span class="process-math">\(\boldw_1=\boldv_1\text{.}\)</span>
-</div></li>
-<li id="li-899">
-<span class="heading"><span class="title">Orthogonalize.</span></span><div class="para logical" id="p-3043">
-<div class="para">Proceeding in succession for each <span class="process-math">\(2\leq r\leq n\text{,}\)</span> replace <span class="process-math">\(\boldv_r\)</span> with the vector <span class="process-math">\(\boldw_r\)</span> defined as</div>
-<div class="displaymath process-math">
+</div></article></section><section class="subsection" id="ss_orthogonal_change_of_basis"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">5.2.3</span> <span class="title">Coordinate vectors and matrix representations with respect to orthogonal bases</span>
+</h3>
+<div class="para" id="p-3799">Let <span class="process-math">\(V\)</span> be an inner product space. By an <em class="emphasis">orthogonal</em> (resp., <em class="emphasis">orthonormal</em>) ordered basis of <span class="process-math">\(V\text{,}\)</span> we mean an ordered basis <span class="process-math">\((\boldv_1, \boldv_2, \dots, \boldv_n)\)</span> for which the underlying set <span class="process-math">\(\{\boldv_1, \boldv_2, \dots, \boldv_n\}\)</span> is orthogonal (resp., orthonormal). It should come as little surprise that as a consequence of <a href="" class="xref" data-knowl="./knowl/th_orthogonal_basis_formula.html" title="Theorem 5.2.8: Calculating with orthogonal bases">Theorem 5.2.8</a>, computing coordinate vectors and matrix representations with respect to orthogonal bases is especially easy.</div>
+<div class="para logical" id="p-3800">
+<div class="para">For example, if <span class="process-math">\(B=(\boldv_1, \boldv_2, \dots, \boldv_n)\)</span> is an orthogonal basis with respect to some inner product <span class="process-math">\(\langle , \rangle \text{,}\)</span> then by <a href="" class="xref" data-knowl="./knowl/th_orthogonal_basis_formula.html" title="Theorem 5.2.8: Calculating with orthogonal bases">Theorem 5.2.8</a> we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_orthogonal_basis_formula.html ./knowl/d_coordinatevector.html">
 \begin{equation*}
-\boldw_r=\boldv_r-\frac{\angvec{\boldv_r, \boldw_{r-1}}}{\angvec{\boldw_{r-1},\boldw_{r-1}}}\boldw_{r-1}-\frac{\angvec{\boldv_r, \boldw_{r-2}}}{\angvec{\boldw_{r-2},\boldw_{r-2}}}\boldw_{r-2}-\cdots -\frac{\angvec{\boldv_r, \boldw_{1}}}{\angvec{\boldw_{1},\boldw_{1}}}\boldw_1\text{.}
+\boldv=\frac{\langle \boldv,\boldv_1  \rangle }{\langle \boldv_1, \boldv_1\rangle }\boldv_1+\frac{\langle \boldv,\boldv_1  \rangle }{\langle \boldv_1, \boldv_1\rangle }\boldv_1+\cdots +\frac{\langle \boldv,\boldv_n  \rangle }{\langle \boldv_n, \boldv_n\rangle }\boldv_n\text{,}
 \end{equation*}
 </div>
-<div class="para">The resulting set <span class="process-math">\(B'=\{\boldw_1, \boldw_2, \dots, \boldw_n\}\)</span> is an orthogonal basis of <span class="process-math">\(V\text{.}\)</span>
+<div class="para">and thus, using definition <a href="" class="xref" data-knowl="./knowl/d_coordinatevector.html" title="Definition 4.1.3: Coordinate vectors">Definition 4.1.3</a>, we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_orthogonal_basis_formula.html ./knowl/d_coordinatevector.html">
+\begin{equation*}
+[\boldv]_B=\left(\frac{\langle \boldv,\boldv_1  \rangle }{\langle \boldv_1, \boldv_1\rangle }, \frac{\langle \boldv,\boldv_2  \rangle }{\langle \boldv_2, \boldv_2\rangle },\dots, \frac{\langle \boldv,\boldv_n  \rangle }{\langle \boldv_n, \boldv_n\rangle }\right)\text{.}
+\end{equation*}
+</div>
+<div class="para">We have thus proved the following theorem.</div>
+</div>
+<article class="theorem theorem-like" id="th_coordinates_orthogonal"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.2.10</span><span class="period">.</span><span class="space"> </span><span class="title">Coordinate vectors for orthogonal bases.</span>
+</h4>
+<div class="para logical" id="p-3801">
+<div class="para">Let <span class="process-math">\((V,\langle , \rangle )\)</span> be an inner product space and let <span class="process-math">\(B=(\boldv_1, \boldv_2, \dots, \boldv_n)\)</span> be an ordered basis.</div>
+<ol class="decimal">
+<li id="li-1143">
+<span class="heading"><span class="title">Orthogonal basis.</span></span><div class="para logical" id="p-3802">
+<div class="para">If <span class="process-math">\(B\)</span> is orthogonal, then for all <span class="process-math">\(\boldv\in V\)</span> we have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+[\boldv]_B=\left(\frac{\langle \boldv,\boldv_1  \rangle }{\langle \boldv_1, \boldv_1\rangle }, \frac{\langle \boldv,\boldv_2  \rangle }{\langle \boldv_2, \boldv_2\rangle },\dots, \frac{\langle \boldv,\boldv_n  \rangle }{\langle \boldv_n, \boldv_n\rangle }\right)\text{.}
+\end{equation*}
 </div>
 </div>
 </li>
-<li id="li-900">
-<span class="heading"><span class="title">Normalize.</span></span><div class="para logical" id="p-3044">
-<div class="para">For each <span class="process-math">\(1\leq i\leq n\)</span> let</div>
+<li id="li-1144">
+<span class="heading"><span class="title">Orthogonormal basis.</span></span><div class="para logical" id="p-3803">
+<div class="para">If <span class="process-math">\(B\)</span> is orthonormal, then for all <span class="process-math">\(\boldv\in V\)</span> we have</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\boldu_i=\frac{1}{\norm{\boldw_i}}\,\boldw_i\text{.}
+[\boldv]_B=\left(\langle \boldv,\boldv_1  \rangle, \langle \boldv,\boldv_2  \rangle ,\dots, \langle \boldv,\boldv_n  \rangle\right)\text{.}
 \end{equation*}
-</div>
-<div class="para">The set <span class="process-math">\(B''=\{\boldu_1, \boldu_2, \dots, \boldu_n\}\)</span> is an orthonormal basis of <span class="process-math">\(V\text{.}\)</span>
 </div>
 </div>
 </li>
 </ol>
-</div></article><article class="corollary theorem-like" id="cor_orthonormal_existence"><h4 class="heading">
-<span class="type">Corollary</span><span class="space"> </span><span class="codenumber">4.2.10</span><span class="period">.</span><span class="space"> </span><span class="title">Existence of orthonormal bases.</span>
+</div></article><article class="example example-like" id="example-146"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.2.11</span><span class="period">.</span><span class="space"> </span><span class="title">Orthogonal bases.</span>
 </h4>
-<div class="para" id="p-3045">Let <span class="process-math">\((V,\langle \ , \rangle)\)</span> be an inner product space of dimension <span class="process-math">\(n\text{.}\)</span>
-</div> <ol class="decimal">
-<li id="li-901"><div class="para" id="p-3046">There is an orthonormal basis for <span class="process-math">\(V\text{.}\)</span> In fact, any basis of <span class="process-math">\(V\)</span> can be converted to an orthonormal basis using the <a href="" class="xref" data-knowl="./knowl/proc_gram-schmidt.html" title="Procedure 4.2.9: Gram-Schmidt procedure">Gram-Schmidt procedure</a>.</div></li>
-<li id="li-902"><div class="para" id="p-3047">If <span class="process-math">\(S\subseteq V\)</span> is an orthogonal set, then there is an orthogonal basis <span class="process-math">\(B\)</span> containing <span class="process-math">\(S\text{:}\)</span> i.e., any orthogonal set can be extended to an orthogonal basis.</div></li>
-</ol></article><article class="hiddenproof" id="proof-81"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-81"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-81"><article class="hiddenproof"><ol class="decimal">
-<li id="li-903"><div class="para" id="p-3048">See <a href="" class="xref" data-knowl="./knowl/proc_gram-schmidt.html" title="Procedure 4.2.9: Gram-Schmidt procedure">Procedure 4.2.9</a> and its proof.</div></li>
-<li id="li-904"><div class="para" id="p-3049">The orthogonal set <span class="process-math">\(S\)</span> is linearly independent by <a href="" class="xref" data-knowl="./knowl/th_orthogonal.html" title="Theorem 4.2.2: Orthogonal implies linearly independent">Theorem 4.2.2</a>. Let <span class="process-math">\(S=\{\boldv_1,\boldv_2,\dots, \boldv_r\}\)</span> be the distinct elements of <span class="process-math">\(S\text{.}\)</span> (We must have <span class="process-math">\(r\leq n\)</span> since <span class="process-math">\(S\)</span> is linearly independent.) By <a href="" class="xref" data-knowl="./knowl/th_basis_contract_expand.html" title="Theorem 3.7.8: Contracting and expanding to bases">Theorem 3.7.8</a> we can extend <span class="process-math">\(S\)</span> to a basis <span class="process-math">\(B=\{\boldv_1,\dots, \boldv_r, \boldv_{r+1}, \dots, \boldv_n\}\text{.}\)</span> It is easy to see that when we apply the Gram-Schmidt procedure to <span class="process-math">\(B\text{,}\)</span> the first <span class="process-math">\(r\)</span> vectors are left unchanged, as they are already pairwise orthogonal. Thus Gram-Schmidt returns an orthogonal basis of the form <span class="process-math">\(B'=\{\boldv_1,\dots, \boldv_r, \boldw_{r+1}, \dots, \boldw_n\}\text{,}\)</span> as desired.</div></li>
-</ol></article></div></section><section class="exercises" id="s_orthogonal_bases_ex"><h3 class="heading hide-type">
-<span class="type">Exercises</span> <span class="codenumber">4.2.3</span> <span class="title">Exercises</span>
+<div class="para logical" id="p-3804">
+<div class="para">Let <span class="process-math">\(V=\R^2\)</span> and <span class="process-math">\(B=((1,1),(-1,2))\text{.}\)</span> Find a general formula for <span class="process-math">\([(a,b)]_B\text{.}\)</span> Note: <span class="process-math">\(B\)</span> is orthogonal with respect to the weighted dot product</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\langle (x_1,x_2), (y_1,y_2)\rangle =2x_1y_1+x_2y_2\text{.}
+\end{equation*}
+</div>
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-120" id="solution-120"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-120"><div class="solution solution-like"><div class="para logical" id="p-3805">
+<div class="para">Applying <a href="" class="xref" data-knowl="./knowl/th_coordinates_orthogonal.html" title="Theorem 5.2.10: Coordinate vectors for orthogonal bases">Theorem 5.2.10</a> to <span class="process-math">\(B\)</span> and the dot product with weights <span class="process-math">\(2, 1\text{,}\)</span> for any <span class="process-math">\(\boldv=(a,b)\)</span> we compute</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_coordinates_orthogonal.html" id="md-274">
+\begin{align*}
+[(a,b)]_B \amp =\left(\frac{\langle (a,b), (1,1)\rangle }{\langle (1,1),(1,1) \rangle }, \frac{\langle (a,b), (-1,2)\rangle }{\langle (-1,2),(-1,2) \rangle }\right)\\
+\amp=\left(\frac{1}{3}(2a+b),\frac{1}{3}(-a+b) \right) \text{.}
+\end{align*}
+</div>
+<div class="para">Let’s check our formula with <span class="process-math">\(\boldv=(3,-3)\text{.}\)</span> The formula yields <span class="process-math">\([(3,-3)]_B=(1,-2)\text{,}\)</span> and indeed we see that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_coordinates_orthogonal.html">
+\begin{equation*}
+(3,-3)=1(1,1)-2(-1,2)\text{.}
+\end{equation*}
+</div>
+</div></div></div>
+</div></article></section><section class="exercises" id="s_orthogonal_bases_ex"><h3 class="heading hide-type">
+<span class="type">Exercises</span> <span class="codenumber">5.2.4</span> <span class="title">Exercises</span>
 </h3>
-<article class="subexercises" id="subexercises-27"><h4 class="heading"><span class="title">Webwork Exercises</span></h4>
-<article class="exercise exercise-like" id="exercise-324"><h5 class="heading"><span class="codenumber">1<span class="period">.</span></span></h5>
-<div id="webwork-105" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="105" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-sourceFilePath="Library/Mizzou/Matrix_Theory/HW_6/prob_1.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
-<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-105')">Activate</button></div>
+<article class="subexercises" id="subexercises-33"><h4 class="heading"><span class="title">Webwork Exercises</span></h4>
+<article class="exercise exercise-like" id="exercise-439"><h5 class="heading"><span class="codenumber">1<span class="period">.</span></span></h5>
+<div id="webwork-133" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="133" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-sourceFilePath="Library/Mizzou/Matrix_Theory/HW_6/prob_1.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-133')">Activate</button></div>
 <div class="problem-contents">
-<div class="para" id="p-3050">Let <span class="process-math">\({ \mathbf{u}_1, \mathbf{u}_2, \mathbf{u}_3 }\)</span> be an orthonormal basis for an inner product space <span class="process-math">\(V\text{.}\)</span> If</div> <div class="para logical" id="p-3051"><div class="displaymath process-math">
+<div class="para" id="p-3806">Let <span class="process-math">\({ \mathbf{u}_1, \mathbf{u}_2, \mathbf{u}_3 }\)</span> be an orthonormal basis for an inner product space <span class="process-math">\(V\text{.}\)</span> If</div> <div class="para logical" id="p-3807"><div class="displaymath process-math">
 \begin{equation*}
 \mathbf{v} = a \mathbf{u}_1 + b \mathbf{u}_2 + c \mathbf{u}_3
 \end{equation*}
-</div></div> <div class="para" id="p-3052">is so that <span class="process-math">\(\|\mathbf{v}\| = 78\text{,}\)</span> <span class="process-math">\(\mathbf{v}\)</span> is orthogonal to <span class="process-math">\(\mathbf{u}_3\text{,}\)</span> and <span class="process-math">\(\langle \mathbf{v},\mathbf{u}_2 \rangle = -78\text{,}\)</span> find the possible values for <span class="process-math">\(a\text{,}\)</span> <span class="process-math">\(b\text{,}\)</span> and <span class="process-math">\(c\text{.}\)</span>
-</div> <div class="para" id="p-3053">
+</div></div> <div class="para" id="p-3808">is so that <span class="process-math">\(\|\mathbf{v}\| = 90\text{,}\)</span> <span class="process-math">\(\mathbf{v}\)</span> is orthogonal to <span class="process-math">\(\mathbf{u}_3\text{,}\)</span> and <span class="process-math">\(\langle \mathbf{v},\mathbf{u}_2 \rangle = -90\text{,}\)</span> find the possible values for <span class="process-math">\(a\text{,}\)</span> <span class="process-math">\(b\text{,}\)</span> and <span class="process-math">\(c\text{.}\)</span>
+</div> <div class="para" id="p-3809">
 <span class="process-math">\(a =\)</span> <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>, <span class="process-math">\(b =\)</span> <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>, <span class="process-math">\(c =\)</span> <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>
 </div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-328" id="answer-328"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-328"><div class="answer solution-like"><div class="para" id="p-3054"><span class="process-math">\(0\)</span></div></div></div>
-<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-329" id="answer-329"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-329"><div class="answer solution-like"><div class="para" id="p-3055"><span class="process-math">\(-78\)</span></div></div></div>
-<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-330" id="answer-330"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">3</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-330"><div class="answer solution-like"><div class="para" id="p-3056"><span class="process-math">\(0\)</span></div></div></div>
-<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-93" id="solution-93"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-93"><div class="solution solution-like">
-<div class="para" id="p-3057">
-<em class="alert">Solution:</em> One checks by direct computation that</div> <div class="para" id="p-3058">
-<span class="process-math">\(a = 0\text{,}\)</span> <span class="process-math">\(b = -78\text{,}\)</span> <span class="process-math">\(c = 0\)</span>
-</div> <div class="para" id="p-3059">must hold.</div>
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-345" id="answer-345"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-345"><div class="answer solution-like"><div class="para" id="p-3810"><span class="process-math">\(0\)</span></div></div></div>
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-346" id="answer-346"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-346"><div class="answer solution-like"><div class="para" id="p-3811"><span class="process-math">\(-90\)</span></div></div></div>
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-347" id="answer-347"><span class="type">Answer</span><span class="space"> </span><span class="codenumber">3</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-347"><div class="answer solution-like"><div class="para" id="p-3812"><span class="process-math">\(0\)</span></div></div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-121" id="solution-121"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-121"><div class="solution solution-like">
+<div class="para" id="p-3813">
+<em class="alert">Solution:</em> One checks by direct computation that</div> <div class="para" id="p-3814">
+<span class="process-math">\(a = 0\text{,}\)</span> <span class="process-math">\(b = -90\text{,}\)</span> <span class="process-math">\(c = 0\)</span>
+</div> <div class="para" id="p-3815">must hold.</div>
 </div></div>
 </div>
 </div>
-</div></article><article class="exercise exercise-like" id="exercise-325"><h5 class="heading"><span class="codenumber">2<span class="period">.</span></span></h5>
-<div id="webwork-106" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="106" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-sourceFilePath="Library/Rochester/setLinearAlgebra18OrthogonalBases/ur_la_18_2.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
-<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-106')">Activate</button></div>
+</div></article><article class="exercise exercise-like" id="exercise-440"><h5 class="heading"><span class="codenumber">2<span class="period">.</span></span></h5>
+<div id="webwork-134" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="134" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-sourceFilePath="Library/Rochester/setLinearAlgebra18OrthogonalBases/ur_la_18_2.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-134')">Activate</button></div>
 <div class="problem-contents">
-<div class="para logical" id="p-3060">
+<div class="para logical" id="p-3816">
 <div class="para">Let</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \vec{x} = \left[\begin{array}{c}
-2\cr
--2\cr
-4
-\end{array}\right] \ \mbox{ and } \ \vec{y} = \left[\begin{array}{c}
+3\cr
 1\cr
--5\cr
+-4
+\end{array}\right] \ \mbox{ and } \ \vec{y} = \left[\begin{array}{c}
+-3.5\cr
+-4.5\cr
 6
 \end{array}\right].
 \end{equation*}
 </div>
 <div class="para">Use the Gram-Schmidt process to determine an orthonormal basis for the subspace of <span class="process-math">\({\mathbb R}^3\)</span> spanned by <span class="process-math">\(\vec{x}\)</span> and <span class="process-math">\(\vec{y}\text{.}\)</span>
 </div>
-</div> <div class="para" id="p-3061">
+</div> <div class="para" id="p-3817">
 <span class="process-math">\(\Bigg\lbrace\)</span> <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> (3 <span class="times-sign">×</span> 1 array), <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> (3 <span class="times-sign">×</span> 1 array) <span class="process-math">\(\Bigg\rbrace.\)</span>
 </div>
 </div>
-</div></article><article class="exercise exercise-like" id="exercise-326"><h5 class="heading"><span class="codenumber">3<span class="period">.</span></span></h5>
-<div id="webwork-107" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="107" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-sourceFilePath="Library/Rochester/setLinearAlgebra18OrthogonalBases/ur_la_18_5.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
-<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-107')">Activate</button></div>
+</div></article><article class="exercise exercise-like" id="exercise-441"><h5 class="heading"><span class="codenumber">3<span class="period">.</span></span></h5>
+<div id="webwork-135" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="135" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-sourceFilePath="Library/Rochester/setLinearAlgebra18OrthogonalBases/ur_la_18_5.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-135')">Activate</button></div>
 <div class="problem-contents">
-<div class="para logical" id="p-3062">
+<div class="para logical" id="p-3818">
 <div class="para">Let</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \vec{x} = \left[\begin{array}{c}
-3\cr
--1\cr
 4\cr
+-3\cr
+-3\cr
 0
 \end{array}\right], \ \vec{y} = \left[\begin{array}{c}
-5.5\cr
--0.5\cr
+-7\cr
+3\cr
 -1\cr
 1
 \end{array}\right], \ \vec{z} = \left[\begin{array}{c}
-5\cr
--5\cr
-1.5\cr
--28.5
+-8.5\cr
+-14\cr
+14\cr
+17.5
 \end{array}\right].
 \end{equation*}
 </div>
 <div class="para">Use the Gram-Schmidt process to determine an orthonormal basis for the subspace of <span class="process-math">\({\mathbb R}^4\)</span> spanned by <span class="process-math">\(\vec{x}\text{,}\)</span> <span class="process-math">\(\vec{y}\text{,}\)</span> and <span class="process-math">\(\vec{z}\text{.}\)</span>
 </div>
-</div> <div class="para" id="p-3063">
+</div> <div class="para" id="p-3819">
 <span class="process-math">\(\Bigg\lbrace\)</span> <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> (4 <span class="times-sign">×</span> 1 array), <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> (4 <span class="times-sign">×</span> 1 array), <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> (4 <span class="times-sign">×</span> 1 array) <span class="process-math">\(\Bigg\rbrace.\)</span>
 </div>
 </div>
-</div></article><article class="exercise exercise-like" id="exercise-327"><h5 class="heading"><span class="codenumber">4<span class="period">.</span></span></h5>
-<div id="webwork-108" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="108" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-sourceFilePath="Library/Rochester/setLinearAlgebra18OrthogonalBases/ur_la_18_8.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
-<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-108')">Activate</button></div>
+</div></article><article class="exercise exercise-like" id="exercise-442"><h5 class="heading"><span class="codenumber">4<span class="period">.</span></span></h5>
+<div id="webwork-136" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="136" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-sourceFilePath="Library/Rochester/setLinearAlgebra18OrthogonalBases/ur_la_18_8.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-136')">Activate</button></div>
 <div class="problem-contents">
-<div class="para logical" id="p-3064">
+<div class="para logical" id="p-3820">
 <div class="para">Let</div>
 <div class="displaymath process-math">
 \begin{equation*}
 A = \left[\begin{array}{cc}
-3 \amp -6\cr
-2 \amp -5\cr
-1 \amp 0
+-3 \amp 9\cr
+2 \amp -8\cr
+1 \amp 1
 \end{array}\right].
 \end{equation*}
 </div>
 <div class="para">Find an orthonormal basis of the image of <span class="process-math">\(A\text{.}\)</span>
 </div>
-</div> <div class="para" id="p-3065">
+</div> <div class="para" id="p-3821">
 <span class="process-math">\(\Bigg\lbrace\)</span> <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> (3 <span class="times-sign">×</span> 1 array), <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> (3 <span class="times-sign">×</span> 1 array) <span class="process-math">\(\Bigg\rbrace.\)</span>
 </div>
 </div>
-</div></article><article class="exercise exercise-like" id="exercise-328"><h5 class="heading"><span class="codenumber">5<span class="period">.</span></span></h5>
-<div id="webwork-109" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="109" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-sourceFilePath="Library/Rochester/setLinearAlgebra18OrthogonalBases/ur_la_18_7.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
-<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-109')">Activate</button></div>
+</div></article><article class="exercise exercise-like" id="exercise-443"><h5 class="heading"><span class="codenumber">5<span class="period">.</span></span></h5>
+<div id="webwork-137" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="137" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-sourceFilePath="Library/Rochester/setLinearAlgebra18OrthogonalBases/ur_la_18_7.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-137')">Activate</button></div>
 <div class="problem-contents">
-<div class="para logical" id="p-3066">
+<div class="para logical" id="p-3822">
 <div class="para">Let</div>
 <div class="displaymath process-math">
 \begin{equation*}
 A = \left[\begin{array}{cccc}
--12 \amp -6 \amp 8 \amp -9\cr
-9 \amp 6 \amp -6 \amp 9
+-8 \amp 2 \amp -12 \amp -3\cr
+-6 \amp -4 \amp -9 \amp 6
 \end{array}\right].
 \end{equation*}
 </div>
 <div class="para">Find an orthonormal basis of the kernel of <span class="process-math">\(A\text{.}\)</span>
 </div>
-</div> <div class="para" id="p-3067">
+</div> <div class="para" id="p-3823">
 <span class="process-math">\(\Bigg\lbrace\)</span> <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> (4 <span class="times-sign">×</span> 1 array), <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> (4 <span class="times-sign">×</span> 1 array) <span class="process-math">\(\Bigg\rbrace.\)</span>
 </div>
 </div>
-</div></article></article><article class="exercise exercise-like" id="exercise-329"><h4 class="heading"><span class="codenumber">6<span class="period">.</span></span></h4>
-<div class="para logical" id="p-3068">
+</div></article></article><article class="exercise exercise-like" id="exercise-444"><h4 class="heading"><span class="codenumber">6<span class="period">.</span></span></h4>
+<div class="para logical" id="p-3824">
 <div class="para">The vectors</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1102,22 +1202,37 @@ A = \left[\begin{array}{cccc}
 \end{equation*}
 </div>
 </div> <ol class="lower-alpha">
-<li id="li-905"><div class="para" id="p-3069"><span class="process-math">\(\displaystyle \boldv=(3,0,-1,0)\)</span></div></li>
-<li id="li-906"><div class="para" id="p-3070"><span class="process-math">\(\displaystyle \boldv=(1,2,0,1)\)</span></div></li>
-<li id="li-907"><div class="para" id="p-3071">
+<li id="li-1145"><div class="para" id="p-3825"><span class="process-math">\(\displaystyle \boldv=(3,0,-1,0)\)</span></div></li>
+<li id="li-1146"><div class="para" id="p-3826"><span class="process-math">\(\displaystyle \boldv=(1,2,0,1)\)</span></div></li>
+<li id="li-1147"><div class="para" id="p-3827">
 <span class="process-math">\(\boldv=(a,b,c,d)\)</span> (Your answer will be expressed in terms of <span class="process-math">\(a,b,c\text{,}\)</span> and <span class="process-math">\(d\text{.}\)</span> )</div></li>
 </ol></article><article class="exercise exercise-like" id="ex_extend_orthogonal"><h4 class="heading"><span class="codenumber">7<span class="period">.</span></span></h4>
-<div class="para" id="p-3072">Consider the inner product space given by <span class="process-math">\(\R^4\)</span> together with the dot product. Construct an orthogonal basis of <span class="process-math">\(\R^4\)</span> containing <span class="process-math">\(\boldv_1=(1,1,1,1)\)</span> following the steps below.</div> <ol class="lower-alpha">
-<li id="li-908"><div class="para" id="p-3073">Produce a vector <span class="process-math">\(\boldv_2\)</span> orthogonal to <span class="process-math">\(\boldv_1\)</span> by inspection.</div></li>
-<li id="li-909"><div class="para" id="p-3074">Produce a vector <span class="process-math">\(\boldv_3\)</span> orthogonal to <span class="process-math">\(\boldv_1\)</span> and <span class="process-math">\(\boldv_2\)</span> by setting up an appropriate matrix equation of the form <span class="process-math">\(A\boldx=\boldzero\)</span> and finding a nontrivial solution. (Use <a href="" class="xref" data-knowl="./knowl/th_dotproduct_method.html" title="Theorem 4.1.9: Dot product and matrix multiplication">Theorem 4.1.9</a>.)</div></li>
-<li id="li-910"><div class="para" id="p-3075">Produce a vector <span class="process-math">\(\boldv_4\)</span> orthogonal to <span class="process-math">\(\boldv_1, \boldv_2, \boldv_3\)</span> by setting up an appropriate matrix equation of the form <span class="process-math">\(B\boldx=\boldzero\)</span> and finding a nontrivial solution. (Use <a href="" class="xref" data-knowl="./knowl/th_dotproduct_method.html" title="Theorem 4.1.9: Dot product and matrix multiplication">Theorem 4.1.9</a>.)</div></li>
-</ol></article><article class="exercise exercise-like" id="exercise-331"><h4 class="heading"><span class="codenumber">8<span class="period">.</span></span></h4>
-<div class="para" id="p-3076">Consider the inner product space given by <span class="process-math">\(V=\R^3\)</span> together with the dot product. Let <span class="process-math">\(W\)</span> be the plane with defining equation <span class="process-math">\(x+2y-z=0\text{.}\)</span> Compute an orthogonal basis of <span class="process-math">\(W\text{,}\)</span> and then extend this to an orthogonal basis of <span class="process-math">\(\R^3\text{.}\)</span>
+<div class="para" id="p-3828">Consider the inner product space given by <span class="process-math">\(\R^4\)</span> together with the dot product. Construct an orthogonal basis of <span class="process-math">\(\R^4\)</span> containing <span class="process-math">\(\boldv_1=(1,1,1,1)\)</span> following the steps below.</div> <ol class="lower-alpha">
+<li id="li-1148"><div class="para" id="p-3829">Produce a vector <span class="process-math">\(\boldv_2\)</span> orthogonal to <span class="process-math">\(\boldv_1\)</span> by inspection.</div></li>
+<li id="li-1149"><div class="para" id="p-3830">Produce a vector <span class="process-math">\(\boldv_3\)</span> orthogonal to <span class="process-math">\(\boldv_1\)</span> and <span class="process-math">\(\boldv_2\)</span> by setting up an appropriate matrix equation of the form <span class="process-math">\(A\boldx=\boldzero\)</span> and finding a nontrivial solution. (Use <a href="" class="xref" data-knowl="./knowl/th_dotproduct_method.html" title="Theorem 5.1.9: Dot product and matrix multiplication">Theorem 5.1.9</a>.)</div></li>
+<li id="li-1150"><div class="para" id="p-3831">Produce a vector <span class="process-math">\(\boldv_4\)</span> orthogonal to <span class="process-math">\(\boldv_1, \boldv_2, \boldv_3\)</span> by setting up an appropriate matrix equation of the form <span class="process-math">\(B\boldx=\boldzero\)</span> and finding a nontrivial solution. (Use <a href="" class="xref" data-knowl="./knowl/th_dotproduct_method.html" title="Theorem 5.1.9: Dot product and matrix multiplication">Theorem 5.1.9</a>.)</div></li>
+</ol></article><div class="exercisegroup" id="exercisegroup-41">
+<h4 class="heading"><span class="title">Coordinate vectors: orthogonal basis.</span></h4>
+<div class="introduction" id="introduction-85"><div class="para" id="p-3832">In each exercise an inner product space <span class="process-math">\((V,\langle\, \rangle)\)</span> and <em class="emphasis">orthogonal</em> ordered basis is given. Use <a href="" class="xref" data-knowl="./knowl/th_coordinates_orthogonal.html" title="Theorem 5.2.10: Coordinate vectors for orthogonal bases">Theorem 5.2.10</a> to compute the requested coordinate vector.</div></div>
+<div class="exercisegroup-exercises">
+<article class="exercise exercise-like" id="exercise-446"><h5 class="heading"><span class="codenumber">8<span class="period">.</span></span></h5>
+<div class="para" id="p-3833">
+<span class="process-math">\(V=\R^3\)</span> with dot product; <span class="process-math">\(B=\left((1,1,1),(1,-1,0),(1,1,-2)\right)\text{.}\)</span> Compute <span class="process-math">\([(-3,2,4)]_B\text{.}\)</span>
+</div></article><article class="exercise exercise-like" id="exercise-447"><h5 class="heading"><span class="codenumber">9<span class="period">.</span></span></h5>
+<div class="para" id="p-3834">
+<span class="process-math">\(V=\R^3\)</span> with dot product with weights <span class="process-math">\(k_1=1, k_2=2, k_3=2\text{;}\)</span> <span class="process-math">\(B=\left((1,1,1),(2,1,-2),(4,-3,1)\right)\text{.}\)</span> Compute <span class="process-math">\([(0,1,0)]_B\text{.}\)</span>
+</div></article><article class="exercise exercise-like" id="exercise-448"><h5 class="heading"><span class="codenumber">10<span class="period">.</span></span></h5>
+<div class="para" id="p-3835">
+<span class="process-math">\(V=\Span\{\cos x, \cos 2x, \cos 3x\}\subseteq C([0,2\pi])\)</span> with integral inner product <span class="process-math">\(\langle f, g\rangle=\int_0^{2\pi}f(x)g(x)\, dx\text{;}\)</span> <span class="process-math">\(B=(\cos x, \cos 2x, \cos 3x)\text{.}\)</span> Compute <span class="process-math">\([\cos^3 x]_B\text{.}\)</span> (Yes, <span class="process-math">\(\cos^3(x)\)</span> can indeed be written as a linear combination of <span class="process-math">\(\cos x, \cos 2x, \cos 3x\text{.}\)</span> In this exercise you will discover what the corresponding identity is using inner products!)</div></article>
+</div>
+</div>
+<article class="exercise exercise-like" id="exercise-449"><h4 class="heading"><span class="codenumber">11<span class="period">.</span></span></h4>
+<div class="para" id="p-3836">Consider the inner product space given by <span class="process-math">\(V=\R^3\)</span> together with the dot product. Let <span class="process-math">\(W\)</span> be the plane with defining equation <span class="process-math">\(x+2y-z=0\text{.}\)</span> Compute an orthogonal basis of <span class="process-math">\(W\text{,}\)</span> and then extend this to an orthogonal basis of <span class="process-math">\(\R^3\text{.}\)</span>
 </div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-26" id="hint-26"><span class="type">Hint</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-26"><div class="hint solution-like">You do not have to use Gram-Schmidt here, but can proceed using a combination of inspection, your geometric understanding of <span class="process-math">\(W\text{,}\)</span> and/or along similar lines of <a href="" class="xref" data-knowl="./knowl/ex_extend_orthogonal.html" title="Exercise 4.2.3.7">Exercise 4.2.3.7</a>.</div></div>
-</div></article><article class="exercise exercise-like" id="exercise-332"><h4 class="heading"><span class="codenumber">9<span class="period">.</span></span></h4>
-<div class="para logical" id="p-3077">
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-35" id="hint-35"><span class="type">Hint</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-35"><div class="hint solution-like">You do not have to use Gram-Schmidt here, but can proceed using a combination of inspection, your geometric understanding of <span class="process-math">\(W\text{,}\)</span> and/or along similar lines of <a href="" class="xref" data-knowl="./knowl/ex_extend_orthogonal.html" title="Exercise 5.2.4.7">Exercise 5.2.4.7</a>.</div></div>
+</div></article><article class="exercise exercise-like" id="exercise-450"><h4 class="heading"><span class="codenumber">12<span class="period">.</span></span></h4>
+<div class="para logical" id="p-3837">
 <div class="para">Consider the inner product space given by <span class="process-math">\(\R^3\)</span> together with the weighted dot product</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1125,10 +1240,10 @@ A = \left[\begin{array}{cccc}
 \end{equation*}
 </div>
 <div class="para">Use the Gram-Schmidt procedure to convert the basis <span class="process-math">\(B=\{(1,1,0),(0,1,1), (1,0,1)\}\)</span> into a basis that is orthogonal with respect to this weighted dot product.</div>
-</div></article><article class="exercise exercise-like" id="exercise-333"><h4 class="heading"><span class="codenumber">10<span class="period">.</span></span></h4>
-<div class="para" id="p-3078">Consider the vector space <span class="process-math">\(V=C([0,1])\)</span> with the integral inner product. Let <span class="process-math">\(B=\{x^2,x^4,x^6\}\text{,}\)</span> and define <span class="process-math">\(W=\Span B\text{.}\)</span> Apply Gram-Schmidt to <span class="process-math">\(B\)</span> to obtain an orthogonal basis of <span class="process-math">\(W\text{.}\)</span>
-</div></article><article class="exercise exercise-like" id="exercise-334"><h4 class="heading"><span class="codenumber">11<span class="period">.</span></span></h4>
-<div class="para logical" id="p-3079">
+</div></article><article class="exercise exercise-like" id="exercise-451"><h4 class="heading"><span class="codenumber">13<span class="period">.</span></span></h4>
+<div class="para" id="p-3838">Consider the vector space <span class="process-math">\(V=C([0,1])\)</span> with the integral inner product. Let <span class="process-math">\(B=\{x^2,x^4,x^6\}\text{,}\)</span> and define <span class="process-math">\(W=\Span B\text{.}\)</span> Apply Gram-Schmidt to <span class="process-math">\(B\)</span> to obtain an orthogonal basis of <span class="process-math">\(W\text{.}\)</span>
+</div></article><article class="exercise exercise-like" id="exercise-452"><h4 class="heading"><span class="codenumber">14<span class="period">.</span></span></h4>
+<div class="para logical" id="p-3839">
 <div class="para">Consider the vector space <span class="process-math">\(V=P_2\)</span> with the evaluation at <span class="process-math">\(-1, 0, 1\)</span> inner product:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1137,8 +1252,8 @@ A = \left[\begin{array}{cccc}
 </div>
 <div class="para">Apply Gram-Schmidt to the standard basis of <span class="process-math">\(P_2\)</span> to obtain an orthogonal basis of <span class="process-math">\(P_2\text{.}\)</span>
 </div>
-</div></article><article class="exercise exercise-like" id="exercise-335"><h4 class="heading"><span class="codenumber">12<span class="period">.</span></span></h4>
-<div class="para logical" id="p-3080">
+</div></article><article class="exercise exercise-like" id="exercise-453"><h4 class="heading"><span class="codenumber">15<span class="period">.</span></span></h4>
+<div class="para logical" id="p-3840">
 <div class="para">Consider the inner product space <span class="process-math">\(\R^4\)</span> together with the dot product.</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1146,14 +1261,14 @@ W=\{\boldx\in \R^4\colon \boldx\cdot (1,2,-1,-1)=0\}\text{.}
 \end{equation*}
 </div>
 </div> <ol class="lower-alpha">
-<li id="li-911"><div class="para" id="p-3081">Show that <span class="process-math">\(W\)</span> is a subspace of <span class="process-math">\(\R^4\)</span> by finding a matrix <span class="process-math">\(A\)</span> for which <span class="process-math">\(W=\NS A\text{.}\)</span>
+<li id="li-1151"><div class="para" id="p-3841">Show that <span class="process-math">\(W\)</span> is a subspace of <span class="process-math">\(\R^4\)</span> by finding a matrix <span class="process-math">\(A\)</span> for which <span class="process-math">\(W=\NS A\text{.}\)</span>
 </div></li>
-<li id="li-912"><div class="para" id="p-3082">Use (a) and an appropriate fundamental space algorithm to find a basis for <span class="process-math">\(W\text{.}\)</span>
+<li id="li-1152"><div class="para" id="p-3842">Use (a) and an appropriate fundamental space algorithm to find a basis for <span class="process-math">\(W\text{.}\)</span>
 </div></li>
-<li id="li-913"><div class="para" id="p-3083">Use Gram-Schmidt to convert your basis in (b) to an orthgonal basis of <span class="process-math">\(W\text{.}\)</span>
+<li id="li-1153"><div class="para" id="p-3843">Use Gram-Schmidt to convert your basis in (b) to an orthgonal basis of <span class="process-math">\(W\text{.}\)</span>
 </div></li>
-</ol></article><article class="exercise exercise-like" id="ex_ortho_pythag"><h4 class="heading"><span class="codenumber">13<span class="period">.</span></span></h4>
-<div class="para logical" id="p-3084">
+</ol></article><article class="exercise exercise-like" id="ex_ortho_pythag"><h4 class="heading"><span class="codenumber">16<span class="period">.</span></span></h4>
+<div class="para logical" id="p-3844">
 <div class="para">Let <span class="process-math">\((V,\langle , \rangle )\)</span> be an inner produce space. Prove: if <span class="process-math">\(\angvec{\boldv,\ \boldw}=0\text{,}\)</span> then</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1161,8 +1276,8 @@ W=\{\boldx\in \R^4\colon \boldx\cdot (1,2,-1,-1)=0\}\text{.}
 \end{equation*}
 </div>
 <div class="para">This result can be thought of as the <em class="emphasis">Pythagorean theorem for general inner product spaces</em>.</div>
-</div></article><article class="exercise exercise-like" id="exercise-337"><h4 class="heading"><span class="codenumber">14<span class="period">.</span></span></h4>
-<div class="para logical" id="p-3085">
+</div></article><article class="exercise exercise-like" id="exercise-455"><h4 class="heading"><span class="codenumber">17<span class="period">.</span></span></h4>
+<div class="para logical" id="p-3845">
 <div class="para">Let <span class="process-math">\((V, \langle , \rangle )\)</span> be an inner product space, and suppose <span class="process-math">\(B=\{\boldv_1, \boldv_2, \dots, \boldv_n\}\)</span> is an orthonormal basis of <span class="process-math">\(V\text{.}\)</span> Suppose <span class="process-math">\(\boldv, \boldw\in V\)</span> satisfy</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1170,7 +1285,7 @@ W=\{\boldx\in \R^4\colon \boldx\cdot (1,2,-1,-1)=0\}\text{.}
 \end{equation*}
 </div>
 </div> <ol class="lower-alpha">
-<li id="li-914"><div class="para logical" id="p-3086">
+<li id="li-1154"><div class="para logical" id="p-3846">
 <div class="para">Prove:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1178,7 +1293,7 @@ W=\{\boldx\in \R^4\colon \boldx\cdot (1,2,-1,-1)=0\}\text{.}
 \end{equation*}
 </div>
 </div></li>
-<li id="li-915"><div class="para logical" id="p-3087">
+<li id="li-1155"><div class="para logical" id="p-3847">
 <div class="para">Prove:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1186,6 +1301,22 @@ W=\{\boldx\in \R^4\colon \boldx\cdot (1,2,-1,-1)=0\}\text{.}
 \end{equation*}
 </div>
 </div></li>
+</ol></article><article class="exercise exercise-like" id="ex_coordinates_orthonormal"><h4 class="heading">
+<span class="codenumber">18<span class="period">.</span></span><span class="space"> </span><span class="title">Orthonormal coordinate vectors.</span>
+</h4>
+<div class="para" id="p-3848">Let <span class="process-math">\((V, \langle\, , \rangle)\)</span> be an inner product space, and suppose <span class="process-math">\(B=(\boldv_1, \boldv_2, \dots, \boldv_n)\)</span> is an orthonormal ordered basis of <span class="process-math">\(V\text{.}\)</span>
+</div> <ol class="lower-alpha">
+<li id="li-1156"><div class="para logical" id="p-3849">
+<div class="para">Prove that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\langle \boldv, \boldw\rangle =[\boldv]_B\cdot [\boldw]_B
+\end{equation*}
+</div>
+<div class="para">for all <span class="process-math">\(\boldv, \boldw\in V\text{.}\)</span> In other words we can compute the inner product of vectors by computing the dot product of their coordinate vectors with respect to the orthonormal basis <span class="process-math">\(B\text{.}\)</span>
+</div>
+</div></li>
+<li id="li-1157"><div class="para" id="p-3850">Prove that a set <span class="process-math">\(S=\{\boldw_1, \boldw_2, \dots, \boldw_r\}\subseteq V\)</span> is orthogonal (resp. orthonormal) with respect to <span class="process-math">\(\langle\, , \rangle\)</span> if and only if <span class="process-math">\(S'=\{[\boldw_1]_B, [\boldw_2]_B, \dots, [\boldw_r]_B\subseteq \R^n\)</span> is orthogonal (resp. orthonormal) with respect to the dot product.</div></li>
 </ol></article></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="s_innerproducts.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="s_orthogonal_projection.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>

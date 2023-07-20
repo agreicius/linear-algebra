@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -11,15 +11,17 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/d_innerproduct.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_coordinates.html">
 \begin{align*}
-\norm{\boldu} \amp =\sqrt{\left\langle \frac{1}{c}\boldv,\frac{1}{c}\boldv   \right\rangle }\\
-\amp =\sqrt{\frac{1}{c^2}\langle \boldv,\boldv  \rangle} \amp (\knowl{./knowl/d_innerproduct.html}{\text{Definition 4.1.1}}, \text{(ii)})  \\
-\amp =\frac{1}{\val{c}}\sqrt{\langle \boldv,\boldv  \rangle } \\
-\amp =\frac{1}{c}\sqrt{\langle \boldv,\boldv  \rangle } \amp (c=\norm{\boldv}\geq 0)\\
-\amp =\frac{\norm{\boldv}}{\norm{\boldv}}=1
+[T]_{B}^{B'}[\boldv] \amp= [T]_{B}^{B'} \begin{bmatrix}
+c_1\\ c_2\\ \vdots \\ v_n
+\end{bmatrix} \\
+\amp=c_1[T(\boldv_1)]_{B'}+c_n[T(\boldv_n)]_{B'}+\cdots +c_n[T(\boldv_n)]_{B'} \amp (\text{column method})\\
+\amp = [c_1T(\boldv_1)+c_2T(\boldv_2)+\cdots +c_nT(\boldv_n)]_{B'} \amp (\knowl{./knowl/th_coordinates.html}{\text{4.1.9}})\\
+\amp=[T(c_1\boldv_1+c_2\boldv_2+\cdots +c_n\boldv_n)]_{B'} \amp (T \text{ is linear})\\
+\amp =[T(\boldv)]_{B'}
 \end{align*}
 </div>
-<span class="incontext"><a href="s_innerproducts.html#md-198" class="internal">in-context</a></span>
+<span class="incontext"><a href="s_matrixreps.html#md-194" class="internal">in-context</a></span>
 </body>
 </html>

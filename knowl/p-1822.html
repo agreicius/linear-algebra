@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -13,15 +13,20 @@
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">The <a class="external" href="https://www.geogebra.org" target="_blank">GeoGebra</a><a href="" class="fn-knowl original" data-knowl="./knowl/fn-8-hidden.html" title="Footnote 3.2.3"><sup> 3 </sup></a> interactive below helps visualize these two orthogonal projections, understood as operations on <span class="process-math">\(\R^3\text{.}\)</span>
+<div class="para">In the course of the proof of <a href="" class="xref" data-knowl="./knowl/th_ortho_proj_plane_linear.html" title="Theorem 3.2.25: Orthogonal projection onto a plane">Theorem 3.2.25</a> we discovered an illuminating relationship between orthogonal projection onto a line and orthogonal projection onto the plane orthogonal to this line. In more detail, let <span class="process-math">\(\boldn=(a,b,c)\)</span> be a nonzero vector, <span class="process-math">\(\ell\)</span> the line passing through the origin with <span class="process-math">\(\boldn\)</span> as a direction vector, and <span class="process-math">\(W\)</span> the plane passing through the origin with normal vector <span class="process-math">\(\boldn\text{.}\)</span> From our argument in the proof of <a href="" class="xref" data-knowl="./knowl/th_ortho_proj_plane_linear.html" title="Theorem 3.2.25: Orthogonal projection onto a plane">Theorem 3.2.25</a> we see that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_ortho_proj_plane_linear.html ./knowl/th_ortho_proj_plane_linear.html ./knowl/eq_proj_plane_line.html ./knowl/eq_ortho_decomp_x.html">
+\begin{equation}
+\proj{\boldx}{W}=\boldx-\proj{\boldx}{\ell}\text{,}\tag{3.2.10}
+\end{equation}
 </div>
-<ul class="disc">
-<li><div class="para">Drag the point <span class="process-math">\(Q\)</span> to change the normal vector <span class="process-math">\(\boldn\text{,}\)</span> and hence also the plane <span class="process-math">\(W\text{.}\)</span>
-</div></li>
-<li><div class="para">Drag the point <span class="process-math">\(P\)</span> to change the input of the transformations <span class="process-math">\(\operatorname{proj}_\ell\)</span> and <span class="process-math">\(\operatorname{proj}_W\text{.}\)</span>
-</div></li>
-<li><div class="para">In keeping with our dual interpretation of vectors in <span class="process-math">\(\R^3\text{,}\)</span> all the relevant vectors (<span class="process-math">\(P\text{,}\)</span> <span class="process-math">\(\proj{P}{\ell}\text{,}\)</span> <span class="process-math">\(\proj{P}{W}\)</span>) are rendered here both as points and the corresponding position vectors of these points.</div></li>
-</ul>
+<div class="para">or</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_ortho_proj_plane_linear.html ./knowl/th_ortho_proj_plane_linear.html ./knowl/eq_proj_plane_line.html ./knowl/eq_ortho_decomp_x.html">
+\begin{equation}
+\boldx=\proj{\boldx}{\ell}+\proj{\boldx}{W}\text{.}\tag{3.2.11}
+\end{equation}
+</div>
+<div class="para">Equation <a href="" class="xref" data-knowl="./knowl/eq_proj_plane_line.html" title="Equation 3.2.10">(3.2.10)</a> indicates how we can derive the orthogonal projection onto <span class="process-math">\(W\)</span> from the orthogonal projection onto <span class="process-math">\(\ell\)</span> (and conversely). Equation <a href="" class="xref" data-knowl="./knowl/eq_ortho_decomp_x.html" title="Equation 3.2.11">(3.2.11)</a> shows how every vector <span class="process-math">\(\boldx\)</span> can be “decomposed” as a sum of two orthogonal vectors: one pointing parallel to <span class="process-math">\(\ell\)</span> and the other pointing parallel to <span class="process-math">\(W\text{.}\)</span>
+</div>
 </div>
 <span class="incontext"><a href="s_transformation.html#p-1822" class="internal">in-context</a></span>
 </body>

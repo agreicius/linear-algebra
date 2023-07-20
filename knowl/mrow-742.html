@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -11,14 +11,17 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_coordinates.html ./knowl/eq_matrixrep_prop.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_det_mult.html">
 \begin{align*}
-\boldv\in \NS T \amp\iff T(\boldv)=\boldzero \\
-\amp\iff [T(\boldv)]_{B'}=[\boldzero]_{B'} \amp (\knowl{./knowl/th_coordinates.html}{\text{Theorem 5.1.12}}, (2))\\
-\amp \iff [T]_{B}^{B'}[\boldv]_B=\boldzero \amp (\knowl{./knowl/eq_matrixrep_prop.html}{\text{(5.2.2)}})\\
-\amp [\boldv]_B\in\NS A \amp (A=[T]_B^{B'}) 
+p_{A'}(t)\amp =\det(tI-A')\\
+\amp =\det(tI-P^{-1}AP) \amp (A'=P^{-1}AP)\\
+\amp = \det(P^{-1}tIP-P^{-1}AP) \amp (\text{algebra}) \\
+\amp = \det(P^{-1}(tI-A)P) \amp (\text{left/right dist.}) \\
+\amp = \det(P^{-1})\det(tI-A)\det(P) \amp (\knowl{./knowl/th_det_mult.html}{\text{2.5.26}}) \\
+\amp = (\det(P))^{-1}\det(P)\det(tI-A)  \\
+\amp = \det(tI-A)=p_A(t)
 \end{align*}
 </div>
-<span class="incontext"><a href="s_matrixreps.html#md-236" class="internal">in-context</a></span>
+<span class="incontext"><a href="s_diagonalization.html#md-238" class="internal">in-context</a></span>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -12,48 +12,73 @@
 </head>
 <body class="ignore-math">
 <article class="hiddenproof"><h4 class="heading"><span class="type">Proof</span></h4>
-<div class="para logical">
-<div class="para">First we show that axioms (i) and (ii) are satsified for <em class="emphasis">any</em> choice of <span class="process-math">\(k_i\text{.}\)</span> Let</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_trans_props.html ./knowl/th_trans_props.html">
-\begin{equation*}
-K=\begin{amatrix}[rrrr]k_1\amp 0\amp \dots \amp 0 \\ 0\amp k_2\amp 0\amp \dots \\ \vdots \\ 0\amp \dots\amp 0\amp k_n \end{amatrix}\text{,}
-\end{equation*}
-</div>
-<div class="para">the diagonal matrix whose <span class="process-math">\(i\)</span>-th diagonal entry is <span class="process-math">\(k_i\text{.}\)</span> Then for all <span class="process-math">\(\boldx=(x_1,x_2,\dots, x_n), \boldy=(y_1,y_2,\dots, y_n)\in \R^n\)</span> we have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_trans_props.html ./knowl/th_trans_props.html">
-\begin{equation*}
-\langle \boldx, \boldy  \rangle=\boldx^TK\boldy=\begin{amatrix}[cccc]x_1\amp x_2\amp \dots\amp x_n \end{amatrix} K\begin{bmatrix}y_1\\ y_2\\ \vdots \\ y_n\end{bmatrix}\text{.}
-\end{equation*}
-</div>
-<div class="para">Here we treat <span class="process-math">\(\boldx, \boldy\)</span> as column vectors, and we treat the resulting <span class="process-math">\(1\times 1\)</span> matrix <span class="process-math">\(\boldx^T K\boldy\)</span> as a scalar. Axioms (i)-(ii) now follow from various matrix properties. For linearity, for example, we have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_trans_props.html ./knowl/th_trans_props.html">
+<ol class="decimal">
+<li><div class="para logical">
+<div class="para">Suppose <span class="process-math">\(T(\boldv)=[\boldv]_B=(a_1,a_2,\dots, a_n), T(\boldw)=[\boldw]_B=(b_1, b_2, \dots, b_n)\text{.}\)</span> By definition this means</div>
+<div class="displaymath process-math">
 \begin{align*}
-\langle c\boldx_1+d\boldx_2, \boldy \rangle \amp = (c\boldx_1+d\boldx_2)^TK\boldy\\
-\amp =(c\boldx_1^T+d\boldx_2^T)K\boldy \amp (\knowl{./knowl/th_trans_props.html}{\text{2.2.11}})\\
-\amp =c\boldx_1^TK\boldy+d\boldx_2^TK\boldy \\
-\amp =c \langle \boldx_1, \boldy \rangle +d \langle \boldx_2,\boldy  \rangle \text{.}
+\boldv \amp =\sum_{i=1}^na_i\boldv_i,  \amp \boldw\amp =\sum_{i=1}^nb_i\boldv_i\text{.}
 \end{align*}
 </div>
-<div class="para">Symmetry requires a little more trickery:</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_trans_props.html ./knowl/th_trans_props.html">
-\begin{align*}
-\langle \boldy, \boldx  \rangle   \amp = \boldy^TK\boldx \\
-\amp = \boldy^TK^T\boldx \amp (K^T=K) \\
-\amp = (\boldx^T K\boldy)^T \amp (\knowl{./knowl/th_trans_props.html}{\text{Theorem 2.2.11}})\\
-\amp =\boldx^T K \boldy \amp \\
-\amp = \langle \boldx, \boldy \rangle \text{.}
-\end{align*}
-</div>
-<div class="para">Note that <span class="process-math">\((\boldx^T K\boldy)^T=\boldx^T K\boldy\)</span> as <span class="process-math">\(\boldx^T K\boldy\)</span> is just a <span class="process-math">\(1\times 1\)</span> matrix.</div>
-</div> <div class="para logical">
-<div class="para">Lastly, we show that axiom (iii) is satisfied if and only if <span class="process-math">\(k_i&gt;0\)</span> for all <span class="process-math">\(i\text{.}\)</span> To this end consider the formula</div>
+<div class="para">It follows that</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\langle \boldx, \boldx \rangle=k_1x_1^2+k_2x_2^2+\cdots k_nx_n^2\text{.}
+c\boldv+d\boldw=\sum_{i=1}^n(ca_i+db_i)\boldv_i\text{,}
 \end{equation*}
 </div>
-<div class="para">If <span class="process-math">\(k_i&gt;0\text{,}\)</span> then since <span class="process-math">\(x_i^2\geq 0\)</span> for all <span class="process-math">\(i\text{,}\)</span> we have <span class="process-math">\(\langle \boldx, \boldx \rangle\geq 0\)</span> for any <span class="process-math">\(\boldx\text{,}\)</span> and <span class="process-math">\(\langle \boldx, \boldx \rangle=0\)</span> if and only if <span class="process-math">\(x_i=0\)</span> for all <span class="process-math">\(i\)</span> if and only if <span class="process-math">\(\boldx=\boldzero\text{.}\)</span>
+<div class="para">and hence</div>
+<div class="displaymath process-math">
+\begin{align*}
+T(c\boldv+d\boldw)\amp =[c\boldv+d\boldw]_B \amp (\text{def. of } [\phantom{\boldv}]_B) \\
+\amp =(ca_1+db_1,ca_2+db_2,\dots, ca_n+db_n) \\
+\amp =c(a_1,a_2,\dots, a_n)+d(b_1,b_2,\dots, b_n)\\
+\amp =c[\boldv]_B+d[\boldw]_B\\
+\amp =cT(\boldv)+dT(\boldw) \text{.}
+\end{align*}
 </div>
-</div> <div class="para">For the other direction suppose <span class="process-math">\(k_i\leq 0\)</span> for some <span class="process-math">\(i\text{.}\)</span> Let <span class="process-math">\(\boldx=\bolde_i\text{,}\)</span> the  <span class="process-math">\(i\)</span>-th element of the standard basis of <span class="process-math">\(\R^n\text{.}\)</span> Then <span class="process-math">\(\langle \boldx, \boldx \rangle=k_i\leq 0\text{:}\)</span> a counterexample to the definiteness property of axiom (iii).</div></article><span class="incontext"><a href="s_innerproducts.html#proof-73" class="internal">in-context</a></span>
+<div class="para">This proves <span class="process-math">\(T\)</span> is linear.</div>
+</div></li>
+<li><div class="para logical">
+<div class="para">Clearly, if <span class="process-math">\(\boldv=\boldw\text{,}\)</span> then <span class="process-math">\([\boldv]_B=[\boldw]_B\text{.}\)</span> If <span class="process-math">\(T(\boldv)=T(\boldw)=(c_1,c_2,\dots, c_n)\text{,}\)</span> then by definition of <span class="process-math">\([\phantom{\boldv}]_B\)</span> we must have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\boldv=c_1\boldv_1+c_2\boldv_2+\cdots +c_n\boldv_n==\boldw\text{.}
+\end{equation*}
+</div>
+</div></li>
+<li><div class="para logical">
+<div class="para">Given any <span class="process-math">\(\boldb=(b_1,b_2,\dots, b_n)\in \R^n\text{,}\)</span> we have <span class="process-math">\(\boldb=T(\boldv)\text{,}\)</span> where</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\boldv=b_1\boldv_1+b_2\boldv_2+\cdots +b_n\boldv_n\text{.}
+\end{equation*}
+</div>
+<div class="para">This proves <span class="process-math">\(\im T=\R^n\text{.}\)</span>
+</div>
+</div></li>
+<li>
+<div class="para logical">
+<div class="para">We have</div>
+<div class="displaymath process-math">
+\begin{align*}
+\boldv\in \Span S \amp \iff \boldv=\sum_{i=1}^rc_i\boldv_i\\
+\amp\iff [\boldv]_{B}=\left[ \sum_{i=1}^rc_i\boldv_i\right] \\
+\amp \iff [\boldv]_B=\sum_{i=1}^rc_i[\boldv_i]_B\amp ([\phantom{\boldv}]_B \text{ is linear})\\
+\amp \iff [\boldv]_B\in \Span S'\text{.}
+\end{align*}
+</div>
+</div>
+<div class="para logical">
+<div class="para">Similarly, we have</div>
+<div class="displaymath process-math">
+\begin{align*}
+\sum_{i=1}^rc_i\boldv_i=\boldzero \amp \iff \left[\sum_{i=1}^rc_i\boldv_i\right]_B=[\boldzero]_B \amp (\boldv=\boldw\iff [\boldv]_B=[\boldw]_B) \\
+\amp\iff \sum_{i=1}^rc_i[\boldv_i]_B=(0,0,\dots, 0) \amp ([\phantom{\boldv}]_B \text{ is linear}) \text{.}
+\end{align*}
+</div>
+<div class="para">From this equivalence we see that there is a nontrivial linear combination of <span class="process-math">\(S\)</span> yielding <span class="process-math">\(\boldzero\in V\)</span> if and only if there is a nontrivial linear combination of <span class="process-math">\(S'\)</span> yielding <span class="process-math">\(\boldzero\in \R^n\text{.}\)</span> In other words, <span class="process-math">\(S\)</span> is linearly independent if and only if <span class="process-math">\(S'\)</span> is linearly independent.</div>
+</div>
+</li>
+</ol></article><span class="incontext"><a href="s_coordinatevectors.html#proof-73" class="internal">in-context</a></span>
 </body>
 </html>

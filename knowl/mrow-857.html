@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -11,12 +11,18 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_independent_eigenspaces.html ./knowl/th_independent_eigenvectors.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_ortho_decomp.html ./knowl/eq_ortho_proj_formula_proof.html">
 \begin{align*}
-\boldzero \amp= \boldw_1+\boldw_2+\cdots \boldw_r \\
-\amp = \boldw_{j_1}+\boldw_{j_2}+\cdots +\boldw_{j_k} 
+\langle \boldw^\perp, \boldw_j \rangle\amp = \langle \boldv-\proj{\boldv}{W}, \boldw_i \rangle\\
+\amp =
+\left\langle \boldv-\sum_{i=1}^r\frac{\angvec{\boldv,\boldw_i}}{\angvec{\boldw_i, \boldw_i}}\boldw_i, \boldw_j\right\rangle \\
+\amp =
+\langle \boldv, \boldw_j\rangle -\sum_{i=1}^r\frac{\angvec{\boldv,\boldw_i}}{\angvec{\boldw_i, \boldw_i}}\langle \boldw_i, \boldw_j\rangle \\
+\amp =
+\langle \boldv, \boldw_j\rangle -\frac{\langle \boldv, \boldw_j\rangle}{\cancel{\langle \boldw_j, \boldw_j\rangle}}\cancel{\langle \boldw_j, \boldw_j\rangle}\\
+\amp = 0 
 \end{align*}
 </div>
-<span class="incontext"><a href="s_diagonalization.html#md-273" class="internal">in-context</a></span>
+<span class="incontext"><a href="s_orthogonal_projection.html#md-275" class="internal">in-context</a></span>
 </body>
 </html>

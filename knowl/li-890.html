@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -15,20 +15,21 @@
 <span class="type">Item</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span>
 </h5>
 <div class="para logical">
-<div class="para">Let <span class="process-math">\(B=\{\boldv_1,\dots,\boldv_n\}\subseteq V\)</span> be an orthogonal basis of <span class="process-math">\(V\text{.}\)</span> For any <span class="process-math">\(\boldv\in V\)</span> we have</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\boldv=c_1\boldv_1+c_2\boldb_2+\cdots +c_n\boldv_n\text{,}
-\end{equation*}
+<div class="para">According to <a href="" class="xref" data-knowl="./knowl/th_matrixreps_matrixtransforms.html" title="Theorem 4.2.3: Standard matrix as a matrix representation">Theorem 4.2.3</a>, since <span class="process-math">\(B\)</span> is the standard basis <span class="process-math">\([T]_B\)</span> is the matrix <span class="process-math">\(A\)</span> such that <span class="process-math">\(T=T_A\text{:}\)</span>
 </div>
-<div class="para">where</div>
-<div class="displaymath process-math">
-\begin{equation*}
-c_i=\frac{\langle \boldv,\boldv_i\rangle}{\langle\boldv_i,\boldv_i\rangle}
-\end{equation*}
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_matrixreps_matrixtransforms.html">
+\begin{align*}
+[T]_B\amp=\begin{bmatrix}
+\vert \amp \vert \\
+T(\bolde_1)\amp T(\bolde_2)\\
+\vert \amp \vert
+\end{bmatrix} \\
+\amp= \begin{amatrix}[rr]
+4\amp -3\\
+2\amp -1
+\end{amatrix} \text{.}
+\end{align*}
 </div>
-<div class="para">for all <span class="process-math">\(1\leq i\leq n\text{.}\)</span> If <span class="process-math">\(B\)</span> is <em class="emphasis">orthonormal</em>, so that <span class="process-math">\(\langle \boldv_i, \boldv_i\rangle =1\)</span> for all <span class="process-math">\(1\leq i\leq n\text{,}\)</span> then <span class="process-math">\(c_i=\langle \boldv, \boldv_i\rangle\text{.}\)</span>
-</div>
-</div></article><span class="incontext"><a href="s_orthogonality.html#li-890" class="internal">in-context</a></span>
+</div></article><span class="incontext"><a href="s_matrixreps.html#li-890" class="internal">in-context</a></span>
 </body>
 </html>

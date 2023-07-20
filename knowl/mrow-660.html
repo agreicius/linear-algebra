@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -11,18 +11,13 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_ortho_decomp.html ./knowl/eq_ortho_proj_formula_proof.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_changebasis_transform_inverse.html ./knowl/eq_changebasis_transform.html ./knowl/th_change_of_basis_properties.html ./knowl/eq_changebasis_transform.html ./knowl/th_matrixrep.html ./knowl/th_change_of_basis_coordinates.html ./knowl/th_matrixrep.html ./knowl/th_change_of_basis_coordinates.html">
 \begin{align*}
-\langle \boldw^\perp, \boldw_j \rangle\amp = \langle \boldv-\proj{\boldv}{W}, \boldw_i \rangle\\
-\amp =
-\left\langle \boldv-\sum_{i=1}^r\frac{\angvec{\boldv,\boldw_i}}{\angvec{\boldw_i, \boldw_i}}\boldw_i, \boldw_j\right\rangle \\
-\amp =
-\langle \boldv, \boldw_j\rangle -\sum_{i=1}^r\frac{\angvec{\boldv,\boldw_i}}{\angvec{\boldw_i, \boldw_i}}\langle \boldw_i, \boldw_j\rangle \\
-\amp =
-\langle \boldv, \boldw_j\rangle -\frac{\langle \boldv, \boldw_j\rangle}{\cancel{\langle \boldw_j, \boldw_j\rangle}}\cancel{\langle \boldw_j, \boldw_j\rangle}\\
-\amp = 0 
+A[\boldv]_{B'}=\underset{B\rightarrow B'}{P}\, [T]_B\, \underset{B'\rightarrow B}{P}[\boldv]_{B'} \amp= \underset{B\rightarrow B'}{P}\, [T]_B [\boldv]_B \amp (\knowl{./knowl/th_change_of_basis_coordinates.html}{\text{Theorem 4.3.2}})\\
+\amp= \underset{B\rightarrow B'}{P}[T(\boldv)]_{B} \amp (\knowl{./knowl/th_matrixrep.html}{\text{Theorem 4.2.6}}, (1)) \\
+\amp = [\boldv]_{B'} \amp (\knowl{./knowl/th_change_of_basis_coordinates.html}{\text{Theorem 4.3.2}})
 \end{align*}
 </div>
-<span class="incontext"><a href="s_orthogonal_projection.html#md-211" class="internal">in-context</a></span>
+<span class="incontext"><a href="s_changeofbasis.html#md-212" class="internal">in-context</a></span>
 </body>
 </html>

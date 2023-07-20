@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -15,14 +15,15 @@
 <span class="type">Item</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span>
 </h5>
 <div class="para logical">
-<div class="para">Over the complex numbers <span class="process-math">\(\C\)</span> we can factor <span class="process-math">\(p(t)\)</span> completely as</div>
+<div class="para">We have</div>
 <div class="displaymath process-math">
-\begin{equation*}
-p(t)=(t-\lambda_1)(t-\lambda_2)\cdots (t-\lambda_n),
-\end{equation*}
+\begin{align*}
+d(p_1,p_2) \amp = \norm{p_1-p_2} \\
+\amp = \sqrt{\langle p_1-p_2, p_1-p_2\rangle}\\
+\amp = \sqrt{(p_1(1)-p_2(1))^2+(p_1(-1)-p_2(-1))^2+(p_1(0)-p_2(0))^2}\\
+\amp = \sqrt{(-1)^2+(1)^2+(-1)^2}=\sqrt{3} 
+\end{align*}
 </div>
-<div class="para">where the <span class="process-math">\(\lambda_i\in \C\)</span> are the (not necessarily distinct) roots of <span class="process-math">\(p(t)\text{.}\)</span>
-</div>
-</div></article><span class="incontext"><a href="s_eigenvectors.html#li-1108" class="internal">in-context</a></span>
+</div></article><span class="incontext"><a href="s_innerproducts.html#li-1108" class="internal">in-context</a></span>
 </body>
 </html>
