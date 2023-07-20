@@ -40,13 +40,6 @@
         </p>
       </statement>
     </definition>
-      <remark xml:id="rm_orthogonal_ordered_basis">
-      <statement>
-        <p>
-          If <m>V</m> is further given the structure of a (finite-dimensional) inner product space, then we say an ordered basis <m>B=(\boldv_1, \boldv_2, \dots, \boldv_n)</m> is orthogonal (resp., orthonormal) if its underlying set is orthogonal (resp. orthonormal).
-        </p>
-      </statement>
-    </remark>
 
         <remark >
       <statement>
@@ -91,8 +84,6 @@
             </me>.
             Usually this is accomplished by reducing this vector equation to an equivalent system of linear equations in the unknowns <m>c_i</m> and solving using the method of Gaussian elimination. However, there are some cases when we can easily produce the <m>c_i</m> by inspection: for example
             when computing with standard bases as the first example below illustrates.
-          </p>
-          <p>Furthermore, if the given basis happens to be orthogonal (or orthonormal) with respect to some inner product, <xref ref="th_coordinates_orthogonal"/> provides an inner product formula for computing the <m>c_i</m>.
           </p>
   <example xml:id="eg_coordinatevector_standard">
     <title>Standard bases</title>
@@ -229,53 +220,7 @@
     <video xml:id="vid_coordvecs" youtube="QOIogczPF0c" />
     </figure>
   </paragraphs>
-  <p>
-    When <m>B=(\boldv_1, \boldv_2, \dots, \boldv_n)</m> is an orthogonal basis with respect to some inner product <m>\langle , \rangle </m>, then by <xref ref="th_orthogonal_basis_formula"/> we have
-    <me>
-      \boldv=\frac{\langle \boldv,\boldv_1  \rangle }{\langle \boldv_1, \boldv_1\rangle }\boldv_1+\frac{\langle \boldv,\boldv_1  \rangle }{\langle \boldv_1, \boldv_1\rangle }\boldv_1+\cdots +\frac{\langle \boldv,\boldv_n  \rangle }{\langle \boldv_n, \boldv_n\rangle }\boldv_n
-    </me>,
-    and thus
-    <me>
-      [\boldv]_B=\left(\frac{\langle \boldv,\boldv_1  \rangle }{\langle \boldv_1, \boldv_1\rangle }, \frac{\langle \boldv,\boldv_2  \rangle }{\langle \boldv_2, \boldv_2\rangle },\dots, \frac{\langle \boldv,\boldv_n  \rangle }{\langle \boldv_n, \boldv_n\rangle }\right)
-    </me>.
-    We have thus proved the following theorem.
-  </p>
-  <theorem xml:id="th_coordinates_orthogonal">
-    <title>Coordinate vectors for orthogonal bases</title>
-    <statement>
-      <p>
-      Let <m>(V,\langle , \rangle )</m> be an inner product space, and suppose the ordered basis <m>B=(\boldv_1, \boldv_2, \dots, \boldv_n)</m> is orthogonal with respect to <m>\langle , \rangle </m>. For all <m>\boldv\in V</m> we have
-      <me>
-        [\boldv]_B=\left(\frac{\langle \boldv,\boldv_1  \rangle }{\langle \boldv_1, \boldv_1\rangle }, \frac{\langle \boldv,\boldv_2  \rangle }{\langle \boldv_2, \boldv_2\rangle },\dots, \frac{\langle \boldv,\boldv_n  \rangle }{\langle \boldv_n, \boldv_n\rangle }\right)
-      </me>.
-      </p>
-    </statement>
-  </theorem>
-  <example>
-    <title>Orthogonal bases</title>
-    <statement>
-      <p>
-        Let <m>V=\R^2</m> and <m>B=((1,1),(-1,2))</m>. Find a general formula for <m>[(a,b)]_B</m>. Note: <m>B</m> is orthogonal with respect to the weighted dot product
-        <me>
-          \langle (x_1,x_2), (y_1,y_2)\rangle =2x_1y_1+x_2y_2
-        </me>.
-      </p>
-    </statement>
-    <solution>
-      <p>
-        Applying <xref ref="th_coordinates_orthogonal"/> to <m>B</m> and the dot product with weights <m>2, 1</m>, for any <m>\boldv=(a,b)</m> we compute
-        <md>
-          <mrow>[(a,b)]_B \amp =\left(\frac{\langle (a,b), (1,1)\rangle }{\langle (1,1),(1,1) \rangle }, \frac{\langle (a,b), (-1,2)\rangle }{\langle (-1,2),(-1,2) \rangle }\right)</mrow>
-          <mrow> \amp=\left(\frac{1}{3}(2a+b),\frac{1}{3}(-a+b) \right) </mrow>
-        </md>.
-        Let's check our formula with <m>\boldv=(3,-3)</m>. The formula yields <m>[(3,-3)]_B=(1,-2)</m>, and indeed we see that
-        <me>
-          (3,-3)=1(1,1)-2(-1,2)
-        </me>.
-
-      </p>
-    </solution>
-  </example>
+   
 </subsection>
 <subsection xml:id="ss_coordinate_transformation">
   <title>Coordinate vector transformation</title>

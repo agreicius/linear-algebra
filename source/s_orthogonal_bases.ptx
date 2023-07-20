@@ -120,22 +120,90 @@
       </statement>
     </definition>
     <p>
-      <xref ref="th_orthogonal_basis_formula"/> serves as a first example illustrating the virtue of orthogonal and orthonormal base.  We preface it with a mantra conveying the general principle.
+      We will see in <xref ref="th_orthogonal_basis_formula"/> precisely why working with orthogonal or orthonormal bases is so convenient. Before we do so, however, we would like some guarantee that we can actually find an orthogonal basis. The <em>Gram-Schmidt procedure</em> comes to our rescue in this regard, at least in the finite-dimensional case, as it provides a method of converting an arbitrary basis into an orthogonal one.
     </p>
-    <principle xml:id="princ_orthogonalbasis_mantra">
-      <title>Orthogonal basis mantra</title>
+    <algorithm xml:id="proc_gram-schmidt">
+      <title>Gram-Schmidt procedure</title>
+      <idx><h>Gram-Schmidt procedure</h></idx>
       <statement>
         <p>
-          Working with an orthogonal basis is nice; working with an orthonormal basis is even nicer.
+          Let <m>(V, \langle \ , \ \rangle)</m> be an inner product space of dimension <m>n</m>,
+          and let <m>B=\{\boldv_1, \boldv_2, \dots, \boldv_n\}</m> be a basis for <m>V</m>.
+          We can convert <m>B</m> into an orthogonal basis
+          <m>B'=\{\boldw_1, \boldw_2, \dots, \boldw_n\}</m>, and further to an orthonormal basis <m>B''=\{\boldu_1, \boldu_2, \dots, \boldu_n\}</m>, as follows:
+          <ol>
+            <li>
+              <p>
+                Set <m>\boldw_1=\boldv_1</m>.
+              </p>
+            </li>
+            <li>
+              <title>Orthogonalize</title>
+              <p>
+                Proceeding in succession for each <m>2\leq r\leq n</m>, replace <m>\boldv_r</m> with the vector <m>\boldw_r</m> defined as 
+                <me>
+                  \boldw_r=\boldv_r-\frac{\angvec{\boldv_r, \boldw_{r-1}}}{\angvec{\boldw_{r-1},\boldw_{r-1}}}\boldw_{r-1}-\frac{\angvec{\boldv_r, \boldw_{r-2}}}{\angvec{\boldw_{r-2},\boldw_{r-2}}}\boldw_{r-2}-\cdots -\frac{\angvec{\boldv_r, \boldw_{1}}}{\angvec{\boldw_{1},\boldw_{1}}}\boldw_1
+                </me>.
+                The resulting set <m>B'=\{\boldw_1, \boldw_2, \dots, \boldw_n\}</m> is an orthogonal basis of <m>V</m>.
+              </p>
+            </li>
+            <li>
+              <title>Normalize</title>
+              <p>
+                For each <m>1\leq i\leq n</m> let
+                <me>
+                  \boldu_i=\frac{1}{\norm{\boldw_i}}\,\boldw_i
+                </me>.
+                The set <m>B''=\{\boldu_1, \boldu_2, \dots, \boldu_n\}</m> is an orthonormal basis of <m>V</m>.
+              </p>
+            </li>
+          </ol>
         </p>
       </statement>
-    </principle>
+    </algorithm>
+      <corollary xml:id="cor_orthonormal_existence">
+        <title>Existence of orthonormal bases</title>
+        <statement>
+          <p>
+            Let <m>(V,\langle \ , \rangle)</m> be an inner product space of dimension <m>n</m>.
+          </p>
+          <ol>
+            <li>
+              <p>
+              There is an orthonormal basis for <m>V</m>. In fact, any basis of <m>V</m> can be converted to an orthonormal basis using the <xref ref="proc_gram-schmidt" text="custom">Gram-Schmidt procedure</xref>.
+              </p>
+            </li>
+            <li>
+              <p>
+                If <m>S\subseteq V</m> is an orthogonal set, then there is an orthogonal basis <m>B</m> containing <m>S</m>: <ie />, any orthogonal set can be extended to an orthogonal basis.
+              </p>
+            </li>
+          </ol>
+        </statement>
+        <proof>
+          <ol>
+            <li>
+              <p>
+                See <xref ref="proc_gram-schmidt"/> and its proof.
+              </p>
+            </li>
+            <li>
+              <p>
+                The orthogonal set <m>S</m> is linearly independent by <xref ref="th_orthogonal"/>. Let <m>S=\{\boldv_1,\boldv_2,\dots, \boldv_r\}</m> be the distinct elements of <m>S</m>. (We must have <m>r\leq n</m> since <m>S</m> is linearly independent.) By <xref ref="th_basis_contract_expand"/> we can extend <m>S</m> to a basis <m>B=\{\boldv_1,\dots, \boldv_r, \boldv_{r+1}, \dots, \boldv_n\}</m>. It is easy to see that when we apply the Gram-Schmidt procedure to <m>B</m>, the first <m>r</m> vectors are left unchanged, as they are already pairwise orthogonal. Thus Gram-Schmidt returns an orthogonal basis of the form <m>B'=\{\boldv_1,\dots, \boldv_r, \boldw_{r+1}, \dots, \boldw_n\}</m>, as desired.
+              </p>
+            </li>
+          </ol>
+        </proof>
+      </corollary>
+      <p>
+        Now let's see the computational virtue of working with orthogonal bases. 
+      </p>
 
     <theorem xml:id="th_orthogonal_basis_formula">
       <title>Calculating with orthogonal bases</title>
       <statement>
         <p>
-          Let <m>(V, \langle , \rangle )</m> be an inner product space.  and let
+          Let <m>(V, \langle , \rangle )</m> be an inner product space of dimension <m>n</m> and let
         </p>
         <ol>
           <li>
@@ -167,6 +235,9 @@
         </ol>
       </statement>
     </theorem>
+    <p>
+      
+    </p>
   <example>
     <statement>
       <p>
@@ -220,83 +291,75 @@
       </ol>
     </solution>
   </example>
-  <p>
-    <xref ref="th_orthogonal_basis_formula"/> gives a first glimpse how working with orthogonal and orthonormal bases can make life easier. The question remains, however: Can we always find an orthonormal basis? The <em>Gram-Schmidt procedure</em> gives an affirmative answer to this question, at least in the finite-dimensional case, as it provides a method of converting an arbitrary basis into an orthogonal one.
-  </p>
-  <algorithm xml:id="proc_gram-schmidt">
-    <title>Gram-Schmidt procedure</title>
-    <idx><h>Gram-Schmidt procedure</h></idx>
-    <statement>
-      <p>
-        Let <m>(V, \langle \ , \ \rangle)</m> be an inner product space,
-        and let <m>B=\{\boldv_1, \boldv_2, \dots, \boldv_n\}</m> be a basis for <m>V</m>.
-        We can convert <m>B</m> into an orthogonal basis
-        <m>B'=\{\boldw_1, \boldw_2, \dots, \boldw_n\}</m>, and further to an orthonormal basis <m>B''=\{\boldu_1, \boldu_2, \dots, \boldu_n\}</m>, as follows:
-        <ol>
-          <li>
-            <p>
-              Set <m>\boldw_1=\boldv_1</m>.
-            </p>
-          </li>
-          <li>
-            <title>Orthogonalize</title>
-            <p>
-              Proceeding in succession for each <m>2\leq r\leq n</m>, replace <m>\boldv_r</m> with the vector <m>\boldw_r</m> defined as 
-              <me>
-                \boldw_r=\boldv_r-\frac{\angvec{\boldv_r, \boldw_{r-1}}}{\angvec{\boldw_{r-1},\boldw_{r-1}}}\boldw_{r-1}-\frac{\angvec{\boldv_r, \boldw_{r-2}}}{\angvec{\boldw_{r-2},\boldw_{r-2}}}\boldw_{r-2}-\cdots -\frac{\angvec{\boldv_r, \boldw_{1}}}{\angvec{\boldw_{1},\boldw_{1}}}\boldw_1
-              </me>.
-              The resulting set <m>B'=\{\boldw_1, \boldw_2, \dots, \boldw_n\}</m> is an orthogonal basis of <m>V</m>.
-            </p>
-          </li>
-          <li>
-            <title>Normalize</title>
-            <p>
-              For each <m>1\leq i\leq n</m> let
-              <me>
-                \boldu_i=\frac{1}{\norm{\boldw_i}}\,\boldw_i
-              </me>.
-              The set <m>B''=\{\boldu_1, \boldu_2, \dots, \boldu_n\}</m> is an orthonormal basis of <m>V</m>.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-  </algorithm>
-    <corollary xml:id="cor_orthonormal_existence">
-      <title>Existence of orthonormal bases</title>
+  </subsection>
+  <subsection xml:id="ss_orthogonal_change_of_basis">
+    <title>Coordinate vectors and matrix representations with respect to orthogonal bases</title>
+    <p>
+      Let <m>V</m> be an inner product space. By an <em>orthogonal</em> (resp., <em>orthonormal</em>) ordered basis of <m>V</m>, we mean an ordered basis <m>(\boldv_1, \boldv_2, \dots, \boldv_n)</m> for which the underlying set <m>\{\boldv_1, \boldv_2, \dots, \boldv_n\}</m> is orthogonal (resp., orthonormal). It should come as little surprise that as a consequence of <xref ref="th_orthogonal_basis_formula"/>, computing coordinate vectors and matrix representations with respect to orthogonal bases is especially easy.
+    </p>
+    <p> For example, if <m>B=(\boldv_1, \boldv_2, \dots, \boldv_n)</m> is an orthogonal basis with respect to some inner product <m>\langle , \rangle </m>, then by <xref ref="th_orthogonal_basis_formula"/> we have
+      <me>
+        \boldv=\frac{\langle \boldv,\boldv_1  \rangle }{\langle \boldv_1, \boldv_1\rangle }\boldv_1+\frac{\langle \boldv,\boldv_1  \rangle }{\langle \boldv_1, \boldv_1\rangle }\boldv_1+\cdots +\frac{\langle \boldv,\boldv_n  \rangle }{\langle \boldv_n, \boldv_n\rangle }\boldv_n
+      </me>,
+      and thus, using definition <xref ref="d_coordinatevector"/>, we have 
+      <me>
+        [\boldv]_B=\left(\frac{\langle \boldv,\boldv_1  \rangle }{\langle \boldv_1, \boldv_1\rangle }, \frac{\langle \boldv,\boldv_2  \rangle }{\langle \boldv_2, \boldv_2\rangle },\dots, \frac{\langle \boldv,\boldv_n  \rangle }{\langle \boldv_n, \boldv_n\rangle }\right)
+      </me>.
+      We have thus proved the following theorem.
+    </p>
+    <theorem xml:id="th_coordinates_orthogonal">
+      <title>Coordinate vectors for orthogonal bases</title>
       <statement>
         <p>
-          Let <m>(V,\langle \ , \rangle)</m> be an inner product space of dimension <m>n</m>.
+        Let <m>(V,\langle , \rangle )</m> be an inner product space and let <m>B=(\boldv_1, \boldv_2, \dots, \boldv_n)</m> be an ordered basis. 
+        <ol>
+          <li>
+            <title>Orthogonal basis</title>
+            <p>
+              If <m>B</m> is orthogonal, then for all <m>\boldv\in V</m> we have
+              <me>
+                [\boldv]_B=\left(\frac{\langle \boldv,\boldv_1  \rangle }{\langle \boldv_1, \boldv_1\rangle }, \frac{\langle \boldv,\boldv_2  \rangle }{\langle \boldv_2, \boldv_2\rangle },\dots, \frac{\langle \boldv,\boldv_n  \rangle }{\langle \boldv_n, \boldv_n\rangle }\right)
+              </me>.
+            </p>
+          </li>
+          <li>
+            <title>Orthogonormal basis</title>
+            <p>
+              If <m>B</m> is orthonormal, then for all <m>\boldv\in V</m> we have
+              <me>
+                [\boldv]_B=\left(\langle \boldv,\boldv_1  \rangle, \langle \boldv,\boldv_2  \rangle ,\dots, \langle \boldv,\boldv_n  \rangle\right)
+              </me>.
+            </p>
+          </li>
+        </ol> 
         </p>
-        <ol>
-          <li>
-            <p>
-            There is an orthonormal basis for <m>V</m>. In fact, any basis of <m>V</m> can be converted to an orthonormal basis using the <xref ref="proc_gram-schmidt" text="custom">Gram-Schmidt procedure</xref>.
-            </p>
-          </li>
-          <li>
-            <p>
-              If <m>S\subseteq V</m> is an orthogonal set, then there is an orthogonal basis <m>B</m> containing <m>S</m>: <ie />, any orthogonal set can be extended to an orthogonal basis.
-            </p>
-          </li>
-        </ol>
       </statement>
-      <proof>
-        <ol>
-          <li>
-            <p>
-              See <xref ref="proc_gram-schmidt"/> and its proof.
-            </p>
-          </li>
-          <li>
-            <p>
-              The orthogonal set <m>S</m> is linearly independent by <xref ref="th_orthogonal"/>. Let <m>S=\{\boldv_1,\boldv_2,\dots, \boldv_r\}</m> be the distinct elements of <m>S</m>. (We must have <m>r\leq n</m> since <m>S</m> is linearly independent.) By <xref ref="th_basis_contract_expand"/> we can extend <m>S</m> to a basis <m>B=\{\boldv_1,\dots, \boldv_r, \boldv_{r+1}, \dots, \boldv_n\}</m>. It is easy to see that when we apply the Gram-Schmidt procedure to <m>B</m>, the first <m>r</m> vectors are left unchanged, as they are already pairwise orthogonal. Thus Gram-Schmidt returns an orthogonal basis of the form <m>B'=\{\boldv_1,\dots, \boldv_r, \boldw_{r+1}, \dots, \boldw_n\}</m>, as desired.
-            </p>
-          </li>
-        </ol>
-      </proof>
-    </corollary>
-
+    </theorem>
+    <example>
+      <title>Orthogonal bases</title>
+      <statement>
+        <p>
+          Let <m>V=\R^2</m> and <m>B=((1,1),(-1,2))</m>. Find a general formula for <m>[(a,b)]_B</m>. Note: <m>B</m> is orthogonal with respect to the weighted dot product
+          <me>
+            \langle (x_1,x_2), (y_1,y_2)\rangle =2x_1y_1+x_2y_2
+          </me>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Applying <xref ref="th_coordinates_orthogonal"/> to <m>B</m> and the dot product with weights <m>2, 1</m>, for any <m>\boldv=(a,b)</m> we compute
+          <md>
+            <mrow>[(a,b)]_B \amp =\left(\frac{\langle (a,b), (1,1)\rangle }{\langle (1,1),(1,1) \rangle }, \frac{\langle (a,b), (-1,2)\rangle }{\langle (-1,2),(-1,2) \rangle }\right)</mrow>
+            <mrow> \amp=\left(\frac{1}{3}(2a+b),\frac{1}{3}(-a+b) \right) </mrow>
+          </md>.
+          Let's check our formula with <m>\boldv=(3,-3)</m>. The formula yields <m>[(3,-3)]_B=(1,-2)</m>, and indeed we see that
+          <me>
+            (3,-3)=1(1,1)-2(-1,2)
+          </me>.
+  
+        </p>
+      </solution>
+    </example>
   </subsection>
 
 

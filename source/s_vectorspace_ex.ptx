@@ -20,7 +20,7 @@
   <statement>
     <p>
       Verify that <m>\R^\infty</m> along with the vector operations defined as in <xref ref="ex_vs_infinitesequences"/>
-    satisfies the defining axioms of a vector space.
+    satisfies the axioms of a vector space.
     </p>
   </statement>
 </exercise>
@@ -28,7 +28,7 @@
   <statement>
     <p>
       Let <m>I</m> be an interval in the real line. Verify that <m>F(I,\R)</m> along with the vector operations defined as in <xref ref="ex_vs_functions"/>
-    satisfies the defining axioms of a vector space.
+    satisfies the axioms of a vector space.
     </p>
   </statement>
 </exercise>

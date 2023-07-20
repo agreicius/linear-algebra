@@ -409,7 +409,7 @@
 <subsection xml:id="ss_bases_transformations">
   <title>Bases and linear transformations</title>
   <introduction>
-   In <xref ref="s_basis"/> we saw that a vector space <m>V</m> is completely and concisely determined by a basis <m>B</m> in the sense that all elements of <m>V</m> can be expressed in a unique was as a linear combination of elements of <m>B</m>. A similar principle applies to linear transformations, as the next theorem illustrates.
+   In <xref ref="s_basis"/> we saw that a vector space <m>V</m> is completely and concisely determined by a basis <m>B</m> in the sense that all elements of <m>V</m> can be expressed in a unique was as a linear combination of elements of <m>B</m>. A similar principle applies to linear transformations. Roughly speaking, a linear transformation defined on a vector space <m>V</m> is completely determined by where its sends elements of a basis for <m>V</m>. This is spelled out in more detail in <xref ref="th_bases_transformations"/> and the remark that follows. 
   </introduction>
   <theorem xml:id="th_bases_transformations">
     <title>Bases and linear transformations</title>
@@ -530,13 +530,13 @@
     <p>
       Since <m>r_0</m> and <m>r_{\pi/2}</m> are both linear transformations (<xref ref="ex_transformation_reflection"/>), so is the composition <m>T=r_{\pi/2}\circ r_{0}</m>. We wish to show <m>T=\rho_{\pi}</m>. Since <m>\rho_{\pi}</m> is also a linear transformation, it suffices by <xref ref="th_bases_transformations"/> to show that <m>T</m> and <m>\rho_\pi</m> agree on a basis of <m>\R^2</m>. Take the standard basis <m>B=\{(1,0), (0,1)\}</m>. Compute:
       <md>
-        <mrow>T(1,0) \amp=r_{\pi}(r_{0}(1,0)) </mrow>
-        <mrow> \amp =r_{\pi}(1,0) </mrow>
+        <mrow>T(1,0) \amp=r_{\pi/2}(r_{0}(1,0)) </mrow>
+        <mrow> \amp =r_{\pi/2}(1,0) </mrow>
         <mrow>  \amp =(-1,0)</mrow>
         <mrow>  \amp =\rho_{\pi}(1,0)</mrow>
         <mrow> T(0,1) \amp </mrow>
-        <mrow>T(0,1) \amp=r_{\pi}(r_{0}(0,1)) </mrow>
-        <mrow> \amp =r_{\pi}(0,-1) </mrow>
+        <mrow>T(0,1) \amp=r_{\pi/2}(r_{0}(0,1)) </mrow>
+        <mrow> \amp =r_{\pi/2}(0,-1) </mrow>
         <mrow>  \amp =(0,-1)</mrow>
         <mrow>  \amp =\rho_{\pi}(0,1)</mrow>
         </md>.

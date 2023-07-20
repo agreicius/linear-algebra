@@ -83,6 +83,37 @@
     </ol>
   </statement>
 </exercise>
+<exercisegroup>
+  <title>Coordinate vectors: orthogonal basis</title>
+    <introduction>
+      <p>
+        In each exercise an inner product space <m>(V,\langle\, \rangle)</m> and <em>orthogonal</em> ordered basis is given. Use <xref ref="th_coordinates_orthogonal"/> to compute the requested coordinate vector.
+      </p>
+    </introduction>
+
+  <exercise>
+    <statement>
+      <p>
+        <m>V=\R^3</m> with dot product; <m>B=\left((1,1,1),(1,-1,0),(1,1,-2)\right)</m>. Compute <m>[(-3,2,4)]_B</m>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        <m>V=\R^3</m> with dot product with weights <m>k_1=1, k_2=2, k_3=2</m>; <m>B=\left((1,1,1),(2,1,-2),(4,-3,1)\right)</m>. Compute <m>[(0,1,0)]_B</m>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <statement>
+      <p>
+        <m>V=\Span\{\cos x, \cos 2x, \cos 3x\}\subseteq C([0,2\pi])</m> with integral inner product <m>\langle f, g\rangle=\int_0^{2\pi}f(x)g(x)\, dx</m>; <m>B=(\cos x, \cos 2x, \cos 3x)</m>. Compute <m>[\cos^3 x]_B</m>. (Yes, <m>\cos^3(x)</m> can indeed be written as a linear combination of <m>\cos x, \cos 2x, \cos 3x</m>. In this exercise you will discover what the corresponding identity is using inner products!)
+      </p>
+    </statement>
+  </exercise>
+  </exercisegroup>
+
   <exercise>
     <statement>
       <p>
@@ -199,8 +230,30 @@
       </ol>
     </statement>
   </exercise>
-
-
+  <exercise xml:id="ex_coordinates_orthonormal">
+    <title>Orthonormal coordinate vectors</title>  
+    <statement>
+      <p>
+        Let <m>(V, \langle\, , \rangle)</m> be an inner product space, and suppose <m>B=(\boldv_1, \boldv_2, \dots, \boldv_n)</m> is an orthonormal ordered basis of <m>V</m>.
+      </p>
+      <ol>
+        <li>
+          <p>
+            Prove that
+            <me>
+              \langle \boldv, \boldw\rangle =[\boldv]_B\cdot [\boldw]_B
+            </me>
+            for all <m>\boldv, \boldw\in V</m>. In other words we can compute the inner product of vectors by computing the dot product of their coordinate vectors with respect to the orthonormal basis <m>B</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Prove that a set <m>S=\{\boldw_1, \boldw_2, \dots, \boldw_r\}\subseteq V</m> is orthogonal (resp. orthonormal) with respect to <m>\langle\, , \rangle</m> if and only if <m>S'=\{[\boldw_1]_B, [\boldw_2]_B, \dots, [\boldw_r]_B\subseteq \R^n</m> is orthogonal (resp. orthonormal) with respect to the dot product.
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
 
 
 </exercises>
