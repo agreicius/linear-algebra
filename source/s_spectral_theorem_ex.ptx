@@ -1,4 +1,11 @@
 <exercises xml:id="s_spectral_theorem_ex">
+  <subexercises>
+    <title>Webwork Exercises</title>
+    <exercise>
+      <!-- ortho decomposition -->
+      <webwork source="Library/NAU/setLinearAlgebra/diag3x3ortho.pg" />
+    </exercise>
+  </subexercises>
   <exercisegroup>
   <introduction>
   <p>
