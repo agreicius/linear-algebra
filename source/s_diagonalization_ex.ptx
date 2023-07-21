@@ -1,6 +1,6 @@
 <exercises xml:id="s_diagonalization_ex">
   <subexercises>
-    <title>Webwork Exercises</title>
+    <title>WeBWork Exercises</title>
     <exercise>
       <!-- diagonalize 2x2 matrix -->
       <webwork source="Library/TCNJ/TCNJ_Diagonalization/problem4.pg" />

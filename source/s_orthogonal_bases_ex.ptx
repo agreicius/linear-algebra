@@ -1,6 +1,6 @@
 <exercises xml:id="s_orthogonal_bases_ex">
   <subexercises>
-    <title>Webwork Exercises</title>
+    <title>WeBWork Exercises</title>
     <exercise>
       <!-- coordinates -->
       <webwork source="Library/Mizzou/Matrix_Theory/HW_6/prob_1.pg" />
@@ -59,30 +59,7 @@
       </ol>
     </statement>
   </exercise>
-<exercise xml:id="ex_extend_orthogonal">
-  <statement>
-    <p>
-      Consider the inner product space given by <m>\R^4</m> together with the dot product. Construct an orthogonal basis of <m>\R^4</m> containing <m>\boldv_1=(1,1,1,1)</m> following the steps below.
-    </p>
-    <ol>
-      <li>
-        <p>
-          Produce a vector <m>\boldv_2</m> orthogonal to <m>\boldv_1</m> by inspection.
-        </p>
-      </li>
-      <li>
-        <p>
-          Produce a vector <m>\boldv_3</m> orthogonal to <m>\boldv_1</m> and <m>\boldv_2</m> by setting up an appropriate matrix equation of the form <m>A\boldx=\boldzero</m> and finding a nontrivial solution. (Use <xref ref="th_dotproduct_method"/>.)
-        </p>
-      </li>
-      <li>
-        <p>
-          Produce a vector <m>\boldv_4</m> orthogonal to <m>\boldv_1, \boldv_2, \boldv_3</m> by setting up an appropriate matrix equation of the form <m>B\boldx=\boldzero</m> and finding a nontrivial solution. (Use <xref ref="th_dotproduct_method"/>.)
-        </p>
-      </li>
-    </ol>
-  </statement>
-</exercise>
+
 <exercisegroup>
   <title>Coordinate vectors: orthogonal basis</title>
     <introduction>
@@ -113,52 +90,73 @@
     </statement>
   </exercise>
   </exercisegroup>
-
-  <exercise>
-    <statement>
-      <p>
-        Consider the inner product space given by <m>V=\R^3</m> together with the dot product. Let <m>W</m> be the plane with defining equation <m>x+2y-z=0</m>. Compute an orthogonal basis of <m>W</m>, and then extend this to an orthogonal basis of <m>\R^3</m>.
-      </p>
-    </statement>
-    <hint>
-      You do not have to use Gram-Schmidt here, but can proceed using a combination of inspection, your geometric understanding of <m>W</m>, and/or along similar lines of <xref ref="ex_extend_orthogonal"/>.
-    </hint>
-  </exercise>
-
+  <exercisegroup>
+    <title>Orthonormal change of basis</title>
+    <introduction>
+    <p>
+    In each exercise an inner product space <m>(V,\langle\, , \rangle)</m> is given along with two <em>orthonormal</em> ordered bases <m>B</m> and <m>B'</m>. Compute <m>\underset{B\rightarrow B'}{P}</m> and <m>\underset{B'\rightarrow B}{P}</m> using <xref ref="th_changebasis_orthonormal"/>.
+    </p>
+    </introduction>
+    <exercise>
+      <statement>
+        <p>
+          <m>V=\R^2</m> with the dot product, <m>B=\left((\sqrt{2}/2, \sqrt{2}/2), (-\sqrt{2}/2, \sqrt{2}/2)\right)</m>, <m>B'=\left( (\sqrt{3}/2, -1/2), (1/2,\sqrt{3}/2)\right)</m>
+        </p>
+      </statement>
+    
+    </exercise>
+    <exercise>
+      <statement>
+        <p>
+          <m>V=\R^4</m> with the dot product, <m>B=(\bolde_1, \bolde_2, \bolde_3, \bolde_4)</m>, <m>B'=\left(\frac{1}{2}(1,1,1,1), \frac{1}{2}(1,-1,1,-1), \frac{1}{2}(1,1,-1,-1), \frac{1}{2}(1,-1,-1,1)\right)</m>
+        </p>
+      </statement>
+    
+    </exercise>
+    
+    </exercisegroup>
+<exercisegroup>
+  <title>Gram-Schmidt procedure</title>
+  <introduction>
+    <p>
+      Use the Gram-Schmidt procedure to convert the given basis to a basis that is orthogonal with respect to the given inner product.  
+    </p>
+  </introduction>
 <exercise>
   <statement>
     <p>
-      Consider the inner product space given by <m>\R^3</m> together with the weighted dot product
+      <m>V=\R^3</m> with the weighted dot product
       <me>
         \langle (x_1,x_2,x_3),(y_1,y_2,y_3)\rangle=x_1y_1+2x_2y_2+3x_3y_3
-      </me>
-      Use the Gram-Schmidt procedure to convert the basis <m>B=\{(1,1,0),(0,1,1), (1,0,1)\}</m> into a basis that is orthogonal with respect to this weighted dot product.
-
+      </me>.
+      <m>B=\{(1,1,0),(0,1,1), (1,0,1)\}</m>.
     </p>
   </statement>
 </exercise>
   <exercise>
     <statement>
       <p>
-        Consider the vector space <m>V=C([0,1])</m> with the integral inner product.
-        Let <m>B=\{x^2,x^4,x^6\}</m>, and define <m>W=\Span B</m>. Apply Gram-Schmidt to <m>B</m> to obtain an orthogonal basis of <m>W</m>.
+        <m>V=\span \{x^2,x^4,x^6\}\subseteq C([0,1])</m> with the integral inner product
+        <me>
+          \langle f, g\rangle=\int_0^1 f(x)g(x)\, dx
+        </me>.
+        <m>B=\{x^2,x^4,x^6\}</m>.
       </p>
     </statement>
   </exercise>
   <exercise>
     <statement>
       <p>
-        Consider the vector space <m>V=P_2</m> with the
-        evaluation at <m>-1, 0, 1</m> inner product:
+        <m>V=P_2</m> with the
+        evaluation inner product
         <me>
         \angvec{p(x),q(x)}=p(-1)q(-1)+p(0)q(0)+p(1)q(1)
         </me>.
-        Apply Gram-Schmidt to the standard basis of <m>P_2</m> to obtain an orthogonal basis of <m>P_2</m>.
+        $B=\{x^2, x, 1\}$. 
       </p>
     </statement>
-
   </exercise>
-
+</exercisegroup>
 <exercise>
   <statement>
     <p>
@@ -187,7 +185,42 @@
   </statement>
 </exercise>
 
-
+<exercise xml:id="ex_extend_orthogonal">
+  <title>Extending orthogonal bases</title>
+  <statement>
+    <p>
+      Consider the inner product space given by <m>\R^4</m> together with the dot product. Construct an orthogonal basis of <m>\R^4</m> containing <m>\boldv_1=(1,1,1,1)</m> following the steps below.
+    </p>
+    <ol>
+      <li>
+        <p>
+          Produce a vector <m>\boldv_2</m> orthogonal to <m>\boldv_1</m> by inspection.
+        </p>
+      </li>
+      <li>
+        <p>
+          Produce a vector <m>\boldv_3</m> orthogonal to <m>\boldv_1</m> and <m>\boldv_2</m> by setting up an appropriate matrix equation of the form <m>A\boldx=\boldzero</m> and finding a nontrivial solution. (Use <xref ref="th_dotproduct_method"/>.)
+        </p>
+      </li>
+      <li>
+        <p>
+          Produce a vector <m>\boldv_4</m> orthogonal to <m>\boldv_1, \boldv_2, \boldv_3</m> by setting up an appropriate matrix equation of the form <m>B\boldx=\boldzero</m> and finding a nontrivial solution. (Use <xref ref="th_dotproduct_method"/>.)
+        </p>
+      </li>
+    </ol>
+  </statement>
+</exercise>
+<exercise>
+  <title>Extending orthogonal bases</title>
+  <statement>
+    <p>
+      Consider the inner product space given by <m>V=\R^3</m> together with the dot product. Let <m>W</m> be the plane with defining equation <m>x+2y-z=0</m>. Compute an orthogonal basis of <m>W</m>, and then extend this to an orthogonal basis of <m>\R^3</m>.
+    </p>
+  </statement>
+  <hint>
+    You do not have to use Gram-Schmidt here, but can proceed using a combination of inspection, your geometric understanding of <m>W</m>, and/or along similar lines of <xref ref="ex_extend_orthogonal"/>.
+  </hint>
+</exercise>
   <exercise xml:id="ex_ortho_pythag">
     <statement>
       <p>
@@ -249,6 +282,51 @@
         <li>
           <p>
             Prove that a set <m>S=\{\boldw_1, \boldw_2, \dots, \boldw_r\}\subseteq V</m> is orthogonal (resp. orthonormal) with respect to <m>\langle\, , \rangle</m> if and only if <m>S'=\{[\boldw_1]_B, [\boldw_2]_B, \dots, [\boldw_r]_B\subseteq \R^n</m> is orthogonal (resp. orthonormal) with respect to the dot product.
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+
+  <exercise xml:id="ex_ortho_matrix_det">
+    <title>Determinant of orthogonal matrices</title>
+    <statement>
+      <p>
+        Prove: if <m>Q\in M_{nn}</m> is an orthogonal matrix, then <m>\det Q=\pm 1</m>.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ex_ortho_matrix_rotation_reflection">
+    <title>Orthogonal <m>2\times 2</m> matrices</title>
+    <statement>
+      <p>
+        In this exercise we will prove that a <m>2\times 2</m> matrix is orthogonal if and only it is a rotation matrix or a reflection matrix. 
+      </p>
+      <p>
+        Let <m>Q</m> be a <m>2\times 2</m> matrix.
+      </p>
+      <ol>
+        <li>
+          <p>
+            Prove that if <m>Q</m> is orthogonal and <m>\det Q=1</m>, then <m>Q</m> is a rotation matrix: <ie />, there is a <m>\theta\in [0,2\pi]</m> such that
+            <me>
+              Q=\begin{amatrix}[rr] \cos\theta\amp -\sin\theta\\ \sin\theta\amp \cos\theta \end{amatrix}
+            </me>.
+            See <xref ref="th_transform_rotation"/>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Prove that if <m>Q</m> is orthogonal and <m>\det Q=-1</m>, then <m>Q</m> is a reflection matrix: <ie />, there is a <m>\theta\in [0,\pi]</m> such that
+            <me>
+              Q=\begin{amatrix}[rr] \cos 2\theta\amp \sin 2\theta\\ \sin 2\theta \amp -\cos 2\theta \end{amatrix}
+            </me>.
+            See <xref ref="th_transform_reflection"/>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Prove that <m>Q</m> is an orthogonal matrix if and only if <m>Q</m> is a rotation matrix or <m>Q</m> is a reflection matrix. You may use the result of <xref ref="ex_ortho_matrix_det"/>.
           </p>
         </li>
       </ol>

@@ -1,6 +1,6 @@
 <exercises xml:id="s_eigenvectors_ex">
 <subexercises>
-  <title>Webwork Exercises</title>
+  <title>WeBWork Exercises</title>
     <exercise>
       <!-- eigenvalues only -->
       <webwork source="Library/TCNJ/TCNJ_Eigenvalues/problem3.pg" />

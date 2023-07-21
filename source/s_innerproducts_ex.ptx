@@ -1,6 +1,6 @@
 <exercises xml:id="s_innerproducts_ex">
   <subexercises>
-  <title>Webwork Exercises</title>
+  <title>WeBWork Exercises</title>
     <exercise>
       <!-- norm in Rn -->
       <webwork source="Library/Rochester/setLinearAlgebra17DotProductRn/ur_la_17_2.pg" />

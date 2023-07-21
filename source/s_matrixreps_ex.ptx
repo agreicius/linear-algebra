@@ -1,6 +1,6 @@
 <exercises xml:id="s_matrixreps_ex">
   <subexercises>
-    <title>Webwork Exercises</title>
+    <title>WeBWork Exercises</title>
     <exercise>
       <!-- match -->
       <webwork source="Library/TCNJ/TCNJ_MatrixLinearTransformation/problem10.pg" />

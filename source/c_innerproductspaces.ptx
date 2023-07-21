@@ -3,4 +3,5 @@
   <xi:include  href="s_innerproducts.ptx"/>
   <xi:include  href="s_orthogonal_bases.ptx"/>
   <xi:include  href="s_orthogonal_projection.ptx"/>
+  <xi:include  href="s_spectral_theorem.ptx"/>
 </chapter>

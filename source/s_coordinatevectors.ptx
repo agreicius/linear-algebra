@@ -65,9 +65,9 @@
       <statement>
         <p>
           Let <m>B=(\boldv_1, \boldv_2,\dots , \boldv_n)</m> be an ordered basis for the vector space <m>V</m>. According to <xref ref="th_basis_equivalence"/>, for any <m>\boldv\in V</m> there is a <em>unique</em> choice of scalars <m>c_i\in \R</m> satisfying
-          <me>
+          <men xml:id="eq_coor_vec">
             \boldv=c_1\boldv_1+c_2\boldv_2\cdots +c_n\boldv_n
-          </me>.
+          </men>.
           We call the corresponding <m>n</m>-tuple <m>(c_1,c_2,\dots, c_n)</m> the <term>coordinate vector of <m>\boldv</m> relative to the basis <m>B</m></term>, and denote it <m>[\boldv]_B</m>: <ie />,
           <me>
             [\boldv]_B=(c_1,c_2,\dots, c_n)
@@ -75,21 +75,46 @@
         </p>
       </statement>
     </definition>
+    <p>
+      Observe that computing a coordinate vector with respect to a basis involves setting up a vector equation of the form <xref ref="eq_coor_vec"/> and then solving for the unknown coefficients <m>c_i</m>. This is a familiar situation for us by now, and carrying out the computation involves reducing the given vector equation to a system of linear equations that we solve with our <xref ref="princ_GE" text="custom">old work horse</xref> Gaussian elimination.  
+    </p>
+    <algorithm xml:id="proc_coor_vec">
+      <title>Computing coordinate vectors</title>
+      <statement>
+        <p>
+          Let <m>B=(\boldv_1,\boldv_2,\dots, \boldv_n)</m> be an ordered basis of the vector space <m>V</m>. Given <m>\boldv\in V</m>, compute the coordinate vector <m>[\boldv]_B\in \R^n</m> by following these steps. 
+          <ol>
+            <li>
+              <p>
+                Set up the vector equation 
+                <men xml:id="eq_coor_vec_proc">
+                  \boldv=c_1\boldv_1+c_2\boldv_2+\cdots +c_n\boldv_n
+                </men>
+                in the unknowns <m>c_1, c_2,\dots, c_n\in \R</m>. 
+              </p>
+            </li>
+            <li>
+              <p>
+                Solve for the unknowns <m>c_i</m> in some manner. A surefire technique is to reduce the vector equation <xref ref="eq_coor_vec_proc"/> to a linear system and use Gaussian elimination. However, there are some situations when you can simply produce the scalars <m>c_i</m> by inspection.  
+              </p>
+            </li>
+            <li>
+              <p>
+                Conclude that <m>[\boldv]_B=(c_1,c_2,\dots, c_n)</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </algorithm>
           <p>
-            To compute the coordinate vector of an element <m>\boldv\in V</m> relative to a given ordered basis
-            <m>B=(\boldv_1,\boldv_2,\dots, \boldv_n)</m> we must <em>find</em> the scalars <m>c_1, c_2, \dots, c_n</m>
-            that satisfy the vector equation
-            <me>
-            \boldv=c_1\boldv_1+c_2\boldv_2+\cdots +c_n\boldv_n
-            </me>.
-            Usually this is accomplished by reducing this vector equation to an equivalent system of linear equations in the unknowns <m>c_i</m> and solving using the method of Gaussian elimination. However, there are some cases when we can easily produce the <m>c_i</m> by inspection: for example
-            when computing with standard bases as the first example below illustrates.
+            As illustrated by the next example, one setting for which we can compute <m>[\boldv]_B</m> by inspection (see (2) of <xref ref="proc_coor_vec"/>) is when <m>B</m> is one of our standard ordered bases. 
           </p>
   <example xml:id="eg_coordinatevector_standard">
     <title>Standard bases</title>
     <statement>
       <p>
-        Computing coordinate vectors relative to one of our standard bases for <m>\R^n</m>, <m>M_{mn}</m>, or <m>P_{n}</m> amounts to just listing the coefficients or entries used to specify the given vector. The examples below serve to illustrate the general method in this setting.
+        Computing coordinate vectors relative to one of our standard ordered bases for <m>\R^n</m>, <m>M_{mn}</m>, or <m>P_{n}</m> amounts to just listing the coefficients or entries used to specify the given vector. The examples below serve to illustrate the general method in this setting.
       </p>
       <ol>
         <li>
@@ -113,7 +138,7 @@
     <title>Reorderings of standard bases</title>
     <statement>
       <p>
-      If we choose an alternate ordering of one of the standard bases, the entries of the coordinate vector are reordered accordingly, as illustrated by the examples below.
+      If we choose an alternate ordering of one of the standard ordered bases, the entries of the coordinate vector are reordered accordingly, as illustrated by the examples below.
       </p>
       <ol>
         <li>
@@ -159,7 +184,7 @@
       <ol>
         <li>
           <p>
-           To compute <m>[(3,3)]_B</m> we must find the unique pair <m>(c_1, c_2)</m> satisfying
+           Using <xref ref="proc_coor_vec"/>, we compute <m>[(3,3)]_B</m> by finding the unique pair <m>(c_1, c_2)</m> satisfying
             <me>
               (3,3)=c_1(1,2)+c_2(1,1)
             </me>.
@@ -178,7 +203,7 @@
                 2c_1\amp +\amp c_2\amp =\amp b
               \end{linsys}
             </me>.
-             The usual techniques yield the unique solution <m>(c_1,c_2)=(-a+b,2a-b)</m>, and thus
+             The usual Gaussian elimination technique yields the unique solution <m>(c_1,c_2)=(-a+b,2a-b)</m>, and thus
              <me>
                [\boldv]_B=(-a+b, 2a-b)
              </me>
