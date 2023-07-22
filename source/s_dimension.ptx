@@ -545,7 +545,7 @@ The <q>contracting and expanding</q> theorem below is very useful theoretical co
         <title><m>\dim W=2</m></title>
         <p>
           If <m>\dim W=2</m>, then <m>W</m> has a basis <m>B=\{\boldv_1, \boldv_2\}</m> containing two non-parallel vectors in <m>\R^3</m>. You learn in multivariable calculus that 
-          <me>W=\span\{\boldv_1, \boldv_2\}=\{s\boldv_1+t\boldv_2\colon s,t\in \R\}</me> is the plane in <m>\R^3</m> passing through the origin with <q>direction vectors</q> <m>\boldv_1, \boldv_2</m>. In fact, you can show that the <em>cross product</em> <m>\boldn=\boldv_1\times \boldv_2</m> is a normal vector for the plane <m>W</m> in this case. Thus the <m>2</m>-dimensional subspaces of <m>\R^3</m> are planes passing through the origin.  
+          <me>W=\Span\{\boldv_1, \boldv_2\}=\{s\boldv_1+t\boldv_2\colon s,t\in \R\}</me> is the plane in <m>\R^3</m> passing through the origin with <q>direction vectors</q> <m>\boldv_1, \boldv_2</m>. In fact, you can show that the <em>cross product</em> <m>\boldn=\boldv_1\times \boldv_2</m> is a normal vector for the plane <m>W</m> in this case. Thus the <m>2</m>-dimensional subspaces of <m>\R^3</m> are planes passing through the origin.  
         </p>
       </li>
       <li>

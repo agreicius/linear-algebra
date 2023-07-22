@@ -136,7 +136,7 @@
   <exercise>
     <statement>
       <p>
-        <m>V=\span \{x^2,x^4,x^6\}\subseteq C([0,1])</m> with the integral inner product
+        <m>V=\Span \{x^2,x^4,x^6\}\subseteq C([0,1])</m> with the integral inner product
         <me>
           \langle f, g\rangle=\int_0^1 f(x)g(x)\, dx
         </me>.
