@@ -99,7 +99,7 @@ For each vector space <m>V</m> and subset <m>S</m>, use the one-step technique (
 <title>By-inspection basis technique</title>
 <introduction>
 <p>
-For each given <m>V</m> and subspace <m>W\subseteq V</m>, provide a basis for <m>W</m> <q>by inspection</q> as follows.
+For each given <m>V</m> and subspace <m>W\subseteq V</m>, provide a basis for <m>W</m> using the <q>by inspection</q> technique <xref ref="proc_provide_basis"/>. In more detail: 
 </p>
 <ul>
   <li>
