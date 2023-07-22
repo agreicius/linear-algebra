@@ -10,6 +10,21 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body class="ignore-math"><div class="solution solution-like">
-<span class="process-math">\(S_1\)</span> cannot exceed the dimension of <span class="process-math">\(S_2\text{,}\)</span> since <span class="process-math">\(S_1\)</span> is contained in <span class="process-math">\(S_2\text{.}\)</span> <span class="process-math">\(S_1\)</span> us non-zero, and thus the its dimension cannot be zero. Hence the possible dimensions of <span class="process-math">\(S_1\)</span> are 1, 2, 3, and 4. b) If <span class="process-math">\(S_1 \ne S_2\text{,}\)</span> then <span class="process-math">\(S_1\)</span> is properly contained in <span class="process-math">\(S_2\text{,}\)</span> and the dimension of <span class="process-math">\(S_1\)</span> is strictly less than the dimension of <span class="process-math">\(S_2\text{.}\)</span> So the possible dimensions of <span class="process-math">\(S_1\)</span> are 1, 2, and 3.</div></body>
+<body class="ignore-math"><div class="solution solution-like"><div class="para logical">
+<div class="para">First we use <a href="" class="xref" data-knowl="./knowl/proc_provide_basis.html" title="Procedure 3.6.13: By-inspection basis technique">Procedure 3.6.13</a> to produce a basis of <span class="process-math">\(W\text{.}\)</span> A general element of <span class="process-math">\(W\)</span> has parametric description</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/proc_provide_basis.html ./knowl/eq_dim_poly.html">
+\begin{equation}
+p(x)=ax^3+bx^2+cx+a=a(x^3+1)+bx^2+cx\text{,}\tag{3.7.2}
+\end{equation}
+</div>
+<div class="para">from which we see immediately that <span class="process-math">\(B=\{x^3+1, x^2, x\}\)</span> is a spanning set of <span class="process-math">\(W\text{.}\)</span> From <a href="" class="xref" data-knowl="./knowl/eq_dim_poly.html" title="Equation 3.7.2">(3.7.2)</a> we also see that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/proc_provide_basis.html ./knowl/eq_dim_poly.html">
+\begin{align*}
+a(x^3+1)+bx^2+cx=\boldzero \amp \iff ax^3+bx^2+cx+a=0x^3+0x^2+0x+0 \\
+\amp \iff a=b=c=0\text{.}
+\end{align*}
+</div>
+<div class="para">Thus <span class="process-math">\(B\)</span> is a basis of <span class="process-math">\(W\text{.}\)</span> Since <span class="process-math">\(B\)</span> contains three distinct elements, we conclude that <span class="process-math">\(\dim W=\abs{B}=3\text{.}\)</span>
+</div>
+</div></div></body>
 </html>

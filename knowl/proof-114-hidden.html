@@ -10,5 +10,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body class="ignore-math"><article class="hiddenproof"> <div class="para">Assume <span class="process-math">\(B\)</span> is an orthonormal eigenbasis of <span class="process-math">\(T\text{.}\)</span> Since <span class="process-math">\(B\)</span> is an eigenbasis, <span class="process-math">\([T]_B\)</span> is a diagonal matrix, and hence symmetric. Since <span class="process-math">\(B\)</span> is orthonormal with respect to the dot product, we conclude from <a href="" class="xref" data-knowl="./knowl/th_self-adjoint_symmetric.html" title="Theorem 4.6.2: Self-adjoint operators and symmetry">Theorem 4.6.2</a> that <span class="process-math">\(T\)</span> is self-adjoint.</div></article></body>
+<body class="ignore-math"><article class="hiddenproof"><ol class="decimal">
+<li><div class="para">Let <span class="process-math">\(B=(\boldv_1, \boldv_2,\dots, \boldv_n)\text{.}\)</span> By definition, the columns of <span class="process-math">\(\underset{B\rightarrow B'}{P}\)</span> are the coordinate vectors <span class="process-math">\([\boldv_i]_{B'}\text{,}\)</span> <span class="process-math">\(1\leq i\leq n\text{.}\)</span> By <a href="" class="xref" data-knowl="./knowl/ex_coordinates_orthonormal.html" title="Exercise 5.2.4.20: Orthonormal coordinate vectors">Exercise 5.2.4.20</a>, these coordinate vectors form an orthonormal subset of <span class="process-math">\(\R^n\text{;}\)</span> since there are <span class="process-math">\(n=\dim\R^n\)</span> of them, they form an orthonormal basis. From <a href="" class="xref" data-knowl="./knowl/th_orthogonal_matrices.html" title="Theorem 5.2.16: Orthogonal matrices">Theorem 5.2.16</a> it follows that <span class="process-math">\(\underset{B\rightarrow B'}{P}\)</span> is orthogonal. Lastly, from <a href="" class="xref" data-knowl="./knowl/rm_orthogonal_matrices.html" title="Remark 5.2.14">Remark 5.2.14</a> it follows that <span class="process-math">\(\underset{B'\rightarrow B}{P}=\left(\underset{B\rightarrow B'}{P}\right)^{-1}\)</span> is also orthogonal.</div></li>
+<li><div class="para logical">
+<div class="para">Since <span class="process-math">\(\underset{B\rightarrow B'}{P}\)</span> is orthogonal, we have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\underset{B'\rightarrow B}{P}=\left(\underset{B\rightarrow B'}{P}\right)^{-1}=\left(\underset{B\rightarrow B'}{P}\right)^T\text{.}
+\end{equation*}
+</div>
+</div></li>
+</ol></article></body>
 </html>

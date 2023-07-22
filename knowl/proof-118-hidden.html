@@ -10,13 +10,17 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body class="ignore-math"><article class="hiddenproof"><div class="para logical">
-<div class="para">That axioms (i)-(ii) are satisfied is left as an exercise. For axiom (iii), note that</div>
+<body class="ignore-math"><article class="hiddenproof"><div class="para">Clearly <span class="process-math">\(W\subseteq (W^\perp)^\perp\text{.}\)</span> For the other direction, take <span class="process-math">\(\boldv\in (W^\perp)^\perp\text{.}\)</span> Using the <em class="emphasis">orthogonal projection theorem</em>, we can write <span class="process-math">\(\boldv=\boldw+\boldw^\perp\)</span> with <span class="process-math">\(\boldw\in W\)</span> and <span class="process-math">\(\boldw^\perp\in W^\perp\text{.}\)</span> We will show <span class="process-math">\(\boldw^\perp=\boldzero\text{.}\)</span>
+</div> <div class="para logical">
+<div class="para">Since <span class="process-math">\(\boldv\in (W^\perp)^\perp\)</span> we have <span class="process-math">\(\angvec{\boldv,\boldw^\perp}=0\text{.}\)</span> Then we have</div>
 <div class="displaymath process-math">
-\begin{equation*}
-\langle p(x), p(x) \rangle =p(c_0)^2+p(c_1)^2+\cdots +p(c_n)^2\geq 0\text{,}
-\end{equation*}
+\begin{align*}
+0\amp =\angvec{\boldv,\boldw^\perp}\\
+\amp =\angvec{\boldw+\boldw^\perp,\boldw^\perp}\\
+\amp =\angvec{\boldw,\boldw^\perp}+\angvec{\boldw^\perp,\boldw^\perp} \amp \text{ (since \(W\perp W^\perp\)) }\\
+\amp =0+\angvec{\boldw^\perp,\boldw^\perp}
+\end{align*}
 </div>
-<div class="para">and we have equality if and only if <span class="process-math">\(p(c_0)=p(c_1)=\dots p(c_n)=0\text{.}\)</span> Since a nonzero polynomial of degree <span class="process-math">\(n\)</span> or less has <em class="emphasis">at most</em> <span class="process-math">\(n\)</span> distinct roots, we conclude that <span class="process-math">\(p(x)=\boldzero\text{,}\)</span> the zero polynomial.</div>
+</div> <div class="para">Thus <span class="process-math">\(\angvec{\boldw^\perp,\boldw^\perp}=0\text{.}\)</span> It follows that <span class="process-math">\(\boldw^\perp=\boldzero\text{,}\)</span> and hence <span class="process-math">\(\boldv=\boldw+\boldzero=\boldw\in W\text{.}\)</span>
 </div></article></body>
 </html>

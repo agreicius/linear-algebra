@@ -10,33 +10,26 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body class="ignore-math"><article class="hiddenproof"><div class="para">We prove the result by contradiction. Suppose we can find a finite set of eigenvectors with distinct eigenvalues that is linearly dependent. It follows that we can find such a set of <em class="emphasis">minimum cardinality</em>. In other words, there is positive integer <span class="process-math">\(r\)</span> satisfying the following properties: (i) we can find a linearly dependent set of <span class="process-math">\(r\)</span> eigenvectors of <span class="process-math">\(T\)</span> with distinct eigenvalues; (ii) for all <span class="process-math">\(k\lt r\text{,}\)</span> any set of <span class="process-math">\(k\)</span> eigenvectors of <span class="process-math">\(T\)</span> with distinct eigenvalues is linearly independent<a href="" class="fn-knowl original" data-knowl="./knowl/fn-11-hidden.html" title="Footnote 4.5.1"><sup> 1 </sup></a>.</div> <div class="para logical">
-<div class="para">Now assume <span class="process-math">\(S=\{\boldv_1, \boldv_2, \dots, \boldv_r\}\)</span> is a set of minimal cardinality satisfying <span class="process-math">\(T(\boldv_i)=\lambda_i\boldv_i\)</span> for all <span class="process-math">\(1\leq i\leq n\)</span> and <span class="process-math">\(\lambda_i\ne \lambda j\)</span> for all <span class="process-math">\(1\leq i\lt j\leq n\text{.}\)</span> First observe that we must have <span class="process-math">\(r\gt 1\text{:}\)</span> eigenvectors are nonzero by definition, and thus any set consisting of a single eigenvector is linearly independent. Next, since <span class="process-math">\(S\)</span> is linearly dependent we have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_independent_eigenvectors_A.html ./knowl/eq_independent_eigenvectors_A.html ./knowl/eq_independent_eigenvectors_B.html ./knowl/eq_independent_eigenvectors_C.html">
-\begin{equation}
-c_1\boldv_1+c_2\boldv_2+\cdots +c_r\boldv_r=\boldzero\text{,}\tag{4.5.1}
-\end{equation}
-</div>
-<div class="para">where <span class="process-math">\(c_i\ne 0\)</span> for some <span class="process-math">\(1\leq i\leq r\text{.}\)</span> After reordering, we may assume without loss of generality that <span class="process-math">\(c_1\ne 0\text{.}\)</span> Next we apply <span class="process-math">\(T\)</span> to both sides of <a href="" class="xref" data-knowl="./knowl/eq_independent_eigenvectors_A.html" title="Equation 4.5.1">(4.5.1)</a>:</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_independent_eigenvectors_A.html ./knowl/eq_independent_eigenvectors_A.html ./knowl/eq_independent_eigenvectors_B.html ./knowl/eq_independent_eigenvectors_C.html">
-\begin{align}
-c_1\boldv_1+c_2\boldv_2\cdots +c_r\boldv_r=\boldzero \amp\implies T(c_1\boldv_1+c_2\boldv_2+\cdots +c_r\boldv_r)=T(\boldzero) \tag{4.5.2}\\
-\amp\implies c_1T(\boldv_1)+c_2T(\boldv_2)+\cdots +c_rT(\boldv_r)=\boldzero \tag{4.5.3}\\
-\amp\implies c_1\lambda_1\boldv_1+c_2\lambda_2\boldv_2+\cdots +c_r\lambda_r\boldv_r=\boldzero \text{.}\tag{4.5.4}
-\end{align}
-</div>
-<div class="para">From equation <a href="" class="xref" data-knowl="./knowl/eq_independent_eigenvectors_A.html" title="Equation 4.5.1">(4.5.1)</a> and the equation in <a href="" class="xref" data-knowl="./knowl/eq_independent_eigenvectors_B.html" title="Equation 4.5.4">(4.5.4)</a> we have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_independent_eigenvectors_A.html ./knowl/eq_independent_eigenvectors_A.html ./knowl/eq_independent_eigenvectors_B.html ./knowl/eq_independent_eigenvectors_C.html">
+<body class="ignore-math"><article class="hiddenproof"><div class="para">Before proving the result, we point out one subtlety here: although the <span class="process-math">\(\boldw_i\in W_{\lambda_i}\)</span> for all <span class="process-math">\(i\text{,}\)</span> we cannot assume that each <span class="process-math">\(\boldw_i\)</span> is an eigenvector. Indeed, <span class="process-math">\(\boldw_i\)</span> is an eigenvector in this case if and only if <span class="process-math">\(\boldw_i\ne 0\text{.}\)</span> This observation guides the proof that follows.</div> <div class="para logical">
+<div class="para">To pick out the terms of <a href="" class="xref" data-knowl="./knowl/eq_independent_eigenspaces.html" title="Equation 4.5.6">(4.5.6)</a> that are nonzero (if any), we define</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_independent_eigenspaces.html ./knowl/th_independent_eigenvectors.html">
 \begin{equation*}
-\lambda_r(c_1\boldv_1+c_2\boldv_2\cdots +c_r\boldv_r)- (c_1\lambda_1\boldv_1+c_2\lambda_2\boldv_2\cdots +c_r\lambda_r\boldv_r)=\boldzero\text{,}
+J=\{j \colon \boldw_j\ne 0\}=\{j_1, j_2,\dots, j_k\}\text{.}
 \end{equation*}
 </div>
-<div class="para">and hence</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_independent_eigenvectors_A.html ./knowl/eq_independent_eigenvectors_A.html ./knowl/eq_independent_eigenvectors_B.html ./knowl/eq_independent_eigenvectors_C.html">
-\begin{equation}
-c_1(\lambda_r-\lambda_1)\boldv_1+\cdots +c_{r-1}(\lambda_r-\lambda_{r-1})+\cancel{c_r(\lambda_r-\lambda_r)}\boldv_r=\boldzero\text{.}\tag{4.5.5}
-\end{equation}
+<div class="para">Assume by contradiction that <span class="process-math">\(J\)</span> is nonempty: i.e., <span class="process-math">\(\val{J}=k\geq 1\text{.}\)</span> In this case we would have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_independent_eigenspaces.html ./knowl/th_independent_eigenvectors.html">
+\begin{align*}
+\boldzero \amp= \boldw_1+\boldw_2+\cdots \boldw_r \\
+\amp = \boldw_{j_1}+\boldw_{j_2}+\cdots +\boldw_{j_k} \text{,}
+\end{align*}
 </div>
-<div class="para">Since <span class="process-math">\(c_1\ne 0\)</span> and <span class="process-math">\(\lambda_1\ne \lambda_r\text{,}\)</span> we have <span class="process-math">\(c_1(\lambda_r-\lambda_1)\ne 0\text{.}\)</span> Thus equation <a href="" class="xref" data-knowl="./knowl/eq_independent_eigenvectors_C.html" title="Equation 4.5.5">(4.5.5)</a> implies that the set <span class="process-math">\(S'=\{\boldv_1, \boldv_2, \dots, \boldv_{r-1}\}\)</span> is a linearly dependent set of eigenvectors of <span class="process-math">\(T\)</span> with distinct eigenvalues, contradicting the minimality of <span class="process-math">\(r\text{.}\)</span> This completes our proof by contradiction.</div>
+<div class="para">since <span class="process-math">\(\boldw_i=\boldzero\)</span> for all <span class="process-math">\(i\notin J\text{.}\)</span> But then</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_independent_eigenspaces.html ./knowl/th_independent_eigenvectors.html">
+\begin{equation*}
+\boldw_{j_1}+\boldw_{j_2}+\cdots +\boldw_{j_k}=\boldzero
+\end{equation*}
+</div>
+<div class="para">would be a nontrivial linear combination of the eigenvectors <span class="process-math">\(\boldw_{j_i}\)</span> equal to <span class="process-math">\(\boldzero\text{.}\)</span> Since the eigenvectors <span class="process-math">\(\boldw_{j_i}\)</span> have distinct eigenvalues, this contradicts <a href="" class="xref" data-knowl="./knowl/th_independent_eigenvectors.html" title="Theorem 4.5.7: Linear independence of eigenvectors">Theorem 4.5.7</a>. Thus <span class="process-math">\(J=\{\, \}\text{.}\)</span> Equivalently, <span class="process-math">\(\boldw_i=\boldzero\)</span> for all <span class="process-math">\(1\leq i\leq r\text{,}\)</span> as desired.</div>
 </div></article></body>
 </html>

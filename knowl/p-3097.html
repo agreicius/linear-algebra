@@ -11,8 +11,23 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para">Before connecting change of basis matrices with matrix representations of linear transformations, it is worth gathering some the different techniques for computing change of basis matrices we have discussed so far.</div>
+<h5 class="heading"><span class="type">Paragraph</span></h5>
+<div class="para logical">
+<div class="para">Using <a href="" class="xref" data-knowl="./knowl/d_change_of_basis.html" title="Definition 4.3.1: Change of basis matrix">Definition 4.3.1</a>, we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/d_change_of_basis.html ./knowl/proc_coor_vec.html">
+\begin{align*}
+\underset{B\rightarrow B'}{P}\amp = \begin{bmatrix}\vert \amp \vert \\ \hspace{7pt}[\boldv_1]_{B'} \amp \hspace{7pt}[\boldv_2]_{B'}\\ \vert \amp \vert \end{bmatrix}\\
+\amp = \begin{bmatrix}\frac{3}{5}\amp -\frac{1}{5}\\ \frac{1}{5}\amp \frac{3}{5} \end{bmatrix}  \text{.}
+\end{align*}
+</div>
+<div class="para">The two coordinate vector computations <span class="process-math">\([(1,1)]_{B'}=(3/5, 1/5)\)</span> and <span class="process-math">\([(1,-1)]_{B'}=(-1/5,3/5)\)</span> were done as usual using <a href="" class="xref" data-knowl="./knowl/proc_coor_vec.html" title="Procedure 4.1.4: Computing coordinate vectors">Procedure 4.1.4</a>: that is,  by setting up in turn the vector equations</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/d_change_of_basis.html ./knowl/proc_coor_vec.html">
+\begin{align*}
+(1,1) \amp = c_1(1,2)+c_2(2,-1) \amp (1,-1)\amp =c_1(1,2)+c_2(2,-1)
+\end{align*}
+</div>
+<div class="para">and solving for <span class="process-math">\(c_1,c_2\)</span> using Gaussian elimination.</div>
+</div>
 <span class="incontext"><a href="s_changeofbasis.html#p-3097" class="internal">in-context</a></span>
 </body>
 </html>

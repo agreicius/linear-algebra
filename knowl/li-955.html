@@ -12,8 +12,23 @@
 </head>
 <body class="ignore-math">
 <article class="li"><h5 class="heading">
-<span class="type">Item</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span>
+<span class="type">Item</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span>
 </h5>
-<div class="para">We have <span class="process-math">\(\underset{B'\rightarrow B}{P}=(\underset{B\rightarrow B'}{P})^{-1}\text{.}\)</span> This observation is useful in situations where (a) one change of basis matrix is easier to compute than the other and (b) computing inverse matrices is not too onerous.</div></article><span class="incontext"><a href="s_changeofbasis.html#li-955" class="internal">in-context</a></span>
+<div class="para logical">
+<div class="para">Using <a href="" class="xref" data-knowl="./knowl/d_change_of_basis.html" title="Definition 4.3.1: Change of basis matrix">Definition 4.3.1</a>, we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/d_change_of_basis.html ./knowl/proc_coor_vec.html">
+\begin{align*}
+\underset{B\rightarrow B'}{P}\amp = \begin{bmatrix}\vert \amp \vert \\ \hspace{7pt}[\boldv_1]_{B'} \amp \hspace{7pt}[\boldv_2]_{B'}\\ \vert \amp \vert \end{bmatrix}\\
+\amp = \begin{bmatrix}\frac{3}{5}\amp -\frac{1}{5}\\ \frac{1}{5}\amp \frac{3}{5} \end{bmatrix}  \text{.}
+\end{align*}
+</div>
+<div class="para">The two coordinate vector computations <span class="process-math">\([(1,1)]_{B'}=(3/5, 1/5)\)</span> and <span class="process-math">\([(1,-1)]_{B'}=(-1/5,3/5)\)</span> were done as usual using <a href="" class="xref" data-knowl="./knowl/proc_coor_vec.html" title="Procedure 4.1.4: Computing coordinate vectors">Procedure 4.1.4</a>: that is,  by setting up in turn the vector equations</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/d_change_of_basis.html ./knowl/proc_coor_vec.html">
+\begin{align*}
+(1,1) \amp = c_1(1,2)+c_2(2,-1) \amp (1,-1)\amp =c_1(1,2)+c_2(2,-1)
+\end{align*}
+</div>
+<div class="para">and solving for <span class="process-math">\(c_1,c_2\)</span> using Gaussian elimination.</div>
+</div></article><span class="incontext"><a href="s_changeofbasis.html#li-955" class="internal">in-context</a></span>
 </body>
 </html>

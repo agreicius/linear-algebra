@@ -13,26 +13,19 @@
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">To pick out the terms of <a href="" class="xref" data-knowl="./knowl/eq_independent_eigenspaces.html" title="Equation 4.5.6">(4.5.6)</a> that are nonzero (if any), we define</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_independent_eigenspaces.html ./knowl/th_independent_eigenvectors.html">
+<div class="para">Let <span class="process-math">\(T=T_A\text{,}\)</span> where</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eg_eigenvector_adhoc_reflection.html ./knowl/th_diagonalizability_eigenbasis.html">
 \begin{equation*}
-J=\{j \colon \boldw_j\ne 0\}=\{j_1, j_2,\dots, j_k\}\text{.}
+A=\frac{1}{5}\begin{amatrix}[rr]-3\amp 4\\ 4\amp 3 \end{amatrix}\text{.}
 \end{equation*}
 </div>
-<div class="para">Assume by contradiction that <span class="process-math">\(J\)</span> is nonempty: i.e., <span class="process-math">\(\val{J}=k\geq 1\text{.}\)</span> In this case we would have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_independent_eigenspaces.html ./knowl/th_independent_eigenvectors.html">
-\begin{align*}
-\boldzero \amp= \boldw_1+\boldw_2+\cdots \boldw_r \\
-\amp = \boldw_{j_1}+\boldw_{j_2}+\cdots +\boldw_{j_k} \text{,}
-\end{align*}
-</div>
-<div class="para">since <span class="process-math">\(\boldw_i=\boldzero\)</span> for all <span class="process-math">\(i\notin J\text{.}\)</span> But then</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_independent_eigenspaces.html ./knowl/th_independent_eigenvectors.html">
+<div class="para">We saw in <a href="" class="xref" data-knowl="./knowl/eg_eigenvector_adhoc_reflection.html" title="Example 4.4.9: Reflection">Example 4.4.9</a> that <span class="process-math">\(\boldv_1=(1,2)\)</span> and <span class="process-math">\(\boldv_2=(-1,2)\)</span> are eigenvectors of <span class="process-math">\(T\)</span> with eigenvalues <span class="process-math">\(1, -1\text{,}\)</span> respectively. It is clear that the two eigenvectors are linearly independent, and hence that <span class="process-math">\(B'=(\boldv_1, \boldv_2)\)</span> is an eigenbasis of <span class="process-math">\(T\text{.}\)</span> It follows from <a href="" class="xref" data-knowl="./knowl/th_diagonalizability_eigenbasis.html" title="Theorem 4.5.2: Diagonalizabilty: basis of eigenvectors">Theorem 4.5.2</a> that <span class="process-math">\(T\)</span> is diagonalizable, and that in fact</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eg_eigenvector_adhoc_reflection.html ./knowl/th_diagonalizability_eigenbasis.html">
 \begin{equation*}
-\boldw_{j_1}+\boldw_{j_2}+\cdots +\boldw_{j_k}=\boldzero
+[T]_{B'}=\begin{amatrix}[rr] 1\amp 0\\ 0\amp -1 \end{amatrix}\text{,}
 \end{equation*}
 </div>
-<div class="para">would be a nontrivial linear combination of the eigenvectors <span class="process-math">\(\boldw_{j_i}\)</span> equal to <span class="process-math">\(\boldzero\text{.}\)</span> Since the eigenvectors <span class="process-math">\(\boldw_{j_i}\)</span> have distinct eigenvalues, this contradicts <a href="" class="xref" data-knowl="./knowl/th_independent_eigenvectors.html" title="Theorem 4.5.7: Linear independence of eigenvectors">Theorem 4.5.7</a>. Thus <span class="process-math">\(J=\{\, \}\text{.}\)</span> Equivalently, <span class="process-math">\(\boldw_i=\boldzero\)</span> for all <span class="process-math">\(1\leq i\leq r\text{,}\)</span> as desired.</div>
+<div class="para">as one easily verifies.</div>
 </div>
 <span class="incontext"><a href="s_diagonalization.html#p-3415" class="internal">in-context</a></span>
 </body>

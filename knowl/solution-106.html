@@ -13,19 +13,23 @@
 <body class="ignore-math">
 <div class="solution solution-like">
 <h4 class="heading">
-<span class="type">Solution</span><span class="space"> </span><span class="codenumber">4.6.15.1</span><span class="period">.</span>
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">5.1.11.1</span><span class="period">.</span>
 </h4>
 <div class="para logical">
-<div class="para">By <a href="" class="xref" data-knowl="./knowl/th_spectral.html" title="Theorem 4.6.8: Spectral theorem for self-adjoint operators">Theorem 4.6.8</a> it suffices to show that <span class="process-math">\(T\)</span> is orthogonally diagonalizable. According to <a href="" class="xref" data-knowl="./knowl/ex_orthoproj_props.html" title="Exercise 5.3.6.20">Exercise 5.3.6.20</a> we have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_spectral.html ./knowl/ex_orthoproj_props.html">
-\begin{align*}
-\boldv\in W \amp \iff T(\boldv)=\boldv\\
-\boldv\in W^\perp \amp \iff T(\boldv)=\boldzero\text{.}
-\end{align*}
+<div class="para">Let <span class="process-math">\(p(x)=x^2-1\text{,}\)</span> <span class="process-math">\(q(x)=x^2+2x+1\text{.}\)</span> We have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\langle p(x), q(x)  \rangle=p(-1)q(-1)+p(0)q(0)+p(1)q(1)=0+(-1)1+0=-1
+\end{equation*}
 </div>
-<div class="para">Equivalently, <span class="process-math">\(W=W_1\)</span> and <span class="process-math">\(W^\perp=W_0\)</span> are the 1- and 0-eigenspaces of <span class="process-math">\(T\text{,}\)</span> respectively. Since <span class="process-math">\(\dim W+\dim W^\perp=\dim V\)</span> we conclude that <span class="process-math">\(T\)</span> is diagonalizable. Since clearly <span class="process-math">\(W\)</span> and <span class="process-math">\(W^\perp\)</span> are orthogonal, we conclude that <span class="process-math">\(T\)</span> is in fact othogonally diagonalizable, hence self-adjoint.</div>
+<div class="para">and</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\langle p(x), p(x) \rangle =p(-1)^2+p(0)^2+p(1)^2=0+(-1)^2+0=1\text{.}
+\end{equation*}
 </div>
 </div>
-<span class="incontext"><a href="s_spectral_theorem.html#solution-106" class="internal">in-context</a></span>
+</div>
+<span class="incontext"><a href="s_innerproducts.html#solution-106" class="internal">in-context</a></span>
 </body>
 </html>

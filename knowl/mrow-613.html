@@ -11,15 +11,17 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_coordinates.html ./knowl/eq_matrixrep_prop.html ./knowl/th_coordinates.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_coordinates.html">
 \begin{align*}
-\boldw\in \im T \amp\iff \boldw=T(\boldv) \text{ for some } \boldv\in V \\
-\amp\iff [\boldw]_{B'}=[T(\boldv)]_{B'} \text{ for some } \boldv \in V\amp (\knowl{./knowl/th_coordinates.html}{\text{Theorem 4.1.9}}-(2)) \\
-\amp\iff [\boldw]_{B'}=[T]_{B}^{B'}[\boldv]_B \text{ for some } \boldv\in V \amp (\knowl{./knowl/eq_matrixrep_prop.html}{\text{(4.2.2)}}) \\
-\amp\iff [\boldw]_{B'}=A\boldx \text{ for some } \boldx\in \R^n  \amp (A=[T]_B^{B'}, \knowl{./knowl/th_coordinates.html}{\text{Theorem 4.1.9}}-(3))\\
-\amp \iff [\boldw]_{B'}\in \CS A
+[T]_{B}^{B'}[\boldv] \amp= [T]_{B}^{B'} \begin{bmatrix}
+c_1\\ c_2\\ \vdots \\ v_n
+\end{bmatrix} \\
+\amp=c_1[T(\boldv_1)]_{B'}+c_n[T(\boldv_n)]_{B'}+\cdots +c_n[T(\boldv_n)]_{B'} \amp (\text{column method})\\
+\amp = [c_1T(\boldv_1)+c_2T(\boldv_2)+\cdots +c_nT(\boldv_n)]_{B'} \amp (\knowl{./knowl/th_coordinates.html}{\text{4.1.10}})\\
+\amp=[T(c_1\boldv_1+c_2\boldv_2+\cdots +c_n\boldv_n)]_{B'} \amp (T \text{ is linear})\\
+\amp =[T(\boldv)]_{B'}
 \end{align*}
 </div>
-<span class="incontext"><a href="s_matrixreps.html#md-196" class="internal">in-context</a></span>
+<span class="incontext"><a href="s_matrixreps.html#md-197" class="internal">in-context</a></span>
 </body>
 </html>

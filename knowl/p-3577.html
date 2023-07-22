@@ -13,18 +13,20 @@
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">Let <span class="process-math">\(B'=(\boldv_1, \boldv_2, \dots, \boldv_n)\)</span> be the ordered basis obtained by concatenating the orthonormal bases computed in (1). This is an orthonormal basis of eigenvectors. It follows that the matrix</div>
+<div class="para">Axioms (i)-(ii) follow directly from the definition and various properties of the integral. This is left as an exercise. As for (iii), we have</div>
 <div class="displaymath process-math">
 \begin{equation*}
-Q=\begin{bmatrix}
-\vert\amp \vert\amp \amp \vert\\
-\boldv_1\amp \boldv_2\amp\cdots \amp \boldv_n\\
-\vert\amp \vert\amp \amp \vert
-\end{bmatrix}
+\langle f, f   \rangle=\int_{a}^b f^2(x) \ dx \geq 0\text{,}
 \end{equation*}
 </div>
-<div class="para">is orthogonal (i.e., <span class="process-math">\(Q^{-1}=Q^T\)</span>), and the matrix <span class="process-math">\(D=Q^{-1}AQ=Q^TAQ\)</span> is diagonal.</div>
+<div class="para">since <span class="process-math">\(f^2(x)\geq 0\)</span> for all <span class="process-math">\(x\in [a,b]\text{.}\)</span> (This is a property of integration.) Furthermore, since <span class="process-math">\(f^2\)</span> is continuous and <span class="process-math">\(f^2(x)\geq 0\text{,}\)</span> we have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\langle f, f \rangle=\int_a^b f^2(x) \ dx=0 
+\end{equation*}
 </div>
-<span class="incontext"><a href="s_spectral_theorem.html#p-3577" class="internal">in-context</a></span>
+<div class="para">if and only if <span class="process-math">\(f^2(x)=0\)</span> for all <span class="process-math">\(x\in [a,b]\)</span> (a property of integrals of <em class="emphasis">continuous</em> functions) if and only if <span class="process-math">\(f(x)=0\)</span> for all <span class="process-math">\(x\in [a,b]\)</span> if and only if <span class="process-math">\(f=\boldzero\text{,}\)</span> the zero function.</div>
+</div>
+<span class="incontext"><a href="s_innerproducts.html#p-3577" class="internal">in-context</a></span>
 </body>
 </html>

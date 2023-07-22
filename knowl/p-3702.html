@@ -13,15 +13,17 @@
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">Take <span class="process-math">\(C[a,b]\)</span> with the standard inner product <span class="process-math">\(\langle f, g \rangle=\int_a^b f(x)g(x) \ dx\text{.}\)</span> Here the distance between two functions is defined as</div>
+<div class="para">Given any distinct elements <span class="process-math">\(\boldv_1, \boldv_2, \dots, \boldv_r\in S\text{,}\)</span> we have</div>
 <div class="displaymath process-math">
-\begin{equation*}
-\norm{f-g}=\sqrt{\int_a^b (f(x)-g(x))^2 \ dx}\text{,}
-\end{equation*}
+\begin{align*}
+c_1\boldv_1 +c_2\boldv_2+\cdots +c_r\boldv_r=\boldzero\amp \Rightarrow\amp  \langle c_1\boldv_1 +c_2\boldv_2 +\cdots +c_r\boldv_r,\boldv_i\rangle=\langle\boldzero,\boldv_i\rangle\\
+\amp \Rightarrow\amp  c_1\langle\boldv_1,\boldv_i\rangle +c_2\langle \boldv_2,\boldv_i\rangle +\cdots +c_r\langle\boldv_r,\boldv_i\rangle=0\\
+\amp \Rightarrow\amp  c_i\langle \boldv_i,\boldv_i\rangle=0 \ \text{ (since \(\langle\boldv_j,\boldv_i\rangle= 0\) for \(j\ne i\)) }\\
+\amp \Rightarrow\amp  c_i=0  \text{ (since \(\langle\boldv_i,\boldv_i\rangle\ne 0\)) }\text{.}
+\end{align*}
 </div>
-<div class="para">which we can think of as an aggregate measure of the difference of values <span class="process-math">\(f(x)-g(x)\)</span> for all <span class="process-math">\(x\in [a,b]\text{.}\)</span> Thus <span class="process-math">\(d(f,g)\)</span> is a global measure of the similarity between <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> that takes into account their values over the entire interval <span class="process-math">\([a,b]\text{.}\)</span>
+<div class="para">This proves that <span class="process-math">\(S\)</span> is linearly independent.</div>
 </div>
-</div>
-<span class="incontext"><a href="s_innerproducts.html#p-3702" class="internal">in-context</a></span>
+<span class="incontext"><a href="s_orthogonality.html#p-3702" class="internal">in-context</a></span>
 </body>
 </html>

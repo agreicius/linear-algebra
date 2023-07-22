@@ -10,11 +10,40 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body class="ignore-math"><div class="solution solution-like">
-<div class="para">The norms of the vectors in each case were computed in <a href="" class="xref" data-knowl="./knowl/eg_norm_dot.html" title="Example 5.1.15: Norm with respect to dot product">Example 5.1.15–5.1.17</a>. We simply scale to compute the corresponding unit vectors.</div> <ol class="decimal">
-<li><div class="para"><span class="process-math">\(\displaystyle \boldu=\frac{1}{\sqrt{7}}(1,-1,2,1)=(\sqrt{7}/7,-\sqrt{7}/7,2\sqrt{7}/7,\sqrt{7}/7)\)</span></div></li>
-<li><div class="para"><span class="process-math">\(\displaystyle \boldu=\frac{1}{\sqrt{23}}(3,1,-2)=(3\sqrt{23}/23,\sqrt{23}/23,-2\sqrt{23}/23)\)</span></div></li>
-<li><div class="para"><span class="process-math">\(\displaystyle \boldu=\frac{1}{\sqrt{(e^2-1)/2}}e^x=\frac{\sqrt{2(e^2-1)}}{e^2-1}e^x\)</span></div></li>
-</ol>
-</div></body>
+<body class="ignore-math"><div class="solution solution-like"><ol class="decimal">
+<li><div class="para logical">
+<div class="para">We have</div>
+<div class="displaymath process-math">
+\begin{align*}
+d(\boldx,\boldy) \amp = \norm{\boldx-\boldy} \\
+\amp = \sqrt{\langle \boldx-\boldy,\boldx-\boldy\rangle} \\
+\amp =\sqrt{(x_1-y_1,x_2-y_2,x_3-y_3)\cdot(x_1-y_1,x_2-y_2,x_3-y_3)} \\
+\amp = \sqrt{(x_1-y_1)^2+(x_2-y_2)^2+(x_3-y_3)^2}\text{.}
+\end{align*}
+</div>
+</div></li>
+<li><div class="para logical">
+<div class="para">We have</div>
+<div class="displaymath process-math">
+\begin{align*}
+d(p_1,p_2) \amp = \norm{p_1-p_2} \\
+\amp = \sqrt{\langle p_1-p_2, p_1-p_2\rangle}\\
+\amp = \sqrt{(p_1(1)-p_2(1))^2+(p_1(-1)-p_2(-1))^2+(p_1(0)-p_2(0))^2}\\
+\amp = \sqrt{(-1)^2+(1)^2+(-1)^2}=\sqrt{3} 
+\end{align*}
+</div>
+</div></li>
+<li><div class="para logical">
+<div class="para">We have</div>
+<div class="displaymath process-math">
+\begin{align*}
+d(f,g) \amp = \norm{f-g} \\
+\amp =\sqrt{\langle f-g, f-g \rangle} \\
+\amp = \sqrt{\langle \sin x, \sin x\rangle }\\
+\amp = \sqrt{\int_{-pi}^{pi}\sin^2 x\, dx}\\
+\amp = \sqrt{\pi} 
+\end{align*}
+</div>
+</div></li>
+</ol></div></body>
 </html>

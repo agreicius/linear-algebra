@@ -13,14 +13,34 @@
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">For all <span class="process-math">\((x_1,x_2,\dots, x_n)\in\R^n\text{,}\)</span>
-</div>
+<div class="para">Since <span class="process-math">\(B\)</span> is the standard ordered basis, we can easily compute</div>
 <div class="displaymath process-math">
 \begin{equation*}
-(x_1+x_2+\cdots +x_n)\leq\sqrt{x_1^2+x_2^2+\cdots +x_n^2}\sqrt{n}\text{.}
+\underset{B'\rightarrow B}{P}=\begin{amatrix}[rrr]
+1/\sqrt{6}\amp 1/\sqrt{2}\amp 1/\sqrt{3} \\
+1/\sqrt{6} \amp -1/\sqrt{2} \amp 1/\sqrt{3} \\
+-2/\sqrt{6} \amp 0 \amp 1/\sqrt{3}
+\end{amatrix}            \text{.}
 \end{equation*}
 </div>
+<div class="para">Since <span class="process-math">\(B\)</span> and <span class="process-math">\(B'\)</span> are both orthonormal bases (with respect to the dot product), we have</div>
+<div class="displaymath process-math">
+\begin{align*}
+\underset{B\rightarrow B'}{P} \amp = \underset{B'\rightarrow B}{P}^T\\
+\amp = \left( \begin{amatrix}[rrr]
+1/\sqrt{6}\amp 1/\sqrt{2}\amp 1/\sqrt{3} \\
+1/\sqrt{6} \amp -1/\sqrt{2} \amp 1/\sqrt{3} \\
+-2/\sqrt{6} \amp 0 \amp 1/\sqrt{3}
+\end{amatrix}\right) ^T\\
+\amp = 
+\begin{amatrix}[rrr]
+1/\sqrt{6}\amp 1/\sqrt{6}\amp -2/\sqrt{6} \\
+1/\sqrt{2} \amp -1/\sqrt{2} \amp 0 \\
+1/\sqrt{3} \amp 1/\sqrt{3} \amp 1/\sqrt{3}
+\end{amatrix}            \text{.}
+\end{align*}
 </div>
-<span class="incontext"><a href="s_innerproducts.html#p-3758" class="internal">in-context</a></span>
+</div>
+<span class="incontext"><a href="s_orthogonality.html#p-3758" class="internal">in-context</a></span>
 </body>
 </html>

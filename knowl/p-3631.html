@@ -13,13 +13,20 @@
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">It is worth highlighting the observation in the proof of <a href="" class="xref" data-knowl="./knowl/th_weighted_dotproduct.html" title="Theorem 5.1.3: Weighted dot product">Theorem 5.1.3</a> that a dot product with weights <span class="process-math">\(k_1, k_2, \dots, k_n\)</span> can be expressed as a matrix product:</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_weighted_dotproduct.html">
+<div class="para">Consider <span class="process-math">\(\R^n\)</span> with a choice of weighted dot product</div>
+<div class="displaymath process-math">
 \begin{equation*}
-\langle \boldx, \boldy \rangle=\sum_{i=1}^nk_ix_iy_i=\boldx^TK\boldy\text{,}
+\langle (x_1,x_2,\dots, x_n), (y_1,y_2,\dots, y_n)\rangle=k_1x_1y_1+k_2x_2y_2+\cdots +k_nx_ny_n,
 \end{equation*}
 </div>
-<div class="para">where <span class="process-math">\(K\)</span> is the diagonal <span class="process-math">\(n\times n\)</span> matrix whose <span class="process-math">\(i\)</span>-th diagonal entry is <span class="process-math">\(k_i\text{.}\)</span> Here <span class="process-math">\(\boldx, \boldy\)</span> are treated as column vectors, and we identify the resulting <span class="process-math">\(1\times 1\)</span> matrix <span class="process-math">\(\boldx^T K \boldy\)</span> with a scalar.</div>
+<div class="para">where <span class="process-math">\(k_1,k_2,\dots, k_n\)</span> are fixed positive constants. With respect to this inner product the distance between two vectors <span class="process-math">\(\boldx=(x_1,x_2,\dots, x_n)\)</span> and <span class="process-math">\(\boldy=(y_1,y_2,\dots, y_n)\)</span> is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+d(\boldx,\boldy)=\norm{\boldx-\boldy}=\sqrt{k_1(x_1-y_1)^2+k_2(x_2-y_2)^2+\cdots +k_n(x_n-y_n)^2}\text{.}
+\end{equation*}
+</div>
+<div class="para">Thus <span class="process-math">\(d(\boldx, \boldy)\)</span> is an aggregate measure of the difference between the corresponding entries of <span class="process-math">\(\boldx\)</span> and <span class="process-math">\(\boldy\text{,}\)</span> as weighted by our choice of the constants <span class="process-math">\(k_i\text{.}\)</span>
+</div>
 </div>
 <span class="incontext"><a href="s_innerproducts.html#p-3631" class="internal">in-context</a></span>
 </body>

@@ -13,16 +13,26 @@
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">We have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_coordinates.html ./knowl/eq_matrixrep_prop.html">
-\begin{align*}
-\boldv\in \NS T \amp\iff T(\boldv)=\boldzero \\
-\amp\iff [T(\boldv)]_{B'}=[\boldzero]_{B'} \amp (\knowl{./knowl/th_coordinates.html}{\text{Theorem 4.1.9}}, (2))\\
-\amp \iff [T]_{B}^{B'}[\boldv]_B=\boldzero \amp (\knowl{./knowl/eq_matrixrep_prop.html}{\text{(4.2.2)}})\\
-\amp [\boldv]_B\in\NS A \amp (A=[T]_B^{B'}) \text{.}
-\end{align*}
+<div class="para">Let</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/proc_contract_extend_general.html">
+\begin{equation*}
+S=\left\{A_1=\begin{amatrix}[rr]1\amp 2\\1\amp 1 \end{amatrix}, \ A_2=\begin{amatrix}[rr] 1\amp 1\\2\amp 1\end{amatrix}, A_3=\begin{amatrix}[rr] -1\amp 1\\ -4\amp -1 \end{amatrix} , A_4=\begin{amatrix}[rr] 0\amp 1\\ 2\amp 0\end{amatrix}\right\}\subseteq M_{22}\text{.}
+\end{equation*}
 </div>
+<ol class="lower-alpha">
+<li><div class="para">Use one of the techniques described in <a href="" class="xref" data-knowl="./knowl/proc_contract_extend_general.html" title="Procedure 4.1.12: Contracting and extending to bases in general spaces">Procedure 4.1.12</a> to contract <span class="process-math">\(S\)</span> to a basis of <span class="process-math">\(W=\Span S\text{.}\)</span>
+</div></li>
+<li><div class="para logical">
+<div class="para">Show that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+W=\{\begin{bmatrix}a\amp b\\ c\amp a\end{bmatrix}\colon a,b,c\in \R\}.
+\end{equation*}
 </div>
-<span class="incontext"><a href="s_matrixreps.html#p-2978" class="internal">in-context</a></span>
+<div class="para">Use a dimension argument to make your life easier.</div>
+</div></li>
+</ol>
+</div>
+<span class="incontext"><a href="s_coordinatevectors.html#p-2978" class="internal">in-context</a></span>
 </body>
 </html>

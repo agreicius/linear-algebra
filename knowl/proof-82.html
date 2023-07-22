@@ -13,32 +13,20 @@
 <body class="ignore-math">
 <article class="hiddenproof"><h4 class="heading"><span class="type">Proof</span></h4>
 <div class="para logical">
-<div class="para">Let <span class="process-math">\(\boldr_i\)</span> and <span class="process-math">\(\boldc_i\)</span> be the <span class="process-math">\(i\)</span>-th row and column of <span class="process-math">\(A\text{,}\)</span> respectively, for each <span class="process-math">\(1\leq i\leq n\text{.}\)</span> From <a href="" class="xref" data-knowl="./knowl/th_dotproduct_method.html" title="Theorem 5.1.9: Dot product and matrix multiplication">Theorem 5.1.9</a> we see that</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_dotproduct_method.html ">
-\begin{align}
-A^TA \amp=[\boldc_i\cdot \boldc_j]_{1\leq i,j\leq n} \tag{4.3.3}\\
-AA^T \amp=[\boldr_i\cdot \boldr_j]_{1\leq i,j\leq n} \text{.}\tag{4.3.4}
-\end{align}
+<div class="para">First observe that <a href="" class="xref" data-knowl="./knowl/eq_changebasis_transform_inverse.html" title="Equation 4.3.6">(4.3.6)</a> follows from <a href="" class="xref" data-knowl="./knowl/eq_changebasis_transform.html" title="Equation 4.3.5">(4.3.5)</a> and (2) of <a href="" class="xref" data-knowl="./knowl/th_change_of_basis_properties.html" title="Theorem 4.3.6: Change of basis matrix properties">Theorem 4.3.6</a>. Next, to prove <a href="" class="xref" data-knowl="./knowl/eq_changebasis_transform.html" title="Equation 4.3.5">(4.3.5)</a>, it suffices by (2) of <a href="" class="xref" data-knowl="./knowl/th_matrixrep.html" title="Theorem 4.2.6: Defining property of matrix representation">Theorem 4.2.6</a> to show that the matrix <span class="process-math">\(A=\underset{B\rightarrow B'}{P}\, [T]_B\, \underset{B'\rightarrow B}{P}\)</span> satisfies</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_changebasis_transform_inverse.html ./knowl/eq_changebasis_transform.html ./knowl/th_change_of_basis_properties.html ./knowl/eq_changebasis_transform.html ./knowl/th_matrixrep.html ./knowl/th_change_of_basis_coordinates.html ./knowl/th_matrixrep.html ./knowl/th_change_of_basis_coordinates.html">
+\begin{equation*}
+A[\boldv]_{B'}=[T(\boldv)]_{B'}
+\end{equation*}
 </div>
-<div class="para">We use here that rows of <span class="process-math">\(A^T\)</span> are the columns of <span class="process-math">\(A\text{,}\)</span> and the columns of <span class="process-math">\(A^T\)</span> are the rows of <span class="process-math">\(A\text{.}\)</span> From <a href="" class="xref" data-knowl="./knowl/eq_orthogonal_matrixleft.html" title="Equation 4.3.3">(4.3.3)–(4.3.4)</a> it follows easily that</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_dotproduct_method.html ">
+<div class="para">for all <span class="process-math">\(\boldv\in V\text{.}\)</span> To this end, given any <span class="process-math">\(\boldv\in V\text{,}\)</span> we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_changebasis_transform_inverse.html ./knowl/eq_changebasis_transform.html ./knowl/th_change_of_basis_properties.html ./knowl/eq_changebasis_transform.html ./knowl/th_matrixrep.html ./knowl/th_change_of_basis_coordinates.html ./knowl/th_matrixrep.html ./knowl/th_change_of_basis_coordinates.html">
 \begin{align*}
-A^{-1}=A^T \amp \iff A^TA=I \\
-\amp \iff \boldc_i\cdot\boldc_j=\begin{cases} 1\amp \text{if } i=j\\ 0\amp \text{if } i\ne j\end{cases} \\
-\amp \iff \{\boldc_1,\boldc_2,\dots, \boldc_n\} \text{ is orthonormal}\\
-\amp \iff \{\boldc_1,\boldc_2,\dots, \boldc_n\} \text{ is an orthonormal basis}\amp (n=\dim\R^n)\text{,}
+A[\boldv]_{B'}=\underset{B\rightarrow B'}{P}\, [T]_B\, \underset{B'\rightarrow B}{P}[\boldv]_{B'} \amp= \underset{B\rightarrow B'}{P}\, [T]_B [\boldv]_B \amp (\knowl{./knowl/th_change_of_basis_coordinates.html}{\text{Theorem 4.3.2}})\\
+\amp= \underset{B\rightarrow B'}{P}[T(\boldv)]_{B} \amp (\knowl{./knowl/th_matrixrep.html}{\text{Theorem 4.2.6}}, (1)) \\
+\amp = [\boldv]_{B'} \amp (\knowl{./knowl/th_change_of_basis_coordinates.html}{\text{Theorem 4.3.2}})\text{.}
 \end{align*}
 </div>
-<div class="para">and</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_dotproduct_method.html ">
-\begin{align*}
-A^{-1}=A^T \amp \iff AA^T=I \\
-\amp \iff \boldr_i\cdot\boldr_j=\begin{cases} 1\amp \text{if } i=j\\ 0\amp \text{if } i\ne j\end{cases} \\
-\amp \iff \{\boldr_1,\boldr_2,\dots, \boldr_n\} \text{ is orthonormal}\\
-\amp \iff \{\boldr_1,\boldr_2,\dots, \boldr_n\} \text{ is an orthonormal basis} \amp (n=\dim\R^n)\text{.}
-\end{align*}
-</div>
-<div class="para">This proves <span class="process-math">\((1)\iff (2)\)</span> and <span class="process-math">\((1)\iff (3)\text{.}\)</span> The result follows.</div>
 </div></article><span class="incontext"><a href="s_changeofbasis.html#proof-82" class="internal">in-context</a></span>
 </body>
 </html>

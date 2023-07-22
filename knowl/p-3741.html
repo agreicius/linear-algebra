@@ -11,17 +11,16 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h5 class="heading"><span class="type">Paragraph</span></h5>
+<h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">The operation in (b) is an inner product. Use that fact that</div>
-<div class="displaymath process-math">
+<div class="para">Things get even easier if both bases <span class="process-math">\(B\)</span> and <span class="process-math">\(B'\)</span> involved are in fact <em class="emphasis">orthonormal</em>. As we show below, it turns out in this case that the inverse of the change of basis matrix is just its transpose:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_change_basis_inverse.html">
 \begin{equation*}
-\angvec{\boldx,\ \boldy}=\boldx^T \begin{amatrix}[cc]2\amp 1 \\ 1 \amp 3  \end{amatrix}\boldy\text{,}
+\left(\underset{B\rightarrow B'}{P}\right)^{-1}=\left(\underset{B\rightarrow B'}{P}\right)^T\text{.}
 \end{equation*}
 </div>
-<div class="para">where we treat <span class="process-math">\(\boldx, \boldy\)</span> as column vectors. This helps to prove axioms (i)-(ii). For axiom (iii), use either a “complete the square” or quadratic formula argument on the expression <span class="process-math">\(\langle \boldx, \boldx\rangle=2x_1^2+2x_1x_2+3x_2^2\text{.}\)</span>
+<div class="para">It follows from <a href="" class="xref" data-knowl="./knowl/eq_change_basis_inverse.html" title="Equation 4.3.4">(4.3.4)</a> that when both bases are orthonormal, we can obtain one change of basis matrix from the other simply by computing the transpose. An invertible matrix whose inverse is equal to its transpose is called an <em class="emphasis">elementary matrix</em>. We develop some general theory about this special family of matrices (interesting in its own right) before treating change of basis matrices.</div>
 </div>
-</div>
-<span class="incontext"><a href="s_innerproducts.html#p-3741" class="internal">in-context</a></span>
+<span class="incontext"><a href="s_orthogonality.html#p-3741" class="internal">in-context</a></span>
 </body>
 </html>

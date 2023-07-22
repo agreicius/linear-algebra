@@ -12,21 +12,57 @@
 </head>
 <body class="ignore-math">
 <div class="solution solution-like">
-<h5 class="heading">
-<span class="type">Solution</span><span class="space"> </span><span class="codenumber">5.3.6.3.1</span><span class="period">.</span>
-</h5>
-<div class="para">
-<em class="alert">Solution:</em> (a) The idea is to find a convenient point lying in the given plane. For example, let us pick <span class="process-math">\(P_1 = (1,0,1)\text{,}\)</span> and let <span class="process-math">\(\mathbf{v}\)</span> be the vector from <span class="process-math">\(P_1\)</span> to <span class="process-math">\(P_0\text{.}\)</span> Then the distance from <span class="process-math">\(P_0\)</span> to the plane is the absolute value of the scalar projection of <span class="process-math">\(\mathbf{v}\)</span> onto the normal vector</div> <div class="para logical"><div class="displaymath process-math">
+<h4 class="heading">
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">5.3.18.1</span><span class="period">.</span>
+</h4>
+<ol class="decimal">
+<li><div class="para logical">
+<div class="para">Using the general formula described in <a href="" class="xref" data-knowl="./knowl/eg_projection_plane.html" title="Example 5.3.17: Projection onto planes in \R^3">Example 5.3.17</a>, we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eg_projection_plane.html">
 \begin{equation*}
-\mathbf{N} = \left[ \begin{array}{c} -2 \amp  -5 \amp  1 \end{array}\right]
+A=\frac{1}{6}\begin{amatrix}[rrr]
+5\amp 2\amp -1\\ 2\amp 2\amp 2\\ -1\amp 2\amp 5
+\end{amatrix}\text{.}
 \end{equation*}
-</div></div> <div class="para">So, we get that the distance is <span class="process-math">\(\frac{2}{\sqrt{30}}\text{.}\)</span>
-</div> <div class="para">(b) To find an equation of the plane in question, we can work with the point <span class="process-math">\(P\)</span> and the normal vector <span class="process-math">\(\mathbf{N}\)</span> given by the cross product of the vector from <span class="process-math">\(P\)</span> to <span class="process-math">\(Q\text{,}\)</span> and the vector from <span class="process-math">\(P\)</span> to <span class="process-math">\(R\text{.}\)</span> It turns out that</div> <div class="para logical"><div class="displaymath process-math">
-\begin{equation*}
-\mathbf{N} = \left[ \begin{array}{c} -4 \amp  5 \amp  6 \end{array}\right]
-\end{equation*}
-</div></div> <div class="para">So, an equation of the plane is <span class="process-math">\(-4 x+5 y+6 z= -8\text{.}\)</span>
 </div>
+</div></li>
+<li><div class="para logical">
+<div class="para">Now compute</div>
+<div class="displaymath process-math">
+\begin{align*}
+\proj{(2,1,1)}{\ell}\amp= \frac{1}{6}\begin{amatrix}[rrr]
+5\amp 2\amp -1\\ 2\amp 2\amp 2\\ -1\amp 2\amp 5
+\end{amatrix}
+\begin{amatrix}[r]
+2 \\ 1\\ 1
+\end{amatrix}=
+\frac{1}{6}\begin{amatrix}[r]
+11\\ 8\\ 5
+\end{amatrix}\\
+\proj{(1,1,1)}{\ell}\amp= \frac{1}{6}\begin{amatrix}[rrr]
+5\amp 2\amp -1\\ 2\amp 2\amp 2\\ -1\amp 2\amp 5
+\end{amatrix}
+\begin{amatrix}[r]
+1 \\ 1\\ 1
+\end{amatrix}=
+\frac{1}{6}\begin{amatrix}[r]
+0\\ 0\\ 0
+\end{amatrix}\text{.}
+\end{align*}
+</div>
+</div></li>
+<li><div class="para logical">
+<div class="para">We have</div>
+<div class="displaymath process-math">
+\begin{align*}
+d((2,1,1), W) \amp = \norm{(2,1,1)-\proj{(2,1,1)}{W}}\\
+\amp =\norm{\frac{1}{6}(1,-2,-1)}=\frac{6}{6} \\
+d((1,1,1), W) \amp = \norm{(1,1,1)-\proj{(1,1,1)}{W}}\\
+\amp =\norm{(0,0,0)}=0 \text{.}
+\end{align*}
+</div>
+</div></li>
+</ol>
 </div>
 <span class="incontext"><a href="s_orthogonal_projection.html#solution-127" class="internal">in-context</a></span>
 </body>

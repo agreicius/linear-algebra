@@ -11,35 +11,35 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<article class="hiddenproof"><h5 class="heading"><span class="title">Proof of (4)-(6).</span></h5> <div class="para logical">
-<div class="para">Statement (6) clearly follows from statements (4) and (5). From (1) and (2) we conclude</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_char_poly_equality.html">
+<article class="hiddenproof"><h4 class="heading"><span class="type">Proof</span></h4>
+<div class="para">We prove the result by contradiction. Suppose we can find a finite set of eigenvectors with distinct eigenvalues that is linearly dependent. It follows that we can find such a set of <em class="emphasis">minimum cardinality</em>. In other words, there is positive integer <span class="process-math">\(r\)</span> satisfying the following properties: (i) we can find a linearly dependent set of <span class="process-math">\(r\)</span> eigenvectors of <span class="process-math">\(T\)</span> with distinct eigenvalues; (ii) for all <span class="process-math">\(k\lt r\text{,}\)</span> any set of <span class="process-math">\(k\)</span> eigenvectors of <span class="process-math">\(T\)</span> with distinct eigenvalues is linearly independent<a href="" class="fn-knowl original" data-knowl="./knowl/fn-11-hidden.html" title="Footnote 4.5.1"><sup> 1 </sup></a>.</div> <div class="para logical">
+<div class="para">Now assume <span class="process-math">\(S=\{\boldv_1, \boldv_2, \dots, \boldv_r\}\)</span> is a set of minimal cardinality satisfying <span class="process-math">\(T(\boldv_i)=\lambda_i\boldv_i\)</span> for all <span class="process-math">\(1\leq i\leq n\)</span> and <span class="process-math">\(\lambda_i\ne \lambda j\)</span> for all <span class="process-math">\(1\leq i\lt j\leq n\text{.}\)</span> First observe that we must have <span class="process-math">\(r\gt 1\text{:}\)</span> eigenvectors are nonzero by definition, and thus any set consisting of a single eigenvector is linearly independent. Next, since <span class="process-math">\(S\)</span> is linearly dependent we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_independent_eigenvectors_A.html ./knowl/eq_independent_eigenvectors_A.html ./knowl/eq_independent_eigenvectors_B.html ./knowl/eq_independent_eigenvectors_C.html">
 \begin{equation}
-t^n+a_{n-1}t^{n-1}+\cdots +a_1t+a_0=(t-\lambda_1)(t-\lambda_2)\cdots (t-\lambda_n)\text{.}\tag{4.4.12}
+c_1\boldv_1+c_2\boldv_2+\cdots +c_r\boldv_r=\boldzero\text{,}\tag{4.5.1}
 \end{equation}
 </div>
-<div class="para">Expanding out the right-hand side of this polynomial equality yields a polynomial of the form</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_char_poly_equality.html">
+<div class="para">where <span class="process-math">\(c_i\ne 0\)</span> for some <span class="process-math">\(1\leq i\leq r\text{.}\)</span> After reordering, we may assume without loss of generality that <span class="process-math">\(c_1\ne 0\text{.}\)</span> Next we apply <span class="process-math">\(T\)</span> to both sides of <a href="" class="xref" data-knowl="./knowl/eq_independent_eigenvectors_A.html" title="Equation 4.5.1">(4.5.1)</a>:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_independent_eigenvectors_A.html ./knowl/eq_independent_eigenvectors_A.html ./knowl/eq_independent_eigenvectors_B.html ./knowl/eq_independent_eigenvectors_C.html">
+\begin{align}
+c_1\boldv_1+c_2\boldv_2\cdots +c_r\boldv_r=\boldzero \amp\implies T(c_1\boldv_1+c_2\boldv_2+\cdots +c_r\boldv_r)=T(\boldzero) \tag{4.5.2}\\
+\amp\implies c_1T(\boldv_1)+c_2T(\boldv_2)+\cdots +c_rT(\boldv_r)=\boldzero \tag{4.5.3}\\
+\amp\implies c_1\lambda_1\boldv_1+c_2\lambda_2\boldv_2+\cdots +c_r\lambda_r\boldv_r=\boldzero \text{.}\tag{4.5.4}
+\end{align}
+</div>
+<div class="para">From equation <a href="" class="xref" data-knowl="./knowl/eq_independent_eigenvectors_A.html" title="Equation 4.5.1">(4.5.1)</a> and the equation in <a href="" class="xref" data-knowl="./knowl/eq_independent_eigenvectors_B.html" title="Equation 4.5.4">(4.5.4)</a> we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_independent_eigenvectors_A.html ./knowl/eq_independent_eigenvectors_A.html ./knowl/eq_independent_eigenvectors_B.html ./knowl/eq_independent_eigenvectors_C.html">
 \begin{equation*}
-t^n-(\lambda_1+\lambda_2+\cdots \lambda_n)t^{n-1}+\cdots +b_1t+(-1)^n\lambda_1\lambda_2\cdots \lambda_n\text{.}
+\lambda_r(c_1\boldv_1+c_2\boldv_2\cdots +c_r\boldv_r)- (c_1\lambda_1\boldv_1+c_2\lambda_2\boldv_2\cdots +c_r\lambda_r\boldv_r)=\boldzero\text{,}
 \end{equation*}
 </div>
-<div class="para">Going back and equating coefficients between the left- and right-hand sides of <a href="" class="xref" data-knowl="./knowl/eq_char_poly_equality.html" title="Equation 4.4.12">(4.4.12)</a> yields</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_char_poly_equality.html">
-\begin{align*}
-a_{n-1} \amp = -(\lambda_1+\lambda_2+\cdots +\lambda_n)\\
-a_0 \amp =(-1)^n\lambda_1\lambda_2\cdots \lambda_n \text{.}
-\end{align*}
+<div class="para">and hence</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_independent_eigenvectors_A.html ./knowl/eq_independent_eigenvectors_A.html ./knowl/eq_independent_eigenvectors_B.html ./knowl/eq_independent_eigenvectors_C.html">
+\begin{equation}
+c_1(\lambda_r-\lambda_1)\boldv_1+\cdots +c_{r-1}(\lambda_r-\lambda_{r-1})+\cancel{c_r(\lambda_r-\lambda_r)}\boldv_r=\boldzero\text{.}\tag{4.5.5}
+\end{equation}
 </div>
-<div class="para">This proves half of statements (4) and (5). The fact that <span class="process-math">\(a_{n-1}=-\tr A\)</span> can be proved by induction using a modified version of the argument from the proof of (1) above. It remains to show that <span class="process-math">\(a_n=(-1)^n\det A\text{.}\)</span> We have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_char_poly_equality.html">
-\begin{align*}
-a_n \amp= p(0) \\
-\amp=\det(0I-A) \\
-\amp=\det(-A) \\
-\amp =(-1)^n\det A\text{.}
-\end{align*}
-</div>
-</div></article><span class="incontext"><a href="s_eigenvectors.html#proof-92" class="internal">in-context</a></span>
+<div class="para">Since <span class="process-math">\(c_1\ne 0\)</span> and <span class="process-math">\(\lambda_1\ne \lambda_r\text{,}\)</span> we have <span class="process-math">\(c_1(\lambda_r-\lambda_1)\ne 0\text{.}\)</span> Thus equation <a href="" class="xref" data-knowl="./knowl/eq_independent_eigenvectors_C.html" title="Equation 4.5.5">(4.5.5)</a> implies that the set <span class="process-math">\(S'=\{\boldv_1, \boldv_2, \dots, \boldv_{r-1}\}\)</span> is a linearly dependent set of eigenvectors of <span class="process-math">\(T\)</span> with distinct eigenvalues, contradicting the minimality of <span class="process-math">\(r\text{.}\)</span> This completes our proof by contradiction.</div>
+</div></article><span class="incontext"><a href="s_diagonalization.html#proof-92" class="internal">in-context</a></span>
 </body>
 </html>

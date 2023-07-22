@@ -11,12 +11,18 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_coordinates_orthogonal.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_ortho_decomp.html ./knowl/eq_ortho_proj_formula_proof.html">
 \begin{align*}
-[(a,b)]_B \amp =\left(\frac{\langle (a,b), (1,1)\rangle }{\langle (1,1),(1,1) \rangle }, \frac{\langle (a,b), (-1,2)\rangle }{\langle (-1,2),(-1,2) \rangle }\right)\\
-\amp=\left(\frac{1}{3}(2a+b),\frac{1}{3}(-a+b) \right) 
+\langle \boldw^\perp, \boldw_j \rangle\amp = \langle \boldv-\proj{\boldv}{W}, \boldw_i \rangle\\
+\amp =
+\left\langle \boldv-\sum_{i=1}^r\frac{\angvec{\boldv,\boldw_i}}{\angvec{\boldw_i, \boldw_i}}\boldw_i, \boldw_j\right\rangle \\
+\amp =
+\langle \boldv, \boldw_j\rangle -\sum_{i=1}^r\frac{\angvec{\boldv,\boldw_i}}{\angvec{\boldw_i, \boldw_i}}\langle \boldw_i, \boldw_j\rangle \\
+\amp =
+\langle \boldv, \boldw_j\rangle -\frac{\langle \boldv, \boldw_j\rangle}{\cancel{\langle \boldw_j, \boldw_j\rangle}}\cancel{\langle \boldw_j, \boldw_j\rangle}\\
+\amp = 0 
 \end{align*}
 </div>
-<span class="incontext"><a href="s_orthogonality.html#md-274" class="internal">in-context</a></span>
+<span class="incontext"><a href="s_orthogonal_projection.html#md-275" class="internal">in-context</a></span>
 </body>
 </html>

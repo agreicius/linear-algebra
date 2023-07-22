@@ -13,13 +13,48 @@
 <body class="ignore-math">
 <div class="solution solution-like">
 <h4 class="heading">
-<span class="type">Solution</span><span class="space"> </span><span class="codenumber">4.4.9.1</span><span class="period">.</span>
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">4.3.10.1</span><span class="period">.</span>
 </h4>
-<div class="para">Since the reflection operator fixes all elements of the line <span class="process-math">\(\ell\text{,}\)</span> we have <span class="process-math">\(T(\boldx)=\boldx\)</span> for any <span class="process-math">\(\boldx\in \ell\text{.}\)</span> This shows that any nonzero element of <span class="process-math">\(\ell\)</span> is an eigenvectors of <span class="process-math">\(T\)</span> with eigenvalue <span class="process-math">\(1\text{.}\)</span>
-</div> <div class="para">Similarly, since <span class="process-math">\(\ell^\perp\)</span> is orthogonal to <span class="process-math">\(\ell\text{,}\)</span> reflection through <span class="process-math">\(\ell\)</span> takes any element <span class="process-math">\(\boldx=(x,y)\in \ell^\perp\)</span> and maps it to <span class="process-math">\(-\boldx=(-x,-y)\text{.}\)</span> Thus any nonzero element <span class="process-math">\(\boldx\in \ell^\perp\)</span> is  an eigenvector of <span class="process-math">\(T\)</span> with eigenvalue <span class="process-math">\(-1\text{.}\)</span>
-</div> <div class="para">We claim that these two cases exhaust all eigenvectors of <span class="process-math">\(T\text{.}\)</span> Indeed, in general a nonzero vector <span class="process-math">\(\boldv\)</span> lies in the line <span class="process-math">\(\ell'=\Span\{\boldx\}\text{,}\)</span> and its reflection <span class="process-math">\(T(\boldx)\)</span> lies in the line <span class="process-math">\(\ell''=\Span\{T(\boldx)\}\text{,}\)</span> which itself is the result of reflecting the line <span class="process-math">\(\ell'\)</span> through <span class="process-math">\(\ell\text{.}\)</span> Now assume <span class="process-math">\(T(\boldx)=\lambda\boldx\text{.}\)</span> We must have <span class="process-math">\(\lambda\ne 0\text{,}\)</span> since <span class="process-math">\(T(\boldv)\ne \boldzero\)</span> if <span class="process-math">\(\boldx\ne \boldzero\text{;}\)</span> but if <span class="process-math">\(\lambda\ne 0\)</span> it follows that the line <span class="process-math">\(\ell=\Span\{\boldx\}\)</span> and its reflection <span class="process-math">\(\ell''=\Span\{T(\boldv)\}\)</span> are equal. Clearly the only lines that are mapped to themselves by reflection through <span class="process-math">\(\ell\)</span> are <span class="process-math">\(\ell\)</span> and <span class="process-math">\(\ell^\perp\text{.}\)</span> Thus if <span class="process-math">\(\boldx\)</span> is an eigenvector of <span class="process-math">\(T\)</span> it must lie in <span class="process-math">\(\ell\)</span> or <span class="process-math">\(\ell^\perp\text{.}\)</span>
+<div class="para logical">
+<div class="para">We have</div>
+<div class="displaymath process-math">
+\begin{align*}
+\underset{B'\rightarrow B}{P}\amp = \begin{bmatrix}
+\vert\amp \vert\amp \vert\amp \vert\\
+[A_1]_{B}\amp [A_2]_B\amp [A_3]_B\amp [A_4]_B\\
+\vert\amp \vert\amp \vert\amp \vert
+\end{bmatrix}\\
+\amp = \begin{amatrix}[rrrr]
+1\amp 1\amp 1\amp -1\\
+1\amp -1\amp 1\amp 1\\
+1\amp 1\amp -1\amp 1\\
+1\amp -1\amp -1\amp -1
+\end{amatrix} \text{.}
+\end{align*}
+</div>
+<div class="para">Here the coordinate vectors <span class="process-math">\([A_i]_B\)</span> are easily computed by inspection since <span class="process-math">\(B\)</span> is the standard basis.</div>
+</div> <div class="para logical">
+<div class="para">It turns out that <span class="process-math">\(\underset{B\rightarrow B'}{P}=(\underset{B'\rightarrow B}{P})^{-1}\)</span> is not so difficult to compute in this case since the columns <span class="process-math">\(\boldc_j\)</span> of <span class="process-math">\(\underset{B'\rightarrow B}{P}\)</span> satisfy</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_matrix_mult_dot_product.html">
+\begin{equation*}
+\boldc_i\cdot\boldc_j=\begin{cases} 4\amp \text{if } i=j\\ 0\amp \text{if } i\ne j
+\end{cases}\text{.}
+\end{equation*}
+</div>
+<div class="para">From this observation and <a href="" class="xref" data-knowl="./knowl/th_matrix_mult_dot_product.html" title="Theorem 2.1.22: Dot product and matrix multiplication">Theorem 2.1.22</a> it is easy to see that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_matrix_mult_dot_product.html">
+\begin{equation*}
+\underset{B\rightarrow B'}{P}=(\underset{B'\rightarrow B}{P})^{-1}=\frac{1}{4}
+\begin{amatrix}[rrrr]
+1\amp 1\amp 1\amp 1\\
+1\amp -1\amp 1\amp -1\\
+1\amp 1\amp -1\amp -1\\
+-1\amp -1\amp 1\amp -1
+\end{amatrix}\text{.}
+\end{equation*}
 </div>
 </div>
-<span class="incontext"><a href="s_eigenvectors.html#solution-91" class="internal">in-context</a></span>
+</div>
+<span class="incontext"><a href="s_changeofbasis.html#solution-91" class="internal">in-context</a></span>
 </body>
 </html>

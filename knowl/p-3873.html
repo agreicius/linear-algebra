@@ -12,7 +12,33 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<div class="para">We can use <a href="" class="xref" data-knowl="./knowl/cor_orthocomp_selfdual.html" title="Corollary 5.3.13: Complement of a complement">Corollary 5.3.13</a> to conclude <span class="process-math">\(\RS A=(\NS A)^\perp\text{.}\)</span> Alternatively, and more directly, the argument above shows that <span class="process-math">\(\boldw\in \RS A\implies \boldw\in (\NS A)^\perp\text{,}\)</span> proving <span class="process-math">\(\RS A\subseteq (\NS A)^\perp\text{.}\)</span> Next, by the rank-nullity theorem we have <span class="process-math">\(\dim \RS A=n-\dim\NS A\text{;}\)</span> and by <a href="" class="xref" data-knowl="./knowl/th_orthogonal_complement.html" title="Theorem 5.3.5: Orthogonal complement">Theorem 5.3.5</a> we have <span class="process-math">\(\dim (\NS A)^\perp=n-\dim\NS A\text{.}\)</span> It follows that <span class="process-math">\(\dim\RS A=\dim (\NS A)^\perp\text{.}\)</span> Since <span class="process-math">\(\RS A\subseteq (\NS A)^\perp\)</span> and <span class="process-math">\(\dim \RS A=\dim (\NS A)^\perp\text{,}\)</span> we conclude by <a href="" class="xref" data-knowl="./knowl/cor_dimension_subspace.html" title="Corollary 3.7.10: Dimension of subspaces">Corollary 3.7.10</a> that <span class="process-math">\(\RS A=(\NS A)^\perp\text{.}\)</span>
+<div class="para logical">
+<div class="para">Any plane <span class="process-math">\(W\subseteq\R^3\)</span> passing through the origin can be described as <span class="process-math">\(W=\{(x,y,z)\in \R^3\colon ax+by+cz=0\}\text{.}\)</span> Equivalently, <span class="process-math">\(W\)</span> is the set of all <span class="process-math">\(\boldx\in \R^3\)</span> satisfying <span class="process-math">\(\boldx\cdot (a,b,c)=0\text{:}\)</span> i.e., <span class="process-math">\(W=\ell^\perp\text{,}\)</span> where <span class="process-math">\(\ell=\Span\{(a,b,c)\text{.}\)</span> Consider the orthogonal decomposition with respect to <span class="process-math">\(\ell\text{:}\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eg_projection_line.html">
+\begin{equation*}
+\boldx=\proj{\boldx}{\ell}+(\boldx-\proj{\boldx}{\ell})\text{.}
+\end{equation*}
+</div>
+<div class="para">Since <span class="process-math">\(\boldx-\proj{\boldx}{\ell}\in \ell^\perp=W\)</span> and <span class="process-math">\(\proj{\boldx}{\ell}\in \ell=W^\perp\text{,}\)</span> we see that this is also an orthogonal decomposition with respect to <span class="process-math">\(W\text{!}\)</span> Using the matrix formula for <span class="process-math">\(\operatorname{proj}_\ell\)</span> from <a href="" class="xref" data-knowl="./knowl/eg_projection_line.html" title="Example 5.3.15: Projection onto a line \ell\subseteq \R^3">Example 5.3.15</a>, we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eg_projection_line.html">
+\begin{align*}
+\proj{\boldx}{W} \amp =\boldx-\proj{\boldx}{\ell} \\
+\amp = I\boldx -  A\boldx\amp \left(A=\frac{1}{a^2+b^2+c}\begin{bmatrix}
+a^2\amp ab\amp ac\\
+ab\amp b^2\amp bc\\
+ac\amp bc\amp c^2
+\end{bmatrix}\right)\\
+\amp = (I-A)\boldx\\
+\amp = \frac{1}{a^2+b^2+c^2}\begin{bmatrix}b^2+c^2\amp -ab\amp -ac\\ -ab\amp a^2+c^2\amp -bc\\ -ac\amp -bc\amp a^2+b^2 \end{bmatrix}\text{.}
+\end{align*}
+</div>
+<div class="para">We conclude that <span class="process-math">\(\operatorname{proj}_W=T_B\text{,}\)</span> where</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eg_projection_line.html">
+\begin{equation*}
+B=\frac{1}{a^2+b^2+c^2}\begin{bmatrix}b^2+c^2\amp -ab\amp -ac\\ -ab\amp a^2+c^2\amp -bc\\ -ac\amp -bc\amp a^2+b^2 \end{bmatrix}\text{.}
+\end{equation*}
+</div>
 </div>
 <span class="incontext"><a href="s_orthogonal_projection.html#p-3873" class="internal">in-context</a></span>
 </body>
