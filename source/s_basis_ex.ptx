@@ -182,7 +182,10 @@ For each given <m>V</m> and subspace <m>W\subseteq V</m>, provide a basis for <m
       </li>
       <li>
         <p>
-          Use the <q>for all</q> quantifier of (a) to prove that if <m>\{A\boldv_1, A\boldv_2,\dots, A\boldv_k\}</m> is a basis of <m>\R^n</m> for the invertible matrix <m>A</m>, then <m>\{\boldv_1, \boldv_2, \dots, \boldv_k\}</m> is a basis of <m>\R^n</m>.
+          Now prove that if <m>\{A\boldv_1, A\boldv_2,\dots, A\boldv_k\}</m> is a basis of <m>\R^n</m> for the invertible matrix <m>A</m>, then <m>\{\boldv_1, \boldv_2, \dots, \boldv_k\}</m> is a basis of <m>\R^n</m>. 
+        </p>
+        <p>
+          Hint: in (b) you showed that if you start with <em>any</em> basis and apply <em>any</em> invertible matrix to the elements of this basis, then you end up with another basis; think of a useful choice of matrix for the present situation. 
         </p>
       </li>
     </ol>
