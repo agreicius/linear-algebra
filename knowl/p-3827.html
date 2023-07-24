@@ -13,21 +13,34 @@
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">Let <span class="process-math">\((V,\langle \ , \rangle)\)</span> be an inner product vector space, and let <span class="process-math">\(W\subseteq V\)</span> be a subspace.</div>
-<ol class="decimal">
-<li><div class="para">The orthogonal complement <span class="process-math">\(W^\perp\)</span> is a subspace of <span class="process-math">\(V\text{.}\)</span>
-</div></li>
-<li><div class="para">We have <span class="process-math">\(W\cap W^\perp=\{\boldzero\}\text{.}\)</span>
-</div></li>
-<li><div class="para logical">
-<div class="para">If <span class="process-math">\(\dim V=n\lt \infty\)</span> then</div>
-<div class="displaymath process-math">
+<div class="para">First, solving <span class="process-math">\(x-2y-z=0\)</span> for <span class="process-math">\((x,y,z)\text{,}\)</span> we see that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/rm_computing_ortho_comp.html">
 \begin{equation*}
-\dim W+\dim W^\perp=n\text{.}
+W=\{(2s+t,s,t)\colon s,t\in \R\}=\Span\{(2,1,0),(1,0,1)\}\text{.}
 \end{equation*}
 </div>
-</div></li>
-</ol>
+<div class="para">Next, according to <a href="" class="xref" data-knowl="./knowl/rm_computing_ortho_comp.html" title="Remark 5.3.2: Computing W^\perp">Remark 5.3.2</a> we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/rm_computing_ortho_comp.html">
+\begin{equation*}
+\boldx\in W^\perp\iff \boldx\cdot (2,1,0)=0 \text{ and } \boldx\cdot (1,0,1)=0\text{.}
+\end{equation*}
+</div>
+<div class="para">It follows that <span class="process-math">\(W^\perp\)</span> is the set of vectors <span class="process-math">\(\boldx=(x,y,z)\)</span> satisfying the linear system</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/rm_computing_ortho_comp.html">
+\begin{equation*}
+\begin{linsys}{3}
+2x\amp +\amp y \amp \amp  \amp = \amp 0\\
+x\amp \amp  \amp +\amp z \amp = \amp 0
+\end{linsys}.
+\end{equation*}
+</div>
+<div class="para">Solving this system using Gaussian elimination we conclude that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/rm_computing_ortho_comp.html">
+\begin{equation*}
+W^\perp=\{(t,-2t,-t)\colon t\in \R\}=\Span\{(1,-2,-1)\}\text{,}
+\end{equation*}
+</div>
+<div class="para">which we recognize as the line <span class="process-math">\(\ell\subseteq \R^3\)</span> passing through the origin with direction vector <span class="process-math">\((1,-2,-1)\text{.}\)</span> This is none other than the normal line to the plane <span class="process-math">\(W\)</span> passing through the origin.</div>
 </div>
 <span class="incontext"><a href="s_orthogonal_projection.html#p-3827" class="internal">in-context</a></span>
 </body>

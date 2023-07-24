@@ -11,8 +11,28 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para">Before connecting change of basis matrices with matrix representations of linear transformations, it is worth gathering some the different techniques for computing change of basis matrices we have discussed so far.</div>
+<h5 class="heading"><span class="type">Paragraph</span></h5>
+<div class="para logical">
+<div class="para">It turns out that <span class="process-math">\(\underset{B\rightarrow B'}{P}=(\underset{B'\rightarrow B}{P})^{-1}\)</span> is not so difficult to compute in this case since the columns <span class="process-math">\(\boldc_j\)</span> of <span class="process-math">\(\underset{B'\rightarrow B}{P}\)</span> satisfy</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_matrix_mult_dot_product.html">
+\begin{equation*}
+\boldc_i\cdot\boldc_j=\begin{cases} 4\amp \text{if } i=j\\ 0\amp \text{if } i\ne j
+\end{cases}\text{.}
+\end{equation*}
+</div>
+<div class="para">From this observation and <a href="" class="xref" data-knowl="./knowl/th_matrix_mult_dot_product.html" title="Theorem 2.1.22: Dot product and matrix multiplication">Theorem 2.1.22</a> it is easy to see that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_matrix_mult_dot_product.html">
+\begin{equation*}
+\underset{B\rightarrow B'}{P}=(\underset{B'\rightarrow B}{P})^{-1}=\frac{1}{4}
+\begin{amatrix}[rrrr]
+1\amp 1\amp 1\amp 1\\
+1\amp -1\amp 1\amp -1\\
+1\amp 1\amp -1\amp -1\\
+-1\amp -1\amp 1\amp -1
+\end{amatrix}\text{.}
+\end{equation*}
+</div>
+</div>
 <span class="incontext"><a href="s_changeofbasis.html#p-3122" class="internal">in-context</a></span>
 </body>
 </html>

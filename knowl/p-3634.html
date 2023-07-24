@@ -13,14 +13,13 @@
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">Take <span class="process-math">\(C[a,b]\)</span> with the standard inner product <span class="process-math">\(\langle f, g \rangle=\int_a^b f(x)g(x) \ dx\text{.}\)</span> Here the distance between two functions is defined as</div>
+<div class="para">Consider <span class="process-math">\(P_n\)</span> with the evaluation inner product at a fixed choice of inputs <span class="process-math">\(x=c_0, c_1,\dots, c_n\text{.}\)</span> Given two polynomials <span class="process-math">\(p(x), q(x)\text{,}\)</span> the distance between them with respect to this inner product is</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\norm{f-g}=\sqrt{\int_a^b (f(x)-g(x))^2 \ dx}\text{,}
+\norm{p(x)-q(x)}=\sqrt{(p(c_0)-q(c_0))^2+(p(c_1)-q(c_1))^2+\cdots +(p(c_n)-q(c_n))^2}\text{.}
 \end{equation*}
 </div>
-<div class="para">which we can think of as an aggregate measure of the difference of values <span class="process-math">\(f(x)-g(x)\)</span> for all <span class="process-math">\(x\in [a,b]\text{.}\)</span> Thus <span class="process-math">\(d(f,g)\)</span> is a global measure of the similarity between <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> that takes into account their values over the entire interval <span class="process-math">\([a,b]\text{.}\)</span>
-</div>
+<div class="para">We see that with respect to this inner product, the distance between two polynomials is a measure of how much their values at the inputs <span class="process-math">\(x=c_0,c_1,\dots ,c_n\)</span> differ. This inner product may be useful if you are interested in how a polynomial behaves at this finite list of inputs.</div>
 </div>
 <span class="incontext"><a href="s_innerproducts.html#p-3634" class="internal">in-context</a></span>
 </body>

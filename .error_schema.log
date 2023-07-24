@@ -1,4 +1,0 @@
-/Users/aarongreicius/linear-algebra/source/main.ptx:248:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element biography, got colophon
-/Users/aarongreicius/linear-algebra/source/main.ptx:238:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMWRONG: Did not expect element frontmatter there
-/Users/aarongreicius/linear-algebra/source/main.ptx:238:0:ERROR:RELAXNGV:RELAXNG_ERR_CONTENTVALID: Element book failed to validate content
-/Users/aarongreicius/linear-algebra/source/main.ptx:2:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element docinfo, got pretext

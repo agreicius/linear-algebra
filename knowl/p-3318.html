@@ -13,17 +13,33 @@
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">Let <span class="process-math">\(A\)</span> be a <span class="process-math">\(2\times 2\)</span> matrix, and let <span class="process-math">\(p(t)=\det(tI-A)\text{.}\)</span> Using <a href="" class="xref" data-knowl="./knowl/eq_char_poly.html" title="Equation 4.4.6">(4.4.6)–(4.4.8)</a> we have</div>
-<div class="displaymath process-math" data-contains-math-knowls="">
+<div class="para">Statement (6) clearly follows from statements (4) and (5). From (1) and (2) we conclude</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_char_poly_equality.html">
+\begin{equation}
+t^n+a_{n-1}t^{n-1}+\cdots +a_1t+a_0=(t-\lambda_1)(t-\lambda_2)\cdots (t-\lambda_n)\text{.}\tag{4.4.12}
+\end{equation}
+</div>
+<div class="para">Expanding out the right-hand side of this polynomial equality yields a polynomial of the form</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_char_poly_equality.html">
 \begin{equation*}
-p(t)=t^2-(\tr A) t+\det A\text{.}
+t^n-(\lambda_1+\lambda_2+\cdots \lambda_n)t^{n-1}+\cdots +b_1t+(-1)^n\lambda_1\lambda_2\cdots \lambda_n\text{.}
 \end{equation*}
 </div>
-<div class="para">This is a useful trick if you want to produce a <span class="process-math">\(2\times 2\)</span> matrix with a prescribed characteristic polynomial. For example, a matrix with characteristic polynomial <span class="process-math">\(p(t)=t^2-2\)</span> has trace equal to 0 and determinant equal to <span class="process-math">\(-2\text{.}\)</span> Such matrices are easy to construct: e.g.,</div>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-A_1=\begin{amatrix}[rr]0\amp 2\\ 1\amp 0  \end{amatrix}, A_2=\begin{amatrix}[rr]1\amp 1 \\ 1\amp -1  \end{amatrix}, A_3=\begin{amatrix}[rr] 3\amp -7 \\ 1\amp -3 \end{amatrix}\text{.}
-\end{equation*}
+<div class="para">Going back and equating coefficients between the left- and right-hand sides of <a href="" class="xref" data-knowl="./knowl/eq_char_poly_equality.html" title="Equation 4.4.12">(4.4.12)</a> yields</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_char_poly_equality.html">
+\begin{align*}
+a_{n-1} \amp = -(\lambda_1+\lambda_2+\cdots +\lambda_n)\\
+a_0 \amp =(-1)^n\lambda_1\lambda_2\cdots \lambda_n \text{.}
+\end{align*}
+</div>
+<div class="para">This proves half of statements (4) and (5). The fact that <span class="process-math">\(a_{n-1}=-\tr A\)</span> can be proved by induction using a modified version of the argument from the proof of (1) above. It remains to show that <span class="process-math">\(a_n=(-1)^n\det A\text{.}\)</span> We have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_char_poly_equality.html">
+\begin{align*}
+a_n \amp= p(0) \\
+\amp=\det(0I-A) \\
+\amp=\det(-A) \\
+\amp =(-1)^n\det A\text{.}
+\end{align*}
 </div>
 </div>
 <span class="incontext"><a href="s_eigenvectors.html#p-3318" class="internal">in-context</a></span>

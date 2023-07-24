@@ -11,8 +11,22 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para">Similarly, the computations involved in change of basis matrices are significantly easier when at least one of the bases involved is orthogonal. This is a direct consequence of the fact that the change of basis matrix formula <a href="" class="xref" data-knowl="./knowl/eq_change_basis_matrix.html" title="Equation 4.3.1">(4.3.1)</a> involves computing coordinate vectors; and this is easy to do when the basis in question is orthogonal, thanks to the inner product formula <a href="" class="xref" data-knowl="./knowl/eq_coor_vec_orthogonal.html" title="Equation 5.2.3">(5.2.3)</a>.</div>
+<h5 class="heading"><span class="type">Paragraph</span></h5>
+<div class="para logical">
+<div class="para">Applying the inner product formula <a href="" class="xref" data-knowl="./knowl/eq_coor_vec_orthogonal.html" title="Equation 5.2.3">(5.2.3)</a> to <span class="process-math">\(B\)</span> and the dot product with weights <span class="process-math">\(2, 1\text{,}\)</span> for any <span class="process-math">\(\boldv=(a,b)\)</span> we compute</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_coor_vec_orthogonal.html">
+\begin{align*}
+[(a,b)]_B \amp =\left(\frac{\langle (a,b), (1,1)\rangle }{\langle (1,1),(1,1) \rangle }, \frac{\langle (a,b), (-1,2)\rangle }{\langle (-1,2),(-1,2) \rangle }\right)\\
+\amp=\left(\frac{1}{3}(2a+b),\frac{1}{3}(-a+b) \right) \text{.}
+\end{align*}
+</div>
+<div class="para">Let’s check our formula with <span class="process-math">\(\boldv=(3,-3)\text{.}\)</span> The formula yields <span class="process-math">\([(3,-3)]_B=(1,-2)\text{,}\)</span> and indeed we see that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_coor_vec_orthogonal.html">
+\begin{equation*}
+(3,-3)=1(1,1)-2(-1,2)\text{.}
+\end{equation*}
+</div>
+</div>
 <span class="incontext"><a href="s_orthogonality.html#p-3740" class="internal">in-context</a></span>
 </body>
 </html>

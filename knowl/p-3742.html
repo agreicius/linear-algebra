@@ -11,8 +11,15 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h5 class="heading"><span class="type">Paragraph</span></h5>
-<div class="para">An invertible <span class="process-math">\(n\times n\)</span> matrix <span class="process-math">\(A\)</span> is <dfn class="terminology">orthogonal</dfn> if <span class="process-math">\(A^{-1}=A^T\text{.}\)</span>
+<h4 class="heading"><span class="type">Paragraph</span></h4>
+<div class="para logical">
+<div class="para">Things get even easier if both bases <span class="process-math">\(B\)</span> and <span class="process-math">\(B'\)</span> involved are in fact <em class="emphasis">orthonormal</em>. As we show below, it turns out in this case that the inverse of the change of basis matrix is just its transpose:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_change_basis_inverse.html">
+\begin{equation*}
+\left(\underset{B\rightarrow B'}{P}\right)^{-1}=\left(\underset{B\rightarrow B'}{P}\right)^T\text{.}
+\end{equation*}
+</div>
+<div class="para">It follows from <a href="" class="xref" data-knowl="./knowl/eq_change_basis_inverse.html" title="Equation 4.3.4">(4.3.4)</a> that when both bases are orthonormal, we can obtain one change of basis matrix from the other simply by computing the transpose. An invertible matrix whose inverse is equal to its transpose is called an <em class="emphasis">elementary matrix</em>. We develop some general theory about this special family of matrices (interesting in its own right) before treating change of basis matrices.</div>
 </div>
 <span class="incontext"><a href="s_orthogonality.html#p-3742" class="internal">in-context</a></span>
 </body>
