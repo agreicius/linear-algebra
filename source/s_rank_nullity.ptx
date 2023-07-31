@@ -172,16 +172,16 @@ As we will see, this elegant result can be used to significantly simplify comput
       We first examine <m>\NS T</m>. We have
       <me>
         T(x,y,z,w)=\boldzero \iff \begin{linsys}{4}
-          x\amp \amp \amp \amp \amp + \amp w\amp =\amp 0\\
+          x\amp \amp \amp+ \amp z \amp \amp \amp =\amp 0\\
           \amp \amp y\amp+ \amp z \amp + \amp w\amp =\amp 0\\
           \amp \amp \amp\amp z \amp + \amp 2w\amp =\amp 0
       \end{linsys}
       </me>.
       The system above is already in row echelon form, and so we easily see that
       <me>
-       \NS T=\{(-t,t,-2t,t)\colon t\in \R\}=\Span\{(-1,1,-2,1)\}
+       \NS T=\{(2t,t,-2t,t)\colon t\in \R\}=\Span\{(-1,1,-2,1)\}
       </me>.
-      Thus <m>B=\{(-1,1,-2,1)\}</m> is a basis of <m>\NS T</m>, and we conclude that <m>\dim \NS T=1</m>.
+      Thus <m>B=\{(2,1,-2,1)\}</m> is a basis of <m>\NS T</m>, and we conclude that <m>\dim \NS T=1</m>.
     The <xref ref="th_rank-nullity" text="custom">rank-nullity theorem</xref> now implies that <me>\dim \im T=4-\dim \NS T=4-1=3</me>. Since <m>\im T\subseteq \R^3</m> and <m>\dim\im T=\dim \R^3=3</m>, we conclude by <xref ref="cor_dimension_subspace"/> that <m>\im T=\R^3</m>. Thus <m>T</m> is surjective.
     </p>
   </solution>
