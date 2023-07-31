@@ -408,8 +408,8 @@ As we will see, this elegant result can be used to significantly simplify comput
       We have
         <mdn>
           <mrow xml:id="eq_rank_nullity_rank">n \amp= \nullity A+\rank A </mrow>
-          <mrow xml:id="eq_rank_nullity_col"> \amp =\dim\NS A+\CS A </mrow>
-          <mrow xml:id="eq_rank_nullity_row"> \amp =\dim\NS A+\RS A </mrow>
+          <mrow xml:id="eq_rank_nullity_col"> \amp =\dim\NS A+\dim\CS A </mrow>
+          <mrow xml:id="eq_rank_nullity_row"> \amp =\dim\NS A+\dim\RS A </mrow>
         </mdn>.
     </p>
   </statement>
