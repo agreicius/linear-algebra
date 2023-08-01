@@ -288,32 +288,38 @@
 
     </p>
     </statement>
+    
     <proof>
-      <p> 
-        <ol>
+      <ol>
         <li>
           <p>
-          Let <m>B=(\boldv_1, \boldv_2, \dots, \boldv_n)</m>. By definition, the <m>j</m>-th column of <m>\underset{B\rightarrow B'}{P}</m> is <m>[\boldv_j]_B</m>. Since <m>\boldv_j=0\boldv_1+0\boldv_2+\cdots +1\boldv_j+\cdots</m>, we see that <m>[\boldv_j]_B=\bolde_j</m>, and hence that <m>\underset{B\rightarrow B'}{P}=I</m>, as claimed.
+            Let <m>B=(\boldv_1, \boldv_2,\dots, \boldv_n)</m>. From formula <xref ref="eq_matrixrep_formula"/> applied to <m>I_v</m>, we see that the <m>j</m>-th column of <m>[I_V]_B^{B'}</m> is 
+            <me>
+              [\boldv_j]_{B'}
+            </me>
+            for all <m>1\leq j\leq n</m>. Using formula <xref ref="eq_change_basis_matrix"/> from <xref ref="d_change_basis_matrix"/> this is precisely the <m>j</m>-th column of <m>\underset{B\rightarrow B'}{P}</m> for all <m>1\leq j\leq n</m>. We conclude that 
+            <me>
+            [I_V]_B^{B'} = \underset{B\rightarrow B'}{P}
+            </me>.
           </p>
         </li>
         <li>
           <p>
-            Let <m>A=\underset{B\rightarrow B'}{P}</m> and <m>B=\underset{B'\rightarrow B"}{P}</m>. For any <m>\boldv\in V</m> we have
+            This follows from (1) and <xref ref="th_matrixrep"/>:
             <md>
-              <mrow>BA[\boldv]_B \amp = \underset{B'\rightarrow B}{P}\, \underset{B\rightarrow B'}{P}[\boldv]</mrow>
-              <mrow> \amp =\underset{B'\rightarrow B}{P}[\boldv]_{B'} </mrow>
-              <mrow>  \amp = [\boldv]_{B}</mrow>
+              <mrow> \underset{B\rightarrow B'}{P}[\boldv]_B \amp = [\id_V]_{B}^{B'}[\boldv]_B </mrow>
+              <mrow>  \amp = [\id_V(\boldv)]_{B'} \amp (<xref ref="th_matrixrep"/>)</mrow>
+              <mrow> \amp =[\boldv]_{B'} </mrow>
             </md>.
-            It follows from (3) of <xref ref="th_change_of_basis_coordinates"/> that <m>BA=\underset{B\rightarrow B}{P}</m>. Since <m>\underset{B\rightarrow B}{P}=I</m> by (1), we conclude that <m>BA=I</m>, and hence <m>B=A^{-1}</m>, as desired.
           </p>
         </li>
         <li>
           <p>
-            See <xref ref="ex_changebasis_three_bases"/>.
+            By (2) of <xref ref="th_matrixrep"/> (the uniqueness claim), if <m>A</m> satisfies <m>A[\boldv]_B=[\boldv]_{B'}</m> for all <m>\boldv\in \R^n</m>, then <m>A=[\id_V]_{B}^{B'}</m>. Since <m>[\id_V]_{B}^{B'}=\underset{B\rightarrow B'}{P}</m>, we conclude <m>A=\underset{B\rightarrow B'}{P}</m>.
           </p>
         </li>
       </ol>
-    </p>
+
     </proof>
 
   </theorem>
