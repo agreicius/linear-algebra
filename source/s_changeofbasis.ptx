@@ -92,11 +92,11 @@
       <ol>
         <li>
           <p>
-            Let <m>I_V\colon V\rightarrow V</m> be the identity transformation: <ie />, <m>I_V(\boldv)=\boldv</m> for all <m>\boldv\in V</m>. By <xref ref="th_matrixrep"/> the matrix <m>[I_V]_B^{B'}</m> is the unique matrix satisfying
+            Let <m>B=(\boldv_1, \boldv_2,\dots, \boldv_n)</m>. From formula <xref ref="eq_matrixrep_formula"/> applied to <m>I_v</m>, we see that the <m>j</m>-th column of <m>[I_V]_B^{B'}</m> is 
             <me>
-            [I_V]_B^{B'}[\boldv]_B=[I_V(\boldv)]_{B'}=[\boldv]_{B'}
-            </me>.
-            Comparing the formulas for <m>[I_V]_{B}^{B'}</m> and <m></m> we see directly that
+              [\boldv_j]_{B'}
+            </me>
+            for all <m>1\leq j\leq n</m>. Using formula <xref ref="eq_change_basis_matrix"/> from <xref ref="d_change_basis_matrix"/> this is precisely the <m>j</m>-th column of <m>\underset{B\rightarrow B'}{P}</m> for all <m>1\leq j\leq n</m>. We conclude that 
             <me>
             [I_V]_B^{B'} = \underset{B\rightarrow B'}{P}
             </me>.
