@@ -454,10 +454,13 @@
           -1\amp -1\amp 2
         \end{amatrix}
         </me>.
-        Now consider a nonstandard basis <m>B'</m> of <m>\R^3</m> constructed with an eye toward the geometry involved in the definition of this projection operator. Namely, we begin with a basis of the plane <m>W</m> and add the normal vector <m>\boldn</m> to get a basis of <m>\R^3</m>. The vectors <m>(1,-1,0), (1,1,-22)</m> clearly form a basis of <m>W</m>. Adding <m>\boldn</m> yields the ordered basis
+        Now consider a nonstandard basis <m>B'</m> of <m>\R^3</m> constructed with an eye toward the geometry involved in the definition of this projection operator. Namely, we begin with a basis of the plane <m>W</m> and extend to a full basis of <m>\R^3</m> by adding the normal vector <m>(1,1,1)</m> defining <m>W</m>. Note that since <m>W</m> is a 2-dimensional subspace, a basis by formed by any two linearly independent members. As such a basis of <m>W</m> is easily produced by inspection. We choose <m>\boldv_1=(1,-1,0)</m> and <m>\boldv_2=(1,0,-1)</m> as our basis for <m>W</m>. Adding the normal vector <m>\boldv_3=(1,1,1)</m> then yields the ordered basis
         <me>
-        B'=\left( \underset{\boldv_1}{(1,-1,0)}, \underset{\boldv_2}{(1,1,-2)}, \underset{\boldv_3}{(1,1,1)} \right)
-        </me>.
+        B'=\left( \underset{\boldv_1}{(1,-1,0)}, \underset{\boldv_2}{(1,0,-1)}, \underset{\boldv_3}{(1,1,1)} \right)
+        </me>
+        of <m>\R^3</m>.
+      </p>
+      <p>
         Let <m>A'=[T]_B'</m>, and for all <m>1\leq i\leq 3</m> let <m>\boldc_i</m> be the <m>i</m>-th column of <m>A</m>. Using <xref ref="eq_matrixrep_formula"/> we compute
         <md>
           <mrow>\boldc_1 = [\proj{\boldv_1}{W}]_{B'}\amp =[\boldv_1]_{B'} \amp (\boldv_1\in W)</mrow>
@@ -482,7 +485,7 @@
         </men>.
         Formula <xref ref="eq_matrixreps_Aalt"/> indicates that we cannot use <m>A'</m> directly to compute <m>\proj{\boldx}{W}</m>. Rather, we must first compute the <m>B'</m>-coordinates of <m>\boldx</m> and then multiply by <m>A'</m>, at which point the <m>B'</m>-coordinates of <m>\proj{\boldx}{W}</m> are returned. In other words, <m>A'</m> describes the operation of <m>\operatorname{proj}_W</m> with respect to <m>B'</m>-coordinates of vectors in <m>\R^3</m>. As such, <m>A</m> may be more useful to us in terms of computing <m>\operatorname{proj}_W</m> directly. However, <m>A'</m> has the advantage of giving us a clear <em>conceptual</em> picture of projection. For example, we see directly that <m>A'</m> has nullity one and rank 2, and thus the same is true of
         <m>\operatorname{proj}_W</m>.
-        Furthermore, understanding that the columns of <m>A'</m> describe how <m>\operatorname{proj}_W</m> acts on the basis <m>B'</m>, we see easily that <m>\operatorname{proj}_W</m> acts as the identity on the 2-dimensional space spanned by the first two basis elements, and sends the subspace spanned by the third basis element to <m>\boldzero</m>. In other words, <m>A'</m> neatly encodes the conceptual picture of <m>\operatorname{proj}_W</m> as an operator that fixes the plane <m>W=\Span\{(1,-1,0),(1,1,-2)\}</m> and sends everything in <m>W^\perp=\Span\{(1,1,1)\}</m> to <m>\boldzero</m>.
+        Furthermore, understanding that the columns of <m>A'</m> describe how <m>\operatorname{proj}_W</m> acts on the basis <m>B'</m>, we see easily that <m>\operatorname{proj}_W</m> acts as the identity on the 2-dimensional space spanned by the first two basis elements, and sends the subspace spanned by the third basis element to <m>\boldzero</m>. In other words, <m>A'</m> neatly encodes the conceptual picture of <m>\operatorname{proj}_W</m> as an operator that fixes the plane <m>W=\Span\{(1,-1,0),(1,0,-1)\}</m> and sends everything in <m>W^\perp=\Span\{(1,1,1)\}</m> to <m>\boldzero</m>.
       </p>
     </statement>
   </example>

@@ -96,7 +96,7 @@
             <me>
               [\boldv_j]_{B'}
             </me>
-            for all <m>1\leq j\leq n</m>. Using formula <xref ref="eq_change_basis_matrix"/> from <xref ref="d_change_basis_matrix"/> this is precisely the <m>j</m>-th column of <m>\underset{B\rightarrow B'}{P}</m> for all <m>1\leq j\leq n</m>. We conclude that 
+            for all <m>1\leq j\leq n</m>. Using formula <xref ref="eq_change_basis_matrix"/> from <xref ref="d_change_of_basis"/> this is precisely the <m>j</m>-th column of <m>\underset{B\rightarrow B'}{P}</m> for all <m>1\leq j\leq n</m>. We conclude that 
             <me>
             [I_V]_B^{B'} = \underset{B\rightarrow B'}{P}
             </me>.
@@ -297,7 +297,7 @@
             <me>
               [\boldv_j]_{B'}
             </me>
-            for all <m>1\leq j\leq n</m>. Using formula <xref ref="eq_change_basis_matrix"/> from <xref ref="d_change_basis_matrix"/> this is precisely the <m>j</m>-th column of <m>\underset{B\rightarrow B'}{P}</m> for all <m>1\leq j\leq n</m>. We conclude that 
+            for all <m>1\leq j\leq n</m>. Using formula <xref ref="eq_change_basis_matrix"/> from <xref ref="d_change_of_basis"/> this is precisely the <m>j</m>-th column of <m>\underset{B\rightarrow B'}{P}</m> for all <m>1\leq j\leq n</m>. We conclude that 
             <me>
             [I_V]_B^{B'} = \underset{B\rightarrow B'}{P}
             </me>.
@@ -651,7 +651,7 @@
   <statement>
     <p>
       Consider <m>V=\R^3</m> together with the dot product. Let's derive (once again) a matrix formula for orthogonal projection  <m>\operatorname{proj}_W\colon \R^3\rightarrow \R^3</m>, where <m>W=\{(x,y,z)\colon x+y+z=0\}</m>. In other words we want to compute <m>A=[\operatorname{proj}_W]_B</m>, where <m>B=((1,0,0), (0,1,0), (0,0,1))</m> is the standard basis. We will do so <em>indirectly</em> by first computing <m>[\operatorname{proj}_W]_{B'}</m>
-      with respect to a more convenient basis: namely, <m>B'=((1,-1,0),(1,1,-2), (1,1,1))</m>. This is the same basis from <xref ref="eg_matrixreps_proj"/>, and was selected deliberateley so that the first two vectors form a basis of <m>W</m>, and the third vector spans the normal line to <m>W</m>. As in <xref ref="eg_matrixreps_proj"/> we then easily compute
+      with respect to a more convenient basis: namely, <m>B'=((1,-1,0),(1,0,-1), (1,1,1))</m>. This is the same basis from <xref ref="eg_matrixreps_proj"/>, and was selected deliberateley so that the first two vectors form a basis of <m>W</m>, and the third vector spans the normal line to <m>W</m>. As in <xref ref="eg_matrixreps_proj"/> we then easily compute
       <me>
         [\operatorname{proj}_W]_{B'}=\begin{bmatrix}
           1\amp 0\amp 0\\
@@ -662,10 +662,11 @@
       Now use <xref ref="eq_changebasis_transform_inverse"/> to compute
       <md>
         <mrow> A=[\operatorname{proj}_W]_{B}\amp = \underset{B'\rightarrow B}{P}[\operatorname{proj}_W]_{B'}\underset{B\rightarrow B'}{P} </mrow>
+        <mrow> \amp = \underset{B'\rightarrow B}{P}[\operatorname{proj}_W]_{B'}\left(\underset{B'\rightarrow B}{P}\right)^{-1}</mrow>
         <mrow> \amp= \begin{amatrix}[rrr]
         1\amp 1\amp 1\\
-        -1\amp 1\amp 1\\
-        0\amp -2\amp 1
+        -1\amp 0\amp 1\\
+        0\amp -1\amp 1
         \end{amatrix}
          \begin{bmatrix}
           1\amp 0\amp 0\\
@@ -673,9 +674,9 @@
           0\amp 0\amp 0
       \end{bmatrix}
       \begin{amatrix}[rrr]
-      \frac{1}{2}\amp -\frac{1}{2}\amp 0\\
-      \frac{1}{6}\amp \frac{1}{6}\amp -\frac{1}{3}\\
-      \frac{1}{3}\amp \frac{1}{3}\amp \frac{1}{3}
+      \frac{1}{3} \amp -\frac{2}{3} \amp \frac{1}{3} \\
+\frac{1}{3} \amp \frac{1}{3} \amp -\frac{2}{3} \\
+\frac{1}{3} \amp \frac{1}{3} \amp \frac{1}{3}
       \end{amatrix}
       </mrow>
       <mrow>  \amp = \frac{1}{3}\begin{amatrix}[rrr]

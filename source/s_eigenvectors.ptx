@@ -35,40 +35,44 @@
            <me>
            A=\frac{1}{5}\begin{amatrix}[rr]-3\amp 4\\ 4\amp 3 \end{amatrix}
            </me>.
-           It turns out that <m>T=T_A</m> has a simple geometric description, though you would not have guessed this from <m>A</m>. To reveal the geometry at play, we represent <m>T</m> with respect to the orthogonal basis <m>B'=(\boldv_1=(1,2), \boldv_2=(2,-1))</m>. Since
+           It turns out that <m>T=T_A</m> has a simple geometric description, though you would not have guessed this from the standard matrix <m>A</m>. To reveal the geometry at play, we represent <m>T</m> with respect to the nonstandard basis <m>B'=(\boldv_1=(1,2), \boldv_2=(2,-1))</m>. We compute 
             <md>
               <mrow>T((1,2)) \amp=A\colvec{1 \\ 2 }=\colvec{1 \\ 2}=1(1,2)+0(2,-1) </mrow>
               <mrow>T_A((2,-1)) \amp=A\colvec{2 \\ -1}=-(2,-1)=0(1,2)+(-1)(2,-1) </mrow>
-            </md>,
-            it follows that
+            </md>. 
+            It follows, using the formula <xref ref="eq_matrixrep_formula"/>, that 
             <me>
               [T]_{B'}=\begin{amatrix}[rr] 1\amp 0\\ 0\amp -1  \end{amatrix}
             </me>.
-            The alternative representation given by <m>A'=[T]_{B'}</m> reveals that <m>T</m> is none other than reflection through the line <m>\ell=\Span\{(1,2)\}</m>!  How? Given any vector <m>\boldv\in \R^2</m>, we can write
+            The alternative representation given by <m>A'=[T]_{B'}</m> nicely summarizes the action of <m>T</m>: it fixes the vector <m>\boldv_1=(1,2)</m> and maps the vector <m>\boldv_2=(2,-1)</m>, which is orthogonal to <m>(1,2)</m>, to <m>-(2,-1)</m>. We claim this implies that <m>T</m> is none other than reflection <m>r_\ell</m> through the line <m>\ell=\Span\{(1,2)\}</m>!  This follows from <xref ref="th_bases_transformations"/>. In more detail, from the geometry of the setup, it is easy to see that we have <m>r_\ell((1,2))=(1,2)</m> (reflection fixes the line <m>\ell</m>) and <m>r_\ell((2,-1))=-(2,-1)</m> (reflection ``flips" vectors perpendicular to <m>\ell</m>). Since <m>T</m> and <m>r_\ell</m> agree on the basis <m>B'</m>, we must have <m>T=r_\ell</m>. 
+          </p>
+          <p>
+            In even more detail, since <m>B'</m> is a basis, for any vector <m>\boldv\in \R^2</m> we can write
           <men xml:id="eq_reflection_decomposition">
             \boldv=c_1\boldv_1+c_2\boldv_2
+          </men>
+          for some <m>c_1,c_2\in \R</m>. It follows that 
+          <men xml:id="eq_reflection_formula_vec">
+            T(\boldv)=c_1T(\boldv_1)+c_2T(\boldv_2)=c_1\boldv_1-c_2\boldv_2
           </men>.
-          Note that since <m>\boldv_1</m> and <m>\boldv_2</m> are orthogonal, we have <m>c_1\boldv_1\in \ell</m> and <m>c_2\boldv_2\in \ell^\perp</m>: <ie />, <xref ref="eq_reflection_decomposition"/> is the orthogonal decomposition of <m>\boldv</m> with respect to <m>\ell</m>. Next, the representation <m>A'=[T]_{B'}</m> tells us that <m>T(\boldv_1)=\boldv_1</m> and <m>T(\boldv_2)=-\boldv_2</m>. It follows that <m>T(\boldv)=c_1\boldv_1-c_2\boldv_2</m>.
-          This is nothing more than a vector description of reflection through the line <m>\ell</m>, as <xref ref="fig_reflection_eigenvectors"/> makes clear.
+          Together, formulas <xref first="eq_reflection_decomposition" last="eq_reflection_formula_vec"/> give us a satisfying geometric understanding of our reflection operator <m>T=r_\ell</m>. 
+          Let <m>\ell^\perp=\Span\{(2,-1)\}</m>: this is the line perpendicular to <m>\ell</m> passing through the origin. Formula <xref ref="eq_reflection_decomposition"/> gives a decomposition of the vector <m>\boldv</m> in terms of its components along <m>\ell</m> and <m>\ell^\perp</m>. Formula <xref ref="eq_reflection_formula_vec"/> tells us what <m>T=r_\ell</m> does to this decomposition: namely, it leaves the component along <m>\ell</m> unchanged and ``flips" the component along <m>\ell^\perp</m>.
+          <figure xml:id="fig_reflection_eigenvectors">
+            <title>Reflection through <m>\ell=\Span\{(1,2)\}</m></title>
+            <image xml:id="im_reflection_eigenvectors" width="100%" source="images/im_reflection_eigenvectors"/>
+            <caption>Reflection <m>T=r_\ell</m>, <m>\ell=\Span\{(1,2)\}</m></caption>
+          </figure>
           </p>
       </statement>
     </example>
-
-        <figure xml:id="fig_reflection_eigenvectors">
-          <title>Reflection through <m>\ell=\Span\{(1,2)\}</m></title>
-          <image xml:id="im_reflection_eigenvectors" width="100%" source="images/im_reflection_eigenvectors"/>
-          <caption>Reflection through <m>\ell=\Span\{(1,2)\}</m></caption>
-        </figure>
     <p>
-      The success of our analysis in <xref ref="eg_reflection_eigenvectors"/> depended on finding the vectors <m>\boldv_1</m> and <m>\boldv_2</m> satisfying <m>T(\boldv_1)=\boldv_1</m> and <m>T(\boldv_2)=(-1)\boldv_2</m>. These are examples of eigenvectors, a concept we now officially define. For reasons that will become clear below, it is convenient to give separate definitions for linear transformations and matrices.
+      The success of our analysis in <xref ref="eg_reflection_eigenvectors"/> depended on finding the vectors <m>\boldv_1</m> and <m>\boldv_2</m> satisfying <m>T(\boldv_1)=\boldv_1</m> and <m>T(\boldv_2)=(-1)\boldv_2</m>, as they provided a basis on which the action of <m>T</m> is particularly simple. As we make official in <xref ref="d_eigenvectors"/> the vectors <m>\boldv_1, \boldv_2</m> are called <em>eigenvectors</em> of <m>T</m>. 
     </p>
     <definition xml:id="d_eigenvectors">
       <idx><h>eigenvector</h></idx>
       <idx><h>eigenvalue</h></idx>
       <title>Eigenvectors and eigenvalues</title>
       <statement>
-        <case>
-         <title>Eigenvectors of linear transformations</title>
         <p>
           Let <m>T\colon V\rightarrow V</m> be a linear transformation.
           A <em>nonzero</em> vector <m>\boldv\in V</m> satisfying
@@ -76,18 +80,16 @@
             T(\boldv)=\lambda\boldv
           </men> for some <m>\lambda\in\R</m> is called an <term>eigenvector</term> of <m>T</m> with <term>eigenvalue</term> <m>\lambda</m>.
         </p>
-        </case>
-        <case>
-         <title>Eigenvectors of matrices</title>
         <p>
-        Let <m>A</m> be an <m>n\times n</m> matrix. A nonzero <m>\boldx\in \R^n</m> satisfying
+        Similarly, given a square <m>n\times n</m> matrix <m>A</m>,  a nonzero <m>\boldx\in \R^n</m> satisfying
         <men xml:id="eq_eigenvector_matrix_def">
           A\boldx=\lambda\boldx
         </men>
-        for some <m>\lambda\in \R</m> is called an <term>eigenvector</term> of <m>A</m> with <term>eigenvalue</term> <m>\lambda</m>.
+        for some <m>\lambda\in \R</m> is called an <term>eigenvector</term> of <m>A</m> with <term>eigenvalue</term> <m>\lambda</m>. In other words, an eigenvector (resp., eigenvalue) of <m>A</m> is just an eigenvector (resp., eigenvalue) of the matrix transformation <m>T_A\colon \R^n\rightarrow \R^n</m>.
+      </p>
+        <p>
+        In both cases (linear transformation or matrix) we call an eigenvector with eigenvalue <m>\lambda</m> a <term><m>\lambda</m>-eigenvector</term>.
         </p>
-        </case>
-        In both cases we will call an eigenvector with eigenvalue <m>\lambda</m> a <term><m>\lambda</m>-eigenvector</term> for short.
       </statement>
     </definition>
       <remark xml:id="rm_eigenvector_lambda">
@@ -356,7 +358,7 @@
       <me>
         W_\lambda=\NS (\lambda I -A)
       </me>.
-      Similarly, given a finite-dimensional vector space <m>V</m>, a linear transformation <m>T\colon V\rightarrow V</m>, and <m>\lambda\in \R</m>, the <term><m>\lambda</m>-eigenspace</term> of <m>T</m>
+      Similarly, given a linear transformation <m>T\colon V\rightarrow V</m> and <m>\lambda\in \R</m>, the <term><m>\lambda</m>-eigenspace</term> of <m>T</m>
       is the subspace <m>W\subseteq V</m> defined as
       <me>
         W_\lambda=\NS(\lambda \id_V-T)
