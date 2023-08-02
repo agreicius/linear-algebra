@@ -12,33 +12,7 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para logical">
-<div class="para">Fix vectors <span class="process-math">\(\boldv\)</span> and <span class="process-math">\(\boldw\text{.}\)</span> For any <span class="process-math">\(t\in\R\)</span> we have by positivity</div>
-<div class="displaymath process-math">
-\begin{equation*}
-0\leq \langle t\boldv-\boldw,t\boldv-\boldw\rangle=\langle\boldv,\boldv\rangle t^2-2\langle\boldv,\boldw\rangle t+\langle\boldw,\boldw\rangle=at^2-2bt+c\text{,}
-\end{equation*}
-</div>
-<div class="para">where</div>
-<div class="displaymath process-math">
-\begin{equation}
-a=\langle\boldv,\boldv\rangle, \ b=\langle\boldv,\boldw\rangle, \   c=\langle\boldw,\boldw\rangle=\norm{w}^2\text{.}\tag{5.1.1}
-\end{equation}
-</div>
-<div class="para">Since <span class="process-math">\(at^2-2b\,t+c\geq 0\)</span> for all <span class="process-math">\(t\in \R\)</span> the quadratic polynomial <span class="process-math">\(p(t)=at^2-2b\,t+c\)</span> has <em class="emphasis">at most</em> one root. Using the quadratic formula we conclude that we must have <span class="process-math">\(4b^2-4ac\leq 0\text{,}\)</span> since otherwise <span class="process-math">\(p(t)\)</span> would have two distinct roots. It follows that</div>
-<div class="displaymath process-math">
-\begin{equation*}
-4\langle \boldv, \boldw\rangle^2-4\norm{\boldv}^2\norm{\boldw}^2\leq 0\text{,}
-\end{equation*}
-</div>
-<div class="para">or equivalently</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\langle\boldv,\boldw\rangle^2\leq \norm{\boldv}^2\norm{\boldw}^2\text{.}
-\end{equation*}
-</div>
-<div class="para">Taking square-roots yields the desired inequality.</div>
-</div>
+<div class="para">The famous <em class="emphasis">Cauchy-Schwarz inequality</em> has a knack of cropping up all over the world of science: from properties of covariance in statistics, to the Heisenberg uncertainty principle of quantum mechanics. More directly pertinent to our discussion, the Cauchy-Schwarz inequality implies the triangle inequalities (<a href="" class="xref" data-knowl="./knowl/th_triangle_inequalities.html" title="Theorem 5.1.24: Triangle Inequalities">5.1.24</a>) and ensures that our notion of the angle between two nonzero vectors (<a href="" class="xref" data-knowl="./knowl/d_angle.html" title="Definition 5.1.25: Angle between vectors">Definition 5.1.25</a>) is well-defined.</div>
 <span class="incontext"><a href="s_innerproducts.html#p-3615" class="internal">in-context</a></span>
 </body>
 </html>

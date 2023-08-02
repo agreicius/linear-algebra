@@ -11,21 +11,21 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h5 class="heading"><span class="type">Paragraph</span></h5>
+<h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">Suppose we wish to find a line <span class="process-math">\(\ell\colon y=mx+b\)</span> that best fits (in the least-square sense) the following data points: <span class="process-math">\(P_1=(-3,1), P_2=(1,2), P_3=(2,3)\text{.}\)</span> Following the discussion above, we seek a solution <span class="process-math">\(\boldx=(m,b)\)</span> to the matrix equation <span class="process-math">\(A\boldx=\boldy\text{,}\)</span> where</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_ortho_proj_formula.html">
+<div class="para">In statistics we often wish to approximate a scatter plot of points <span class="process-math">\(P_i=(X_i, Y_i)\text{,}\)</span> <span class="process-math">\(1\leq i\leq m\text{,}\)</span> with a line <span class="process-math">\(\ell\colon y=mx+b\)</span> that “best fits” the data. “Finding” this line amounts to finding the appropriate slope <span class="process-math">\(m\)</span> and <span class="process-math">\(y\)</span>-intercept <span class="process-math">\(b\text{:}\)</span> i.e., in this setup, the points <span class="process-math">\(P_i=(X_i, Y_i)\)</span> are given, and <span class="process-math">\(m\)</span> and <span class="process-math">\(b\)</span> are the unknowns we wish to find. For the line to perfectly fit the data, we would want</div>
+<div class="displaymath process-math">
 \begin{equation*}
-\boldx=\begin{bmatrix}m \\ b \end{bmatrix}, A=\begin{amatrix}[rr]-3\amp 1\\ 1\amp 1\\ 2\amp 1 \end{amatrix}  , \boldy=\begin{bmatrix}1\\ 2\\ 3 \end{bmatrix}\text{.}
+Y_i=mX_i+b \text{ for all } 1\leq i\leq m\text{.}
 \end{equation*}
 </div>
-<div class="para">Using Gaussian elimination, we see easily that this equation has no solution: equivalently, <span class="process-math">\(\boldy\notin W=\CS A\text{.}\)</span> Accordingly, we compute <span class="process-math">\(\hat{\boldy}=\proj{\boldy}{W}\)</span> and find a solution to <span class="process-math">\(A\hat{\boldx}=\hat{\boldy}\text{.}\)</span> Conveniently, the set <span class="process-math">\(B=\{(-3,2,1), (1,1,1)\}\)</span> is already an <em class="emphasis">orthogonal</em> basis of <span class="process-math">\(W=\CS A\text{,}\)</span> allowing us to use <a href="" class="xref" data-knowl="./knowl/eq_ortho_proj_formula.html" title="Equation 5.3.2">(5.3.2)</a>:</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_ortho_proj_formula.html">
+<div class="para">In other words <span class="process-math">\((m,b)\)</span> would be a solution to the matrix equation <span class="process-math">\(A\boldx=\boldy\text{,}\)</span> where</div>
+<div class="displaymath process-math">
 \begin{equation*}
-\hat{\boldy}=\frac{\boldy\cdot (-3,1,2)}{(-3,2,1)\cdot (-3,1,2)}(-3,1,2)+\frac{\boldy\cdot(1,1,1)}{(1,1,1)\cdot (1,1,1)}(1,1,1)=\frac{1}{14}(13, 33, 38)\text{.}
+\boldx=\begin{bmatrix}m \\ b\end{bmatrix},A=\begin{bmatrix} X_1\amp 1\\ X_2\amp 1\\ \vdots \amp \vdots \\ X_m\amp 1  \end{bmatrix},  \boldy=\begin{bmatrix} Y_1\\ Y_2\\ \vdots \\ Y_m\end{bmatrix}\text{.}
 \end{equation*}
 </div>
-<div class="para">Lastly, solving <span class="process-math">\(A\hat{\boldx}=\hat{\boldy}\)</span> yields <span class="process-math">\((m,b)=\hat{\boldx}=(5/14, 2)\text{,}\)</span> and we conclude the line <span class="process-math">\(\ell\colon y=(5/14)x+2\)</span> is the one that best fits the data in the least-squares sense.</div>
+<div class="para">Of course in most situations the provided points do not lie on a line, and thus there is no solution <span class="process-math">\(\boldx\)</span> to the given matrix equation <span class="process-math">\(A\boldx=\boldy\text{.}\)</span> When this is the case we can use the theory of orthogonal projection to find what is called a <em class="emphasis">least-squares</em> solution, which we now describe in detail.</div>
 </div>
 <span class="incontext"><a href="s_orthogonal_projection.html#p-3888" class="internal">in-context</a></span>
 </body>

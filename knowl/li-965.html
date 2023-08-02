@@ -15,15 +15,14 @@
 <span class="type">Item</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span>
 </h5>
 <div class="para logical">
-<div class="para">Let <span class="process-math">\(A=\underset{B\rightarrow B'}{P}\)</span> and <span class="process-math">\(B=\underset{B'\rightarrow B"}{P}\text{.}\)</span> For any <span class="process-math">\(\boldv\in V\)</span> we have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_change_of_basis_coordinates.html">
+<div class="para">This follows from (1) and <a href="" class="xref" data-knowl="./knowl/th_matrixrep.html" title="Theorem 4.2.6: Defining property of matrix representation">Theorem 4.2.6</a>:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_matrixrep.html ./knowl/th_matrixrep.html">
 \begin{align*}
-BA[\boldv]_B \amp = \underset{B'\rightarrow B}{P}\, \underset{B\rightarrow B'}{P}[\boldv]\\
-\amp =\underset{B'\rightarrow B}{P}[\boldv]_{B'} \\
-\amp = [\boldv]_{B}\text{.}
+\underset{B\rightarrow B'}{P}[\boldv]_B \amp = [\id_V]_{B}^{B'}[\boldv]_B \\
+\amp = [\id_V(\boldv)]_{B'} \amp (\knowl{./knowl/th_matrixrep.html}{\text{Theorem 4.2.6}})\\
+\amp =[\boldv]_{B'} \text{.}
 \end{align*}
 </div>
-<div class="para">It follows from (3) of <a href="" class="xref" data-knowl="./knowl/th_change_of_basis_coordinates.html" title="Theorem 4.3.2: Change of basis for coordinate vectors">Theorem 4.3.2</a> that <span class="process-math">\(BA=\underset{B\rightarrow B}{P}\text{.}\)</span> Since <span class="process-math">\(\underset{B\rightarrow B}{P}=I\)</span> by (1), we conclude that <span class="process-math">\(BA=I\text{,}\)</span> and hence <span class="process-math">\(B=A^{-1}\text{,}\)</span> as desired.</div>
 </div></article><span class="incontext"><a href="s_changeofbasis.html#li-965" class="internal">in-context</a></span>
 </body>
 </html>

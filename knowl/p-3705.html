@@ -12,7 +12,18 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<div class="para">A simple computation shows <span class="process-math">\(\boldx_i\cdot \boldx_j=0\)</span> for all <span class="process-math">\(1\leq i\ne j\leq 3\text{,}\)</span> showing that <span class="process-math">\(S\)</span> is orthogonal. <a href="" class="xref" data-knowl="./knowl/th_orthogonal.html" title="Theorem 5.2.2: Orthogonal implies linearly independent">Theorem 5.2.2</a> implies <span class="process-math">\(S\)</span> is linearly independent. Since <span class="process-math">\(\val{S}=\dim \R^3=3\text{,}\)</span> it follows from <a href="" class="xref" data-knowl="./knowl/cor_street_smarts.html" title="Corollary 3.7.12: Street smarts">Corollary 3.7.12</a> that <span class="process-math">\(S\)</span> is a basis.</div>
+<div class="para logical">
+<div class="para">Given any distinct elements <span class="process-math">\(\boldv_1, \boldv_2, \dots, \boldv_r\in S\text{,}\)</span> we have</div>
+<div class="displaymath process-math">
+\begin{align*}
+c_1\boldv_1 +c_2\boldv_2+\cdots +c_r\boldv_r=\boldzero\amp \Rightarrow\amp  \langle c_1\boldv_1 +c_2\boldv_2 +\cdots +c_r\boldv_r,\boldv_i\rangle=\langle\boldzero,\boldv_i\rangle\\
+\amp \Rightarrow\amp  c_1\langle\boldv_1,\boldv_i\rangle +c_2\langle \boldv_2,\boldv_i\rangle +\cdots +c_r\langle\boldv_r,\boldv_i\rangle=0\\
+\amp \Rightarrow\amp  c_i\langle \boldv_i,\boldv_i\rangle=0 \ \text{ (since \(\langle\boldv_j,\boldv_i\rangle= 0\) for \(j\ne i\)) }\\
+\amp \Rightarrow\amp  c_i=0  \text{ (since \(\langle\boldv_i,\boldv_i\rangle\ne 0\)) }\text{.}
+\end{align*}
+</div>
+<div class="para">This proves that <span class="process-math">\(S\)</span> is linearly independent.</div>
+</div>
 <span class="incontext"><a href="s_orthogonality.html#p-3705" class="internal">in-context</a></span>
 </body>
 </html>

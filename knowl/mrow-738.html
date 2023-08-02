@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" dir="ltr">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
 <!--*                                          *-->
@@ -11,17 +11,17 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_coordinates.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_det_mult.html">
 \begin{align*}
-[T]_{B}^{B'}[\boldv] \amp= [T]_{B}^{B'} \begin{bmatrix}
-c_1\\ c_2\\ \vdots \\ v_n
-\end{bmatrix} \\
-\amp=c_1[T(\boldv_1)]_{B'}+c_n[T(\boldv_n)]_{B'}+\cdots +c_n[T(\boldv_n)]_{B'} \amp (\text{column method})\\
-\amp = [c_1T(\boldv_1)+c_2T(\boldv_2)+\cdots +c_nT(\boldv_n)]_{B'} \amp (\knowl{./knowl/th_coordinates.html}{\text{5.1.12}})\\
-\amp=[T(c_1\boldv_1+c_2\boldv_2+\cdots +c_n\boldv_n)]_{B'} \amp (T \text{ is linear})\\
-\amp =[T(\boldv)]_{B'}
+p_{A'}(t)\amp =\det(tI-A')\\
+\amp =\det(tI-P^{-1}AP) \amp (A'=P^{-1}AP)\\
+\amp = \det(P^{-1}tIP-P^{-1}AP) \amp (\text{algebra}) \\
+\amp = \det(P^{-1}(tI-A)P) \amp (\text{left/right dist.}) \\
+\amp = \det(P^{-1})\det(tI-A)\det(P) \amp (\knowl{./knowl/th_det_mult.html}{\text{2.5.26}}) \\
+\amp = (\det(P))^{-1}\det(P)\det(tI-A)  \\
+\amp = \det(tI-A)=p_A(t)
 \end{align*}
 </div>
-<span class="incontext"><a href="s_matrixreps.html#md-235" class="internal">in-context</a></span>
+<span class="incontext"><a href="s_diagonalization.html#md-239" class="internal">in-context</a></span>
 </body>
 </html>

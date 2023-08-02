@@ -790,22 +790,22 @@ a_{m1} \amp  a_{m2} \amp  \cdots \amp  a_{mn}\amp b_{m}
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="s_changeofbasis"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">4.3</span> <span class="title">Change of basis</span>
 </h2>
-<section class="introduction" id="introduction-69"><div class="para logical" id="p-3081">
+<section class="introduction" id="introduction-69"><div class="para logical" id="p-3082">
 <div class="para">Coordinate vectors and matrix representations work in tandem to model vectors in an abstract vector space <span class="process-math">\(V\)</span> as column vectors in <span class="process-math">\(\R^n\text{,}\)</span> and linear transformations <span class="process-math">\(T\colon V\rightarrow W\)</span> as <span class="process-math">\(m\times n\)</span> matrices. In both cases the model depends on our choice of basis. In this section we investigate how different basis choices affect these various models. Specifically, we consider the two questions below.</div>
 <ol class="decimal">
-<li id="li-945"><div class="para" id="p-3082">Given <span class="process-math">\(V\)</span> and two ordered bases <span class="process-math">\(B\)</span> and <span class="process-math">\(B'\text{,}\)</span> what is the algebraic relation between <span class="process-math">\([\boldv]_B\)</span> and <span class="process-math">\([\boldv]_{B'}\text{?}\)</span>
+<li id="li-945"><div class="para" id="p-3083">Given <span class="process-math">\(V\)</span> and two ordered bases <span class="process-math">\(B\)</span> and <span class="process-math">\(B'\text{,}\)</span> what is the algebraic relation between <span class="process-math">\([\boldv]_B\)</span> and <span class="process-math">\([\boldv]_{B'}\text{?}\)</span>
 </div></li>
-<li id="li-946"><div class="para" id="p-3083">Given <span class="process-math">\(T\colon V\rightarrow V\)</span> and two ordered bases <span class="process-math">\(B\)</span> and <span class="process-math">\(B'\text{,}\)</span> what is the relation between <span class="process-math">\([T]_{B}\)</span> and <span class="process-math">\([T]_{B'}\text{?}\)</span>
+<li id="li-946"><div class="para" id="p-3084">Given <span class="process-math">\(T\colon V\rightarrow V\)</span> and two ordered bases <span class="process-math">\(B\)</span> and <span class="process-math">\(B'\text{,}\)</span> what is the relation between <span class="process-math">\([T]_{B}\)</span> and <span class="process-math">\([T]_{B'}\text{?}\)</span>
 </div></li>
 </ol>
-</div> <div class="para" id="p-3084">We will tackle each question in turn. Both answers rely on something called a <em class="emphasis">change of basis matrix</em> <span class="process-math">\(\underset{B\rightarrow B'}{P}\text{.}\)</span>
+</div> <div class="para" id="p-3085">We will tackle each question in turn. Both answers rely on something called a <em class="emphasis">change of basis matrix</em> <span class="process-math">\(\underset{B\rightarrow B'}{P}\text{.}\)</span>
 </div></section><section class="subsection" id="ss_change_of_basis"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">4.3.1</span> <span class="title">Change of basis matrix</span>
 </h3>
-<div class="para" id="p-3085">We define change of basis matrices via a column-by-column formula and motivate the definition retroactively with <a href="" class="xref" data-knowl="./knowl/th_change_of_basis_coordinates.html" title="Theorem 4.3.2: Change of basis for coordinate vectors">Theorem 4.3.2</a>.</div>
+<div class="para" id="p-3086">We define change of basis matrices via a column-by-column formula and motivate the definition retroactively with <a href="" class="xref" data-knowl="./knowl/th_change_of_basis_coordinates.html" title="Theorem 4.3.2: Change of basis for coordinate vectors">Theorem 4.3.2</a>.</div>
 <article class="definition definition-like" id="d_change_of_basis"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.3.1</span><span class="period">.</span><span class="space"> </span><span class="title">Change of basis matrix.</span>
-</h4>  <div class="para logical" id="p-3086">
+</h4>  <div class="para logical" id="p-3087">
 <div class="para">Let <span class="process-math">\(B=(\boldv_1, \boldv_2, \dots, \boldv_n)\)</span> and <span class="process-math">\(B'\)</span> be two ordered bases for the vector space <span class="process-math">\(V\text{.}\)</span> The <dfn class="terminology">change of basis from <span class="process-math">\(B\)</span> to <span class="process-math">\(B'\)</span></dfn> is the <span class="process-math">\(n\times n\)</span> matrix <span class="process-math">\(\underset{B\rightarrow B'}{P}\)</span> defined as</div>
 <div class="displaymath process-math" id="eq_change_basis_matrix">
 \begin{equation}
@@ -822,11 +822,11 @@ a_{m1} \amp  a_{m2} \amp  \cdots \amp  a_{mn}\amp b_{m}
 </div></article><article class="theorem theorem-like" id="th_change_of_basis_coordinates"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">4.3.2</span><span class="period">.</span><span class="space"> </span><span class="title">Change of basis for coordinate vectors.</span>
 </h4>
-<div class="para logical" id="p-3087">
+<div class="para logical" id="p-3088">
 <div class="para">Let <span class="process-math">\(B\)</span> and <span class="process-math">\(B'\)</span> be two ordered bases of the <span class="process-math">\(n\)</span>-dimensional vector space <span class="process-math">\(V\text{.}\)</span>
 </div>
 <ol class="decimal">
-<li id="li-947"><div class="para logical" id="p-3088">
+<li id="li-947"><div class="para logical" id="p-3089">
 <div class="para">Recall that <span class="process-math">\(\id_V\colon V\rightarrow V\)</span> is the identity transformation (<a href="" class="xref" data-knowl="./knowl/d_transform_zero_identity.html" title="Definition 3.2.3: Zero and identity transformation">Definition 3.2.3</a>), defined as <span class="process-math">\(\id_V(\boldv)=\boldv\)</span> for all <span class="process-math">\(\boldv\in V\text{.}\)</span> We have</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/d_transform_zero_identity.html">
 \begin{equation*}
@@ -834,7 +834,7 @@ a_{m1} \amp  a_{m2} \amp  \cdots \amp  a_{mn}\amp b_{m}
 \end{equation*}
 </div>
 </div></li>
-<li id="li-948"><div class="para logical" id="p-3089">
+<li id="li-948"><div class="para logical" id="p-3090">
 <div class="para">For all <span class="process-math">\(\boldv\in V\)</span> we have</div>
 <div class="displaymath process-math" id="eq_changebasis_matrix_prop">
 \begin{equation}
@@ -844,25 +844,25 @@ a_{m1} \amp  a_{m2} \amp  \cdots \amp  a_{mn}\amp b_{m}
 <div class="para">In other words, to convert the <span class="process-math">\(B\)</span>-coordinates of a vector <span class="process-math">\(\boldv\in V\)</span> to <span class="process-math">\(B'\)</span>-coordinates, simply multiply on the left by the matrix  <span class="process-math">\(\underset{B\rightarrow B'}{P}\text{.}\)</span>
 </div>
 </div></li>
-<li id="li-949"><div class="para" id="p-3090">Property <a href="" class="xref" data-knowl="./knowl/eq_changebasis_matrix_prop.html" title="Equation 4.3.2">(4.3.2)</a> defines <span class="process-math">\(\underset{B\rightarrow B'}{P}\)</span> uniquely: i.e., if <span class="process-math">\(A\)</span> satisfies <span class="process-math">\(A[\boldv]_B=[\boldv]_{B'}\)</span> for all <span class="process-math">\(\boldv\in \R^n\text{,}\)</span> then <span class="process-math">\(A=\underset{B\rightarrow B'}{P}\text{.}\)</span>
+<li id="li-949"><div class="para" id="p-3091">Property <a href="" class="xref" data-knowl="./knowl/eq_changebasis_matrix_prop.html" title="Equation 4.3.2">(4.3.2)</a> defines <span class="process-math">\(\underset{B\rightarrow B'}{P}\)</span> uniquely: i.e., if <span class="process-math">\(A\)</span> satisfies <span class="process-math">\(A[\boldv]_B=[\boldv]_{B'}\)</span> for all <span class="process-math">\(\boldv\in \R^n\text{,}\)</span> then <span class="process-math">\(A=\underset{B\rightarrow B'}{P}\text{.}\)</span>
 </div></li>
 </ol>
 </div></article><article class="hiddenproof" id="proof-80"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-80"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-80"><article class="hiddenproof"><ol class="decimal">
-<li id="li-950"><div class="para logical" id="p-3091">
-<div class="para">Let <span class="process-math">\(I_V\colon V\rightarrow V\)</span> be the identity transformation: i.e., <span class="process-math">\(I_V(\boldv)=\boldv\)</span> for all <span class="process-math">\(\boldv\in V\text{.}\)</span> By <a href="" class="xref" data-knowl="./knowl/th_matrixrep.html" title="Theorem 4.2.6: Defining property of matrix representation">Theorem 4.2.6</a> the matrix <span class="process-math">\([I_V]_B^{B'}\)</span> is the unique matrix satisfying</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_matrixrep.html">
+<li id="li-950"><div class="para logical" id="p-3092">
+<div class="para">Let <span class="process-math">\(B=(\boldv_1, \boldv_2,\dots, \boldv_n)\text{.}\)</span> From formula <a href="" class="xref" data-knowl="./knowl/eq_matrixrep_formula.html" title="Equation 4.2.1">(4.2.1)</a> applied to <span class="process-math">\(I_v\text{,}\)</span> we see that the <span class="process-math">\(j\)</span>-th column of <span class="process-math">\([I_V]_B^{B'}\)</span> is</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_matrixrep_formula.html ./knowl/eq_change_basis_matrix.html ./knowl/d_change_of_basis.html">
 \begin{equation*}
-[I_V]_B^{B'}[\boldv]_B=[I_V(\boldv)]_{B'}=[\boldv]_{B'}\text{.}
+[\boldv_j]_{B'}
 \end{equation*}
 </div>
-<div class="para">Comparing the formulas for <span class="process-math">\([I_V]_{B}^{B'}\)</span> and <span class="process-math">\(\)</span> we see directly that</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_matrixrep.html">
+<div class="para">for all <span class="process-math">\(1\leq j\leq n\text{.}\)</span> Using formula <a href="" class="xref" data-knowl="./knowl/eq_change_basis_matrix.html" title="Equation 4.3.1">(4.3.1)</a> from <a href="" class="xref" data-knowl="./knowl/d_change_of_basis.html" title="Definition 4.3.1: Change of basis matrix">Definition 4.3.1</a> this is precisely the <span class="process-math">\(j\)</span>-th column of <span class="process-math">\(\underset{B\rightarrow B'}{P}\)</span> for all <span class="process-math">\(1\leq j\leq n\text{.}\)</span> We conclude that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_matrixrep_formula.html ./knowl/eq_change_basis_matrix.html ./knowl/d_change_of_basis.html">
 \begin{equation*}
 [I_V]_B^{B'} = \underset{B\rightarrow B'}{P}\text{.}
 \end{equation*}
 </div>
 </div></li>
-<li id="li-951"><div class="para logical" id="p-3092">
+<li id="li-951"><div class="para logical" id="p-3093">
 <div class="para">This follows from (1) and <a href="" class="xref" data-knowl="./knowl/th_matrixrep.html" title="Theorem 4.2.6: Defining property of matrix representation">Theorem 4.2.6</a>:</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/th_matrixrep.html ./knowl/th_matrixrep.html" id="md-204">
 \begin{align*}
@@ -872,24 +872,24 @@ a_{m1} \amp  a_{m2} \amp  \cdots \amp  a_{mn}\amp b_{m}
 \end{align*}
 </div>
 </div></li>
-<li id="li-952"><div class="para" id="p-3093">By (2) of <a href="" class="xref" data-knowl="./knowl/th_matrixrep.html" title="Theorem 4.2.6: Defining property of matrix representation">Theorem 4.2.6</a> (the uniqueness claim), if <span class="process-math">\(A\)</span> satisfies <span class="process-math">\(A[\boldv]_B=[\boldv]_{B'}\)</span> for all <span class="process-math">\(\boldv\in \R^n\text{,}\)</span> then <span class="process-math">\(A=[\id_V]_{B}^{B'}\text{.}\)</span> Since <span class="process-math">\([\id_V]_{B}^{B'}=\underset{B\rightarrow B'}{P}\text{,}\)</span> we conclude <span class="process-math">\(A=\underset{B\rightarrow B'}{P}\text{.}\)</span>
+<li id="li-952"><div class="para" id="p-3094">By (2) of <a href="" class="xref" data-knowl="./knowl/th_matrixrep.html" title="Theorem 4.2.6: Defining property of matrix representation">Theorem 4.2.6</a> (the uniqueness claim), if <span class="process-math">\(A\)</span> satisfies <span class="process-math">\(A[\boldv]_B=[\boldv]_{B'}\)</span> for all <span class="process-math">\(\boldv\in \R^n\text{,}\)</span> then <span class="process-math">\(A=[\id_V]_{B}^{B'}\text{.}\)</span> Since <span class="process-math">\([\id_V]_{B}^{B'}=\underset{B\rightarrow B'}{P}\text{,}\)</span> we conclude <span class="process-math">\(A=\underset{B\rightarrow B'}{P}\text{.}\)</span>
 </div></li>
 </ol></article></div>
 <article class="example example-like" id="example-97"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.3</span><span class="period">.</span>
 </h4>
-<div class="para logical" id="p-3094">
+<div class="para logical" id="p-3095">
 <div class="para">Let <span class="process-math">\(V=\R^2\text{,}\)</span> <span class="process-math">\(B=(\boldv_1=(1,1),\boldv_2=(1,-1))\text{,}\)</span> <span class="process-math">\(B'=(\boldw_1=(1,2), \boldw_2=(2,-1))\text{.}\)</span>
 </div>
 <ol class="decimal">
-<li id="li-953"><div class="para" id="p-3095">Compute <span class="process-math">\(\underset{B\rightarrow B'}{P}\text{.}\)</span>
+<li id="li-953"><div class="para" id="p-3096">Compute <span class="process-math">\(\underset{B\rightarrow B'}{P}\text{.}\)</span>
 </div></li>
-<li id="li-954"><div class="para" id="p-3096">Let <span class="process-math">\(\boldx=(4,-2)\text{.}\)</span> Compute <span class="process-math">\([\boldx]_{B'}\)</span> using the change of basis formula <a href="" class="xref" data-knowl="./knowl/eq_changebasis_matrix_prop.html" title="Equation 4.3.2">(4.3.2)</a>.</div></li>
+<li id="li-954"><div class="para" id="p-3097">Let <span class="process-math">\(\boldx=(4,-2)\text{.}\)</span> Compute <span class="process-math">\([\boldx]_{B'}\)</span> using the change of basis formula <a href="" class="xref" data-knowl="./knowl/eq_changebasis_matrix_prop.html" title="Equation 4.3.2">(4.3.2)</a>.</div></li>
 </ol>
 </div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-88" id="solution-88"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-88"><div class="solution solution-like"><div class="para logical" id="p-3097"><ol class="decimal">
-<li id="li-955"><div class="para logical" id="p-3098">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-88" id="solution-88"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-88"><div class="solution solution-like"><div class="para logical" id="p-3098"><ol class="decimal">
+<li id="li-955"><div class="para logical" id="p-3099">
 <div class="para">Using <a href="" class="xref" data-knowl="./knowl/d_change_of_basis.html" title="Definition 4.3.1: Change of basis matrix">Definition 4.3.1</a>, we have</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/d_change_of_basis.html ./knowl/proc_coor_vec.html" id="md-205">
 \begin{align*}
@@ -905,7 +905,7 @@ a_{m1} \amp  a_{m2} \amp  \cdots \amp  a_{mn}\amp b_{m}
 </div>
 <div class="para">and solving for <span class="process-math">\(c_1,c_2\)</span> using Gaussian elimination.</div>
 </div></li>
-<li id="li-956"><div class="para logical" id="p-3099">
+<li id="li-956"><div class="para logical" id="p-3100">
 <div class="para">The usual application of <a href="" class="xref" data-knowl="./knowl/proc_coor_vec.html" title="Procedure 4.1.4: Computing coordinate vectors">Procedure 4.1.4</a> produces the coordinate vector <span class="process-math">\([\boldx]_{B}=(1, 3)\text{.}\)</span> We leave the details to you. To compute <span class="process-math">\([\boldv]_{B'}\text{,}\)</span> we use the change of basis formula <a href="" class="xref" data-knowl="./knowl/eq_changebasis_matrix_prop.html" title="Equation 4.3.2">(4.3.2)</a>:</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/proc_coor_vec.html ./knowl/eq_changebasis_matrix_prop.html" id="md-207">
 \begin{align*}
@@ -925,18 +925,18 @@ a_{m1} \amp  a_{m2} \amp  \cdots \amp  a_{mn}\amp b_{m}
 </div></article><article class="example example-like" id="example-98"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.4</span><span class="period">.</span>
 </h4>
-<div class="para logical" id="p-3100">
+<div class="para logical" id="p-3101">
 <div class="para">Let <span class="process-math">\(V=P_2\text{,}\)</span> <span class="process-math">\(B=(x^2,x,1)\text{,}\)</span> <span class="process-math">\(B'=(p_1(x)=(x-2)^2, p_2(x)=x-2, p_3(x)=1)\text{.}\)</span>
 </div>
 <ol class="decimal">
-<li id="li-957"><div class="para" id="p-3101">Compute <span class="process-math">\(\underset{B\rightarrow B'}{P}\text{.}\)</span>
+<li id="li-957"><div class="para" id="p-3102">Compute <span class="process-math">\(\underset{B\rightarrow B'}{P}\text{.}\)</span>
 </div></li>
-<li id="li-958"><div class="para" id="p-3102">Compute <span class="process-math">\([x^2+x+1]_{B'}\)</span> using <a href="" class="xref" data-knowl="./knowl/eq_changebasis_matrix_prop.html" title="Equation 4.3.2">(4.3.2)</a>.</div></li>
+<li id="li-958"><div class="para" id="p-3103">Compute <span class="process-math">\([x^2+x+1]_{B'}\)</span> using <a href="" class="xref" data-knowl="./knowl/eq_changebasis_matrix_prop.html" title="Equation 4.3.2">(4.3.2)</a>.</div></li>
 </ol>
 </div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-89" id="solution-89"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-89"><div class="solution solution-like"><div class="para logical" id="p-3103"><ol class="decimal">
-<li id="li-959"><div class="para logical" id="p-3104">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-89" id="solution-89"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-89"><div class="solution solution-like"><div class="para logical" id="p-3104"><ol class="decimal">
+<li id="li-959"><div class="para logical" id="p-3105">
 <div class="para">We have</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/rm_change_of_basis_taylors.html" id="md-208">
 \begin{align*}
@@ -954,7 +954,7 @@ a_{m1} \amp  a_{m2} \amp  \cdots \amp  a_{mn}\amp b_{m}
 </div>
 <div class="para">The first two coordinate vector computations are nontrivial; you can verify for yourself that <span class="process-math">\(x^2=1(x-2)^2+4(x-2)+4\)</span> and  <span class="process-math">\(x=0(x-2)^2+1(x-2)+2\text{.}\)</span> Alternatively, see  <a href="" class="xref" data-knowl="./knowl/rm_change_of_basis_taylors.html" title="Remark 4.3.5: Taylor’s formula and change of basis">Remark 4.3.5</a>) for a neat trick for computing these coordinate vectors.</div>
 </div></li>
-<li id="li-960"><div class="para logical" id="p-3105">
+<li id="li-960"><div class="para logical" id="p-3106">
 <div class="para">Since <span class="process-math">\(B\)</span> is the standard basis, we see easily that <span class="process-math">\([x^2+x+1]_{B}=(1,1,1)\text{.}\)</span> Using <a href="" class="xref" data-knowl="./knowl/eq_changebasis_matrix_prop.html" title="Equation 4.3.2">(4.3.2)</a> we have</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_changebasis_matrix_prop.html" id="md-209">
 \begin{align*}
@@ -976,7 +976,7 @@ x^2+x+1=1(x-2)^2+5(x-2)+7\text{.}
 </ol></div></div></div>
 </div></article><article class="remark remark-like" id="rm_change_of_basis_taylors"><h4 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">4.3.5</span><span class="period">.</span><span class="space"> </span><span class="title">Taylor’s formula and change of basis.</span>
-</h4> <div class="para logical" id="p-3106">
+</h4> <div class="para logical" id="p-3107">
 <div class="para">Let <span class="process-math">\(B=(x^n, x^{n-1}, \dots, x, 1)\)</span> be the standard basis of <span class="process-math">\(P_n\text{.}\)</span> Fix any constant <span class="process-math">\(a\in \R\text{,}\)</span> and let <span class="process-math">\(B'=((x-a)^n, (x-a)^{n-1}, \dots, (x-a), 1)\text{.}\)</span> It is easy to see that <span class="process-math">\(B'\)</span> is also an ordered basis: a simple degree argument shows that the polynomials <span class="process-math">\(p_k(x)=(x-a)^k\)</span> are linearly independent. It follows from Taylor’s theorem (from single-variable calculus) that given any polynomial <span class="process-math">\(p\in P_n\)</span> we have</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -991,15 +991,15 @@ p(x)=p(a)+p'(a)(x-a)+\frac{p''(x)}{2}(x-a)^2+\cdots \frac{p^{(n)}(a)}{n!}(x-a)^n
 </div>
 <div class="para">In other words, Taylor’s theorem provides a simple derivative formula for computing coordinate vectors with respect to the basis <span class="process-math">\(B'\text{.}\)</span>
 </div>
-</div></article><div class="para" id="p-3107">The following properties are often useful when computing various change of basis matrices.</div>
+</div></article><div class="para" id="p-3108">The following properties are often useful when computing various change of basis matrices.</div>
 <article class="theorem theorem-like" id="th_change_of_basis_properties"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">4.3.6</span><span class="period">.</span><span class="space"> </span><span class="title">Change of basis matrix properties.</span>
 </h4>
-<div class="para logical" id="p-3108">
+<div class="para logical" id="p-3109">
 <div class="para">Let <span class="process-math">\(B, B', B''\)</span> be ordered bases for the <span class="process-math">\(n\)</span>-dimensional vector space <span class="process-math">\(V\text{.}\)</span>
 </div>
 <ol class="decimal">
-<li id="li-961"><div class="para logical" id="p-3109">
+<li id="li-961"><div class="para logical" id="p-3110">
 <div class="para">We have</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1007,7 +1007,7 @@ p(x)=p(a)+p'(a)(x-a)+\frac{p''(x)}{2}(x-a)^2+\cdots \frac{p^{(n)}(a)}{n!}(x-a)^n
 \end{equation*}
 </div>
 </div></li>
-<li id="li-962"><div class="para logical" id="p-3110">
+<li id="li-962"><div class="para logical" id="p-3111">
 <div class="para">The matrix <span class="process-math">\(\underset{B\rightarrow B'}{P}\)</span> is invertible. In fact, we have</div>
 <div class="displaymath process-math" id="eq_change_basis_inverse">
 \begin{equation}
@@ -1015,7 +1015,7 @@ p(x)=p(a)+p'(a)(x-a)+\frac{p''(x)}{2}(x-a)^2+\cdots \frac{p^{(n)}(a)}{n!}(x-a)^n
 \end{equation}
 </div>
 </div></li>
-<li id="li-963"><div class="para logical" id="p-3111">
+<li id="li-963"><div class="para logical" id="p-3112">
 <div class="para">We have</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1024,21 +1024,34 @@ p(x)=p(a)+p'(a)(x-a)+\frac{p''(x)}{2}(x-a)^2+\cdots \frac{p^{(n)}(a)}{n!}(x-a)^n
 </div>
 </div></li>
 </ol>
-</div></article><article class="hiddenproof" id="proof-81"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-81"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-81"><article class="hiddenproof"><div class="para logical" id="p-3112"><ol class="decimal">
-<li id="li-964"><div class="para" id="p-3113">Let <span class="process-math">\(B=(\boldv_1, \boldv_2, \dots, \boldv_n)\text{.}\)</span> By definition, the <span class="process-math">\(j\)</span>-th column of <span class="process-math">\(\underset{B\rightarrow B'}{P}\)</span> is <span class="process-math">\([\boldv_j]_B\text{.}\)</span> Since <span class="process-math">\(\boldv_j=0\boldv_1+0\boldv_2+\cdots +1\boldv_j+\cdots\text{,}\)</span> we see that <span class="process-math">\([\boldv_j]_B=\bolde_j\text{,}\)</span> and hence that <span class="process-math">\(\underset{B\rightarrow B'}{P}=I\text{,}\)</span> as claimed.</div></li>
+</div></article><article class="hiddenproof" id="proof-81"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-81"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-81"><article class="hiddenproof"><ol class="decimal">
+<li id="li-964"><div class="para logical" id="p-3113">
+<div class="para">Let <span class="process-math">\(B=(\boldv_1, \boldv_2,\dots, \boldv_n)\text{.}\)</span> From formula <a href="" class="xref" data-knowl="./knowl/eq_matrixrep_formula.html" title="Equation 4.2.1">(4.2.1)</a> applied to <span class="process-math">\(I_v\text{,}\)</span> we see that the <span class="process-math">\(j\)</span>-th column of <span class="process-math">\([I_V]_B^{B'}\)</span> is</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_matrixrep_formula.html ./knowl/eq_change_basis_matrix.html ./knowl/d_change_of_basis.html">
+\begin{equation*}
+[\boldv_j]_{B'}
+\end{equation*}
+</div>
+<div class="para">for all <span class="process-math">\(1\leq j\leq n\text{.}\)</span> Using formula <a href="" class="xref" data-knowl="./knowl/eq_change_basis_matrix.html" title="Equation 4.3.1">(4.3.1)</a> from <a href="" class="xref" data-knowl="./knowl/d_change_of_basis.html" title="Definition 4.3.1: Change of basis matrix">Definition 4.3.1</a> this is precisely the <span class="process-math">\(j\)</span>-th column of <span class="process-math">\(\underset{B\rightarrow B'}{P}\)</span> for all <span class="process-math">\(1\leq j\leq n\text{.}\)</span> We conclude that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_matrixrep_formula.html ./knowl/eq_change_basis_matrix.html ./knowl/d_change_of_basis.html">
+\begin{equation*}
+[I_V]_B^{B'} = \underset{B\rightarrow B'}{P}\text{.}
+\end{equation*}
+</div>
+</div></li>
 <li id="li-965"><div class="para logical" id="p-3114">
-<div class="para">Let <span class="process-math">\(A=\underset{B\rightarrow B'}{P}\)</span> and <span class="process-math">\(B=\underset{B'\rightarrow B"}{P}\text{.}\)</span> For any <span class="process-math">\(\boldv\in V\)</span> we have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_change_of_basis_coordinates.html" id="md-210">
+<div class="para">This follows from (1) and <a href="" class="xref" data-knowl="./knowl/th_matrixrep.html" title="Theorem 4.2.6: Defining property of matrix representation">Theorem 4.2.6</a>:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_matrixrep.html ./knowl/th_matrixrep.html" id="md-210">
 \begin{align*}
-BA[\boldv]_B \amp = \underset{B'\rightarrow B}{P}\, \underset{B\rightarrow B'}{P}[\boldv]\\
-\amp =\underset{B'\rightarrow B}{P}[\boldv]_{B'} \\
-\amp = [\boldv]_{B}\text{.}
+\underset{B\rightarrow B'}{P}[\boldv]_B \amp = [\id_V]_{B}^{B'}[\boldv]_B \\
+\amp = [\id_V(\boldv)]_{B'} \amp (\knowl{./knowl/th_matrixrep.html}{\text{Theorem 4.2.6}})\\
+\amp =[\boldv]_{B'} \text{.}
 \end{align*}
 </div>
-<div class="para">It follows from (3) of <a href="" class="xref" data-knowl="./knowl/th_change_of_basis_coordinates.html" title="Theorem 4.3.2: Change of basis for coordinate vectors">Theorem 4.3.2</a> that <span class="process-math">\(BA=\underset{B\rightarrow B}{P}\text{.}\)</span> Since <span class="process-math">\(\underset{B\rightarrow B}{P}=I\)</span> by (1), we conclude that <span class="process-math">\(BA=I\text{,}\)</span> and hence <span class="process-math">\(B=A^{-1}\text{,}\)</span> as desired.</div>
 </div></li>
-<li id="li-966"><div class="para" id="p-3115">See <a href="" class="xref" data-knowl="./knowl/ex_changebasis_three_bases.html" title="Exercise 4.3.4.15">Exercise 4.3.4.15</a>.</div></li>
-</ol></div></article></div>
+<li id="li-966"><div class="para" id="p-3115">By (2) of <a href="" class="xref" data-knowl="./knowl/th_matrixrep.html" title="Theorem 4.2.6: Defining property of matrix representation">Theorem 4.2.6</a> (the uniqueness claim), if <span class="process-math">\(A\)</span> satisfies <span class="process-math">\(A[\boldv]_B=[\boldv]_{B'}\)</span> for all <span class="process-math">\(\boldv\in \R^n\text{,}\)</span> then <span class="process-math">\(A=[\id_V]_{B}^{B'}\text{.}\)</span> Since <span class="process-math">\([\id_V]_{B}^{B'}=\underset{B\rightarrow B'}{P}\text{,}\)</span> we conclude <span class="process-math">\(A=\underset{B\rightarrow B'}{P}\text{.}\)</span>
+</div></li>
+</ol></article></div>
 <article class="example example-like" id="eg_changebasis_standard"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.7</span><span class="period">.</span><span class="space"> </span><span class="title"><span class="process-math">\(V=\R^n\text{,}\)</span> <span class="process-math">\(B\)</span> standard basis.</span>
 </h4>
@@ -1272,7 +1285,7 @@ A=\underset{B'\rightarrow B}{P}\, A'\, \underset{B\rightarrow B'}{P}\text{.}
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.17</span><span class="period">.</span><span class="space"> </span><span class="title">Orthogonal projection (again).</span>
 </h4>
 <div class="para logical" id="p-3150">
-<div class="para">Consider <span class="process-math">\(V=\R^3\)</span> together with the dot product. Let’s derive (once again) a matrix formula for orthogonal projection  <span class="process-math">\(\operatorname{proj}_W\colon \R^3\rightarrow \R^3\text{,}\)</span> where <span class="process-math">\(W=\{(x,y,z)\colon x+y+z=0\}\text{.}\)</span> In other words we want to compute <span class="process-math">\(A=[\operatorname{proj}_W]_B\text{,}\)</span> where <span class="process-math">\(B=((1,0,0), (0,1,0), (0,0,1))\)</span> is the standard basis. We will do so <em class="emphasis">indirectly</em> by first computing <span class="process-math">\([\operatorname{proj}_W]_{B'}\)</span> with respect to a more convenient basis: namely, <span class="process-math">\(B'=((1,-1,0),(1,1,-2), (1,1,1))\text{.}\)</span> This is the same basis from <a href="" class="xref" data-knowl="./knowl/eg_matrixreps_proj.html" title="Example 4.2.12: Two representations of orthogonal projection">Example 4.2.12</a>, and was selected deliberateley so that the first two vectors form a basis of <span class="process-math">\(W\text{,}\)</span> and the third vector spans the normal line to <span class="process-math">\(W\text{.}\)</span> As in <a href="" class="xref" data-knowl="./knowl/eg_matrixreps_proj.html" title="Example 4.2.12: Two representations of orthogonal projection">Example 4.2.12</a> we then easily compute</div>
+<div class="para">Consider <span class="process-math">\(V=\R^3\)</span> together with the dot product. Let’s derive (once again) a matrix formula for orthogonal projection  <span class="process-math">\(\operatorname{proj}_W\colon \R^3\rightarrow \R^3\text{,}\)</span> where <span class="process-math">\(W=\{(x,y,z)\colon x+y+z=0\}\text{.}\)</span> In other words we want to compute <span class="process-math">\(A=[\operatorname{proj}_W]_B\text{,}\)</span> where <span class="process-math">\(B=((1,0,0), (0,1,0), (0,0,1))\)</span> is the standard basis. We will do so <em class="emphasis">indirectly</em> by first computing <span class="process-math">\([\operatorname{proj}_W]_{B'}\)</span> with respect to a more convenient basis: namely, <span class="process-math">\(B'=((1,-1,0),(1,0,-1), (1,1,1))\text{.}\)</span> This is the same basis from <a href="" class="xref" data-knowl="./knowl/eg_matrixreps_proj.html" title="Example 4.2.12: Two representations of orthogonal projection">Example 4.2.12</a>, and was selected deliberateley so that the first two vectors form a basis of <span class="process-math">\(W\text{,}\)</span> and the third vector spans the normal line to <span class="process-math">\(W\text{.}\)</span> As in <a href="" class="xref" data-knowl="./knowl/eg_matrixreps_proj.html" title="Example 4.2.12: Two representations of orthogonal projection">Example 4.2.12</a> we then easily compute</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/eg_matrixreps_proj.html ./knowl/eg_matrixreps_proj.html ./knowl/eq_changebasis_transform_inverse.html ./knowl/eg_projection_plane.html ./knowl/eg_matrixreps_proj.html">
 \begin{equation*}
 [\operatorname{proj}_W]_{B'}=\begin{bmatrix}
@@ -1286,10 +1299,11 @@ A=\underset{B'\rightarrow B}{P}\, A'\, \underset{B\rightarrow B'}{P}\text{.}
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/eg_matrixreps_proj.html ./knowl/eg_matrixreps_proj.html ./knowl/eq_changebasis_transform_inverse.html ./knowl/eg_projection_plane.html ./knowl/eg_matrixreps_proj.html" id="md-215">
 \begin{align*}
 A=[\operatorname{proj}_W]_{B}\amp = \underset{B'\rightarrow B}{P}[\operatorname{proj}_W]_{B'}\underset{B\rightarrow B'}{P} \\
+\amp = \underset{B'\rightarrow B}{P}[\operatorname{proj}_W]_{B'}\left(\underset{B'\rightarrow B}{P}\right)^{-1}\\
 \amp= \begin{amatrix}[rrr]
 1\amp 1\amp 1\\
--1\amp 1\amp 1\\
-0\amp -2\amp 1
+-1\amp 0\amp 1\\
+0\amp -1\amp 1
 \end{amatrix}
 \begin{bmatrix}
 1\amp 0\amp 0\\
@@ -1297,9 +1311,9 @@ A=[\operatorname{proj}_W]_{B}\amp = \underset{B'\rightarrow B}{P}[\operatorname{
 0\amp 0\amp 0
 \end{bmatrix}
 \begin{amatrix}[rrr]
-\frac{1}{2}\amp -\frac{1}{2}\amp 0\\
-\frac{1}{6}\amp \frac{1}{6}\amp -\frac{1}{3}\\
-\frac{1}{3}\amp \frac{1}{3}\amp \frac{1}{3}
+\frac{1}{3} \amp -\frac{2}{3} \amp \frac{1}{3} \\
+\frac{1}{3} \amp \frac{1}{3} \amp -\frac{2}{3} \\
+\frac{1}{3} \amp \frac{1}{3} \amp \frac{1}{3}
 \end{amatrix}\\
 \amp = \frac{1}{3}\begin{amatrix}[rrr]
 2\amp -1\amp -1\\ -1\amp 2\amp -1\\ -1\amp -1\amp 2

@@ -11,14 +11,15 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/d_innerproduct.html">
 \begin{align*}
-d(\boldx,\boldy) \amp = \norm{\boldx-\boldy} \\
-\amp = \sqrt{\langle \boldx-\boldy,\boldx-\boldy\rangle} \\
-\amp =\sqrt{(x_1-y_1,x_2-y_2,x_3-y_3)\cdot(x_1-y_1,x_2-y_2,x_3-y_3)} \\
-\amp = \sqrt{(x_1-y_1)^2+(x_2-y_2)^2+(x_3-y_3)^2}
+\norm{\boldu} \amp =\sqrt{\left\langle \frac{1}{c}\boldv,\frac{1}{c}\boldv   \right\rangle }\\
+\amp =\sqrt{\frac{1}{c^2}\langle \boldv,\boldv  \rangle} \amp (\knowl{./knowl/d_innerproduct.html}{\text{Definition 5.1.1}}, \text{(ii)})  \\
+\amp =\frac{1}{\val{c}}\sqrt{\langle \boldv,\boldv  \rangle } \\
+\amp =\frac{1}{c}\sqrt{\langle \boldv,\boldv  \rangle } \amp (c=\norm{\boldv}\geq 0)\\
+\amp =\frac{\norm{\boldv}}{\norm{\boldv}}=1
 \end{align*}
 </div>
-<span class="incontext"><a href="s_innerproducts.html#md-256" class="internal">in-context</a></span>
+<span class="incontext"><a href="s_innerproducts.html#md-255" class="internal">in-context</a></span>
 </body>
 </html>

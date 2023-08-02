@@ -1103,13 +1103,13 @@ p(x)\amp\mapsto p'(x)
 </h4>
 <div class="para logical" id="p-3027">
 <div class="para">Let <span class="process-math">\(W\subseteq \R^3\)</span> be the plane passing through the origin with normal vector <span class="process-math">\(\boldn=(1,1,1)\)</span> (with respect to the dot product): i.e.,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_matrixreps_matrixtransforms.html ./knowl/eg_projection_plane.html ./knowl/eq_matrixrep_formula.html ./knowl/eq_matrixrep_prop.html ./knowl/eq_matrixrep_prop.html ./knowl/eq_matrixreps_Aalt.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_matrixreps_matrixtransforms.html ./knowl/eg_projection_plane.html">
 \begin{equation*}
 W=\{(x,y,z)\in \R^3\colon x+y+z\}\text{.}
 \end{equation*}
 </div>
 <div class="para">Consider the orthogonal projection transformation <span class="process-math">\(\operatorname{proj}_W\colon \R^3\rightarrow \R^3\text{.}\)</span> With respect to the standard basis <span class="process-math">\(B=(\bolde_1, \bolde_2, \bolde_3)\)</span> we know from <a href="" class="xref" data-knowl="./knowl/th_matrixreps_matrixtransforms.html" title="Theorem 4.2.3: Standard matrix as a matrix representation">Theorem 4.2.3</a> that <span class="process-math">\([\operatorname{proj}_W]_B=[\operatorname{proj}_W]_B^B\)</span> is just the matrix <span class="process-math">\(A\)</span> such that <span class="process-math">\(\operatorname{proj}_W=T_A\text{.}\)</span> Using the general formaul for projection onto a plane derived in <a href="" class="xref" data-knowl="./knowl/eg_projection_plane.html" title="Example 5.3.17: Projection onto planes in \R^3">Example 5.3.17</a>, we conclude:</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_matrixreps_matrixtransforms.html ./knowl/eg_projection_plane.html ./knowl/eq_matrixrep_formula.html ./knowl/eq_matrixrep_prop.html ./knowl/eq_matrixrep_prop.html ./knowl/eq_matrixreps_Aalt.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_matrixreps_matrixtransforms.html ./knowl/eg_projection_plane.html">
 \begin{equation*}
 [T]_B=A=\frac{1}{3}\begin{amatrix}[rrr]
 2\amp -1\amp -1\\
@@ -1118,14 +1118,17 @@ W=\{(x,y,z)\in \R^3\colon x+y+z\}\text{.}
 \end{amatrix}\text{.}
 \end{equation*}
 </div>
-<div class="para">Now consider a nonstandard basis <span class="process-math">\(B'\)</span> of <span class="process-math">\(\R^3\)</span> constructed with an eye toward the geometry involved in the definition of this projection operator. Namely, we begin with a basis of the plane <span class="process-math">\(W\)</span> and add the normal vector <span class="process-math">\(\boldn\)</span> to get a basis of <span class="process-math">\(\R^3\text{.}\)</span> The vectors <span class="process-math">\((1,-1,0), (1,1,-22)\)</span> clearly form a basis of <span class="process-math">\(W\text{.}\)</span> Adding <span class="process-math">\(\boldn\)</span> yields the ordered basis</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_matrixreps_matrixtransforms.html ./knowl/eg_projection_plane.html ./knowl/eq_matrixrep_formula.html ./knowl/eq_matrixrep_prop.html ./knowl/eq_matrixrep_prop.html ./knowl/eq_matrixreps_Aalt.html">
+<div class="para">Now consider a nonstandard basis <span class="process-math">\(B'\)</span> of <span class="process-math">\(\R^3\)</span> constructed with an eye toward the geometry involved in the definition of this projection operator. Namely, we begin with a basis of the plane <span class="process-math">\(W\)</span> and extend to a full basis of <span class="process-math">\(\R^3\)</span> by adding the normal vector <span class="process-math">\((1,1,1)\)</span> defining <span class="process-math">\(W\text{.}\)</span> Note that since <span class="process-math">\(W\)</span> is a 2-dimensional subspace, a basis by formed by any two linearly independent members. As such a basis of <span class="process-math">\(W\)</span> is easily produced by inspection. We choose <span class="process-math">\(\boldv_1=(1,-1,0)\)</span> and <span class="process-math">\(\boldv_2=(1,0,-1)\)</span> as our basis for <span class="process-math">\(W\text{.}\)</span> Adding the normal vector <span class="process-math">\(\boldv_3=(1,1,1)\)</span> then yields the ordered basis</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_matrixreps_matrixtransforms.html ./knowl/eg_projection_plane.html">
 \begin{equation*}
-B'=\left( \underset{\boldv_1}{(1,-1,0)}, \underset{\boldv_2}{(1,1,-2)}, \underset{\boldv_3}{(1,1,1)} \right)\text{.}
+B'=\left( \underset{\boldv_1}{(1,-1,0)}, \underset{\boldv_2}{(1,0,-1)}, \underset{\boldv_3}{(1,1,1)} \right)
 \end{equation*}
 </div>
+<div class="para">of <span class="process-math">\(\R^3\text{.}\)</span>
+</div>
+</div> <div class="para logical" id="p-3028">
 <div class="para">Let <span class="process-math">\(A'=[T]_B'\text{,}\)</span> and for all <span class="process-math">\(1\leq i\leq 3\)</span> let <span class="process-math">\(\boldc_i\)</span> be the <span class="process-math">\(i\)</span>-th column of <span class="process-math">\(A\text{.}\)</span> Using <a href="" class="xref" data-knowl="./knowl/eq_matrixrep_formula.html" title="Equation 4.2.1">(4.2.1)</a> we compute</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_matrixreps_matrixtransforms.html ./knowl/eg_projection_plane.html ./knowl/eq_matrixrep_formula.html ./knowl/eq_matrixrep_prop.html ./knowl/eq_matrixrep_prop.html ./knowl/eq_matrixreps_Aalt.html" id="md-203">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_matrixrep_formula.html ./knowl/eq_matrixrep_prop.html ./knowl/eq_matrixrep_prop.html ./knowl/eq_matrixreps_Aalt.html" id="md-203">
 \begin{align*}
 \boldc_1 = [\proj{\boldv_1}{W}]_{B'}\amp =[\boldv_1]_{B'} \amp (\boldv_1\in W)\\
 \amp =(1,0,0) \amp (\boldv_1=1\boldv_1+0\boldv_2+0\boldv_3)\\
@@ -1136,24 +1139,24 @@ B'=\left( \underset{\boldv_1}{(1,-1,0)}, \underset{\boldv_2}{(1,1,-2)}, \underse
 \end{align*}
 </div>
 <div class="para">Thus</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_matrixreps_matrixtransforms.html ./knowl/eg_projection_plane.html ./knowl/eq_matrixrep_formula.html ./knowl/eq_matrixrep_prop.html ./knowl/eq_matrixrep_prop.html ./knowl/eq_matrixreps_Aalt.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_matrixrep_formula.html ./knowl/eq_matrixrep_prop.html ./knowl/eq_matrixrep_prop.html ./knowl/eq_matrixreps_Aalt.html">
 \begin{equation*}
 [T]_{B'}=A'=\begin{amatrix}[rrr]1\amp 0\amp 0\\ 0\amp 1\amp 0\\ 0\amp 0\amp 0  \end{amatrix}\text{.}
 \end{equation*}
 </div>
 <div class="para">Wow, <span class="process-math">\(A'\)</span> is way simpler! How can the two very different matrices <span class="process-math">\(A\)</span> and <span class="process-math">\(A'\)</span> represent the same linear transformation? A useful way of thinking about this is to consider <span class="process-math">\(A\)</span> and <span class="process-math">\(A'\)</span> as two matrix formulas for <span class="process-math">\(\operatorname{proj}_W\)</span> with respect to two different <em class="emphasis">coordinate systems</em>. This can be made precise by using the defining properties (<a href="" class="xref" data-knowl="./knowl/eq_matrixrep_prop.html" title="Equation 4.2.2">(4.2.2)</a>) of <span class="process-math">\(A=[T]_B\)</span> and <span class="process-math">\(A'=[T]_{B'}\text{.}\)</span> For <span class="process-math">\(A=[T]_B\)</span> we have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_matrixreps_matrixtransforms.html ./knowl/eg_projection_plane.html ./knowl/eq_matrixrep_formula.html ./knowl/eq_matrixrep_prop.html ./knowl/eq_matrixrep_prop.html ./knowl/eq_matrixreps_Aalt.html" id="eq_matrixres_A">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_matrixrep_formula.html ./knowl/eq_matrixrep_prop.html ./knowl/eq_matrixrep_prop.html ./knowl/eq_matrixreps_Aalt.html" id="eq_matrixres_A">
 \begin{equation}
 A[\boldx]_B=[\proj{\boldx}{W}]_B \implies A\boldx=\proj{\boldx}{W}\text{,}\tag{4.2.4}
 \end{equation}
 </div>
 <div class="para">where we have used the fact that for the <em class="emphasis">standard basis</em> <span class="process-math">\(B\)</span> we have <span class="process-math">\([\boldy]_B=\boldy\)</span> for any <span class="process-math">\(\boldy\in \R^3\text{.}\)</span> Thus we can compute <span class="process-math">\(\proj{\boldx}{W}\)</span> directly with <span class="process-math">\(A\)</span> as <span class="process-math">\(A\boldx\text{.}\)</span> For <span class="process-math">\(A'=[T]_{B'}\text{,}\)</span> on the other hand, property <a href="" class="xref" data-knowl="./knowl/eq_matrixrep_prop.html" title="Equation 4.2.2">(4.2.2)</a> reads as</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_matrixreps_matrixtransforms.html ./knowl/eg_projection_plane.html ./knowl/eq_matrixrep_formula.html ./knowl/eq_matrixrep_prop.html ./knowl/eq_matrixrep_prop.html ./knowl/eq_matrixreps_Aalt.html" id="eq_matrixreps_Aalt">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_matrixrep_formula.html ./knowl/eq_matrixrep_prop.html ./knowl/eq_matrixrep_prop.html ./knowl/eq_matrixreps_Aalt.html" id="eq_matrixreps_Aalt">
 \begin{equation}
 A'[\boldx]_{B'}=[\proj{\boldx}{W}]_{B'}\text{.}\tag{4.2.5}
 \end{equation}
 </div>
-<div class="para">Formula <a href="" class="xref" data-knowl="./knowl/eq_matrixreps_Aalt.html" title="Equation 4.2.5">(4.2.5)</a> indicates that we cannot use <span class="process-math">\(A'\)</span> directly to compute <span class="process-math">\(\proj{\boldx}{W}\text{.}\)</span> Rather, we must first compute the <span class="process-math">\(B'\)</span>-coordinates of <span class="process-math">\(\boldx\)</span> and then multiply by <span class="process-math">\(A'\text{,}\)</span> at which point the <span class="process-math">\(B'\)</span>-coordinates of <span class="process-math">\(\proj{\boldx}{W}\)</span> are returned. In other words, <span class="process-math">\(A'\)</span> describes the operation of <span class="process-math">\(\operatorname{proj}_W\)</span> with respect to <span class="process-math">\(B'\)</span>-coordinates of vectors in <span class="process-math">\(\R^3\text{.}\)</span> As such, <span class="process-math">\(A\)</span> may be more useful to us in terms of computing <span class="process-math">\(\operatorname{proj}_W\)</span> directly. However, <span class="process-math">\(A'\)</span> has the advantage of giving us a clear <em class="emphasis">conceptual</em> picture of projection. For example, we see directly that <span class="process-math">\(A'\)</span> has nullity one and rank 2, and thus the same is true of <span class="process-math">\(\operatorname{proj}_W\text{.}\)</span> Furthermore, understanding that the columns of <span class="process-math">\(A'\)</span> describe how <span class="process-math">\(\operatorname{proj}_W\)</span> acts on the basis <span class="process-math">\(B'\text{,}\)</span> we see easily that <span class="process-math">\(\operatorname{proj}_W\)</span> acts as the identity on the 2-dimensional space spanned by the first two basis elements, and sends the subspace spanned by the third basis element to <span class="process-math">\(\boldzero\text{.}\)</span> In other words, <span class="process-math">\(A'\)</span> neatly encodes the conceptual picture of <span class="process-math">\(\operatorname{proj}_W\)</span> as an operator that fixes the plane <span class="process-math">\(W=\Span\{(1,-1,0),(1,1,-2)\}\)</span> and sends everything in <span class="process-math">\(W^\perp=\Span\{(1,1,1)\}\)</span> to <span class="process-math">\(\boldzero\text{.}\)</span>
+<div class="para">Formula <a href="" class="xref" data-knowl="./knowl/eq_matrixreps_Aalt.html" title="Equation 4.2.5">(4.2.5)</a> indicates that we cannot use <span class="process-math">\(A'\)</span> directly to compute <span class="process-math">\(\proj{\boldx}{W}\text{.}\)</span> Rather, we must first compute the <span class="process-math">\(B'\)</span>-coordinates of <span class="process-math">\(\boldx\)</span> and then multiply by <span class="process-math">\(A'\text{,}\)</span> at which point the <span class="process-math">\(B'\)</span>-coordinates of <span class="process-math">\(\proj{\boldx}{W}\)</span> are returned. In other words, <span class="process-math">\(A'\)</span> describes the operation of <span class="process-math">\(\operatorname{proj}_W\)</span> with respect to <span class="process-math">\(B'\)</span>-coordinates of vectors in <span class="process-math">\(\R^3\text{.}\)</span> As such, <span class="process-math">\(A\)</span> may be more useful to us in terms of computing <span class="process-math">\(\operatorname{proj}_W\)</span> directly. However, <span class="process-math">\(A'\)</span> has the advantage of giving us a clear <em class="emphasis">conceptual</em> picture of projection. For example, we see directly that <span class="process-math">\(A'\)</span> has nullity one and rank 2, and thus the same is true of <span class="process-math">\(\operatorname{proj}_W\text{.}\)</span> Furthermore, understanding that the columns of <span class="process-math">\(A'\)</span> describe how <span class="process-math">\(\operatorname{proj}_W\)</span> acts on the basis <span class="process-math">\(B'\text{,}\)</span> we see easily that <span class="process-math">\(\operatorname{proj}_W\)</span> acts as the identity on the 2-dimensional space spanned by the first two basis elements, and sends the subspace spanned by the third basis element to <span class="process-math">\(\boldzero\text{.}\)</span> In other words, <span class="process-math">\(A'\)</span> neatly encodes the conceptual picture of <span class="process-math">\(\operatorname{proj}_W\)</span> as an operator that fixes the plane <span class="process-math">\(W=\Span\{(1,-1,0),(1,0,-1)\}\)</span> and sends everything in <span class="process-math">\(W^\perp=\Span\{(1,1,1)\}\)</span> to <span class="process-math">\(\boldzero\text{.}\)</span>
 </div>
 </div></article></section><section class="exercises" id="s_matrixreps_ex"><h3 class="heading hide-type">
 <span class="type">Exercises</span> <span class="codenumber">4.2.4</span> <span class="title">Exercises</span>
@@ -1163,35 +1166,35 @@ A'[\boldx]_{B'}=[\proj{\boldx}{W}]_{B'}\text{.}\tag{4.2.5}
 <div id="webwork-104" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="104" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-sourceFilePath="Library/TCNJ/TCNJ_MatrixLinearTransformation/problem10.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
 <div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-104')">Activate</button></div>
 <div class="problem-contents">
-<div class="para" id="p-3028">To every linear transformation <span class="process-math">\(T\)</span> from <span class="process-math">\({\mathbb R}^2\)</span> to <span class="process-math">\({\mathbb R}^2\text{,}\)</span> there is an associated <span class="process-math">\(2 \times 2\)</span> matrix.  Match the following linear transformations with their associated matrix.</div> <div class="para logical" id="p-3029"><ol class="lower-alpha">
-<li id="li-921"><div class="para" id="p-3030">Reflection about the <span class="process-math">\(x\)</span>-axis</div></li>
-<li id="li-922"><div class="para" id="p-3031">Clockwise rotation by <span class="process-math">\(\pi/2\)</span> radians</div></li>
-<li id="li-923"><div class="para" id="p-3032">The projection onto the x-axis given by T(x,y)=(x,0)</div></li>
-<li id="li-924"><div class="para" id="p-3033">Counter-clockwise rotation by <span class="process-math">\(\pi/2\)</span> radians</div></li>
-<li id="li-925"><div class="para" id="p-3034">Reflection about the y-axis</div></li>
-<li id="li-926"><div class="para" id="p-3035">Reflection about the line y=x</div></li>
-</ol></div> <div class="para logical" id="p-3036"><ol class="upper-alpha">
-<li id="li-927"><div class="para" id="p-3037"><span class="process-math">\(\displaystyle \begin{pmatrix}0\amp 1\\ -1\amp 0 \end{pmatrix}\)</span></div></li>
-<li id="li-928"><div class="para" id="p-3038"><span class="process-math">\(\displaystyle \begin{pmatrix}0\amp -1\\ 1\amp 0 \end{pmatrix}\)</span></div></li>
-<li id="li-929"><div class="para" id="p-3039"><span class="process-math">\(\displaystyle \begin{pmatrix}1\amp 0\\ 0\amp 0 \end{pmatrix}\)</span></div></li>
-<li id="li-930"><div class="para" id="p-3040"><span class="process-math">\(\displaystyle \begin{pmatrix}0\amp 1\\ 1\amp 0 \end{pmatrix}\)</span></div></li>
-<li id="li-931"><div class="para" id="p-3041"><span class="process-math">\(\displaystyle \begin{pmatrix}1\amp 0\\ 0\amp -1 \end{pmatrix}\)</span></div></li>
-<li id="li-932"><div class="para" id="p-3042"><span class="process-math">\(\displaystyle \begin{pmatrix}-1\amp 0\\ 0\amp 1 \end{pmatrix}\)</span></div></li>
-<li id="li-933"><div class="para" id="p-3043">None of the above</div></li>
+<div class="para" id="p-3029">To every linear transformation <span class="process-math">\(T\)</span> from <span class="process-math">\({\mathbb R}^2\)</span> to <span class="process-math">\({\mathbb R}^2\text{,}\)</span> there is an associated <span class="process-math">\(2 \times 2\)</span> matrix.  Match the following linear transformations with their associated matrix.</div> <div class="para logical" id="p-3030"><ol class="lower-alpha">
+<li id="li-921"><div class="para" id="p-3031">Reflection about the <span class="process-math">\(x\)</span>-axis</div></li>
+<li id="li-922"><div class="para" id="p-3032">Clockwise rotation by <span class="process-math">\(\pi/2\)</span> radians</div></li>
+<li id="li-923"><div class="para" id="p-3033">The projection onto the x-axis given by T(x,y)=(x,0)</div></li>
+<li id="li-924"><div class="para" id="p-3034">Counter-clockwise rotation by <span class="process-math">\(\pi/2\)</span> radians</div></li>
+<li id="li-925"><div class="para" id="p-3035">Reflection about the y-axis</div></li>
+<li id="li-926"><div class="para" id="p-3036">Reflection about the line y=x</div></li>
+</ol></div> <div class="para logical" id="p-3037"><ol class="upper-alpha">
+<li id="li-927"><div class="para" id="p-3038"><span class="process-math">\(\displaystyle \begin{pmatrix}0\amp 1\\ -1\amp 0 \end{pmatrix}\)</span></div></li>
+<li id="li-928"><div class="para" id="p-3039"><span class="process-math">\(\displaystyle \begin{pmatrix}0\amp -1\\ 1\amp 0 \end{pmatrix}\)</span></div></li>
+<li id="li-929"><div class="para" id="p-3040"><span class="process-math">\(\displaystyle \begin{pmatrix}1\amp 0\\ 0\amp 0 \end{pmatrix}\)</span></div></li>
+<li id="li-930"><div class="para" id="p-3041"><span class="process-math">\(\displaystyle \begin{pmatrix}0\amp 1\\ 1\amp 0 \end{pmatrix}\)</span></div></li>
+<li id="li-931"><div class="para" id="p-3042"><span class="process-math">\(\displaystyle \begin{pmatrix}1\amp 0\\ 0\amp -1 \end{pmatrix}\)</span></div></li>
+<li id="li-932"><div class="para" id="p-3043"><span class="process-math">\(\displaystyle \begin{pmatrix}-1\amp 0\\ 0\amp 1 \end{pmatrix}\)</span></div></li>
+<li id="li-933"><div class="para" id="p-3044">None of the above</div></li>
 </ol></div>
 </div>
 </div></article><article class="exercise exercise-like" id="exercise-321"><h5 class="heading"><span class="codenumber">2<span class="period">.</span></span></h5>
 <div id="webwork-105" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="105" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-sourceFilePath="Library/Rochester/setLinearAlgebra15TransfOfLinSpaces/ur_la_15_9.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
 <div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-105')">Activate</button></div>
 <div class="problem-contents">
-<div class="para" id="p-3044">Find the matrix <span class="process-math">\(A\)</span> of the linear transformation <span class="process-math">\(T(f(t)) = f(7 t + 6)\)</span> from <span class="process-math">\(P_2\)</span> to <span class="process-math">\(P_2\)</span> with respect to the standard basis for <span class="process-math">\(P_2\text{,}\)</span> <span class="process-math">\(\left\lbrace 1, t, t^2 \right\rbrace\text{.}\)</span>
-</div> <div class="para" id="p-3045">
+<div class="para" id="p-3045">Find the matrix <span class="process-math">\(A\)</span> of the linear transformation <span class="process-math">\(T(f(t)) = f(7 t + 6)\)</span> from <span class="process-math">\(P_2\)</span> to <span class="process-math">\(P_2\)</span> with respect to the standard basis for <span class="process-math">\(P_2\text{,}\)</span> <span class="process-math">\(\left\lbrace 1, t, t^2 \right\rbrace\text{.}\)</span>
+</div> <div class="para" id="p-3046">
 <span class="process-math">\(A=\)</span> <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> (3 <span class="times-sign">×</span> 3 array)</div>
 </div>
 </div></article><article class="exercise exercise-like" id="exercise-322"><h5 class="heading"><span class="codenumber">3<span class="period">.</span></span></h5>
 <div id="webwork-106" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="106" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-sourceFilePath="Library/Rochester/setLinearAlgebra15TransfOfLinSpaces/ur_la_15_4.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
 <div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-106')">Activate</button></div>
-<div class="problem-contents"><div class="para logical" id="p-3046">
+<div class="problem-contents"><div class="para logical" id="p-3047">
 <div class="para">The matrices</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1221,7 +1224,7 @@ A_3 = \left[\begin{array}{cc}
 <div id="webwork-107" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="107" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-sourceFilePath="Library/Rochester/setLinearAlgebra15TransfOfLinSpaces/ur_la_15_6.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
 <div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-107')">Activate</button></div>
 <div class="problem-contents">
-<div class="para logical" id="p-3047">
+<div class="para logical" id="p-3048">
 <div class="para">Find the matrix <span class="process-math">\(A\)</span> of the linear transformation</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1249,14 +1252,14 @@ T(M)=  \left[\begin{array}{cc}
 \end{array}\right] \right\rbrace.
 \end{equation*}
 </div>
-</div> <div class="para" id="p-3048">
+</div> <div class="para" id="p-3049">
 <span class="process-math">\(A=\)</span> <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> (3 <span class="times-sign">×</span> 3 array)</div>
 </div>
 </div></article><article class="exercise exercise-like" id="exercise-324"><h5 class="heading"><span class="codenumber">5<span class="period">.</span></span></h5>
 <div id="webwork-108" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="108" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-sourceFilePath="Library/Rochester/setLinearAlgebra15TransfOfLinSpaces/ur_la_15_5.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
 <div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-108')">Activate</button></div>
 <div class="problem-contents">
-<div class="para logical" id="p-3049">
+<div class="para logical" id="p-3050">
 <div class="para">Find the matrix <span class="process-math">\(A\)</span> of the linear transformation</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1281,22 +1284,22 @@ T(M)= \left[\begin{array}{cc}
 \end{array}\right] \right\rbrace
 \end{equation*}
 </div>
-</div> <div class="para" id="p-3050">
+</div> <div class="para" id="p-3051">
 <span class="process-math">\(A=\)</span> <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> (3 <span class="times-sign">×</span> 3 array)</div>
 </div>
 </div></article><article class="exercise exercise-like" id="exercise-325"><h5 class="heading"><span class="codenumber">6<span class="period">.</span></span></h5>
 <div id="webwork-109" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="109" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-sourceFilePath="Library/Rochester/setLinearAlgebra15TransfOfLinSpaces/ur_la_15_13.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
 <div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-109')">Activate</button></div>
 <div class="problem-contents">
-<div class="para" id="p-3051">Let <span class="process-math">\(V\)</span> be the space spanned by the two functions <span class="process-math">\(\cos(t)\)</span> and <span class="process-math">\(\sin(t)\text{.}\)</span> Find the matrix <span class="process-math">\(A\)</span> of the linear transformation <span class="process-math">\(T(f(t)) = f''(t) + 2 f'(t) + 3 f(t)\)</span> from <span class="process-math">\(V\)</span> into itself with respect to the basis <span class="process-math">\(\left\lbrace \cos(t), \sin(t) \right\rbrace\text{.}\)</span>
-</div> <div class="para" id="p-3052">
+<div class="para" id="p-3052">Let <span class="process-math">\(V\)</span> be the space spanned by the two functions <span class="process-math">\(\cos(t)\)</span> and <span class="process-math">\(\sin(t)\text{.}\)</span> Find the matrix <span class="process-math">\(A\)</span> of the linear transformation <span class="process-math">\(T(f(t)) = f''(t) + 2 f'(t) + 3 f(t)\)</span> from <span class="process-math">\(V\)</span> into itself with respect to the basis <span class="process-math">\(\left\lbrace \cos(t), \sin(t) \right\rbrace\text{.}\)</span>
+</div> <div class="para" id="p-3053">
 <span class="process-math">\(A=\)</span> <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> (2 <span class="times-sign">×</span> 2 array)</div>
 </div>
 </div></article><article class="exercise exercise-like" id="exercise-326"><h5 class="heading"><span class="codenumber">7<span class="period">.</span></span></h5>
 <div id="webwork-110" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="110" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-sourceFilePath="Library/Rochester/setLinearAlgebra15TransfOfLinSpaces/ur_la_15_15.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
 <div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-110')">Activate</button></div>
 <div class="problem-contents">
-<div class="para logical" id="p-3053">
+<div class="para logical" id="p-3054">
 <div class="para">Let <span class="process-math">\(V\)</span> be the plane with equation <span class="process-math">\(x_1 + 2 x_2 + 4 x_3 =0\)</span> in <span class="process-math">\({\mathbb R}^3\text{.}\)</span>  The linear transformation</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1309,7 +1312,7 @@ T\left(\begin{bmatrix}x_1\\x_2\\x_3\end{bmatrix}\right)= \left[\begin{array}{ccc
 </div>
 <div class="para">maps <span class="process-math">\(V\)</span> into <span class="process-math">\(V\)</span> so, by restricting it to <span class="process-math">\(V\text{,}\)</span> we may regard it as a linear transformation <span class="process-math">\(\tilde T \colon V \to V\text{.}\)</span>
 </div>
-</div> <div class="para" id="p-3054">Find the matrix <span class="process-math">\(A\)</span> of the restricted map  <span class="process-math">\(\tilde T \colon V \to V\)</span> with respect to the basis <span class="process-math">\(\left\lbrace \left[\begin{array}{c}
+</div> <div class="para" id="p-3055">Find the matrix <span class="process-math">\(A\)</span> of the restricted map  <span class="process-math">\(\tilde T \colon V \to V\)</span> with respect to the basis <span class="process-math">\(\left\lbrace \left[\begin{array}{c}
 -2\cr
 1\cr
 0
@@ -1318,37 +1321,37 @@ T\left(\begin{bmatrix}x_1\\x_2\\x_3\end{bmatrix}\right)= \left[\begin{array}{ccc
 0\cr
 1
 \end{array}\right] \right\rbrace.\)</span>
-</div> <div class="para" id="p-3055">
+</div> <div class="para" id="p-3056">
 <span class="process-math">\(A=\)</span> <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> (2 <span class="times-sign">×</span> 2 array)</div>
 </div>
 </div></article><article class="exercise exercise-like" id="exercise-327"><h5 class="heading"><span class="codenumber">8<span class="period">.</span></span></h5>
 <div id="webwork-111" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="111" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-sourceFilePath="Library/NAU/setLinearAlgebra/similar2.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
 <div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-111')">Activate</button></div>
 <div class="problem-contents">
-<div class="para" id="p-3056">Consider the multiplication operator <span class="process-math">\(L_A:{\mathbb R}^2\to {\mathbb R}^2\)</span> defined by <span class="process-math">\(L_A(x)=Ax\)</span> where <span class="process-math">\(A=\left[\begin{array}{cc}
+<div class="para" id="p-3057">Consider the multiplication operator <span class="process-math">\(L_A:{\mathbb R}^2\to {\mathbb R}^2\)</span> defined by <span class="process-math">\(L_A(x)=Ax\)</span> where <span class="process-math">\(A=\left[\begin{array}{cc}
 -1 \amp 0\cr
 -3 \amp -1
 \end{array}\right]\text{.}\)</span> Find an ordered basis <span class="process-math">\(B=(b_1,b_2)\)</span> for <span class="process-math">\({\mathbb R}^2\)</span> such that <span class="process-math">\([L_A]_B^B=\left[\begin{array}{cc}
 -61 \amp -48\cr
 75 \amp 59
-\end{array}\right]\text{.}\)</span> Hint: <span class="process-math">\([L_A]_E^E=A\)</span> where <span class="process-math">\(E\)</span> is the standard basis.</div> <div class="para" id="p-3057">
+\end{array}\right]\text{.}\)</span> Hint: <span class="process-math">\([L_A]_E^E=A\)</span> where <span class="process-math">\(E\)</span> is the standard basis.</div> <div class="para" id="p-3058">
 <span class="process-math">\(b_1 =\)</span> <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> (2 <span class="times-sign">×</span> 1 array), <span class="process-math">\(b_2 =\)</span> <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> (2 <span class="times-sign">×</span> 1 array)</div>
 </div>
 </div></article></article><div class="exercisegroup" id="exercisegroup-31">
 <h4 class="heading"><span class="title">Exercise Group.</span></h4>
-<div class="introduction" id="introduction-68"><div class="para" id="p-3058">Compute <span class="process-math">\([T]_B^{B'}\)</span> for each provided <span class="process-math">\(T\colon V\rightarrow W\)</span> and choice of bases <span class="process-math">\(B\)</span> and <span class="process-math">\(B'\)</span> of <span class="process-math">\(V\)</span> and <span class="process-math">\(W\text{.}\)</span> You may assume that the given <span class="process-math">\(T\)</span> is a linear transformation.</div></div>
+<div class="introduction" id="introduction-68"><div class="para" id="p-3059">Compute <span class="process-math">\([T]_B^{B'}\)</span> for each provided <span class="process-math">\(T\colon V\rightarrow W\)</span> and choice of bases <span class="process-math">\(B\)</span> and <span class="process-math">\(B'\)</span> of <span class="process-math">\(V\)</span> and <span class="process-math">\(W\text{.}\)</span> You may assume that the given <span class="process-math">\(T\)</span> is a linear transformation.</div></div>
 <div class="exercisegroup-exercises">
 <article class="exercise exercise-like" id="exercise-328"><h5 class="heading"><span class="codenumber">9<span class="period">.</span></span></h5>
-<div class="para" id="p-3059">
+<div class="para" id="p-3060">
 <span class="process-math">\(T\colon P_3\rightarrow P_4\text{,}\)</span> <span class="process-math">\(T(p(x))=p'(x)-x\, p(x)\text{;}\)</span> <span class="process-math">\(B=(x^3, x^2, x, 1)\text{;}\)</span> <span class="process-math">\(B'=(x^4, x^3, x^2, x,1)\)</span>
 </div></article><article class="exercise exercise-like" id="exercise-329"><h5 class="heading"><span class="codenumber">10<span class="period">.</span></span></h5>
-<div class="para" id="p-3060">
+<div class="para" id="p-3061">
 <span class="process-math">\(T\colon P_2\rightarrow M_{22}\text{,}\)</span> <span class="process-math">\(T(p(x))=\begin{bmatrix}
 p(-1)\amp p(0)\\
 p(1)\amp p(2)
 \end{bmatrix}\text{;}\)</span> <span class="process-math">\(B=(x^2,x,1)\text{;}\)</span> <span class="process-math">\(B'=(E_{11}, E_{12}, E_{21}, E_{22})\)</span>
 </div></article><article class="exercise exercise-like" id="exercise-330"><h5 class="heading"><span class="codenumber">11<span class="period">.</span></span></h5>
-<div class="para" id="p-3061">
+<div class="para" id="p-3062">
 <span class="process-math">\(T\colon \R^2\rightarrow \R^2\text{,}\)</span> <span class="process-math">\(T=T_A\)</span> where <span class="process-math">\(A=\begin{bmatrix}
 1\amp 2\\ 2\amp 4
 \end{bmatrix}\text{;}\)</span> <span class="process-math">\(B=B'=\left((1,2),(2,4)\right)\)</span>
@@ -1356,7 +1359,7 @@ p(1)\amp p(2)
 </div>
 </div>
 <article class="exercise exercise-like" id="exercise-331"><h4 class="heading"><span class="codenumber">12<span class="period">.</span></span></h4>
-<div class="para logical" id="p-3062">
+<div class="para logical" id="p-3063">
 <div class="para">Suppose <span class="process-math">\(T\colon P^3\rightarrow P^2\)</span> is a linear transformation with matrix representation</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_matrixrep_prop.html">
 \begin{equation*}
@@ -1370,7 +1373,7 @@ p(1)\amp p(2)
 <div class="para">where <span class="process-math">\(B=(x^3, x^2, x, 1)\)</span> and <span class="process-math">\(B'=(x^2, x, 1)\text{.}\)</span> Use the defining property <a href="" class="xref" data-knowl="./knowl/eq_matrixrep_prop.html" title="Equation 4.2.2">(4.2.2)</a> of <span class="process-math">\([T]_B^{B'}\)</span> to determine the formula for <span class="process-math">\(T(ax^3+bx^2+cx+d)\)</span> for an arbitrary polynomial <span class="process-math">\(ax^3+bx^2+cx+d\in P_3\text{.}\)</span>
 </div>
 </div></article><article class="exercise exercise-like" id="exercise-332"><h4 class="heading"><span class="codenumber">13<span class="period">.</span></span></h4>
-<div class="para logical" id="p-3063">
+<div class="para logical" id="p-3064">
 <div class="para">Suppose <span class="process-math">\(T\colon \R^2\rightarrow \R^2\)</span> is a linear transformation with matrix representation</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1382,31 +1385,31 @@ p(1)\amp p(2)
 <div class="para">where <span class="process-math">\(B=\left( (1,2), (-1,1)\right)\)</span>
 </div>
 </div> <ol class="lower-alpha">
-<li id="li-934"><div class="para" id="p-3064">Use the defining property <a href="" class="xref" data-knowl="./knowl/eq_matrixrep_prop.html" title="Equation 4.2.2">(4.2.2)</a> of <span class="process-math">\([T]_B\)</span> to compute <span class="process-math">\(T((1,0))\)</span> and <span class="process-math">\(T((0,1))\text{.}\)</span> (You will first need to compute <span class="process-math">\([(1,0)]_B\)</span> and <span class="process-math">\([(0,1)]_B\text{.}\)</span> )</div></li>
-<li id="li-935"><div class="para" id="p-3065">Use (a) and the fact that <span class="process-math">\(T\)</span> is linear to give a general formula for <span class="process-math">\(T(x,y)\)</span> in terms of <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{.}\)</span>
+<li id="li-934"><div class="para" id="p-3065">Use the defining property <a href="" class="xref" data-knowl="./knowl/eq_matrixrep_prop.html" title="Equation 4.2.2">(4.2.2)</a> of <span class="process-math">\([T]_B\)</span> to compute <span class="process-math">\(T((1,0))\)</span> and <span class="process-math">\(T((0,1))\text{.}\)</span> (You will first need to compute <span class="process-math">\([(1,0)]_B\)</span> and <span class="process-math">\([(0,1)]_B\text{.}\)</span> )</div></li>
+<li id="li-935"><div class="para" id="p-3066">Use (a) and the fact that <span class="process-math">\(T\)</span> is linear to give a general formula for <span class="process-math">\(T(x,y)\)</span> in terms of <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{.}\)</span>
 </div></li>
 </ol></article><article class="exercise exercise-like" id="exercise-333"><h4 class="heading"><span class="codenumber">14<span class="period">.</span></span></h4>
-<div class="para" id="p-3066">The function <span class="process-math">\(S\colon M_{22}\rightarrow M_{22}\)</span> defined as <span class="process-math">\(S(A)=A^T-A\)</span> is a linear transformation.</div> <ol class="lower-alpha">
-<li id="li-936"><div class="para" id="p-3067">Compute <span class="process-math">\(C=[S]_B\text{,}\)</span> where <span class="process-math">\(B\)</span> is the standard basis of <span class="process-math">\(M_{22}\text{.}\)</span>
+<div class="para" id="p-3067">The function <span class="process-math">\(S\colon M_{22}\rightarrow M_{22}\)</span> defined as <span class="process-math">\(S(A)=A^T-A\)</span> is a linear transformation.</div> <ol class="lower-alpha">
+<li id="li-936"><div class="para" id="p-3068">Compute <span class="process-math">\(C=[S]_B\text{,}\)</span> where <span class="process-math">\(B\)</span> is the standard basis of <span class="process-math">\(M_{22}\text{.}\)</span>
 </div></li>
-<li id="li-937"><div class="para" id="p-3068">Use <a href="" class="xref" data-knowl="./knowl/th_matrixreps_model.html" title="Theorem 4.2.9: Computing with matrix representations">Theorem 4.2.9</a> to lift bases of <span class="process-math">\(\NS C\)</span> and <span class="process-math">\(\CS C\)</span> back to bases for <span class="process-math">\(\NS S\)</span> and <span class="process-math">\(\im S\text{.}\)</span>
+<li id="li-937"><div class="para" id="p-3069">Use <a href="" class="xref" data-knowl="./knowl/th_matrixreps_model.html" title="Theorem 4.2.9: Computing with matrix representations">Theorem 4.2.9</a> to lift bases of <span class="process-math">\(\NS C\)</span> and <span class="process-math">\(\CS C\)</span> back to bases for <span class="process-math">\(\NS S\)</span> and <span class="process-math">\(\im S\text{.}\)</span>
 </div></li>
-<li id="li-938"><div class="para" id="p-3069">Identify <span class="process-math">\(\NS S\)</span> and <span class="process-math">\(\im S\)</span> as familiar subspaces of matrices.</div></li>
+<li id="li-938"><div class="para" id="p-3070">Identify <span class="process-math">\(\NS S\)</span> and <span class="process-math">\(\im S\)</span> as familiar subspaces of matrices.</div></li>
 </ol></article><article class="exercise exercise-like" id="exercise-334"><h4 class="heading"><span class="codenumber">15<span class="period">.</span></span></h4>
-<div class="para" id="p-3070">The function <span class="process-math">\(T\colon P_2\rightarrow P_3\)</span> defined by <span class="process-math">\(T(p(x))=xp(x-3)\)</span> is a linear transformation.</div> <ol class="lower-alpha">
-<li id="li-939"><div class="para" id="p-3071">Compute <span class="process-math">\(A=[T]_B^{B'}\text{,}\)</span> where <span class="process-math">\(B\)</span> and <span class="process-math">\(B'\)</span> are the standard bases of <span class="process-math">\(P_2\)</span> and <span class="process-math">\(P_3\text{.}\)</span>
+<div class="para" id="p-3071">The function <span class="process-math">\(T\colon P_2\rightarrow P_3\)</span> defined by <span class="process-math">\(T(p(x))=xp(x-3)\)</span> is a linear transformation.</div> <ol class="lower-alpha">
+<li id="li-939"><div class="para" id="p-3072">Compute <span class="process-math">\(A=[T]_B^{B'}\text{,}\)</span> where <span class="process-math">\(B\)</span> and <span class="process-math">\(B'\)</span> are the standard bases of <span class="process-math">\(P_2\)</span> and <span class="process-math">\(P_3\text{.}\)</span>
 </div></li>
-<li id="li-940"><div class="para" id="p-3072">Use <a href="" class="xref" data-knowl="./knowl/th_matrixreps_model.html" title="Theorem 4.2.9: Computing with matrix representations">Theorem 4.2.9</a> to lift bases of <span class="process-math">\(\NS A\)</span> and <span class="process-math">\(\CS A\)</span> back to bases for <span class="process-math">\(\NS T\)</span> and <span class="process-math">\(\im T\text{.}\)</span>
+<li id="li-940"><div class="para" id="p-3073">Use <a href="" class="xref" data-knowl="./knowl/th_matrixreps_model.html" title="Theorem 4.2.9: Computing with matrix representations">Theorem 4.2.9</a> to lift bases of <span class="process-math">\(\NS A\)</span> and <span class="process-math">\(\CS A\)</span> back to bases for <span class="process-math">\(\NS T\)</span> and <span class="process-math">\(\im T\text{.}\)</span>
 </div></li>
 </ol></article><article class="exercise exercise-like" id="exercise-335"><h4 class="heading"><span class="codenumber">16<span class="period">.</span></span></h4>
-<div class="para" id="p-3073">Let <span class="process-math">\(T\colon \R^2\rightarrow \R^3\)</span> be the linear transformation defined as <span class="process-math">\(T(x,y)=(x-y, x+2y, y)\text{,}\)</span> and let <span class="process-math">\(B=\left((1,0), (0,1)\right)\text{,}\)</span> <span class="process-math">\(B'=\left((1,1),(1,-1)\right)\text{,}\)</span> <span class="process-math">\(B''=\left((1,0,0),(0,1,0),(0,0,1)\right)\)</span>
+<div class="para" id="p-3074">Let <span class="process-math">\(T\colon \R^2\rightarrow \R^3\)</span> be the linear transformation defined as <span class="process-math">\(T(x,y)=(x-y, x+2y, y)\text{,}\)</span> and let <span class="process-math">\(B=\left((1,0), (0,1)\right)\text{,}\)</span> <span class="process-math">\(B'=\left((1,1),(1,-1)\right)\text{,}\)</span> <span class="process-math">\(B''=\left((1,0,0),(0,1,0),(0,0,1)\right)\)</span>
 </div> <ol class="lower-alpha">
-<li id="li-941"><div class="para" id="p-3074">Compute <span class="process-math">\([T]_B^{B''}\text{.}\)</span>
+<li id="li-941"><div class="para" id="p-3075">Compute <span class="process-math">\([T]_B^{B''}\text{.}\)</span>
 </div></li>
-<li id="li-942"><div class="para" id="p-3075">Compute <span class="process-math">\([T]_{B'}^{B''}\text{.}\)</span>
+<li id="li-942"><div class="para" id="p-3076">Compute <span class="process-math">\([T]_{B'}^{B''}\text{.}\)</span>
 </div></li>
 </ol></article><article class="exercise exercise-like" id="exercise-336"><h4 class="heading"><span class="codenumber">17<span class="period">.</span></span></h4>
-<div class="para logical" id="p-3076">
+<div class="para logical" id="p-3077">
 <div class="para">Let <span class="process-math">\(T\colon P_2\rightarrow M_{22}\)</span> be the linear transformation defined as</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1415,12 +1418,12 @@ T(p(x))=\begin{bmatrix} p(0)\amp p(1)\\ p(-1)\amp p(0) \end{bmatrix}\text{,}
 </div>
 <div class="para">and let  <span class="process-math">\(B=(1,x,x^2)\text{,}\)</span> <span class="process-math">\(B'=(1, 1+x, 1+x^2)\text{,}\)</span> <span class="process-math">\(B''=(E_{11}, E_{12}, E_{21}, E_{22})\)</span> (the standard basis of <span class="process-math">\(M_{22}\)</span>).</div>
 </div> <ol class="lower-alpha">
-<li id="li-943"><div class="para" id="p-3077">Compute <span class="process-math">\([T]_B^{B''}\text{.}\)</span>
+<li id="li-943"><div class="para" id="p-3078">Compute <span class="process-math">\([T]_B^{B''}\text{.}\)</span>
 </div></li>
-<li id="li-944"><div class="para" id="p-3078">Compute <span class="process-math">\([T]_{B'}^{B''}\text{.}\)</span>
+<li id="li-944"><div class="para" id="p-3079">Compute <span class="process-math">\([T]_{B'}^{B''}\text{.}\)</span>
 </div></li>
 </ol></article><article class="exercise exercise-like" id="exercise-337"><h4 class="heading"><span class="codenumber">18<span class="period">.</span></span></h4>
-<div class="para logical" id="p-3079">
+<div class="para logical" id="p-3080">
 <div class="para">Let <span class="process-math">\(T_1\colon V\rightarrow W\)</span> and <span class="process-math">\(T_2\colon W\rightarrow U\)</span> be linear transformations, and suppose <span class="process-math">\(B, B', B''\)</span> are ordered bases for <span class="process-math">\(V\text{,}\)</span> <span class="process-math">\(W\text{,}\)</span> and <span class="process-math">\(U\text{,}\)</span> respectively. Prove:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1429,7 +1432,7 @@ T(p(x))=\begin{bmatrix} p(0)\amp p(1)\\ p(-1)\amp p(0) \end{bmatrix}\text{,}
 </div>
 </div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-25" id="hint-25"><span class="type">Hint</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-25"><div class="hint solution-like"><div class="para logical" id="p-3080">
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-25" id="hint-25"><span class="type">Hint</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-25"><div class="hint solution-like"><div class="para logical" id="p-3081">
 <div class="para">Let <span class="process-math">\(A_1=[T_1]_B^{B'}\)</span> and <span class="process-math">\(A_2=[T_2]_{B'}^{B''}\text{.}\)</span> Show that the matrix <span class="process-math">\(A_2A_1\)</span> satisfies the defining property of <span class="process-math">\([T_2\circ T_1]_{B}^{B''}\text{:}\)</span> i.e.,</div>
 <div class="displaymath process-math">
 \begin{equation*}

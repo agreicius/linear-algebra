@@ -11,15 +11,21 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
+<h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">Things get even easier if both bases <span class="process-math">\(B\)</span> and <span class="process-math">\(B'\)</span> involved are in fact <em class="emphasis">orthonormal</em>. As we show below, it turns out in this case that the inverse of the change of basis matrix is just its transpose:</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_change_basis_inverse.html">
+<div class="para">Applying the inner product formula <a href="" class="xref" data-knowl="./knowl/eq_coor_vec_orthogonal.html" title="Equation 5.2.3">(5.2.3)</a> to <span class="process-math">\(B\)</span> and the dot product with weights <span class="process-math">\(2, 1\text{,}\)</span> for any <span class="process-math">\(\boldv=(a,b)\)</span> we compute</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_coor_vec_orthogonal.html">
+\begin{align*}
+[(a,b)]_B \amp =\left(\frac{\langle (a,b), (1,1)\rangle }{\langle (1,1),(1,1) \rangle }, \frac{\langle (a,b), (-1,2)\rangle }{\langle (-1,2),(-1,2) \rangle }\right)\\
+\amp=\left(\frac{1}{3}(2a+b),\frac{1}{3}(-a+b) \right) \text{.}
+\end{align*}
+</div>
+<div class="para">Let’s check our formula with <span class="process-math">\(\boldv=(3,-3)\text{.}\)</span> The formula yields <span class="process-math">\([(3,-3)]_B=(1,-2)\text{,}\)</span> and indeed we see that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_coor_vec_orthogonal.html">
 \begin{equation*}
-\left(\underset{B\rightarrow B'}{P}\right)^{-1}=\left(\underset{B\rightarrow B'}{P}\right)^T\text{.}
+(3,-3)=1(1,1)-2(-1,2)\text{.}
 \end{equation*}
 </div>
-<div class="para">It follows from <a href="" class="xref" data-knowl="./knowl/eq_change_basis_inverse.html" title="Equation 4.3.4">(4.3.4)</a> that when both bases are orthonormal, we can obtain one change of basis matrix from the other simply by computing the transpose. An invertible matrix whose inverse is equal to its transpose is called an <em class="emphasis">elementary matrix</em>. We develop some general theory about this special family of matrices (interesting in its own right) before treating change of basis matrices.</div>
 </div>
 <span class="incontext"><a href="s_orthogonality.html#p-3742" class="internal">in-context</a></span>
 </body>

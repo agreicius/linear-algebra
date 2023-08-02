@@ -11,8 +11,24 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para">The success of our analysis in <a href="" class="xref" data-knowl="./knowl/eg_reflection_eigenvectors.html" title="Example 4.4.1">Example 4.4.1</a> depended on finding the vectors <span class="process-math">\(\boldv_1\)</span> and <span class="process-math">\(\boldv_2\)</span> satisfying <span class="process-math">\(T(\boldv_1)=\boldv_1\)</span> and <span class="process-math">\(T(\boldv_2)=(-1)\boldv_2\text{.}\)</span> These are examples of eigenvectors, a concept we now officially define. For reasons that will become clear below, it is convenient to give separate definitions for linear transformations and matrices.</div>
+<h5 class="heading"><span class="type">Paragraph</span></h5>
+<div class="para logical">
+<div class="para">In even more detail, since <span class="process-math">\(B'\)</span> is a basis, for any vector <span class="process-math">\(\boldv\in \R^2\)</span> we can write</div>
+<div class="displaymath process-math" data-contains-math-knowls=" ./knowl/eq_reflection_decomposition.html ./knowl/eq_reflection_formula_vec.html">
+\begin{equation}
+\boldv=c_1\boldv_1+c_2\boldv_2\tag{4.4.1}
+\end{equation}
+</div>
+<div class="para">for some <span class="process-math">\(c_1,c_2\in \R\text{.}\)</span> It follows that</div>
+<div class="displaymath process-math" data-contains-math-knowls=" ./knowl/eq_reflection_decomposition.html ./knowl/eq_reflection_formula_vec.html">
+\begin{equation}
+T(\boldv)=c_1T(\boldv_1)+c_2T(\boldv_2)=c_1\boldv_1-c_2\boldv_2\text{.}\tag{4.4.2}
+\end{equation}
+</div>
+<div class="para">Together, formulas <a href="" class="xref" data-knowl="./knowl/eq_reflection_decomposition.html" title="Equation 4.4.1">(4.4.1)–(4.4.2)</a> give us a satisfying geometric understanding of our reflection operator <span class="process-math">\(T=r_\ell\text{.}\)</span> Let <span class="process-math">\(\ell^\perp=\Span\{(2,-1)\}\text{:}\)</span> this is the line perpendicular to <span class="process-math">\(\ell\)</span> passing through the origin. Formula <a href="" class="xref" data-knowl="./knowl/eq_reflection_decomposition.html" title="Equation 4.4.1">(4.4.1)</a> gives a decomposition of the vector <span class="process-math">\(\boldv\)</span> in terms of its components along <span class="process-math">\(\ell\)</span> and <span class="process-math">\(\ell^\perp\text{.}\)</span> Formula <a href="" class="xref" data-knowl="./knowl/eq_reflection_formula_vec.html" title="Equation 4.4.2">(4.4.2)</a> tells us what <span class="process-math">\(T=r_\ell\)</span> does to this decomposition: namely, it leaves the component along <span class="process-math">\(\ell\)</span> unchanged and ``flips" the component along <span class="process-math">\(\ell^\perp\text{.}\)</span> <figure class="figure figure-like"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/images/im_reflection_eigenvectors.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.4.2<span class="period">.</span></span><span class="space"> </span>Reflection <span class="process-math">\(T=r_\ell\text{,}\)</span> <span class="process-math">\(\ell=\Span\{(1,2)\}\)</span></figcaption></figure>
+</div>
+</div>
 <span class="incontext"><a href="s_eigenvectors.html#p-3229" class="internal">in-context</a></span>
 </body>
 </html>

@@ -15,14 +15,14 @@
 <span class="type">Item</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span>
 </h5>
 <div class="para logical">
-<div class="para">Let <span class="process-math">\(I_V\colon V\rightarrow V\)</span> be the identity transformation: i.e., <span class="process-math">\(I_V(\boldv)=\boldv\)</span> for all <span class="process-math">\(\boldv\in V\text{.}\)</span> By <a href="" class="xref" data-knowl="./knowl/th_matrixrep.html" title="Theorem 4.2.6: Defining property of matrix representation">Theorem 4.2.6</a> the matrix <span class="process-math">\([I_V]_B^{B'}\)</span> is the unique matrix satisfying</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_matrixrep.html">
+<div class="para">Let <span class="process-math">\(B=(\boldv_1, \boldv_2,\dots, \boldv_n)\text{.}\)</span> From formula <a href="" class="xref" data-knowl="./knowl/eq_matrixrep_formula.html" title="Equation 4.2.1">(4.2.1)</a> applied to <span class="process-math">\(I_v\text{,}\)</span> we see that the <span class="process-math">\(j\)</span>-th column of <span class="process-math">\([I_V]_B^{B'}\)</span> is</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_matrixrep_formula.html ./knowl/eq_change_basis_matrix.html ./knowl/d_change_of_basis.html">
 \begin{equation*}
-[I_V]_B^{B'}[\boldv]_B=[I_V(\boldv)]_{B'}=[\boldv]_{B'}\text{.}
+[\boldv_j]_{B'}
 \end{equation*}
 </div>
-<div class="para">Comparing the formulas for <span class="process-math">\([I_V]_{B}^{B'}\)</span> and <span class="process-math">\(\)</span> we see directly that</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/th_matrixrep.html">
+<div class="para">for all <span class="process-math">\(1\leq j\leq n\text{.}\)</span> Using formula <a href="" class="xref" data-knowl="./knowl/eq_change_basis_matrix.html" title="Equation 4.3.1">(4.3.1)</a> from <a href="" class="xref" data-knowl="./knowl/d_change_of_basis.html" title="Definition 4.3.1: Change of basis matrix">Definition 4.3.1</a> this is precisely the <span class="process-math">\(j\)</span>-th column of <span class="process-math">\(\underset{B\rightarrow B'}{P}\)</span> for all <span class="process-math">\(1\leq j\leq n\text{.}\)</span> We conclude that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_matrixrep_formula.html ./knowl/eq_change_basis_matrix.html ./knowl/d_change_of_basis.html">
 \begin{equation*}
 [I_V]_B^{B'} = \underset{B\rightarrow B'}{P}\text{.}
 \end{equation*}
