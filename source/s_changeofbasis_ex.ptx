@@ -257,12 +257,12 @@
         <ol>
           <li>
             <p>
-              Pick an orthonormal basis <m>B'</m> with one vector pointing along <m>\ell</m> and compute <m>[T]_{B'}</m>.
+              Pick a basis <m>B'=\{\boldv_1, \boldv_2\}</m> where <m>\boldv_1</m> points along <m>\ell</m> and <m>\boldv_2</m> is orthogonal to <m>\boldv_1</m>. (Both vectors will be expressed in terms of <m>a</m> and <m>b</m>.) Compute <m>[T]_{B'}</m>.
             </p>
           </li>
           <li>
             <p>
-              Let <m>B</m> be the standard basis of <m>\R^2</m>. Use <xref ref="th_change_of_basis_transformations"/> to compute <m>A=[T]_{B}</m>. (Use <xref ref="th_changebasis_orthonormal"/> to reduce your workload.)
+              Let <m>B</m> be the standard basis of <m>\R^2</m>. Use <xref ref="th_change_of_basis_transformations"/> to compute <m>A=[T]_{B}</m>.
             </p>
           </li>
           <li>
