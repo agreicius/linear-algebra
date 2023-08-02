@@ -152,7 +152,7 @@
         <me>
         \angvec{p(x),q(x)}=p(-1)q(-1)+p(0)q(0)+p(1)q(1)
         </me>.
-        $B=\{x^2, x, 1\}$. 
+        <m>B=\{x^2, x, 1\}</m>. 
       </p>
     </statement>
   </exercise>

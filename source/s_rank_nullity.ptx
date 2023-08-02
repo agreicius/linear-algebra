@@ -526,7 +526,7 @@ As we will see, this elegant result can be used to significantly simplify comput
           </li>
           <li>
             <p>
-              <m>\rank A=0</m>
+              <m>\rank A=n</m>
             </p>
           </li>
           <li>
