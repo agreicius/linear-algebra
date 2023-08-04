@@ -199,9 +199,11 @@
     </statement>
   </exercise>
   <exercise>
-    <p>
+    <statement>
+      <p>
         In each case information about a matrix <m>A</m> is given. Decide whether <m>A</m> is diagonalizable.
       </p>
+    </statement>
     <task>
       <statement>
         <p>
