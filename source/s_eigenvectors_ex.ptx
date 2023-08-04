@@ -195,7 +195,7 @@
         <ol>
           <li>
             <p>
-              Prove: <m>\lambda^k</m> is an eigenvalue of <m>A^k</m> for any positive integer <m>k</m>.
+              Prove by induction: <m>\lambda^k</m> is an eigenvalue of <m>A^k</m> for any positive integer <m>k</m>.
             </p>
           </li>
           <li>
