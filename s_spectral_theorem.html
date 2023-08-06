@@ -790,13 +790,13 @@ a_{m1} \amp  a_{m2} \amp  \cdots \amp  a_{mn}\amp b_{m}
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="s_spectral_theorem"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">5.4</span> <span class="title">The spectral theorem</span>
 </h2>
-<section class="introduction" id="introduction-87"><div class="para" id="p-3973">Among the many takeaways from <a href="s_diagonalization.html" class="internal" title="Section 4.5: Diagonalization">Section 4.5</a> is the simple fact that not all matrices are diagonalizable. In principle <a href="" class="xref" data-knowl="./knowl/th_diagonalizability_eigenspaces.html" title="Theorem 4.5.13: Diagonalizability: dimension of eigenspaces">Theorem 4.5.13</a> gives a complete answer to the question of diagonalizability in terms of eigenspaces. However, you should not be mislead by the artificially simple examples treated in  <a href="s_diagonalization.html" class="internal" title="Section 4.5: Diagonalization">Section 4.5</a>. In practice even the determination (or approximation) of the distinct eigenvalues of an <span class="process-math">\(n\times n\)</span> matrix poses a very challenging computational problem as <span class="process-math">\(n\)</span> gets large. As such the general question of whether a matrix is diagonalizable remains an intractable one. This makes all the more welcoming the main result of this section: <em class="emphasis">all</em> symmetric matrices are diagonalizable! This surprising fact is a consequence of the <a href="" class="xref" data-knowl="./knowl/th_spectral.html" title="Theorem 5.4.8: Spectral theorem for self-adjoint operators">spectral theorem for self-adjoint operators</a>: a result which itself fits into a larger suite of spectral theorems that treat the diagonalizability of various families of linear transformations of inner product spaces (both finite and infinite dimensional).</div></section><section class="subsection" id="ss_self-adjoint"><h3 class="heading hide-type">
+<section class="introduction" id="introduction-87"><div class="para" id="p-3972">Among the many takeaways from <a href="s_diagonalization.html" class="internal" title="Section 4.5: Diagonalization">Section 4.5</a> is the simple fact that not all matrices are diagonalizable. In principle <a href="" class="xref" data-knowl="./knowl/th_diagonalizability_eigenspaces.html" title="Theorem 4.5.13: Diagonalizability: dimension of eigenspaces">Theorem 4.5.13</a> gives a complete answer to the question of diagonalizability in terms of eigenspaces. However, you should not be mislead by the artificially simple examples treated in  <a href="s_diagonalization.html" class="internal" title="Section 4.5: Diagonalization">Section 4.5</a>. In practice even the determination (or approximation) of the distinct eigenvalues of an <span class="process-math">\(n\times n\)</span> matrix poses a very challenging computational problem as <span class="process-math">\(n\)</span> gets large. As such the general question of whether a matrix is diagonalizable remains an intractable one. This makes all the more welcoming the main result of this section: <em class="emphasis">all</em> symmetric matrices are diagonalizable! This surprising fact is a consequence of the <a href="" class="xref" data-knowl="./knowl/th_spectral.html" title="Theorem 5.4.8: Spectral theorem for self-adjoint operators">spectral theorem for self-adjoint operators</a>: a result which itself fits into a larger suite of spectral theorems that treat the diagonalizability of various families of linear transformations of inner product spaces (both finite and infinite dimensional).</div></section><section class="subsection" id="ss_self-adjoint"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">5.4.1</span> <span class="title">Self-adjoint operators</span>
 </h3>
-<div class="para" id="p-3974">Though we are mainly interested in the diagonalizability of symmetric matrices, our arguments are made more elegant by abstracting somewhat to the realm of linear transformations of inner product spaces. In this setting the appropriate analogue of a symmetric matrix is a <em class="emphasis">self-adjoint</em> linear transformation.</div>
+<div class="para" id="p-3973">Though we are mainly interested in the diagonalizability of symmetric matrices, our arguments are made more elegant by abstracting somewhat to the realm of linear transformations of inner product spaces. In this setting the appropriate analogue of a symmetric matrix is a <em class="emphasis">self-adjoint</em> linear transformation.</div>
 <article class="definition definition-like" id="d_self-adjoint"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.4.1</span><span class="period">.</span><span class="space"> </span><span class="title">Self-adjoint operators.</span>
-</h4> <div class="para logical" id="p-3975">
+</h4> <div class="para logical" id="p-3974">
 <div class="para">Let <span class="process-math">\((V, \langle\, , \rangle)\)</span> be a finite-dimensional inner product space. A linear transformation <span class="process-math">\(T\colon V\rightarrow V\)</span> is called a <dfn class="terminology">self-adjoint operator</dfn> if</div>
 <div class="displaymath process-math" id="eq_self-adjoint">
 \begin{equation}
@@ -805,16 +805,16 @@ a_{m1} \amp  a_{m2} \amp  \cdots \amp  a_{mn}\amp b_{m}
 </div>
 <div class="para">for all <span class="process-math">\(\boldv, \boldw\in V\text{.}\)</span>
 </div>
-</div></article><div class="para" id="p-3976">The next theorem makes explicit the connection between self-adjoint operators and symmetric matrices.</div>
+</div></article><div class="para" id="p-3975">The next theorem makes explicit the connection between self-adjoint operators and symmetric matrices.</div>
 <article class="theorem theorem-like" id="th_self-adjoint_symmetric"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.4.2</span><span class="period">.</span><span class="space"> </span><span class="title">Self-adjoint operators and symmetry.</span>
 </h4>
-<div class="para" id="p-3977">Let <span class="process-math">\((V, \langle\, , \rangle)\)</span> be a finite-dimensional inner product space, let <span class="process-math">\(T\colon V\rightarrow V\)</span> be a linear transformation, and let <span class="process-math">\(B\)</span> be an orthonormal ordered basis of <span class="process-math">\(V\text{.}\)</span> The following statements are equivalent.</div> <ol class="decimal">
-<li id="li-1193"><div class="para" id="p-3978">
+<div class="para" id="p-3976">Let <span class="process-math">\((V, \langle\, , \rangle)\)</span> be a finite-dimensional inner product space, let <span class="process-math">\(T\colon V\rightarrow V\)</span> be a linear transformation, and let <span class="process-math">\(B\)</span> be an orthonormal ordered basis of <span class="process-math">\(V\text{.}\)</span> The following statements are equivalent.</div> <ol class="decimal">
+<li id="li-1192"><div class="para" id="p-3977">
 <span class="process-math">\(T\)</span> is self-adjoint.</div></li>
-<li id="li-1194"><div class="para" id="p-3979">
+<li id="li-1193"><div class="para" id="p-3978">
 <span class="process-math">\(A=[T]_B\)</span> is symmetric.</div></li>
-</ol></article><article class="hiddenproof" id="proof-121"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-121"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-121"><article class="hiddenproof"><div class="para logical" id="p-3980">
+</ol></article><article class="hiddenproof" id="proof-121"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-121"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-121"><article class="hiddenproof"><div class="para logical" id="p-3979">
 <div class="para">Let <span class="process-math">\(B=(\boldv_1, \boldv_2, \dots, \boldv_n)\text{.}\)</span> We have</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/th_orthogonal_basis_formula.html ./knowl/d_innerproduct.html ./knowl/eq_self-adjoint.html ./knowl/ex_self-adjoint_symmetric.html">
 \begin{equation*}
@@ -843,21 +843,21 @@ A \text{ symmetric} \amp\iff a_{ij}=a_{ji} \text{ for all } 1\leq i,j\leq n  \\
 <article class="corollary theorem-like" id="cor_self-adjoint_symmetric"><h4 class="heading">
 <span class="type">Corollary</span><span class="space"> </span><span class="codenumber">5.4.3</span><span class="period">.</span><span class="space"> </span><span class="title">Self-adjoint operators and symmetry.</span>
 </h4>
-<div class="para" id="p-3981">Let <span class="process-math">\(A\in M_{nn}\text{.}\)</span> The following statements are equivalent.</div> <ol class="decimal">
-<li id="li-1195"><div class="para" id="p-3982">
+<div class="para" id="p-3980">Let <span class="process-math">\(A\in M_{nn}\text{.}\)</span> The following statements are equivalent.</div> <ol class="decimal">
+<li id="li-1194"><div class="para" id="p-3981">
 <span class="process-math">\(A\)</span> is symmetric.</div></li>
-<li id="li-1196"><div class="para" id="p-3983">
+<li id="li-1195"><div class="para" id="p-3982">
 <span class="process-math">\(T_A\)</span> is self-adjoint with respect to the dot product.</div></li>
-<li id="li-1197"><div class="para" id="p-3984">
+<li id="li-1196"><div class="para" id="p-3983">
 <span class="process-math">\(A\boldx\, \cdot \boldy=\boldx\cdot A\boldy\)</span> for all <span class="process-math">\(\boldx, \boldy\in\R^n\text{.}\)</span>
 </div></li>
-</ol></article><article class="hiddenproof" id="proof-122"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-122"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-122"><article class="hiddenproof"><div class="para" id="p-3985">Since <span class="process-math">\(A=[T_A]_B\text{,}\)</span> where <span class="process-math">\(B\)</span> is the standard ordered basis of <span class="process-math">\(\R^n\text{,}\)</span> and since <span class="process-math">\(B\)</span> is orthonormal with respect to the dot product, it follows from <a href="" class="xref" data-knowl="./knowl/th_self-adjoint_symmetric.html" title="Theorem 5.4.2: Self-adjoint operators and symmetry">Theorem 5.4.2</a> that statements (1) and (2) are equivalent. Statements (2) and (3) are equivalent since by definition <span class="process-math">\(T_A(\boldx)=A\boldx\)</span> for all <span class="process-math">\(\boldx\in \R^n\text{.}\)</span>
+</ol></article><article class="hiddenproof" id="proof-122"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-122"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-122"><article class="hiddenproof"><div class="para" id="p-3984">Since <span class="process-math">\(A=[T_A]_B\text{,}\)</span> where <span class="process-math">\(B\)</span> is the standard ordered basis of <span class="process-math">\(\R^n\text{,}\)</span> and since <span class="process-math">\(B\)</span> is orthonormal with respect to the dot product, it follows from <a href="" class="xref" data-knowl="./knowl/th_self-adjoint_symmetric.html" title="Theorem 5.4.2: Self-adjoint operators and symmetry">Theorem 5.4.2</a> that statements (1) and (2) are equivalent. Statements (2) and (3) are equivalent since by definition <span class="process-math">\(T_A(\boldx)=A\boldx\)</span> for all <span class="process-math">\(\boldx\in \R^n\text{.}\)</span>
 </div></article></div>
-<div class="para" id="p-3986">The next result, impressive in its own right, is also key to the induction argument we will use to prove <a href="" class="xref" data-knowl="./knowl/th_spectral.html" title="Theorem 5.4.8: Spectral theorem for self-adjoint operators">Theorem 5.4.8</a>. A proper proof would require a careful treatment of complex vector spaces: a topic which lies just outside the scope of this text. The “proof sketch” we provide can easily be upgraded to a complete argument simply by justifying a few statements about <span class="process-math">\(\C^n\)</span> and its standard inner product.</div>
+<div class="para" id="p-3985">The next result, impressive in its own right, is also key to the induction argument we will use to prove <a href="" class="xref" data-knowl="./knowl/th_spectral.html" title="Theorem 5.4.8: Spectral theorem for self-adjoint operators">Theorem 5.4.8</a>. A proper proof would require a careful treatment of complex vector spaces: a topic which lies just outside the scope of this text. The “proof sketch” we provide can easily be upgraded to a complete argument simply by justifying a few statements about <span class="process-math">\(\C^n\)</span> and its standard inner product.</div>
 <article class="theorem theorem-like" id="th_self-adjoint_eigenvalue"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.4.4</span><span class="period">.</span><span class="space"> </span><span class="title">Eigenvalues of self-adjoint operators.</span>
 </h4>
-<div class="para logical" id="p-3987">
+<div class="para logical" id="p-3986">
 <div class="para">Let <span class="process-math">\((V, \langle\, , \rangle)\)</span> be a finite-dimensional inner product space. If <span class="process-math">\(T\colon V\rightarrow V\)</span> is self adjoint, then all roots of its characteristic polynomial <span class="process-math">\(p(x)\)</span> are real: i.e., we have</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -866,7 +866,7 @@ p(x)=(x-\lambda_1)(x-\lambda_2)\cdots (x-\lambda_n)\text{,}
 </div>
 <div class="para">where <span class="process-math">\(\lambda_i\in \R\)</span> for all <span class="process-math">\(1\leq i\leq n\text{.}\)</span>
 </div>
-</div></article><article class="hiddenproof" id="proof_sketch"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof_sketch"><h4 class="heading"><span class="title">Proof sketch of Theorem 5.4.2.</span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof_sketch"><article class="hiddenproof"> <div class="para logical" id="p-3988">
+</div></article><article class="hiddenproof" id="proof_sketch"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof_sketch"><h4 class="heading"><span class="title">Proof sketch of Theorem 5.4.2.</span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof_sketch"><article class="hiddenproof"> <div class="para logical" id="p-3987">
 <div class="para">Pick an orthonormal ordered basis <span class="process-math">\(B\)</span> of <span class="process-math">\(V\text{,}\)</span> and let <span class="process-math">\(A=[T]_B\text{.}\)</span> By <a href="" class="xref" data-knowl="./knowl/th_self-adjoint_symmetric.html" title="Theorem 5.4.2: Self-adjoint operators and symmetry">Theorem 5.4.2</a>, <span class="process-math">\(A\)</span> is symmetric. To prove that all roots of the characteristic polynomial <span class="process-math">\(p(t)=\det(tI-A)\)</span> are real, we make a slight detour into complex vector spaces. The set</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/th_self-adjoint_symmetric.html ./knowl/d_vector_space.html">
 \begin{equation*}
@@ -892,7 +892,7 @@ p(x)=(x-\lambda_1)(x-\lambda_2)\cdots (x-\lambda_n)\text{,}
 \end{equation*}
 </div>
 <div class="para">where <span class="process-math">\(\overline{w_i}\)</span> denotes the complex conjugate of <span class="process-math">\(w_i\)</span> for each <span class="process-math">\(i\text{.}\)</span> Essentially all of our theory of real vector spaces can be “transported” to complex vector spaces, including definitions and results about eigenvectors and inner products. The rest of this argument makes use of this principle by citing without proof some of these properties, and this is why it has been downgraded to a “proof sketch”.</div>
-</div> <div class="para logical" id="p-3989">
+</div> <div class="para logical" id="p-3988">
 <div class="para">We now return to <span class="process-math">\(A\)</span> and its characteristic polynomial <span class="process-math">\(p(x)\text{.}\)</span> Recall that we want to show that all roots of <span class="process-math">\(p(x)\)</span> are real.  Let <span class="process-math">\(\lambda\in \C\)</span> be a root of <span class="process-math">\(p(x)\text{.}\)</span> The complex theory of eigenvectors implies that there is a nonzero vector <span class="process-math">\(\boldz\in \C^n\)</span> satisfying <span class="process-math">\(A\boldz=\lambda \boldz\text{.}\)</span> On the one hand, we have</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/cor_self-adjoint_symmetric.html">
 \begin{equation*}
@@ -925,16 +925,16 @@ p(x)=(x-\lambda_1)(x-\lambda_2)\cdots (x-\lambda_n)\text{,}
 <article class="corollary theorem-like" id="cor_self-adjoint_eigenvalue"><h4 class="heading">
 <span class="type">Corollary</span><span class="space"> </span><span class="codenumber">5.4.5</span><span class="period">.</span><span class="space"> </span><span class="title">Eigenvalues of self-adjoint operators.</span>
 </h4>
-<div class="para" id="p-3990">If <span class="process-math">\(T\)</span> is a self-adjoint operator on a finite-dimensional inner product space <span class="process-math">\(V\text{,}\)</span> then <span class="process-math">\(T\)</span> has an eigenvalue: i.e., there is a <span class="process-math">\(\lambda\in \R\)</span> and nonzero <span class="process-math">\(\boldv\in V\)</span> such that <span class="process-math">\(T(\boldv)=\lambda\boldv\text{.}\)</span>
-</div></article><article class="hiddenproof" id="proof-124"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-124"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-124"><article class="hiddenproof"><div class="para" id="p-3991">The corollary follows from <a href="" class="xref" data-knowl="./knowl/th_self-adjoint_eigenvalue.html" title="Theorem 5.4.4: Eigenvalues of self-adjoint operators">Theorem 5.4.4</a> and the fact that the eigenvalues of <span class="process-math">\(T\)</span> are the real roots of its characteristic polynomial (<a href="" class="xref" data-knowl="./knowl/th_characteristic_polynomial.html" title="Theorem 4.4.25: Characteristic polynomial">4.4.25</a>).</div></article></div>
-<div class="para" id="p-3992">From <a href="" class="xref" data-knowl="./knowl/th_self-adjoint_eigenvalue.html" title="Theorem 5.4.4: Eigenvalues of self-adjoint operators">Theorem 5.4.4</a> and <a href="" class="xref" data-knowl="./knowl/cor_self-adjoint_symmetric.html" title="Corollary 5.4.3: Self-adjoint operators and symmetry">Corollary 5.4.3</a> it follows that the characterisitic polynomial of any symmetric matrix must factor as a product of linear terms over <span class="process-math">\(\R\text{,}\)</span> as illustrated by the next two examples.</div>
+<div class="para" id="p-3989">If <span class="process-math">\(T\)</span> is a self-adjoint operator on a finite-dimensional inner product space <span class="process-math">\(V\text{,}\)</span> then <span class="process-math">\(T\)</span> has an eigenvalue: i.e., there is a <span class="process-math">\(\lambda\in \R\)</span> and nonzero <span class="process-math">\(\boldv\in V\)</span> such that <span class="process-math">\(T(\boldv)=\lambda\boldv\text{.}\)</span>
+</div></article><article class="hiddenproof" id="proof-124"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-124"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-124"><article class="hiddenproof"><div class="para" id="p-3990">The corollary follows from <a href="" class="xref" data-knowl="./knowl/th_self-adjoint_eigenvalue.html" title="Theorem 5.4.4: Eigenvalues of self-adjoint operators">Theorem 5.4.4</a> and the fact that the eigenvalues of <span class="process-math">\(T\)</span> are the real roots of its characteristic polynomial (<a href="" class="xref" data-knowl="./knowl/th_characteristic_polynomial.html" title="Theorem 4.4.25: Characteristic polynomial">4.4.25</a>).</div></article></div>
+<div class="para" id="p-3991">From <a href="" class="xref" data-knowl="./knowl/th_self-adjoint_eigenvalue.html" title="Theorem 5.4.4: Eigenvalues of self-adjoint operators">Theorem 5.4.4</a> and <a href="" class="xref" data-knowl="./knowl/cor_self-adjoint_symmetric.html" title="Corollary 5.4.3: Self-adjoint operators and symmetry">Corollary 5.4.3</a> it follows that the characterisitic polynomial of any symmetric matrix must factor as a product of linear terms over <span class="process-math">\(\R\text{,}\)</span> as illustrated by the next two examples.</div>
 <article class="example example-like" id="eg_symmetric_matrix"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.4.6</span><span class="period">.</span><span class="space"> </span><span class="title">Symmetric <span class="process-math">\(2\times 2\)</span> matrices.</span>
 </h4>
-<div class="para" id="p-3993">Verify that the characteristic polynomial of any symmetric <span class="process-math">\(2\times 2\)</span> matrix factors into linear terms over <span class="process-math">\(\R\text{.}\)</span>
+<div class="para" id="p-3992">Verify that the characteristic polynomial of any symmetric <span class="process-math">\(2\times 2\)</span> matrix factors into linear terms over <span class="process-math">\(\R\text{.}\)</span>
 </div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-129" id="solution-129"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-129"><div class="solution solution-like"><div class="para logical" id="p-3994">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-129" id="solution-129"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-129"><div class="solution solution-like"><div class="para logical" id="p-3993">
 <div class="para">Given a symmetric <span class="process-math">\(2\times 2\)</span> matrix</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -962,7 +962,7 @@ p(x)=\det(xI-A)=x^2-(a+c)x+(ac-b^2).\text{.}
 </div></article><article class="example example-like" id="example-162"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.4.7</span><span class="period">.</span><span class="space"> </span><span class="title">Symmetric <span class="process-math">\(4\times 4\)</span> matrix.</span>
 </h4>
-<div class="para logical" id="p-3995">
+<div class="para logical" id="p-3994">
 <div class="para">Verify that the characteristic polynomial of the symmetric matrix</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -978,7 +978,7 @@ A=\begin{amatrix}[rrrr]
 </div>
 </div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-130" id="solution-130"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-130"><div class="solution solution-like"><div class="para logical" id="p-3996">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-130" id="solution-130"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-130"><div class="solution solution-like"><div class="para logical" id="p-3995">
 <div class="para">The characteristic polynomial of <span class="process-math">\(A\)</span> is <span class="process-math">\(p(x)=x^4-112x^2+2560\text{.}\)</span> We can use the quadratic equation to solve <span class="process-math">\(p(x)=0\)</span> for <span class="process-math">\(u=x^2\text{,}\)</span> yielding</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -995,20 +995,20 @@ p(x)=(x-4\sqrt{2})(x+4\sqrt{2})(x-4\sqrt{5})(x+4\sqrt{5})\text{.}
 </div></article></section><section class="subsection" id="ss_spectal_theorem_operators"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">5.4.2</span> <span class="title">The spectral theorem for self-adjoint operators</span>
 </h3>
-<section class="introduction" id="introduction-88"><div class="para" id="p-3997">Our version of the spectral theorem concerns self-adjoint linear transformations on a finite-dimensional inner product space. It tells us two remarkable things: (a) every such linear transformation has an eigenbasis (and hence is diagonalizable); and furthermore, (b) the eigenbasis can be chosen to be orthogonal, or even orthonormal.</div></section><article class="theorem theorem-like" id="th_spectral"><h4 class="heading">
+<section class="introduction" id="introduction-88"><div class="para" id="p-3996">Our version of the spectral theorem concerns self-adjoint linear transformations on a finite-dimensional inner product space. It tells us two remarkable things: (a) every such linear transformation has an eigenbasis (and hence is diagonalizable); and furthermore, (b) the eigenbasis can be chosen to be orthogonal, or even orthonormal.</div></section><article class="theorem theorem-like" id="th_spectral"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.4.8</span><span class="period">.</span><span class="space"> </span><span class="title">Spectral theorem for self-adjoint operators.</span>
 </h4>
-<div class="para" id="p-3998">Let <span class="process-math">\((V, \angvec{\, , \,})\)</span> be a finite-dimensional vector space, and let <span class="process-math">\(T\colon V\rightarrow V\)</span> be a linear transformation. The following statements are equivalent.</div> <ol class="decimal">
-<li id="li-1198"><div class="para" id="p-3999">
+<div class="para" id="p-3997">Let <span class="process-math">\((V, \angvec{\, , \,})\)</span> be a finite-dimensional vector space, and let <span class="process-math">\(T\colon V\rightarrow V\)</span> be a linear transformation. The following statements are equivalent.</div> <ol class="decimal">
+<li id="li-1197"><div class="para" id="p-3998">
 <span class="process-math">\(T\)</span> is self-adjoint.</div></li>
-<li id="li-1199"><div class="para" id="p-4000">
+<li id="li-1198"><div class="para" id="p-3999">
 <span class="process-math">\(T\)</span> is diagonalizable and eigenvectors with distinct eigenvalues are orthogonal.</div></li>
-<li id="li-1200"><div class="para" id="p-4001">
+<li id="li-1199"><div class="para" id="p-4000">
 <span class="process-math">\(T\)</span> has an orthogonal eigenbasis.</div></li>
-<li id="li-1201"><div class="para" id="p-4002">
+<li id="li-1200"><div class="para" id="p-4001">
 <span class="process-math">\(T\)</span> has an orthonormal eigenbasis.</div></li>
-</ol></article><article class="hiddenproof" id="proof-125"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-125"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-125"><article class="hiddenproof"><div class="para" id="p-4003">We will prove the cycle of implications <span class="process-math">\((1)\implies (2)\implies (3)\implies (4)\implies (1)\text{.}\)</span>
-</div> <article class="hiddenproof" id="proof-126"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-126"><h5 class="heading"><span class="title">Implication: <span class="process-math">\((1)\implies (2)\)</span>.</span></h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-126"><article class="hiddenproof"> <div class="para logical" id="p-4004">
+</ol></article><article class="hiddenproof" id="proof-125"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-125"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-125"><article class="hiddenproof"><div class="para" id="p-4002">We will prove the cycle of implications <span class="process-math">\((1)\implies (2)\implies (3)\implies (4)\implies (1)\text{.}\)</span>
+</div> <article class="hiddenproof" id="proof-126"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-126"><h5 class="heading"><span class="title">Implication: <span class="process-math">\((1)\implies (2)\)</span>.</span></h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-126"><article class="hiddenproof"> <div class="para logical" id="p-4003">
 <div class="para">Assume <span class="process-math">\(T\)</span> is self adjoint. First we show that eigenvectors with distinct eigenvalues are orthogonal. To this end, suppose we have <span class="process-math">\(T(\boldv)=\lambda\boldv\)</span> and <span class="process-math">\(T(\boldv')=\lambda'\boldv'\text{,}\)</span> where <span class="process-math">\(\lambda\ne \lambda'\text{.}\)</span> Using the definition of self-adjoint, we have</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/cor_self-adjoint_eigenvalue.html ./knowl/ex_selfadjoint_complement.html" id="md-291">
 \begin{align*}
@@ -1019,9 +1019,9 @@ p(x)=(x-4\sqrt{2})(x+4\sqrt{2})(x-4\sqrt{5})(x+4\sqrt{5})\text{.}
 </div>
 <div class="para">We now prove by induction on <span class="process-math">\(\dim V\)</span> that if <span class="process-math">\(T\)</span> is self-adjoint, then <span class="process-math">\(T\)</span> is diagonalizable. The base case <span class="process-math">\(\dim V=1\)</span> is trivial. Assume the result is true of any <span class="process-math">\(n\)</span>-dimensional inner product space, and suppose <span class="process-math">\(\dim V=n+1\text{.}\)</span> By <a href="" class="xref" data-knowl="./knowl/cor_self-adjoint_eigenvalue.html" title="Corollary 5.4.5: Eigenvalues of self-adjoint operators">Corollary 5.4.5</a> there is a nonzero <span class="process-math">\(\boldv\in V\)</span> with <span class="process-math">\(T(\boldv)=\lambda\boldv\text{.}\)</span> Let <span class="process-math">\(W=\Span\{\boldv\}\text{.}\)</span> Since <span class="process-math">\(\dim W=1\text{,}\)</span> we have <span class="process-math">\(\dim W^\perp=\dim V-1=n\text{.}\)</span> The following two facts are crucial for the rest of the argument and are left as an exercise (<a href="" class="xref" data-knowl="./knowl/ex_selfadjoint_complement.html" title="Exercise 5.4.3.11">5.4.3.11</a>).</div>
 <ol class="decimal">
-<li id="li-1202"><div class="para" id="p-4005">For all <span class="process-math">\(\boldv\in W^\perp\)</span> we have <span class="process-math">\(T(\boldv)\in W^\perp\text{,}\)</span> and thus by restricting <span class="process-math">\(T\)</span> to <span class="process-math">\(W^\perp\)</span> we get a linear transformation <span class="process-math">\(T\vert_{W^{\perp}}\colon W^\perp\rightarrow W^\perp\text{.}\)</span>
+<li id="li-1201"><div class="para" id="p-4004">For all <span class="process-math">\(\boldv\in W^\perp\)</span> we have <span class="process-math">\(T(\boldv)\in W^\perp\text{,}\)</span> and thus by restricting <span class="process-math">\(T\)</span> to <span class="process-math">\(W^\perp\)</span> we get a linear transformation <span class="process-math">\(T\vert_{W^{\perp}}\colon W^\perp\rightarrow W^\perp\text{.}\)</span>
 </div></li>
-<li id="li-1203"><div class="para" id="p-4006">The restriction <span class="process-math">\(T\vert_{W^\perp}\)</span> is self-adjoint, considered as a linear transformation of the inner product space <span class="process-math">\(W^\perp\text{.}\)</span>  Here the inner product on the subspace <span class="process-math">\(W^\perp\)</span> is inherited from <span class="process-math">\((V, \angvec{\, , \,})\)</span> by restriction.</div></li>
+<li id="li-1202"><div class="para" id="p-4005">The restriction <span class="process-math">\(T\vert_{W^\perp}\)</span> is self-adjoint, considered as a linear transformation of the inner product space <span class="process-math">\(W^\perp\text{.}\)</span>  Here the inner product on the subspace <span class="process-math">\(W^\perp\)</span> is inherited from <span class="process-math">\((V, \angvec{\, , \,})\)</span> by restriction.</div></li>
 </ol>
 <div class="para">Now since <span class="process-math">\(\dim W^\perp=n-1\)</span> and <span class="process-math">\(T\vert_{W^\perp}\)</span> is self-adjoint, we may assume by induction that <span class="process-math">\(T\vert_{W^\perp}\)</span> has an eigenbasis <span class="process-math">\(B'=(\boldv_1, \boldv_2,\dots, \boldv_n)\text{.}\)</span> We claim that <span class="process-math">\(B=(\boldv, \boldv_2, \dots, \boldv_n)\)</span> is an eigenbasis of <span class="process-math">\(V\text{.}\)</span> Since by definition <span class="process-math">\(T\vert_{W^\perp}(\boldw')=T(\boldw')\)</span> for all <span class="process-math">\(\boldw'\in W^\perp\text{,}\)</span> we see that the vectors <span class="process-math">\(\boldv_i\)</span> are also eigenvectors of <span class="process-math">\(T\text{,}\)</span> and thus that <span class="process-math">\(B\)</span> consists of eigenvectors. To show <span class="process-math">\(B\)</span> is a basis it is enought to prove linear independence, since  <span class="process-math">\(\dim V=n+1\text{.}\)</span> Suppose we have</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/cor_self-adjoint_eigenvalue.html ./knowl/ex_selfadjoint_complement.html">
@@ -1047,34 +1047,34 @@ c_1\boldv_1+\cdots +c_n\boldv_n=\boldzero\text{,}
 \end{equation*}
 </div>
 <div class="para">and thus <span class="process-math">\(c_i=0\)</span> for all <span class="process-math">\(1\leq i\leq n\text{,}\)</span> since <span class="process-math">\(B'\)</span> is linearly independent. Having proved that <span class="process-math">\(B\)</span> is an eigenbasis, we conclude that <span class="process-math">\(T\)</span> is diagonalizable.</div>
-</div></article></div> <article class="hiddenproof" id="proof-127"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-127"><h5 class="heading"><span class="title">Implication: <span class="process-math">\((2)\implies (3)\)</span>.</span></h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-127"><article class="hiddenproof"> <div class="para" id="p-4007">Let <span class="process-math">\(\lambda_1, \lambda_2, \dots, \lambda_r\)</span> be the distinct eigenvalues of <span class="process-math">\(T\text{.}\)</span> Since <span class="process-math">\(T\)</span> is assumed to be diagonalizable, following <a href="" class="xref" data-knowl="./knowl/proc_diagonalize.html" title="Procedure 4.5.14: Deciding whether a linear transformation is diagonalizable">Procedure 4.5.14</a> we can create an eigenbasis <span class="process-math">\(B\)</span> by picking bases <span class="process-math">\(B_i\)</span> of each eigenspace <span class="process-math">\(W_{\lambda_i}\)</span> and combining them. We can always choose these bases so that each <span class="process-math">\(B_i\)</span> is orthogonal. When we do so, the assembled <span class="process-math">\(B\)</span> will be orthogonal as a whole. Indeed given any two elements <span class="process-math">\(\boldv, \boldv'\)</span> of <span class="process-math">\(B\text{,}\)</span> if both vectors are elements of <span class="process-math">\(B_i\)</span> for some <span class="process-math">\(i\text{,}\)</span> then they are orthogonal <em class="emphasis">by design</em>; furthermore, if <span class="process-math">\(\boldv\)</span> is an element of basis <span class="process-math">\(B_i\)</span> and <span class="process-math">\(\boldv'\)</span> is an element of basis <span class="process-math">\(B_j\)</span> with <span class="process-math">\(i\ne j\text{,}\)</span> then they are eigenvectors with distinct eigenvalues, and hence orthogonal <em class="emphasis">by assumption</em>!</div></article></div> <article class="hiddenproof" id="proof-128"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-128"><h5 class="heading"><span class="title">Implication: <span class="process-math">\((3)\implies (4)\)</span>.</span></h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-128"><article class="hiddenproof"> <div class="para" id="p-4008">This is easy to see since an orthonormal eigenbasis can be obtained from an orthogonal eigenbasis by scaling each element by the reciprocal of its norm.</div></article></div> <article class="hiddenproof" id="proof-129"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-129"><h5 class="heading"><span class="title">Implication: <span class="process-math">\((4)\implies (1)\)</span>.</span></h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-129"><article class="hiddenproof"> <div class="para" id="p-4009">Assume <span class="process-math">\(B\)</span> is an orthonormal eigenbasis of <span class="process-math">\(T\text{.}\)</span> Since <span class="process-math">\(B\)</span> is an eigenbasis, <span class="process-math">\([T]_B\)</span> is a diagonal matrix, and hence symmetric. Since <span class="process-math">\(B\)</span> is orthonormal with respect to the dot product, we conclude from <a href="" class="xref" data-knowl="./knowl/th_self-adjoint_symmetric.html" title="Theorem 5.4.2: Self-adjoint operators and symmetry">Theorem 5.4.2</a> that <span class="process-math">\(T\)</span> is self-adjoint.</div></article></div></article></div>
-<div class="para" id="p-4010">An operator that admits an orthogonal (and hence an orthonormal) eigenbasis is called  <em class="emphasis">orthogonally diagonalizable</em>.</div>
+</div></article></div> <article class="hiddenproof" id="proof-127"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-127"><h5 class="heading"><span class="title">Implication: <span class="process-math">\((2)\implies (3)\)</span>.</span></h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-127"><article class="hiddenproof"> <div class="para" id="p-4006">Let <span class="process-math">\(\lambda_1, \lambda_2, \dots, \lambda_r\)</span> be the distinct eigenvalues of <span class="process-math">\(T\text{.}\)</span> Since <span class="process-math">\(T\)</span> is assumed to be diagonalizable, following <a href="" class="xref" data-knowl="./knowl/proc_diagonalize.html" title="Procedure 4.5.14: Deciding whether a linear transformation is diagonalizable">Procedure 4.5.14</a> we can create an eigenbasis <span class="process-math">\(B\)</span> by picking bases <span class="process-math">\(B_i\)</span> of each eigenspace <span class="process-math">\(W_{\lambda_i}\)</span> and combining them. We can always choose these bases so that each <span class="process-math">\(B_i\)</span> is orthogonal. When we do so, the assembled <span class="process-math">\(B\)</span> will be orthogonal as a whole. Indeed given any two elements <span class="process-math">\(\boldv, \boldv'\)</span> of <span class="process-math">\(B\text{,}\)</span> if both vectors are elements of <span class="process-math">\(B_i\)</span> for some <span class="process-math">\(i\text{,}\)</span> then they are orthogonal <em class="emphasis">by design</em>; furthermore, if <span class="process-math">\(\boldv\)</span> is an element of basis <span class="process-math">\(B_i\)</span> and <span class="process-math">\(\boldv'\)</span> is an element of basis <span class="process-math">\(B_j\)</span> with <span class="process-math">\(i\ne j\text{,}\)</span> then they are eigenvectors with distinct eigenvalues, and hence orthogonal <em class="emphasis">by assumption</em>!</div></article></div> <article class="hiddenproof" id="proof-128"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-128"><h5 class="heading"><span class="title">Implication: <span class="process-math">\((3)\implies (4)\)</span>.</span></h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-128"><article class="hiddenproof"> <div class="para" id="p-4007">This is easy to see since an orthonormal eigenbasis can be obtained from an orthogonal eigenbasis by scaling each element by the reciprocal of its norm.</div></article></div> <article class="hiddenproof" id="proof-129"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-129"><h5 class="heading"><span class="title">Implication: <span class="process-math">\((4)\implies (1)\)</span>.</span></h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-129"><article class="hiddenproof"> <div class="para" id="p-4008">Assume <span class="process-math">\(B\)</span> is an orthonormal eigenbasis of <span class="process-math">\(T\text{.}\)</span> Since <span class="process-math">\(B\)</span> is an eigenbasis, <span class="process-math">\([T]_B\)</span> is a diagonal matrix, and hence symmetric. Since <span class="process-math">\(B\)</span> is orthonormal with respect to the dot product, we conclude from <a href="" class="xref" data-knowl="./knowl/th_self-adjoint_symmetric.html" title="Theorem 5.4.2: Self-adjoint operators and symmetry">Theorem 5.4.2</a> that <span class="process-math">\(T\)</span> is self-adjoint.</div></article></div></article></div>
+<div class="para" id="p-4009">An operator that admits an orthogonal (and hence an orthonormal) eigenbasis is called  <em class="emphasis">orthogonally diagonalizable</em>.</div>
 <article class="definition definition-like" id="d_orthogonally_diagable"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.4.9</span><span class="period">.</span><span class="space"> </span><span class="title">Orthogonally diagonalizable.</span>
-</h4>  <div class="para" id="p-4011">Let <span class="process-math">\(V\)</span> be a finite-dimensional inner product space. A linear transformation <span class="process-math">\(T\colon V\rightarrow V\)</span> is <dfn class="terminology">orthogonally diagonalizable</dfn> if there exists an orthogonal (equivalently, an orthonormal) eigenbasis of <span class="process-math">\(T\text{.}\)</span>
-</div></article><div class="para" id="p-4012">This new language affords us a more succinct articulation of <a href="" class="xref" data-knowl="./knowl/th_spectral.html" title="Theorem 5.4.8: Spectral theorem for self-adjoint operators">Theorem 5.4.8</a>: to be self-adjoint is to be orthogonally diagonalizable. Think of this as a sort of “diagonalizable+” condition.</div>
+</h4>  <div class="para" id="p-4010">Let <span class="process-math">\(V\)</span> be a finite-dimensional inner product space. A linear transformation <span class="process-math">\(T\colon V\rightarrow V\)</span> is <dfn class="terminology">orthogonally diagonalizable</dfn> if there exists an orthogonal (equivalently, an orthonormal) eigenbasis of <span class="process-math">\(T\text{.}\)</span>
+</div></article><div class="para" id="p-4011">This new language affords us a more succinct articulation of <a href="" class="xref" data-knowl="./knowl/th_spectral.html" title="Theorem 5.4.8: Spectral theorem for self-adjoint operators">Theorem 5.4.8</a>: to be self-adjoint is to be orthogonally diagonalizable. Think of this as a sort of “diagonalizable+” condition.</div>
 <article class="principle theorem-like" id="mantra_self-adjoint"><h4 class="heading">
 <span class="type">Mantra</span><span class="space"> </span><span class="codenumber">5.4.10</span><span class="period">.</span><span class="space"> </span><span class="title">Self-adjoint mantra.</span>
 </h4>
-<div class="para logical" id="p-4013">
+<div class="para logical" id="p-4012">
 <div class="para">To be self-adjoint on a finite-dimensional inner product space is to be “diagonalizable+”. In more detail:</div>
 <div class="displaymath process-math" id="eq_self_adjoint">
 \begin{equation}
 T \text{ is self-adjoint} \iff T \text{ is orthogonally diagonalizable}\text{.}\tag{5.4.2}
 \end{equation}
 </div>
-</div></article><div class="para" id="p-4014">As an immediate consequence of <a href="" class="xref" data-knowl="./knowl/th_spectral.html" title="Theorem 5.4.8: Spectral theorem for self-adjoint operators">Theorem 5.4.8</a>, we have the following result about symmetric matrices.</div>
+</div></article><div class="para" id="p-4013">As an immediate consequence of <a href="" class="xref" data-knowl="./knowl/th_spectral.html" title="Theorem 5.4.8: Spectral theorem for self-adjoint operators">Theorem 5.4.8</a>, we have the following result about symmetric matrices.</div>
 <article class="corollary theorem-like" id="cor_spectral"><h4 class="heading">
 <span class="type">Corollary</span><span class="space"> </span><span class="codenumber">5.4.11</span><span class="period">.</span><span class="space"> </span><span class="title">Spectral theorem for symmetric matrices.</span>
 </h4>
-<div class="para" id="p-4015">Let <span class="process-math">\(A\)</span> be an <span class="process-math">\(n\times n\)</span> matrix. The following statements are equivalent.</div> <ol class="decimal">
-<li id="li-1204"><div class="para" id="p-4016">
+<div class="para" id="p-4014">Let <span class="process-math">\(A\)</span> be an <span class="process-math">\(n\times n\)</span> matrix. The following statements are equivalent.</div> <ol class="decimal">
+<li id="li-1203"><div class="para" id="p-4015">
 <span class="process-math">\(A\)</span> is symmetric.</div></li>
-<li id="li-1205"><div class="para" id="p-4017">
+<li id="li-1204"><div class="para" id="p-4016">
 <span class="process-math">\(A\)</span> is diagonalizable and eigenvectors with distinct eigenvalues are orthogonal with respect to the dot product.</div></li>
-<li id="li-1206"><div class="para" id="p-4018">
+<li id="li-1205"><div class="para" id="p-4017">
 <span class="process-math">\(A\)</span> is orthogonally diagonalizable.</div></li>
-<li id="li-1207"><div class="para logical" id="p-4019">
+<li id="li-1206"><div class="para logical" id="p-4018">
 <div class="para">There exists an <a href="" class="xref" data-knowl="./knowl/d_orthogonal_matrix.html" title="Definition 5.2.13: Orthogonal matrices">orthogonal matrix</a> <span class="process-math">\(Q\)</span> and diagonal matrix <span class="process-math">\(D\)</span> such that</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/d_orthogonal_matrix.html" id="eq_ortho_diag">
 \begin{equation}
@@ -1082,16 +1082,16 @@ D=Q^{-1}AQ=Q^TAQ\text{.}\tag{5.4.3}
 \end{equation}
 </div>
 </div></li>
-</ol></article><article class="hiddenproof" id="proof-130"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-130"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-130"><article class="hiddenproof"><div class="para" id="p-4020">By <a href="" class="xref" data-knowl="./knowl/cor_self-adjoint_symmetric.html" title="Corollary 5.4.3: Self-adjoint operators and symmetry">Corollary 5.4.3</a> we have <span class="process-math">\(A\)</span> symmetric if and only if <span class="process-math">\(T_A\)</span> is self-adjoint with respect to the dot product. Statements (1)-(3) are seen to be equivalent by applying <a href="" class="xref" data-knowl="./knowl/th_spectral.html" title="Theorem 5.4.8: Spectral theorem for self-adjoint operators">Theorem 5.4.8</a> to <span class="process-math">\(T_A\)</span> (with respect to the dot product). Let <span class="process-math">\(B\)</span> be the standard basis of <span class="process-math">\(\R^n\text{.}\)</span> We see that (4) is equivalent to (3) by observing that <span class="process-math">\(B'\)</span> is an orthonormal eigenbasis of <span class="process-math">\(T_A\)</span> if and only if the matrix <span class="process-math">\(Q=\underset{B'\rightarrow B}{P}\)</span> obtained by placing the elements of <span class="process-math">\(B'\)</span> as columns is orthogonal and diagonalizes <span class="process-math">\(A\text{.}\)</span>
+</ol></article><article class="hiddenproof" id="proof-130"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-130"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-130"><article class="hiddenproof"><div class="para" id="p-4019">By <a href="" class="xref" data-knowl="./knowl/cor_self-adjoint_symmetric.html" title="Corollary 5.4.3: Self-adjoint operators and symmetry">Corollary 5.4.3</a> we have <span class="process-math">\(A\)</span> symmetric if and only if <span class="process-math">\(T_A\)</span> is self-adjoint with respect to the dot product. Statements (1)-(3) are seen to be equivalent by applying <a href="" class="xref" data-knowl="./knowl/th_spectral.html" title="Theorem 5.4.8: Spectral theorem for self-adjoint operators">Theorem 5.4.8</a> to <span class="process-math">\(T_A\)</span> (with respect to the dot product). Let <span class="process-math">\(B\)</span> be the standard basis of <span class="process-math">\(\R^n\text{.}\)</span> We see that (4) is equivalent to (3) by observing that <span class="process-math">\(B'\)</span> is an orthonormal eigenbasis of <span class="process-math">\(T_A\)</span> if and only if the matrix <span class="process-math">\(Q=\underset{B'\rightarrow B}{P}\)</span> obtained by placing the elements of <span class="process-math">\(B'\)</span> as columns is orthogonal and diagonalizes <span class="process-math">\(A\text{.}\)</span>
 </div></article></div>
-<div class="para" id="p-4021">The process of finding matrices <span class="process-math">\(Q\)</span> and <span class="process-math">\(D\)</span> satisfying <a href="" class="xref" data-knowl="./knowl/eq_ortho_diag.html" title="Equation 5.4.3">(5.4.3)</a> is called <em class="emphasis">orthogonal diagonalization</em>. A close look at the proof of <a href="" class="xref" data-knowl="./knowl/th_spectral.html" title="Theorem 5.4.8: Spectral theorem for self-adjoint operators">Theorem 5.4.8</a> gives rise to the following orthogonal diagonalization method for matrices.</div>
+<div class="para" id="p-4020">The process of finding matrices <span class="process-math">\(Q\)</span> and <span class="process-math">\(D\)</span> satisfying <a href="" class="xref" data-knowl="./knowl/eq_ortho_diag.html" title="Equation 5.4.3">(5.4.3)</a> is called <em class="emphasis">orthogonal diagonalization</em>. A close look at the proof of <a href="" class="xref" data-knowl="./knowl/th_spectral.html" title="Theorem 5.4.8: Spectral theorem for self-adjoint operators">Theorem 5.4.8</a> gives rise to the following orthogonal diagonalization method for matrices.</div>
 <article class="algorithm theorem-like" id="proc_ortho_diag"><h4 class="heading">
 <span class="type">Procedure</span><span class="space"> </span><span class="codenumber">5.4.12</span><span class="period">.</span><span class="space"> </span><span class="title">Orthogonal diagonalization.</span>
 </h4>
-<div class="para" id="p-4022">Let <span class="process-math">\(A\)</span> be a symmetric matrix. To orthogonally diagonalize <span class="process-math">\(A\)</span> proceed as follows.</div> <ol class="decimal">
-<li id="li-1208"><div class="para" id="p-4023">Let <span class="process-math">\(\lambda_1, \lambda_2, \dots, \lambda_r\)</span> be the distinct eigenvalues of <span class="process-math">\(A\text{.}\)</span> For each <span class="process-math">\(1\leq i\leq r\text{,}\)</span> compute an <em class="emphasis">orthonormal</em> ordered basis of <span class="process-math">\(W_{\lambda_i}\text{.}\)</span>
+<div class="para" id="p-4021">Let <span class="process-math">\(A\)</span> be a symmetric matrix. To orthogonally diagonalize <span class="process-math">\(A\)</span> proceed as follows.</div> <ol class="decimal">
+<li id="li-1207"><div class="para" id="p-4022">Let <span class="process-math">\(\lambda_1, \lambda_2, \dots, \lambda_r\)</span> be the distinct eigenvalues of <span class="process-math">\(A\text{.}\)</span> For each <span class="process-math">\(1\leq i\leq r\text{,}\)</span> compute an <em class="emphasis">orthonormal</em> ordered basis of <span class="process-math">\(W_{\lambda_i}\text{.}\)</span>
 </div></li>
-<li id="li-1209"><div class="para logical" id="p-4024">
+<li id="li-1208"><div class="para logical" id="p-4023">
 <div class="para">Let <span class="process-math">\(B'=(\boldv_1, \boldv_2, \dots, \boldv_n)\)</span> be the ordered basis obtained by concatenating the orthonormal bases computed in (1). This is an orthonormal basis of eigenvectors. It follows that the matrix</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1107,7 +1107,7 @@ Q=\begin{bmatrix}
 </ol></article><article class="example example-like" id="eg_ortho_diag"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.4.13</span><span class="period">.</span><span class="space"> </span><span class="title">Orthogonal diagonalization.</span>
 </h4>
-<div class="para logical" id="p-4025">
+<div class="para logical" id="p-4024">
 <div class="para">The symmetric matrix</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1122,8 +1122,8 @@ A=\frac{1}{3}\begin{amatrix}[rrr]
 </div>
 <div class="solutions">
 <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-131" id="solution-131"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-131"><div class="solution solution-like">
-<div class="para" id="p-4026">First we factor <span class="process-math">\(p(x)\text{.}\)</span> Looking at the constant term we see that the only possible integer roots of <span class="process-math">\(p(x)\)</span> are <span class="process-math">\(\pm 1\text{.}\)</span> It is easily verified that <span class="process-math">\(p(1)=0\text{,}\)</span> and  polynomial division yields the factorization <span class="process-math">\(p(x)=(x-1)(x^2+2x+1)\text{.}\)</span>  Further factorization of <span class="process-math">\(x^2+2x+1\)</span> gives us  <span class="process-math">\(p(x)=(x-1)(x+1)^2\text{.}\)</span>
-</div> <div class="para logical" id="p-4027">
+<div class="para" id="p-4025">First we factor <span class="process-math">\(p(x)\text{.}\)</span> Looking at the constant term we see that the only possible integer roots of <span class="process-math">\(p(x)\)</span> are <span class="process-math">\(\pm 1\text{.}\)</span> It is easily verified that <span class="process-math">\(p(1)=0\text{,}\)</span> and  polynomial division yields the factorization <span class="process-math">\(p(x)=(x-1)(x^2+2x+1)\text{.}\)</span>  Further factorization of <span class="process-math">\(x^2+2x+1\)</span> gives us  <span class="process-math">\(p(x)=(x-1)(x+1)^2\text{.}\)</span>
+</div> <div class="para logical" id="p-4026">
 <div class="para">Next we compute <em class="emphasis">orthonormal</em> bases of the eigenspaces <span class="process-math">\(W_1\)</span> and <span class="process-math">\(W_{-1}\text{,}\)</span> yielding</div>
 <div class="displaymath process-math" id="md-293">
 \begin{align*}
@@ -1146,14 +1146,14 @@ D=\begin{amatrix}[rrr]1\amp 0\amp 0\\ 0\amp -1\amp 0\\ 0\amp 0\amp -1  \end{amat
 </div>
 </div>
 </div></div>
-</div></article><div class="para" id="p-4028">Observe that the two eigenspaces <span class="process-math">\(W_1\)</span> and <span class="process-math">\(W_{-1}\)</span> of the matrix <span class="process-math">\(A\)</span> in <a href="" class="xref" data-knowl="./knowl/eg_ortho_diag.html" title="Example 5.4.13: Orthogonal diagonalization">Example 5.4.13</a> are orthogonal to one another, as predicted by the spectral theorem. Indeed, <span class="process-math">\(W_1\)</span> is the line passing through the origin with direction vector <span class="process-math">\(\boldn=(1,1,1)\text{,}\)</span> and <span class="process-math">\(W_{-1}\)</span> is its orthogonal complement, the plane passing through the origin with normal vector <span class="process-math">\(\boldn\text{.}\)</span> <a href="" class="xref" data-knowl="./knowl/fig_ortho_diag.html" title="Figure 5.4.14: Eigenspaces of a symmetric matrix are orthogonal">Figure 5.4.14</a> depicts the orthogonal configuration of the eigenspaces of this example. This is an excellent illustration of what makes the diagonalizability of symmetric matrices (and self-adjoint operators) special. Keep it in mind!</div>
-<figure class="figure figure-like" id="fig_ortho_diag"><iframe id="geogebra_ortho_diag" width="600" height="450" src="geogebra_ortho_diag-if.html"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">5.4.14<span class="period">.</span></span><span class="space"> </span>Eigenspaces of a symmetric matrix are orthogonal</figcaption></figure><div class="para" id="p-4029">Do not overlook the reverse implication of equivalence <a href="" class="xref" data-knowl="./knowl/eq_self_adjoint.html" title="Equation 5.4.2">(5.4.2)</a>. As the next example illustrates, we can show an operator is self-adjoint by examining the geometry of its eigenspaces.</div>
+</div></article><div class="para" id="p-4027">Observe that the two eigenspaces <span class="process-math">\(W_1\)</span> and <span class="process-math">\(W_{-1}\)</span> of the matrix <span class="process-math">\(A\)</span> in <a href="" class="xref" data-knowl="./knowl/eg_ortho_diag.html" title="Example 5.4.13: Orthogonal diagonalization">Example 5.4.13</a> are orthogonal to one another, as predicted by the spectral theorem. Indeed, <span class="process-math">\(W_1\)</span> is the line passing through the origin with direction vector <span class="process-math">\(\boldn=(1,1,1)\text{,}\)</span> and <span class="process-math">\(W_{-1}\)</span> is its orthogonal complement, the plane passing through the origin with normal vector <span class="process-math">\(\boldn\text{.}\)</span> <a href="" class="xref" data-knowl="./knowl/fig_ortho_diag.html" title="Figure 5.4.14: Eigenspaces of a symmetric matrix are orthogonal">Figure 5.4.14</a> depicts the orthogonal configuration of the eigenspaces of this example. This is an excellent illustration of what makes the diagonalizability of symmetric matrices (and self-adjoint operators) special. Keep it in mind!</div>
+<figure class="figure figure-like" id="fig_ortho_diag"><iframe id="geogebra_ortho_diag" width="600" height="450" src="geogebra_ortho_diag-if.html"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">5.4.14<span class="period">.</span></span><span class="space"> </span>Eigenspaces of a symmetric matrix are orthogonal</figcaption></figure><div class="para" id="p-4028">Do not overlook the reverse implication of equivalence <a href="" class="xref" data-knowl="./knowl/eq_self_adjoint.html" title="Equation 5.4.2">(5.4.2)</a>. As the next example illustrates, we can show an operator is self-adjoint by examining the geometry of its eigenspaces.</div>
 <article class="example example-like" id="eg_ortho_proj_selfadjoint"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.4.15</span><span class="period">.</span><span class="space"> </span><span class="title">Orthogonal projections are self-adjoint.</span>
 </h4>
-<div class="para" id="p-4030">Let <span class="process-math">\((V,\angvec{\, , \,})\)</span> be a finite-dimensional inner product space, let <span class="process-math">\(W\)</span> be a subpsace of <span class="process-math">\(V\text{,}\)</span> and let <span class="process-math">\(T=\operatorname{proj}_W\)</span> be orthogonal projection onto <span class="process-math">\(W\text{.}\)</span> Prove that <span class="process-math">\(T\)</span> is self-adjoint.</div>
+<div class="para" id="p-4029">Let <span class="process-math">\((V,\angvec{\, , \,})\)</span> be a finite-dimensional inner product space, let <span class="process-math">\(W\)</span> be a subpsace of <span class="process-math">\(V\text{,}\)</span> and let <span class="process-math">\(T=\operatorname{proj}_W\)</span> be orthogonal projection onto <span class="process-math">\(W\text{.}\)</span> Prove that <span class="process-math">\(T\)</span> is self-adjoint.</div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-132" id="solution-132"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-132"><div class="solution solution-like"><div class="para logical" id="p-4031">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-132" id="solution-132"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-132"><div class="solution solution-like"><div class="para logical" id="p-4030">
 <div class="para">By <a href="" class="xref" data-knowl="./knowl/th_spectral.html" title="Theorem 5.4.8: Spectral theorem for self-adjoint operators">Theorem 5.4.8</a> it suffices to show that <span class="process-math">\(T\)</span> is orthogonally diagonalizable. According to <a href="" class="xref" data-knowl="./knowl/ex_orthoproj_props.html" title="Exercise 5.3.6.20">Exercise 5.3.6.20</a> we have</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/th_spectral.html ./knowl/ex_orthoproj_props.html" id="md-294">
 \begin{align*}
@@ -1171,46 +1171,46 @@ D=\begin{amatrix}[rrr]1\amp 0\amp 0\\ 0\amp -1\amp 0\\ 0\amp 0\amp -1  \end{amat
 <div id="webwork-145" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="145" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-sourceFilePath="Library/NAU/setLinearAlgebra/diag3x3ortho.pg" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
 <div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-145')">Activate</button></div>
 <div class="problem-contents">
-<div class="para" id="p-4032">Let <span class="process-math">\(A = \left[\begin{array}{ccc}
+<div class="para" id="p-4031">Let <span class="process-math">\(A = \left[\begin{array}{ccc}
 -3 \amp 12 \amp -6\cr
 12 \amp -3 \amp 6\cr
 -6 \amp 6 \amp 6
 \end{array}\right]\text{.}\)</span> Find an orthogonal matrix <span class="process-math">\(P\)</span> with rational entries and a diagonal matrix <span class="process-math">\(D\)</span> such that <span class="process-math">\(D = P^TAP\text{.}\)</span>
-</div> <div class="para" id="p-4033">
+</div> <div class="para" id="p-4032">
 <span class="process-math">\(P=\)</span> <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> (3 <span class="times-sign">×</span> 3 array), <span class="process-math">\(D=\)</span> <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> (3 <span class="times-sign">×</span> 3 array)</div>
 </div>
 </div></article></article><div class="exercisegroup" id="exercisegroup-42">
 <h4 class="heading"><span class="title">Exercise Group.</span></h4>
-<div class="introduction" id="introduction-89"><div class="para" id="p-4034">Orthogonally diagonalize the given symmetric matrix <span class="process-math">\(A\)</span> following <a href="" class="xref" data-knowl="./knowl/proc_ortho_diag.html" title="Procedure 5.4.12: Orthogonal diagonalization">Procedure 5.4.12</a>: i.e. find a diagonal matrix <span class="process-math">\(D\)</span> and orthogonal matrix <span class="process-math">\(Q\)</span> satisfying <span class="process-math">\(D=Q^{T}AQ\text{.}\)</span>
+<div class="introduction" id="introduction-89"><div class="para" id="p-4033">Orthogonally diagonalize the given symmetric matrix <span class="process-math">\(A\)</span> following <a href="" class="xref" data-knowl="./knowl/proc_ortho_diag.html" title="Procedure 5.4.12: Orthogonal diagonalization">Procedure 5.4.12</a>: i.e. find a diagonal matrix <span class="process-math">\(D\)</span> and orthogonal matrix <span class="process-math">\(Q\)</span> satisfying <span class="process-math">\(D=Q^{T}AQ\text{.}\)</span>
 </div></div>
 <div class="exercisegroup-exercises">
 <article class="exercise exercise-like" id="exercise-462"><h5 class="heading"><span class="codenumber">2<span class="period">.</span></span></h5>
-<div class="para" id="p-4035"><span class="process-math">\(A=\begin{amatrix}[rr]
+<div class="para" id="p-4034"><span class="process-math">\(A=\begin{amatrix}[rr]
 2\amp 1\\ 1\amp 2
 \end{amatrix}\)</span></div></article><article class="exercise exercise-like" id="exercise-463"><h5 class="heading"><span class="codenumber">3<span class="period">.</span></span></h5>
-<div class="para" id="p-4036"><span class="process-math">\(A=\begin{amatrix}[rr]-1\amp 1\\ 1\amp 2  \end{amatrix}\)</span></div></article><article class="exercise exercise-like" id="exercise-464"><h5 class="heading"><span class="codenumber">4<span class="period">.</span></span></h5>
-<div class="para" id="p-4037"><span class="process-math">\(A=\begin{amatrix}[rrr]-1 \amp 1 \amp -2 \\
+<div class="para" id="p-4035"><span class="process-math">\(A=\begin{amatrix}[rr]-1\amp 1\\ 1\amp 2  \end{amatrix}\)</span></div></article><article class="exercise exercise-like" id="exercise-464"><h5 class="heading"><span class="codenumber">4<span class="period">.</span></span></h5>
+<div class="para" id="p-4036"><span class="process-math">\(A=\begin{amatrix}[rrr]-1 \amp 1 \amp -2 \\
 1 \amp -1 \amp -2 \\
 -2 \amp -2 \amp 2  \end{amatrix}\)</span></div></article><article class="exercise exercise-like" id="exercise-465"><h5 class="heading"><span class="codenumber">5<span class="period">.</span></span></h5>
-<div class="para" id="p-4038"><span class="process-math">\(A=\frac{1}{6}\begin{amatrix}[rrr]
+<div class="para" id="p-4037"><span class="process-math">\(A=\frac{1}{6}\begin{amatrix}[rrr]
 1\amp 7\amp -2\\
 7\amp 1\amp -2\\
 -2\amp -2\amp 10
 \end{amatrix}\)</span></div></article><article class="exercise exercise-like" id="exercise-466"><h5 class="heading"><span class="codenumber">6<span class="period">.</span></span></h5>
-<div class="para" id="p-4039"><span class="process-math">\(A=\begin{amatrix}[rrr]
+<div class="para" id="p-4038"><span class="process-math">\(A=\begin{amatrix}[rrr]
 1\amp 2\amp 1\\
 2\amp 0\amp 0\\
 1\amp 0\amp 3  \end{amatrix}\)</span></div></article><article class="exercise exercise-like" id="exercise-467"><h5 class="heading"><span class="codenumber">7<span class="period">.</span></span></h5>
-<div class="para" id="p-4040"><span class="process-math">\(A=\begin{amatrix}[rrrr]
+<div class="para" id="p-4039"><span class="process-math">\(A=\begin{amatrix}[rrrr]
 0 \amp 0 \amp 1 \amp 0 \\
 0 \amp 0 \amp 0 \amp 1 \\
 1 \amp 0 \amp 0 \amp 0 \\
 0 \amp 1 \amp 0 \amp 0  \end{amatrix}\)</span></div></article><article class="exercise exercise-like" id="exercise-468"><h5 class="heading"><span class="codenumber">8<span class="period">.</span></span></h5>
-<div class="para" id="p-4041"><span class="process-math">\(A=\begin{amatrix}[rrrr]0 \amp 0 \amp 1 \amp 0 \\
+<div class="para" id="p-4040"><span class="process-math">\(A=\begin{amatrix}[rrrr]0 \amp 0 \amp 1 \amp 0 \\
 0 \amp 1 \amp 0 \amp 0 \\
 1 \amp 0 \amp 0 \amp 0 \\
 0 \amp 0 \amp 0 \amp 1  \end{amatrix}\)</span></div></article><article class="exercise exercise-like" id="exercise-469"><h5 class="heading"><span class="codenumber">9<span class="period">.</span></span></h5>
-<div class="para" id="p-4042"><span class="process-math">\(A=\begin{amatrix}[rrrr]
+<div class="para" id="p-4041"><span class="process-math">\(A=\begin{amatrix}[rrrr]
 1\amp 1\amp 1\amp 1\\
 1\amp 1\amp 1\amp 1 \\
 1\amp 1\amp 1\amp 1 \\
@@ -1219,7 +1219,7 @@ D=\begin{amatrix}[rrr]1\amp 0\amp 0\\ 0\amp -1\amp 0\\ 0\amp 0\amp -1  \end{amat
 </div>
 </div>
 <article class="exercise exercise-like" id="ex_self-adjoint_symmetric"><h4 class="heading"><span class="codenumber">10<span class="period">.</span></span></h4>
-<div class="para logical" id="p-4043">
+<div class="para logical" id="p-4042">
 <div class="para">Let <span class="process-math">\((V, \langle\, , \rangle)\)</span> be a finite-dimensional inner product space, let <span class="process-math">\(T\colon V\rightarrow V\)</span> be a linear transformation, and let <span class="process-math">\(B=(\boldv_1, \boldv_2, \dots, \boldv_n)\)</span> be an ordered basis of <span class="process-math">\(V\text{.}\)</span> Prove: <span class="process-math">\(T\)</span> is self-adjoint if and only if</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_self-adjoint.html">
 \begin{equation*}
@@ -1229,11 +1229,11 @@ D=\begin{amatrix}[rrr]1\amp 0\amp 0\\ 0\amp -1\amp 0\\ 0\amp 0\amp -1  \end{amat
 <div class="para">for all <span class="process-math">\(1\leq i,j\leq n\text{.}\)</span> In other words, to prove <span class="process-math">\(T\)</span> is self-adjoint it suffices to show property <a href="" class="xref" data-knowl="./knowl/eq_self-adjoint.html" title="Equation 5.4.1">(5.4.1)</a> holds for all elements of a basis of <span class="process-math">\(V\text{.}\)</span>
 </div>
 </div></article><article class="exercise exercise-like" id="ex_selfadjoint_complement"><h4 class="heading"><span class="codenumber">11<span class="period">.</span></span></h4>
-<div class="para" id="p-4044">Let <span class="process-math">\((V, \langle\, , \rangle)\)</span> be a finite-dimensional inner product space, let <span class="process-math">\(T\colon V\rightarrow V\)</span> be a self-adjoint operator, and let <span class="process-math">\(W\)</span> be a subspace of <span class="process-math">\(V\text{.}\)</span>
+<div class="para" id="p-4043">Let <span class="process-math">\((V, \langle\, , \rangle)\)</span> be a finite-dimensional inner product space, let <span class="process-math">\(T\colon V\rightarrow V\)</span> be a self-adjoint operator, and let <span class="process-math">\(W\)</span> be a subspace of <span class="process-math">\(V\text{.}\)</span>
 </div> <ol class="lower-alpha">
-<li id="li-1210"><div class="para" id="p-4045">Prove: if <span class="process-math">\(\boldv\in W^\perp\text{,}\)</span> then <span class="process-math">\(T(\boldv)\in W^\perp\text{.}\)</span>
+<li id="li-1209"><div class="para" id="p-4044">Prove: if <span class="process-math">\(\boldv\in W^\perp\text{,}\)</span> then <span class="process-math">\(T(\boldv)\in W^\perp\text{.}\)</span>
 </div></li>
-<li id="li-1211"><div class="para logical" id="p-4046">
+<li id="li-1210"><div class="para logical" id="p-4045">
 <div class="para">By (a), restricting <span class="process-math">\(T\)</span> to <span class="process-math">\(W^\perp\)</span> defines a linear transformation</div>
 <div class="displaymath process-math" id="md-295">
 \begin{align*}
@@ -1244,10 +1244,10 @@ T\vert_{W^\perp}\colon W^\perp\amp\rightarrow W^\perp \\
 <div class="para">Prove that <span class="process-math">\(T\vert_{W^\perp}\)</span> is self-adjoint. Here the inner product on the subspace <span class="process-math">\(W^\perp\)</span> is inherited from <span class="process-math">\((V, \angvec{\, , \,})\)</span> by restriction.</div>
 </div></li>
 </ol></article><article class="exercise exercise-like" id="exercise-472"><h4 class="heading"><span class="codenumber">12<span class="period">.</span></span></h4>
-<div class="para" id="p-4047">Assume <span class="process-math">\(A\in M_{nn}\)</span> is symmetric and orthogonal. Prove that the characteristic polynomial of <span class="process-math">\(A\)</span> factors as <span class="process-math">\(p(x)=(x-1)^r(x+1)^s\)</span> for some nonnegative integers <span class="process-math">\(r,s\text{.}\)</span> In particular, the eigenvalues of <span class="process-math">\(A\)</span> are among <span class="process-math">\(1\)</span> and <span class="process-math">\(-1\text{.}\)</span>
+<div class="para" id="p-4046">Assume <span class="process-math">\(A\in M_{nn}\)</span> is symmetric and orthogonal. Prove that the characteristic polynomial of <span class="process-math">\(A\)</span> factors as <span class="process-math">\(p(x)=(x-1)^r(x+1)^s\)</span> for some nonnegative integers <span class="process-math">\(r,s\text{.}\)</span> In particular, the eigenvalues of <span class="process-math">\(A\)</span> are among <span class="process-math">\(1\)</span> and <span class="process-math">\(-1\text{.}\)</span>
 </div></article><div class="exercisegroup" id="exercisegroup-43">
 <h4 class="heading"><span class="title">Exercise Group.</span></h4>
-<div class="introduction" id="introduction-90"><div class="para logical" id="p-4048">
+<div class="introduction" id="introduction-90"><div class="para logical" id="p-4047">
 <div class="para">Let <span class="process-math">\(\mathcal{C}\subseteq \R^2\)</span> be a conic curve defined by a quadratic equation of the form</div>
 <div class="displaymath process-math" id="eq_conic_eqn">
 \begin{equation}
@@ -1258,7 +1258,7 @@ T\vert_{W^\perp}\colon W^\perp\amp\rightarrow W^\perp \\
 </div></div>
 <div class="exercisegroup-exercises">
 <article class="exercise exercise-like" id="exercise-473"><h5 class="heading"><span class="codenumber">13<span class="period">.</span></span></h5>
-<div class="para logical" id="p-4049">
+<div class="para logical" id="p-4048">
 <div class="para">Find a symmetric matrix <span class="process-math">\(A\in M_{22}\)</span> satisfying the following property: <span class="process-math">\(\boldx=(x,y)\)</span> satisfies <a href="" class="xref" data-knowl="./knowl/eq_conic_eqn.html" title="Equation 5.4.4">(5.4.4)</a> if and only if</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_conic_eqn.html" id="eq_conic_eqn_matrix">
 \begin{equation}
@@ -1268,7 +1268,7 @@ T\vert_{W^\perp}\colon W^\perp\amp\rightarrow W^\perp \\
 <div class="para">(Here we conflate the <span class="process-math">\(1\times 1\)</span> matrix <span class="process-math">\(\begin{bmatrix}d
 \end{bmatrix}\)</span> with the scalar <span class="process-math">\(d\in \R\text{.}\)</span>)</div>
 </div></article><article class="exercise exercise-like" id="exercise-474"><h5 class="heading"><span class="codenumber">14<span class="period">.</span></span></h5>
-<div class="para logical" id="p-4050">
+<div class="para logical" id="p-4049">
 <div class="para">Show that there is a rotation matrix <span class="process-math">\(Q\in M_{22}\)</span> satisfying <span class="process-math">\(D=Q^TAQ\text{,}\)</span> where</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1279,9 +1279,9 @@ D=\begin{amatrix}[rr] e\amp 0\\ 0\amp f \end{amatrix}
 </div>
 </div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-37" id="hint-37"><span class="type">Hint</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-37"><div class="hint solution-like"><div class="para" id="p-4051">See <a href="" class="xref" data-knowl="./knowl/ex_ortho_matrix_rotation_reflection.html" title="Exercise 5.2.4.22: Orthogonal 2\times 2 matrices">Exercise 5.2.4.22</a>.</div></div></div>
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-37" id="hint-37"><span class="type">Hint</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-37"><div class="hint solution-like"><div class="para" id="p-4050">See <a href="" class="xref" data-knowl="./knowl/ex_ortho_matrix_rotation_reflection.html" title="Exercise 5.2.4.22: Orthogonal 2\times 2 matrices">Exercise 5.2.4.22</a>.</div></div></div>
 </div></article><article class="exercise exercise-like" id="exercise-475"><h5 class="heading"><span class="codenumber">15<span class="period">.</span></span></h5>
-<div class="para logical" id="p-4052">
+<div class="para logical" id="p-4051">
 <div class="para">Show that <span class="process-math">\(\boldx\)</span> satisfies <a href="" class="xref" data-knowl="./knowl/eq_conic_eqn_matrix.html" title="Equation 5.4.5">(5.4.5)</a> if and only if <span class="process-math">\(\boldx'=Q^{-1}\boldx=Q^T\boldx\)</span> satisfies</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/eq_conic_eqn_matrix.html" id="eq_conic_std">
 \begin{equation}
@@ -1289,8 +1289,8 @@ ex+fy=d\text{.}\tag{5.4.6}
 \end{equation}
 </div>
 </div></article><article class="exercise exercise-like" id="exercise-476"><h5 class="heading"><span class="codenumber">16<span class="period">.</span></span></h5>
-<div class="para" id="p-4053">Explain why we can conclude that there is a rotation that maps the conic <span class="process-math">\(\mathcal{C}\)</span> with equation <a href="" class="xref" data-knowl="./knowl/eq_conic_eqn.html" title="Equation 5.4.4">(5.4.4)</a> to the conic <span class="process-math">\(\mathcal{C}'\)</span> with “standard equation” <a href="" class="xref" data-knowl="./knowl/eq_conic_std.html" title="Equation 5.4.6">(5.4.6)</a>.</div></article><article class="exercise exercise-like" id="exercise-477"><h5 class="heading"><span class="codenumber">17<span class="period">.</span></span></h5>
-<div class="para logical" id="p-4054">
+<div class="para" id="p-4052">Explain why we can conclude that there is a rotation that maps the conic <span class="process-math">\(\mathcal{C}\)</span> with equation <a href="" class="xref" data-knowl="./knowl/eq_conic_eqn.html" title="Equation 5.4.4">(5.4.4)</a> to the conic <span class="process-math">\(\mathcal{C}'\)</span> with “standard equation” <a href="" class="xref" data-knowl="./knowl/eq_conic_std.html" title="Equation 5.4.6">(5.4.6)</a>.</div></article><article class="exercise exercise-like" id="exercise-477"><h5 class="heading"><span class="codenumber">17<span class="period">.</span></span></h5>
+<div class="para logical" id="p-4053">
 <div class="para">Let <span class="process-math">\(\mathcal{C}\subseteq\R^2\)</span> be the conic curve with equation</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1298,7 +1298,7 @@ x^2+4xy+y^2=1\text{.}
 \end{equation*}
 </div>
 </div> <ol class="lower-alpha">
-<li id="li-1212"><div class="para logical" id="p-4055">
+<li id="li-1211"><div class="para logical" id="p-4054">
 <div class="para">Find an angle <span class="process-math">\(\theta\)</span> and constants <span class="process-math">\(a,b\in \R\)</span> such that the rotation <span class="process-math">\(\rho_\theta\)</span> maps <span class="process-math">\(\mathcal{C}\)</span> to a conic <span class="process-math">\(\mathcal{C}'\)</span> with defining equation</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1306,7 +1306,7 @@ ax^2+by^2=1\text{.}
 \end{equation*}
 </div>
 </div></li>
-<li id="li-1213"><div class="para" id="p-4056">First graph <span class="process-math">\(\mathcal{C}'\text{,}\)</span> and then graph <span class="process-math">\(\mathcal{C}\)</span> using the result of (a). What type of conics (parabolas, ellipses, hyperbolas) are <span class="process-math">\(\mathcal{C}\)</span> and <span class="process-math">\(\mathcal{C'}\)</span> ?</div></li>
+<li id="li-1212"><div class="para" id="p-4055">First graph <span class="process-math">\(\mathcal{C}'\text{,}\)</span> and then graph <span class="process-math">\(\mathcal{C}\)</span> using the result of (a). What type of conics (parabolas, ellipses, hyperbolas) are <span class="process-math">\(\mathcal{C}\)</span> and <span class="process-math">\(\mathcal{C'}\)</span> ?</div></li>
 </ol></article>
 </div>
 </div></section></section></div>

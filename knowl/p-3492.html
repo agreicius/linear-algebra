@@ -12,8 +12,14 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<div class="para">Let <span class="process-math">\(T\colon V\rightarrow V\)</span> be a linear transformation, where <span class="process-math">\(V\)</span> is finite-dimensional, and let <span class="process-math">\(p(t)\)</span> be the characteristic polynomial of <span class="process-math">\(T\text{.}\)</span> Given an eigenvalue <span class="process-math">\(\lambda\in \R\)</span> of <span class="process-math">\(T\text{,}\)</span> we can factor <span class="process-math">\(p(t)\)</span> as <span class="process-math">\(p(t)=(t-\lambda)^mq(t)
-\text{,}\)</span> where <span class="process-math">\(\lambda\)</span> is not a root of the polynomial <span class="process-math">\(q(t)\text{:}\)</span> i.e., <span class="process-math">\(q(\lambda)\ne 0\text{.}\)</span> We call <span class="process-math">\(m\)</span> the <dfn class="terminology">geometric multiplicity</dfn> of the eigenvalue <span class="process-math">\(\lambda\text{,}\)</span> and we call <span class="process-math">\(\dim W_\lambda\)</span> its <dfn class="terminology">geometric multiplicity</dfn>. If <span class="process-math">\(m\gt 1\text{,}\)</span> we say <span class="process-math">\(\lambda\)</span> is a <dfn class="terminology">repeated</dfn> eigenvalue of <span class="process-math">\(T\text{.}\)</span>
+<div class="para logical">
+<div class="para">Let <span class="process-math">\(T\colon V\rightarrow V\)</span> be a linear transformation, where <span class="process-math">\(dim V=n\text{,}\)</span> let <span class="process-math">\(p(t)\)</span> be the characteristic polynomial of <span class="process-math">\(T\text{,}\)</span> and suppose <span class="process-math">\(\lambda\in\R\)</span> is an eigenvalue of <span class="process-math">\(T\)</span> of algebraic multiplicity <span class="process-math">\(m\geq 1\text{:}\)</span> i.e., <span class="process-math">\(p(t)=(t-\lambda)^mq(t)\)</span> and <span class="process-math">\(q(\lambda)\ne 0\text{.}\)</span> We have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+1\leq \dim W_\lambda\leq m\text{.}
+\end{equation*}
+</div>
+<div class="para">In other words, the geometric multiplicity of an eigenvalue is bounded above by its algebraic multiplicity.</div>
 </div>
 <span class="incontext"><a href="s_diagonalization.html#p-3492" class="internal">in-context</a></span>
 </body>
