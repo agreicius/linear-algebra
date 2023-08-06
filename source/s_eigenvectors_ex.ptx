@@ -218,7 +218,7 @@
     <statement>
       <p>
         Assume <m>A</m> is a square matrix satisfying <m>A^2=A</m>
-      </p>
+      
       <ol>
         <li>
           <p>
@@ -230,12 +230,8 @@
             Prove: if <m>A</m> does not have <m>0</m> as an eigenvalue, then <m>A=I</m>.
           </p>
         </li>
-        <li>
-          <p>
-            Give an example of 
-          </p>
-        </li>
       </ol>
+    </p>
     </statement>
   </exercise>
 </exercisegroup>

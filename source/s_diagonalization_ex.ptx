@@ -235,7 +235,7 @@
   <exercise xml:id="ex_diagonalization">
     <statement>
       <p>
-        Each matrix <m>A</m> below has characteristic polynomial <m>p(t)=t^3-3t+2</m>. Use <xref ref="proc_diagonalize"/> to decide whether <m>A</m> is diagonalizable. If yes, provide an inverible <m>P</m> and diagonal <m>D</m> satisfying <m>D=P^{-1}AP</m>.
+        Each matrix <m>A</m> below has characteristic polynomial <m>p(t)=t^3-3t+2</m>. Use <xref ref="proc_diagonalize"/> to decide whether <m>A</m> is diagonalizable. If yes, provide an invertible <m>P</m> and diagonal <m>D</m> satisfying <m>D=P^{-1}AP</m>.
         <ol>
           <li>
             <p>
