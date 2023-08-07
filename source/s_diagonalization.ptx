@@ -624,14 +624,13 @@ makes no assumption about the dimension of <m>V</m> and can thus can be applied 
          -12\amp -24\amp -3\amp 42\\
          -12\amp -22\amp -3\amp 40
          \end{amatrix}=\Span\{(3,2,0,2),(1,1,2,1)\}  </mrow>
-         <mrow>W_{-1} \amp =\NS \begin{amatrix}[rrrr]
+         <mrow>W_{3} \amp =\NS \begin{amatrix}[rrrr]
          -11\amp -21\amp -3\amp 39\\
          -12\amp -22\amp -3\amp 41\\
          -12\amp -24\amp -2\amp 42\\
          -12\amp -22\amp -3\amp 41
          \end{amatrix}=\Span\{(3,5,6,4)\}  </mrow>
        </md>.
-       We have ski
        Since
        <me>
          \dim W_{-1}+\dim W_{2}+\dim W_{3}=1+2+1=4=\dim \R^4
