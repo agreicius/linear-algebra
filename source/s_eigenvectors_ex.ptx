@@ -200,7 +200,7 @@
           </li>
           <li>
             <p>
-              Assume that <m>A</m> is invertible. Prove: <m>\lambda^k</m> is an eigenvector of <m>A^k</m> for any integer <m>k</m>.
+              Assume that <m>A</m> is invertible. Prove: <m>\lambda^k</m> is an eigenvalue of <m>A^k</m> for any integer <m>k</m>.
             </p>
           </li>
         </ol>
