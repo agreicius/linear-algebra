@@ -63,7 +63,7 @@
           A\amp \boldzero
           \end{amatrix}
         </me>,
-        where <m>A=[a_{ij}]_{n\times r}</m>. Since this is a homogeneous system of <m>n</m> equations in <m>r</m> unknowns, and since <m>r>n</m>, there are in fact infinitely many solutions. (The system has at most <m>n</m> leading ones, and so there must be a free variable since one of the <m>r</m> columns in the equivalent row echelon matrix must fail to contain a leading one.) In particular there is a nonzero solution <m>(c_1,c_2,\dots, c_n)\ne \boldzero</m>, and we conclude that <m>S'</m> is linearly dependent.
+        where <m>A=[a_{ij}]_{n\times r}</m>. Since this is a homogeneous system of <m>n</m> equations in <m>r</m> unknowns, and since <m>r&gt; n</m>, there are in fact infinitely many solutions. (The system has at most <m>n</m> leading ones, and so there must be a free variable since one of the <m>r</m> columns in the equivalent row echelon matrix must fail to contain a leading one.) In particular there is a nonzero solution <m>(c_1,c_2,\dots, c_n)\ne \boldzero</m>, and we conclude that <m>S'</m> is linearly dependent.
       </p>
     </proof>
   </theorem>
