@@ -37,7 +37,7 @@
     <title>Spanning set bound</title>
     <statement>
       <p>
-        Suppose <m>S</m> is a finite spanning set for the vector space <m>V</m> and let <m>\val{S}=n</m>. If <m>S'</m> is a finite set with <m>\val{S'}=r>n</m>, then <m>S'</m> is linearly dependent.
+        Suppose <m>S</m> is a finite spanning set for the vector space <m>V</m> and let <m>\val{S}=n</m>. If <m>S'</m> is a finite set with <m>\val{S'}=r&gt; n</m>, then <m>S'</m> is linearly dependent.
       </p>
     </statement>
     <proof>

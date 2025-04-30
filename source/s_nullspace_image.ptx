@@ -2,7 +2,7 @@
   <title>Null space and image</title>
   <introduction>
     <p>
-      In this section we introduce two subspaces that are associated naturally to a linear transformation <m>T\colon V\rightarrow W</m>: the <em>null space</em> and <em>image</em>.
+      Having introduced linear transformations, we now treat them as proper objects of study. Forget for a moment the linear algebraic nature of a linear transformation <m>T\colon V\rightarrow W</m>, and think of it just as a function. Purely along function-theoretic lines, we want to know whether <m>T</m> is <xref ref="d_injective" text="custom">injective</xref>, <xref ref="d_surjective" text="custom">surjective</xref>, and <xref ref="d_invertible_function" text="custom">invertible</xref>. As we will learn, there are two subspaces associated to a linear transformation <m>T</m>, its <em>null space</em> and <em>image</em>, that provide an easy way for answering these questions.
     </p>
   </introduction>
 
