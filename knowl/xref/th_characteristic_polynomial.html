@@ -3,7 +3,7 @@
 <!--******************************************-->
 <!--*  Authored with PreTeXt                 *-->
 <!--*  pretextbook.org                       *-->
-<!--*  Theme: default-legacy                 *-->
+<!--*  Theme: default-modern                 *-->
 <!--*  Palette:                              *-->
 <!--******************************************-->
 
@@ -28,7 +28,7 @@
 <div class="para">The function <span class="process-math">\(p(t)=\det (tI-A)\)</span> is a monic polynomial of degree <span class="process-math">\(n\)</span> with real coefficients: i.e.,</div>
 <div class="displaymath process-math">
 \begin{equation}
-p(t)=t^n+a_{n-1}t^{n-1}+\cdots +a_1t+a_0, a_i\in \R\text{.}\tag{4.4.7}
+p(t)=t^n+a_{n-1}t^{n-1}+\cdots +a_1t+a_0, a_i\in \R\text{.}\tag{4.22}
 \end{equation}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#th_characteristic_polynomial-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -56,10 +56,10 @@ p(t)=(t-\lambda_1)(t-\lambda_2)\cdots (t-\lambda_n),
 </li>
 <li>
 <div class="para logical">
-<div class="para">The coefficient <span class="process-math">\(a_{n-1}\)</span> in <a href="s_eigenvectors.html#eq_char_poly" class="xref" data-knowl="./knowl/xref/eq_char_poly.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.4.7">(4.4.7)</a> satisfies</div>
+<div class="para">The coefficient <span class="process-math">\(a_{n-1}\)</span> in <a href="s_eigenvectors.html#eq_char_poly" class="xref" data-knowl="./knowl/xref/eq_char_poly.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.22">(4.22)</a> satisfies</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq_char_poly.html">
 \begin{equation}
-a_{n-1}=-\tr A=-(\lambda_1+\lambda_2+\cdots +\lambda_n)\text{.}\tag{4.4.8}
+a_{n-1}=-\tr A=-(\lambda_1+\lambda_2+\cdots +\lambda_n)\text{.}\tag{4.23}
 \end{equation}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#th_characteristic_polynomial-2-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -68,10 +68,10 @@ a_{n-1}=-\tr A=-(\lambda_1+\lambda_2+\cdots +\lambda_n)\text{.}\tag{4.4.8}
 </li>
 <li>
 <div class="para logical">
-<div class="para">The coefficient <span class="process-math">\(a_0\)</span> in <a href="s_eigenvectors.html#eq_char_poly" class="xref" data-knowl="./knowl/xref/eq_char_poly.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.4.7">(4.4.7)</a> satisfies</div>
+<div class="para">The coefficient <span class="process-math">\(a_0\)</span> in <a href="s_eigenvectors.html#eq_char_poly" class="xref" data-knowl="./knowl/xref/eq_char_poly.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.22">(4.22)</a> satisfies</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq_char_poly.html">
 \begin{equation}
-a_0=(-1)^n\det A=(-1)^n\lambda_1\lambda_2\cdots \lambda_n\text{.}\tag{4.4.9}
+a_0=(-1)^n\det A=(-1)^n\lambda_1\lambda_2\cdots \lambda_n\text{.}\tag{4.24}
 \end{equation}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#th_characteristic_polynomial-2-2-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -83,8 +83,8 @@ a_0=(-1)^n\det A=(-1)^n\lambda_1\lambda_2\cdots \lambda_n\text{.}\tag{4.4.9}
 <div class="para">We conclude that</div>
 <div class="displaymath process-math">
 \begin{align}
-\tr A \amp = \lambda_1+\lambda_2+\cdots +\lambda_n \tag{4.4.10}\\
-\det A\amp = \lambda_1\lambda_2\cdots \lambda_n \text{.}\tag{4.4.11}
+\tr A \amp = \lambda_1+\lambda_2+\cdots +\lambda_n \tag{4.25}\\
+\det A\amp = \lambda_1\lambda_2\cdots \lambda_n \text{.}\tag{4.26}
 \end{align}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#th_characteristic_polynomial-2-2-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -98,10 +98,10 @@ a_0=(-1)^n\det A=(-1)^n\lambda_1\lambda_2\cdots \lambda_n\text{.}\tag{4.4.9}
 <div class="para">Fix <span class="process-math">\(n\geq 3\)</span> and assume the claim is true for all <span class="process-math">\((n-1)\times (n-1)\)</span> matrices. Let <span class="process-math">\(A=[a_{ij}]_{1\leq i,j\leq n}\text{.}\)</span>  Expanding  <span class="process-math">\(p(t)=\det (tI-A)\)</span> along the first row yields</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq_char_poly_proof.html ./knowl/xref/eq_char_poly_proof.html ./knowl/xref/eq_char_poly_proof.html">
 \begin{equation}
-p(t)=(t-a_{11})\det(t-A)_{11}-a_{12}\det(t-A)_{12}+a_{13}\det(t-A)_{13}+\cdots,\text{.}\tag{4.4.12}
+p(t)=(t-a_{11})\det(t-A)_{11}-a_{12}\det(t-A)_{12}+a_{13}\det(t-A)_{13}+\cdots,\text{.}\tag{4.27}
 \end{equation}
 </div>
-<div class="para">(Recall that for any matrix <span class="process-math">\(B\)</span> the notation <span class="process-math">\(B_{ij}\)</span> denotes the submatrix obtained by removing the <span class="process-math">\(i\)</span>-th row and <span class="process-math">\(j\)</span>-th column of <span class="process-math">\(B\text{.}\)</span>) First observe that <span class="process-math">\((t-A)_{11}=t-A_{11}\text{,}\)</span> and thus <span class="process-math">\(\det(t-A)_{11}\)</span> is the characteristic polynomial of the <span class="process-math">\((n-1)\times (n-1)\)</span> matrix <span class="process-math">\(A_{11}\text{.}\)</span> By induction this is a monic polynomial of degree <span class="process-math">\(n-1\text{,}\)</span> and hence the first term of <a href="s_eigenvectors.html#eq_char_poly_proof" class="xref" data-knowl="./knowl/xref/eq_char_poly_proof.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.4.12">(4.4.12)</a>, <span class="process-math">\((t-a_{11})\det(t-A)_{11}\)</span> is a monic polynomial of degree <span class="process-math">\(n\text{.}\)</span> Unfortunately, the remaining terms in the expansion <a href="s_eigenvectors.html#eq_char_poly_proof" class="xref" data-knowl="./knowl/xref/eq_char_poly_proof.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.4.12">(4.4.12)</a> do not lend themselves to a direct application of the induction hypothesis. However, we observe that the <span class="process-math">\((n-1)\times (n-1)\)</span> submatrices <span class="process-math">\((t-A)_{1j}\)</span> for <span class="process-math">\(j\geq 2\)</span> all satisfy the following property: their first columns contains only scalars; the remaining columns contain exactly one entry of the form <span class="process-math">\(t-c\text{,}\)</span> while the rest of the entries are scalars. An easy (additional) induction argument shows that the determinant of such a matrix is polynomial of degree at most <span class="process-math">\(n-2\text{.}\)</span> (We leave this to you!) Since the first term of <a href="s_eigenvectors.html#eq_char_poly_proof" class="xref" data-knowl="./knowl/xref/eq_char_poly_proof.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.4.12">(4.4.12)</a> is a monic polynomial of degree <span class="process-math">\(n\)</span> and the rest of the terms are polynomials of degree at most <span class="process-math">\(n-2\text{,}\)</span> we conclude that <span class="process-math">\(p(t)\)</span> itself is a monic polynomial of degree <span class="process-math">\(n\text{,}\)</span> as desired.</div>
+<div class="para">(Recall that for any matrix <span class="process-math">\(B\)</span> the notation <span class="process-math">\(B_{ij}\)</span> denotes the submatrix obtained by removing the <span class="process-math">\(i\)</span>-th row and <span class="process-math">\(j\)</span>-th column of <span class="process-math">\(B\text{.}\)</span>) First observe that <span class="process-math">\((t-A)_{11}=t-A_{11}\text{,}\)</span> and thus <span class="process-math">\(\det(t-A)_{11}\)</span> is the characteristic polynomial of the <span class="process-math">\((n-1)\times (n-1)\)</span> matrix <span class="process-math">\(A_{11}\text{.}\)</span> By induction this is a monic polynomial of degree <span class="process-math">\(n-1\text{,}\)</span> and hence the first term of <a href="s_eigenvectors.html#eq_char_poly_proof" class="xref" data-knowl="./knowl/xref/eq_char_poly_proof.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.27">(4.27)</a>, <span class="process-math">\((t-a_{11})\det(t-A)_{11}\)</span> is a monic polynomial of degree <span class="process-math">\(n\text{.}\)</span> Unfortunately, the remaining terms in the expansion <a href="s_eigenvectors.html#eq_char_poly_proof" class="xref" data-knowl="./knowl/xref/eq_char_poly_proof.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.27">(4.27)</a> do not lend themselves to a direct application of the induction hypothesis. However, we observe that the <span class="process-math">\((n-1)\times (n-1)\)</span> submatrices <span class="process-math">\((t-A)_{1j}\)</span> for <span class="process-math">\(j\geq 2\)</span> all satisfy the following property: their first columns contains only scalars; the remaining columns contain exactly one entry of the form <span class="process-math">\(t-c\text{,}\)</span> while the rest of the entries are scalars. An easy (additional) induction argument shows that the determinant of such a matrix is polynomial of degree at most <span class="process-math">\(n-2\text{.}\)</span> (We leave this to you!) Since the first term of <a href="s_eigenvectors.html#eq_char_poly_proof" class="xref" data-knowl="./knowl/xref/eq_char_poly_proof.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.27">(4.27)</a> is a monic polynomial of degree <span class="process-math">\(n\)</span> and the rest of the terms are polynomials of degree at most <span class="process-math">\(n-2\text{,}\)</span> we conclude that <span class="process-math">\(p(t)\)</span> itself is a monic polynomial of degree <span class="process-math">\(n\text{,}\)</span> as desired.</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#th_characteristic_polynomial-3-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Proof 4.4.25.1.1: Proof of (1)"><a href="#th_characteristic_polynomial-3-1" title="Copy heading and permalink for Proof 4.4.25.1.1: Proof of (1)" aria-label="Copy heading and permalink for Proof 4.4.25.1.1: Proof of (1)">🔗</a></div></article></details><details class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h5 class="heading"><span class="title">Proof of (2)-(3).</span></h5></summary><article class="hiddenproof knowl__content"><div class="para">Statement (2) is the fundamental theorem of algebra: every polynomial with real coeofficients factors completely over the complex numbers. Statement (3) follows from <a href="s_eigenvectors.html#cor_eigenvalues" class="xref" data-knowl="./knowl/xref/cor_eigenvalues.html" data-reveal-label="Reveal" data-close-label="Close" title="Corollary 4.4.16: Eigenvalues of a matrix">Corollary 4.4.16</a>.<div class="autopermalink" data-description="Paragraph"><a href="#th_characteristic_polynomial-3-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -110,7 +110,7 @@ p(t)=(t-a_{11})\det(t-A)_{11}-a_{12}\det(t-A)_{12}+a_{13}\det(t-A)_{13}+\cdots,\
 <div class="para">Statement (6) clearly follows from statements (4) and (5). From (1) and (2) we conclude</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq_char_poly_equality.html">
 \begin{equation}
-t^n+a_{n-1}t^{n-1}+\cdots +a_1t+a_0=(t-\lambda_1)(t-\lambda_2)\cdots (t-\lambda_n)\text{.}\tag{4.4.13}
+t^n+a_{n-1}t^{n-1}+\cdots +a_1t+a_0=(t-\lambda_1)(t-\lambda_2)\cdots (t-\lambda_n)\text{.}\tag{4.28}
 \end{equation}
 </div>
 <div class="para">Expanding out the right-hand side of this polynomial equality yields a polynomial of the form</div>
@@ -119,7 +119,7 @@ t^n+a_{n-1}t^{n-1}+\cdots +a_1t+a_0=(t-\lambda_1)(t-\lambda_2)\cdots (t-\lambda_
 t^n-(\lambda_1+\lambda_2+\cdots \lambda_n)t^{n-1}+\cdots +b_1t+(-1)^n\lambda_1\lambda_2\cdots \lambda_n\text{.}
 \end{equation*}
 </div>
-<div class="para">Going back and equating coefficients between the left- and right-hand sides of <a href="s_eigenvectors.html#eq_char_poly_equality" class="xref" data-knowl="./knowl/xref/eq_char_poly_equality.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.4.13">(4.4.13)</a> yields</div>
+<div class="para">Going back and equating coefficients between the left- and right-hand sides of <a href="s_eigenvectors.html#eq_char_poly_equality" class="xref" data-knowl="./knowl/xref/eq_char_poly_equality.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.28">(4.28)</a> yields</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq_char_poly_equality.html">
 \begin{align*}
 a_{n-1} \amp = -(\lambda_1+\lambda_2+\cdots +\lambda_n)\\

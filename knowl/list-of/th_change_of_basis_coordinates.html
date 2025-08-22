@@ -3,7 +3,7 @@
 <!--******************************************-->
 <!--*  Authored with PreTeXt                 *-->
 <!--*  pretextbook.org                       *-->
-<!--*  Theme: default-legacy                 *-->
+<!--*  Theme: default-modern                 *-->
 <!--*  Palette:                              *-->
 <!--******************************************-->
 
@@ -42,7 +42,7 @@
 <div class="para">For all <span class="process-math">\(\boldv\in V\)</span> we have</div>
 <div class="displaymath process-math">
 \begin{equation}
-\underset{B\rightarrow B'}{P}[\boldv]_B=[\boldv]_{B'}\text{.}\tag{4.3.2}
+\underset{B\rightarrow B'}{P}[\boldv]_B=[\boldv]_{B'}\text{.}\tag{4.10}
 \end{equation}
 </div>
 <div class="para">In other words, to convert the <span class="process-math">\(B\)</span>-coordinates of a vector <span class="process-math">\(\boldv\in V\)</span> to <span class="process-math">\(B'\)</span>-coordinates, simply multiply on the left by the matrix  <span class="process-math">\(\underset{B\rightarrow B'}{P}\text{.}\)</span>
@@ -52,7 +52,7 @@
 <div class="autopermalink" data-description="Item 2"><a href="#th_change_of_basis_coordinates-2-1-5-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
 </li>
 <li>
-<div class="para">Property <a href="s_changeofbasis.html#eq_changebasis_matrix_prop" class="xref" data-knowl="./knowl/xref/eq_changebasis_matrix_prop.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.3.2">(4.3.2)</a> defines <span class="process-math">\(\underset{B\rightarrow B'}{P}\)</span> uniquely: i.e., if <span class="process-math">\(A\)</span> satisfies <span class="process-math">\(A[\boldv]_B=[\boldv]_{B'}\)</span> for all <span class="process-math">\(\boldv\in \R^n\text{,}\)</span> then <span class="process-math">\(A=\underset{B\rightarrow B'}{P}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#th_change_of_basis_coordinates-2-1-5-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para">Property <a href="s_changeofbasis.html#eq_changebasis_matrix_prop" class="xref" data-knowl="./knowl/xref/eq_changebasis_matrix_prop.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.10">(4.10)</a> defines <span class="process-math">\(\underset{B\rightarrow B'}{P}\)</span> uniquely: i.e., if <span class="process-math">\(A\)</span> satisfies <span class="process-math">\(A[\boldv]_B=[\boldv]_{B'}\)</span> for all <span class="process-math">\(\boldv\in \R^n\text{,}\)</span> then <span class="process-math">\(A=\underset{B\rightarrow B'}{P}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#th_change_of_basis_coordinates-2-1-5-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Item 3"><a href="#th_change_of_basis_coordinates-2-1-5-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
 </li>
@@ -62,13 +62,13 @@
 <div class="autopermalink" data-description="Theorem 4.3.2: Change of basis for coordinate vectors"><a href="#th_change_of_basis_coordinates" title="Copy heading and permalink for Theorem 4.3.2: Change of basis for coordinate vectors" aria-label="Copy heading and permalink for Theorem 4.3.2: Change of basis for coordinate vectors">🔗</a></div></article><details class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><ol class="decimal" id="th_change_of_basis_coordinates-3-1">
 <li>
 <div class="para logical">
-<div class="para">Let <span class="process-math">\(B=(\boldv_1, \boldv_2,\dots, \boldv_n)\text{.}\)</span> From formula <a href="s_matrixreps.html#eq_matrixrep_formula" class="xref" data-knowl="./knowl/xref/eq_matrixrep_formula.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.2.1">(4.2.1)</a> applied to <span class="process-math">\(I_v\text{,}\)</span> we see that the <span class="process-math">\(j\)</span>-th column of <span class="process-math">\([I_V]_B^{B'}\)</span> is</div>
+<div class="para">Let <span class="process-math">\(B=(\boldv_1, \boldv_2,\dots, \boldv_n)\text{.}\)</span> From formula <a href="s_matrixreps.html#eq_matrixrep_formula" class="xref" data-knowl="./knowl/xref/eq_matrixrep_formula.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.4">(4.4)</a> applied to <span class="process-math">\(I_v\text{,}\)</span> we see that the <span class="process-math">\(j\)</span>-th column of <span class="process-math">\([I_V]_B^{B'}\)</span> is</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq_matrixrep_formula.html ./knowl/xref/eq_change_basis_matrix.html ./knowl/xref/d_change_of_basis.html">
 \begin{equation*}
 [\boldv_j]_{B'}
 \end{equation*}
 </div>
-<div class="para">for all <span class="process-math">\(1\leq j\leq n\text{.}\)</span> Using formula <a href="s_changeofbasis.html#eq_change_basis_matrix" class="xref" data-knowl="./knowl/xref/eq_change_basis_matrix.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.3.1">(4.3.1)</a> from <a href="s_changeofbasis.html#d_change_of_basis" class="xref" data-knowl="./knowl/xref/d_change_of_basis.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 4.3.1: Change of basis matrix">Definition 4.3.1</a> this is precisely the <span class="process-math">\(j\)</span>-th column of <span class="process-math">\(\underset{B\rightarrow B'}{P}\)</span> for all <span class="process-math">\(1\leq j\leq n\text{.}\)</span> We conclude that</div>
+<div class="para">for all <span class="process-math">\(1\leq j\leq n\text{.}\)</span> Using formula <a href="s_changeofbasis.html#eq_change_basis_matrix" class="xref" data-knowl="./knowl/xref/eq_change_basis_matrix.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.9">(4.9)</a> from <a href="s_changeofbasis.html#d_change_of_basis" class="xref" data-knowl="./knowl/xref/d_change_of_basis.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 4.3.1: Change of basis matrix">Definition 4.3.1</a> this is precisely the <span class="process-math">\(j\)</span>-th column of <span class="process-math">\(\underset{B\rightarrow B'}{P}\)</span> for all <span class="process-math">\(1\leq j\leq n\text{.}\)</span> We conclude that</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq_matrixrep_formula.html ./knowl/xref/eq_change_basis_matrix.html ./knowl/xref/d_change_of_basis.html">
 \begin{equation*}
 [I_V]_B^{B'} = \underset{B\rightarrow B'}{P}\text{.}

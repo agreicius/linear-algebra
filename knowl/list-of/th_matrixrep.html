@@ -3,7 +3,7 @@
 <!--******************************************-->
 <!--*  Authored with PreTeXt                 *-->
 <!--*  pretextbook.org                       *-->
-<!--*  Theme: default-legacy                 *-->
+<!--*  Theme: default-modern                 *-->
 <!--*  Palette:                              *-->
 <!--******************************************-->
 
@@ -29,7 +29,7 @@
 <div class="para">For all <span class="process-math">\(\boldv\in V\)</span> we have</div>
 <div class="displaymath process-math">
 \begin{equation}
-[T]_{B}^{B'}[\boldv]_B=[T(\boldv)]_{B'}\text{.}\tag{4.2.2}
+[T]_{B}^{B'}[\boldv]_B=[T(\boldv)]_{B'}\text{.}\tag{4.5}
 \end{equation}
 </div>
 <div class="para">As usual <span class="process-math">\([\boldv]_B\)</span> is treated here as an <span class="process-math">\(n\times 1\)</span> column vector.</div>
@@ -38,7 +38,7 @@
 <div class="autopermalink" data-description="Item 1"><a href="#th_matrixrep-2-1-7-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
 </li>
 <li>
-<div class="para">Property <a href="s_matrixreps.html#eq_matrixrep_prop" class="xref" data-knowl="./knowl/xref/eq_matrixrep_prop.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.2.2">(4.2.2)</a> defines <span class="process-math">\([T]_B^{B'}\text{:}\)</span> i.e., if <span class="process-math">\(A\)</span> is an <span class="process-math">\(m\times n\)</span> matrix satisfying <span class="process-math">\(A[\boldv]_B=[\boldv]_{B'}\)</span> for all <span class="process-math">\(\boldv\in V\text{,}\)</span> then <span class="process-math">\(A=[T]_{B}^{B''}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#th_matrixrep-2-1-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para">Property <a href="s_matrixreps.html#eq_matrixrep_prop" class="xref" data-knowl="./knowl/xref/eq_matrixrep_prop.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.5">(4.5)</a> defines <span class="process-math">\([T]_B^{B'}\text{:}\)</span> i.e., if <span class="process-math">\(A\)</span> is an <span class="process-math">\(m\times n\)</span> matrix satisfying <span class="process-math">\(A[\boldv]_B=[\boldv]_{B'}\)</span> for all <span class="process-math">\(\boldv\in V\text{,}\)</span> then <span class="process-math">\(A=[T]_{B}^{B''}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#th_matrixrep-2-1-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Item 2"><a href="#th_matrixrep-2-1-7-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
 </li>
@@ -93,7 +93,7 @@ A[\boldv]_B=[T(\boldv)]_{B'}
 <div class="para">for all <span class="process-math">\(\boldv\in V\text{.}\)</span> Then in particular we have</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/th_column_method.html ./knowl/xref/eq_matrixrep_proof.html">
 \begin{equation}
-A[\boldv_i]_B=[T(\boldv_i)]_{B'}\tag{4.2.3}
+A[\boldv_i]_B=[T(\boldv_i)]_{B'}\tag{4.6}
 \end{equation}
 </div>
 <div class="para">for all <span class="process-math">\(1\leq i\leq n\text{.}\)</span> Since <span class="process-math">\(\boldv_i\)</span> is the <span class="process-math">\(i\)</span>-th element of <span class="process-math">\(B\text{,}\)</span> we have <span class="process-math">\([\boldv_i]_B=\bolde_i\text{,}\)</span> the <span class="process-math">\(i\)</span>-th standard basis element of <span class="process-math">\(\R^n\text{.}\)</span> Using the column method (<a href="s_matrix.html#th_column_method" class="xref" data-knowl="./knowl/xref/th_column_method.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 2.1.24: Column method of matrix multiplication">2.1.24</a>), we see that</div>
@@ -102,7 +102,7 @@ A[\boldv_i]_B=[T(\boldv_i)]_{B'}\tag{4.2.3}
 A[\boldv_i]_B=A\bolde_i=\boldc_i,
 \end{equation*}
 </div>
-<div class="para">where <span class="process-math">\(\boldc_i\)</span> is the <span class="process-math">\(i\)</span>-th column of <span class="process-math">\(A\text{.}\)</span> Thus <a href="s_matrixreps.html#eq_matrixrep_proof" class="xref" data-knowl="./knowl/xref/eq_matrixrep_proof.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.2.3">(4.2.3)</a> implies that the <span class="process-math">\(i\)</span>-th column of <span class="process-math">\(A\)</span> is equal to <span class="process-math">\([T(\boldv_i)]_{B}\text{,}\)</span> the <span class="process-math">\(i\)</span>-th column of <span class="process-math">\([T]_B^{B'}\text{,}\)</span> for all <span class="process-math">\(1\leq i\leq n\text{.}\)</span> Since <span class="process-math">\(A\)</span> and <span class="process-math">\([T]_{B}^{B'}\)</span> have identical columns, we conclude that <span class="process-math">\(A=[T]_{B}^{B'}\text{,}\)</span> as desired.</div>
+<div class="para">where <span class="process-math">\(\boldc_i\)</span> is the <span class="process-math">\(i\)</span>-th column of <span class="process-math">\(A\text{.}\)</span> Thus <a href="s_matrixreps.html#eq_matrixrep_proof" class="xref" data-knowl="./knowl/xref/eq_matrixrep_proof.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.6">(4.6)</a> implies that the <span class="process-math">\(i\)</span>-th column of <span class="process-math">\(A\)</span> is equal to <span class="process-math">\([T(\boldv_i)]_{B}\text{,}\)</span> the <span class="process-math">\(i\)</span>-th column of <span class="process-math">\([T]_B^{B'}\text{,}\)</span> for all <span class="process-math">\(1\leq i\leq n\text{.}\)</span> Since <span class="process-math">\(A\)</span> and <span class="process-math">\([T]_{B}^{B'}\)</span> have identical columns, we conclude that <span class="process-math">\(A=[T]_{B}^{B'}\text{,}\)</span> as desired.</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#th_matrixrep-3-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Item 2"><a href="#th_matrixrep-3-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>

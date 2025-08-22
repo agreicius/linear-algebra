@@ -3,7 +3,7 @@
 <!--******************************************-->
 <!--*  Authored with PreTeXt                 *-->
 <!--*  pretextbook.org                       *-->
-<!--*  Theme: default-legacy                 *-->
+<!--*  Theme: default-modern                 *-->
 <!--*  Palette:                              *-->
 <!--******************************************-->
 
@@ -25,7 +25,7 @@
 <div class="para">Let <span class="process-math">\(f(x)\)</span> be a function with domain <span class="process-math">\(\R\text{,}\)</span> and let <span class="process-math">\(c\in \R\)</span> be a point of this domain. By definition, the proposition that <span class="process-math">\(\lim\limits_{x\to c}f(x)\)</span> exists is equivalent to the following proposition:</div>
 <div class="displaymath process-math">
 \begin{equation}
-\exists L\in\R\,  \forall \epsilon \gt 0\, \exists \delta \gt0\,  \forall x\in\mathbb{R}\ (\val{x-c}\lt\delta\implies \val{f(x)-L}\lt\epsilon)\text{.}\tag{0.4.1}
+\exists L\in\R\,  \forall \epsilon \gt 0\, \exists \delta \gt0\,  \forall x\in\mathbb{R}\ (\val{x-c}\lt\delta\implies \val{f(x)-L}\lt\epsilon)\text{.}\tag{0.2}
 \end{equation}
 </div>
 <div class="para">(We made a number of shortcuts in our logical notation above (e.g. <span class="process-math">\(\forall \epsilon\gt 0\text{,}\)</span> <span class="process-math">\(\exists\delta\gt 0\)</span>) in order to simplify the expression somewhat; the intended meaning should still be clear. )</div>
@@ -34,7 +34,7 @@
 </div>
 <div class="solutions"><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para logical">
-<div class="para">Let <span class="process-math">\(\mathcal{P}\)</span> be the proposition in <a href="s_logic.html#eq_proposition" class="xref" data-knowl="./knowl/xref/eq_proposition.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 0.4.1">(0.4.1)</a>. Using the negation rules in series, we derive the <em class="emphasis">chain of equivalences</em>  below (see <a href="s_proof_technique.html#sss_logical_chains" class="internal" title="Subsubsection: Chains of implications/equivalences">Chains of implications/equivalences</a>). We’ve added parentheses to emphasize what is being negated at each step. Note how a quantifiers are “swapped” each time we pass the negation to the right.</div>
+<div class="para">Let <span class="process-math">\(\mathcal{P}\)</span> be the proposition in <a href="s_logic.html#eq_proposition" class="xref" data-knowl="./knowl/xref/eq_proposition.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 0.2">(0.2)</a>. Using the negation rules in series, we derive the <em class="emphasis">chain of equivalences</em>  below (see <a href="s_proof_technique.html#sss_logical_chains" class="internal" title="Subsubsection: Chains of implications/equivalences">Chains of implications/equivalences</a>). We’ve added parentheses to emphasize what is being negated at each step. Note how a quantifiers are “swapped” each time we pass the negation to the right.</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq_proposition.html ./knowl/xref/sss_logical_chains.html">
 \begin{align*}
 \neg\mathcal{P}\amp\iff \forall L\in\R\,  \neg\left(\forall \epsilon \gt 0\, \exists \delta \gt0\,  \forall x\in\mathbb{R}\ (\val{x-c}\lt\delta\implies \val{f(x)-L}\lt\epsilon) \right)\\

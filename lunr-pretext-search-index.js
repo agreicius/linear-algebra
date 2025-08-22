@@ -133,7 +133,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "0.2",
   "title": "Functions",
-  "body": " Functions   Functions  function    a function from to    Let and be two sets. A function from to , denoted , is a rule which, given any input  , returns an output  . In this case we write and call the image of under , or the value of at  . Similarly, we say  maps (or sends ) the input to the output .  The set is called the domain of ; the set is called the codomain of .  When we wish to indicate what rule defines the function, we use the elaborated notation . This is read as The function with domain and codomain maps an input to the output .      Consider the function . This function has domain and codomain equal to and maps an integer to its square.     Arithmetic operations as functions   Our familiar arithmetic operations can be expressed as functions whose inputs are pairs of numbers: addition is the function and multiplication is the function       Invoking the notion of a rule in the definition of a function is admittedly somewhat vague. A more precise definition can be given using the Cartesian product. Namely, given sets and , we define a function to be a subset satisfying the following property: for all there is a unique element . The uniqueness of the pair then allows us to define the value of at as , denoted .    As with sets and tuples, we are obliged to specify what we mean for two functions to be equal. The definition below makes clear how the the domain and codomain, as well as the rule that takes inputs to outputs, are all essential ingredients of a function.   Function equality  function equality   Functions and are equal if   they have the same domain and codomain , and    for all , we have .        Image of a set  function image of a set  function image    image of the set under     image of a function    Given a function and a subset , the image of under , denoted , is defined as . In other words, is the set of all outputs , where .  The image of , denoted , is the set of all outputs of : , .     Injective, surjective, bijective  invertible function  bijective function  injective function  surjective function  one-to-one function  onto function  one-to-one correspondence   Let be a function.   The function is injective (or one-to-one ) if for all , if , then : equivalently, if , then .    The function is surjective (or onto ) if for all , there is an such that : equivalently, .    The function is bijective (or a one-to-one correspondence ) if it is injective and surjective.        Role of domain and codomain in injectivity and surjectivity   Consider the following three functions . Although all three functions are defined using the same rule ( ), they are not equal thanks to their differing domains and\/or codomains. The choice of domain and codomain in these examples also plays a crucial role in determining whether the function is injective and\/or surjective. The function is neither injective ( ) nor surjective ( ); the function is injective but not surjective; the function is both injective and surjective, hence bijective.     Function composition  function composition    the composition of and    Suppose and are functions satisfying . The composition of and is the function defined as , for all .     function invertible  function inverse  function identity  Identity and inverse functions   For any set the identity function on is the function defined as for all .  A function is invertible if there is a function satisfying and : , . The function in this case is called the inverse of , denoted .    Invertible is equivalent to bijective   A function is invertible if and only if it is bijective.     The proof of this theorem is left as an example of proving if and only if statements. See .        Let . Find each set.                 is not one-to-one, you can not simply plug the endpoints of the interval into the function to get the endpoints of the answer. Instead, try graphing the function and shading on the -axis the input set. Then use the graph to see which -values you get out when you put those 's in. For instance, notice that . Because , you should have . Do you?           For each of the following functions, state whether they are one-to-one, onto, both or neither. Use the following key:                                   Consider the functions , , , , , and .  Which of these functions are inverses of each other?    and    and    and    and    and    and    and    and    No pairs of these functions are inverses of each other.     SOLUTION One way we can check which functions are inverses is to make sure they satisfy the identities and . This will show that and and and are inverses of each other, while the other pairs of functions are not. Let's consider and . The composition Also, Thus these are inverses of one another. We can similarly show that and are inverses of each other. However, the remaining pairs are not inverses. For example, if we consider and , we have Thus these functions are not inverses of each other.         "
+  "body": " Functions   Functions  function    a function from to    Let and be two sets. A function from to , denoted , is a rule which, given any input  , returns an output  . In this case we write and call the image of under , or the value of at  . Similarly, we say  maps (or sends ) the input to the output .  The set is called the domain of ; the set is called the codomain of .  When we wish to indicate what rule defines the function, we use the elaborated notation . This is read as The function with domain and codomain maps an input to the output .      Consider the function . This function has domain and codomain equal to and maps an integer to its square.     Arithmetic operations as functions   Our familiar arithmetic operations can be expressed as functions whose inputs are pairs of numbers: addition is the function and multiplication is the function       Invoking the notion of a rule in the definition of a function is admittedly somewhat vague. A more precise definition can be given using the Cartesian product. Namely, given sets and , we define a function to be a subset satisfying the following property: for all there is a unique element . The uniqueness of the pair then allows us to define the value of at as , denoted .    As with sets and tuples, we are obliged to specify what we mean for two functions to be equal. The definition below makes clear how the the domain and codomain, as well as the rule that takes inputs to outputs, are all essential ingredients of a function.   Function equality  function equality   Functions and are equal if   they have the same domain and codomain , and    for all , we have .        Image of a set  function image of a set  function image    image of the set under     image of a function    Given a function and a subset , the image of under , denoted , is defined as . In other words, is the set of all outputs , where .  The image of , denoted , is the set of all outputs of : , .     Injective, surjective, bijective  invertible function  bijective function  injective function  surjective function  one-to-one function  onto function  one-to-one correspondence   Let be a function.   Injective  The function is injective (or one-to-one ) if for all , if , then : equivalently, if , then .    Surjective  The function is surjective (or onto ) if for all , there is an such that : equivalently, .    Bijective  The function is bijective (or a one-to-one correspondence ) if it is injective and surjective.        Role of domain and codomain in injectivity and surjectivity   Consider the following three functions . Although all three functions are defined using the same rule ( ), they are not equal thanks to their differing domains and\/or codomains. The choice of domain and codomain in these examples also plays a crucial role in determining whether the function is injective and\/or surjective. The function is neither injective ( ) nor surjective ( ); the function is injective but not surjective; the function is both injective and surjective, hence bijective.     Function composition  function composition    the composition of and    Suppose and are functions satisfying . The composition of and is the function defined as , for all .     function invertible  function inverse  function identity  Identity and inverse functions   For any set the identity function on is the function defined as for all .  A function is invertible if there is a function satisfying and : , . The function in this case is called the inverse of , denoted .    Invertible is equivalent to bijective   A function is invertible if and only if it is bijective.     The proof of this theorem is left as an example of proving if and only if statements. See .        Let . Find each set.                 is not one-to-one, you can not simply plug the endpoints of the interval into the function to get the endpoints of the answer. Instead, try graphing the function and shading on the -axis the input set. Then use the graph to see which -values you get out when you put those 's in. For instance, notice that . Because , you should have . Do you?           For each of the following functions, state whether they are one-to-one, onto, both or neither. Use the following key:                                   Consider the functions , , , , , and .  Which of these functions are inverses of each other?    and    and    and    and    and    and    and    and    No pairs of these functions are inverses of each other.     SOLUTION One way we can check which functions are inverses is to make sure they satisfy the identities and . This will show that and and and are inverses of each other, while the other pairs of functions are not. Let's consider and . The composition Also, Thus these are inverses of one another. We can similarly show that and are inverses of each other. However, the remaining pairs are not inverses. For example, if we consider and , we have Thus these functions are not inverses of each other.         "
 },
 {
   "id": "d_function",
@@ -196,7 +196,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "0.2.7",
   "title": "Injective, surjective, bijective.",
-  "body": " Injective, surjective, bijective  invertible function  bijective function  injective function  surjective function  one-to-one function  onto function  one-to-one correspondence   Let be a function.   The function is injective (or one-to-one ) if for all , if , then : equivalently, if , then .    The function is surjective (or onto ) if for all , there is an such that : equivalently, .    The function is bijective (or a one-to-one correspondence ) if it is injective and surjective.      "
+  "body": " Injective, surjective, bijective  invertible function  bijective function  injective function  surjective function  one-to-one function  onto function  one-to-one correspondence   Let be a function.   Injective  The function is injective (or one-to-one ) if for all , if , then : equivalently, if , then .    Surjective  The function is surjective (or onto ) if for all , there is an such that : equivalently, .    Bijective  The function is bijective (or a one-to-one correspondence ) if it is injective and surjective.      "
 },
 {
   "id": "s_functions-10",
@@ -437,7 +437,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_logic.html#s_logic_ex-1",
   "type": "Exercise",
-  "number": "0.4.3.1",
+  "number": "1",
   "title": "",
   "body": "    Assign truth values to the propositions and so that the given proposition is false. Use T for true and F for false.   Answer: P: Q: R:    F    No correct answer specified    F       "
 },
@@ -446,7 +446,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_logic.html#s_logic_ex-2",
   "type": "Exercise",
-  "number": "0.4.3.2",
+  "number": "2",
   "title": "",
   "body": "    Determine the truth value of the following statements if the universe of discourse is the set of real numbers.                           "
 },
@@ -455,7 +455,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_logic.html#s_logic_ex-3",
   "type": "Exercise",
-  "number": "0.4.3.3",
+  "number": "3",
   "title": "",
   "body": "    Let be the statement \" has a cat\", let be the statement \" has a dog\" and let be the statement \" has a ferret\". Express each of the following statements in terms of , , and , quantifiers, and logical connectives. Let the universe of discourse consist of all students in your class. Put the appropriate letter next to the corresponding symbolic form.                   a) A student in your class has a cat, a dog, and a ferret.  b) All students in your class have a cat, a dog, or a ferret.  c) Some student in your class has a cat and a ferret but not a dog.  d) No student in this class has a cat, a dog, and a ferret.  e) For each of the three animals, cats, dogs, and ferrets, there is a student in your class who has one of these animals.       "
 },
@@ -464,7 +464,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_logic.html#s_logic_ex-4",
   "type": "Exercise",
-  "number": "0.4.3.4",
+  "number": "4",
   "title": "",
   "body": "    Let P(x) be the statement \"x is a duck\", let Q(x) be the statement \"x is one of my poultry\", let R(x) be the statement \"x is an officer\", and let S(x) be the statement \"x is willing to waltz\". Express each of the following statements in terms of P(x), Q(x), R(x) and S(x), quantifiers, and logical connectives. Let the universe of discourse consist of all living creatures. Put the appropriate letter next to the corresponding symbolic form.                   a) Some ducks are not willing to waltz.  b) No ducks are willing to waltz.  c) No officers ever decline to waltz.  d) All my poultry are ducks.  e) My poultry are not officers.       "
 },
@@ -473,7 +473,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_logic.html#s_logic_ex-5",
   "type": "Exercise",
-  "number": "0.4.3.5",
+  "number": "5",
   "title": "",
   "body": "    Determine whether the given proposition is true or false, for the universe of all real numbers. Use T for true and F for false.   Answer:   Answer:   Answer:   Answer:   Answer:    T    F    T    F    T       "
 },
@@ -482,7 +482,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_logic.html#s_logic_ex-6",
   "type": "Exercise",
-  "number": "0.4.3.6",
+  "number": "6",
   "title": "",
   "body": "    Suppose is an indexed family of sets. For each statement below, write the letter of the equivalent symbolic form.    for every       for some                    "
 },
@@ -734,7 +734,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_complex_numbers.html#s_complex_numbers_ex-1",
   "type": "Exercise",
-  "number": "0.6.3.1",
+  "number": "1",
   "title": "",
   "body": "    Rewrite the following expression into the form of a+b :         By definition, , so we have .  To get rid of in the denominator, we use the difference of squares formula:   The full solution is:        "
 },
@@ -743,7 +743,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_complex_numbers.html#s_complex_numbers_ex-2",
   "type": "Exercise",
-  "number": "0.6.3.2",
+  "number": "2",
   "title": "",
   "body": "    Let . Calculate the following:  (a)     ,  (b)     ,  (c)     .                                     "
 },
@@ -752,7 +752,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_complex_numbers.html#s_complex_numbers_ex-3",
   "type": "Exercise",
-  "number": "0.6.3.3",
+  "number": "3",
   "title": "",
   "body": "    Evaluate the following expressions and write them in the form .   .   .   .   .   .                                "
 },
@@ -761,7 +761,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_complex_numbers.html#s_complex_numbers_ex-4",
   "type": "Exercise",
-  "number": "0.6.3.4",
+  "number": "4",
   "title": "",
   "body": "    Calculate:  (a)  ,  (b)  ,  (c)  ,  (d)  .                           "
 },
@@ -842,7 +842,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_polynomials.html#s_polynomials_ex-1",
   "type": "Exercise",
-  "number": "0.7.4.1",
+  "number": "1",
   "title": "",
   "body": "    Find a degree 3 polynomial whose coefficient of equal to 1. The zeros of this polynomial are , , and . Simplify your answer so that it has only real numbers as coefficients.  Your answer is .            "
 },
@@ -851,7 +851,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_polynomials.html#s_polynomials_ex-2",
   "type": "Exercise",
-  "number": "0.7.4.2",
+  "number": "2",
   "title": "",
   "body": "    The polynomial has as a root. Give all of the roots of in a comma-separated list, including the given one.  Roots:            "
 },
@@ -1013,7 +1013,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_systems.html#s_systems_ex-1-2",
   "type": "Exercise",
-  "number": "1.1.3.1",
+  "number": "1",
   "title": "",
   "body": "    Determine whether the following system has no solution, an infinite number of solutions or a unique solution.                  "
 },
@@ -1022,7 +1022,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_systems.html#s_systems_ex-1-3",
   "type": "Exercise",
-  "number": "1.1.3.2",
+  "number": "2",
   "title": "",
   "body": "    Suppose that the following   is a consistent system. Then             "
 },
@@ -1031,7 +1031,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_systems.html#s_systems_ex-1-4",
   "type": "Exercise",
-  "number": "1.1.3.3",
+  "number": "3",
   "title": "",
   "body": "    Find the set of solutions for the linear system  Use s1 , s2 , etc. for the free variables if necessary.   , ,                   SOLUTION: Equation 3 . Substitute into equation 2, . Substitute into equation 1, .       "
 },
@@ -1040,7 +1040,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_systems.html#s_systems_ex-1-5",
   "type": "Exercise",
-  "number": "1.1.3.4",
+  "number": "4",
   "title": "",
   "body": "    Give a geometric description of the following systems of equations                  "
 },
@@ -1049,7 +1049,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_systems.html#s_systems_ex-1-6",
   "type": "Exercise",
-  "number": "1.1.3.5",
+  "number": "5",
   "title": "",
   "body": "    Give a geometric description of the following system of equations                  "
 },
@@ -1058,7 +1058,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_systems.html#ex_solving_sys_geom",
   "type": "Exercise",
-  "number": "1.1.3.6",
+  "number": "6",
   "title": "Geometry of linear systems.",
   "body": " Geometry of linear systems   In this exercise we will use the geometry of lines in and planes in to help analyze solutions to systems of equations in two and three unknowns, respectively. See for a refresher on these concepts.   Fix and consider a system of linear equations in the two unknowns and . What does a solution to this system of linear equations correspond to geometrically?    Use your interpretation in (a) to give a geometric argument that a system of equations in two unknowns will have either (i) zero solutions, (ii) exactly one solution, or (iii) infinitely many solutions.    Use your geometric interpretation to help produce explicit examples of systems in two variables satisfying these three different cases (i)-(iii).    Now repeat (a)-(b) for a system of linear equations in three variables .       (a) Geometrically, each equation in the system represents a line . A solution to the -th equation corresponds to a point on . Thus a solution to the system corresponds to a point lying on all of the lines: i.e., a point of intersection of the lines.  (b) First of all to prove the desired or statement it suffices to prove that if the number of solutions is greater than 1, then there are infinitely many solutions.  Now suppose there is more than one solution. Then there are at least two different solutions: and . Take any of the two lines . By above the intersection of and contains and . But two distinct lines intersect in at most one point. It follows that and must be equal. Since and were arbitrary, it follows all of the lines are in fact the same line . But this means the common intersection of the lines is , which has infinitely many points. It follows that the system has infinitely many solutions.  (c) We will get 0 solutions if the system includes two different parallel lines: e.g., and .  We will get exactly one solution when the slopes of each line in the system are distinct.  We will get infinitely many solutions when all equations in the system represent the same line . This happens when all equations are multiples of one another.  (d) Now each equation in our system defines a plane . A solution to the system corresponds to a point of intersection of the planes. We recall two facts from Euclidean geometry:   Fact 1  Given two distinct points, there is a unique line containing both of them.    Fact 2  Given any number of distinct planes, they either do not intersect, or intersect in a line.     We proceed as in part (b) above: that is show that if there are two distinct solutions to the system, then there are infinitely many solutions. First, for simplicity, we may assume that the equations define distinct planes; if we have two equations defining the same plane, we can delete one of them and not change the set of solutions to the system.  Now suppose and are two distinct solutions to the system. Let be the unique line containing and (Fact 1). I claim that is precisely the set of solutions to the system. To see this, take any two equations in the system and . Since the two corresponding planes are distinct, and intersect in at least the points and , they must intersect in a line (Fact 2); since this line contains and , it must be the line (Fact 1). Thus any two planes in the system intersect in the line . From this it follows that: (a) a point satisfying the system must lie in ; and (b) all points on satisfy the system (since we have shown that lies in all the planes). It follows that is precisely the set of solutions, and hence that there are infinitely many solutions.   "
 },
@@ -1067,7 +1067,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_systems.html#ex_row_ops_preserve",
   "type": "Exercise",
-  "number": "1.1.3.7",
+  "number": "7",
   "title": "Row operations preserve solutions.",
   "body": " Row operations preserve solutions   We made the claim that each of our three row operations   scalar multiplication ( for ),    swap ( ),    addition ( for some )   do not change the set of solutions of a linear system. To prove this claim, let be a general linear system . Now consider each type of row operation separately, write down the new system you get by applying this row operation, and prove that an -tuple is a solution to the original system if and only if it is a solution to the new system .    Let be the original system with equations . For each specified row operation, we will call the resulting new system and its equations .   Row swap  In this case systems and have exactly the same equations, just written in a different order. Thus the -tuple satisfies if and only if it satisfies each of the equations , if and only if it satisfies each of the equations , since these are the same equations! It follows that is a solution of if and only if it is a solution to .    Scalar multiplication  In this case for all , and for some . Since only the -th equation has changed, it suffices to show that is a solution to if and only if is a solution to . Let's prove each direction of this if and only if separately.  If satisfies , then . Multiplying both sides by we see that and hence that is also a solution of .  For the other direction, if satisfies , then Now, since , we can multiply both sides of this equation by to see that and hence that is a solution to .    Row addition  The only equation of that differs from is . Writing this equation out in terms of coefficients gives us . Now if satisfies , then it satisfies and , in which case evaluating the RHS of the above at yields showing that satisfies . Now suppose satisfies . Since satisfies , we have Since satisfies , we have Substituting into the equation above we get , and hence . This shows that satisfies . It follows that satisfies .    "
 },
@@ -1076,7 +1076,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_systems.html#ex_solving_nonlinear_system",
   "type": "Exercise",
-  "number": "1.1.3.8",
+  "number": "8",
   "title": "Nonlinear systems.",
   "body": " Nonlinear systems  A nonlinear system of equations is a collection of equations, at least one of which is nonlinear. Our definition of a solution to a linear system generalizes easily to any system of equations.   Consider the following nonlinear system in the unknowns : .   Sketch the graphs of each of the two equations in the system on a common coordinate system.    Describe geometrically what a solution to the system is in terms of your sketch. Explain your reasoning. How many solutions to the system are there, according to your sketch?    Compute the set of all solutions to the system algebraically.       Now consider a more general system where are fixed constants and at least one of or is nonzero.    Explain geometrically what a solution to the system corresponds to in terms of the graphs of its two equations.    Use your geometric interpretation in (i) to argue that the system has either 0, 1, or 2 solutions. Give explicit examples of such systems corresponding to each of these three cases.       "
 },
@@ -1085,7 +1085,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_systems.html#s_systems_ex-2-5",
   "type": "Exercise",
-  "number": "1.1.3.9",
+  "number": "9",
   "title": "Not all arithmetic operations preserve solutions.",
   "body": " Not all arithmetic operations preserve solutions   In this exercise we investigate how the operation of squaring both sides of an equation changes the set of solutions. Let represent a general equation (linear or nonlinear) in the unknowns , let be the equation obtained by squaring both sides of the , let be the set of solutions to , and let be the set of solutions to .    Show that .    Given an explicit example of an equation of the form in two variables for which .     "
 },
@@ -1229,7 +1229,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_ge.html#s_ge_ex-1-2",
   "type": "Exercise",
-  "number": "1.2.3.1",
+  "number": "1",
   "title": "",
   "body": "   Determine if the matrix   is in echelon form, reduced row echelon form, or neither. Choose the most appropriate answer.  Answer:  select   echelon form   reduced row echelon form   not in echelon form  .        SOLUTION: Reduced row echelon form.       "
 },
@@ -1238,7 +1238,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_ge.html#s_ge_ex-1-3",
   "type": "Exercise",
-  "number": "1.2.3.2",
+  "number": "2",
   "title": "",
   "body": "    Consider the matrix .  (a) On the matrix , perform the row operation . The result is:  (b) On the matrix , perform the row operation . The result is:  (c) On the matrix , perform the row operation . The result is:       "
 },
@@ -1247,7 +1247,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_ge.html#s_ge_ex-1-4",
   "type": "Exercise",
-  "number": "1.2.3.3",
+  "number": "3",
   "title": "",
   "body": "    On the augmented matrix below , perform all three row operations in the order given, ((a) followed by (b) followed by (c)) and then write the resulting augmented matrix.                                                                                           "
 },
@@ -1256,7 +1256,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_ge.html#s_ge_ex-2-2-2",
   "type": "Exercise",
-  "number": "1.2.3.4",
+  "number": "4",
   "title": "",
   "body": "       The first nonzero term in the second row is not a one.   "
 },
@@ -1265,7 +1265,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_ge.html#s_ge_ex-2-2-3",
   "type": "Exercise",
-  "number": "1.2.3.5",
+  "number": "5",
   "title": "",
   "body": "       "
 },
@@ -1274,7 +1274,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_ge.html#s_ge_ex-2-2-4",
   "type": "Exercise",
-  "number": "1.2.3.6",
+  "number": "6",
   "title": "",
   "body": "       "
 },
@@ -1283,7 +1283,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_ge.html#s_ge_equivsys",
   "type": "Exercise",
-  "number": "1.2.3.7",
+  "number": "7",
   "title": "",
   "body": "       First bring the system into standard form: . Then perform Gaussian elimination on the associated augmented matrix: . The corresponding equivalent system is .   "
 },
@@ -1292,7 +1292,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_ge.html#s_ge_ex-2-3-3",
   "type": "Exercise",
-  "number": "1.2.3.8",
+  "number": "8",
   "title": "",
   "body": "      "
 },
@@ -1301,7 +1301,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_ge.html#s_ge_ex-2-3-4",
   "type": "Exercise",
-  "number": "1.2.3.9",
+  "number": "9",
   "title": "",
   "body": "      "
 },
@@ -1310,7 +1310,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_ge.html#s_ge_ex-2-3-5",
   "type": "Exercise",
-  "number": "1.2.3.10",
+  "number": "10",
   "title": "",
   "body": "      "
 },
@@ -1319,7 +1319,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_ge.html#s_ge_ex-2-3-6",
   "type": "Exercise",
-  "number": "1.2.3.11",
+  "number": "11",
   "title": "",
   "body": "      "
 },
@@ -1391,7 +1391,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_solving.html#ss_solveSystem-6",
   "type": "Proof",
-  "number": "1.3.2.1",
+  "number": "1",
   "title": "",
   "body": " First recall that and have the same set of solutions ( ). So it suffices to show that the algorithm returns the correct set of solutions to .  Regarding consistency: if the last column of the augmented matrix associated to has a leading one in the -th row, then the corresponding equation in is Clearly this equation has no solutions, and hence the set of solutions to is empty.  Suppose now that the last column of does not have a leading one.   Case 1: no free variables   Suppose in Step 3 you determine that there are no free variables. Then each of the first columns of has a leading one in it. If follows that for each the -th equation of is of the form Since does not have a leading one in the last column, it follows that all equations beyond the -th equation are of the form , and as such may be disregarded since they are satisfied by any choice of the . The remaining system of equations in unknowns can be solved by back-substitution, yielding a unique solution of the form Do not concern yourself overly with the exact formulas. The important point here is that once we know there is a unique assignment of the variables that satisfies the system, allows us to solve for in terms of the the , . As such working our way up from the last equation, we find there is a unique solution to the system.     Case 2: free variables  Suppose now that are the leading variables of , and are the free variables. Again, since does not have a leading one in the last column, there are exactly nonzero equations in : one for each leading variable. After bringing any terms involving free variables to the right, the -th such equation takes the form . As in the previous case, back-substitution now allows us to solve for each leading variable as a function of the free variables: This new system of equations clearly has the same set of solutions as (and ), since it was obtained from by deleting zero rows of and using only addition and subtraction operations. Furthermore, it is clear that any assignment of the free variables extends uniquely to the solution of that further assigns . The idea behind uniqueness here, is that once you assign values to the free variables, the values of the leading variables are completely determined by the equations .  Lastly, we show that every solution of (and ) is obtained in this way. Suppose is a solution. According to the discussion above must be the unique solution to corresponding to the free variable assignment and corresponding leading variable assignment .   "
 },
@@ -1454,7 +1454,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_solving.html#s_solving_ex-1-2",
   "type": "Exercise",
-  "number": "1.3.3.1",
+  "number": "1",
   "title": "",
   "body": "    Solve the following system using augmented matrix methods:  (a) The initial matrix is:              (b) First, perform the Row Operation . The resulting matrix is:              (c) Next, perform the operation . The resulting matrix is:              (d) Finish simplifying the augmented matrix to reduced row echelon form. The reduced matrix is:              (e) How many solutions does the system have? If infinitely many, enter \"Infinity\".  (f) What are the solutions to the system?  If there are no solutions, write \"No Solution\" or \"None\" for each answer. If there are infinitely many solutions let and solve for in terms of .                                                                                                                                                  "
 },
@@ -1463,7 +1463,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_solving.html#s_solving_ex-1-3",
   "type": "Exercise",
-  "number": "1.3.3.2",
+  "number": "2",
   "title": "",
   "body": "    Solve the following system using augmented matrix methods:  (a) The initial matrix is:                      (b) First, perform the Row Operation . The resulting matrix is:                      (c) Next, perform the operations   .  The resulting matrix is:                      (d) Finish simplifying the augmented matrix down to reduced row echelon form. The reduced matrix is:                      Remember: This matrix must be simplified all the way to reduced form.  (e) How many solutions does the system have? If infinitely many, enter \"Infinity\". If none, enter 0.  (f) What are the solutions of the system?        Note: In part (f), if there are no solutions, write \"No Solution\" or \"None\" in the answer blank after each equal sign. If there are infinitely many solutions, and the solution set describes a line (that is, if there is only one free variable), set and solve for the remaining variables in terms of . If there are infinitely many solutions, and the solution set describes a plane (that is, if the solution set has two free variables), set the variables and , and then solve for in terms of and .                                                                                                                                                                                                                                                                           "
 },
@@ -1472,7 +1472,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_solving.html#s_solving_ex-1-4",
   "type": "Exercise",
-  "number": "1.3.3.3",
+  "number": "3",
   "title": "",
   "body": "    Solve  = , = , = , = .                           "
 },
@@ -1481,7 +1481,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_solving.html#s_solving_ex-1-5",
   "type": "Exercise",
-  "number": "1.3.3.4",
+  "number": "4",
   "title": "",
   "body": "    Determine whether the following system has no solution, an infinite number of solutions or a unique solution.                     "
 },
@@ -1490,7 +1490,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_solving.html#s_solving_ex-2-2-3",
   "type": "Exercise",
-  "number": "1.3.3.5",
+  "number": "5",
   "title": "",
   "body": "       We saw in that the system is equivalent to a system with augmented matrix . The row echelon matrix tells us that is the only free variable of . Back substitution then yields the parametric equation description: . Thus the set of solutions is .   "
 },
@@ -1499,7 +1499,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_solving.html#s_solving_ex-2-2-4",
   "type": "Exercise",
-  "number": "1.3.3.6",
+  "number": "6",
   "title": "",
   "body": "      "
 },
@@ -1508,7 +1508,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_solving.html#s_solving_ex-2-2-5",
   "type": "Exercise",
-  "number": "1.3.3.7",
+  "number": "7",
   "title": "",
   "body": "      "
 },
@@ -1517,7 +1517,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_solving.html#s_solving_ex-2-2-6",
   "type": "Exercise",
-  "number": "1.3.3.8",
+  "number": "8",
   "title": "",
   "body": "      "
 },
@@ -1526,7 +1526,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_solving.html#s_solving_ex-2-2-7",
   "type": "Exercise",
-  "number": "1.3.3.9",
+  "number": "9",
   "title": "",
   "body": "      "
 },
@@ -1535,7 +1535,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_solving.html#s_solving_ex-2-3",
   "type": "Exercise",
-  "number": "1.3.3.10",
+  "number": "10",
   "title": "",
   "body": "  For each system below determine all values of for which the system below has (a) no solutions, (b) a unique solution, and (c) infinitely many solutions.             "
 },
@@ -1544,7 +1544,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_solving.html#s_solving_ex-2-4",
   "type": "Exercise",
-  "number": "1.3.3.11",
+  "number": "11",
   "title": "",
   "body": "  Show that a linear system with more unknowns than equations has either 0 solutions or infinitely many solutions.    "
 },
@@ -1553,7 +1553,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_solving.html#s_solving_ex-2-5",
   "type": "Exercise",
-  "number": "1.3.3.12",
+  "number": "12",
   "title": "",
   "body": "  True or false. If true, provide a proof; if false, provide an explicit counterexample.    Every matrix has a unique row echelon form.    Any homogeneous linear system with more unknowns than equations has infinitely many solutions.    If a homogeneous linear system of equations in unknowns has a corresponding augmented matrix with a reduced row echelon form containing leading ones, then the linear system has the unique solution .    All leading ones in of a matrix in row echelon form must occur in distinct columns.    If the reduced row echelon form of the augmented matrix for a linear system has a zero row, then the system must have infinitely many solutions.    If a linear system has more unknowns than equations, then it must have infinitely many solutions.     "
 },
@@ -1562,7 +1562,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_solving.html#s_solving_ex-2-6",
   "type": "Exercise",
-  "number": "1.3.3.13",
+  "number": "13",
   "title": "",
   "body": "  Interpret each matrix below as an augmented matrix of a linear system. Asterisks represent an unspecified real number. For each matrix, determine whether the corresponding system is consistent or inconsistent. If the system is consistent, decide further whether the solution is unique or not. If there is not enough information answer inconclusive and back up your claim by giving an explicit example where the system is consistent, and an explicit example where the system is inconsistent.                         "
 },
@@ -1571,7 +1571,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_solving.html#s_solving_ex-2-7",
   "type": "Exercise",
-  "number": "1.3.3.14",
+  "number": "14",
   "title": "",
   "body": "  What condition must and satisfy in order for the system below to be consistent? Express your answer as an equation involving and .    "
 },
@@ -1580,7 +1580,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_solving.html#s_solving_ex-2-8",
   "type": "Exercise",
-  "number": "1.3.3.15",
+  "number": "15",
   "title": "",
   "body": "  Solve the system of equations below for , , and .     First replace the given nonlinear system with a linear one using a change of variable substitution.   "
 },
@@ -1589,7 +1589,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_solving.html#s_solving_ex-2-9",
   "type": "Exercise",
-  "number": "1.3.3.16",
+  "number": "16",
   "title": "",
   "body": "  If is a matrix with three rows and five columns, then what is the maximum possible number of leading ones in its reduced row echelon form? Justify your answer.  Provide an explicit example of a matrix that attains this maximum number of leading ones.   "
 },
@@ -1598,7 +1598,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_solving.html#s_solving_ex-2-10",
   "type": "Exercise",
-  "number": "1.3.3.17",
+  "number": "17",
   "title": "",
   "body": "  If is a matrix with three rows and six columns, then what is the maximum possible number of free variables in the general solution of the linear system with augmented matrix ? Justify your answer.  Provide an explicit example of a matrix that attains this maximal number of free variables.   "
 },
@@ -1607,7 +1607,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_solving.html#s_solving_ex-2-11",
   "type": "Exercise",
-  "number": "1.3.3.18",
+  "number": "18",
   "title": "",
   "body": "  If is a matrix with five rows and three columns, then what is the minimum possible number of zero rows in any row echelon form of ?  Provide an explicit example of a matrix that attains this minimal number of zero rows.   "
 },
@@ -1940,7 +1940,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_matrix.html#s_matrix_ex-1-2",
   "type": "Exercise",
-  "number": "2.1.6.1",
+  "number": "1",
   "title": "",
   "body": "    Enter T or F depending on whether the statement is true or false. (You must enter T or F -- True and False will not work.)    If A has dimensions and B has dimensions , then AB has dimensions .    If A has dimensions and B has dimensions , then the 3rd row, 4th column entry of AB is obtained by multiplying the 3rd column of A by the 4th row of B.         "
 },
@@ -1949,7 +1949,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_matrix.html#s_matrix_ex-1-3",
   "type": "Exercise",
-  "number": "2.1.6.2",
+  "number": "2",
   "title": "",
   "body": "    Matrix Products: Consider the matrices   Of the possible matrix products ,  which make sense?    A       "
 },
@@ -1958,7 +1958,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_matrix.html#s_matrix_ex-1-4",
   "type": "Exercise",
-  "number": "2.1.6.3",
+  "number": "3",
   "title": "",
   "body": "    If A is B is and C is then:  a) BA has dimension    b) CB has dimension    c) AC has dimension                                       "
 },
@@ -1967,7 +1967,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_matrix.html#s_matrix_ex-1-5",
   "type": "Exercise",
-  "number": "2.1.6.4",
+  "number": "4",
   "title": "",
   "body": "    Determine and such that                      "
 },
@@ -1976,7 +1976,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_matrix.html#s_matrix_ex-1-6",
   "type": "Exercise",
-  "number": "2.1.6.5",
+  "number": "5",
   "title": "",
   "body": "    Determine the value(s) of such that   =  Note: If there is more than one value separate them by commas.            "
 },
@@ -1985,7 +1985,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_matrix.html#s_matrix_ex-2-2",
   "type": "Exercise",
-  "number": "2.1.6.6",
+  "number": "6",
   "title": "",
   "body": "  For each part below write down the most general matrix satisfying the given condition (use letter names ,etc. for entries).     for all .     for all      for .     "
 },
@@ -1994,7 +1994,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_matrix.html#s_matrix_ex-2-3",
   "type": "Exercise",
-  "number": "2.1.6.7",
+  "number": "7",
   "title": "",
   "body": "  Let  . Compute the following matrices, or else explain why the given expression is not well defined.                    "
 },
@@ -2003,7 +2003,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_matrix.html#s_matrix_ex-2-4",
   "type": "Exercise",
-  "number": "2.1.6.8",
+  "number": "8",
   "title": "",
   "body": "  Let . Compute the following using either the row or column method of matrix multiplication. Make sure to show how you are using the relevant method.   the first column of ;    the second row of ;    the third column of .          Using expansion by columns, the first column of is given by times the first column of . We compute       "
 },
@@ -2012,7 +2012,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_matrix.html#s_matrix_ex-2-5",
   "type": "Exercise",
-  "number": "2.1.6.9",
+  "number": "9",
   "title": "",
   "body": "  Use the row or column method to quickly compute the following product:     I'll just describe the row method here.  Note that the rows of are all identical, and equal to . From the row method it follows that each row of is given by .  Thus the rows of are all identical, and the row method computes the product above by taking the corresponding alternating sum of the rows of : .  Thus is the the matrix, all of whose rows are .   "
 },
@@ -2021,7 +2021,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_matrix.html#s_matrix_ex-2-6",
   "type": "Exercise",
-  "number": "2.1.6.10",
+  "number": "10",
   "title": "",
   "body": "  Each of the matrices below performs a specific row operation when multiplying a matrix on the left; i.e., the matrix is the result of performing a certain row operation on the matrix . Use the row method of matrix multiplication to decide what row operation each performs. .    "
 },
@@ -2030,7 +2030,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_matrix.html#ex_entry_lin_comb",
   "type": "Exercise",
-  "number": "2.1.6.11",
+  "number": "11",
   "title": "",
   "body": "  Let be an integer. Prove, by induction on , that for any matrices and scalars , we have for all , .   "
 },
@@ -2291,7 +2291,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_invertible_matrices.html#subsec--5",
   "type": "Proof",
-  "number": "2.3.1.1",
+  "number": "1",
   "title": "",
   "body": " Suppose matrices and both satisfy the properties of the multiplicative inverse: i.e., . Then . Thus we see that , showing that the inverse of , if it exists, is unique.  "
 },
@@ -2336,7 +2336,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_invertible_matrices.html#subsec--15",
   "type": "Proof",
-  "number": "2.3.1.2",
+  "number": "2",
   "title": "",
   "body": " If , the proposed matrix is indeed an inverse of , as one readily verifies.  Assume . If , then is not invertible, as we saw in the example above. Thus we can assume is nonzero, in which case is also nonzero. An easy computation shows This implies is not invertible. Indeed if it were, then the inverse would exist, and we'd have , which is a contradiction. We have proved that if , then is not invertible.  "
 },
@@ -2363,7 +2363,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_invertible_matrices.html#subsec--19",
   "type": "Proof",
-  "number": "2.3.1.3",
+  "number": "3",
   "title": "",
   "body": " Assume and are invertible. The statement of the theorem proposes a candidate for the inverse of : namely, . We need only show that satisfies . Here goes: .  "
 },
@@ -2381,7 +2381,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_invertible_matrices.html#subsec--21",
   "type": "Proof",
-  "number": "2.3.1.4",
+  "number": "4",
   "title": "",
   "body": " We prove by induction on the number of matrices, , that if the are invertible, then the proposed inverse formula is valid.  Base step:  For , the inverse formula reads , which is clearly true.    Induction step  For the induction step we assume that the inverse formula is valid for any collection of invertible matrices, and then show it is valid for any collection of invertible matrices. Let be invertible matrices. Define . Then .    "
 },
@@ -2462,7 +2462,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_invertible_matrices.html#s_invertible_matrices_ex-1-2",
   "type": "Exercise",
-  "number": "2.3.3.1",
+  "number": "1",
   "title": "",
   "body": "    If and are invertible matrices, then the inverse of is .   True   False         SOLUTION: False. For example, let , and , then , which is not invertible.       "
 },
@@ -2471,7 +2471,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_invertible_matrices.html#s_invertible_matrices_ex-1-3",
   "type": "Exercise",
-  "number": "2.3.3.2",
+  "number": "2",
   "title": "",
   "body": "    Solve for the matrix if . Assume that all matrices are and invertible as needed.         SOLUTION: Note that       "
 },
@@ -2480,7 +2480,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_invertible_matrices.html#s_invertible_matrices_ex-1-4",
   "type": "Exercise",
-  "number": "2.3.3.3",
+  "number": "3",
   "title": "",
   "body": "    Are the following matrices invertible?                     "
 },
@@ -2489,7 +2489,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_invertible_matrices.html#s_invertible_matrices_ex-1-5",
   "type": "Exercise",
-  "number": "2.3.3.4",
+  "number": "4",
   "title": "",
   "body": "    For what values of will be invertible?  For all such that  and  .             SOLUTION: The matrix is invertible provided the columns of are linearly independent, which will be the case if . Thus, we require that and .       "
 },
@@ -2498,7 +2498,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_invertible_matrices.html#s_invertible_matrices_ex-1-6",
   "type": "Exercise",
-  "number": "2.3.3.5",
+  "number": "5",
   "title": "",
   "body": "    Let   Then   where  ,  ,  ,  ,   where  ,  ,  ,  ,  and   where  ,  ,  ,  .                                                                   "
 },
@@ -2507,7 +2507,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_invertible_matrices.html#s_invertible_matrices_ex-2-2",
   "type": "Exercise",
-  "number": "2.3.3.6",
+  "number": "6",
   "title": "",
   "body": "  For each matrix either provide an inverse or show the matrix is not invertible. Justify your answer.               , where .     "
 },
@@ -2516,7 +2516,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_invertible_matrices.html#s_invertible_matrices_ex-2-3",
   "type": "Exercise",
-  "number": "2.3.3.7",
+  "number": "7",
   "title": "",
   "body": "  Each below is invertible. Find by guess and check. You may want to use the row or column method of matrix multiplication to justify your answer.                    "
 },
@@ -2525,7 +2525,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_invertible_matrices.html#s_invertible_matrices_ex-2-4",
   "type": "Exercise",
-  "number": "2.3.3.8",
+  "number": "8",
   "title": "",
   "body": "  Suppose is an invertible matrix. Prove: for any nonzero  the matrix is invertible.   "
 },
@@ -2534,7 +2534,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_invertible_matrices.html#s_invertible_matrices_ex-2-5",
   "type": "Exercise",
-  "number": "2.3.3.9",
+  "number": "9",
   "title": "",
   "body": "  Assume is a square matrix with .    Prove: if has two identical columns, then is not invertible.    Prove: if has a row that is a scalar multiple of another row, then is not invertible.      Use the column and\/or row method of matrix multiplication to show directly that cannot have an inverse matrix.   "
 },
@@ -2543,7 +2543,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_invertible_matrices.html#s_invertible_matrices_ex-2-6",
   "type": "Exercise",
-  "number": "2.3.3.10",
+  "number": "10",
   "title": "",
   "body": "  Find all invertible matrices satisfying the given equation, or show there is no such . Justify your answer.     .     .               "
 },
@@ -2552,7 +2552,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_invertible_matrices.html#s_invertible_matrices_ex-2-7",
   "type": "Exercise",
-  "number": "2.3.3.11",
+  "number": "11",
   "title": "",
   "body": "  Let . Find a formula for , where is an integer. Justify your answer using a proof by induction.   "
 },
@@ -2561,7 +2561,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_invertible_matrices.html#s_invertible_matrices_ex-2-8",
   "type": "Exercise",
-  "number": "2.3.3.12",
+  "number": "12",
   "title": "",
   "body": "  Let , the matrix consisting of all ones. Find a formula for , where is an integer. Justify your answer using a proof by induction.   "
 },
@@ -2570,7 +2570,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_invertible_matrices.html#s_invertible_matrices_ex-2-9",
   "type": "Exercise",
-  "number": "2.3.3.13",
+  "number": "13",
   "title": "",
   "body": "  Let , where is some fixed scalar. Suppose is an matrix satisfying .    Prove: if , then is invertible.    Suppose further that is not a scalar multiple of .  Prove: if , then is singular.     "
 },
@@ -2579,7 +2579,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_invertible_matrices.html#ex_expand_matrix_prod",
   "type": "Exercise",
-  "number": "2.3.3.14",
+  "number": "14",
   "title": "Expanding matrix products.",
   "body": " Expanding matrix products  Fix a positive integer . Given linear combinations of matrices , prove by induction on that . Note that each step (base and induction) of your induction on will require an argument that uses induction on ! This is sometimes called double induction . For example, in the base step you must show that for any ; this should be proved by induction on .  "
 },
@@ -2588,7 +2588,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_invertible_matrices.html#ex_poly_inA_commute",
   "type": "Exercise",
-  "number": "2.3.3.15",
+  "number": "15",
   "title": "Polynomial expressions of <span class=\"process-math\">\\(A\\)<\/span> commute.",
   "body": " Polynomial expressions of commute   Let and be polynomials with real coefficients. For any square matrix , show that the matrices and commute: i.e., . You may use the result of .    "
 },
@@ -2597,7 +2597,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_invertible_matrices.html#s_invertible_matrices_ex-2-12",
   "type": "Exercise",
-  "number": "2.3.3.16",
+  "number": "16",
   "title": "",
   "body": "  Suppose is an matrix satisfying for some .  Show that is invertible, and that in fact . You may use the results of and\/or . .   "
 },
@@ -2786,7 +2786,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_invertibility_theorem.html#s_invertibility_theorem_ex-1-2",
   "type": "Exercise",
-  "number": "2.4.6.1",
+  "number": "1",
   "title": "",
   "body": "    True or false: Suppose that and are two elementary matrices. Then  .   True   False         SOLUTION: False. If then but       "
 },
@@ -2795,7 +2795,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_invertibility_theorem.html#s_invertibility_theorem_ex-1-3",
   "type": "Exercise",
-  "number": "2.4.6.2",
+  "number": "2",
   "title": "",
   "body": "    Let  Then   where  ,  ,  ,  ,  ,  ,  ,  ,  .                                                    "
 },
@@ -2804,7 +2804,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_invertibility_theorem.html#s_invertibility_theorem_ex-1-4",
   "type": "Exercise",
-  "number": "2.4.6.3",
+  "number": "3",
   "title": "",
   "body": "    Let   Find and use it to solve where    where  and  .                 "
 },
@@ -2813,7 +2813,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_invertibility_theorem.html#s_invertibility_theorem_ex-1-5",
   "type": "Exercise",
-  "number": "2.4.6.4",
+  "number": "4",
   "title": "",
   "body": "    Solve the system of equations by converting to a matrix equation and using the inverse of the coefficient matrix.                     "
 },
@@ -2822,7 +2822,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_invertibility_theorem.html#s_invertibility_theorem_ex-1-6",
   "type": "Exercise",
-  "number": "2.4.6.5",
+  "number": "5",
   "title": "",
   "body": "    Solve the system of equations by converting to a matrix equation and using the inverse of the coefficient matrix.                            "
 },
@@ -2831,7 +2831,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_invertibility_theorem.html#s_invertibility_theorem_ex-1-7",
   "type": "Exercise",
-  "number": "2.4.6.6",
+  "number": "6",
   "title": "",
   "body": "    a. The linear transformation is given by:  .  Find .  x + y, x + y  b. The linear transformation is given by:  .  Find .  x + y + z, x + y + z, x + y + z  c. Using from part a, it is given that:   Find x and y.      d. Using from part b, it is given that:   Find x, y, and z.                                                                                                       "
 },
@@ -2840,7 +2840,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_invertibility_theorem.html#s_invertibility_theorem_ex-2-2-3",
   "type": "Exercise",
-  "number": "2.4.6.7",
+  "number": "7",
   "title": "",
   "body": "      "
 },
@@ -2849,7 +2849,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_invertibility_theorem.html#s_invertibility_theorem_ex-2-2-4",
   "type": "Exercise",
-  "number": "2.4.6.8",
+  "number": "8",
   "title": "",
   "body": "      "
 },
@@ -2858,7 +2858,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_invertibility_theorem.html#s_invertibility_theorem_ex-2-3-3",
   "type": "Exercise",
-  "number": "2.4.6.9",
+  "number": "9",
   "title": "",
   "body": "      "
 },
@@ -2867,7 +2867,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_invertibility_theorem.html#s_invertibility_theorem_ex-2-3-4",
   "type": "Exercise",
-  "number": "2.4.6.10",
+  "number": "10",
   "title": "",
   "body": "      "
 },
@@ -2876,7 +2876,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_invertibility_theorem.html#s_invertibility_theorem_ex-2-4-3",
   "type": "Exercise",
-  "number": "2.4.6.11",
+  "number": "11",
   "title": "",
   "body": "       We use the inverse algorithm: . We conclude that .   "
 },
@@ -2885,7 +2885,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_invertibility_theorem.html#s_invertibility_theorem_ex-2-4-4",
   "type": "Exercise",
-  "number": "2.4.6.12",
+  "number": "12",
   "title": "",
   "body": "      "
 },
@@ -2894,7 +2894,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_invertibility_theorem.html#s_invertibility_theorem_ex-2-4-5",
   "type": "Exercise",
-  "number": "2.4.6.13",
+  "number": "13",
   "title": "",
   "body": "      "
 },
@@ -2903,7 +2903,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_invertibility_theorem.html#s_invertibility_theorem_ex-2-4-6",
   "type": "Exercise",
-  "number": "2.4.6.14",
+  "number": "14",
   "title": "",
   "body": "      "
 },
@@ -2912,7 +2912,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_invertibility_theorem.html#s_invertibility_theorem_ex-2-4-7",
   "type": "Exercise",
-  "number": "2.4.6.15",
+  "number": "15",
   "title": "",
   "body": "   ,    "
 },
@@ -2921,7 +2921,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_invertibility_theorem.html#s_invertibility_theorem_ex-2-4-8",
   "type": "Exercise",
-  "number": "2.4.6.16",
+  "number": "16",
   "title": "",
   "body": "   ,    "
 },
@@ -2930,7 +2930,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_invertibility_theorem.html#s_invertibility_theorem_ex-2-5-3",
   "type": "Exercise",
-  "number": "2.4.6.17",
+  "number": "17",
   "title": "",
   "body": "       Row reduce to the identity matrix:   The corresponding elementary matrices are . It follows that , and hence that .   "
 },
@@ -2939,7 +2939,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_invertibility_theorem.html#s_invertibility_theorem_ex-2-5-4",
   "type": "Exercise",
-  "number": "2.4.6.18",
+  "number": "18",
   "title": "",
   "body": "   .   "
 },
@@ -2948,7 +2948,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_invertibility_theorem.html#s_invertibility_theorem_ex-2-5-5",
   "type": "Exercise",
-  "number": "2.4.6.19",
+  "number": "19",
   "title": "",
   "body": "      "
 },
@@ -2957,7 +2957,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_invertibility_theorem.html#s_invertibility_theorem_ex-2-5-6",
   "type": "Exercise",
-  "number": "2.4.6.20",
+  "number": "20",
   "title": "",
   "body": "   .   "
 },
@@ -2966,7 +2966,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_invertibility_theorem.html#s_invertibility_theorem_ex-2-6",
   "type": "Exercise",
-  "number": "2.4.6.21",
+  "number": "21",
   "title": "",
   "body": "  According to Statement (2) of the invertibility theorem, a matrix is invertible if and only if for all column vectors the matrix equation has a unique solution. Show that we can add the following, weaker-looking version of (2) to our list of equivalent statements:   (2') The matrix equation has a solution for any column vector .     Try to logically weave Statement (2') into our original list of equivalent statements by (a) finding a statement from our original list that implies (2'), and (b) find a statement in our original list that is implied by (2').  You may make use of in your argument.   "
 },
@@ -2975,7 +2975,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_invertibility_theorem.html#ex_row_equiv_props",
   "type": "Exercise",
-  "number": "2.4.6.22",
+  "number": "22",
   "title": "Properties of row equivalence.",
   "body": " Properties of row equivalence   Let denote that matrix is row equivalent to . Use to show that the relation is reflexive, symmetric, and transitive, as described in .   "
 },
@@ -2984,7 +2984,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_invertibility_theorem.html#s_invertibility_theorem_ex-2-8",
   "type": "Exercise",
-  "number": "2.4.6.23",
+  "number": "23",
   "title": "",
   "body": "  Let be an matrix, and let be an invertible matrix.  Show that the two matrix equations have the same set of solutions. In other words show that .   "
 },
@@ -2993,7 +2993,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_invertibility_theorem.html#s_invertibility_theorem_ex-2-9",
   "type": "Exercise",
-  "number": "2.4.6.24",
+  "number": "24",
   "title": "",
   "body": "  Suppose and are row equivalent square matrices. Prove: is invertible if and only if is invertible.   "
 },
@@ -3002,7 +3002,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_invertibility_theorem.html#s_invertibility_theorem_ex-2-10",
   "type": "Exercise",
-  "number": "2.4.6.25",
+  "number": "25",
   "title": "",
   "body": "  Use the provided information to determine whether the given square matrix is invertible. Justify your answer using the inveribility theorem or one of its corollaries.    There are column vectors such that .     is invertible.     for some .    The sum of the columns of is equal to the zero column vector.   "
 },
@@ -3011,7 +3011,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_invertibility_theorem.html#s_invertibility_theorem_ex-2-11",
   "type": "Exercise",
-  "number": "2.4.6.26",
+  "number": "26",
   "title": "",
   "body": "  Answer true or false. If true, provide a proof; if false, exhibit an explicit counterexample.    The product of two elementary matrices is elementary.    The product of two elementary matrices is invertible.    The sum of two invertible matrices is invertible.    If is a singular matrix, then the linear system has infinitely many solutions.    If is obtained from the invertible matrix by replacing its second row with the sum of its first and second rows, then is invertible.    If is square matrix, and is a column vector such that the matrix equation has a unique solution, then is invertible.    If and are row equivalent, then the matrix equations and have the same solution set.    If or is singular, then is singular.   "
 },
@@ -3272,7 +3272,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_det.html#s_det_ex-1-2",
   "type": "Exercise",
-  "number": "2.5.4.1",
+  "number": "1",
   "title": "",
   "body": "    Use the appropriate property of determinants to find  Do not evaluate the determinants. Answer:             "
 },
@@ -3281,7 +3281,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_det.html#s_det_ex-1-3",
   "type": "Exercise",
-  "number": "2.5.4.2",
+  "number": "2",
   "title": "",
   "body": "    Consider the following Gauss elimination:   What is the determinant of ?              "
 },
@@ -3290,7 +3290,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_det.html#s_det_ex-1-4",
   "type": "Exercise",
-  "number": "2.5.4.3",
+  "number": "3",
   "title": "",
   "body": "    Find such that the following matrix is singular.              "
 },
@@ -3299,7 +3299,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_det.html#s_det_ex-1-5",
   "type": "Exercise",
-  "number": "2.5.4.4",
+  "number": "4",
   "title": "",
   "body": "    If and are matrices, , , then   ,   ,   ,   ,   .                                "
 },
@@ -3308,7 +3308,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_det.html#s_det_ex-2-2",
   "type": "Exercise",
-  "number": "2.5.4.5",
+  "number": "5",
   "title": "",
   "body": "  Let    Compute by expanding along the second row.    Compute by expanding along the third column.      "
 },
@@ -3317,7 +3317,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_det.html#s_det_ex-2-3-3",
   "type": "Exercise",
-  "number": "2.5.4.6",
+  "number": "6",
   "title": "",
   "body": "      "
 },
@@ -3326,7 +3326,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_det.html#s_det_ex-2-3-4",
   "type": "Exercise",
-  "number": "2.5.4.7",
+  "number": "7",
   "title": "",
   "body": "      "
 },
@@ -3335,7 +3335,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_det.html#s_det_ex-2-3-5",
   "type": "Exercise",
-  "number": "2.5.4.8",
+  "number": "8",
   "title": "",
   "body": "      "
 },
@@ -3344,7 +3344,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_det.html#s_det_ex-2-4-3",
   "type": "Exercise",
-  "number": "2.5.4.9",
+  "number": "9",
   "title": "",
   "body": "      "
 },
@@ -3353,7 +3353,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_det.html#s_det_ex-2-4-4",
   "type": "Exercise",
-  "number": "2.5.4.10",
+  "number": "10",
   "title": "",
   "body": "      "
 },
@@ -3362,7 +3362,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_det.html#s_det_ex-2-4-5",
   "type": "Exercise",
-  "number": "2.5.4.11",
+  "number": "11",
   "title": "",
   "body": "      "
 },
@@ -3371,7 +3371,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_det.html#s_det_ex-2-4-6",
   "type": "Exercise",
-  "number": "2.5.4.12",
+  "number": "12",
   "title": "",
   "body": "      "
 },
@@ -3380,7 +3380,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_det.html#s_det_ex-2-5-3",
   "type": "Exercise",
-  "number": "2.5.4.13",
+  "number": "13",
   "title": "",
   "body": "      "
 },
@@ -3389,7 +3389,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_det.html#s_det_ex-2-5-4",
   "type": "Exercise",
-  "number": "2.5.4.14",
+  "number": "14",
   "title": "",
   "body": "      "
 },
@@ -3398,7 +3398,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_det.html#s_det_ex-2-6",
   "type": "Exercise",
-  "number": "2.5.4.15",
+  "number": "15",
   "title": "",
   "body": "  Let . Show without computing the determinant directly. In other words, use a row reduction technique or .   "
 },
@@ -3407,7 +3407,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_det.html#s_det_ex-2-7",
   "type": "Exercise",
-  "number": "2.5.4.16",
+  "number": "16",
   "title": "",
   "body": "  Let be an matrix, and let be a scalar. State and prove a formula relating with .     "
 },
@@ -3416,7 +3416,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_det.html#s_det_ex-2-8",
   "type": "Exercise",
-  "number": "2.5.4.17",
+  "number": "17",
   "title": "",
   "body": "  Assume is a matrix satisfying . Compute the determinant of the given matrix.                         "
 },
@@ -3425,7 +3425,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_det.html#s_det_ex-2-9",
   "type": "Exercise",
-  "number": "2.5.4.18",
+  "number": "18",
   "title": "",
   "body": "  Let and be matrices, and suppose is invertible. Prove the following:     .     .      "
 },
@@ -3434,7 +3434,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_det.html#s_det_ex-2-10",
   "type": "Exercise",
-  "number": "2.5.4.19",
+  "number": "19",
   "title": "",
   "body": "  Assume the square matrix satisfies . Show that .   "
 },
@@ -3443,7 +3443,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_det.html#s_det_ex-2-11",
   "type": "Exercise",
-  "number": "2.5.4.20",
+  "number": "20",
   "title": "",
   "body": "  Prove that a square matrix is invertible if and only if is invertible.   "
 },
@@ -3452,7 +3452,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_det.html#s_det_ex-2-12-3",
   "type": "Exercise",
-  "number": "2.5.4.21",
+  "number": "21",
   "title": "",
   "body": "  Give an explicit example of a square matrix satisfying and .  In other words, show that it is possible for a nonzero matrix to have a zero adjoint matrix.   "
 },
@@ -3461,7 +3461,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_det.html#s_det_ex-2-12-4",
   "type": "Exercise",
-  "number": "2.5.4.22",
+  "number": "22",
   "title": "",
   "body": "  Let be an matrix. Prove: .   "
 },
@@ -3470,7 +3470,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_det.html#s_det_ex-2-12-5",
   "type": "Exercise",
-  "number": "2.5.4.23",
+  "number": "23",
   "title": "",
   "body": "  Prove: is invertible if and only if is invertible.   "
 },
@@ -3479,7 +3479,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_det.html#s_det_ex-2-12-6",
   "type": "Exercise",
-  "number": "2.5.4.24",
+  "number": "24",
   "title": "",
   "body": "  Assume is invertible. Prove: .   "
 },
@@ -3488,7 +3488,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_det.html#s_det_ex-2-13",
   "type": "Exercise",
-  "number": "2.5.4.25",
+  "number": "25",
   "title": "",
   "body": "  In our proof of statement (2) of we only showed that if is a square matrix with two identical rows, then . Assuming this, show that the same is true if has two identical columns.   "
 },
@@ -3497,7 +3497,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_det.html#ex_det_col_ops",
   "type": "Exercise",
-  "number": "2.5.4.26",
+  "number": "26",
   "title": "",
   "body": "  State and prove an analogue to that describes how the corresponding column operations (i.e., scale a column by , swap two columns, column addition) affect the determinant of a matrix. (See ).    Express each of these types of column operations as multiplication on the right by an elementary matrix.   "
 },
@@ -3506,7 +3506,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_det.html#s_det_ex-2-15",
   "type": "Exercise",
-  "number": "2.5.4.27",
+  "number": "27",
   "title": "",
   "body": "  Let be the matrix with along the diagonal and 's elsewhere: i.e., . State and prove a formula for . (Your formula will involve , , and .)  Look at the and cases first. To prove the formula in the general case you may want to make use of row reduction and .   "
 },
@@ -3515,7 +3515,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_det.html#s_det_ex-2-16",
   "type": "Exercise",
-  "number": "2.5.4.28",
+  "number": "28",
   "title": "",
   "body": "  Given scalars the Vandermonde matrix is defined as . In other words, we have Prove: .   "
 },
@@ -3659,7 +3659,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_vectorspace.html#ss_vectorspace_properties-4",
   "type": "Proof",
-  "number": "3.1.3.1",
+  "number": "1",
   "title": "",
   "body": " We prove (1), leaving (2)-(4) as an exercise.  First observe that , since .  By Axiom (vi) we have . Thus .  Now add , the vector inverse of , to both sides of the last equation: .  Now simplify this equation step by step using the axioms: .  "
 },
@@ -3668,7 +3668,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_vectorspace.html#s_vectorspace_ex-1-2",
   "type": "Exercise",
-  "number": "3.1.4.1",
+  "number": "1",
   "title": "",
   "body": "   Let . For and define vector addition by and scalar multiplication by . It can be shown that is a vector space over the scalar field . Find the following:  the sum:   the scalar multiple:   the zero vector:   the additive inverse of :                            "
 },
@@ -3677,7 +3677,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_vectorspace.html#s_vectorspace_ex-1-3",
   "type": "Exercise",
-  "number": "3.1.4.2",
+  "number": "2",
   "title": "",
   "body": "   Let . For and define vector addition by and scalar multiplication by . It can be shown that is a vector space over the scalar field . Find the following:  the sum:  ( , )  the scalar multiple:  ( , )  the zero vector:  ( , )  the additive inverse of :  ( , )                                               "
 },
@@ -3686,7 +3686,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_vectorspace.html#s_vectorspace_ex-1-4",
   "type": "Exercise",
-  "number": "3.1.4.3",
+  "number": "3",
   "title": "",
   "body": "   Let . For and define vector addition by and scalar multiplication by . It can be shown that is a vector space over the scalar field . Find the following:  the sum:   the scalar multiple:   the additive inverse of :   the zero vector:   the additive inverse of :                                 "
 },
@@ -3695,7 +3695,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_vectorspace.html#ex_verify_Rinfty",
   "type": "Exercise",
-  "number": "3.1.4.4",
+  "number": "4",
   "title": "",
   "body": "  Verify that along with the vector operations defined as in satisfies the axioms of a vector space.   "
 },
@@ -3704,7 +3704,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_vectorspace.html#ex_verify_functions",
   "type": "Exercise",
-  "number": "3.1.4.5",
+  "number": "5",
   "title": "",
   "body": "  Let be an interval in the real line. Verify that along with the vector operations defined as in satisfies the axioms of a vector space.   "
 },
@@ -3713,7 +3713,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_vectorspace.html#s_vectorspace_ex-4",
   "type": "Exercise",
-  "number": "3.1.4.6",
+  "number": "6",
   "title": "",
   "body": "  Verify that , along with the proposed vector operations , satisfies the defining axioms of a vector space.  Note: we use the funny symbols and for scalar multiplication and vector addition to prevent confusion between the vector operations of and real number arithmetic operations.   "
 },
@@ -3722,7 +3722,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_vectorspace.html#s_vectorspace_ex-5-3",
   "type": "Exercise",
-  "number": "3.1.4.7",
+  "number": "7",
   "title": "",
   "body": "  Let . Define vector addition on to be the usual -tuple vector addition, but define scalar multiplication as .   "
 },
@@ -3731,7 +3731,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_vectorspace.html#s_vectorspace_ex-5-4",
   "type": "Exercise",
-  "number": "3.1.4.8",
+  "number": "8",
   "title": "",
   "body": "  Let . Define vector addition on to be the usual -tuple vector addition, but define scalar multiplication as .   "
 },
@@ -3740,7 +3740,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_vectorspace.html#s_vectorspace_ex-5-5",
   "type": "Exercise",
-  "number": "3.1.4.9",
+  "number": "9",
   "title": "",
   "body": "  Let . Define scalar multiplication and vector addition to be the usual matrix scalar multiplication and matrix addition.   "
 },
@@ -3749,7 +3749,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_vectorspace.html#s_vectorspace_ex-6-3",
   "type": "Exercise",
-  "number": "3.1.4.10",
+  "number": "10",
   "title": "",
   "body": "  Let be a variable. Define , the set of all linear polynomials with constant coefficient equal to one. Define the vector operations as follows: . Verify axioms (iii)-(vi).   "
 },
@@ -3758,7 +3758,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_vectorspace.html#s_vectorspace_ex-6-4",
   "type": "Exercise",
-  "number": "3.1.4.11",
+  "number": "11",
   "title": "",
   "body": "  Let : i.e., is the set of pairs whose first entry is positive and whose second entry is negative. . Verify axioms (iii)-(v), and axiom (viii).   "
 },
@@ -3767,7 +3767,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_vectorspace.html#s_vectorspace_ex-7",
   "type": "Exercise",
-  "number": "3.1.4.12",
+  "number": "12",
   "title": "",
   "body": "  Prove statements (2)-(4) of . When treating a specific part you may assume the results of any part that has already been proven, including statement (1).   "
 },
@@ -3776,7 +3776,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_vectorspace.html#s_vectorspace_ex-8",
   "type": "Exercise",
-  "number": "3.1.4.13",
+  "number": "13",
   "title": "",
   "body": "  Let be a vector space.   Show that the zero vector of is unique: , show that if satisfies for all , then .    Fix . Show that the vector inverse of is unique: , show that if , then .   Thus we may speak of the zero vector of a vector space, and the vector inverse of a vector .   "
 },
@@ -3785,7 +3785,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_vectorspace.html#s_vectorspace_ex-9",
   "type": "Exercise",
-  "number": "3.1.4.14",
+  "number": "14",
   "title": "",
   "body": "  Let be a vector space. Prove: .   "
 },
@@ -3794,7 +3794,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_vectorspace.html#ex_vs_zero_or_infinite",
   "type": "Exercise",
-  "number": "3.1.4.15",
+  "number": "15",
   "title": "",
   "body": "  Let be a vector space. Prove that either ( , is the zero space) or is infinite. In other words, a vector space contains either exactly one element or infinitely many elements.    Assume contains a nonzero vector . Show that if , then . You assume the results of .   "
 },
@@ -4073,7 +4073,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_transformation.html#s_transformation_ex-1-2",
   "type": "Exercise",
-  "number": "3.2.6.1",
+  "number": "1",
   "title": "",
   "body": "   Let be a linear transformation that sends the vector into and maps into . Use properties of a linear transformation to calculate the following. (Enter your answers as ordered pairs, such as (1,2), including the parentheses.)   ,   ,   .                      "
 },
@@ -4082,7 +4082,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_transformation.html#s_transformation_ex-1-3",
   "type": "Exercise",
-  "number": "3.2.6.2",
+  "number": "2",
   "title": "",
   "body": "   Let be a vector space, and a linear transformation such that and . Then      ,      ,      .                                     "
 },
@@ -4091,7 +4091,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_transformation.html#s_transformation_ex-1-4",
   "type": "Exercise",
-  "number": "3.2.6.3",
+  "number": "3",
   "title": "",
   "body": "   Let be the linear transformation such that Find , , , and , where , , and are arbitrary real numbers.   ,   ,   ,   .                           "
 },
@@ -4100,7 +4100,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_transformation.html#s_transformation_ex-1-5",
   "type": "Exercise",
-  "number": "3.2.6.4",
+  "number": "4",
   "title": "",
   "body": "    If is a linear transformation such that and then  .            "
 },
@@ -4109,7 +4109,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_transformation.html#s_transformation_ex-1-6",
   "type": "Exercise",
-  "number": "3.2.6.5",
+  "number": "5",
   "title": "",
   "body": "    Let Let be the linear transformation satisfying Find the image of an arbitrary vector         "
 },
@@ -4118,7 +4118,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_transformation.html#s_transformation_ex-1-7",
   "type": "Exercise",
-  "number": "3.2.6.6",
+  "number": "6",
   "title": "",
   "body": "          Let Define the linear transformation by . Find the images of and under .           "
 },
@@ -4127,7 +4127,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_transformation.html#s_transformation_ex-1-8",
   "type": "Exercise",
-  "number": "3.2.6.7",
+  "number": "7",
   "title": "",
   "body": "   Let be a vector space, , and let and be linear transformations such that  Find the images of and under the composite of and .   ,   .                 "
 },
@@ -4136,7 +4136,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_transformation.html#s_transformation_ex-2",
   "type": "Exercise",
-  "number": "3.2.6.8",
+  "number": "8",
   "title": "",
   "body": "  For each of the following functions , show that is nonlinear by providing an explicit counterexample to one of the defining axioms or a consequence thereof.     ,      ,      ,      ,      ,      "
 },
@@ -4145,7 +4145,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_transformation.html#ex_transformation_transposition",
   "type": "Exercise",
-  "number": "3.2.6.9",
+  "number": "9",
   "title": "Transposition.",
   "body": " Transposition   Define as : , the function takes as input an matrix and returns as output an matrix. Show that is a linear transformation.   "
 },
@@ -4154,7 +4154,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_transformation.html#ex_transformation_vector_scale",
   "type": "Exercise",
-  "number": "3.2.6.10",
+  "number": "10",
   "title": "Scalar multiplication.",
   "body": " Scalar multiplication   Let be a vector space. Fix and define as : , is scalar multiplication by . Show that is a linear transformation.   "
 },
@@ -4163,7 +4163,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_transformation.html#ex_transformation_trace",
   "type": "Exercise",
-  "number": "3.2.6.11",
+  "number": "11",
   "title": "Trace.",
   "body": " Trace   Fix an integer . The trace function is the function defined as . Show that the trace function is a linear transformation.   "
 },
@@ -4172,7 +4172,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_transformation.html#ex_transformation_matrix_mult",
   "type": "Exercise",
-  "number": "3.2.6.12",
+  "number": "12",
   "title": "Left\/right matrix multiplication.",
   "body": " Left\/right matrix multiplication   Let be an matrix, and let be an matrix. Define the functions and as follows: . In other words, is the multiply on the left by operation, and is the multiply on the right by C operation Show that and are linear transformations.   "
 },
@@ -4181,7 +4181,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_transformation.html#ex_transformation_conjugation",
   "type": "Exercise",
-  "number": "3.2.6.13",
+  "number": "13",
   "title": "Conjugation.",
   "body": " Conjugation   Fix an invertible matrix . Define as . Show that is a linear transformation. This operation is called conjugation by .   "
 },
@@ -4190,7 +4190,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_transformation.html#ex_transformation_sequence_shift",
   "type": "Exercise",
-  "number": "3.2.6.14",
+  "number": "14",
   "title": "Sequence shift operators.",
   "body": " Sequence shift operators   Let , the space of all infinite sequences. Define the shift left function , , and shift right function , , as follows: Prove that and are linear transformations.   "
 },
@@ -4199,7 +4199,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_transformation.html#ex_transformation_function_shift",
   "type": "Exercise",
-  "number": "3.2.6.15",
+  "number": "15",
   "title": "Function shift operators.",
   "body": " Function shift operators   Fix . Define as , where . Show that is a linear transformation.   "
 },
@@ -4208,7 +4208,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_transformation.html#ex_transformation_function_scale",
   "type": "Exercise",
-  "number": "3.2.6.16",
+  "number": "16",
   "title": "Function scaling operators.",
   "body": " Function scaling operators   Fix and define the functions as follows: . Show that and are linear transformations.   "
 },
@@ -4217,7 +4217,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_transformation.html#ex_transformation_add_scale",
   "type": "Exercise",
-  "number": "3.2.6.17",
+  "number": "17",
   "title": "Adding and scaling linear transformations.",
   "body": " Adding and scaling linear transformations   Suppose that and are linear transformations.    Define the function as . Show that is a linear transformation.    Define the function as . Show that is a linear transformation.     "
 },
@@ -4226,7 +4226,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_transformation.html#s_transformation_ex-12",
   "type": "Exercise",
-  "number": "3.2.6.18",
+  "number": "18",
   "title": "",
   "body": "  Let be defined as , where . Show that is linear. You may use the results of and .   "
 },
@@ -4235,7 +4235,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_transformation.html#s_transformation_ex-13",
   "type": "Exercise",
-  "number": "3.2.6.19",
+  "number": "19",
   "title": "",
   "body": "  Prove .   "
 },
@@ -4244,7 +4244,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_transformation.html#ex_transformation_reflection",
   "type": "Exercise",
-  "number": "3.2.6.20",
+  "number": "20",
   "title": "Reflection through a line.",
   "body": " Reflection through a line   Fix an angle with , let be the line through the origin that makes an angle of with the positive -axis, and let be the reflection operation as described in . Prove that is a linear transformation following the steps below.   In a manner similar to , describe in terms of the polar coordinates of . Additionally, it helps to write , where is the angle the line segment from the origin to makes with the line . Include a drawing to support your explanation.    Use your description in (a), along with some trigonometric identities, to show where .      "
 },
@@ -4253,7 +4253,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_transformation.html#ex_transformation_composition_rotations_reflections",
   "type": "Exercise",
-  "number": "3.2.6.21",
+  "number": "21",
   "title": "Compositions of rotations and reflections.",
   "body": " Compositions of rotations and reflections   In this exercise we will show that if we compose a rotation or reflection with another rotation or reflection, as defined in and , the result is yet another rotation or reflection. For each part, express the given composition either as a rotation or reflection , where is expressed in terms of and .                          Use and , along with some trigonometric identities.   "
 },
@@ -4478,7 +4478,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_subspace.html#s_subspace_ex-1-2",
   "type": "Exercise",
-  "number": "3.3.5.1",
+  "number": "1",
   "title": "",
   "body": "    Determine if each of the following sets is a subspace of , for an appropriate value of . Type \"yes\" or \"no\" for each answer.  Let be the set of all polynomials of the form , where is in .  Let be the set of all polynomials of the form , where is in .  Let be the set of all polynomials of the form , where is in .    yes    no    yes       "
 },
@@ -4487,7 +4487,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_subspace.html#s_subspace_ex-2-2",
   "type": "Exercise",
-  "number": "3.3.5.2",
+  "number": "2",
   "title": "",
   "body": "      "
 },
@@ -4496,7 +4496,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_subspace.html#s_subspace_ex-2-3",
   "type": "Exercise",
-  "number": "3.3.5.3",
+  "number": "3",
   "title": "",
   "body": "      "
 },
@@ -4505,7 +4505,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_subspace.html#s_subspace_ex-2-4",
   "type": "Exercise",
-  "number": "3.3.5.4",
+  "number": "4",
   "title": "",
   "body": "      "
 },
@@ -4514,7 +4514,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_subspace.html#s_subspace_ex-3-2",
   "type": "Exercise",
-  "number": "3.3.5.5",
+  "number": "5",
   "title": "",
   "body": "      "
 },
@@ -4523,7 +4523,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_subspace.html#s_subspace_ex-3-3",
   "type": "Exercise",
-  "number": "3.3.5.6",
+  "number": "6",
   "title": "",
   "body": "      "
 },
@@ -4532,7 +4532,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_subspace.html#s_subspace_ex-3-4",
   "type": "Exercise",
-  "number": "3.3.5.7",
+  "number": "7",
   "title": "",
   "body": "  Fix a matrix and define , the set of matrices that commute with .   "
 },
@@ -4541,7 +4541,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_subspace.html#s_subspace_ex-4-2",
   "type": "Exercise",
-  "number": "3.3.5.8",
+  "number": "8",
   "title": "",
   "body": "      "
 },
@@ -4550,7 +4550,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_subspace.html#s_subspace_ex-4-3",
   "type": "Exercise",
-  "number": "3.3.5.9",
+  "number": "9",
   "title": "",
   "body": "      "
 },
@@ -4559,7 +4559,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_subspace.html#s_subspace_ex-4-4",
   "type": "Exercise",
-  "number": "3.3.5.10",
+  "number": "10",
   "title": "",
   "body": "      "
 },
@@ -4568,7 +4568,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_subspace.html#s_subspace_ex-5-2",
   "type": "Exercise",
-  "number": "3.3.5.11",
+  "number": "11",
   "title": "",
   "body": "      "
 },
@@ -4577,7 +4577,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_subspace.html#s_subspace_ex-5-3",
   "type": "Exercise",
-  "number": "3.3.5.12",
+  "number": "12",
   "title": "",
   "body": "      "
 },
@@ -4586,7 +4586,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_subspace.html#s_subspace_ex-5-4",
   "type": "Exercise",
-  "number": "3.3.5.13",
+  "number": "13",
   "title": "",
   "body": "      "
 },
@@ -4595,7 +4595,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_subspace.html#s_subspace_ex-5-5",
   "type": "Exercise",
-  "number": "3.3.5.14",
+  "number": "14",
   "title": "",
   "body": "      "
 },
@@ -4604,7 +4604,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_subspace.html#s_subspace_ex-5-6",
   "type": "Exercise",
-  "number": "3.3.5.15",
+  "number": "15",
   "title": "",
   "body": "      "
 },
@@ -4613,7 +4613,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_subspace.html#s_subspace_ex-6-2",
   "type": "Exercise",
-  "number": "3.3.5.16",
+  "number": "16",
   "title": "",
   "body": "      "
 },
@@ -4622,7 +4622,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_subspace.html#s_subspace_ex-6-3",
   "type": "Exercise",
-  "number": "3.3.5.17",
+  "number": "17",
   "title": "",
   "body": "      "
 },
@@ -4631,7 +4631,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_subspace.html#s_subspace_ex-6-4",
   "type": "Exercise",
-  "number": "3.3.5.18",
+  "number": "18",
   "title": "",
   "body": "      "
 },
@@ -4640,7 +4640,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_subspace.html#s_subspace_ex-7",
   "type": "Exercise",
-  "number": "3.3.5.19",
+  "number": "19",
   "title": "",
   "body": "  Prove .   "
 },
@@ -4649,7 +4649,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_subspace.html#ex_matrix_subspaces",
   "type": "Exercise",
-  "number": "3.3.5.20",
+  "number": "20",
   "title": "",
   "body": "  Prove (1)-(6) of .   "
 },
@@ -4829,7 +4829,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_nullspace_image.html#s_nullspace_image_ex-1-2",
   "type": "Exercise",
-  "number": "3.4.3.1",
+  "number": "1",
   "title": "",
   "body": "    Let , , and . Define .  Select true or false for each statement.    The vector is in the range of    The vector is in the kernel of     , so . We row-reduce to determine a solution of . Thus , so range .      "
 },
@@ -4838,7 +4838,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_nullspace_image.html#s_nullspace_image_ex-1-3",
   "type": "Exercise",
-  "number": "3.4.3.2",
+  "number": "2",
   "title": "",
   "body": "    Let for the matrix and  , , and .  Select true or false for each statement.  The vector is in the kernel of .  ???   True   False   The vector is in the range of .  ???   True   False              , so . Row-reduce to determine a solution of . . or simply notice that is the second column of . Row reduction shows that the equation has infinitely many solutions: for arbitrary , and both approaches lead to the conclusion that . Thus range .      "
 },
@@ -4847,7 +4847,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_nullspace_image.html#s_nullspace_image_ex-1-4",
   "type": "Exercise",
-  "number": "3.4.3.3",
+  "number": "3",
   "title": "",
   "body": "    If is a linear transformation, then consider whether the set ker ( ) is a subspace of .  Select true or false for each statement. first problem looking at subspaces   This set is a subspace of    This set contains the zero vector and is closed under vector addition and scalar multiplication.    This set is a subset of the domain.    This set is a subset of the codomain     , that contains the zero vector, and is closed under vector addition and scalar multiplication.      "
 },
@@ -4856,7 +4856,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_nullspace_image.html#s_nullspace_image_ex-1-5",
   "type": "Exercise",
-  "number": "3.4.3.4",
+  "number": "4",
   "title": "",
   "body": "    Let , , and . Define .  Select true or false for each statement.    The vector is in the kernel of    The vector is in the range of     , so . Since the range of is a subset of and , range .      "
 },
@@ -4865,7 +4865,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_nullspace_image.html#s_nullspace_image_ex-1-6",
   "type": "Exercise",
-  "number": "3.4.3.5",
+  "number": "5",
   "title": "",
   "body": "    If is a linear transformation, then select true or false for each statement about the set .    This set contains the zero vector and is closed under vector addition and scalar multiplication.    This set is a subset of the codomain.    This set is a subspace of .    This set is a subset of the domain.     , not the codomain .      "
 },
@@ -4874,7 +4874,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_nullspace_image.html#s_nullspace_image_ex-1-7",
   "type": "Exercise",
-  "number": "3.4.3.6",
+  "number": "6",
   "title": "",
   "body": "    Let be a one-to-one linear transformation from to .    What can one say about the relationship between and .                  There is not enough information to tell         "
 },
@@ -4883,7 +4883,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_nullspace_image.html#s_nullspace_image_ex-1-8",
   "type": "Exercise",
-  "number": "3.4.3.7",
+  "number": "7",
   "title": "",
   "body": "    Let be an onto linear transformation from to .    What can one say about the relationship between and .                  There is not enough information to tell         "
 },
@@ -4892,7 +4892,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_nullspace_image.html#s_nullspace_image_ex-1-9",
   "type": "Exercise",
-  "number": "3.4.3.8",
+  "number": "8",
   "title": "",
   "body": "    Let be an linear transformation from to . Let be the matrix associated to .  Fill in the correct answer for each of the following situations.    Every column in the row-echelon form of is a pivot column.    Two columns in the row-echelon form of are not pivot columns.    The row-echelon form of has a column corresponding to a free variable.    The row-echelon form of has no column corresponding to a free variable.      T is not one-to-one    T is one-to-one    There is not enough information to tell.         "
 },
@@ -4901,7 +4901,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_nullspace_image.html#s_nullspace_image_ex-1-10",
   "type": "Exercise",
-  "number": "3.4.3.9",
+  "number": "9",
   "title": "",
   "body": "    Let be a linear transformation from to .  Determine whether or not is onto in each of the following situations:    Suppose , , .    Suppose , , , where are vectors in .    Suppose is a one-to-one function      T is onto.    T is not onto.    There is not enough information to tell         "
 },
@@ -4910,7 +4910,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_nullspace_image.html#s_nullspace_image_ex-1-11",
   "type": "Exercise",
-  "number": "3.4.3.10",
+  "number": "10",
   "title": "",
   "body": "    Match the following concepts with the correct definitions:    is an onto function from to    is a one-to-one function from to    is a function from to      For every , there is a such that .    For every , there is a such that .    For every , there is a unique such that .    For every , there is at most one such that .         "
 },
@@ -4919,7 +4919,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_nullspace_image.html#s_nullspace_image_ex-1-12",
   "type": "Exercise",
-  "number": "3.4.3.11",
+  "number": "11",
   "title": "",
   "body": "    Let be an linear transformation from to . Let be the matrix associated to .  Fill in the correct answer for each of the following situations.    Two rows in the row-echelon form of do not have pivots.    The row-echelon form of has a row of zeros.    Every row in the row-echelon form of has a pivot.    The row-echelon form of has a pivot in every column.      T is onto    T is not onto    There is not enough information to tell.         "
 },
@@ -4928,7 +4928,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_nullspace_image.html#s_nullspace_image_ex-1-13",
   "type": "Exercise",
-  "number": "3.4.3.12",
+  "number": "12",
   "title": "",
   "body": "    Let be the linear transformation defined by Find a vector that is NOT in the image of .   and find a different, nonzero vector that IS in the image of .  .   is in the image of if and only if , that is, if and only if The matrix represents this system of equations. Row reducing, one obtains Thus the system has a solution if and only if , that is, is in the image of if and only if .       "
 },
@@ -4937,7 +4937,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_nullspace_image.html#s_nullspace_image_ex-1-14",
   "type": "Exercise",
-  "number": "3.4.3.13",
+  "number": "13",
   "title": "",
   "body": "    Let Define the linear transformation by . Find a vector whose image under is .   .  Is the vector unique?  choose   unique   not unique             "
 },
@@ -4946,7 +4946,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_nullspace_image.html#s_nullspace_image_ex-2-2-3",
   "type": "Exercise",
-  "number": "3.4.3.14",
+  "number": "14",
   "title": "",
   "body": "      "
 },
@@ -4955,7 +4955,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_nullspace_image.html#s_nullspace_image_ex-2-2-4",
   "type": "Exercise",
-  "number": "3.4.3.15",
+  "number": "15",
   "title": "",
   "body": "      "
 },
@@ -4964,7 +4964,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_nullspace_image.html#s_nullspace_image_ex-2-2-5",
   "type": "Exercise",
-  "number": "3.4.3.16",
+  "number": "16",
   "title": "",
   "body": "      "
 },
@@ -4973,7 +4973,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_nullspace_image.html#s_nullspace_image_ex-2-3-3",
   "type": "Exercise",
-  "number": "3.4.3.17",
+  "number": "17",
   "title": "",
   "body": "   . Claim:    "
 },
@@ -4982,7 +4982,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_nullspace_image.html#s_nullspace_image_ex-2-3-4",
   "type": "Exercise",
-  "number": "3.4.3.18",
+  "number": "18",
   "title": "",
   "body": "   . Claim: is the set of all continuous symmetric functions. In other words,    "
 },
@@ -4991,7 +4991,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_nullspace_image.html#s_nullspace_image_ex-2-4",
   "type": "Exercise",
-  "number": "3.4.3.19",
+  "number": "19",
   "title": "",
   "body": "  Define as : , the value of at the input polynomial is computed by evaluating at the inputs .    Prove: is a linear transformation.    Prove: the is a subspace of .      Use .   "
 },
@@ -5000,7 +5000,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_nullspace_image.html#s_nullspace_image_ex-2-5-3",
   "type": "Exercise",
-  "number": "3.4.3.20",
+  "number": "20",
   "title": "",
   "body": "      "
 },
@@ -5009,7 +5009,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_nullspace_image.html#s_nullspace_image_ex-2-5-4",
   "type": "Exercise",
-  "number": "3.4.3.21",
+  "number": "21",
   "title": "",
   "body": "      "
 },
@@ -5018,7 +5018,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_nullspace_image.html#s_nullspace_image_ex-2-5-5",
   "type": "Exercise",
-  "number": "3.4.3.22",
+  "number": "22",
   "title": "",
   "body": "      "
 },
@@ -5027,7 +5027,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_nullspace_image.html#s_nullspace_image_ex-2-6-3",
   "type": "Exercise",
-  "number": "3.4.3.23",
+  "number": "23",
   "title": "",
   "body": "      "
 },
@@ -5036,7 +5036,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_nullspace_image.html#s_nullspace_image_ex-2-6-4",
   "type": "Exercise",
-  "number": "3.4.3.24",
+  "number": "24",
   "title": "",
   "body": "      "
 },
@@ -5045,7 +5045,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_nullspace_image.html#s_nullspace_image_ex-2-6-5",
   "type": "Exercise",
-  "number": "3.4.3.25",
+  "number": "25",
   "title": "",
   "body": "      "
 },
@@ -5243,7 +5243,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_span_independence.html#s_span_independence_ex-1-2",
   "type": "Exercise",
-  "number": "3.5.4.1",
+  "number": "1",
   "title": "",
   "body": "    Let be a linear combination of .  Select the best statement.    .    We only know that .    when is a scalar multiple of one of .    There is no obvious relationship between and .    none of the above     span .      "
 },
@@ -5252,7 +5252,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_span_independence.html#s_span_independence_ex-1-3",
   "type": "Exercise",
-  "number": "3.5.4.2",
+  "number": "2",
   "title": "",
   "body": "    Let be a vector that is not a linear combination of .  Select the best statement.    We only know that span span .    There is no obvious relationship between span and span .    We only know that span span .    span is a proper subset of span .    span span .    span span when none of is a linear combination of the others.    none of the above     is a proper subset of span .      "
 },
@@ -5261,7 +5261,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_span_independence.html#s_span_independence_ex-1-4",
   "type": "Exercise",
-  "number": "3.5.4.3",
+  "number": "3",
   "title": "",
   "body": "    Let be a linearly independent set of vectors.  Select the best statement.    is also a linearly independent set of vectors unless .    is always a linearly dependent set of vectors.    could be a linearly independent or linearly dependent set of vectors depending on the vectors chosen.    is always a linearly independent set of vectors.    is also a linearly independent set of vectors unless is a scalar multiple another vector in the set.    none of the above     is a linear combination of then is linearly dependent. Otherwise the set in linearly independent. could be a linearly independent or linearly dependent set of vectors depending on the vectors chosen.      "
 },
@@ -5270,7 +5270,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_span_independence.html#s_span_independence_ex-1-5",
   "type": "Exercise",
-  "number": "3.5.4.4",
+  "number": "4",
   "title": "",
   "body": "    Let be a linearly dependent set of vectors.  Select the best statement.    is a linearly independent set of vectors unless is a linear combination of other vectors in the set.    is always a linearly dependent set of vectors.    could be a linearly independent or linearly dependent set of vectors depending on the vectors chosen.    is a linearly independent set of vectors unless .    is always a linearly independent set of vectors.    none of the above     is always a linearly dependent set of vectors.      "
 },
@@ -5279,7 +5279,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_span_independence.html#s_span_independence_ex-1-6",
   "type": "Exercise",
-  "number": "3.5.4.5",
+  "number": "5",
   "title": "",
   "body": "    Let be the vector space of polynomials in with degree less than 3 and be the subspace  a. Find a nonzero polynomial in .    b. Find a polynomial in .                   "
 },
@@ -5288,7 +5288,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_span_independence.html#s_span_independence_ex-1-7",
   "type": "Exercise",
-  "number": "3.5.4.6",
+  "number": "6",
   "title": "",
   "body": "    Determine whether each set is a linearly independent set in . Type \"yes\" or \"no\" for each answer.  The polynomials and .  The polynomials and .  The polynomials and .    yes    yes    no       "
 },
@@ -5297,7 +5297,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_span_independence.html#s_span_independence_ex-1-8",
   "type": "Exercise",
-  "number": "3.5.4.7",
+  "number": "7",
   "title": "",
   "body": "    Are the vectors , and linearly independent?   Choose   linearly dependent   linearly independent   If they are linearly dependent, find scalars that are not all zero such that the equation below is true. If they are linearly independent, find the only scalars that will make the equation below true.        .                 "
 },
@@ -5306,7 +5306,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_span_independence.html#s_span_independence_ex-1-9",
   "type": "Exercise",
-  "number": "3.5.4.8",
+  "number": "8",
   "title": "",
   "body": "    Let be the vector space of symmetric matrices and be the subspace  a. Find a nonzero element in .    b. Find an element in that is not in .         "
 },
@@ -5315,7 +5315,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_span_independence.html#s_span_independence_ex-2-2",
   "type": "Exercise",
-  "number": "3.5.4.9",
+  "number": "9",
   "title": "",
   "body": "   ,                     "
 },
@@ -5324,7 +5324,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_span_independence.html#s_span_independence_ex-2-3",
   "type": "Exercise",
-  "number": "3.5.4.10",
+  "number": "10",
   "title": "",
   "body": "   , , where .               "
 },
@@ -5333,7 +5333,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_span_independence.html#s_span_independence_ex-2-4",
   "type": "Exercise",
-  "number": "3.5.4.11",
+  "number": "11",
   "title": "",
   "body": "   ,                     "
 },
@@ -5342,7 +5342,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_span_independence.html#s_span_independence_ex-3",
   "type": "Exercise",
-  "number": "3.5.4.12",
+  "number": "12",
   "title": "",
   "body": "  Determine whether is a spanning set of .     ,      ,      ,      (see ),      "
 },
@@ -5351,7 +5351,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_span_independence.html#s_span_independence_ex-4-2",
   "type": "Exercise",
-  "number": "3.5.4.13",
+  "number": "13",
   "title": "",
   "body": "   ,    "
 },
@@ -5360,7 +5360,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_span_independence.html#s_span_independence_ex-4-3",
   "type": "Exercise",
-  "number": "3.5.4.14",
+  "number": "14",
   "title": "",
   "body": "   ,    "
 },
@@ -5369,7 +5369,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_span_independence.html#s_span_independence_ex-4-4",
   "type": "Exercise",
-  "number": "3.5.4.15",
+  "number": "15",
   "title": "",
   "body": "   ,    "
 },
@@ -5378,7 +5378,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_span_independence.html#s_span_independence_ex-4-5",
   "type": "Exercise",
-  "number": "3.5.4.16",
+  "number": "16",
   "title": "",
   "body": "   ,    "
 },
@@ -5387,7 +5387,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_span_independence.html#s_span_independence_ex-5",
   "type": "Exercise",
-  "number": "3.5.4.17",
+  "number": "17",
   "title": "",
   "body": "  Let and let , where . Determine all values for which is linearly independent.   "
 },
@@ -5396,7 +5396,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_span_independence.html#s_span_independence_ex-6",
   "type": "Exercise",
-  "number": "3.5.4.18",
+  "number": "18",
   "title": "",
   "body": "  Let , and define , , .    Compute , identifying it as a certain familiar set of matrices.    Decide whether is independent.     "
 },
@@ -5405,7 +5405,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_span_independence.html#ex_linear_independence_arbitrary",
   "type": "Exercise",
-  "number": "3.5.4.19",
+  "number": "19",
   "title": "",
   "body": "  Let be a vector space, and let be a subset of distinct vectors. Assume is linearly independent. Show that any subset is linearly independent.    The empty set is trivially linearly independent. Let represent an arbitrary nonempty set of distinct elements of . You can show is linearly independent by extending linear combinations of the elements of to a linear combination of the elements of in a certain way.   "
 },
@@ -5414,7 +5414,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_span_independence.html#ex_span_independence_inveribility",
   "type": "Exercise",
-  "number": "3.5.4.20",
+  "number": "20",
   "title": "Span, independence, and invertibility.",
   "body": " Span, independence, and invertibility   In this exercise we identify elements of with column vectors.  Let be a subset of , and let be the matrix whose -th column is : , .    Prove: if and only if is invertible.    Prove: is linearly independent if and only if is invertible.      Use the column method ( ) and the invertibility theorem ( )   "
 },
@@ -5423,7 +5423,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_span_independence.html#ex_span_independence_transform",
   "type": "Exercise",
-  "number": "3.5.4.21",
+  "number": "21",
   "title": "Linear transformations, span, and independence.",
   "body": " Linear transformations, span, and independence   Suppose is a linear transformation. Let be a subset of , and let be the image of under : , . Assume and for all .  Answer true or false: if true, provide a proof; if false, provide an explicit counterexample. Note: for a complete counterexample you need to specify , and .    If is linearly independent, then is linearly independent.    If is linearly independent, then is linearly independent.    If is a spanning set for , then is a spanning set for .     "
 },
@@ -5630,7 +5630,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_basis.html#s_basis_ex-1-2",
   "type": "Exercise",
-  "number": "3.6.3.1",
+  "number": "1",
   "title": "",
   "body": "    Find a basis for the vector space where is the vector space of polynomials in with degree less than 3.   ,             "
 },
@@ -5639,7 +5639,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_basis.html#s_basis_ex-1-3",
   "type": "Exercise",
-  "number": "3.6.3.2",
+  "number": "2",
   "title": "",
   "body": "    Find a basis for the kernel of the linear transformation defined by where is the vector space of polynomials in with degree less than 3.   ,             "
 },
@@ -5648,7 +5648,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_basis.html#s_basis_ex-1-4",
   "type": "Exercise",
-  "number": "3.6.3.3",
+  "number": "3",
   "title": "",
   "body": "    Find a basis for the vector space of matrices with trace 0.   , ,  .       "
 },
@@ -5657,7 +5657,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_basis.html#s_basis_ex-1-5",
   "type": "Exercise",
-  "number": "3.6.3.4",
+  "number": "4",
   "title": "",
   "body": "    A square matrix is half-magic if the sum of the numbers in each row and column is the same. Find a basis for the vector space of half-magic squares.   ,  .       "
 },
@@ -5666,7 +5666,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_basis.html#s_basis_ex-2-3",
   "type": "Exercise",
-  "number": "3.6.3.5",
+  "number": "5",
   "title": "",
   "body": "                  "
 },
@@ -5675,7 +5675,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_basis.html#s_basis_ex-2-4",
   "type": "Exercise",
-  "number": "3.6.3.6",
+  "number": "6",
   "title": "",
   "body": "                  "
 },
@@ -5684,7 +5684,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_basis.html#s_basis_ex-2-5",
   "type": "Exercise",
-  "number": "3.6.3.7",
+  "number": "7",
   "title": "",
   "body": "        , where      , where      "
 },
@@ -5693,7 +5693,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_basis.html#s_basis_ex-3-3",
   "type": "Exercise",
-  "number": "3.6.3.8",
+  "number": "8",
   "title": "",
   "body": "   ,    "
 },
@@ -5702,7 +5702,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_basis.html#s_basis_ex-3-4",
   "type": "Exercise",
-  "number": "3.6.3.9",
+  "number": "9",
   "title": "",
   "body": "   ,    "
 },
@@ -5711,7 +5711,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_basis.html#s_basis_ex-3-5",
   "type": "Exercise",
-  "number": "3.6.3.10",
+  "number": "10",
   "title": "",
   "body": "   ,    "
 },
@@ -5720,7 +5720,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_basis.html#s_basis_ex-3-6",
   "type": "Exercise",
-  "number": "3.6.3.11",
+  "number": "11",
   "title": "",
   "body": "   , is set of all matrices whose rows and columns all sum to zero   "
 },
@@ -5729,7 +5729,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_basis.html#s_basis_ex-4",
   "type": "Exercise",
-  "number": "3.6.3.12",
+  "number": "12",
   "title": "",
   "body": "  Suppose be a basis for the vector space . Let , where . Prove that is a basis.   "
 },
@@ -5738,7 +5738,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_basis.html#s_basis_ex-5",
   "type": "Exercise",
-  "number": "3.6.3.13",
+  "number": "13",
   "title": "",
   "body": "  Let be a set of distinct elements of , let be an invertible matrix, and let . Prove that is a basis of if and only if is a basis of as follows.    Prove that for all : , contains distinct elements.    Prove that if is a basis of , then is also a basis for any invertible matrix .    Now prove that if is a basis of for the invertible matrix , then is a basis of .  Hint: in (b) you showed that if you start with any basis and apply any invertible matrix to the elements of this basis, then you end up with another basis; think of a useful choice of matrix for the present situation.     "
 },
@@ -5747,7 +5747,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_basis.html#ex_basis_matrix_families",
   "type": "Exercise",
-  "number": "3.6.3.14",
+  "number": "14",
   "title": "Bases for important matrix subspaces.",
   "body": " Bases for important matrix subspaces   Let . For each of the following subspaces , give a basis of . You must explicitly describe the elements of your basis as linear combinations of the elements of the standard basis for . No justification needed, as long as your proposed basis is simple enough.    Upper triangular matrices       Symmetric matrices       Skew-symmetric matrices         It might help to look at the and cases to get an idea of what these bases should be.   "
 },
@@ -5756,7 +5756,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_basis.html#s_basis_ex-7",
   "type": "Exercise",
-  "number": "3.6.3.15",
+  "number": "15",
   "title": "",
   "body": "  The set is a basis of . Suppose the linear transformation satisfies . Find a formula for , where is a general element of .   "
 },
@@ -5765,7 +5765,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_basis.html#s_basis_ex-8",
   "type": "Exercise",
-  "number": "3.6.3.16",
+  "number": "16",
   "title": "",
   "body": "  The set is a basis of . Suppose the linear transformation satisfies . Find a formula for , where is a general element of .   "
 },
@@ -5774,7 +5774,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_basis.html#s_basis_ex-9",
   "type": "Exercise",
-  "number": "3.6.3.17",
+  "number": "17",
   "title": "",
   "body": "  The set is a basis of . Suppose the linear transformation satisfies . Show that the general formula for is given by .    Use (1) of .   "
 },
@@ -5783,7 +5783,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_basis.html#s_basis_ex-10",
   "type": "Exercise",
-  "number": "3.6.3.18",
+  "number": "18",
   "title": "",
   "body": "  Suppose is a linear transformation, and is a basis of for which for all . Show that : , is the zero transformation from to .    Use (1) of .   "
 },
@@ -5792,7 +5792,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_basis.html#s_basis_ex-11",
   "type": "Exercise",
-  "number": "3.6.3.19",
+  "number": "19",
   "title": "",
   "body": "  Suppose is a linear transformation, and is a basis of for which for all . Show that : , is the identity transformation of .    Use (1) of .   "
 },
@@ -5801,7 +5801,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_basis.html#s_basis_ex-12",
   "type": "Exercise",
-  "number": "3.6.3.20",
+  "number": "20",
   "title": "",
   "body": "  Let be a linear transformation. Assume there is a basis of and a constant such that for all . Prove: , where .    Use (1) of .   "
 },
@@ -5810,7 +5810,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_basis.html#s_basis_ex-13-3",
   "type": "Exercise",
-  "number": "3.6.3.21",
+  "number": "21",
   "title": "",
   "body": "      "
 },
@@ -5819,7 +5819,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_basis.html#s_basis_ex-13-4",
   "type": "Exercise",
-  "number": "3.6.3.22",
+  "number": "22",
   "title": "",
   "body": "      "
 },
@@ -5981,7 +5981,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_dimension.html#s_dimension_ex-1-2",
   "type": "Exercise",
-  "number": "3.7.2.1",
+  "number": "1",
   "title": "",
   "body": "    Are the following statements true or false?    has exactly one subspace of dimension for each of .    The nullity of a matrix A is the same as the dimension of the subspace spanned be the columns of A.    If { } is a basis for , then span{ } is a plane.    The set {0} forms a basis for the zero subspace.    Let . Then { } in can form a basis for if the correct vectors are removed from .         "
 },
@@ -5990,7 +5990,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_dimension.html#s_dimension_ex-1-3",
   "type": "Exercise",
-  "number": "3.7.2.2",
+  "number": "2",
   "title": "",
   "body": "    Suppose that and are nonzero subspaces, with contained inside , and suppose that .  (a) What are the possible dimensions of ?  ?   1   2   3   1 or 2   1,2, or 3   (b) If then what are the possible dimensions of ?  ?   1   2   3   1 or 2   1,2, or 3              (a) The dimension of cannot exceed the dimension of since is contained in . is non-zero, and thus its dimension cannot be 0. Hence 1, 2, or 3 are the possible dimensions of . (b) If , then is properly contained in , and the dimension of is strictly less than the dimension of . Thus only 1 or 2 are possible dimensions of .      "
 },
@@ -5999,7 +5999,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_dimension.html#s_dimension_ex-1-4",
   "type": "Exercise",
-  "number": "3.7.2.3",
+  "number": "3",
   "title": "",
   "body": "    Suppose that and are nonzero subspaces, with contained inside , and suppose that    If , then what are the possible dimensions of ?    What are the possible dimensions of ?     cannot exceed the dimension of , since is contained in . us non-zero, and thus the its dimension cannot be zero. Hence the possible dimensions of are 1, 2, 3, and 4. b) If , then is properly contained in , and the dimension of is strictly less than the dimension of . So the possible dimensions of are 1, 2, and 3.      "
 },
@@ -6008,7 +6008,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_dimension.html#s_dimension_ex-1-5",
   "type": "Exercise",
-  "number": "3.7.2.4",
+  "number": "4",
   "title": "",
   "body": "    Find the dimensions of the following vector spaces.  (a) The vector space of matrices with trace 0  (b) The vector space   (c) The vector space of all upper triangular matrices  (d) The vector space of polynomials with degree less than   (e) The vector space   (f) The vector space of all diagonal matrices                                     "
 },
@@ -6017,7 +6017,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_dimension.html#s_dimension_ex-1-6",
   "type": "Exercise",
-  "number": "3.7.2.5",
+  "number": "5",
   "title": "",
   "body": "    By deleting linearly dependent vectors, find a basis of each subspace and give the dimension of the subspace.  A. The dimension of is .  B. The dimension of is .  C. The dimension of is .  D. The dimension of is .  E. The dimension of is .                                "
 },
@@ -6026,7 +6026,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_dimension.html#s_dimension_ex-3-2",
   "type": "Exercise",
-  "number": "3.7.2.6",
+  "number": "6",
   "title": "",
   "body": "   ,    "
 },
@@ -6035,7 +6035,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_dimension.html#s_dimension_ex-3-3",
   "type": "Exercise",
-  "number": "3.7.2.7",
+  "number": "7",
   "title": "",
   "body": "   ,    "
 },
@@ -6044,7 +6044,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_dimension.html#s_dimension_ex-3-4",
   "type": "Exercise",
-  "number": "3.7.2.8",
+  "number": "8",
   "title": "",
   "body": "   ,    "
 },
@@ -6053,7 +6053,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_dimension.html#s_dimension_ex-4",
   "type": "Exercise",
-  "number": "3.7.2.9",
+  "number": "9",
   "title": "",
   "body": "  Let be the set of solutions to the following homogeneous system: .    Compute a basis of . Justify your answer.    Compute .     "
 },
@@ -6062,7 +6062,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_dimension.html#s_dimension_ex-5",
   "type": "Exercise",
-  "number": "3.7.2.10",
+  "number": "10",
   "title": "",
   "body": "  Compute bases and dimensions for the following subspaces of .               "
 },
@@ -6071,7 +6071,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_dimension.html#s_dimension_ex-6",
   "type": "Exercise",
-  "number": "3.7.2.11",
+  "number": "11",
   "title": "",
   "body": "  Suppoe be a basis for the vector space . Let , where . Prove that is a basis.    First explain why it is enough to show that is linearly independent.   "
 },
@@ -6080,7 +6080,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_dimension.html#s_dimension_ex-7",
   "type": "Exercise",
-  "number": "3.7.2.12",
+  "number": "12",
   "title": "",
   "body": "  In multivariable calculus, a plane in is defined as the set of solutions to an equation of the form , where at least one of is nonzero. In particular, a plane passing through the origin is the set of solutions to an equation of the form , where at least one of is nonzero.  Prove that the 2-dimensional subspaces of are precisely the planes of that pass through the origin. In other words, show (a) that any plane passing through the origin is a 2-dimensional subspace, and conversely, (b) that any 2-dimensional subspace is a plane passing through the origin.    For (b), begin with a basis of of , and use the cross product to find a normal vector that defines as a plane.   "
 },
@@ -6089,7 +6089,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_dimension.html#s_dimension_ex-8",
   "type": "Exercise",
-  "number": "3.7.2.13",
+  "number": "13",
   "title": "",
   "body": "  Let , , and , where Show that as follows:  Show that .   Compute the dimensions of and and use .      "
 },
@@ -6098,7 +6098,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_dimension.html#s_dimension_ex-9",
   "type": "Exercise",
-  "number": "3.7.2.14",
+  "number": "14",
   "title": "",
   "body": "  Let and define . Find a basis for by inspection and compute its dimension.   "
 },
@@ -6107,7 +6107,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_dimension.html#s_dimension_ex-10",
   "type": "Exercise",
-  "number": "3.7.2.15",
+  "number": "15",
   "title": "",
   "body": "  Let and let , where . Provide a basis for and compute .    You can contract to a basis by throwing out some redundant elements.   "
 },
@@ -6116,7 +6116,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_dimension.html#ex_dimension_matrix_families",
   "type": "Exercise",
-  "number": "3.7.2.16",
+  "number": "16",
   "title": "Dimensions of important matrix subspaces.",
   "body": " Dimensions of important matrix subspaces   Let . Compute for each subspace .    Upper triangular matrices       Symmetric matrices       Skew-symmetric matrices         Use your results from . The identity will be helpful.   "
 },
@@ -6125,7 +6125,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_dimension.html#s_dimension_ex-12",
   "type": "Exercise",
-  "number": "3.7.2.17",
+  "number": "17",
   "title": "",
   "body": "  Let . Show that there is a nonzero polynomial such that .    Consider the set and use a relevant statement from . Treat two cases separately: (a) the powers of are all distinct; (b) for some .   "
 },
@@ -6269,7 +6269,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_rank_nullity.html#s_rank_nullity_ex-1-2",
   "type": "Exercise",
-  "number": "3.8.4.1",
+  "number": "1",
   "title": "",
   "body": "    Suppose that is a matrix that has an echelon form with two zero rows. Find the dimension of the row space of , the dimension of the column space of , and the dimension of the null space of .  The dimension of the row space of is .  The dimension of the column space of is .  The dimension of the null space of is .                  The dimension of the row space is the number of nonzero rows in the echelon form, or The dimension of the column space is the same as the dimension of the row space, and the dimension of the null space is       "
 },
@@ -6278,7 +6278,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_rank_nullity.html#s_rank_nullity_ex-1-3",
   "type": "Exercise",
-  "number": "3.8.4.2",
+  "number": "2",
   "title": "",
   "body": "    Are the following statements true or false?    has exactly one subspace of dimension for each of .    Let . Then { } in can form a basis for if the correct vectors are removed from .    Let . Then { } in can form a basis for if the correct vectors are added to .    The set {0} forms a basis for the zero subspace.    If { } is a basis for , then span{ } is a plane.         "
 },
@@ -6287,7 +6287,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_rank_nullity.html#s_rank_nullity_ex-1-4",
   "type": "Exercise",
-  "number": "3.8.4.3",
+  "number": "3",
   "title": "",
   "body": "    Let be a finite dimensional vector space ( , for example), let be subspaces of and let be subsets of  Which of the following statements are true for every  and every possible choice of subspaces and subsets? Which are false for some  and some choice of subsets and subspaces?  A. If a set of vectors \\(U\\) spans a subspace \\(S\\), then zero or more vectors can be removed from \\(U\\) to create a basis for \\(S\\) (i.e. there is a set of vectors \\(V\\) with \\(V\\subseteq U\\) which is a basis of \\(S\\)).  B. If a set of vectors \\(U\\) is linearly independent in a subspace \\( S\\) then zero or more vectors can be removed from \\(U\\) to create a basis for \\(S\\) (i.e. there is a set of vectors \\(V\\) with \\(V\\subseteq U\\) which is a basis of \\(S\\)).  C. If a set of vectors \\(U\\) is linearly independent in a subspace \\( S\\) then zero or more vectors can be added to \\(U\\) to create a basis for \\(S\\) (i.e. there is a set of vectors \\(V\\) with \\(U\\subseteq V\\) which is a basis of \\(S\\)).  D. If a set of vectors \\(U\\) spans a subspace \\(S\\), then zero or more vectors can be added to \\(U\\) to create a basis for \\(S\\) (i.e. there is a set of vectors \\(V\\) with \\(U\\subseteq V\\) which i-s a basis of \\(S\\)).  E. If \\( \\ S = \\text{span}\\{u_1, u_2, u_3 \\}\\) then \\(\\text{dim}(S) = 3\\) .                              True. If \\(U\\) is linearly independent then \\(U\\) is a basis. Otherwise one of the vectors in \\(U\\) is a linear combination of the others, so you can remove this vector from \\(U\\), and the remaining vectors will still span \\(S\\). Continuing in this fashion you can remove vectors one-by-one until you obtain a minimal linearly independent subset of \\(U\\). This subset is a basis for \\(S\\). (This argument depends on the fact that the dimension of \\(S\\) is finite. It is finite because \\(S\\subseteq X\\) and \\(X\\) is finite dimensonal. Infinite dimensional spaces are much trickier.)    False. If \\(U\\) does not span \\(S\\) then no subset of \\(U\\) can span \\(S\\) so no subset of \\(U\\) is a basis for \\(S\\).    True. If \\(U\\) spans \\(S\\) then \\(U\\) is a basis for \\(S\\). Otherwise \\(S\\) contains a vector that is not in the span of \\(U\\). If you include that vector in \\(U\\) you'll get a larger set that is still linearly independent. Repeating this process you'll get larger and larger sets of linearly independent vectors until the number of vectors in the set equals the dimension of \\(S\\). When that happens the set of vectors will be a basis for \\(S\\). (That it's a basis isn't obvious but it's proved in linear algebra texts. The fact that \\(S\\) is finite-dimensional is crucial. It is finite dimensonal because \\(S\\subseteq X\\) and \\(X\\) is finite dimensional. Infinite dimensonal spaces are much trickier).    False. If the vectors in \\(U\\) are not linearly independent then \\(U\\) cannot be a subset of a basis.    False. The vectors (1,0), (0,1), and (1,1) span the \\(x,y\\)-plane, but the \\(x,y\\)-plane is 2-dimensional. These vectors are not linearly independent.         "
 },
@@ -6296,7 +6296,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_rank_nullity.html#s_rank_nullity_ex-1-5",
   "type": "Exercise",
-  "number": "3.8.4.4",
+  "number": "4",
   "title": "",
   "body": "    Let Find dimensions of the kernel and image of .   ,   .                 "
 },
@@ -6305,7 +6305,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_rank_nullity.html#s_rank_nullity_ex-1-6",
   "type": "Exercise",
-  "number": "3.8.4.5",
+  "number": "5",
   "title": "",
   "body": "    Let be the linear transformation defined by Find bases for the kernel and image of .  A basis for the kernel of is    A basis for the image of is                   "
 },
@@ -6314,7 +6314,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_rank_nullity.html#s_rank_nullity_ex-1-7",
   "type": "Exercise",
-  "number": "3.8.4.6",
+  "number": "6",
   "title": "",
   "body": "    Let be the linear operator defined by   (a) Find the dimension of the range of :  (b) Find the dimension of the kernel of :  (c) Let be the subspace of spanned by and . Find the dimension of :                  Solution: (a) Since , , spans , we get that is spanned by , , . So    and hence the dimension of the range is 2.  (b) The rank-nullity theorem implies that the dimension of the kernel is .  (c) Notice that   and it is easy to check that these two vectors are linearly independent. Therefore, the dimension of is 2.       "
 },
@@ -6323,7 +6323,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_rank_nullity.html#s_rank_nullity_ex-2",
   "type": "Exercise",
-  "number": "3.8.4.7",
+  "number": "7",
   "title": "",
   "body": "  In this exercise we will show that for any , there is a polynomial satisfying . In other words given any list of values , we can find a polynomial that evaluates to these values at the inputs .    Define by . Show that is linear.    Compute . You may use the fact that a polynomial of degree has at most roots.    Use the rank-nullity theorem to compute . Explain why this implies     Explain why the equality is equivalent to the claim we wish to prove.     "
 },
@@ -6332,7 +6332,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_rank_nullity.html#s_rank_nullity_ex-3",
   "type": "Exercise",
-  "number": "3.8.4.8",
+  "number": "8",
   "title": "",
   "body": "   Use the rank-nullity theorem to compute the rank of the linear transformation described.     ,      ,      ,       "
 },
@@ -6341,7 +6341,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_rank_nullity.html#s_rank_nullity_ex-4",
   "type": "Exercise",
-  "number": "3.8.4.9",
+  "number": "9",
   "title": "",
   "body": "  For each linear transformation use the rank-nullity theorem to decide whether .          ,      ,      "
 },
@@ -6350,7 +6350,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_rank_nullity.html#s_rank_nullity_ex-5",
   "type": "Exercise",
-  "number": "3.8.4.10",
+  "number": "10",
   "title": "",
   "body": "  Let be with . Prove that there is a such that the system is inconsistent.    Use and .   "
 },
@@ -6359,7 +6359,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_rank_nullity.html#s_rank_nullity_ex-6",
   "type": "Exercise",
-  "number": "3.8.4.11",
+  "number": "11",
   "title": "",
   "body": "  For each matrix (i) row reduce to a matrix in row echelon form, (ii) compute bases for and , (iii) compute and ,and (iv) decide whether .                    "
 },
@@ -6368,7 +6368,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_rank_nullity.html#s_rank_nullity_ex-7",
   "type": "Exercise",
-  "number": "3.8.4.12",
+  "number": "12",
   "title": "",
   "body": "  Assume is invertible, and is row equivalent to the row echelon matrix . Prove: .   "
 },
@@ -6377,7 +6377,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_rank_nullity.html#s_rank_nullity_ex-8",
   "type": "Exercise",
-  "number": "3.8.4.13",
+  "number": "13",
   "title": "",
   "body": "  For each matrix below, (i) compute bases for each fundamental space, (ii) identify these spaces as familiar geometric objects in or , and (iii) provide sketches of each space. The sketches of and should be combined in the same coordinate system.                    "
 },
@@ -6386,7 +6386,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_rank_nullity.html#s_rank_nullity_ex-9",
   "type": "Exercise",
-  "number": "3.8.4.14",
+  "number": "14",
   "title": "",
   "body": "  For each compute bases for each fundamental space. In each case, you can find bases for one of the fundamental spaces by inspection, and then use the rank-nullity theorem to reduce your workload for the other spaces. See first solution for a model example.                  Clearly, is a basis for , and is a basis for . It follows that and hence . Thus we need to find three linearly independent elements of to find a basis. We can do so by inspection with the help of the column method. Namely, observe that are all in (column method). The location of zeros in these vectors make it clear that are linearly independent. Since , and , we conclude that is a basis of ( ).     "
 },
@@ -6395,7 +6395,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_rank_nullity.html#s_rank_nullity_ex-10",
   "type": "Exercise",
-  "number": "3.8.4.15",
+  "number": "15",
   "title": "",
   "body": "  For each use to compute bases for each fundamental space.                    "
 },
@@ -6404,7 +6404,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_rank_nullity.html#s_rank_nullity_ex-11",
   "type": "Exercise",
-  "number": "3.8.4.16",
+  "number": "16",
   "title": "",
   "body": "  Find the rank and nullity of each matrix by reducing it to row echelon form.               "
 },
@@ -6413,7 +6413,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_rank_nullity.html#s_rank_nullity_ex-12",
   "type": "Exercise",
-  "number": "3.8.4.17",
+  "number": "17",
   "title": "",
   "body": "  Let be an matrix.    Prove: if and only if .   Construct a matrix with . Verify that your satisfies .    "
 },
@@ -6422,7 +6422,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_rank_nullity.html#s_rank_nullity_ex-13",
   "type": "Exercise",
-  "number": "3.8.4.18",
+  "number": "18",
   "title": "",
   "body": "  Suppose is with .  Prove: either the rows of are linearly dependent or the columns of are linearly dependent.   "
 },
@@ -6431,7 +6431,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_rank_nullity.html#s_rank_nullity_ex-14",
   "type": "Exercise",
-  "number": "3.8.4.19",
+  "number": "19",
   "title": "",
   "body": "  Prove: if and only if is a square matrix.   "
 },
@@ -6440,7 +6440,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_rank_nullity.html#s_rank_nullity_ex-15",
   "type": "Exercise",
-  "number": "3.8.4.20",
+  "number": "20",
   "title": "",
   "body": "  Suppose and are row equivalent matrices. For each let and be the -th columns of and , respectively.  Prove: columns of are linearly independent if and only if the corresponding columns are linearly independent.    By there is an invertible such that . Let and be the submatrices of and obtained by taking columns . Show that we still have and relate linear independence of the columns to solutions of the matrix equations and .   "
 },
@@ -6449,7 +6449,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_rank_nullity.html#s_rank_nullity_ex-16",
   "type": "Exercise",
-  "number": "3.8.4.21",
+  "number": "21",
   "title": "",
   "body": "  Prove as follows.    First show that all three statements of (13) are equivalent, and that all three statements of (14) are equivalent. (Use .)    Show that statements (8)-(14) are equivalent with the help of .    Choose a statement from (1)-(7) that can be easily shown to be equivalent to one of the statements from (8)-(14).     "
 },
@@ -6620,7 +6620,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_coordinatevectors.html#ss_coordinate_transformation-5",
   "type": "Proof",
-  "number": "4.1.2.1",
+  "number": "1",
   "title": "",
   "body": "   Suppose . By definition this means . It follows that , and hence . This proves is linear.    Clearly, if , then . If , then by definition of we must have .    Given any , we have , where . This proves .    We have .  Similarly, we have . From this equivalence we see that there is a nontrivial linear combination of yielding if and only if there is a nontrivial linear combination of yielding . In other words, is linearly independent if and only if is linearly independent.    "
 },
@@ -6656,7 +6656,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_coordinatevectors.html#s_coordinatevectors_ex-1-2",
   "type": "Exercise",
-  "number": "4.1.3.1",
+  "number": "1",
   "title": "",
   "body": "    Consider the basis of consisting of vectors Find in whose coordinate vector relative to the basis is  .         "
 },
@@ -6665,7 +6665,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_coordinatevectors.html#s_coordinatevectors_ex-1-3",
   "type": "Exercise",
-  "number": "4.1.3.2",
+  "number": "2",
   "title": "",
   "body": "    The set is a basis of the space of upper-triangular matrices.  Find the coordinates of with respect to this basis.         "
 },
@@ -6674,7 +6674,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_coordinatevectors.html#s_coordinatevectors_ex-1-4",
   "type": "Exercise",
-  "number": "4.1.3.3",
+  "number": "3",
   "title": "",
   "body": "    A square matrix is called half-magic if the sum of the numbers in each row and column is the same. The common sum in each row and column is denoted by and is called the magic sum of the matrix . Let be the vector space of half-magic squares.  (a) Find an ordered basis for .   ,  .  (b) Find the coordinate vector of in your chosen ordered basis .   .       "
 },
@@ -6683,7 +6683,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_coordinatevectors.html#s_coordinatevectors_ex-1-5",
   "type": "Exercise",
-  "number": "4.1.3.4",
+  "number": "4",
   "title": "",
   "body": "    The set is a basis for . Find the coordinates of relative to this basis:         "
 },
@@ -6692,7 +6692,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_coordinatevectors.html#s_coordinatevectors_ex-2-3",
   "type": "Exercise",
-  "number": "4.1.3.5",
+  "number": "5",
   "title": "",
   "body": "   ,    "
 },
@@ -6701,7 +6701,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_coordinatevectors.html#s_coordinatevectors_ex-2-4",
   "type": "Exercise",
-  "number": "4.1.3.6",
+  "number": "6",
   "title": "",
   "body": "   ,    "
 },
@@ -6710,7 +6710,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_coordinatevectors.html#s_coordinatevectors_ex-3-3",
   "type": "Exercise",
-  "number": "4.1.3.7",
+  "number": "7",
   "title": "",
   "body": "   ,    "
 },
@@ -6719,7 +6719,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_coordinatevectors.html#s_coordinatevectors_ex-3-4",
   "type": "Exercise",
-  "number": "4.1.3.8",
+  "number": "8",
   "title": "",
   "body": "   ,    "
 },
@@ -6728,7 +6728,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_coordinatevectors.html#s_coordinatevectors_ex-4",
   "type": "Exercise",
-  "number": "4.1.3.9",
+  "number": "9",
   "title": "",
   "body": "  Let where . You may take for granted that is an ordered basis of .    Compute .    Compute for an arbitrary matrix .     "
 },
@@ -6737,7 +6737,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_coordinatevectors.html#s_coordinatevectors_ex-5",
   "type": "Exercise",
-  "number": "4.1.3.10",
+  "number": "10",
   "title": "",
   "body": "  Let .    Use one of the techniques described in to contract to a basis of . To begin, choose your favorite ordered basis of .    Use your result in (a) to describe is as simple a manner as possible.     "
 },
@@ -6746,7 +6746,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_coordinatevectors.html#s_coordinatevectors_ex-6",
   "type": "Exercise",
-  "number": "4.1.3.11",
+  "number": "11",
   "title": "",
   "body": "  Let .    Use one of the techniques described in to contract to a basis of . To begin, choose your favorite ordered basis of .    Using your result in (a) to decide whether .     "
 },
@@ -6755,7 +6755,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_coordinatevectors.html#s_coordinatevectors_ex-7",
   "type": "Exercise",
-  "number": "4.1.3.12",
+  "number": "12",
   "title": "",
   "body": "  Let . Use one of the techniques described in to extend to a basis of .   "
 },
@@ -6764,7 +6764,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_coordinatevectors.html#s_coordinatevectors_ex-8",
   "type": "Exercise",
-  "number": "4.1.3.13",
+  "number": "13",
   "title": "",
   "body": "  Let .   Use one of the techniques described in to contract to a basis of .    Show that Use a dimension argument to make your life easier.      "
 },
@@ -6890,7 +6890,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_matrixreps.html#s_matrixreps_ex-1-2",
   "type": "Exercise",
-  "number": "4.2.4.1",
+  "number": "1",
   "title": "",
   "body": "    To every linear transformation from to , there is an associated matrix. Match the following linear transformations with their associated matrix.    Reflection about the -axis    Clockwise rotation by radians    The projection onto the x-axis given by T(x,y)=(x,0)    Counter-clockwise rotation by radians    Reflection about the y-axis    Reflection about the line y=x                        None of the above         "
 },
@@ -6899,7 +6899,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_matrixreps.html#s_matrixreps_ex-1-3",
   "type": "Exercise",
-  "number": "4.2.4.2",
+  "number": "2",
   "title": "",
   "body": "    Find the matrix of the linear transformation from to with respect to the standard basis for , .         "
 },
@@ -6908,7 +6908,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_matrixreps.html#s_matrixreps_ex-1-4",
   "type": "Exercise",
-  "number": "4.2.4.3",
+  "number": "3",
   "title": "",
   "body": "    The matrices  form a basis for the linear space Write the matrix of the linear transformation such that relative to this basis.       "
 },
@@ -6917,7 +6917,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_matrixreps.html#s_matrixreps_ex-1-5",
   "type": "Exercise",
-  "number": "4.2.4.4",
+  "number": "4",
   "title": "",
   "body": "    Find the matrix of the linear transformation from to (upper triangular matrices) with respect to the standard basis for given by         "
 },
@@ -6926,7 +6926,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_matrixreps.html#s_matrixreps_ex-1-6",
   "type": "Exercise",
-  "number": "4.2.4.5",
+  "number": "5",
   "title": "",
   "body": "    Find the matrix of the linear transformation from to (upper triangular matrices) with respect to the basis         "
 },
@@ -6935,7 +6935,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_matrixreps.html#s_matrixreps_ex-1-7",
   "type": "Exercise",
-  "number": "4.2.4.6",
+  "number": "6",
   "title": "",
   "body": "    Let be the space spanned by the two functions and . Find the matrix of the linear transformation from into itself with respect to the basis .         "
 },
@@ -6944,7 +6944,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_matrixreps.html#s_matrixreps_ex-1-8",
   "type": "Exercise",
-  "number": "4.2.4.7",
+  "number": "7",
   "title": "",
   "body": "    Let be the plane with equation in . The linear transformation maps into so, by restricting it to , we may regard it as a linear transformation .  Find the matrix of the restricted map with respect to the basis         "
 },
@@ -6953,7 +6953,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_matrixreps.html#s_matrixreps_ex-1-9",
   "type": "Exercise",
-  "number": "4.2.4.8",
+  "number": "8",
   "title": "",
   "body": "    Consider the multiplication operator defined by where . Find an ordered basis for such that . Hint: where is the standard basis.   ,        "
 },
@@ -6962,7 +6962,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_matrixreps.html#s_matrixreps_ex-2-2",
   "type": "Exercise",
-  "number": "4.2.4.9",
+  "number": "9",
   "title": "",
   "body": "   , ; ;    "
 },
@@ -6971,7 +6971,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_matrixreps.html#s_matrixreps_ex-2-3",
   "type": "Exercise",
-  "number": "4.2.4.10",
+  "number": "10",
   "title": "",
   "body": "   , ; ;    "
 },
@@ -6980,7 +6980,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_matrixreps.html#s_matrixreps_ex-2-4",
   "type": "Exercise",
-  "number": "4.2.4.11",
+  "number": "11",
   "title": "",
   "body": "   , where ;    "
 },
@@ -6989,7 +6989,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_matrixreps.html#s_matrixreps_ex-3",
   "type": "Exercise",
-  "number": "4.2.4.12",
+  "number": "12",
   "title": "",
   "body": "  Suppose is a linear transformation with matrix representation , where and . Use the defining property of to determine the formula for for an arbitrary polynomial .   "
 },
@@ -6998,7 +6998,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_matrixreps.html#s_matrixreps_ex-4",
   "type": "Exercise",
-  "number": "4.2.4.13",
+  "number": "13",
   "title": "",
   "body": "  Suppose is a linear transformation with matrix representation , where     Use the defining property of to compute and . (You will first need to compute and . )    Use (a) and the fact that is linear to give a general formula for in terms of and .     "
 },
@@ -7007,7 +7007,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_matrixreps.html#s_matrixreps_ex-5",
   "type": "Exercise",
-  "number": "4.2.4.14",
+  "number": "14",
   "title": "",
   "body": "  The function defined as is a linear transformation.    Compute , where is the standard basis of .    Use to lift bases of and back to bases for and .    Identify and as familiar subspaces of matrices.     "
 },
@@ -7016,7 +7016,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_matrixreps.html#s_matrixreps_ex-6",
   "type": "Exercise",
-  "number": "4.2.4.15",
+  "number": "15",
   "title": "",
   "body": "  The function defined by is a linear transformation.    Compute , where and are the standard bases of and .    Use to lift bases of and back to bases for and .     "
 },
@@ -7025,7 +7025,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_matrixreps.html#s_matrixreps_ex-7",
   "type": "Exercise",
-  "number": "4.2.4.16",
+  "number": "16",
   "title": "",
   "body": "  Let be the linear transformation defined as , and let , ,     Compute .    Compute .     "
 },
@@ -7034,7 +7034,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_matrixreps.html#s_matrixreps_ex-8",
   "type": "Exercise",
-  "number": "4.2.4.17",
+  "number": "17",
   "title": "",
   "body": "  Let be the linear transformation defined as , and let , , (the standard basis of ).    Compute .    Compute .     "
 },
@@ -7043,7 +7043,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_matrixreps.html#s_matrixreps_ex-9",
   "type": "Exercise",
-  "number": "4.2.4.18",
+  "number": "18",
   "title": "",
   "body": "  Let and be linear transformations, and suppose are ordered bases for , , and , respectively. Prove: .    Let and . Show that the matrix satisfies the defining property of : , for all .   "
 },
@@ -7268,7 +7268,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_changeofbasis.html#s_changeofbasis_ex-1-2",
   "type": "Exercise",
-  "number": "4.3.4.1",
+  "number": "1",
   "title": "",
   "body": "    Consider the ordered bases and for the vector space .  a. Find the transition matrix from to the standard ordered basis .    b. Find the transition matrix from to .    c. Find the transition matrix from to .    d. Find the transition matrix from to .    e. Find the coordinates of in the ordered basis . Note that .    f. Find the coordinates of in the ordered basis if the coordinate vector of in is .         "
 },
@@ -7277,7 +7277,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_changeofbasis.html#s_changeofbasis_ex-1-3",
   "type": "Exercise",
-  "number": "4.3.4.2",
+  "number": "2",
   "title": "",
   "body": "    Consider the ordered bases and for the vector space of lower triangular matrices with zero trace.  a. Find the transition matrix from to .    b. Find the coordinates of in the ordered basis if the coordinate vector of in is .    c. Find .         "
 },
@@ -7286,7 +7286,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_changeofbasis.html#s_changeofbasis_ex-1-4",
   "type": "Exercise",
-  "number": "4.3.4.3",
+  "number": "3",
   "title": "",
   "body": "    Let be the linear transformation defined by Let be bases for and , respectively. Find the matrix for relative to the basis in the domain and in the codomain.         "
 },
@@ -7295,7 +7295,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_changeofbasis.html#s_changeofbasis_ex-1-5",
   "type": "Exercise",
-  "number": "4.3.4.4",
+  "number": "4",
   "title": "",
   "body": "    Let be the vector space of all polynomials of degree or less in the variable . Let be the linear transformation defined by . That is, is the derivative operator. Let be ordered bases for and , respectively. Find the matrix for relative to the basis in the domain and in the codomain.         "
 },
@@ -7304,7 +7304,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_changeofbasis.html#s_changeofbasis_ex-1-6",
   "type": "Exercise",
-  "number": "4.3.4.5",
+  "number": "5",
   "title": "",
   "body": "    Let be the vector space of all polynomials of degree or less in the variable . Let be the linear transformation defined by . That is, is the derivative operator. Let be ordered bases for and , respectively. Find the matrix for relative to the basis in the domain and in the codomain.         "
 },
@@ -7313,7 +7313,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_changeofbasis.html#ex_changebasis_twospace",
   "type": "Exercise",
-  "number": "4.3.4.6",
+  "number": "6",
   "title": "",
   "body": "   , ,    "
 },
@@ -7322,7 +7322,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_changeofbasis.html#s_changeofbasis_ex-2-4",
   "type": "Exercise",
-  "number": "4.3.4.7",
+  "number": "7",
   "title": "",
   "body": "   , ,    "
 },
@@ -7331,7 +7331,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_changeofbasis.html#ex_changebasis_threespace",
   "type": "Exercise",
-  "number": "4.3.4.8",
+  "number": "8",
   "title": "",
   "body": "   , ,    "
 },
@@ -7340,7 +7340,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_changeofbasis.html#ex_changebasis_polynomials",
   "type": "Exercise",
-  "number": "4.3.4.9",
+  "number": "9",
   "title": "",
   "body": "   , ,    "
 },
@@ -7349,7 +7349,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_changeofbasis.html#s_changeofbasis_ex-3",
   "type": "Exercise",
-  "number": "4.3.4.10",
+  "number": "10",
   "title": "",
   "body": "  Let , , , as in .    Compute directly using .    Compute using the change of basis matrix and .     "
 },
@@ -7358,7 +7358,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_changeofbasis.html#s_changeofbasis_ex-4",
   "type": "Exercise",
-  "number": "4.3.4.11",
+  "number": "11",
   "title": "",
   "body": "  Let , , , as in .    Compute directly using .    Compute using the change of basis matrix and the change of basis formula .     "
 },
@@ -7367,7 +7367,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_changeofbasis.html#s_changeofbasis_ex-5",
   "type": "Exercise",
-  "number": "4.3.4.12",
+  "number": "12",
   "title": "",
   "body": "  Let be the standard basis of . Find the ordered basis for which the change of basis matrix is given by .   "
 },
@@ -7376,7 +7376,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_changeofbasis.html#s_changeofbasis_ex-6",
   "type": "Exercise",
-  "number": "4.3.4.13",
+  "number": "13",
   "title": "",
   "body": "  Let be the standard basis of . Find the ordered basis for which the change of basis matrix is given by .   "
 },
@@ -7385,7 +7385,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_changeofbasis.html#s_changeofbasis_ex-7",
   "type": "Exercise",
-  "number": "4.3.4.14",
+  "number": "14",
   "title": "",
   "body": "  Suppose and are two bases for the space related by the change of basis matrix .   Let . Compute and .    Let . Compute and .      "
 },
@@ -7394,7 +7394,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_changeofbasis.html#ex_changebasis_three_bases",
   "type": "Exercise",
-  "number": "4.3.4.15",
+  "number": "15",
   "title": "",
   "body": "  Let , , and be three ordered bases of the vector space .    Show that . To do so, set and and show that the matrix satisfies the defining property of : , for all .    Using (a), show that .     "
 },
@@ -7403,7 +7403,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_changeofbasis.html#s_changeofbasis_ex-9-3",
   "type": "Exercise",
-  "number": "4.3.4.16",
+  "number": "16",
   "title": "",
   "body": "   , ,    "
 },
@@ -7412,7 +7412,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_changeofbasis.html#s_changeofbasis_ex-9-4",
   "type": "Exercise",
-  "number": "4.3.4.17",
+  "number": "17",
   "title": "",
   "body": "   , ,    "
 },
@@ -7421,7 +7421,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_changeofbasis.html#s_changeofbasis_ex-10",
   "type": "Exercise",
-  "number": "4.3.4.18",
+  "number": "18",
   "title": "",
   "body": "  Let be the linear transformation defined as . Let be the standard basis of , and let .    Compute .    Compute using .     "
 },
@@ -7430,7 +7430,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_changeofbasis.html#s_changeofbasis_ex-11",
   "type": "Exercise",
-  "number": "4.3.4.19",
+  "number": "19",
   "title": "",
   "body": "  Let be the linear transformation defined as . Let be the standard basis of , and let .    Compute .    Compute using .     "
 },
@@ -7439,7 +7439,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_changeofbasis.html#s_changeofbasis_ex-12",
   "type": "Exercise",
-  "number": "4.3.4.20",
+  "number": "20",
   "title": "Reflection in <span class=\"process-math\">\\(\\R^2\\)<\/span>.",
   "body": " Reflection in   Let be nonzero and define , the line passing through the origin with direction vector . Let be reflection through . (See .) In this exercise we will use a change of basis argument to find a formula for the standard matrix of : , the matrix satisfying for all . Our answer will be expressed in terms of and .    Pick a basis where points along and is orthogonal to . (Both vectors will be expressed in terms of and .) Compute .    Let be the standard basis of . Use to compute .    How do we know that is the standard matrix of ?    Explain why your matrix , expressed in terms of and for agrees with the matrix formula provided in , which is expressed in terms of the angle that makes with the -axis.     "
 },
@@ -7700,7 +7700,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_eigenvectors.html#s_eigenvectors_ex-1-2",
   "type": "Exercise",
-  "number": "4.4.4.1",
+  "number": "1",
   "title": "",
   "body": "    Find the eigenvalues of , given that  and its eigenvectors are and .  The corresponding eigenvalues are , , and .                      "
 },
@@ -7709,7 +7709,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_eigenvectors.html#s_eigenvectors_ex-1-3",
   "type": "Exercise",
-  "number": "4.4.4.2",
+  "number": "2",
   "title": "",
   "body": "    Find the eigenvalues and corresponding eigenvectors of the matrix  The eigenvalue corresponds to the eigenvector .  The eigenvalue corresponds to the eigenvector .  The eigenvalue corresponds to the eigenvector .                      "
 },
@@ -7718,7 +7718,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_eigenvectors.html#s_eigenvectors_ex-1-4",
   "type": "Exercise",
-  "number": "4.4.4.3",
+  "number": "3",
   "title": "",
   "body": "    Find the eigenvalues of the matrix .  The eigenvalues are , where   has an eigenvector ,  has an eigenvector ,   has an eigenvector ,  has an eigenvector .  Note: you may want to use a graphing calculator to estimate the roots of the polynomial which defines the eigenvalues.                           "
 },
@@ -7727,7 +7727,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_eigenvectors.html#s_eigenvectors_ex-1-5",
   "type": "Exercise",
-  "number": "4.4.4.4",
+  "number": "4",
   "title": "",
   "body": "    Suppose a matrix has only two distinct eigenvalues. Suppose that and . Find the eigenvalues of with their algebraic multiplicities.  The smaller eigenvalue = has multiplicity , and  the larger eigenvalue = has multiplicity .                           "
 },
@@ -7736,7 +7736,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_eigenvectors.html#s_eigenvectors_ex-1-6",
   "type": "Exercise",
-  "number": "4.4.4.5",
+  "number": "5",
   "title": "",
   "body": "    If and are eigenvectors of a matrix corresponding to the eigenvalues and , respectively,  then   and        "
 },
@@ -7745,7 +7745,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_eigenvectors.html#s_eigenvectors_ex-1-7",
   "type": "Exercise",
-  "number": "4.4.4.6",
+  "number": "6",
   "title": "",
   "body": "    Let be eigenvectors of the matrix which correspond to the eigenvalues , , and , respectively, and let  Express as a linear combination of , , and , and find .        .                        "
 },
@@ -7754,7 +7754,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_eigenvectors.html#s_eigenvectors_ex-2-2",
   "type": "Exercise",
-  "number": "4.4.4.7",
+  "number": "7",
   "title": "",
   "body": "      "
 },
@@ -7763,7 +7763,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_eigenvectors.html#s_eigenvectors_ex-2-3",
   "type": "Exercise",
-  "number": "4.4.4.8",
+  "number": "8",
   "title": "",
   "body": "      "
 },
@@ -7772,7 +7772,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_eigenvectors.html#s_eigenvectors_ex-2-4",
   "type": "Exercise",
-  "number": "4.4.4.9",
+  "number": "9",
   "title": "",
   "body": "      "
 },
@@ -7781,7 +7781,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_eigenvectors.html#s_eigenvectors_ex-2-5",
   "type": "Exercise",
-  "number": "4.4.4.10",
+  "number": "10",
   "title": "",
   "body": "  A=    "
 },
@@ -7790,7 +7790,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_eigenvectors.html#s_eigenvectors_ex-2-6",
   "type": "Exercise",
-  "number": "4.4.4.11",
+  "number": "11",
   "title": "",
   "body": "      "
 },
@@ -7799,7 +7799,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_eigenvectors.html#s_eigenvectors_ex-2-7",
   "type": "Exercise",
-  "number": "4.4.4.12",
+  "number": "12",
   "title": "",
   "body": "      "
 },
@@ -7808,7 +7808,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_eigenvectors.html#s_eigenvectors_ex-2-8",
   "type": "Exercise",
-  "number": "4.4.4.13",
+  "number": "13",
   "title": "",
   "body": "      "
 },
@@ -7817,7 +7817,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_eigenvectors.html#s_eigenvectors_ex-2-9",
   "type": "Exercise",
-  "number": "4.4.4.14",
+  "number": "14",
   "title": "",
   "body": "      "
 },
@@ -7826,7 +7826,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_eigenvectors.html#s_eigenvectors_ex-2-10",
   "type": "Exercise",
-  "number": "4.4.4.15",
+  "number": "15",
   "title": "",
   "body": "  Matrices and below both have characteristic polynomial . For each matrix compute a basis of for each eigenvalue .               "
 },
@@ -7835,7 +7835,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_eigenvectors.html#s_eigenvectors_ex-2-11",
   "type": "Exercise",
-  "number": "4.4.4.16",
+  "number": "16",
   "title": "",
   "body": "  Let be an invertible matrix. Prove: is an eigenvalue of if and only if is an eigenvalue of .   "
 },
@@ -7844,7 +7844,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_eigenvectors.html#s_eigenvectors_ex-2-12",
   "type": "Exercise",
-  "number": "4.4.4.17",
+  "number": "17",
   "title": "",
   "body": "  Let be a square matrix.     Prove: and have the same characteristic polynomial.    First show that , then use a relevant property of the determinant.      Prove: and have the same eigenvalues.      Fix and let be the -eigenspaces of and , respectively. Prove: .    First show that , then use the rank-nullity theorem.    "
 },
@@ -7853,7 +7853,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_eigenvectors.html#s_eigenvectors_ex-2-13",
   "type": "Exercise",
-  "number": "4.4.4.18",
+  "number": "18",
   "title": "",
   "body": "  Let be an eigenvalue of the matrix .   Prove by induction: is an eigenvalue of for any positive integer .    Assume that is invertible. Prove: is an eigenvalue of for any integer .      "
 },
@@ -7862,7 +7862,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_eigenvectors.html#s_eigenvectors_ex-2-14",
   "type": "Exercise",
-  "number": "4.4.4.19",
+  "number": "19",
   "title": "",
   "body": "  Assume is a square matrix satisfying for some positive integer . Show that is the only eigenvalue of . Your argument must make clear that is in fact an eigenvalue of .   "
 },
@@ -7871,7 +7871,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_eigenvectors.html#s_eigenvectors_ex-2-15",
   "type": "Exercise",
-  "number": "4.4.4.20",
+  "number": "20",
   "title": "",
   "body": "  Assume is a square matrix satisfying    Prove: if is an eigenvalue of , then or .    Prove: if does not have as an eigenvalue, then .      "
 },
@@ -8186,7 +8186,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_diagonalization.html#s_diagonalization_ex-1-2",
   "type": "Exercise",
-  "number": "4.5.5.1",
+  "number": "1",
   "title": "",
   "body": "    Let =  Find a matrix , a diagonal matrix and such that .   ,  ,        "
 },
@@ -8195,7 +8195,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_diagonalization.html#s_diagonalization_ex-1-3",
   "type": "Exercise",
-  "number": "4.5.5.2",
+  "number": "2",
   "title": "",
   "body": "    Let . Find an invertible matrix and a diagonal matrix such that .   ,        "
 },
@@ -8204,7 +8204,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_diagonalization.html#s_diagonalization_ex-1-4",
   "type": "Exercise",
-  "number": "4.5.5.3",
+  "number": "3",
   "title": "",
   "body": "    Show that and are similar matrices by finding an invertible matrix satisfying .   ,        "
 },
@@ -8213,7 +8213,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_diagonalization.html#s_diagonalization_ex-1-5",
   "type": "Exercise",
-  "number": "4.5.5.4",
+  "number": "4",
   "title": "",
   "body": "    Suppose Find an invertible matrix and a diagonal matrix so that . Use your answer to find an expression for in terms of , a power of , and in that order.     .       "
 },
@@ -8222,7 +8222,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_diagonalization.html#s_diagonalization_ex-2-2",
   "type": "Exercise",
-  "number": "4.5.5.5",
+  "number": "5",
   "title": "",
   "body": "      "
 },
@@ -8231,7 +8231,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_diagonalization.html#s_diagonalization_ex-2-3",
   "type": "Exercise",
-  "number": "4.5.5.6",
+  "number": "6",
   "title": "",
   "body": "      "
 },
@@ -8240,7 +8240,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_diagonalization.html#s_diagonalization_ex-2-4",
   "type": "Exercise",
-  "number": "4.5.5.7",
+  "number": "7",
   "title": "",
   "body": "      "
 },
@@ -8249,7 +8249,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_diagonalization.html#s_diagonalization_ex-2-5",
   "type": "Exercise",
-  "number": "4.5.5.8",
+  "number": "8",
   "title": "",
   "body": "      "
 },
@@ -8258,7 +8258,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_diagonalization.html#s_diagonalization_ex-2-6",
   "type": "Exercise",
-  "number": "4.5.5.9",
+  "number": "9",
   "title": "",
   "body": "   ;    "
 },
@@ -8267,7 +8267,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_diagonalization.html#s_diagonalization_ex-3",
   "type": "Exercise",
-  "number": "4.5.5.10",
+  "number": "10",
   "title": "",
   "body": "  Let . Show that is diagonalizable if and only if either or ( , and ).   "
 },
@@ -8276,7 +8276,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_diagonalization.html#s_diagonalization_ex-4",
   "type": "Exercise",
-  "number": "4.5.5.11",
+  "number": "11",
   "title": "",
   "body": "  Prove .    Show that for any we have .   "
 },
@@ -8285,7 +8285,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_diagonalization.html#s_diagonalization_ex-5-2",
   "type": "Exercise",
-  "number": "4.5.5.12",
+  "number": "12",
   "title": "",
   "body": "   has eigenspaces and .   "
 },
@@ -8294,7 +8294,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_diagonalization.html#s_diagonalization_ex-5-3",
   "type": "Exercise",
-  "number": "4.5.5.13",
+  "number": "13",
   "title": "",
   "body": "   for all , for .   "
 },
@@ -8303,7 +8303,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_diagonalization.html#s_diagonalization_ex-6",
   "type": "Exercise",
-  "number": "4.5.5.14",
+  "number": "14",
   "title": "",
   "body": "  Assume is a matrix with eigenvalues , , and .    Show that is diagonalizable. Provide an explicit diagonal matrix that is similar to.    Prove that for all odd integers .     "
 },
@@ -8312,7 +8312,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_diagonalization.html#s_diagonalization_ex-7",
   "type": "Exercise",
-  "number": "4.5.5.15",
+  "number": "15",
   "title": "",
   "body": "  Prove statement (5) of .    Use and .   "
 },
@@ -8321,7 +8321,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_diagonalization.html#s_diagonalization_ex-8",
   "type": "Exercise",
-  "number": "4.5.5.16",
+  "number": "16",
   "title": "",
   "body": "  Prove statement (6) of .    Use and .   "
 },
@@ -8330,7 +8330,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_diagonalization.html#s_diagonalization_ex-9",
   "type": "Exercise",
-  "number": "4.5.5.17",
+  "number": "17",
   "title": "",
   "body": "  According to if and are similar, then they have the same rank. Show that the converse is false by showing that the matrices have the same rank, but are not similar.   "
 },
@@ -8339,7 +8339,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_diagonalization.html#s_diagonalization_ex-10",
   "type": "Exercise",
-  "number": "4.5.5.18",
+  "number": "18",
   "title": "",
   "body": "  According to if and are similar, then they have the same characteristic polynomial. Show that the converse is false by showing that the matrices have the same characteristic polynomial, but are not similar.   "
 },
@@ -8348,7 +8348,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_diagonalization.html#s_diagonalization_ex-11",
   "type": "Exercise",
-  "number": "4.5.5.19",
+  "number": "19",
   "title": "",
   "body": "  Prove all statements of .   "
 },
@@ -8357,7 +8357,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_diagonalization.html#s_diagonalization_ex-12",
   "type": "Exercise",
-  "number": "4.5.5.20",
+  "number": "20",
   "title": "",
   "body": "  In each case information about a matrix is given. Decide whether is diagonalizable.      , ,        ,        , ,     See .    "
 },
@@ -8366,7 +8366,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_diagonalization.html#ex_diagonalization",
   "type": "Exercise",
-  "number": "4.5.5.21",
+  "number": "21",
   "title": "",
   "body": "  Each matrix below has characteristic polynomial . Use to decide whether is diagonalizable. If yes, provide an invertible and diagonal satisfying .               "
 },
@@ -8375,7 +8375,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_diagonalization.html#s_diagonalization_ex-14",
   "type": "Exercise",
-  "number": "4.5.5.22",
+  "number": "22",
   "title": "",
   "body": "  Let . Use your work from to find a matrix satisfying .   "
 },
@@ -8600,7 +8600,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_innerproducts.html#s_innerproducts-5-4",
   "type": "Proof",
-  "number": "5.1.3.1",
+  "number": "1",
   "title": "",
   "body": " Fix vectors and . For any we have by positivity , where . Since for all the quadratic polynomial has at most one root. Using the quadratic formula we conclude that we must have , since otherwise would have two distinct roots. It follows that , or equivalently . Taking square-roots yields the desired inequality.  The same reasoning shows that the Cauchy-Schwarz inequality is an actual equality if and only if for some if and only if if and only if for some (by positivity).  "
 },
@@ -8690,7 +8690,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_innerproducts.html#s_innerproducts_ex-1-2",
   "type": "Exercise",
-  "number": "5.1.5.1",
+  "number": "1",
   "title": "",
   "body": "    Find the norm of and the unit vector in the direction of if   ,              "
 },
@@ -8699,7 +8699,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_innerproducts.html#s_innerproducts_ex-1-3",
   "type": "Exercise",
-  "number": "5.1.5.2",
+  "number": "2",
   "title": "",
   "body": "    Find the angle between the vectors   .            "
 },
@@ -8708,7 +8708,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_innerproducts.html#s_innerproducts_ex-1-4",
   "type": "Exercise",
-  "number": "5.1.5.3",
+  "number": "3",
   "title": "",
   "body": "    If and are arbitrary polynomials of degree at most 2, then the mapping defines an inner product in . Use this inner product to find , , , and the angle between and for   ,   ,   ,   .                           "
 },
@@ -8717,7 +8717,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_innerproducts.html#s_innerproducts_ex-1-5",
   "type": "Exercise",
-  "number": "5.1.5.4",
+  "number": "4",
   "title": "",
   "body": "    If and are arbitrary real matrices, then the mapping defines an inner product in . Use this inner product to find , the norms and , and the angle between and for   ,   ,   ,   .                           "
 },
@@ -8726,7 +8726,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_innerproducts.html#s_innerproducts_ex-1-6",
   "type": "Exercise",
-  "number": "5.1.5.5",
+  "number": "5",
   "title": "",
   "body": "    Use the inner product in the vector space of continuous functions on the domain to find , , , and the angle between and for   ,   ,   ,   .                           "
 },
@@ -8735,7 +8735,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_innerproducts.html#s_innerproducts_ex-2",
   "type": "Exercise",
-  "number": "5.1.5.6",
+  "number": "6",
   "title": "",
   "body": "  For each of the following operations on , determine whether it defines an inner product on . If it fails to be an inner product, identify which of the three inner product axioms (if any) it does satisfy, and provide explicit counterexamples for any axiom that fails.     .     .     .      The operation in (b) is an inner product. Use that fact that , where we treat as column vectors. This helps to prove axioms (i)-(ii). For axiom (iii), use either a complete the square or quadratic formula argument on the expression .   "
 },
@@ -8744,7 +8744,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_innerproducts.html#s_innerproducts_ex-3",
   "type": "Exercise",
-  "number": "5.1.5.7",
+  "number": "7",
   "title": "",
   "body": "  We work within the inner product space given by together with the evaluation at 0, 1, 2 inner product.  Let . Give a parametric description of the set .   "
 },
@@ -8753,7 +8753,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_innerproducts.html#s_innerproducts_ex-4",
   "type": "Exercise",
-  "number": "5.1.5.8",
+  "number": "8",
   "title": "",
   "body": "  We work in the inner product space given by together with the integral inner product.   Let . Compute and .    Show that if is an odd function (i.e., for all ) and is an even function ( for all ), then . Hint : use the area interpretation of the integral and properties of even\/odd functions.      "
 },
@@ -8762,7 +8762,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_innerproducts.html#s_innerproducts_ex-5-3",
   "type": "Exercise",
-  "number": "5.1.5.9",
+  "number": "9",
   "title": "",
   "body": "   with the standard dot product;    "
 },
@@ -8771,7 +8771,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_innerproducts.html#s_innerproducts_ex-5-4",
   "type": "Exercise",
-  "number": "5.1.5.10",
+  "number": "10",
   "title": "",
   "body": "   with the dot product with weights ;    "
 },
@@ -8780,7 +8780,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_innerproducts.html#s_innerproducts_ex-5-5",
   "type": "Exercise",
-  "number": "5.1.5.11",
+  "number": "11",
   "title": "",
   "body": "   with the integral inner product;    "
 },
@@ -8789,7 +8789,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_innerproducts.html#s_innerproducts_ex-5-6",
   "type": "Exercise",
-  "number": "5.1.5.12",
+  "number": "12",
   "title": "",
   "body": "   with evaluation at inner product;    "
 },
@@ -8798,7 +8798,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_innerproducts.html#s_innerproducts_ex-6",
   "type": "Exercise",
-  "number": "5.1.5.13",
+  "number": "13",
   "title": "",
   "body": "  Let be an inner product space. Prove that for all .   "
 },
@@ -8807,7 +8807,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_innerproducts.html#s_innerproducts_ex-7",
   "type": "Exercise",
-  "number": "5.1.5.14",
+  "number": "14",
   "title": "",
   "body": "  Let and be nonzero vectors of the inner product space , and let be the angle between them. Prove the following equivalence: . Your proof should be a chain of equivalences with each step justified.    The equality is true if and only if it is true after squaring both sides. (Why?) Use the definition and expand the inner product.    "
 },
@@ -8816,7 +8816,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_innerproducts.html#s_innerproducts_ex-8",
   "type": "Exercise",
-  "number": "5.1.5.15",
+  "number": "15",
   "title": "",
   "body": "  Let be an inner product space. Suppose vectors satisfy and . Using the Cauchy-Schwarz inequality ( ) find the maximum and minimum possible values of , and give explicit examples where those values occur.   "
 },
@@ -8825,7 +8825,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_innerproducts.html#ex_norm_props",
   "type": "Exercise",
-  "number": "5.1.5.16",
+  "number": "16",
   "title": "",
   "body": "  Prove statements (1) and (3) of .   "
 },
@@ -8834,7 +8834,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_innerproducts.html#s_innerproducts_ex-10",
   "type": "Exercise",
-  "number": "5.1.5.17",
+  "number": "17",
   "title": "",
   "body": "  Prove each inequality below using the Cauchy-Schwarz inequality ( ) applied to a judicious choice of inner product space, and possibly a judicious choice of vector in said inner product space.   For all  .    For all , .    For all  .      "
 },
@@ -8843,7 +8843,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_innerproducts.html#ex_isometries",
   "type": "Exercise",
-  "number": "5.1.5.18",
+  "number": "18",
   "title": "Isometries of inner product spaces.",
   "body": " Isometries of inner product spaces   Let be an inner product space. An isometry of is a function that preserves distance: i.e., . In this exercise we will show that any isometry that maps to is a linear transformation. This is a very useful fact. For example, it implies the linearity of many geometric transformations we have considered: rotation about the origin in , reflection through a line in , .  In what follows assume that is an isometry of satisfying .    Prove that : i.e., preserves norms.    Prove : i.e., preserves inner products. Hint: first prove that .    To prove is linear it is enough to show for all , . To do so, use the above parts to show that .     "
 },
@@ -9041,7 +9041,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_orthogonality.html#s_orthogonal_bases_ex-1-2",
   "type": "Exercise",
-  "number": "5.2.4.1",
+  "number": "1",
   "title": "",
   "body": "    Let be an orthonormal basis for an inner product space . If   is so that , is orthogonal to , and , find the possible values for , , and .   ,  ,                   Solution: One checks by direct computation that  , ,  must hold.       "
 },
@@ -9050,7 +9050,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_orthogonality.html#s_orthogonal_bases_ex-1-3",
   "type": "Exercise",
-  "number": "5.2.4.2",
+  "number": "2",
   "title": "",
   "body": "    Let Use the Gram-Schmidt process to determine an orthonormal basis for the subspace of spanned by and .   ,        "
 },
@@ -9059,7 +9059,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_orthogonality.html#s_orthogonal_bases_ex-1-4",
   "type": "Exercise",
-  "number": "5.2.4.3",
+  "number": "3",
   "title": "",
   "body": "    Let Use the Gram-Schmidt process to determine an orthonormal basis for the subspace of spanned by , , and .   , ,        "
 },
@@ -9068,7 +9068,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_orthogonality.html#s_orthogonal_bases_ex-1-5",
   "type": "Exercise",
-  "number": "5.2.4.4",
+  "number": "4",
   "title": "",
   "body": "    Let Find an orthonormal basis of the image of .   ,        "
 },
@@ -9077,7 +9077,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_orthogonality.html#s_orthogonal_bases_ex-1-6",
   "type": "Exercise",
-  "number": "5.2.4.5",
+  "number": "5",
   "title": "",
   "body": "    Let Find an orthonormal basis of the kernel of .   ,        "
 },
@@ -9086,7 +9086,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_orthogonality.html#s_orthogonal_bases_ex-2",
   "type": "Exercise",
-  "number": "5.2.4.6",
+  "number": "6",
   "title": "",
   "body": "  The vectors are pairwise orthogonal with respect to the dot product, as is easily verified. For each below, find the scalars such that .               (Your answer will be expressed in terms of , and . )     "
 },
@@ -9095,7 +9095,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_orthogonality.html#s_orthogonal_bases_ex-3-3",
   "type": "Exercise",
-  "number": "5.2.4.7",
+  "number": "7",
   "title": "",
   "body": "   with dot product; . Compute .   "
 },
@@ -9104,7 +9104,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_orthogonality.html#s_orthogonal_bases_ex-3-4",
   "type": "Exercise",
-  "number": "5.2.4.8",
+  "number": "8",
   "title": "",
   "body": "   with dot product with weights ; . Compute .   "
 },
@@ -9113,7 +9113,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_orthogonality.html#s_orthogonal_bases_ex-3-5",
   "type": "Exercise",
-  "number": "5.2.4.9",
+  "number": "9",
   "title": "",
   "body": "   with integral inner product ; . Compute . (Yes, can indeed be written as a linear combination of . In this exercise you will discover what the corresponding identity is using inner products!)   "
 },
@@ -9122,7 +9122,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_orthogonality.html#s_orthogonal_bases_ex-4-3",
   "type": "Exercise",
-  "number": "5.2.4.10",
+  "number": "10",
   "title": "",
   "body": "   with the dot product, ,    "
 },
@@ -9131,7 +9131,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_orthogonality.html#s_orthogonal_bases_ex-4-4",
   "type": "Exercise",
-  "number": "5.2.4.11",
+  "number": "11",
   "title": "",
   "body": "   with the dot product, ,    "
 },
@@ -9140,7 +9140,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_orthogonality.html#s_orthogonal_bases_ex-5-3",
   "type": "Exercise",
-  "number": "5.2.4.12",
+  "number": "12",
   "title": "",
   "body": "   with the weighted dot product . .   "
 },
@@ -9149,7 +9149,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_orthogonality.html#s_orthogonal_bases_ex-5-4",
   "type": "Exercise",
-  "number": "5.2.4.13",
+  "number": "13",
   "title": "",
   "body": "   with the integral inner product . .   "
 },
@@ -9158,7 +9158,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_orthogonality.html#s_orthogonal_bases_ex-5-5",
   "type": "Exercise",
-  "number": "5.2.4.14",
+  "number": "14",
   "title": "",
   "body": "   with the evaluation inner product . .   "
 },
@@ -9167,7 +9167,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_orthogonality.html#s_orthogonal_bases_ex-6",
   "type": "Exercise",
-  "number": "5.2.4.15",
+  "number": "15",
   "title": "",
   "body": "  Consider the inner product space together with the dot product. .    Show that is a subspace of by finding a matrix for which .    Use (a) and an appropriate fundamental space algorithm to find a basis for .    Use Gram-Schmidt to convert your basis in (b) to an orthgonal basis of .     "
 },
@@ -9176,7 +9176,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_orthogonality.html#ex_extend_orthogonal",
   "type": "Exercise",
-  "number": "5.2.4.16",
+  "number": "16",
   "title": "Extending orthogonal bases.",
   "body": " Extending orthogonal bases   Consider the inner product space given by together with the dot product. Construct an orthogonal basis of containing following the steps below.    Produce a vector orthogonal to by inspection.    Produce a vector orthogonal to and by setting up an appropriate matrix equation of the form and finding a nontrivial solution. (Use .)    Produce a vector orthogonal to by setting up an appropriate matrix equation of the form and finding a nontrivial solution. (Use .)     "
 },
@@ -9185,7 +9185,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_orthogonality.html#s_orthogonal_bases_ex-8",
   "type": "Exercise",
-  "number": "5.2.4.17",
+  "number": "17",
   "title": "Extending orthogonal bases.",
   "body": " Extending orthogonal bases   Consider the inner product space given by together with the dot product. Let be the plane with defining equation . Compute an orthogonal basis of , and then extend this to an orthogonal basis of .   You do not have to use Gram-Schmidt here, but can proceed using a combination of inspection, your geometric understanding of , and\/or along similar lines of .  "
 },
@@ -9194,7 +9194,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_orthogonality.html#ex_ortho_pythag",
   "type": "Exercise",
-  "number": "5.2.4.18",
+  "number": "18",
   "title": "",
   "body": "  Let be an inner produce space. Prove: if , then . This result can be thought of as the Pythagorean theorem for general inner product spaces .   "
 },
@@ -9203,7 +9203,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_orthogonality.html#s_orthogonal_bases_ex-10",
   "type": "Exercise",
-  "number": "5.2.4.19",
+  "number": "19",
   "title": "",
   "body": "  Let be an inner product space, and suppose is an orthonormal basis of . Suppose satisfy .    Prove: .    Prove: .     "
 },
@@ -9212,7 +9212,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_orthogonality.html#ex_coordinates_orthonormal",
   "type": "Exercise",
-  "number": "5.2.4.20",
+  "number": "20",
   "title": "Orthonormal coordinate vectors.",
   "body": " Orthonormal coordinate vectors   Let be an inner product space, and suppose is an orthonormal ordered basis of .    Prove that for all . In other words we can compute the inner product of vectors by computing the dot product of their coordinate vectors with respect to the orthonormal basis .    Prove that a set is orthogonal (resp. orthonormal) with respect to if and only if is orthogonal (resp. orthonormal) with respect to the dot product.     "
 },
@@ -9221,7 +9221,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_orthogonality.html#ex_ortho_matrix_det",
   "type": "Exercise",
-  "number": "5.2.4.21",
+  "number": "21",
   "title": "Determinant of orthogonal matrices.",
   "body": " Determinant of orthogonal matrices   Prove: if is an orthogonal matrix, then .   "
 },
@@ -9230,7 +9230,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_orthogonality.html#ex_ortho_matrix_rotation_reflection",
   "type": "Exercise",
-  "number": "5.2.4.22",
+  "number": "22",
   "title": "Orthogonal <span class=\"process-math\">\\(2\\times 2\\)<\/span> matrices.",
   "body": " Orthogonal matrices   In this exercise we will prove that a matrix is orthogonal if and only it is a rotation matrix or a reflection matrix.  Let be a matrix.    Prove that if is orthogonal and , then is a rotation matrix: , there is a such that . See .    Prove that if is orthogonal and , then is a reflection matrix: , there is a such that . See .    Prove that is an orthogonal matrix if and only if is a rotation matrix or is a reflection matrix. You may use the result of .     "
 },
@@ -9365,7 +9365,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_orthogonal_projection.html#s_orthogonal_projection-4-7",
   "type": "Proof",
-  "number": "5.3.2.1",
+  "number": "1",
   "title": "",
   "body": " Clearly . For the other direction, take . Using the orthogonal projection theorem , we can write with and . We will show .  Since we have . Then we have   Thus . It follows that , and hence .  "
 },
@@ -9383,7 +9383,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_orthogonal_projection.html#s_orthogonal_projection-4-9",
   "type": "Proof",
-  "number": "5.3.2.2",
+  "number": "2",
   "title": "",
   "body": "   We must show that for all and . We pick an orthogonal basis of and compute, using formula : .    By definition we have for all , and thus . For the other direction, if , then ( ), and thus . This proves .  The fact that follows from the equivalence stated in (b) of .    "
 },
@@ -9482,7 +9482,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_orthogonal_projection.html#s_orthogonal_projection_ex-1-2",
   "type": "Exercise",
-  "number": "5.3.6.1",
+  "number": "1",
   "title": "",
   "body": "    Compute the orthogonal projection of onto the line through and the origin.   .       "
 },
@@ -9491,7 +9491,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_orthogonal_projection.html#s_orthogonal_projection_ex-1-3",
   "type": "Exercise",
-  "number": "5.3.6.2",
+  "number": "2",
   "title": "",
   "body": "    Let and . Write as the sum of two orthogonal vectors, in and orthogonal to .   ,  .       "
 },
@@ -9500,7 +9500,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_orthogonal_projection.html#s_orthogonal_projection_ex-1-4",
   "type": "Exercise",
-  "number": "5.3.6.3",
+  "number": "3",
   "title": "",
   "body": "    (a) Find the distance from the point to the plane . Use sqrt() to enter square roots.  Distance:  (b) Find the equation of the plane that passes through the points , , and . Write your answer in terms of the variables , , .  Answer:             Solution: (a) The idea is to find a convenient point lying in the given plane. For example, let us pick , and let be the vector from to . Then the distance from to the plane is the absolute value of the scalar projection of onto the normal vector   So, we get that the distance is .  (b) To find an equation of the plane in question, we can work with the point and the normal vector given by the cross product of the vector from to , and the vector from to . It turns out that   So, an equation of the plane is .       "
 },
@@ -9509,7 +9509,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_orthogonal_projection.html#s_orthogonal_projection_ex-1-5",
   "type": "Exercise",
-  "number": "5.3.6.4",
+  "number": "4",
   "title": "",
   "body": "    Find bases of the kernel and image of the orthogonal projection onto the plane in .  A basis for the kernel is    A basis for the image is  ,        "
 },
@@ -9518,7 +9518,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_orthogonal_projection.html#s_orthogonal_projection_ex-1-6",
   "type": "Exercise",
-  "number": "5.3.6.5",
+  "number": "5",
   "title": "",
   "body": "    Let Use the Gram-Schmidt process to determine an orthonormal basis for the subspace of spanned by , , and .   , ,        "
 },
@@ -9527,7 +9527,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_orthogonal_projection.html#s_orthogonal_projection_ex-1-7",
   "type": "Exercise",
-  "number": "5.3.6.6",
+  "number": "6",
   "title": "",
   "body": "    Find the least-squares solution of the system         "
 },
@@ -9536,7 +9536,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_orthogonal_projection.html#s_orthogonal_projection_ex-1-8",
   "type": "Exercise",
-  "number": "5.3.6.7",
+  "number": "7",
   "title": "",
   "body": "    By using the method of least squares, find the best line through the points:  , , .  Step 1. The general equation of a line is . Plugging the data points into this formula gives a matrix equation .      Step 2. The matrix equation has no solution, so instead we use the normal equation       Step 3. Solving the normal equation gives the answer    which corresponds to the formula    Analysis. Compute the predicted values: .    Compute the error vector: .    Compute the total error: .                   "
 },
@@ -9545,7 +9545,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_orthogonal_projection.html#s_orthogonal_projection_ex-1-9",
   "type": "Exercise",
-  "number": "5.3.6.8",
+  "number": "8",
   "title": "",
   "body": "    By using the method of least squares, find the best parabola through the points:  , , ,  Step 1. The general equation of a parabola is . Plugging the data points into this formula gives a matrix equation .      Step 2. The matrix equation has no solution, so instead we use the normal equation       Step 3. Solving the normal equation gives the answer    which corresponds to the formula              "
 },
@@ -9554,7 +9554,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_orthogonal_projection.html#s_orthogonal_projection_ex-2-3",
   "type": "Exercise",
-  "number": "5.3.6.9",
+  "number": "9",
   "title": "",
   "body": "   with the dot product; ;    "
 },
@@ -9563,7 +9563,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_orthogonal_projection.html#s_orthogonal_projection_ex-2-4",
   "type": "Exercise",
-  "number": "5.3.6.10",
+  "number": "10",
   "title": "",
   "body": "   with dot product with weights ; ;    "
 },
@@ -9572,7 +9572,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_orthogonal_projection.html#s_orthogonal_projection_ex-2-5",
   "type": "Exercise",
-  "number": "5.3.6.11",
+  "number": "11",
   "title": "",
   "body": "   with the integral inner product; ; for all    "
 },
@@ -9581,7 +9581,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_orthogonal_projection.html#s_orthogonal_projection_ex-3",
   "type": "Exercise",
-  "number": "5.3.6.12",
+  "number": "12",
   "title": "",
   "body": "  Let be the plane passing through the origin with normal vector . Find the orthogonal projection of onto with respect to the dot product.   "
 },
@@ -9590,7 +9590,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_orthogonal_projection.html#s_orthogonal_projection_ex-4",
   "type": "Exercise",
-  "number": "5.3.6.13",
+  "number": "13",
   "title": "",
   "body": "  Recall that the trace of a square matrix is the sum of its diagonal entries. Let with inner product . (You may take for granted that this operation is indeed an inner product on .) Define .    Compute an orthogonal basis for . You can do this either by inspection (the space is manageable), or by starting with any basis of and applying the Gram-Schmidt procedure.    Compute , where .     "
 },
@@ -9599,7 +9599,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_orthogonal_projection.html#s_orthogonal_projection_ex-5",
   "type": "Exercise",
-  "number": "5.3.6.14",
+  "number": "14",
   "title": "",
   "body": "  Let with the integral inner product, and let . Find the function of the form that best approximates  in terms of this inner product: find the the of this form that minimizes .    The set is orthogonal with respect to the given inner product.   "
 },
@@ -9608,7 +9608,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_orthogonal_projection.html#ex_ortho_comp",
   "type": "Exercise",
-  "number": "5.3.6.15",
+  "number": "15",
   "title": "",
   "body": "  Let be an inner product space, let , and let . Prove: . In other words, to check whether an element is in , it suffices to check that it is orthogonal to each element of its spanning set .   "
 },
@@ -9617,7 +9617,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_orthogonal_projection.html#s_orthogonal_projection_ex-7",
   "type": "Exercise",
-  "number": "5.3.6.16",
+  "number": "16",
   "title": "",
   "body": "  Consider the inner product space together with the dot product. Let Provide orthogonal bases for and .   "
 },
@@ -9626,7 +9626,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_orthogonal_projection.html#ex_orthocomp_subspace",
   "type": "Exercise",
-  "number": "5.3.6.17",
+  "number": "17",
   "title": "",
   "body": "  Prove statements (1) and (2) of .   "
 },
@@ -9635,7 +9635,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_orthogonal_projection.html#ex_orthocomp_dim",
   "type": "Exercise",
-  "number": "5.3.6.18",
+  "number": "18",
   "title": "Dimension of <span class=\"process-math\">\\(W^\\perp\\)<\/span>.",
   "body": " Dimension of   Prove statement (3) of : if is an inner product space of dimension , and is a subspace of , then .    By there is an orthogonal basis of , and furthermore, we can extend to an orthogonal basis of all of . Show the form a basis for .   "
 },
@@ -9644,7 +9644,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_orthogonal_projection.html#s_orthogonal_projection_ex-10",
   "type": "Exercise",
-  "number": "5.3.6.19",
+  "number": "19",
   "title": "",
   "body": "  Prove following the suggestion in the text.   "
 },
@@ -9653,7 +9653,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_orthogonal_projection.html#ex_orthoproj_props",
   "type": "Exercise",
-  "number": "5.3.6.20",
+  "number": "20",
   "title": "",
   "body": "  Let an inner product space, and let be a finite-dimensional subspace. Prove the following statements:     if and only if ;     if and only if .     "
 },
@@ -9662,7 +9662,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_orthogonal_projection.html#s_orthogonal_projection_ex-12",
   "type": "Exercise",
-  "number": "5.3.6.21",
+  "number": "21",
   "title": "",
   "body": "  We consider the problem of fitting a collection of data points with a quadratic curve of the form . Thus we are given some collection of points , and we seek parameters for which the graph of  best fits the points in some way.    Show, using linear algebra, that if we are given any three points , where the -coordinates are all distinct, then there is a unique choice of such that the corresponding quadratic function agrees precisely with the data. In other words, given just about any three points in the plane, there is a unique quadratic curve connecting them.    Now suppose we are given the four data points .    Use the least-squares method described in the lecture notes to come up with a quadratic function that best fits the data.    Graph the function you found, along with the points . (You may want to use technology.) Use your graph to explain precisely in what sense  best fits the data.       "
 },
@@ -9815,7 +9815,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_spectral_theorem.html#s_spectral_theorem_ex-1-2",
   "type": "Exercise",
-  "number": "5.4.3.1",
+  "number": "1",
   "title": "",
   "body": "    Let . Find an orthogonal matrix with rational entries and a diagonal matrix such that .   ,        "
 },
@@ -9824,7 +9824,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_spectral_theorem.html#s_spectral_theorem_ex-2-2",
   "type": "Exercise",
-  "number": "5.4.3.2",
+  "number": "2",
   "title": "",
   "body": "      "
 },
@@ -9833,7 +9833,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_spectral_theorem.html#s_spectral_theorem_ex-2-3",
   "type": "Exercise",
-  "number": "5.4.3.3",
+  "number": "3",
   "title": "",
   "body": "      "
 },
@@ -9842,7 +9842,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_spectral_theorem.html#s_spectral_theorem_ex-2-4",
   "type": "Exercise",
-  "number": "5.4.3.4",
+  "number": "4",
   "title": "",
   "body": "      "
 },
@@ -9851,7 +9851,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_spectral_theorem.html#s_spectral_theorem_ex-2-5",
   "type": "Exercise",
-  "number": "5.4.3.5",
+  "number": "5",
   "title": "",
   "body": "      "
 },
@@ -9860,7 +9860,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_spectral_theorem.html#s_spectral_theorem_ex-2-6",
   "type": "Exercise",
-  "number": "5.4.3.6",
+  "number": "6",
   "title": "",
   "body": "      "
 },
@@ -9869,7 +9869,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_spectral_theorem.html#s_spectral_theorem_ex-2-7",
   "type": "Exercise",
-  "number": "5.4.3.7",
+  "number": "7",
   "title": "",
   "body": "     "
 },
@@ -9878,7 +9878,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_spectral_theorem.html#s_spectral_theorem_ex-2-8",
   "type": "Exercise",
-  "number": "5.4.3.8",
+  "number": "8",
   "title": "",
   "body": "      "
 },
@@ -9887,7 +9887,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_spectral_theorem.html#s_spectral_theorem_ex-2-9",
   "type": "Exercise",
-  "number": "5.4.3.9",
+  "number": "9",
   "title": "",
   "body": "      "
 },
@@ -9896,7 +9896,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_spectral_theorem.html#ex_self-adjoint_symmetric",
   "type": "Exercise",
-  "number": "5.4.3.10",
+  "number": "10",
   "title": "",
   "body": "  Let be a finite-dimensional inner product space, let be a linear transformation, and let be an ordered basis of . Prove: is self-adjoint if and only if for all . In other words, to prove is self-adjoint it suffices to show property holds for all elements of a basis of .   "
 },
@@ -9905,7 +9905,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_spectral_theorem.html#ex_selfadjoint_complement",
   "type": "Exercise",
-  "number": "5.4.3.11",
+  "number": "11",
   "title": "",
   "body": "  Let be a finite-dimensional inner product space, let be a self-adjoint operator, and let be a subspace of .    Prove: if , then .    By (a), restricting to defines a linear transformation . Prove that is self-adjoint. Here the inner product on the subspace is inherited from by restriction.     "
 },
@@ -9914,7 +9914,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_spectral_theorem.html#s_spectral_theorem_ex-5",
   "type": "Exercise",
-  "number": "5.4.3.12",
+  "number": "12",
   "title": "",
   "body": "  Assume is symmetric and orthogonal. Prove that the characteristic polynomial of factors as for some nonnegative integers . In particular, the eigenvalues of are among and .   "
 },
@@ -9923,7 +9923,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_spectral_theorem.html#s_spectral_theorem_ex-6-2",
   "type": "Exercise",
-  "number": "5.4.3.13",
+  "number": "13",
   "title": "",
   "body": "  Find a symmetric matrix satisfying the following property: satisfies if and only if . (Here we conflate the matrix with the scalar .)   "
 },
@@ -9932,7 +9932,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_spectral_theorem.html#s_spectral_theorem_ex-6-3",
   "type": "Exercise",
-  "number": "5.4.3.14",
+  "number": "14",
   "title": "",
   "body": "  Show that there is a rotation matrix satisfying , where for some .    See .   "
 },
@@ -9941,7 +9941,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_spectral_theorem.html#s_spectral_theorem_ex-6-4",
   "type": "Exercise",
-  "number": "5.4.3.15",
+  "number": "15",
   "title": "",
   "body": "  Show that satisfies if and only if satisfies .   "
 },
@@ -9950,7 +9950,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_spectral_theorem.html#s_spectral_theorem_ex-6-5",
   "type": "Exercise",
-  "number": "5.4.3.16",
+  "number": "16",
   "title": "",
   "body": "  Explain why we can conclude that there is a rotation that maps the conic with equation to the conic with standard equation  .   "
 },
@@ -9959,7 +9959,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "s_spectral_theorem.html#s_spectral_theorem_ex-6-6",
   "type": "Exercise",
-  "number": "5.4.3.17",
+  "number": "17",
   "title": "",
   "body": "  Let be the conic curve with equation .    Find an angle and constants such that the rotation maps to a conic with defining equation .    First graph , and then graph using the result of (a). What type of conics (parabolas, ellipses, hyperbolas) are and ?     "
 },

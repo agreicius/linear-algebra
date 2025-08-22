@@ -3,7 +3,7 @@
 <!--******************************************-->
 <!--*  Authored with PreTeXt                 *-->
 <!--*  pretextbook.org                       *-->
-<!--*  Theme: default-legacy                 *-->
+<!--*  Theme: default-modern                 *-->
 <!--*  Palette:                              *-->
 <!--******************************************-->
 
@@ -29,7 +29,7 @@ A=\frac{1}{a^2+b^2+c^2}\begin{amatrix}[rrr]
 b^2+c^2\amp -ab \amp -ac \\ 
 -ab \amp a^2+c^2 \amp -bc \\
 -ac \amp -bc \amp a^2+b^2
-\end{amatrix}\text{.}\tag{3.2.5}
+\end{amatrix}\text{.}\tag{3.5}
 \end{equation}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#th_ortho_proj_plane_linear-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -44,21 +44,21 @@ b^2+c^2\amp -ab \amp -ac \\
 <div class="para">Let <span class="process-math">\(Q\)</span> be the point of <span class="process-math">\(\R^3\)</span> with position vector <span class="process-math">\(\overrightarrow{OQ}\)</span> satisfying</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq_vec_formula.html ./knowl/xref/eg_lines_planes_review.html ./knowl/xref/eq_vec_diff.html ./knowl/xref/eq_vec_formula.html ./knowl/xref/th_proj_line_linear.html">
 \begin{align}
-\overrightarrow{OQ}\amp = \overrightarrow{RP} \tag{3.2.6}\\
-\amp=\overrightarrow{OP}-\overrightarrow{OR}\tag{3.2.7}\\
-\amp=(x,y,z)-\proj{P}{\ell} \tag{3.2.8}
+\overrightarrow{OQ}\amp = \overrightarrow{RP} \tag{3.6}\\
+\amp=\overrightarrow{OP}-\overrightarrow{OR}\tag{3.7}\\
+\amp=(x,y,z)-\proj{P}{\ell} \tag{3.8}
 \end{align}
 </div>
 <div class="para">so that</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq_vec_formula.html ./knowl/xref/eg_lines_planes_review.html ./knowl/xref/eq_vec_diff.html ./knowl/xref/eq_vec_formula.html ./knowl/xref/th_proj_line_linear.html">
 \begin{equation}
-\overrightarrow{OP}=\overrightarrow{OQ}+\overrightarrow{OR}\text{.}\tag{3.2.9}
+\overrightarrow{OP}=\overrightarrow{OQ}+\overrightarrow{OR}\text{.}\tag{3.9}
 \end{equation}
 </div>
 <div class="para">Since</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq_vec_formula.html ./knowl/xref/eg_lines_planes_review.html ./knowl/xref/eq_vec_diff.html ./knowl/xref/eq_vec_formula.html ./knowl/xref/th_proj_line_linear.html">
 \begin{align*}
-\overrightarrow{OQ}\cdot \boldn\amp = \overrightarrow{RP}\cdot \boldn \amp \knowl{./knowl/xref/eq_vec_formula.html}{\text{(3.2.8)}} \\
+\overrightarrow{OQ}\cdot \boldn\amp = \overrightarrow{RP}\cdot \boldn \amp \knowl{./knowl/xref/eq_vec_formula.html}{\text{(3.8)}} \\
 \amp = 0 \amp (\text{def. of } R=\proj{P}{\ell})\text{,}
 \end{align*}
 </div>
@@ -66,10 +66,10 @@ b^2+c^2\amp -ab \amp -ac \\
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq_vec_formula.html ./knowl/xref/eg_lines_planes_review.html ./knowl/xref/eq_vec_diff.html ./knowl/xref/eq_vec_formula.html ./knowl/xref/th_proj_line_linear.html">
 \begin{align*}
 \overrightarrow{QP} \amp =\overrightarrow{OP}-\overrightarrow{OQ}\\
-\amp = \overrightarrow{OR} \amp \knowl{./knowl/xref/eq_vec_diff.html}{\text{(3.2.7)}}\text{.}
+\amp = \overrightarrow{OR} \amp \knowl{./knowl/xref/eq_vec_diff.html}{\text{(3.7)}}\text{.}
 \end{align*}
 </div>
-<div class="para">Since <span class="process-math">\(R\)</span> is the orthogonal projection of <span class="process-math">\(P\)</span> onto <span class="process-math">\(\ell\text{,}\)</span> we have <span class="process-math">\(R\in \ell\)</span> by definition, which means <span class="process-math">\(\overrightarrow{OR}\)</span> is a scalar multiple of <span class="process-math">\(\boldn\text{.}\)</span> Since <span class="process-math">\(\boldn\)</span> is a normal vector to <span class="process-math">\(W\text{,}\)</span> we conclude that <span class="process-math">\(\overrightarrow{QP}=\overrightarrow{OR}\)</span> is orthogonal to <span class="process-math">\(W\text{.}\)</span> We have shown that <span class="process-math">\(Q\)</span>  lies in <span class="process-math">\(W\)</span> and that <span class="process-math">\(\overrightarrow{QP}\)</span> is orthogonal to <span class="process-math">\(W\text{.}\)</span> We conclude that <span class="process-math">\(Q\)</span> is the orthogonal projection of <span class="process-math">\(P\)</span> onto <span class="process-math">\(W\text{.}\)</span> Thus, using <a href="s_transformation.html#th_ortho_proj_plane_linear-3-1-13" class="xref" data-knowl="./knowl/xref/eq_vec_formula.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 3.2.8">(3.2.8)</a> we have</div>
+<div class="para">Since <span class="process-math">\(R\)</span> is the orthogonal projection of <span class="process-math">\(P\)</span> onto <span class="process-math">\(\ell\text{,}\)</span> we have <span class="process-math">\(R\in \ell\)</span> by definition, which means <span class="process-math">\(\overrightarrow{OR}\)</span> is a scalar multiple of <span class="process-math">\(\boldn\text{.}\)</span> Since <span class="process-math">\(\boldn\)</span> is a normal vector to <span class="process-math">\(W\text{,}\)</span> we conclude that <span class="process-math">\(\overrightarrow{QP}=\overrightarrow{OR}\)</span> is orthogonal to <span class="process-math">\(W\text{.}\)</span> We have shown that <span class="process-math">\(Q\)</span>  lies in <span class="process-math">\(W\)</span> and that <span class="process-math">\(\overrightarrow{QP}\)</span> is orthogonal to <span class="process-math">\(W\text{.}\)</span> We conclude that <span class="process-math">\(Q\)</span> is the orthogonal projection of <span class="process-math">\(P\)</span> onto <span class="process-math">\(W\text{.}\)</span> Thus, using <a href="s_transformation.html#th_ortho_proj_plane_linear-3-1-13" class="xref" data-knowl="./knowl/xref/eq_vec_formula.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 3.8">(3.8)</a> we have</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq_vec_formula.html ./knowl/xref/eg_lines_planes_review.html ./knowl/xref/eq_vec_diff.html ./knowl/xref/eq_vec_formula.html ./knowl/xref/th_proj_line_linear.html">
 \begin{equation*}
 \proj{\boldx}{W}=\boldx-\proj{\boldx}{\ell}\text{.}
