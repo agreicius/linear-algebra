@@ -6,11 +6,11 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2023-07-31T16:44:05.580273</dc:date>
+    <dc:date>2025-08-22T15:54:45.735492</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
-      <dc:title>Matplotlib v3.6.2, https://matplotlib.org/</dc:title>
+      <dc:title>Matplotlib v3.8.0, https://matplotlib.org/</dc:title>
      </cc:Agent>
     </dc:creator>
    </cc:Work>
@@ -48,7 +48,7 @@ C 367.189395 14.052101 366.662563 15.323984 366.662563 16.65
 C 366.662563 17.976015 367.189395 19.247899 368.127029 20.185534 
 C 369.064664 21.123168 370.336547 21.65 371.662563 21.65 
 z
-" clip-path="url(#p39bfe2a5e5)" style="fill: #0000ff"/>
+" clip-path="url(#pe2cd13508a)" style="fill: #0000ff"/>
    </g>
    <g id="PathCollection_2">
     <path d="M 43.95 293.632366 
@@ -61,7 +61,7 @@ C 39.476832 286.034467 38.95 287.306351 38.95 288.632366
 C 38.95 289.958382 39.476832 291.230266 40.414466 292.1679 
 C 41.352101 293.105535 42.623985 293.632366 43.95 293.632366 
 z
-" clip-path="url(#p39bfe2a5e5)" style="fill: #0000ff"/>
+" clip-path="url(#pe2cd13508a)" style="fill: #0000ff"/>
    </g>
    <g id="PathCollection_3">
     <path d="M 262.425042 21.65 
@@ -74,7 +74,7 @@ C 257.951874 14.052101 257.425042 15.323984 257.425042 16.65
 C 257.425042 17.976015 257.951874 19.247899 258.889508 20.185534 
 C 259.827143 21.123168 261.099026 21.65 262.425042 21.65 
 z
-" clip-path="url(#p39bfe2a5e5)" style="fill: #0000ff"/>
+" clip-path="url(#pe2cd13508a)" style="fill: #0000ff"/>
    </g>
    <g id="PathCollection_4">
     <path d="M 153.187521 293.632366 
@@ -87,31 +87,29 @@ C 148.714353 286.034467 148.187521 287.306351 148.187521 288.632366
 C 148.187521 289.958382 148.714353 291.230266 149.651987 292.1679 
 C 150.589622 293.105535 151.861505 293.632366 153.187521 293.632366 
 z
-" clip-path="url(#p39bfe2a5e5)" style="fill: #0000ff"/>
+" clip-path="url(#pe2cd13508a)" style="fill: #0000ff"/>
    </g>
    <g id="matplotlib.axis_1"/>
    <g id="matplotlib.axis_2"/>
    <g id="patch_3">
     <path d="M 153.187521 288.632366 
 Q 262.425042 152.641183 370.26223 18.393292 
-" clip-path="url(#p39bfe2a5e5)" style="fill: none; stroke: #ff0000; stroke-width: 2; stroke-linecap: round"/>
+" clip-path="url(#pe2cd13508a)" style="fill: none; stroke: #ff0000; stroke-width: 2; stroke-linecap: round"/>
     <path d="M 360.101631 23.058293 
 L 370.26223 18.393292 
 L 367.897871 29.320772 
-L 360.101631 23.058293 
 z
-" clip-path="url(#p39bfe2a5e5)" style="fill: #ff0000; stroke: #ff0000; stroke-width: 2; stroke-linecap: round"/>
+" clip-path="url(#pe2cd13508a)" style="fill: #ff0000; stroke: #ff0000; stroke-width: 2; stroke-linecap: round"/>
    </g>
    <g id="patch_4">
     <path d="M 43.95 288.632366 
 Q 153.187521 152.641183 261.024709 18.393292 
-" clip-path="url(#p39bfe2a5e5)" style="fill: none; stroke: #ff0000; stroke-width: 2; stroke-linecap: round"/>
+" clip-path="url(#pe2cd13508a)" style="fill: none; stroke: #ff0000; stroke-width: 2; stroke-linecap: round"/>
     <path d="M 250.86411 23.058293 
 L 261.024709 18.393292 
 L 258.66035 29.320772 
-L 250.86411 23.058293 
 z
-" clip-path="url(#p39bfe2a5e5)" style="fill: #ff0000; stroke: #ff0000; stroke-width: 2; stroke-linecap: round"/>
+" clip-path="url(#pe2cd13508a)" style="fill: #ff0000; stroke: #ff0000; stroke-width: 2; stroke-linecap: round"/>
    </g>
    <g id="patch_5">
     <path d="M 153.187521 321.814215 
@@ -705,7 +703,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="p39bfe2a5e5">
+  <clipPath id="pe2cd13508a">
    <rect x="36.521849" y="10.666388" width="386.263874" height="311.147827"/>
   </clipPath>
  </defs>
